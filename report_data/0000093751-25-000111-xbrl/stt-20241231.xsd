@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:25900187-557c-40f7-a2c8-6e76a39b8648,g:d27b7f41-6acb-4f01-8f76-d1fa09711cba-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:stt="http://www.statestreet.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.statestreet.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="stt-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="stt-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="stt-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="stt-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.statestreet.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.statestreet.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofIncome" roleURI="http://www.statestreet.com/role/ConsolidatedStatementofIncome">
+        <link:definition>9952151 - Statement - Consolidated Statement of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofComprehensiveIncome" roleURI="http://www.statestreet.com/role/ConsolidatedStatementofComprehensiveIncome">
+        <link:definition>9952152 - Statement - Consolidated Statement of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofComprehensiveIncomeParenthetical" roleURI="http://www.statestreet.com/role/ConsolidatedStatementofComprehensiveIncomeParenthetical">
+        <link:definition>9952153 - Statement - Consolidated Statement of Comprehensive Income (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofCondition" roleURI="http://www.statestreet.com/role/ConsolidatedStatementofCondition">
+        <link:definition>9952154 - Statement - Consolidated Statement of Condition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofConditionParenthetical" roleURI="http://www.statestreet.com/role/ConsolidatedStatementofConditionParenthetical">
+        <link:definition>9952155 - Statement - Consolidated Statement of Condition (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofChangesinShareholdersEquity" roleURI="http://www.statestreet.com/role/ConsolidatedStatementofChangesinShareholdersEquity">
+        <link:definition>9952156 - Statement - Consolidated Statement of Changes in Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofChangesinShareholdersEquityParenthetical" roleURI="http://www.statestreet.com/role/ConsolidatedStatementofChangesinShareholdersEquityParenthetical">
+        <link:definition>9952157 - Statement - Consolidated Statement of Changes in Shareholders' Equity (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofCashFlows" roleURI="http://www.statestreet.com/role/ConsolidatedStatementofCashFlows">
+        <link:definition>9952158 - Statement - Consolidated Statement of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.statestreet.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>9952159 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValue" roleURI="http://www.statestreet.com/role/FairValue">
+        <link:definition>9952160 - Disclosure - Fair Value</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecurities" roleURI="http://www.statestreet.com/role/InvestmentSecurities">
+        <link:definition>9952161 - Disclosure - Investment Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLosses" roleURI="http://www.statestreet.com/role/LoansandAllowanceforCreditLosses">
+        <link:definition>9952162 - Disclosure - Loans and Allowance for Credit Losses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssets" roleURI="http://www.statestreet.com/role/GoodwillandOtherIntangibleAssets">
+        <link:definition>9952163 - Disclosure - Goodwill and Other Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAssets" roleURI="http://www.statestreet.com/role/OtherAssets">
+        <link:definition>9952164 - Disclosure - Other Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Deposits" roleURI="http://www.statestreet.com/role/Deposits">
+        <link:definition>9952165 - Disclosure - Deposits</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowings" roleURI="http://www.statestreet.com/role/ShortTermBorrowings">
+        <link:definition>9952166 - Disclosure - Short-Term Borrowings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt" roleURI="http://www.statestreet.com/role/LongTermDebt">
+        <link:definition>9952167 - Disclosure - Long-Term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstruments" roleURI="http://www.statestreet.com/role/DerivativeFinancialInstruments">
+        <link:definition>9952168 - Disclosure - Derivative Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingArrangements" roleURI="http://www.statestreet.com/role/OffsettingArrangements">
+        <link:definition>9952169 - Disclosure - Offsetting Arrangements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandGuarantees" roleURI="http://www.statestreet.com/role/CommitmentsandGuarantees">
+        <link:definition>9952170 - Disclosure - Commitments and Guarantees</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Contingencies" roleURI="http://www.statestreet.com/role/Contingencies">
+        <link:definition>9952171 - Disclosure - Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntities" roleURI="http://www.statestreet.com/role/VariableInterestEntities">
+        <link:definition>9952172 - Disclosure - Variable Interest Entities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquity" roleURI="http://www.statestreet.com/role/ShareholdersEquity">
+        <link:definition>9952173 - Disclosure - Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryCapital" roleURI="http://www.statestreet.com/role/RegulatoryCapital">
+        <link:definition>9952174 - Disclosure - Regulatory Capital</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetInterestIncome" roleURI="http://www.statestreet.com/role/NetInterestIncome">
+        <link:definition>9952175 - Disclosure - Net Interest Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityBasedCompensation" roleURI="http://www.statestreet.com/role/EquityBasedCompensation">
+        <link:definition>9952176 - Disclosure - Equity-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefits" roleURI="http://www.statestreet.com/role/EmployeeBenefits">
+        <link:definition>9952177 - Disclosure - Employee Benefits</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OccupancyExpenseandInformationSystemsandCommunicationsExpense" roleURI="http://www.statestreet.com/role/OccupancyExpenseandInformationSystemsandCommunicationsExpense">
+        <link:definition>9952178 - Disclosure - Occupancy Expense and Information Systems and Communications Expense</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Expenses" roleURI="http://www.statestreet.com/role/Expenses">
+        <link:definition>9952179 - Disclosure - Expenses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.statestreet.com/role/IncomeTaxes">
+        <link:definition>9952180 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerCommonShare" roleURI="http://www.statestreet.com/role/EarningsPerCommonShare">
+        <link:definition>9952181 - Disclosure - Earnings Per Common Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LineofBusinessInformation" roleURI="http://www.statestreet.com/role/LineofBusinessInformation">
+        <link:definition>9952182 - Disclosure - Line of Business Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomers" roleURI="http://www.statestreet.com/role/RevenuefromContractswithCustomers">
+        <link:definition>9952183 - Disclosure - Revenue from Contracts with Customers</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NonUSActivities" roleURI="http://www.statestreet.com/role/NonUSActivities">
+        <link:definition>9952184 - Disclosure - Non-U.S. Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ParentCompanyFinancialStatements" roleURI="http://www.statestreet.com/role/ParentCompanyFinancialStatements">
+        <link:definition>9952185 - Disclosure - Parent Company Financial Statements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://www.statestreet.com/role/SubsequentEvents">
+        <link:definition>9952186 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.statestreet.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesTables" roleURI="http://www.statestreet.com/role/SummaryofSignificantAccountingPoliciesTables">
+        <link:definition>9955512 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueTables" roleURI="http://www.statestreet.com/role/FairValueTables">
+        <link:definition>9955513 - Disclosure - Fair Value (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesTables" roleURI="http://www.statestreet.com/role/InvestmentSecuritiesTables">
+        <link:definition>9955514 - Disclosure - Investment Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesTables" roleURI="http://www.statestreet.com/role/LoansandAllowanceforCreditLossesTables">
+        <link:definition>9955515 - Disclosure - Loans and Allowance for Credit Losses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsTables" roleURI="http://www.statestreet.com/role/GoodwillandOtherIntangibleAssetsTables">
+        <link:definition>9955516 - Disclosure - Goodwill and Other Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAssetsTables" roleURI="http://www.statestreet.com/role/OtherAssetsTables">
+        <link:definition>9955517 - Disclosure - Other Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsTables" roleURI="http://www.statestreet.com/role/ShortTermBorrowingsTables">
+        <link:definition>9955518 - Disclosure - Short-Term Borrowings (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtTables" roleURI="http://www.statestreet.com/role/LongTermDebtTables">
+        <link:definition>9955519 - Disclosure - Long-Term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsTables" roleURI="http://www.statestreet.com/role/DerivativeFinancialInstrumentsTables">
+        <link:definition>9955520 - Disclosure - Derivative Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingArrangementsTables" roleURI="http://www.statestreet.com/role/OffsettingArrangementsTables">
+        <link:definition>9955521 - Disclosure - Offsetting Arrangements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandGuaranteesTables" roleURI="http://www.statestreet.com/role/CommitmentsandGuaranteesTables">
+        <link:definition>9955522 - Disclosure - Commitments and Guarantees (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesTables" roleURI="http://www.statestreet.com/role/VariableInterestEntitiesTables">
+        <link:definition>9955523 - Disclosure - Variable Interest Entities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityTables" roleURI="http://www.statestreet.com/role/ShareholdersEquityTables">
+        <link:definition>9955524 - Disclosure - Shareholders' Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryCapitalTables" roleURI="http://www.statestreet.com/role/RegulatoryCapitalTables">
+        <link:definition>9955525 - Disclosure - Regulatory Capital (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetInterestIncomeTables" roleURI="http://www.statestreet.com/role/NetInterestIncomeTables">
+        <link:definition>9955526 - Disclosure - Net Interest Income (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityBasedCompensationTables" roleURI="http://www.statestreet.com/role/EquityBasedCompensationTables">
+        <link:definition>9955527 - Disclosure - Equity-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OccupancyExpenseandInformationSystemsandCommunicationsExpenseTables" roleURI="http://www.statestreet.com/role/OccupancyExpenseandInformationSystemsandCommunicationsExpenseTables">
+        <link:definition>9955528 - Disclosure - Occupancy Expense and Information Systems and Communications Expense (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ExpensesTables" roleURI="http://www.statestreet.com/role/ExpensesTables">
+        <link:definition>9955529 - Disclosure - Expenses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.statestreet.com/role/IncomeTaxesTables">
+        <link:definition>9955530 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerCommonShareTables" roleURI="http://www.statestreet.com/role/EarningsPerCommonShareTables">
+        <link:definition>9955531 - Disclosure - Earnings Per Common Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LineofBusinessInformationTables" roleURI="http://www.statestreet.com/role/LineofBusinessInformationTables">
+        <link:definition>9955532 - Disclosure - Line of Business Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersTables" roleURI="http://www.statestreet.com/role/RevenuefromContractswithCustomersTables">
+        <link:definition>9955533 - Disclosure - Revenue from Contracts with Customers (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NonUSActivitiesTables" roleURI="http://www.statestreet.com/role/NonUSActivitiesTables">
+        <link:definition>9955534 - Disclosure - Non-U.S. Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ParentCompanyFinancialStatementsTables" roleURI="http://www.statestreet.com/role/ParentCompanyFinancialStatementsTables">
+        <link:definition>9955535 - Disclosure - Parent Company Financial Statements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesBasisofPresentationDetails" roleURI="http://www.statestreet.com/role/SummaryofSignificantAccountingPoliciesBasisofPresentationDetails">
+        <link:definition>9955536 - Disclosure - Summary of Significant Accounting Policies - Basis of Presentation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesCashandCashEquivalentsDetails" roleURI="http://www.statestreet.com/role/SummaryofSignificantAccountingPoliciesCashandCashEquivalentsDetails">
+        <link:definition>9955537 - Disclosure - Summary of Significant Accounting Policies - Cash and Cash Equivalents (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueScheduleofFairValueMeasurementsonaRecurringBasisDetails" roleURI="http://www.statestreet.com/role/FairValueScheduleofFairValueMeasurementsonaRecurringBasisDetails">
+        <link:definition>9955538 - Disclosure - Fair Value - Schedule of Fair Value Measurements on a Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueCarryingValueandEstimatedFairValueofFinancialInstrumentsDetails" roleURI="http://www.statestreet.com/role/FairValueCarryingValueandEstimatedFairValueofFinancialInstrumentsDetails">
+        <link:definition>9955539 - Disclosure - Fair Value - Carrying Value and Estimated Fair Value of Financial Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesScheduleofMarketableSecuritiesDetails" roleURI="http://www.statestreet.com/role/InvestmentSecuritiesScheduleofMarketableSecuritiesDetails">
+        <link:definition>9955540 - Disclosure - Investment Securities - Schedule of Marketable Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesNarrativeDetails" roleURI="http://www.statestreet.com/role/InvestmentSecuritiesNarrativeDetails">
+        <link:definition>9955541 - Disclosure - Investment Securities - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesScheduleofGrossPreTaxUnrealizedLossesonInvestmentSecuritiesDetails" roleURI="http://www.statestreet.com/role/InvestmentSecuritiesScheduleofGrossPreTaxUnrealizedLossesonInvestmentSecuritiesDetails">
+        <link:definition>9955542 - Disclosure - Investment Securities - Schedule of Gross Pre-Tax Unrealized Losses on Investment Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesScheduleofContractualMaturitiesofDebtSecuritiesDetails" roleURI="http://www.statestreet.com/role/InvestmentSecuritiesScheduleofContractualMaturitiesofDebtSecuritiesDetails">
+        <link:definition>9955543 - Disclosure - Investment Securities - Schedule of Contractual Maturities of Debt Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesNetLoansDetails" roleURI="http://www.statestreet.com/role/LoansandAllowanceforCreditLossesNetLoansDetails">
+        <link:definition>9955544 - Disclosure - Loans and Allowance for Credit Losses - Net Loans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesNarrativeDetails" roleURI="http://www.statestreet.com/role/LoansandAllowanceforCreditLossesNarrativeDetails">
+        <link:definition>9955545 - Disclosure - Loans and Allowance for Credit Losses - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesInvestmentsbyCreditQualityDetails" roleURI="http://www.statestreet.com/role/LoansandAllowanceforCreditLossesInvestmentsbyCreditQualityDetails">
+        <link:definition>9955546 - Disclosure - Loans and Allowance for Credit Losses - Investments by Credit Quality (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesAmortizedCostBasisDetails" roleURI="http://www.statestreet.com/role/LoansandAllowanceforCreditLossesAmortizedCostBasisDetails">
+        <link:definition>9955547 - Disclosure - Loans and Allowance for Credit Losses - Amortized Cost Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesActivityintheAllowanceforCreditLossesforLoansHeldforInvestmentDetails" roleURI="http://www.statestreet.com/role/LoansandAllowanceforCreditLossesActivityintheAllowanceforCreditLossesforLoansHeldforInvestmentDetails">
+        <link:definition>9955548 - Disclosure - Loans and Allowance for Credit Losses - Activity in the Allowance for Credit Losses for Loans Held for Investment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsNarrativeDetails" roleURI="http://www.statestreet.com/role/GoodwillandOtherIntangibleAssetsNarrativeDetails">
+        <link:definition>9955549 - Disclosure - Goodwill and Other Intangible Assets - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsChangesintheCarryingAmountofGoodwillDetails" roleURI="http://www.statestreet.com/role/GoodwillandOtherIntangibleAssetsChangesintheCarryingAmountofGoodwillDetails">
+        <link:definition>9955550 - Disclosure - Goodwill and Other Intangible Assets - Changes in the Carrying Amount of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsChangesintheCarryingAmountofOtherIntangibleAssetsDetails" roleURI="http://www.statestreet.com/role/GoodwillandOtherIntangibleAssetsChangesintheCarryingAmountofOtherIntangibleAssetsDetails">
+        <link:definition>9955551 - Disclosure - Goodwill and Other Intangible Assets - Changes in the Carrying Amount of Other Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsGrossCarryingAmountAccumulatedAmortizationandNetCarryingAmountofOtherIntangibleAssetsDetails" roleURI="http://www.statestreet.com/role/GoodwillandOtherIntangibleAssetsGrossCarryingAmountAccumulatedAmortizationandNetCarryingAmountofOtherIntangibleAssetsDetails">
+        <link:definition>9955552 - Disclosure - Goodwill and Other Intangible Assets - Gross Carrying Amount, Accumulated Amortization and Net Carrying Amount of Other Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsAmortizationExpenseDetails" roleURI="http://www.statestreet.com/role/GoodwillandOtherIntangibleAssetsAmortizationExpenseDetails">
+        <link:definition>9955553 - Disclosure - Goodwill and Other Intangible Assets - Amortization Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAssetsDetails" roleURI="http://www.statestreet.com/role/OtherAssetsDetails">
+        <link:definition>9955554 - Disclosure - Other Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DepositsDetails" roleURI="http://www.statestreet.com/role/DepositsDetails">
+        <link:definition>9955555 - Disclosure - Deposits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsNarrativeDetails" roleURI="http://www.statestreet.com/role/ShortTermBorrowingsNarrativeDetails">
+        <link:definition>9955556 - Disclosure - Short-Term Borrowings - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsOutstandingandWeightedAverageInterestRatesofShortTermBorrowingsDetails" roleURI="http://www.statestreet.com/role/ShortTermBorrowingsOutstandingandWeightedAverageInterestRatesofShortTermBorrowingsDetails">
+        <link:definition>9955557 - Disclosure - Short-Term Borrowings - Outstanding and Weighted-Average Interest Rates of Short-Term Borrowings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsOvernightMaturityDetails" roleURI="http://www.statestreet.com/role/ShortTermBorrowingsOvernightMaturityDetails">
+        <link:definition>9955558 - Disclosure - Short-Term Borrowings - Overnight Maturity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduleofLongTermDebtDetails" roleURI="http://www.statestreet.com/role/LongTermDebtScheduleofLongTermDebtDetails">
+        <link:definition>9955559 - Disclosure - Long-Term Debt - Schedule of Long Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtNarrativeDetails" roleURI="http://www.statestreet.com/role/LongTermDebtNarrativeDetails">
+        <link:definition>9955560 - Disclosure - Long-Term Debt - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsNarrativeDetails" roleURI="http://www.statestreet.com/role/DerivativeFinancialInstrumentsNarrativeDetails">
+        <link:definition>9955561 - Disclosure - Derivative Financial Instruments - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsScheduleofOutstandingHedgesNotionalAmountDetails" roleURI="http://www.statestreet.com/role/DerivativeFinancialInstrumentsScheduleofOutstandingHedgesNotionalAmountDetails">
+        <link:definition>9955562 - Disclosure - Derivative Financial Instruments - Schedule of Outstanding Hedges: (Notional Amount) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsScheduleoftheFairValuesofDerivativeFinancialInstrumentsDetails" roleURI="http://www.statestreet.com/role/DerivativeFinancialInstrumentsScheduleoftheFairValuesofDerivativeFinancialInstrumentsDetails">
+        <link:definition>9955563 - Disclosure - Derivative Financial Instruments - Schedule of the Fair Values of Derivative Financial Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsImpactofDerivativesonConsolidatedStatementofIncomeDetails" roleURI="http://www.statestreet.com/role/DerivativeFinancialInstrumentsImpactofDerivativesonConsolidatedStatementofIncomeDetails">
+        <link:definition>9955564 - Disclosure - Derivative Financial Instruments - Impact of Derivatives on Consolidated Statement of Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsScheduleofCarryingAmountofHedgedAssetsandLiabilitiesDetails" roleURI="http://www.statestreet.com/role/DerivativeFinancialInstrumentsScheduleofCarryingAmountofHedgedAssetsandLiabilitiesDetails">
+        <link:definition>9955565 - Disclosure - Derivative Financial Instruments - Schedule of Carrying Amount of Hedged Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsImpactonDerivativesandHedgedItemsonConsolidatedStatementofIncomeDetails" roleURI="http://www.statestreet.com/role/DerivativeFinancialInstrumentsImpactonDerivativesandHedgedItemsonConsolidatedStatementofIncomeDetails">
+        <link:definition>9955566 - Disclosure - Derivative Financial Instruments - Impact on Derivatives and Hedged Items on Consolidated Statement of Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsScheduleofDifferencesBetweentheGainsLossesontheDerivativeandtheGainsLossesontheHedgedItemDetails" roleURI="http://www.statestreet.com/role/DerivativeFinancialInstrumentsScheduleofDifferencesBetweentheGainsLossesontheDerivativeandtheGainsLossesontheHedgedItemDetails">
+        <link:definition>9955567 - Disclosure - Derivative Financial Instruments - Schedule of Differences Between the Gains (Losses) on the Derivative and the Gains (Losses) on the Hedged Item (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingArrangementsNarrativeDetails" roleURI="http://www.statestreet.com/role/OffsettingArrangementsNarrativeDetails">
+        <link:definition>9955568 - Disclosure - Offsetting Arrangements - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingArrangementsAssetsWithOffsettingArrangementsDetails" roleURI="http://www.statestreet.com/role/OffsettingArrangementsAssetsWithOffsettingArrangementsDetails">
+        <link:definition>9955569 - Disclosure - Offsetting Arrangements - Assets With Offsetting Arrangements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingArrangementsAssetsWithOffsettingArrangementsDetails_1" roleURI="http://www.statestreet.com/role/OffsettingArrangementsAssetsWithOffsettingArrangementsDetails_1">
+        <link:definition>9955569 - Disclosure - Offsetting Arrangements - Assets With Offsetting Arrangements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingArrangementsLiabilitiesWithOffsettingArrangementsDetails" roleURI="http://www.statestreet.com/role/OffsettingArrangementsLiabilitiesWithOffsettingArrangementsDetails">
+        <link:definition>9955570 - Disclosure - Offsetting Arrangements - Liabilities With Offsetting Arrangements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingArrangementsRepoSecLendingTransactionsMaturitybyCategoryDetails" roleURI="http://www.statestreet.com/role/OffsettingArrangementsRepoSecLendingTransactionsMaturitybyCategoryDetails">
+        <link:definition>9955571 - Disclosure - Offsetting Arrangements - Repo, Sec Lending Transactions Maturity by Category (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandGuaranteesContractualAmountsofCreditRelatedOffBalanceSheetFinancialInstrumentsDetails" roleURI="http://www.statestreet.com/role/CommitmentsandGuaranteesContractualAmountsofCreditRelatedOffBalanceSheetFinancialInstrumentsDetails">
+        <link:definition>9955572 - Disclosure - Commitments and Guarantees - Contractual Amounts of Credit-Related Off-Balance Sheet Financial Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandGuaranteesScheduleofRepurchaseAgreementsDetails" roleURI="http://www.statestreet.com/role/CommitmentsandGuaranteesScheduleofRepurchaseAgreementsDetails">
+        <link:definition>9955573 - Disclosure - Commitments and Guarantees - Schedule of Repurchase Agreements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandGuaranteesNarrativeDetails" roleURI="http://www.statestreet.com/role/CommitmentsandGuaranteesNarrativeDetails">
+        <link:definition>9955574 - Disclosure - Commitments and Guarantees - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ContingenciesDetails" roleURI="http://www.statestreet.com/role/ContingenciesDetails">
+        <link:definition>9955575 - Disclosure - Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesNarrativeDetails" roleURI="http://www.statestreet.com/role/VariableInterestEntitiesNarrativeDetails">
+        <link:definition>9955576 - Disclosure - Variable Interest Entities - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesTaxCreditsDetails" roleURI="http://www.statestreet.com/role/VariableInterestEntitiesTaxCreditsDetails">
+        <link:definition>9955577 - Disclosure - Variable Interest Entities - Tax Credits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityScheduleofPreferredStockDetails" roleURI="http://www.statestreet.com/role/ShareholdersEquityScheduleofPreferredStockDetails">
+        <link:definition>9955578 - Disclosure - Shareholders' Equity - Schedule of Preferred Stock (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityNarrativeDetails" roleURI="http://www.statestreet.com/role/ShareholdersEquityNarrativeDetails">
+        <link:definition>9955579 - Disclosure - Shareholders' Equity - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityScheduleofDividendsDeclaredDetails" roleURI="http://www.statestreet.com/role/ShareholdersEquityScheduleofDividendsDeclaredDetails">
+        <link:definition>9955580 - Disclosure - Shareholders' Equity - Schedule of Dividends Declared (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityScheduleofCommonStockDetails" roleURI="http://www.statestreet.com/role/ShareholdersEquityScheduleofCommonStockDetails">
+        <link:definition>9955581 - Disclosure - Shareholders' Equity - Schedule of Common Stock (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityAccumulatedOtherComprehensiveIncomebyComponentDetails" roleURI="http://www.statestreet.com/role/ShareholdersEquityAccumulatedOtherComprehensiveIncomebyComponentDetails">
+        <link:definition>9955582 - Disclosure - Shareholders' Equity - Accumulated Other Comprehensive Income by Component (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityAdjustmentstoAccumulatedOtherComprehensiveIncomeDetails" roleURI="http://www.statestreet.com/role/ShareholdersEquityAdjustmentstoAccumulatedOtherComprehensiveIncomeDetails">
+        <link:definition>9955583 - Disclosure - Shareholders' Equity - Adjustments to Accumulated Other Comprehensive Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryCapitalDetails" roleURI="http://www.statestreet.com/role/RegulatoryCapitalDetails">
+        <link:definition>9955584 - Disclosure - Regulatory Capital (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetInterestIncomeComponentsofInterestRevenueandInterestExpenseDetails" roleURI="http://www.statestreet.com/role/NetInterestIncomeComponentsofInterestRevenueandInterestExpenseDetails">
+        <link:definition>9955585 - Disclosure - Net Interest Income - Components of Interest Revenue and Interest Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityBasedCompensationNarrativeDetails" roleURI="http://www.statestreet.com/role/EquityBasedCompensationNarrativeDetails">
+        <link:definition>9955586 - Disclosure - Equity-Based Compensation - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityBasedCompensationDeferredStockAwardsDetails" roleURI="http://www.statestreet.com/role/EquityBasedCompensationDeferredStockAwardsDetails">
+        <link:definition>9955587 - Disclosure - Equity-Based Compensation - Deferred Stock Awards (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityBasedCompensationScheduleofPerformanceAwardsDetails" roleURI="http://www.statestreet.com/role/EquityBasedCompensationScheduleofPerformanceAwardsDetails">
+        <link:definition>9955588 - Disclosure - Equity-Based Compensation - Schedule of Performance Awards (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityBasedCompensationScheduleofCashSettledStockAwardsDetails" roleURI="http://www.statestreet.com/role/EquityBasedCompensationScheduleofCashSettledStockAwardsDetails">
+        <link:definition>9955589 - Disclosure - Equity-Based Compensation - Schedule of Cash Settled Stock Awards (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitsDetails" roleURI="http://www.statestreet.com/role/EmployeeBenefitsDetails">
+        <link:definition>9955590 - Disclosure - Employee Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OccupancyExpenseandInformationSystemsandCommunicationsExpenseNarrativeDetails" roleURI="http://www.statestreet.com/role/OccupancyExpenseandInformationSystemsandCommunicationsExpenseNarrativeDetails">
+        <link:definition>9955591 - Disclosure - Occupancy Expense and Information Systems and Communications Expense - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OccupancyExpenseandInformationSystemsandCommunicationsExpenseLeaseCostsDetails" roleURI="http://www.statestreet.com/role/OccupancyExpenseandInformationSystemsandCommunicationsExpenseLeaseCostsDetails">
+        <link:definition>9955592 - Disclosure - Occupancy Expense and Information Systems and Communications Expense - Lease Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OccupancyExpenseandInformationSystemsandCommunicationsExpenseSummaryofFutureMinimumLeasePaymentsDetails" roleURI="http://www.statestreet.com/role/OccupancyExpenseandInformationSystemsandCommunicationsExpenseSummaryofFutureMinimumLeasePaymentsDetails">
+        <link:definition>9955593 - Disclosure - Occupancy Expense and Information Systems and Communications Expense - Summary of Future Minimum Lease Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OccupancyExpenseandInformationSystemsandCommunicationsExpenseSummaryofFutureMinimumLeasePaymentsDetails_1" roleURI="http://www.statestreet.com/role/OccupancyExpenseandInformationSystemsandCommunicationsExpenseSummaryofFutureMinimumLeasePaymentsDetails_1">
+        <link:definition>9955593 - Disclosure - Occupancy Expense and Information Systems and Communications Expense - Summary of Future Minimum Lease Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OccupancyExpenseandInformationSystemsandCommunicationsExpenseSummaryofOtherLeaseInformationDetails" roleURI="http://www.statestreet.com/role/OccupancyExpenseandInformationSystemsandCommunicationsExpenseSummaryofOtherLeaseInformationDetails">
+        <link:definition>9955594 - Disclosure - Occupancy Expense and Information Systems and Communications Expense - Summary of Other Lease Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ExpensesScheduleofExpensesDetails" roleURI="http://www.statestreet.com/role/ExpensesScheduleofExpensesDetails">
+        <link:definition>9955595 - Disclosure - Expenses - Schedule of Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ExpensesNarrativeDetails" roleURI="http://www.statestreet.com/role/ExpensesNarrativeDetails">
+        <link:definition>9955596 - Disclosure - Expenses - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ExpensesRestructuringReserveDetails" roleURI="http://www.statestreet.com/role/ExpensesRestructuringReserveDetails">
+        <link:definition>9955597 - Disclosure - Expenses - Restructuring Reserve (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofComponentsofIncomeTaxExpenseDetails" roleURI="http://www.statestreet.com/role/IncomeTaxesScheduleofComponentsofIncomeTaxExpenseDetails">
+        <link:definition>9955598 - Disclosure - Income Taxes - Schedule of Components of Income Tax Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofReconciliationoftheUSStatutoryIncomeTaxRatetotheEffectiveTaxRateDetails" roleURI="http://www.statestreet.com/role/IncomeTaxesScheduleofReconciliationoftheUSStatutoryIncomeTaxRatetotheEffectiveTaxRateDetails">
+        <link:definition>9955599 - Disclosure - Income Taxes - Schedule of Reconciliation of the U.S. Statutory Income Tax Rate to the Effective Tax Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.statestreet.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>9955600 - Disclosure - Income Taxes - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofComponentsofDeferredTaxLiabilitiesandAssetsDetails" roleURI="http://www.statestreet.com/role/IncomeTaxesScheduleofComponentsofDeferredTaxLiabilitiesandAssetsDetails">
+        <link:definition>9955601 - Disclosure - Income Taxes - Schedule of Components of Deferred Tax Liabilities and Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDeferredTaxAssetValuationAllowancesDetails" roleURI="http://www.statestreet.com/role/IncomeTaxesDeferredTaxAssetValuationAllowancesDetails">
+        <link:definition>9955602 - Disclosure - Income Taxes - Deferred Tax Asset Valuation Allowances (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofUnrecognizedTaxBenefitsDetails" roleURI="http://www.statestreet.com/role/IncomeTaxesScheduleofUnrecognizedTaxBenefitsDetails">
+        <link:definition>9955603 - Disclosure - Income Taxes - Schedule of Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerCommonShareDetails" roleURI="http://www.statestreet.com/role/EarningsPerCommonShareDetails">
+        <link:definition>9955604 - Disclosure - Earnings Per Common Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LineofBusinessInformationNarrativeDetails" roleURI="http://www.statestreet.com/role/LineofBusinessInformationNarrativeDetails">
+        <link:definition>9955605 - Disclosure - Line of Business Information - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LineofBusinessInformationSummaryofLineofBusinessDetails" roleURI="http://www.statestreet.com/role/LineofBusinessInformationSummaryofLineofBusinessDetails">
+        <link:definition>9955606 - Disclosure - Line of Business Information - Summary of Line of Business (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LineofBusinessInformationComponentsofOtherDetails" roleURI="http://www.statestreet.com/role/LineofBusinessInformationComponentsofOtherDetails">
+        <link:definition>9955607 - Disclosure - Line of Business Information - Components of Other (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersDisaggregationofRevenuesDetails" roleURI="http://www.statestreet.com/role/RevenuefromContractswithCustomersDisaggregationofRevenuesDetails">
+        <link:definition>9955608 - Disclosure - Revenue from Contracts with Customers - Disaggregation of Revenues (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersNarrativeDetails" roleURI="http://www.statestreet.com/role/RevenuefromContractswithCustomersNarrativeDetails">
+        <link:definition>9955609 - Disclosure - Revenue from Contracts with Customers - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersNarrativeDetails_1" roleURI="http://www.statestreet.com/role/RevenuefromContractswithCustomersNarrativeDetails_1">
+        <link:definition>9955609 - Disclosure - Revenue from Contracts with Customers - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NonUSActivitiesScheduleofResultsFromNonUSOperationsDetails" roleURI="http://www.statestreet.com/role/NonUSActivitiesScheduleofResultsFromNonUSOperationsDetails">
+        <link:definition>9955610 - Disclosure - Non-U.S. Activities - Schedule of Results From Non-U.S. Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NonUSActivitiesNarrativeDetails" roleURI="http://www.statestreet.com/role/NonUSActivitiesNarrativeDetails">
+        <link:definition>9955611 - Disclosure - Non-U.S. Activities - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ParentCompanyFinancialStatementsStatementofIncomeDetails" roleURI="http://www.statestreet.com/role/ParentCompanyFinancialStatementsStatementofIncomeDetails">
+        <link:definition>9955612 - Disclosure - Parent Company Financial Statements - Statement of Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ParentCompanyFinancialStatementsStatementofConditionDetails" roleURI="http://www.statestreet.com/role/ParentCompanyFinancialStatementsStatementofConditionDetails">
+        <link:definition>9955613 - Disclosure - Parent Company Financial Statements - Statement of Condition (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ParentCompanyFinancialStatementsStatementofCashFlowsDetails" roleURI="http://www.statestreet.com/role/ParentCompanyFinancialStatementsStatementofCashFlowsDetails">
+        <link:definition>9955614 - Disclosure - Parent Company Financial Statements - Statement of Cash Flows (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsDetails" roleURI="http://www.statestreet.com/role/SubsequentEventsDetails">
+        <link:definition>9955615 - Disclosure - Subsequent Events (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="stt_SeriesGPreferredStockDepositoryShareMember" abstract="true" name="SeriesGPreferredStockDepositoryShareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_AuditorInformationAbstract" abstract="true" name="AuditorInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="stt_FeesAndCommissionsServicingFees" abstract="false" name="FeesAndCommissionsServicingFees" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_FeesAndCommissionsManagementFees" abstract="false" name="FeesAndCommissionsManagementFees" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_FeesAndCommissionsForeignExchangeTradingServices" abstract="false" name="FeesAndCommissionsForeignExchangeTradingServices" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_FeesAndCommissionsSecuritiesFinance" abstract="false" name="FeesAndCommissionsSecuritiesFinance" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_FeesAndCommissionsProcessingFeesAndOther" abstract="false" name="FeesAndCommissionsProcessingFeesAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_AcquisitionAndRestructuringCosts" abstract="false" name="AcquisitionAndRestructuringCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_OtherComprehensiveIncomeLossChangeInNetUnrealizedGainLossOnAfsSecuritiesNetOfReclassAndExpectedLossFromOttiRelatedTaxes" abstract="false" name="OtherComprehensiveIncomeLossChangeInNetUnrealizedGainLossOnAfsSecuritiesNetOfReclassAndExpectedLossFromOttiRelatedTaxes" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_OtherComprehensiveIncomeLossMinimumPensionLiabilityNetAdjustmentTax" abstract="false" name="OtherComprehensiveIncomeLossMinimumPensionLiabilityNetAdjustmentTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_SeriesIPreferredStockMember" abstract="true" name="SeriesIPreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_SeriesJPreferredStockMember" abstract="true" name="SeriesJPreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_NoncashAdjustmentsForDepreciationAmortizationAccretion" abstract="false" name="NoncashAdjustmentsForDepreciationAmortizationAccretion" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ChangeInUnrealizedGainsLossesRelatedToFinancialInstruments" abstract="false" name="ChangeInUnrealizedGainsLossesRelatedToFinancialInstruments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_NetIncreaseDecreaseInFederalFundsSoldAndSecuritiesPurchasedUnderResaleAgreements" abstract="false" name="NetIncreaseDecreaseInFederalFundsSoldAndSecuritiesPurchasedUnderResaleAgreements" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_SecuritiesSoldUnderRepurchaseAgreementNet" abstract="false" name="SecuritiesSoldUnderRepurchaseAgreementNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_NetDecreaseIncreaseInOtherShortTermBorrowings" abstract="false" name="NetDecreaseIncreaseInOtherShortTermBorrowings" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_RepurchasesOfCommonStockForEmployeeTaxWithholding" abstract="false" name="RepurchasesOfCommonStockForEmployeeTaxWithholding" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_OffsettingArrangementsTextBlock" abstract="false" name="OffsettingArrangementsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_CommitmentsandGuaranteesDisclosureTextBlock" abstract="false" name="CommitmentsandGuaranteesDisclosureTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_NonU.S.ActivitiesTextBlock" abstract="false" name="NonU.S.ActivitiesTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_InterestBearingDepositsWithBanksPolicyTextBlock" abstract="false" name="InterestBearingDepositsWithBanksPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_OtherSignificantAccountingPoliciesTableTextBlock" abstract="false" name="OtherSignificantAccountingPoliciesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_NewAccountingStandardsIssuedButNotYetAdoptedTableTextBlock" abstract="false" name="NewAccountingStandardsIssuedButNotYetAdoptedTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_CarryingValueAndEstimatedFairValueOfFinancialInstrumentsByFairValueHierarchyTableTextBlock" abstract="false" name="CarryingValueAndEstimatedFairValueOfFinancialInstrumentsByFairValueHierarchyTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_ScheduleOfSecuritiesSoldandSecuritiesLoanedUnderRepurchaseAgreementsTableTextBlock" abstract="false" name="ScheduleOfSecuritiesSoldandSecuritiesLoanedUnderRepurchaseAgreementsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_ScheduleOfInterestRevenueInterestExpensesTableTextBlock" abstract="false" name="ScheduleOfInterestRevenueInterestExpensesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_ScheduleOfDeferredStockAwardsActivityTableTextBlock" abstract="false" name="ScheduleOfDeferredStockAwardsActivityTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_ShareBasedPaymentArrangementCashSettledStockAwardsOutstandingActivityTableTextBlock" abstract="false" name="ShareBasedPaymentArrangementCashSettledStockAwardsOutstandingActivityTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_ComponentsOfOtherInSegmentReportingTableTextBlock" abstract="false" name="ComponentsOfOtherInSegmentReportingTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_ScheduleOfResultsFromNonUSOperationsTableTextBlock" abstract="false" name="ScheduleOfResultsFromNonUSOperationsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="stt_CashAndDueFromBanksAmountInaccessible" abstract="false" name="CashAndDueFromBanksAmountInaccessible" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_UsTreasuryAndFederalAgenciesDirectObligationsMember" abstract="true" name="UsTreasuryAndFederalAgenciesDirectObligationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_UsTreasuryAndFederalAgenciesMortgageBackedSecuritiesMember" abstract="true" name="UsTreasuryAndFederalAgenciesMortgageBackedSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_NonUsDebtSecuritiesMortgageBackedSecuritiesMember" abstract="true" name="NonUsDebtSecuritiesMortgageBackedSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_NonUsDebtSecuritiesAssetBackedSecuritiesMember" abstract="true" name="NonUsDebtSecuritiesAssetBackedSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_NonUSDebtSecuritiesForeignSovereignSupranationalAndNonAgencySecuritiesMember" abstract="true" name="NonUSDebtSecuritiesForeignSovereignSupranationalAndNonAgencySecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_NonUsDebtSecuritiesOtherMember" abstract="true" name="NonUsDebtSecuritiesOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_NonUSDebtSecuritiesMember" abstract="true" name="NonUSDebtSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_AssetBackedSecuritiesStudentLoansMember" abstract="true" name="AssetBackedSecuritiesStudentLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_AssetbackedSecuritiesCollateralizedLoanObligationsMember" abstract="true" name="AssetbackedSecuritiesCollateralizedLoanObligationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_NonAgencyCMBSAndRMBSMember" abstract="true" name="NonAgencyCMBSAndRMBSMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_AssetBackedSecuritiesOtherMember" abstract="true" name="AssetBackedSecuritiesOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_AgencyCMBSMember" abstract="true" name="AgencyCMBSMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_AgencyMBSMember" abstract="true" name="AgencyMBSMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_NonUSCollateralizedLoanObligationsMember" abstract="true" name="NonUSCollateralizedLoanObligationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_NonUSDebtSecuritiesCorporateBondsMember" abstract="true" name="NonUSDebtSecuritiesCorporateBondsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_FederalFamilyEducationLoanProgramMember" abstract="true" name="FederalFamilyEducationLoanProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OtherAssetsFairValueGrossLiabilityandRighttoReclaimCashOffset" abstract="false" name="OtherAssetsFairValueGrossLiabilityandRighttoReclaimCashOffset" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DerivativeAssetCollateralObligationtoReturnSecuritiesandCashOffset" abstract="false" name="DerivativeAssetCollateralObligationtoReturnSecuritiesandCashOffset" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DerivativeLiabilityCollateralRighttoReclaimSecuritiesandCashOffset" abstract="false" name="DerivativeLiabilityCollateralRighttoReclaimSecuritiesandCashOffset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ScheduleOfAvailableForSaleAndHeldToMaturitySecuritiesTable" abstract="true" name="ScheduleOfAvailableForSaleAndHeldToMaturitySecuritiesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="stt_IncludingMMLFMember" abstract="true" name="IncludingMMLFMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_AvailableForSaleAndHeldToMaturitySecuritiesLineItems" abstract="true" name="AvailableForSaleAndHeldToMaturitySecuritiesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="stt_FederalGovernmentCreditSupportGuaranteePercentageMinimum" abstract="false" name="FederalGovernmentCreditSupportGuaranteePercentageMinimum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_AssetBackedSecuritiesAndMunicipalBondsMember" abstract="true" name="AssetBackedSecuritiesAndMunicipalBondsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_DebtSecuritiesAvailableForSaleSoldSecurityAtCarryingValue" abstract="false" name="DebtSecuritiesAvailableForSaleSoldSecurityAtCarryingValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_GrossPreTaxUnrealizedLossesOnInvestmentSecuritiesTable" abstract="true" name="GrossPreTaxUnrealizedLossesOnInvestmentSecuritiesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="stt_GrossPreTaxUnrealizedLossesOnInvestmentSecuritiesLineItems" abstract="true" name="GrossPreTaxUnrealizedLossesOnInvestmentSecuritiesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="stt_ContractualMaturitiesOfDebtInvestmentSecuritiesTable" abstract="true" name="ContractualMaturitiesOfDebtInvestmentSecuritiesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="stt_TotalHTMandCollateralizedObligationsMember" abstract="true" name="TotalHTMandCollateralizedObligationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_ContractualMaturitiesOfDebtInvestmentSecuritiesLineItems" abstract="true" name="ContractualMaturitiesOfDebtInvestmentSecuritiesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="stt_CommercialAndFinancialMember" abstract="true" name="CommercialAndFinancialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_FundFinanceLoansMember" abstract="true" name="FundFinanceLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_PrivateEquityCapitalCallFinanceLoansMember" abstract="true" name="PrivateEquityCapitalCallFinanceLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A40ActFundsMember" abstract="true" name="A40ActFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_BusinessDevelopmentMember" abstract="true" name="BusinessDevelopmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_LeveragedLoansMember" abstract="true" name="LeveragedLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OverdraftsMember" abstract="true" name="OverdraftsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_CommercialAndFinancialOtherMember" abstract="true" name="CommercialAndFinancialOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_SecuritiesFinanceLoansMember" abstract="true" name="SecuritiesFinanceLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_MunicipalLoansMember" abstract="true" name="MunicipalLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OtherLoansMember" abstract="true" name="OtherLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_CommercialRealEstateLoanMember" abstract="true" name="CommercialRealEstateLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_FloatingRateLoansMember" abstract="true" name="FloatingRateLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_FixedRateLoansMember" abstract="true" name="FixedRateLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_CommercialandFinancialPortfolioSegmentMember" abstract="true" name="CommercialandFinancialPortfolioSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_PercentageofPortfolioConsideredInvestmentGrade" abstract="false" name="PercentageofPortfolioConsideredInvestmentGrade" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_AvailableForSaleAndHeldToMaturitySecuritiesInUnrealizedLossPositionsQualitativeDisclosureNumberOfPositions" abstract="false" name="AvailableForSaleAndHeldToMaturitySecuritiesInUnrealizedLossPositionsQualitativeDisclosureNumberOfPositions" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="stt_LoansAndLeasesReceivableNumberOfLoansAndLeasesSegments" abstract="false" name="LoansAndLeasesReceivableNumberOfLoansAndLeasesSegments" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="stt_FinancingReceivableRecordedInvestmentNonaccrualStatusNumberofLoans" abstract="false" name="FinancingReceivableRecordedInvestmentNonaccrualStatusNumberofLoans" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="stt_NumberofLoansNoLongerMetSimilarRisk" abstract="false" name="NumberofLoansNoLongerMetSimilarRisk" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="stt_LoansNoLongerMeetingSimilarRiskofCollectivePool" abstract="false" name="LoansNoLongerMeetingSimilarRiskofCollectivePool" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_InvestmentGradeLoans" abstract="false" name="InvestmentGradeLoans" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_SpeculativeGradeLoans" abstract="false" name="SpeculativeGradeLoans" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_SpeculativeSeniorSecuredLoanswithBBorBRating" abstract="false" name="SpeculativeSeniorSecuredLoanswithBBorBRating" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_SpeculativeMember" abstract="true" name="SpeculativeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_FinancingReceivableExcludingAccruedInterestBeforeAllowanceForCreditLossExcludingHeldForSaleReceivables" abstract="false" name="FinancingReceivableExcludingAccruedInterestBeforeAllowanceForCreditLossExcludingHeldForSaleReceivables" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_LoansAndLeasesReceivableOverdrafts" abstract="false" name="LoansAndLeasesReceivableOverdrafts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_InstitutionalOtherLoansMember" abstract="true" name="InstitutionalOtherLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OffBalanceSheetCommitmentsMember" abstract="true" name="OffBalanceSheetCommitmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_IncludesAllowancesonUnfundedCommitmentsMember" abstract="true" name="IncludesAllowancesonUnfundedCommitmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_FundFinanceMember" abstract="true" name="FundFinanceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_InvestmentServicingMember" abstract="true" name="InvestmentServicingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_InvestmentManagementMember" abstract="true" name="InvestmentManagementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_SecuritiesBorrowedSubjectToMasterNettingArrangements" abstract="false" name="SecuritiesBorrowedSubjectToMasterNettingArrangements" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ReceivableForSecuritySettlement" abstract="false" name="ReceivableForSecuritySettlement" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_TimeDepositsOverdrafts" abstract="false" name="TimeDepositsOverdrafts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_SecuritiesSoldMember" abstract="true" name="SecuritiesSoldMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_AverageBalancesOfSecuritiesPurchasedUnderAgreementsToResellAndSecuritiesSoldUnderAgreementsToRepurchase" abstract="false" name="AverageBalancesOfSecuritiesPurchasedUnderAgreementsToResellAndSecuritiesSoldUnderAgreementsToRepurchase" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ShortTermDebtWeightedAverageInterestRateDuringPeriod" abstract="false" name="ShortTermDebtWeightedAverageInterestRateDuringPeriod" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_ParentCompanyandNonbankingSubsidiariesMember" abstract="true" name="ParentCompanyandNonbankingSubsidiariesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_StateStreetBankMember" abstract="true" name="StateStreetBankMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_FixedToFloatingRateSeniorNotesMember" abstract="true" name="FixedToFloatingRateSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_FixedToFloatingRateSeniorSubordinatedNotesMember" abstract="true" name="FixedToFloatingRateSeniorSubordinatedNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A355NotesDue2025Member" abstract="true" name="A355NotesDue2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A5272NotesDue2026Member" abstract="true" name="A5272NotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A4.330NotesDue2027Member" abstract="true" name="A4.330NotesDue2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A5104NotesDue2026Member" abstract="true" name="A5104NotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A5159NotesDue2034Member" abstract="true" name="A5159NotesDue2034Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A4.993NotesDue2027Member" abstract="true" name="A4.993NotesDue2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A4.530NotesDue2029Member" abstract="true" name="A4.530NotesDue2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A5684NotesDue2029Member" abstract="true" name="A5684NotesDue2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_TwoPointZeroPercentNotesDue2031Member" abstract="true" name="TwoPointZeroPercentNotesDue2031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A4.675NotesDue2032Member" abstract="true" name="A4.675NotesDue2032Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A2400NotesMember" abstract="true" name="A2400NotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_TwoPointSixFivePercentNotesDue2026Member" abstract="true" name="TwoPointSixFivePercentNotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A4821NotesDue2034Member" abstract="true" name="A4821NotesDue2034Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A4164NotesDue2033Member" abstract="true" name="A4164NotesDue2033Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A2203NotesDue2028Member" abstract="true" name="A2203NotesDue2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_FourPointOneFourOnePercentNotesDue2029Member" abstract="true" name="FourPointOneFourOnePercentNotesDue2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_ThreePointZeroThreeOnePercentNotesDue2034Member" abstract="true" name="ThreePointZeroThreeOnePercentNotesDue2034Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_FloatingRateSubordinatedDebenturesDue2047Member" abstract="true" name="FloatingRateSubordinatedDebenturesDue2047Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A4857NotesDue2034Member" abstract="true" name="A4857NotesDue2034Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A5751NotesDue2026Member" abstract="true" name="A5751NotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A3152NotesDue2031Member" abstract="true" name="A3152NotesDue2031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A4421NotesDue2033Member" abstract="true" name="A4421NotesDue2033Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OnePointSixEightFourPercentNotesDue2027Member" abstract="true" name="OnePointSixEightFourPercentNotesDue2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A2901NotesDue2026Member" abstract="true" name="A2901NotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A582NotesDue2028Member" abstract="true" name="A582NotesDue2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A6123NotesDue2034Member" abstract="true" name="A6123NotesDue2034Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A2623NotesDue2023Member" abstract="true" name="A2623NotesDue2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_FloatingRateNotesDue2026Member" abstract="true" name="FloatingRateNotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A1746NotesDue2026Member" abstract="true" name="A1746NotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_FloatingRateNotesDue2027Member" abstract="true" name="FloatingRateNotesDue2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_SevenPointThreeFivePercentNotesDue2026Member" abstract="true" name="SevenPointThreeFivePercentNotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_FloatingRateSubordinatedDebenturesDue2028Member" abstract="true" name="FloatingRateSubordinatedDebenturesDue2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A3.300SeniorNotesDue2024Member" abstract="true" name="A3.300SeniorNotesDue2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_TwoPointThreeFiveFourPercentNotesDue2025Member" abstract="true" name="TwoPointThreeFiveFourPercentNotesDue2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A4.594SeniorNotesDue2026Member" abstract="true" name="A4.594SeniorNotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A4.782SeniorNotesDue2029Member" abstract="true" name="A4.782SeniorNotesDue2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_FloatingRateSeniorNotesDue2026Member" abstract="true" name="FloatingRateSeniorNotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_IncreaseDecreaseInCarryingValueOfLongTermDebt" abstract="false" name="IncreaseDecreaseInCarryingValueOfLongTermDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_CashCollateralProvidedForDerivativeInstruments" abstract="false" name="CashCollateralProvidedForDerivativeInstruments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ForwardSwapAndSpotMember" abstract="true" name="ForwardSwapAndSpotMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OptionsPurchasedMember" abstract="true" name="OptionsPurchasedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OptionsWrittenMember" abstract="true" name="OptionsWrittenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_StableValueContractsMember" abstract="true" name="StableValueContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_DeferredValueAwardsMember" abstract="true" name="DeferredValueAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_ForwardsMember" abstract="true" name="ForwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_ForeignExchangeTradingServicesRevenueMember" abstract="true" name="ForeignExchangeTradingServicesRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OtherFeeRevenueMember" abstract="true" name="OtherFeeRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_CompensationandEmployeeBenefitsMember" abstract="true" name="CompensationandEmployeeBenefitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_ClosedPortfolioMember" abstract="true" name="ClosedPortfolioMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_InterestIncomeNetMember" abstract="true" name="InterestIncomeNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_NoninterestIncomeOtherMember" abstract="true" name="NoninterestIncomeOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_GainsLossesRelatedtoInvestmentSecuritiesNetMember" abstract="true" name="GainsLossesRelatedtoInvestmentSecuritiesNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OtherComprehensiveIncomeLossDerivativeBeforeReclassificationAndTax" abstract="false" name="OtherComprehensiveIncomeLossDerivativeBeforeReclassificationAndTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_OtherComprehensiveIncomeLossDerivativeGainLossReclassificationbeforeTax" abstract="false" name="OtherComprehensiveIncomeLossDerivativeGainLossReclassificationbeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DerivativeAssetSubjectToMasterNettingArrangementCollateralObligationToReturnCashAndSecurityNotOffset" abstract="false" name="DerivativeAssetSubjectToMasterNettingArrangementCollateralObligationToReturnCashAndSecurityNotOffset" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DerivativeCollateralObligationtoReturnSecuritiesandCashNetofOffset" abstract="false" name="DerivativeCollateralObligationtoReturnSecuritiesandCashNetofOffset" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ReverseRepurchaseAgreementsAndSecuritiesBorrowingFairValueGrossAsset" abstract="false" name="ReverseRepurchaseAgreementsAndSecuritiesBorrowingFairValueGrossAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ReverseRepurchaseAgreementsAndSecuritiesBorrowedLiability" abstract="false" name="ReverseRepurchaseAgreementsAndSecuritiesBorrowedLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ReverseRepurchaseAgreementsAndSecuritiesBorrowedFairValueAmountNotOffsetAgainstCollateral" abstract="false" name="ReverseRepurchaseAgreementsAndSecuritiesBorrowedFairValueAmountNotOffsetAgainstCollateral" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ReverseRepurchaseAgreementsAndSecuritiesBorrowedCollateralObligationToReturnCash" abstract="false" name="ReverseRepurchaseAgreementsAndSecuritiesBorrowedCollateralObligationToReturnCash" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ReverseRepurchaseAgreementsAndSecuritiesBorrowedAmountOffsetAgainstCollateral" abstract="false" name="ReverseRepurchaseAgreementsAndSecuritiesBorrowedAmountOffsetAgainstCollateral" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DerivativeAssetReverseRepurchaseAgreementsAndSecuritiesBorrowedNotOffsetAgainstCollateral" abstract="false" name="DerivativeAssetReverseRepurchaseAgreementsAndSecuritiesBorrowedNotOffsetAgainstCollateral" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_OtherDerivativeContractsMember" abstract="true" name="OtherDerivativeContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_DerivativeCollateralRighttoReclaimSecuritiesandCash" abstract="false" name="DerivativeCollateralRighttoReclaimSecuritiesandCash" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DerivativeCollateralRighttoReclaimSecuritiesandCashNetofOffset" abstract="false" name="DerivativeCollateralRighttoReclaimSecuritiesandCashNetofOffset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ReverseRepurchaseAgreementsAndSecuritiesBorrowingFairValueGrossLiability" abstract="false" name="ReverseRepurchaseAgreementsAndSecuritiesBorrowingFairValueGrossLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ReverseRepurchaseAgreementsAndSecuritiesBorrowedAsset" abstract="false" name="ReverseRepurchaseAgreementsAndSecuritiesBorrowedAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_RepurchaseAgreementsAndSecuritiesLendingFairValueAmountNotOffsetAgainstCollateral" abstract="false" name="RepurchaseAgreementsAndSecuritiesLendingFairValueAmountNotOffsetAgainstCollateral" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_RepurchaseAgreementsAndSecuritiesLoanedCollateralRightToReclaimCash" abstract="false" name="RepurchaseAgreementsAndSecuritiesLoanedCollateralRightToReclaimCash" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_RepurchaseAgreementsAndSecuritiesLoanedAmountOffsetAgainstCollateral" abstract="false" name="RepurchaseAgreementsAndSecuritiesLoanedAmountOffsetAgainstCollateral" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellAndSecuritiesLoanedNotOffsetAgainstCollateral" abstract="false" name="DerivativeLiabilitySecuritiesSoldUnderAgreementsToResellAndSecuritiesLoanedNotOffsetAgainstCollateral" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_SecuritiesFinanceCollateralObligationtoReturnCash" abstract="false" name="SecuritiesFinanceCollateralObligationtoReturnCash" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_AggregateFairValueOfIndemnifiedSecuritiesOnLoan" abstract="false" name="AggregateFairValueOfIndemnifiedSecuritiesOnLoan" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_StandByLettersOfCredit" abstract="false" name="StandByLettersOfCredit" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_AggregateFairValueOfCashAndSecuritiesHeldAsCollateralForIndemnifiedSecurities" abstract="false" name="AggregateFairValueOfCashAndSecuritiesHeldAsCollateralForIndemnifiedSecurities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_CollateralforIndemnifiedSecuritiesInvestedinIndemnifiedRepurchaseAgreements" abstract="false" name="CollateralforIndemnifiedSecuritiesInvestedinIndemnifiedRepurchaseAgreements" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_AggregateFairValueOfCashAndSecuritiesHeldAsCollateralForIndemnifiedRepurchaseAgreements" abstract="false" name="AggregateFairValueOfCashAndSecuritiesHeldAsCollateralForIndemnifiedRepurchaseAgreements" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_UnfundedCommitmentsToExtendCreditShortTerm" abstract="false" name="UnfundedCommitmentsToExtendCreditShortTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_UnfundedCommitmenttoExtendCreditTerm" abstract="false" name="UnfundedCommitmenttoExtendCreditTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="stt_GomesVStateStreetCorpMember" abstract="true" name="GomesVStateStreetCorpMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_EdmarFinancialCompanyLLCVCurrenexIncMember" abstract="true" name="EdmarFinancialCompanyLLCVCurrenexIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_U.S.DepartmentOfTreasurysOfficeOfForeignAssetsControlOFACMember" abstract="true" name="U.S.DepartmentOfTreasurysOfficeOfForeignAssetsControlOFACMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_StateOfTexasEtAlV.BlackrockInc.EtAlMember" abstract="true" name="StateOfTexasEtAlV.BlackrockInc.EtAlMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_LowIncomeHousingProductionAndInvestmentTaxCreditEntitiesMember" abstract="true" name="LowIncomeHousingProductionAndInvestmentTaxCreditEntitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_LowIncomeHousingTaxCreditMember" abstract="true" name="LowIncomeHousingTaxCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_ProductionTaxCreditMember" abstract="true" name="ProductionTaxCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_ContingentCommitmentForTaxCreditInvestmentsMember" abstract="true" name="ContingentCommitmentForTaxCreditInvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_DeferredContributionPayments" abstract="false" name="DeferredContributionPayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_SeriesIPreferredStockDepositoryShareMember" abstract="true" name="SeriesIPreferredStockDepositoryShareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_SeriesJPreferredStockDepositoryShareMember" abstract="true" name="SeriesJPreferredStockDepositoryShareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_SeriesKPreferredStockMember" abstract="true" name="SeriesKPreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_DepositarySharesOwnershipInterestinPreferredStock" abstract="false" name="DepositarySharesOwnershipInterestinPreferredStock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_PreferredStockDividendPaymentRateBasisSpreadOnVariableRate" abstract="false" name="PreferredStockDividendPaymentRateBasisSpreadOnVariableRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_PreferredStockDividendPaymentRateResetPeriod" abstract="false" name="PreferredStockDividendPaymentRateResetPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="stt_SeriesDPreferredStockDepositoryShareMember" abstract="true" name="SeriesDPreferredStockDepositoryShareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_SeriesFPreferredStockDepositoryShareMember" abstract="true" name="SeriesFPreferredStockDepositoryShareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_SeriesHPreferredStockDepositoryShareMember" abstract="true" name="SeriesHPreferredStockDepositoryShareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_SeriesKPreferredStockDepositoryShareMember" abstract="true" name="SeriesKPreferredStockDepositoryShareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_A2023ShareRepurchaseProgramMember" abstract="true" name="A2023ShareRepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A2024ShareRepurchaseProgramMember" abstract="true" name="A2024ShareRepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="stt_AccumulatedNetUnrealizedGainLossOnNetInvestmentHedgingMember" abstract="true" name="AccumulatedNetUnrealizedGainLossOnNetInvestmentHedgingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_AOCIAccumulatedGainLossDebtSecuritiesAvailableForSaleTransferredToHeldToMaturityParentMember" abstract="true" name="AOCIAccumulatedGainLossDebtSecuritiesAvailableForSaleTransferredToHeldToMaturityParentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OCIDebtSecuritiesAvailableForSaleAmortizationOfNetUnrealizedGainLossBeforeAdjustmentTax" abstract="false" name="OCIDebtSecuritiesAvailableForSaleAmortizationOfNetUnrealizedGainLossBeforeAdjustmentTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_OtherComprehensiveIncomeLossDefinedBenefitPlanActuarialLossesBeforeReclassificationAdjustmentTax" abstract="false" name="OtherComprehensiveIncomeLossDefinedBenefitPlanActuarialLossesBeforeReclassificationAdjustmentTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_RegulatoryCapitalrequirementsforBankingOrganizationsbyImplementationApproachesAxis" abstract="true" name="RegulatoryCapitalrequirementsforBankingOrganizationsbyImplementationApproachesAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="stt_RegulatoryCapitalrequirementsforBankingOrganizationsbyImplementationApproachesDomain" abstract="true" name="RegulatoryCapitalrequirementsforBankingOrganizationsbyImplementationApproachesDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_BaselIIIAdvancedApproachMember" abstract="true" name="BaselIIIAdvancedApproachMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_BaselIIIstandardizedApproachMember" abstract="true" name="BaselIIIstandardizedApproachMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_TotalCommonStockandRelatedSurplus" abstract="false" name="TotalCommonStockandRelatedSurplus" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_AccumulatedOtherComprehensiveIncomeLossNetOfTaxAsAdjusted" abstract="false" name="AccumulatedOtherComprehensiveIncomeLossNetOfTaxAsAdjusted" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_TreasuryStockValueExcludingPreferredShares" abstract="false" name="TreasuryStockValueExcludingPreferredShares" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_StockholdersEquityAttributabletoParentExcludingPreferredSharesAsAdjusted" abstract="false" name="StockholdersEquityAttributabletoParentExcludingPreferredSharesAsAdjusted" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_RiskBasedCapitalAdjustmentGoodwillandOtherIntangibleAssetsNetofAssociatedDeferredTaxLiabilitiesasAdjusted" abstract="false" name="RiskBasedCapitalAdjustmentGoodwillandOtherIntangibleAssetsNetofAssociatedDeferredTaxLiabilitiesasAdjusted" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_RiskBasedCapitalAdjustmentCommonEquityTierOneCapitalOther" abstract="false" name="RiskBasedCapitalAdjustmentCommonEquityTierOneCapitalOther" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_TierOneCommonRiskBasedCapital" abstract="false" name="TierOneCommonRiskBasedCapital" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_TotalCapitalQualifyingSubordinatedLongTermDebt" abstract="false" name="TotalCapitalQualifyingSubordinatedLongTermDebt" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_TotalCapitalALLLandOther" abstract="false" name="TotalCapitalALLLandOther" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_RiskWeightedAssetsCreditRisk" abstract="false" name="RiskWeightedAssetsCreditRisk" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_RiskWeightedAssetsOperationalRisk" abstract="false" name="RiskWeightedAssetsOperationalRisk" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_RiskWeightedAssetsMarketRiskEquivalents" abstract="false" name="RiskWeightedAssetsMarketRiskEquivalents" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_TotalRiskWeightedAssets" abstract="false" name="TotalRiskWeightedAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_AdjustedQuarterlyAverageAssets" abstract="false" name="AdjustedQuarterlyAverageAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_TierOneCommonRiskBasedCapitalRequiredforCapitalAdequacytoRiskWeightedAssets" abstract="false" name="TierOneCommonRiskBasedCapitalRequiredforCapitalAdequacytoRiskWeightedAssets" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_TierOneCommonRiskBasedCapitaltoTotalRiskWeightedAssets" abstract="false" name="TierOneCommonRiskBasedCapitaltoTotalRiskWeightedAssets" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_BankingRegulationStressCapitalBuffer" abstract="false" name="BankingRegulationStressCapitalBuffer" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_InterestIncomeAbstract" abstract="true" name="InterestIncomeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="stt_InterestIncomeInvestmentSecuritiesAbstract" abstract="true" name="InterestIncomeInvestmentSecuritiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="stt_InterestIncomeInvestmentSecuritiesAvailableForSale" abstract="false" name="InterestIncomeInvestmentSecuritiesAvailableForSale" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_InterestIncomeInvestmentSecuritiesHeldToMaturity" abstract="false" name="InterestIncomeInvestmentSecuritiesHeldToMaturity" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_InterestIncomeInvestmentSecurities" abstract="false" name="InterestIncomeInvestmentSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_InterestEarningAssetsOther" abstract="false" name="InterestEarningAssetsOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_OtherInterestEarningLiabilities" abstract="false" name="OtherInterestEarningLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_A2017StockIncentivePlanMember" abstract="true" name="A2017StockIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_A2006EquityIncentivePlanMember" abstract="true" name="A2006EquityIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_DeferredStockAwardsAndPerformanceSharesMember" abstract="true" name="DeferredStockAwardsAndPerformanceSharesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_DeferredStockAwardsMember" abstract="true" name="DeferredStockAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_ShareBasedPaymentArrangementCashSettledStockAwardsMember" abstract="true" name="ShareBasedPaymentArrangementCashSettledStockAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_ShareBasedCompensationArrangementByShareBasedPaymentAwardCumulativeNumberOfSharesAwarded" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardCumulativeNumberOfSharesAwarded" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="stt_SharebasedCompensationArrangementbySharebasedPaymentAwardNumberofSharesNotDeliveredAvailableforReissue" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardNumberofSharesNotDeliveredAvailableforReissue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="stt_ExpenseAssociatedWithExpenseAccelerationInConnectionWithRestructuringPlan" abstract="false" name="ExpenseAssociatedWithExpenseAccelerationInConnectionWithRestructuringPlan" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_PaidOutShares" abstract="false" name="PaidOutShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="stt_PaidOutWeightedAverageGrantDateFairValue" abstract="false" name="PaidOutWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="stt_DefinedBenefitPlanNumberofEmployeesEligible" abstract="false" name="DefinedBenefitPlanNumberofEmployeesEligible" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="stt_ExpensesTable" abstract="true" name="ExpensesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="stt_ExpensesLineItems" abstract="true" name="ExpensesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="stt_DepreciationAndLeaseRightOfUseAssetAmortization" abstract="false" name="DepreciationAndLeaseRightOfUseAssetAmortization" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_FinanceLeaseExpense" abstract="false" name="FinanceLeaseExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_FinanceLeaseExpenseNet" abstract="false" name="FinanceLeaseExpenseNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_OperatingLeaseCostNet" abstract="false" name="OperatingLeaseCostNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_LeaseLiabilityPaymentsDueNextTwelveMonths" abstract="false" name="LeaseLiabilityPaymentsDueNextTwelveMonths" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_LeaseLiabilityPaymentsDueYearTwo" abstract="false" name="LeaseLiabilityPaymentsDueYearTwo" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_LeaseLiabilityPaymentsDueYearThree" abstract="false" name="LeaseLiabilityPaymentsDueYearThree" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_LeaseLiabilityPaymentsDueYearFour" abstract="false" name="LeaseLiabilityPaymentsDueYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_LeaseLiabilityPaymentsDueYearFive" abstract="false" name="LeaseLiabilityPaymentsDueYearFive" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_LeaseLiabilityPaymentsDueAfterYearFive" abstract="false" name="LeaseLiabilityPaymentsDueAfterYearFive" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_LeaseLiabilityPaymentsDue" abstract="false" name="LeaseLiabilityPaymentsDue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_LeaseLiabilityUndiscountedExcessAmount" abstract="false" name="LeaseLiabilityUndiscountedExcessAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_LeaseLiability" abstract="false" name="LeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_LeaseWeightedAverageRemainingLeaseTermAbstract" abstract="true" name="LeaseWeightedAverageRemainingLeaseTermAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="stt_LeaseWeightedAverageDiscountRateAbstract" abstract="true" name="LeaseWeightedAverageDiscountRateAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="stt_RegulatoryFeesandAssessments" abstract="false" name="RegulatoryFeesandAssessments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_SecuritiesProcessingExpense" abstract="false" name="SecuritiesProcessingExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_BankOperationsExpense" abstract="false" name="BankOperationsExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DonationsExpense" abstract="false" name="DonationsExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_FDICSpecialAssessmentRecoveryOfEstimatedLosses" abstract="false" name="FDICSpecialAssessmentRecoveryOfEstimatedLosses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_EffectiveIncomeTaxRateReconciliationTaxCreditForeignLimitationsPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationTaxCreditForeignLimitationsPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_DeferredTaxAssetsOtherAmortizableAssets" abstract="false" name="DeferredTaxAssetsOtherAmortizableAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsLeaseLiability" abstract="false" name="DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsLeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DeferredTaxAssetsOperatingLossandOtherCarryforwards" abstract="false" name="DeferredTaxAssetsOperatingLossandOtherCarryforwards" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DeferredTaxAssetsForeignCurrencyTranslation" abstract="false" name="DeferredTaxAssetsForeignCurrencyTranslation" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DeferredTaxAssetsUnrealizedLossesOnAvailableForSaleSecuritiesNet" abstract="false" name="DeferredTaxAssetsUnrealizedLossesOnAvailableForSaleSecuritiesNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DeferredTaxLiabilitiesFixedAndIntangibleAssets" abstract="false" name="DeferredTaxLiabilitiesFixedAndIntangibleAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_OtherAmortizableAssetsMember" abstract="true" name="OtherAmortizableAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OperatingLossCarryforwardsForeignMember" abstract="true" name="OperatingLossCarryforwardsForeignMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OperatingLossCarryforwardsStateandLocalMember" abstract="true" name="OperatingLossCarryforwardsStateandLocalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_OtherTaxCarryforwardsMember" abstract="true" name="OtherTaxCarryforwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_UnrecognizedTaxBenefitsIncreaseDecreaseResultingFromPriorPeriodTaxPositions" abstract="false" name="UnrecognizedTaxBenefitsIncreaseDecreaseResultingFromPriorPeriodTaxPositions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_DividendsAndUndistributedEarningsAllocatedToParticipatingSecurities" abstract="false" name="DividendsAndUndistributedEarningsAllocatedToParticipatingSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_StockOptionsAndStockAwards" abstract="false" name="StockOptionsAndStockAwards" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="stt_InvestmentServicingandInvestmentManagementMember" abstract="true" name="InvestmentServicingandInvestmentManagementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_InvestmentServicingandManagementServicesMember" abstract="true" name="InvestmentServicingandManagementServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_ProcessingandOtherServicesMember" abstract="true" name="ProcessingandOtherServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_PercentageOfConsolidatedRevenuesBySegment" abstract="false" name="PercentageOfConsolidatedRevenuesBySegment" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_PreTaxMargin" abstract="false" name="PreTaxMargin" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="stt_TotalAverageAssets" abstract="false" name="TotalAverageAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_FDICSpecialAssessment" abstract="false" name="FDICSpecialAssessment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_AccountServicingMember" abstract="true" name="AccountServicingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_ManagementServicesMember" abstract="true" name="ManagementServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_ForeignExchangeTradingServicesMember" abstract="true" name="ForeignExchangeTradingServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_SecuritiesFinancingServicesMember" abstract="true" name="SecuritiesFinancingServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_ProcessingServicesandOtherMember" abstract="true" name="ProcessingServicesandOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_RevenueFromFeesMember" abstract="true" name="RevenueFromFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_TotalOtherIncomeMember" abstract="true" name="TotalOtherIncomeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_SoftwareLicenseSalesSaaSMember" abstract="true" name="SoftwareLicenseSalesSaaSMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="stt_CashDividendsFromConsolidatedBankingSubsidiary" abstract="false" name="CashDividendsFromConsolidatedBankingSubsidiary" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_CashDividendsFromConsolidatedNonBankingSubsidiariesAndUnconsolidatedEntities" abstract="false" name="CashDividendsFromConsolidatedNonBankingSubsidiariesAndUnconsolidatedEntities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_OtherRevenue" abstract="false" name="OtherRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_IncomeLossBeforeEquityInUndistributedIncomeOfConsolidatedSubsidiariesAndUnconsolidatedEntities" abstract="false" name="IncomeLossBeforeEquityInUndistributedIncomeOfConsolidatedSubsidiariesAndUnconsolidatedEntities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_EquityInUndistributedIncomeOfConsolidatedSubsidiariesAndUnconsolidatedEntitiesAbstract" abstract="true" name="EquityInUndistributedIncomeOfConsolidatedSubsidiariesAndUnconsolidatedEntitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="stt_ConsolidatedBankingSubsidiary" abstract="false" name="ConsolidatedBankingSubsidiary" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_ConsolidatedNonBankingSubsidiariesAndUnconsolidatedEntities" abstract="false" name="ConsolidatedNonBankingSubsidiariesAndUnconsolidatedEntities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_InvestmentsInSubsidiariesConsolidatedBankingSubsidiaries" abstract="false" name="InvestmentsInSubsidiariesConsolidatedBankingSubsidiaries" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_InvestmentsInSubsidiariesConsolidatedNonBankingSubsidiary" abstract="false" name="InvestmentsInSubsidiariesConsolidatedNonBankingSubsidiary" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_InvestmentsInSubsidiariesUnconsolidatedEntities" abstract="false" name="InvestmentsInSubsidiariesUnconsolidatedEntities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_NotesAndOtherReceivablesConsolidatedBankingSubsidiary" abstract="false" name="NotesAndOtherReceivablesConsolidatedBankingSubsidiary" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_NotesAndOtherReceivablesConsolidatedNonBankingSubsidiariesAndUnconsolidatedEntities" abstract="false" name="NotesAndOtherReceivablesConsolidatedNonBankingSubsidiariesAndUnconsolidatedEntities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_NotesAndOtherPayablesConsolidatedBankingSubsidiary" abstract="false" name="NotesAndOtherPayablesConsolidatedBankingSubsidiary" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_NotesAndOtherPayablesConsolidatedNonBankingSubsidiariesAndUnconsolidatedEntities" abstract="false" name="NotesAndOtherPayablesConsolidatedNonBankingSubsidiariesAndUnconsolidatedEntities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_AccruedTaxesExpensesAndOtherLiabilitiesDueToThirdParties" abstract="false" name="AccruedTaxesExpensesAndOtherLiabilitiesDueToThirdParties" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_InvestmentsInNonBankingSubsidiariesAndUnconsolidatedEntities" abstract="false" name="InvestmentsInNonBankingSubsidiariesAndUnconsolidatedEntities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="stt_SaleOfInvestmentInNonBankingSubsidiariesAndUnconsolidatedEntities" abstract="false" name="SaleOfInvestmentInNonBankingSubsidiariesAndUnconsolidatedEntities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:b5749b69-97d2-485a-9fad-d2ab28628e4a,g:b400ee77-523e-4e67-bd58-2c2e1c5532a7-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:txg="http://www.10xgenomics.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.10xgenomics.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="txg-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="txg-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="txg-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="txg-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.10xgenomics.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.10xgenomics.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.10xgenomics.com/role/ConsolidatedBalanceSheets">
+        <link:definition>9952151 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.10xgenomics.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>9952152 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofOperations" roleURI="http://www.10xgenomics.com/role/ConsolidatedStatementsofOperations">
+        <link:definition>9952153 - Statement - Consolidated Statements of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveLoss" roleURI="http://www.10xgenomics.com/role/ConsolidatedStatementsofComprehensiveLoss">
+        <link:definition>9952154 - Statement - Consolidated Statements of Comprehensive Loss</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofStockholdersEquity" roleURI="http://www.10xgenomics.com/role/ConsolidatedStatementsofStockholdersEquity">
+        <link:definition>9952155 - Statement - Consolidated Statements of Stockholders&#8217; Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://www.10xgenomics.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>9952156 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandBasisofPresentation" roleURI="http://www.10xgenomics.com/role/DescriptionofBusinessandBasisofPresentation">
+        <link:definition>9952157 - Disclosure - Description of Business and Basis of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.10xgenomics.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>9952158 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Restructuring" roleURI="http://www.10xgenomics.com/role/Restructuring">
+        <link:definition>9952159 - Disclosure - Restructuring</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Acquisitions" roleURI="http://www.10xgenomics.com/role/Acquisitions">
+        <link:definition>9952160 - Disclosure - Acquisitions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformation" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformation">
+        <link:definition>9952161 - Disclosure - Other Financial Statement Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTax" roleURI="http://www.10xgenomics.com/role/IncomeTax">
+        <link:definition>9952162 - Disclosure - Income Tax</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.10xgenomics.com/role/CommitmentsandContingencies">
+        <link:definition>9952163 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStock" roleURI="http://www.10xgenomics.com/role/CapitalStock">
+        <link:definition>9952164 - Disclosure - Capital Stock</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentivePlans" roleURI="http://www.10xgenomics.com/role/EquityIncentivePlans">
+        <link:definition>9952165 - Disclosure - Equity Incentive Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlans" roleURI="http://www.10xgenomics.com/role/EmployeeBenefitPlans">
+        <link:definition>9952166 - Disclosure - Employee Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetLossPerShare" roleURI="http://www.10xgenomics.com/role/NetLossPerShare">
+        <link:definition>9952167 - Disclosure - Net Loss Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.10xgenomics.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesTables" roleURI="http://www.10xgenomics.com/role/SummaryofSignificantAccountingPoliciesTables">
+        <link:definition>9955512 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringTables" roleURI="http://www.10xgenomics.com/role/RestructuringTables">
+        <link:definition>9955513 - Disclosure - Restructuring (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsTables" roleURI="http://www.10xgenomics.com/role/AcquisitionsTables">
+        <link:definition>9955514 - Disclosure - Acquisitions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationTables" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationTables">
+        <link:definition>9955515 - Disclosure - Other Financial Statement Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxTables" roleURI="http://www.10xgenomics.com/role/IncomeTaxTables">
+        <link:definition>9955516 - Disclosure - Income Tax (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesTables" roleURI="http://www.10xgenomics.com/role/CommitmentsandContingenciesTables">
+        <link:definition>9955517 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStockTables" roleURI="http://www.10xgenomics.com/role/CapitalStockTables">
+        <link:definition>9955518 - Disclosure - Capital Stock (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentivePlansTables" roleURI="http://www.10xgenomics.com/role/EquityIncentivePlansTables">
+        <link:definition>9955519 - Disclosure - Equity Incentive Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetLossPerShareTables" roleURI="http://www.10xgenomics.com/role/NetLossPerShareTables">
+        <link:definition>9955520 - Disclosure - Net Loss Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesAdditionalInformationDetail" roleURI="http://www.10xgenomics.com/role/SummaryofSignificantAccountingPoliciesAdditionalInformationDetail">
+        <link:definition>9955521 - Disclosure - Summary of Significant Accounting Policies - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesCashEquivalentsandRestrictedCashDetail" roleURI="http://www.10xgenomics.com/role/SummaryofSignificantAccountingPoliciesCashEquivalentsandRestrictedCashDetail">
+        <link:definition>9955522 - Disclosure - Summary of Significant Accounting Policies - Cash Equivalents and Restricted Cash (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesScheduleofEstimatedUsefulLifeofCompanyPropertyandEquipmentDetails" roleURI="http://www.10xgenomics.com/role/SummaryofSignificantAccountingPoliciesScheduleofEstimatedUsefulLifeofCompanyPropertyandEquipmentDetails">
+        <link:definition>9955523 - Disclosure - Summary of Significant Accounting Policies - Schedule of Estimated Useful Life of Company Property and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringNarrativeDetails" roleURI="http://www.10xgenomics.com/role/RestructuringNarrativeDetails">
+        <link:definition>9955524 - Disclosure - Restructuring - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringRestructuringCostsRelatedtoRestructuringDetails" roleURI="http://www.10xgenomics.com/role/RestructuringRestructuringCostsRelatedtoRestructuringDetails">
+        <link:definition>9955525 - Disclosure - Restructuring - Restructuring Costs Related to Restructuring (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsAdditionalInformationDetail" roleURI="http://www.10xgenomics.com/role/AcquisitionsAdditionalInformationDetail">
+        <link:definition>9955526 - Disclosure - Acquisitions - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsScheduleofAssetsAcquiredandLiabilitiesAssumedDetail" roleURI="http://www.10xgenomics.com/role/AcquisitionsScheduleofAssetsAcquiredandLiabilitiesAssumedDetail">
+        <link:definition>9955527 - Disclosure - Acquisitions - Schedule of Assets Acquired and Liabilities Assumed (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationAvailableforSaleSecuritiesDetails" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationAvailableforSaleSecuritiesDetails">
+        <link:definition>9955528 - Disclosure - Other Financial Statement Information - Available-for-Sale Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationAdditionalInformationDetail" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationAdditionalInformationDetail">
+        <link:definition>9955529 - Disclosure - Other Financial Statement Information - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationAdditionalInformationDetail_1" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationAdditionalInformationDetail_1">
+        <link:definition>9955529 - Disclosure - Other Financial Statement Information - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationScheduleofInventoryDetail" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationScheduleofInventoryDetail">
+        <link:definition>9955530 - Disclosure - Other Financial Statement Information - Schedule of Inventory (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationScheduleofPropertyandEquipmentDetail" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationScheduleofPropertyandEquipmentDetail">
+        <link:definition>9955531 - Disclosure - Other Financial Statement Information - Schedule of Property and Equipment (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationIntangibleAssetsNetDetail" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationIntangibleAssetsNetDetail">
+        <link:definition>9955532 - Disclosure - Other Financial Statement Information - Intangible Assets, Net (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationAnnualAmortizationofIntangibleAssetsDetail" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationAnnualAmortizationofIntangibleAssetsDetail">
+        <link:definition>9955533 - Disclosure - Other Financial Statement Information - Annual Amortization of Intangible Assets (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationScheduleofAccruedCompensationandRelatedBenefitsDetail" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationScheduleofAccruedCompensationandRelatedBenefitsDetail">
+        <link:definition>9955534 - Disclosure - Other Financial Statement Information - Schedule of Accrued Compensation and Related Benefits (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationScheduleofAccruedExpenseandOtherCurrentLiabilitiesDetail" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationScheduleofAccruedExpenseandOtherCurrentLiabilitiesDetail">
+        <link:definition>9955535 - Disclosure - Other Financial Statement Information - Schedule of Accrued Expense and Other Current Liabilities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationScheduleofChangesintheReserveforProductWarrantiesDetail" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationScheduleofChangesintheReserveforProductWarrantiesDetail">
+        <link:definition>9955536 - Disclosure - Other Financial Statement Information - Schedule of Changes in the Reserve for Product Warranties (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationSummaryoftheChangeinContractLiabilitiesDetail" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationSummaryoftheChangeinContractLiabilitiesDetail">
+        <link:definition>9955537 - Disclosure - Other Financial Statement Information - Summary of the Change in Contract Liabilities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationScheduleofRevenuebySourceDetails" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationScheduleofRevenuebySourceDetails">
+        <link:definition>9955538 - Disclosure - Other Financial Statement Information - Schedule of Revenue by Source (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialStatementInformationScheduleofRevenuebyGeographicRegionDetails" roleURI="http://www.10xgenomics.com/role/OtherFinancialStatementInformationScheduleofRevenuebyGeographicRegionDetails">
+        <link:definition>9955539 - Disclosure - Other Financial Statement Information - Schedule of Revenue by Geographic Region (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxScheduleofIncomeLossBeforeProvisionforIncomeTaxesDetail" roleURI="http://www.10xgenomics.com/role/IncomeTaxScheduleofIncomeLossBeforeProvisionforIncomeTaxesDetail">
+        <link:definition>9955540 - Disclosure - Income Tax - Schedule of Income (Loss) Before Provision for Income Taxes (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxProvisionforIncomeTaxesDetails" roleURI="http://www.10xgenomics.com/role/IncomeTaxProvisionforIncomeTaxesDetails">
+        <link:definition>9955541 - Disclosure - Income Tax - Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxScheduleofReconciliationoftheFederalStatutoryIncomeTaxProvisionDetail" roleURI="http://www.10xgenomics.com/role/IncomeTaxScheduleofReconciliationoftheFederalStatutoryIncomeTaxProvisionDetail">
+        <link:definition>9955542 - Disclosure - Income Tax - Schedule of Reconciliation of the Federal Statutory Income Tax Provision (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxScheduleofMajorComponentsofDeferredTaxAssetsandLiabilitiesDetail" roleURI="http://www.10xgenomics.com/role/IncomeTaxScheduleofMajorComponentsofDeferredTaxAssetsandLiabilitiesDetail">
+        <link:definition>9955543 - Disclosure - Income Tax - Schedule of Major Components of Deferred Tax Assets and Liabilities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxAdditionalInformationDetail" roleURI="http://www.10xgenomics.com/role/IncomeTaxAdditionalInformationDetail">
+        <link:definition>9955544 - Disclosure - Income Tax - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxScheduleOfUnrecognizedGrossTaxBenefitsDetail" roleURI="http://www.10xgenomics.com/role/IncomeTaxScheduleOfUnrecognizedGrossTaxBenefitsDetail">
+        <link:definition>9955545 - Disclosure - Income Tax - Schedule Of Unrecognized Gross Tax Benefits (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesAdditionalInformationDetails" roleURI="http://www.10xgenomics.com/role/CommitmentsandContingenciesAdditionalInformationDetails">
+        <link:definition>9955546 - Disclosure - Commitments and Contingencies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesScheduleofCompanysOperatingLeaseLiabilitiesDetails" roleURI="http://www.10xgenomics.com/role/CommitmentsandContingenciesScheduleofCompanysOperatingLeaseLiabilitiesDetails">
+        <link:definition>9955547 - Disclosure - Commitments and Contingencies - Schedule of Company's Operating Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesScheduleofAdditionalInformationRelatedtoOperatingLeasesDetails" roleURI="http://www.10xgenomics.com/role/CommitmentsandContingenciesScheduleofAdditionalInformationRelatedtoOperatingLeasesDetails">
+        <link:definition>9955548 - Disclosure - Commitments and Contingencies - Schedule of Additional Information Related to Operating Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStockAdditionalInformationDetail" roleURI="http://www.10xgenomics.com/role/CapitalStockAdditionalInformationDetail">
+        <link:definition>9955549 - Disclosure - Capital Stock - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStockScheduleofCommonStockIssuedandOutstandingDetails" roleURI="http://www.10xgenomics.com/role/CapitalStockScheduleofCommonStockIssuedandOutstandingDetails">
+        <link:definition>9955550 - Disclosure - Capital Stock - Schedule of Common Stock Issued and Outstanding (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentivePlansAdditionalInformationDetail" roleURI="http://www.10xgenomics.com/role/EquityIncentivePlansAdditionalInformationDetail">
+        <link:definition>9955551 - Disclosure - Equity Incentive Plans - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentivePlansScheduleofShareBasedPaymentAwardStockOptionsValuationAssumptionsDetail" roleURI="http://www.10xgenomics.com/role/EquityIncentivePlansScheduleofShareBasedPaymentAwardStockOptionsValuationAssumptionsDetail">
+        <link:definition>9955552 - Disclosure - Equity Incentive Plans - Schedule of Share-Based Payment Award, Stock Options, Valuation Assumptions (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentivePlansScheduleofStockOptionValuationAssumptionsDetail" roleURI="http://www.10xgenomics.com/role/EquityIncentivePlansScheduleofStockOptionValuationAssumptionsDetail">
+        <link:definition>9955553 - Disclosure - Equity Incentive Plans - Schedule of Stock Option Valuation Assumptions (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentivePlansScheduleofRSUActivityDetail" roleURI="http://www.10xgenomics.com/role/EquityIncentivePlansScheduleofRSUActivityDetail">
+        <link:definition>9955554 - Disclosure - Equity Incentive Plans - Schedule of RSU Activity (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentivePlansFairValuesofSharesUnderthePerformanceStockOptionsDetails" roleURI="http://www.10xgenomics.com/role/EquityIncentivePlansFairValuesofSharesUnderthePerformanceStockOptionsDetails">
+        <link:definition>9955555 - Disclosure - Equity Incentive Plans - Fair Values of Shares Under the Performance Stock Options (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentivePlansScheduleofShareBasedPaymentAwardStockOptionsValuationAssumptionsDetails" roleURI="http://www.10xgenomics.com/role/EquityIncentivePlansScheduleofShareBasedPaymentAwardStockOptionsValuationAssumptionsDetails">
+        <link:definition>9955556 - Disclosure - Equity Incentive Plans - Schedule of Share-Based Payment Award, Stock Options, Valuation Assumptions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentivePlansScheduleofFairvalueoftheEmployeeStockPurchasePlanDetails" roleURI="http://www.10xgenomics.com/role/EquityIncentivePlansScheduleofFairvalueoftheEmployeeStockPurchasePlanDetails">
+        <link:definition>9955557 - Disclosure - Equity Incentive Plans - Schedule of Fair value of the Employee Stock Purchase Plan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentivePlansScheduleofRecordedStockBasedCompensationExpenseintheCondensedConsolidatedStatementofOperationsDetails" roleURI="http://www.10xgenomics.com/role/EquityIncentivePlansScheduleofRecordedStockBasedCompensationExpenseintheCondensedConsolidatedStatementofOperationsDetails">
+        <link:definition>9955558 - Disclosure - Equity Incentive Plans - Schedule of Recorded Stock-Based Compensation Expense in the Condensed Consolidated Statement of Operations (Details))</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansDetails" roleURI="http://www.10xgenomics.com/role/EmployeeBenefitPlansDetails">
+        <link:definition>9955559 - Disclosure - Employee Benefit Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetLossPerShareDetail" roleURI="http://www.10xgenomics.com/role/NetLossPerShareDetail">
+        <link:definition>9955560 - Disclosure - Net Loss Per Share (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="txg_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="txg_AccruedExpensesAndOtherLiabilitiesCurrent" abstract="false" name="AccruedExpensesAndOtherLiabilitiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_InProcessResearchAndDevelopment" abstract="false" name="InProcessResearchAndDevelopment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_AdjustmentsToAdditionalPaidInCapitalVestingOfSharesIncludingEarlyExerciseOfOptions" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalVestingOfSharesIncludingEarlyExerciseOfOptions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_IncreaseDecreaseInAccruedLiabilitiesAndOtherCurrentLiabilities" abstract="false" name="IncreaseDecreaseInAccruedLiabilitiesAndOtherCurrentLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_BusinessConcentrationPolicyTextBlock" abstract="false" name="BusinessConcentrationPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="txg_DeferredRevenuePolicyTextBlock" abstract="false" name="DeferredRevenuePolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="txg_ShippingCostAndHandlingCostPolicyPolicyTextBlock" abstract="false" name="ShippingCostAndHandlingCostPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="txg_ScheduleOfCashAndCashEquivalentsAndRestrictedCashTableTextBlock" abstract="false" name="ScheduleOfCashAndCashEquivalentsAndRestrictedCashTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="txg_ScheduleOfFiniteLivedIntangibleAssetsAmortizationExpenseTableTextBlock" abstract="false" name="ScheduleOfFiniteLivedIntangibleAssetsAmortizationExpenseTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="txg_ScheduleOfAccruedCompensationandRelatedBenefitsTableTextBlock" abstract="false" name="ScheduleOfAccruedCompensationandRelatedBenefitsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="txg_ScheduleOfAccruedLiabilitiesAndOtherCurrentLiabilitiesTableTextBlock" abstract="false" name="ScheduleOfAccruedLiabilitiesAndOtherCurrentLiabilitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="txg_DisclosureOfAdditionalInformationRelatedToOperatingLeasesTableTextBlock" abstract="false" name="DisclosureOfAdditionalInformationRelatedToOperatingLeasesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="txg_ImpairmentLongLivedAssetHeldForUseStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" abstract="false" name="ImpairmentLongLivedAssetHeldForUseStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="txg_CostOfRevenueMember" abstract="true" name="CostOfRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_LongLivedAssetsImpairmentExpensesMember" abstract="true" name="LongLivedAssetsImpairmentExpensesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="txg_RestructuringIncurredCostStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" abstract="false" name="RestructuringIncurredCostStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="txg_A2023AcquisitionMember" abstract="true" name="A2023AcquisitionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="txg_AssetAcquisitionMilestonePaymentMade" abstract="false" name="AssetAcquisitionMilestonePaymentMade" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_AssetAcquisitionPropertyAndEquipment" abstract="false" name="AssetAcquisitionPropertyAndEquipment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_AssetAcquisitionOperatingLeaseLiabilities" abstract="false" name="AssetAcquisitionOperatingLeaseLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_AssetAcquisitionAssetsAndLiabilitiesOther" abstract="false" name="AssetAcquisitionAssetsAndLiabilitiesOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_AssetAcquisitionAssetsAcquiredAndLiabilitiesAssumedNet" abstract="false" name="AssetAcquisitionAssetsAcquiredAndLiabilitiesAssumedNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_DebtSecuritiesAvailableForSaleAmortizedCostIncludingMoneyMarketFunds" abstract="false" name="DebtSecuritiesAvailableForSaleAmortizedCostIncludingMoneyMarketFunds" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_DebtSecuritiesAvailableForSaleIncludingMoneyMarketFunds" abstract="false" name="DebtSecuritiesAvailableForSaleIncludingMoneyMarketFunds" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_TechnologyLicensesMember" abstract="true" name="TechnologyLicensesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_AssembledWorkforceMember" abstract="true" name="AssembledWorkforceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_AccruedPayrollAndRelatedCosts" abstract="false" name="AccruedPayrollAndRelatedCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_AccruedCommissionsCurrent" abstract="false" name="AccruedCommissionsCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_AccruedPurchaseConsiderationCurrent" abstract="false" name="AccruedPurchaseConsiderationCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_AccruedLegalAndRelatedExpensesCurrent" abstract="false" name="AccruedLegalAndRelatedExpensesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_AccruedPropertyAndEquipmentCurrent" abstract="false" name="AccruedPropertyAndEquipmentCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_ContractWithCustomerLiabilityRollForward" abstract="true" name="ContractWithCustomerLiabilityRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="txg_ContractWithCustomerLiabilityIncreaseExcludingRevenueRecognized" abstract="false" name="ContractWithCustomerLiabilityIncreaseExcludingRevenueRecognized" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_InstrumentsMember" abstract="true" name="InstrumentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_ChromiumInstrumentsMember" abstract="true" name="ChromiumInstrumentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_SpatialInstrumentsMember" abstract="true" name="SpatialInstrumentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_ConsumablesMember" abstract="true" name="ConsumablesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_ChromiumConsumablesMember" abstract="true" name="ChromiumConsumablesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_SpatialConsumablesMember" abstract="true" name="SpatialConsumablesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_AmericasExcludingUnitedStatesMember" abstract="true" name="AmericasExcludingUnitedStatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_AsiaPacificExcludingChinaMember" abstract="true" name="AsiaPacificExcludingChinaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_IncomeTaxReconciliationAcquisitionRelatedExpenses" abstract="false" name="IncomeTaxReconciliationAcquisitionRelatedExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_EffectiveIncomeTaxRateReconciliationChangeTaxStatusAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationChangeTaxStatusAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_DeferredTaxAssetsOperatingLeaseLiability" abstract="false" name="DeferredTaxAssetsOperatingLeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_DeferredTaxAssetsCapitalizedResearchAndDevelopment" abstract="false" name="DeferredTaxAssetsCapitalizedResearchAndDevelopment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_DeferredTaxLiabilityOperatingRightOfUseAssets" abstract="false" name="DeferredTaxLiabilityOperatingRightOfUseAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="txg_OperatingLossCarryforwardsIndefinitelyCarriedForwardMember" abstract="true" name="OperatingLossCarryforwardsIndefinitelyCarriedForwardMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="txg_PurchaseObligationTerm" abstract="false" name="PurchaseObligationTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="txg_ContractualObligationTerm" abstract="false" name="ContractualObligationTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="txg_SharesOfCapitalStockAuthorized" abstract="false" name="SharesOfCapitalStockAuthorized" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="txg_NumberOfVotesPerShare" abstract="false" name="NumberOfVotesPerShare" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="txg_ClassBCommonStockConvertedToClassACommonStockMember" abstract="true" name="ClassBCommonStockConvertedToClassACommonStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_TenXGenomicsIncTwoThousandTwelveStockPlanMember" abstract="true" name="TenXGenomicsIncTwoThousandTwelveStockPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_TwoThousandNineteenOmnibusIncentivePlanMember" abstract="true" name="TwoThousandNineteenOmnibusIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_TwoThousandsNineteenPlanMember" abstract="true" name="TwoThousandsNineteenPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_MarketBasedPerformanceAwardsMember" abstract="true" name="MarketBasedPerformanceAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_March2023MarketBasedPerformanceAwardsMember" abstract="true" name="March2023MarketBasedPerformanceAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="txg_September2022MarketBasedPerformanceAwardsMember" abstract="true" name="September2022MarketBasedPerformanceAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="txg_TwoThousandNineteenEmployeeStockPurchasePlanMember" abstract="true" name="TwoThousandNineteenEmployeeStockPurchasePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_CompoundAnnualGrowthRateMember" abstract="true" name="CompoundAnnualGrowthRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="txg_TotalShareholderReturnMember" abstract="true" name="TotalShareholderReturnMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="txg_PerformanceStockOptionsAndRestrictedStockUnitsMember" abstract="true" name="PerformanceStockOptionsAndRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_TrancheOneMember" abstract="true" name="TrancheOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_TrancheTwoMember" abstract="true" name="TrancheTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_TrancheThreeMember" abstract="true" name="TrancheThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_ShareBasedCompensationArrangementByShareBasedPaymentAwardSharesIssuableForOutstandingAwards" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardSharesIssuableForOutstandingAwards" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="txg_PercentageIncreaseInSharesOnStockOutstanding" abstract="false" name="PercentageIncreaseInSharesOnStockOutstanding" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="txg_ExercisePricePercentageOnFairMarketValue" abstract="false" name="ExercisePricePercentageOnFairMarketValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="txg_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingRightsMultiplierPercentage" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingRightsMultiplierPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="txg_ProceedsFromIssuanceOfPreferredStockVestingThreshold" abstract="false" name="ProceedsFromIssuanceOfPreferredStockVestingThreshold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="txg_ShareBasedCompensationArrangementByShareBasedPaymentAwardPredeterminedSharePriceThresholdConsecutiveDay" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardPredeterminedSharePriceThresholdConsecutiveDay" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="txg_OfferingPeriodUnderPlan" abstract="false" name="OfferingPeriodUnderPlan" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="txg_PerformanceStockAwardsMember" abstract="true" name="PerformanceStockAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="txg_SharesUnderEsppPlanMember" abstract="true" name="SharesUnderEsppPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+</xs:schema>

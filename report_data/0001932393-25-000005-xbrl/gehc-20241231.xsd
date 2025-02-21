@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:caab4b31-61f5-4d72-9b54-b39685a3345f,g:edb4b5f9-476f-484f-b517-69ab3682dff2-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:gehc="http://www.gehealthcare.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.gehealthcare.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gehc-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gehc-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gehc-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="gehc-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.gehealthcare.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.gehealthcare.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedandCombinedStatementsofIncome" roleURI="http://www.gehealthcare.com/role/ConsolidatedandCombinedStatementsofIncome">
+        <link:definition>9952151 - Statement - Consolidated and Combined Statements of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedandCombinedStatementsofComprehensiveIncomeLoss" roleURI="http://www.gehealthcare.com/role/ConsolidatedandCombinedStatementsofComprehensiveIncomeLoss">
+        <link:definition>9952152 - Statement - Consolidated and Combined Statements of Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofFinancialPosition" roleURI="http://www.gehealthcare.com/role/ConsolidatedStatementsofFinancialPosition">
+        <link:definition>9952153 - Statement - Consolidated Statements of Financial Position</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofFinancialPositionParentheticals" roleURI="http://www.gehealthcare.com/role/ConsolidatedStatementsofFinancialPositionParentheticals">
+        <link:definition>9952154 - Statement - Consolidated Statements of Financial Position (Parentheticals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedandCombinedStatementsofChangesinEquity" roleURI="http://www.gehealthcare.com/role/ConsolidatedandCombinedStatementsofChangesinEquity">
+        <link:definition>9952155 - Statement - Consolidated and Combined Statements of Changes in Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedandCombinedStatementsofChangesinEquityParenthetical" roleURI="http://www.gehealthcare.com/role/ConsolidatedandCombinedStatementsofChangesinEquityParenthetical">
+        <link:definition>9952156 - Statement - Consolidated and Combined Statements of Changes in Equity (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedandCombinedStatementsofCashFlows" roleURI="http://www.gehealthcare.com/role/ConsolidatedandCombinedStatementsofCashFlows">
+        <link:definition>9952157 - Statement - Consolidated and Combined Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ORGANIZATIONANDBASISOFPRESENTATION" roleURI="http://www.gehealthcare.com/role/ORGANIZATIONANDBASISOFPRESENTATION">
+        <link:definition>9952158 - Disclosure - ORGANIZATION AND BASIS OF PRESENTATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIES" roleURI="http://www.gehealthcare.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIES">
+        <link:definition>9952159 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUERECOGNITION" roleURI="http://www.gehealthcare.com/role/REVENUERECOGNITION">
+        <link:definition>9952160 - Disclosure - REVENUE RECOGNITION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICALINFORMATION" roleURI="http://www.gehealthcare.com/role/SEGMENTANDGEOGRAPHICALINFORMATION">
+        <link:definition>9952161 - Disclosure - SEGMENT AND GEOGRAPHICAL INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECEIVABLES" roleURI="http://www.gehealthcare.com/role/RECEIVABLES">
+        <link:definition>9952162 - Disclosure - RECEIVABLES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCINGRECEIVABLES" roleURI="http://www.gehealthcare.com/role/FINANCINGRECEIVABLES">
+        <link:definition>9952163 - Disclosure - FINANCING RECEIVABLES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASES" roleURI="http://www.gehealthcare.com/role/LEASES">
+        <link:definition>9952164 - Disclosure - LEASES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETS" roleURI="http://www.gehealthcare.com/role/ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETS">
+        <link:definition>9952165 - Disclosure - ACQUISITIONS, GOODWILL, AND OTHER INTANGIBLE ASSETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGS" roleURI="http://www.gehealthcare.com/role/BORROWINGS">
+        <link:definition>9952166 - Disclosure - BORROWINGS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANS" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANS">
+        <link:definition>9952167 - Disclosure - POSTRETIREMENT BENEFIT PLANS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXES" roleURI="http://www.gehealthcare.com/role/INCOMETAXES">
+        <link:definition>9952168 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVEINCOMELOSSNET" roleURI="http://www.gehealthcare.com/role/ACCUMULATEDOTHERCOMPREHENSIVEINCOMELOSSNET">
+        <link:definition>9952169 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE INCOME (LOSS) &#8211; NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTS" roleURI="http://www.gehealthcare.com/role/FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTS">
+        <link:definition>9952170 - Disclosure - FINANCIAL INSTRUMENTS AND FAIR VALUE MEASUREMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSGUARANTEESPRODUCTWARRANTIESANDOTHERLOSSCONTINGENCIES" roleURI="http://www.gehealthcare.com/role/COMMITMENTSGUARANTEESPRODUCTWARRANTIESANDOTHERLOSSCONTINGENCIES">
+        <link:definition>9952171 - Disclosure - COMMITMENTS, GUARANTEES, PRODUCT WARRANTIES, AND OTHER LOSS CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURINGACTIVITIES" roleURI="http://www.gehealthcare.com/role/RESTRUCTURINGACTIVITIES">
+        <link:definition>9952172 - Disclosure - RESTRUCTURING ACTIVITIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATION" roleURI="http://www.gehealthcare.com/role/SHAREBASEDCOMPENSATION">
+        <link:definition>9952173 - Disclosure - SHARE-BASED COMPENSATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHARE" roleURI="http://www.gehealthcare.com/role/EARNINGSPERSHARE">
+        <link:definition>9952174 - Disclosure - EARNINGS PER SHARE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALFINANCIALINFORMATION" roleURI="http://www.gehealthcare.com/role/SUPPLEMENTALFINANCIALINFORMATION">
+        <link:definition>9952175 - Disclosure - SUPPLEMENTAL FINANCIAL INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RELATEDPARTIESANDTRANSITIONSERVICESAGREEMENT" roleURI="http://www.gehealthcare.com/role/RELATEDPARTIESANDTRANSITIONSERVICESAGREEMENT">
+        <link:definition>9952176 - Disclosure - RELATED PARTIES AND TRANSITION SERVICES AGREEMENT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUBSEQUENTEVENTS" roleURI="http://www.gehealthcare.com/role/SUBSEQUENTEVENTS">
+        <link:definition>9952177 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESPolicies" roleURI="http://www.gehealthcare.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESPolicies">
+        <link:definition>9955511 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUERECOGNITIONTables" roleURI="http://www.gehealthcare.com/role/REVENUERECOGNITIONTables">
+        <link:definition>9955512 - Disclosure - REVENUE RECOGNITION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICALINFORMATIONTables" roleURI="http://www.gehealthcare.com/role/SEGMENTANDGEOGRAPHICALINFORMATIONTables">
+        <link:definition>9955513 - Disclosure - SEGMENT AND GEOGRAPHICAL INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECEIVABLESTables" roleURI="http://www.gehealthcare.com/role/RECEIVABLESTables">
+        <link:definition>9955514 - Disclosure - RECEIVABLES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCINGRECEIVABLESTables" roleURI="http://www.gehealthcare.com/role/FINANCINGRECEIVABLESTables">
+        <link:definition>9955515 - Disclosure - FINANCING RECEIVABLES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESTables" roleURI="http://www.gehealthcare.com/role/LEASESTables">
+        <link:definition>9955516 - Disclosure - LEASES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETSTables" roleURI="http://www.gehealthcare.com/role/ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETSTables">
+        <link:definition>9955517 - Disclosure - ACQUISITIONS, GOODWILL, AND OTHER INTANGIBLE ASSETS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSTables" roleURI="http://www.gehealthcare.com/role/BORROWINGSTables">
+        <link:definition>9955518 - Disclosure - BORROWINGS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSTables" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSTables">
+        <link:definition>9955519 - Disclosure - POSTRETIREMENT BENEFIT PLANS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESTables" roleURI="http://www.gehealthcare.com/role/INCOMETAXESTables">
+        <link:definition>9955520 - Disclosure - INCOME TAXES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVEINCOMELOSSNETTables" roleURI="http://www.gehealthcare.com/role/ACCUMULATEDOTHERCOMPREHENSIVEINCOMELOSSNETTables">
+        <link:definition>9955521 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE INCOME (LOSS) &#8211; NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSTables" roleURI="http://www.gehealthcare.com/role/FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSTables">
+        <link:definition>9955522 - Disclosure - FINANCIAL INSTRUMENTS AND FAIR VALUE MEASUREMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSGUARANTEESPRODUCTWARRANTIESANDOTHERLOSSCONTINGENCIESTables" roleURI="http://www.gehealthcare.com/role/COMMITMENTSGUARANTEESPRODUCTWARRANTIESANDOTHERLOSSCONTINGENCIESTables">
+        <link:definition>9955523 - Disclosure - COMMITMENTS, GUARANTEES, PRODUCT WARRANTIES, AND OTHER LOSS CONTINGENCIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURINGACTIVITIESTables" roleURI="http://www.gehealthcare.com/role/RESTRUCTURINGACTIVITIESTables">
+        <link:definition>9955524 - Disclosure - RESTRUCTURING ACTIVITIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATIONTables" roleURI="http://www.gehealthcare.com/role/SHAREBASEDCOMPENSATIONTables">
+        <link:definition>9955525 - Disclosure - SHARE-BASED COMPENSATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHARETables" roleURI="http://www.gehealthcare.com/role/EARNINGSPERSHARETables">
+        <link:definition>9955526 - Disclosure - EARNINGS PER SHARE (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALFINANCIALINFORMATIONTables" roleURI="http://www.gehealthcare.com/role/SUPPLEMENTALFINANCIALINFORMATIONTables">
+        <link:definition>9955527 - Disclosure - SUPPLEMENTAL FINANCIAL INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RELATEDPARTIESANDTRANSITIONSERVICESAGREEMENTTables" roleURI="http://www.gehealthcare.com/role/RELATEDPARTIESANDTRANSITIONSERVICESAGREEMENTTables">
+        <link:definition>9955528 - Disclosure - RELATED PARTIES AND TRANSITION SERVICES AGREEMENT (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ORGANIZATIONANDBASISOFPRESENTATIONDetails" roleURI="http://www.gehealthcare.com/role/ORGANIZATIONANDBASISOFPRESENTATIONDetails">
+        <link:definition>9955529 - Disclosure - ORGANIZATION AND BASIS OF PRESENTATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESDetails" roleURI="http://www.gehealthcare.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESDetails">
+        <link:definition>9955530 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUERECOGNITIONSummaryofContractandOtherDeferredAssetsDetails" roleURI="http://www.gehealthcare.com/role/REVENUERECOGNITIONSummaryofContractandOtherDeferredAssetsDetails">
+        <link:definition>9955531 - Disclosure - REVENUE RECOGNITION - Summary of Contract and Other Deferred Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUERECOGNITIONNarrativeDetails" roleURI="http://www.gehealthcare.com/role/REVENUERECOGNITIONNarrativeDetails">
+        <link:definition>9955532 - Disclosure - REVENUE RECOGNITION - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUERECOGNITIONNarrativeDetails_1" roleURI="http://www.gehealthcare.com/role/REVENUERECOGNITIONNarrativeDetails_1">
+        <link:definition>9955532 - Disclosure - REVENUE RECOGNITION - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUERECOGNITIONScheduleofRemainingPerformanceObligationsDetails" roleURI="http://www.gehealthcare.com/role/REVENUERECOGNITIONScheduleofRemainingPerformanceObligationsDetails">
+        <link:definition>9955533 - Disclosure - REVENUE RECOGNITION - Schedule of Remaining Performance Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICALINFORMATIONNarrativeDetails" roleURI="http://www.gehealthcare.com/role/SEGMENTANDGEOGRAPHICALINFORMATIONNarrativeDetails">
+        <link:definition>9955534 - Disclosure - SEGMENT AND GEOGRAPHICAL INFORMATION - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICALINFORMATIONScheduleofRevenuesbySegmentDetails" roleURI="http://www.gehealthcare.com/role/SEGMENTANDGEOGRAPHICALINFORMATIONScheduleofRevenuesbySegmentDetails">
+        <link:definition>9955535 - Disclosure - SEGMENT AND GEOGRAPHICAL INFORMATION - Schedule of Revenues by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICALINFORMATIONScheduleofSignificantExpensesbySegmentDetails" roleURI="http://www.gehealthcare.com/role/SEGMENTANDGEOGRAPHICALINFORMATIONScheduleofSignificantExpensesbySegmentDetails">
+        <link:definition>9955536 - Disclosure - SEGMENT AND GEOGRAPHICAL INFORMATION - Schedule of Significant Expenses by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICALINFORMATIONScheduleofSegmentEBITDetails" roleURI="http://www.gehealthcare.com/role/SEGMENTANDGEOGRAPHICALINFORMATIONScheduleofSegmentEBITDetails">
+        <link:definition>9955537 - Disclosure - SEGMENT AND GEOGRAPHICAL INFORMATION - Schedule of Segment EBIT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICALINFORMATIONScheduleofDepreciationandAmortizationbySegmentDetails" roleURI="http://www.gehealthcare.com/role/SEGMENTANDGEOGRAPHICALINFORMATIONScheduleofDepreciationandAmortizationbySegmentDetails">
+        <link:definition>9955538 - Disclosure - SEGMENT AND GEOGRAPHICAL INFORMATION - Schedule of Depreciation and Amortization by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICALINFORMATIONScheduleofRevenuesbyGeographicRegionDetails" roleURI="http://www.gehealthcare.com/role/SEGMENTANDGEOGRAPHICALINFORMATIONScheduleofRevenuesbyGeographicRegionDetails">
+        <link:definition>9955539 - Disclosure - SEGMENT AND GEOGRAPHICAL INFORMATION - Schedule of Revenues by Geographic Region (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICALINFORMATIONScheduleofLongLivedAssetsbyGeographicAreasDetails" roleURI="http://www.gehealthcare.com/role/SEGMENTANDGEOGRAPHICALINFORMATIONScheduleofLongLivedAssetsbyGeographicAreasDetails">
+        <link:definition>9955540 - Disclosure - SEGMENT AND GEOGRAPHICAL INFORMATION - Schedule of Long-Lived Assets by Geographic Areas (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECEIVABLESCurrentReceivablesDetails" roleURI="http://www.gehealthcare.com/role/RECEIVABLESCurrentReceivablesDetails">
+        <link:definition>9955541 - Disclosure - RECEIVABLES - Current Receivables (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECEIVABLESAllowanceforCreditLossesDetails" roleURI="http://www.gehealthcare.com/role/RECEIVABLESAllowanceforCreditLossesDetails">
+        <link:definition>9955542 - Disclosure - RECEIVABLES - Allowance for Credit Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECEIVABLESLongTermReceivablesDetails" roleURI="http://www.gehealthcare.com/role/RECEIVABLESLongTermReceivablesDetails">
+        <link:definition>9955543 - Disclosure - RECEIVABLES - Long-Term Receivables (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCINGRECEIVABLESScheduleofFinancingReceivableDetails" roleURI="http://www.gehealthcare.com/role/FINANCINGRECEIVABLESScheduleofFinancingReceivableDetails">
+        <link:definition>9955544 - Disclosure - FINANCING RECEIVABLES - Schedule of Financing Receivable (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCINGRECEIVABLESNarrativeDetails" roleURI="http://www.gehealthcare.com/role/FINANCINGRECEIVABLESNarrativeDetails">
+        <link:definition>9955545 - Disclosure - FINANCING RECEIVABLES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofOperatingLeaseAssetsandLiabilitiesDetails" roleURI="http://www.gehealthcare.com/role/LEASESScheduleofOperatingLeaseAssetsandLiabilitiesDetails">
+        <link:definition>9955546 - Disclosure - LEASES - Schedule of Operating Lease Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofLeaseCostDetails" roleURI="http://www.gehealthcare.com/role/LEASESScheduleofLeaseCostDetails">
+        <link:definition>9955547 - Disclosure - LEASES - Schedule of Lease, Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofMaturityofOperatingLeasesDetails" roleURI="http://www.gehealthcare.com/role/LEASESScheduleofMaturityofOperatingLeasesDetails">
+        <link:definition>9955548 - Disclosure - LEASES - Schedule of Maturity of Operating Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofMaturityofOperatingLeasesDetails_1" roleURI="http://www.gehealthcare.com/role/LEASESScheduleofMaturityofOperatingLeasesDetails_1">
+        <link:definition>9955548 - Disclosure - LEASES - Schedule of Maturity of Operating Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESSupplementalInformationRelatedtoOperatingLeasesDetails" roleURI="http://www.gehealthcare.com/role/LEASESSupplementalInformationRelatedtoOperatingLeasesDetails">
+        <link:definition>9955549 - Disclosure - LEASES - Supplemental Information Related to Operating Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESNarrativeDetails" roleURI="http://www.gehealthcare.com/role/LEASESNarrativeDetails">
+        <link:definition>9955550 - Disclosure - LEASES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESNetInvestmentinFinanceLeasesDetails" roleURI="http://www.gehealthcare.com/role/LEASESNetInvestmentinFinanceLeasesDetails">
+        <link:definition>9955551 - Disclosure - LEASES - Net Investment in Finance Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofMaturityofFinanceLeasesDetails" roleURI="http://www.gehealthcare.com/role/LEASESScheduleofMaturityofFinanceLeasesDetails">
+        <link:definition>9955552 - Disclosure - LEASES - Schedule of Maturity of Finance Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETSNarrativeDetails" roleURI="http://www.gehealthcare.com/role/ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETSNarrativeDetails">
+        <link:definition>9955553 - Disclosure - ACQUISITIONS, GOODWILL, AND OTHER INTANGIBLE ASSETS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETSScheduleofGoodwillDetails" roleURI="http://www.gehealthcare.com/role/ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETSScheduleofGoodwillDetails">
+        <link:definition>9955554 - Disclosure - ACQUISITIONS, GOODWILL, AND OTHER INTANGIBLE ASSETS - Schedule of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETSScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsDetails" roleURI="http://www.gehealthcare.com/role/ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETSScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsDetails">
+        <link:definition>9955555 - Disclosure - ACQUISITIONS, GOODWILL, AND OTHER INTANGIBLE ASSETS - Schedule of Finite-Lived and Indefinite-Lived Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETSScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsDetails_1" roleURI="http://www.gehealthcare.com/role/ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETSScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsDetails_1">
+        <link:definition>9955555 - Disclosure - ACQUISITIONS, GOODWILL, AND OTHER INTANGIBLE ASSETS - Schedule of Finite-Lived and Indefinite-Lived Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETSScheduleofPretaxAmortizationExpenseforIntangibleAssetsDetails" roleURI="http://www.gehealthcare.com/role/ACQUISITIONSGOODWILLANDOTHERINTANGIBLEASSETSScheduleofPretaxAmortizationExpenseforIntangibleAssetsDetails">
+        <link:definition>9955556 - Disclosure - ACQUISITIONS, GOODWILL, AND OTHER INTANGIBLE ASSETS - Schedule of Pre-tax Amortization Expense for Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSNarrativeDetails" roleURI="http://www.gehealthcare.com/role/BORROWINGSNarrativeDetails">
+        <link:definition>9955557 - Disclosure - BORROWINGS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSScheduleofLongTermBorrowingsDetails" roleURI="http://www.gehealthcare.com/role/BORROWINGSScheduleofLongTermBorrowingsDetails">
+        <link:definition>9955558 - Disclosure - BORROWINGS - Schedule of Long-Term Borrowings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSScheduleofLongTermBorrowingsDetails_1" roleURI="http://www.gehealthcare.com/role/BORROWINGSScheduleofLongTermBorrowingsDetails_1">
+        <link:definition>9955558 - Disclosure - BORROWINGS - Schedule of Long-Term Borrowings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSScheduleofMaturitiesofLongTermDebtDetails" roleURI="http://www.gehealthcare.com/role/BORROWINGSScheduleofMaturitiesofLongTermDebtDetails">
+        <link:definition>9955559 - Disclosure - BORROWINGS - Schedule of Maturities of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSNarrativeDetails" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSNarrativeDetails">
+        <link:definition>9955560 - Disclosure - POSTRETIREMENT BENEFIT PLANS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSScheduleofDefinedBenefitPlansDetails" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSScheduleofDefinedBenefitPlansDetails">
+        <link:definition>9955561 - Disclosure - POSTRETIREMENT BENEFIT PLANS - Schedule of Defined Benefit Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSPlanFundedStatusDetails" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSPlanFundedStatusDetails">
+        <link:definition>9955562 - Disclosure - POSTRETIREMENT BENEFIT PLANS - Plan Funded Status (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSAmountsRecordedinStatementsofFinancialPositionDetails" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSAmountsRecordedinStatementsofFinancialPositionDetails">
+        <link:definition>9955563 - Disclosure - POSTRETIREMENT BENEFIT PLANS - Amounts Recorded in Statements of Financial Position (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSPlanObligationsinExcessofPlanAssetsDetails" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSPlanObligationsinExcessofPlanAssetsDetails">
+        <link:definition>9955564 - Disclosure - POSTRETIREMENT BENEFIT PLANS - Plan Obligations in Excess of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSPreTaxAmountsRecordedinAOCIDetails" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSPreTaxAmountsRecordedinAOCIDetails">
+        <link:definition>9955565 - Disclosure - POSTRETIREMENT BENEFIT PLANS - Pre-Tax Amounts Recorded in AOCI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSScheduleofPretaxCostofPostretirementBenefitPlansandChangesinOtherComprehensiveIncomeDetails" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSScheduleofPretaxCostofPostretirementBenefitPlansandChangesinOtherComprehensiveIncomeDetails">
+        <link:definition>9955566 - Disclosure - POSTRETIREMENT BENEFIT PLANS - Schedule of Pre-tax Cost of Postretirement Benefit Plans and Changes in Other Comprehensive Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSComponentsofExpenseIncomeDetails" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSComponentsofExpenseIncomeDetails">
+        <link:definition>9955567 - Disclosure - POSTRETIREMENT BENEFIT PLANS - Components of Expense (Income) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSAssumptionsDetails" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSAssumptionsDetails">
+        <link:definition>9955568 - Disclosure - POSTRETIREMENT BENEFIT PLANS - Assumptions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSScheduleofExpectedBenefitPaymentsDetails" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSScheduleofExpectedBenefitPaymentsDetails">
+        <link:definition>9955569 - Disclosure - POSTRETIREMENT BENEFIT PLANS - Schedule of Expected Benefit Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSCompositionofPlanAssetsDetails" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSCompositionofPlanAssetsDetails">
+        <link:definition>9955570 - Disclosure - POSTRETIREMENT BENEFIT PLANS - Composition of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="POSTRETIREMENTBENEFITPLANSWeightedAverageAssetAllocationDetails" roleURI="http://www.gehealthcare.com/role/POSTRETIREMENTBENEFITPLANSWeightedAverageAssetAllocationDetails">
+        <link:definition>9955571 - Disclosure - POSTRETIREMENT BENEFIT PLANS - Weighted Average Asset Allocation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofIncomebeforeIncomeTaxDetails" roleURI="http://www.gehealthcare.com/role/INCOMETAXESScheduleofIncomebeforeIncomeTaxDetails">
+        <link:definition>9955572 - Disclosure - INCOME TAXES - Schedule of Income before Income Tax (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofProvisionforIncomeTaxesDetails" roleURI="http://www.gehealthcare.com/role/INCOMETAXESScheduleofProvisionforIncomeTaxesDetails">
+        <link:definition>9955573 - Disclosure - INCOME TAXES - Schedule of Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofReconciliationofUSFederalStatutoryIncomeTaxRatetoActualIncomeTaxRateDetails" roleURI="http://www.gehealthcare.com/role/INCOMETAXESScheduleofReconciliationofUSFederalStatutoryIncomeTaxRatetoActualIncomeTaxRateDetails">
+        <link:definition>9955574 - Disclosure - INCOME TAXES - Schedule of Reconciliation of U.S. Federal Statutory Income Tax Rate to Actual Income Tax Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESNarrativeDetails" roleURI="http://www.gehealthcare.com/role/INCOMETAXESNarrativeDetails">
+        <link:definition>9955575 - Disclosure - INCOME TAXES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESUnrecognizedTaxBenefitsDetails" roleURI="http://www.gehealthcare.com/role/INCOMETAXESUnrecognizedTaxBenefitsDetails">
+        <link:definition>9955576 - Disclosure - INCOME TAXES - Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofDeferredTaxAssetsandLiabilitiesDetails" roleURI="http://www.gehealthcare.com/role/INCOMETAXESScheduleofDeferredTaxAssetsandLiabilitiesDetails">
+        <link:definition>9955577 - Disclosure - INCOME TAXES - Schedule of Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofDeferredTaxAssetsandLiabilitiesDetails_1" roleURI="http://www.gehealthcare.com/role/INCOMETAXESScheduleofDeferredTaxAssetsandLiabilitiesDetails_1">
+        <link:definition>9955577 - Disclosure - INCOME TAXES - Schedule of Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESSummaryofValuationAllowanceDetails" roleURI="http://www.gehealthcare.com/role/INCOMETAXESSummaryofValuationAllowanceDetails">
+        <link:definition>9955578 - Disclosure - INCOME TAXES - Summary of Valuation Allowance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVEINCOMELOSSNETDetails" roleURI="http://www.gehealthcare.com/role/ACCUMULATEDOTHERCOMPREHENSIVEINCOMELOSSNETDetails">
+        <link:definition>9955579 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE INCOME (LOSS) &#8211; NET (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSNarrativeDetails" roleURI="http://www.gehealthcare.com/role/FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSNarrativeDetails">
+        <link:definition>9955580 - Disclosure - FINANCIAL INSTRUMENTS AND FAIR VALUE MEASUREMENTS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSScheduleofDerivativeFairValuesDetails" roleURI="http://www.gehealthcare.com/role/FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSScheduleofDerivativeFairValuesDetails">
+        <link:definition>9955581 - Disclosure - FINANCIAL INSTRUMENTS AND FAIR VALUE MEASUREMENTS - Schedule of Derivative Fair Values (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSScheduleofCumulativeBasisAdjustmentforFairvalueHedgesDetails" roleURI="http://www.gehealthcare.com/role/FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSScheduleofCumulativeBasisAdjustmentforFairvalueHedgesDetails">
+        <link:definition>9955582 - Disclosure - FINANCIAL INSTRUMENTS AND FAIR VALUE MEASUREMENTS - Schedule of Cumulative Basis Adjustment for Fair value Hedges (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSScheduleofDerivativePretaxGainsLossesRecognizedinOCIDetails" roleURI="http://www.gehealthcare.com/role/FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSScheduleofDerivativePretaxGainsLossesRecognizedinOCIDetails">
+        <link:definition>9955583 - Disclosure - FINANCIAL INSTRUMENTS AND FAIR VALUE MEASUREMENTS - Schedule of Derivative Pre-tax Gains (Losses) Recognized in OCI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSEffectofDerivativesInstrumentsonStatementsofIncomeDetails" roleURI="http://www.gehealthcare.com/role/FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSEffectofDerivativesInstrumentsonStatementsofIncomeDetails">
+        <link:definition>9955584 - Disclosure - FINANCIAL INSTRUMENTS AND FAIR VALUE MEASUREMENTS - Effect of Derivatives Instruments on Statements of Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSScheduleofFairValueAssetsandLiabilitiesMeasuredonRecurringBasisDetails" roleURI="http://www.gehealthcare.com/role/FINANCIALINSTRUMENTSANDFAIRVALUEMEASUREMENTSScheduleofFairValueAssetsandLiabilitiesMeasuredonRecurringBasisDetails">
+        <link:definition>9955585 - Disclosure - FINANCIAL INSTRUMENTS AND FAIR VALUE MEASUREMENTS - Schedule of Fair Value, Assets and Liabilities Measured on Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSGUARANTEESPRODUCTWARRANTIESANDOTHERLOSSCONTINGENCIESNarrativeDetails" roleURI="http://www.gehealthcare.com/role/COMMITMENTSGUARANTEESPRODUCTWARRANTIESANDOTHERLOSSCONTINGENCIESNarrativeDetails">
+        <link:definition>9955586 - Disclosure - COMMITMENTS, GUARANTEES, PRODUCT WARRANTIES, AND OTHER LOSS CONTINGENCIES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSGUARANTEESPRODUCTWARRANTIESANDOTHERLOSSCONTINGENCIESScheduleofProductWarrantiesDetails" roleURI="http://www.gehealthcare.com/role/COMMITMENTSGUARANTEESPRODUCTWARRANTIESANDOTHERLOSSCONTINGENCIESScheduleofProductWarrantiesDetails">
+        <link:definition>9955587 - Disclosure - COMMITMENTS, GUARANTEES, PRODUCT WARRANTIES, AND OTHER LOSS CONTINGENCIES - Schedule of Product Warranties (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSGUARANTEESPRODUCTWARRANTIESANDOTHERLOSSCONTINGENCIESScheduleofUnrecognizedContractualObligationsDetails" roleURI="http://www.gehealthcare.com/role/COMMITMENTSGUARANTEESPRODUCTWARRANTIESANDOTHERLOSSCONTINGENCIESScheduleofUnrecognizedContractualObligationsDetails">
+        <link:definition>9955588 - Disclosure - COMMITMENTS, GUARANTEES, PRODUCT WARRANTIES, AND OTHER LOSS CONTINGENCIES - Schedule of Unrecognized Contractual Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURINGACTIVITIESScheduleofRestructuringActivitiesDetails" roleURI="http://www.gehealthcare.com/role/RESTRUCTURINGACTIVITIESScheduleofRestructuringActivitiesDetails">
+        <link:definition>9955589 - Disclosure - RESTRUCTURING ACTIVITIES - Schedule of Restructuring Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURINGACTIVITIESNarrativeDetails" roleURI="http://www.gehealthcare.com/role/RESTRUCTURINGACTIVITIESNarrativeDetails">
+        <link:definition>9955590 - Disclosure - RESTRUCTURING ACTIVITIES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURINGACTIVITIESScheduleofRestructuringLiabilityActivityDetails" roleURI="http://www.gehealthcare.com/role/RESTRUCTURINGACTIVITIESScheduleofRestructuringLiabilityActivityDetails">
+        <link:definition>9955591 - Disclosure - RESTRUCTURING ACTIVITIES - Schedule of Restructuring Liability Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATIONNarrativeDetails" roleURI="http://www.gehealthcare.com/role/SHAREBASEDCOMPENSATIONNarrativeDetails">
+        <link:definition>9955592 - Disclosure - SHARE-BASED COMPENSATION - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATIONSummaryofWeightedAverageGrantDateFairValueDetails" roleURI="http://www.gehealthcare.com/role/SHAREBASEDCOMPENSATIONSummaryofWeightedAverageGrantDateFairValueDetails">
+        <link:definition>9955593 - Disclosure - SHARE-BASED COMPENSATION - Summary of Weighted Average Grant Date Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATIONScheduleofStockOptionsValuationAssumptionsDetails" roleURI="http://www.gehealthcare.com/role/SHAREBASEDCOMPENSATIONScheduleofStockOptionsValuationAssumptionsDetails">
+        <link:definition>9955594 - Disclosure - SHARE-BASED COMPENSATION - Schedule of Stock Options Valuation Assumptions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATIONSummaryofStockOptionActivityDetails" roleURI="http://www.gehealthcare.com/role/SHAREBASEDCOMPENSATIONSummaryofStockOptionActivityDetails">
+        <link:definition>9955595 - Disclosure - SHARE-BASED COMPENSATION - Summary of Stock Option Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATIONSummaryofRSUandPSUActivityDetails" roleURI="http://www.gehealthcare.com/role/SHAREBASEDCOMPENSATIONSummaryofRSUandPSUActivityDetails">
+        <link:definition>9955596 - Disclosure - SHARE-BASED COMPENSATION - Summary of RSU and PSU Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATIONSummaryofShareBasedCompensationExpenseDetails" roleURI="http://www.gehealthcare.com/role/SHAREBASEDCOMPENSATIONSummaryofShareBasedCompensationExpenseDetails">
+        <link:definition>9955597 - Disclosure - SHARE-BASED COMPENSATION - Summary of Share-Based Compensation Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATIONSummaryofOtherShareBasedCompensationDataDetails" roleURI="http://www.gehealthcare.com/role/SHAREBASEDCOMPENSATIONSummaryofOtherShareBasedCompensationDataDetails">
+        <link:definition>9955598 - Disclosure - SHARE-BASED COMPENSATION - Summary of Other Share-Based Compensation Data (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHARENarrativeDetails" roleURI="http://www.gehealthcare.com/role/EARNINGSPERSHARENarrativeDetails">
+        <link:definition>9955599 - Disclosure - EARNINGS PER SHARE - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHAREDetails" roleURI="http://www.gehealthcare.com/role/EARNINGSPERSHAREDetails">
+        <link:definition>9955600 - Disclosure - EARNINGS PER SHARE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALFINANCIALINFORMATIONScheduleofCashCashEquivalentsandRestrictedCashDetails" roleURI="http://www.gehealthcare.com/role/SUPPLEMENTALFINANCIALINFORMATIONScheduleofCashCashEquivalentsandRestrictedCashDetails">
+        <link:definition>9955601 - Disclosure - SUPPLEMENTAL FINANCIAL INFORMATION - Schedule of Cash, Cash Equivalents and Restricted Cash (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALFINANCIALINFORMATIONScheduleofInventoryDetails" roleURI="http://www.gehealthcare.com/role/SUPPLEMENTALFINANCIALINFORMATIONScheduleofInventoryDetails">
+        <link:definition>9955602 - Disclosure - SUPPLEMENTAL FINANCIAL INFORMATION - Schedule of Inventory (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALFINANCIALINFORMATIONSummaryofPropertyPlantandEquipmentDetails" roleURI="http://www.gehealthcare.com/role/SUPPLEMENTALFINANCIALINFORMATIONSummaryofPropertyPlantandEquipmentDetails">
+        <link:definition>9955603 - Disclosure - SUPPLEMENTAL FINANCIAL INFORMATION - Summary of Property, Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALFINANCIALINFORMATIONNarrativeDetails" roleURI="http://www.gehealthcare.com/role/SUPPLEMENTALFINANCIALINFORMATIONNarrativeDetails">
+        <link:definition>9955604 - Disclosure - SUPPLEMENTAL FINANCIAL INFORMATION - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALFINANCIALINFORMATIONScheduleofAllOtherCurrentandNoncurrentAssetsDetails" roleURI="http://www.gehealthcare.com/role/SUPPLEMENTALFINANCIALINFORMATIONScheduleofAllOtherCurrentandNoncurrentAssetsDetails">
+        <link:definition>9955605 - Disclosure - SUPPLEMENTAL FINANCIAL INFORMATION - Schedule of All Other Current and Noncurrent Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALFINANCIALINFORMATIONScheduleofAllOtherCurrentandNoncurrentLiabilitiesDetails" roleURI="http://www.gehealthcare.com/role/SUPPLEMENTALFINANCIALINFORMATIONScheduleofAllOtherCurrentandNoncurrentLiabilitiesDetails">
+        <link:definition>9955606 - Disclosure - SUPPLEMENTAL FINANCIAL INFORMATION - Schedule of All Other Current and Noncurrent Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALFINANCIALINFORMATIONScheduleofEquityMethodInvestmentsDetails" roleURI="http://www.gehealthcare.com/role/SUPPLEMENTALFINANCIALINFORMATIONScheduleofEquityMethodInvestmentsDetails">
+        <link:definition>9955607 - Disclosure - SUPPLEMENTAL FINANCIAL INFORMATION - Schedule of Equity Method Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALFINANCIALINFORMATIONScheduleofSupplyChainFinanceProgramsDetails" roleURI="http://www.gehealthcare.com/role/SUPPLEMENTALFINANCIALINFORMATIONScheduleofSupplyChainFinanceProgramsDetails">
+        <link:definition>9955608 - Disclosure - SUPPLEMENTAL FINANCIAL INFORMATION - Schedule of Supply Chain Finance Programs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALFINANCIALINFORMATIONScheduleofRedeemableNoncontrollingInterestDetails" roleURI="http://www.gehealthcare.com/role/SUPPLEMENTALFINANCIALINFORMATIONScheduleofRedeemableNoncontrollingInterestDetails">
+        <link:definition>9955609 - Disclosure - SUPPLEMENTAL FINANCIAL INFORMATION - Schedule of Redeemable Noncontrolling Interest (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALFINANCIALINFORMATIONScheduleofOtherIncomeExpenseDetails" roleURI="http://www.gehealthcare.com/role/SUPPLEMENTALFINANCIALINFORMATIONScheduleofOtherIncomeExpenseDetails">
+        <link:definition>9955610 - Disclosure - SUPPLEMENTAL FINANCIAL INFORMATION - Schedule of Other Income (Expense) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RELATEDPARTIESANDTRANSITIONSERVICESAGREEMENTNarrativeDetails" roleURI="http://www.gehealthcare.com/role/RELATEDPARTIESANDTRANSITIONSERVICESAGREEMENTNarrativeDetails">
+        <link:definition>9955611 - Disclosure - RELATED PARTIES AND TRANSITION SERVICES AGREEMENT - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RELATEDPARTIESANDTRANSITIONSERVICESAGREEMENTScheduleofRelatedPartyTransactionsDetails" roleURI="http://www.gehealthcare.com/role/RELATEDPARTIESANDTRANSITIONSERVICESAGREEMENTScheduleofRelatedPartyTransactionsDetails">
+        <link:definition>9955612 - Disclosure - RELATED PARTIES AND TRANSITION SERVICES AGREEMENT - Schedule of Related Party Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUBSEQUENTEVENTSDetails" roleURI="http://www.gehealthcare.com/role/SUBSEQUENTEVENTSDetails">
+        <link:definition>9955613 - Disclosure - SUBSEQUENT EVENTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="gehc_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="gehc_IncomeLossPerShareFromContinuingOperationsAbstract" abstract="true" name="IncomeLossPerShareFromContinuingOperationsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="gehc_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsCurrent" abstract="false" name="CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_ContractWithCustomerAssetAfterAllowanceForCreditLossAndDeferredCostsCurrent" abstract="false" name="ContractWithCustomerAssetAfterAllowanceForCreditLossAndDeferredCostsCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_PropertyPlantAndEquipmentAndOperatingLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization" abstract="false" name="PropertyPlantAndEquipmentAndOperatingLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_NetParentInvestmentMember" abstract="true" name="NetParentInvestmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_StockholdersEquityNetTransfersFromGEIncludingSpinOffRelatedAdjustments" abstract="false" name="StockholdersEquityNetTransfersFromGEIncludingSpinOffRelatedAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_StockholdersEquityTransfersToFromGE" abstract="false" name="StockholdersEquityTransfersToFromGE" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_StockholdersEquityRedemptionValueAdjustment" abstract="false" name="StockholdersEquityRedemptionValueAdjustment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_PensionAndOtherPostretirementBenefitsExpenseEmployerContributionCost" abstract="false" name="PensionAndOtherPostretirementBenefitsExpenseEmployerContributionCost" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_IncreaseDecreaseInContractWithCustomerAssetAndDeferredCosts" abstract="false" name="IncreaseDecreaseInContractWithCustomerAssetAndDeferredCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_ProceedsFromPaymentsForGECapital" abstract="false" name="ProceedsFromPaymentsForGECapital" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_SupplierFinanceProgramPolicyPolicyTextBlock" abstract="false" name="SupplierFinanceProgramPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="gehc_AssetsAndLiabilitiesLesseeTableTextBlock" abstract="false" name="AssetsAndLiabilitiesLesseeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="gehc_SaleOfStockPercentageOfCommonStockDistributed" abstract="false" name="SaleOfStockPercentageOfCommonStockDistributed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="gehc_SpinOffRelatedAdjustmentsDeferredCompensationLiability" abstract="false" name="SpinOffRelatedAdjustmentsDeferredCompensationLiability" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_BuildingsStructuresAndRelatedEquipmentMember" abstract="true" name="BuildingsStructuresAndRelatedEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_LeaseholdImprovementsAndManufacturingPlantsMember" abstract="true" name="LeaseholdImprovementsAndManufacturingPlantsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_ContractWithCustomerAssetAfterAllowanceForCreditLossAndDeferredCosts" abstract="false" name="ContractWithCustomerAssetAfterAllowanceForCreditLossAndDeferredCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_ImagingSegmentMember" abstract="true" name="ImagingSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_AVSSegmentMember" abstract="true" name="AVSSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_PCSSegmentMember" abstract="true" name="PCSSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_PDxSegmentMember" abstract="true" name="PDxSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_ProceduralGuidanceSubsegmentMember" abstract="true" name="ProceduralGuidanceSubsegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_SpecializedUltrasoundSubsegmentMember" abstract="true" name="SpecializedUltrasoundSubsegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_MonitoringSolutionsSubsegmentMember" abstract="true" name="MonitoringSolutionsSubsegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_LifeSupportSolutionsSubsegmentMember" abstract="true" name="LifeSupportSolutionsSubsegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_IncomeLossFromContinuingOperationsBeforeIncomeTaxesInterestAndDebtExpenseAndOtherCharges" abstract="false" name="IncomeLossFromContinuingOperationsBeforeIncomeTaxesInterestAndDebtExpenseAndOtherCharges" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_AcquisitionAndDispositionRelatedBenefitsCosts" abstract="false" name="AcquisitionAndDispositionRelatedBenefitsCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_SpinOffAndSeparationCosts" abstract="false" name="SpinOffAndSeparationCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_AmortizationOfIntangibleAssetsAcquired" abstract="false" name="AmortizationOfIntangibleAssetsAcquired" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_OtherCountriesMember" abstract="true" name="OtherCountriesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_OtherNontradeReceivablesCurrent" abstract="false" name="OtherNontradeReceivablesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_AccountsReceivableAllowanceForCreditLossForeignCurrencyExchangeAndOther" abstract="false" name="AccountsReceivableAllowanceForCreditLossForeignCurrencyExchangeAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_OtherNontradeReceivablesNoncurrent" abstract="false" name="OtherNontradeReceivablesNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_ReceivablesNetNoncurrent" abstract="false" name="ReceivablesNetNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_AccountsReceivableAllowanceForCreditLossNoncurrentWriteoff" abstract="false" name="AccountsReceivableAllowanceForCreditLossNoncurrentWriteoff" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_FinanceLeaseReceivableMember" abstract="true" name="FinanceLeaseReceivableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_FinancialAssetGreaterThan30DaysPastDueMember" abstract="true" name="FinancialAssetGreaterThan30DaysPastDueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_SalesTypeLeaseDeferredSellingProfit" abstract="false" name="SalesTypeLeaseDeferredSellingProfit" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_MIMSoftwareMember" abstract="true" name="MIMSoftwareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_CaptionHealthMember" abstract="true" name="CaptionHealthMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_ContingentConsiderationPurchasePriceMember" abstract="true" name="ContingentConsiderationPurchasePriceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_ContingentConsiderationServiceRequirementsMember" abstract="true" name="ContingentConsiderationServiceRequirementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOtherAssets" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOtherAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_BusinessCombinationConsiderationTransferredHoldbackPayment" abstract="false" name="BusinessCombinationConsiderationTransferredHoldbackPayment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_TrademarksAndOtherMember" abstract="true" name="TrademarksAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_SeniorUnsecuredNotesMember" abstract="true" name="SeniorUnsecuredNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_A4.800SeniorNotesDue2029Member" abstract="true" name="A4.800SeniorNotesDue2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_A5550SeniorNotesDue2024Member" abstract="true" name="A5550SeniorNotesDue2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_A5YearRevolvingCreditFacilityMember" abstract="true" name="A5YearRevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_A364DayRevolvingCreditFacilityMember" abstract="true" name="A364DayRevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_FloatingRateTermLoanFacilityDue2026Member" abstract="true" name="FloatingRateTermLoanFacilityDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_CommercialContractsMember" abstract="true" name="CommercialContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_EquipmentResidualValueObligationMember" abstract="true" name="EquipmentResidualValueObligationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_NumberOfDebtSeries" abstract="false" name="NumberOfDebtSeries" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="gehc_OtherLongTermBorrowingsMember" abstract="true" name="OtherLongTermBorrowingsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_A5600SeniorNotesDue2025Member" abstract="true" name="A5600SeniorNotesDue2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_A5650SeniorNotesDue2027Member" abstract="true" name="A5650SeniorNotesDue2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_A5857SeniorNotesDue2030Member" abstract="true" name="A5857SeniorNotesDue2030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_A5905SeniorNotesDue2032Member" abstract="true" name="A5905SeniorNotesDue2032Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_A6377SeniorNotesDue2052Member" abstract="true" name="A6377SeniorNotesDue2052Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_GEHealthCarePensionPlanMember" abstract="true" name="GEHealthCarePensionPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_GEHealthCareSupplementalPensionPlanMember" abstract="true" name="GEHealthCareSupplementalPensionPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_DefinedBenefitPlanPlanAssetOrObligationReportingThreshold" abstract="false" name="DefinedBenefitPlanPlanAssetOrObligationReportingThreshold" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DefinedBenefitPlanSupplementaryPensionPlanNumberOfAnnualPaymentInstallmentsUponRetirement" abstract="false" name="DefinedBenefitPlanSupplementaryPensionPlanNumberOfAnnualPaymentInstallmentsUponRetirement" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="gehc_DefinedBenefitPlanNumberOfPlansWithEmployeeTerminationPayment" abstract="false" name="DefinedBenefitPlanNumberOfPlansWithEmployeeTerminationPayment" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="gehc_DefinedBenefitPlanBenefitObligationIncreaseDecreaseForSpinOffRelatedTransfers" abstract="false" name="DefinedBenefitPlanBenefitObligationIncreaseDecreaseForSpinOffRelatedTransfers" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DefinedBenefitPlanPlanAssetsIncreaseDecreaseForBusinessCombinationDivestitureAndMerger" abstract="false" name="DefinedBenefitPlanPlanAssetsIncreaseDecreaseForBusinessCombinationDivestitureAndMerger" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_OtherComprehensiveIncomeLossBeforeReclassificationsSpinOffRelatedAdjustmentsBeforeTax" abstract="false" name="OtherComprehensiveIncomeLossBeforeReclassificationsSpinOffRelatedAdjustmentsBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_OtherComprehensiveIncomeLossDefinedBenefitPlanIncreaseDecreaseForPlanAmendmentBeforeTax" abstract="false" name="OtherComprehensiveIncomeLossDefinedBenefitPlanIncreaseDecreaseForPlanAmendmentBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DefinedBenefitPlanDebtSecurityCashAndCashEquivalentsMember" abstract="true" name="DefinedBenefitPlanDebtSecurityCashAndCashEquivalentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_PrivateEquityFundsAndOtherInvestmentsMember" abstract="true" name="PrivateEquityFundsAndOtherInvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_EffectiveIncomeTaxRateReconciliationForeignOperationsAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationForeignOperationsAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_EffectiveIncomeTaxRateReconciliationSpinOffAndSeparationCostsAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationSpinOffAndSeparationCostsAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_GeneralElectricCompanyMember" abstract="true" name="GeneralElectricCompanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_EffectiveIncomeTaxRateReconciliationStateAndLocalIncomeTaxesRevaluationOfDeferredTaxAssetsAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationStateAndLocalIncomeTaxesRevaluationOfDeferredTaxAssetsAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_UnrecognizedTaxBenefitsIncreaseResultingFromPriorPeriodTaxPositionsAuditReserve" abstract="false" name="UnrecognizedTaxBenefitsIncreaseResultingFromPriorPeriodTaxPositionsAuditReserve" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DeferredTaxAssetsOperatingLossCarryforwardsAuditReserve" abstract="false" name="DeferredTaxAssetsOperatingLossCarryforwardsAuditReserve" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_UnrecognizedTaxBenefitsDecreaseResultingFromPriorPeriodTaxPositionsCTA" abstract="false" name="UnrecognizedTaxBenefitsDecreaseResultingFromPriorPeriodTaxPositionsCTA" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_UnrecognizedTaxBenefitsDecreaseResultingFromPriorPeriodTaxPositionsTaxAuditsClosed" abstract="false" name="UnrecognizedTaxBenefitsDecreaseResultingFromPriorPeriodTaxPositionsTaxAuditsClosed" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DeferredTaxAssetsCapitalizedResearchAndDevelopment2022ResearchAndDevelopmentExpenses" abstract="false" name="DeferredTaxAssetsCapitalizedResearchAndDevelopment2022ResearchAndDevelopmentExpenses" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DeferredTaxAssetIncreaseDecreaseSpinOffTransaction" abstract="false" name="DeferredTaxAssetIncreaseDecreaseSpinOffTransaction" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DeferredTaxAssetIncreaseDecreaseSpinOffTransactionPensionAndPostretirementBenefits" abstract="false" name="DeferredTaxAssetIncreaseDecreaseSpinOffTransactionPensionAndPostretirementBenefits" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_ValuationAllowanceDeferredTaxAssetIncreaseDecreaseSpinOffRelatedActivities" abstract="false" name="ValuationAllowanceDeferredTaxAssetIncreaseDecreaseSpinOffRelatedActivities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DeferredTaxAssetsOperatingLossCarryforwardsGross" abstract="false" name="DeferredTaxAssetsOperatingLossCarryforwardsGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_UnrecognizedTaxBenefitsNetOperatingLoss" abstract="false" name="UnrecognizedTaxBenefitsNetOperatingLoss" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_UnrecognizedTaxBenefitsUSForeignTaxCredits" abstract="false" name="UnrecognizedTaxBenefitsUSForeignTaxCredits" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DeferredIncomeTaxAssetsGross" abstract="false" name="DeferredIncomeTaxAssetsGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DeferredIncomeTaxLiabilitiesGross" abstract="false" name="DeferredIncomeTaxLiabilitiesGross" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DeferredTaxAssetsLeasingArrangements" abstract="false" name="DeferredTaxAssetsLeasingArrangements" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DeferredTaxAssetsCapitalizedResearchAndDevelopment" abstract="false" name="DeferredTaxAssetsCapitalizedResearchAndDevelopment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DeferredTaxAssetValuationAllowanceRollForward" abstract="true" name="DeferredTaxAssetValuationAllowanceRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="gehc_ValuationAllowanceDeferredTaxAssetIncreaseDecreaseProvisionForIncomeTaxes" abstract="false" name="ValuationAllowanceDeferredTaxAssetIncreaseDecreaseProvisionForIncomeTaxes" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_ValuationAllowanceDeferredTaxAssetIncreaseDecreaseForeignCurrencyExchangeAndOther" abstract="false" name="ValuationAllowanceDeferredTaxAssetIncreaseDecreaseForeignCurrencyExchangeAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_OtherComprehensiveIncomeLossBeforeReclassificationsSpinOffRelatedAdjustments" abstract="false" name="OtherComprehensiveIncomeLossBeforeReclassificationsSpinOffRelatedAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_OtherComprehensiveIncomeLossBeforeReclassificationsSpinOffRelatedAdjustmentsTax" abstract="false" name="OtherComprehensiveIncomeLossBeforeReclassificationsSpinOffRelatedAdjustmentsTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_OtherCashEquivalentsMember" abstract="true" name="OtherCashEquivalentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_DerivativeAdditionNotionalAmount" abstract="false" name="DerivativeAdditionNotionalAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DerivativeSubjectToMasterNettingArrangementPotentialOffsetToAssetLiability" abstract="false" name="DerivativeSubjectToMasterNettingArrangementPotentialOffsetToAssetLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_ForeignExchangeForwardAndForeignExchangeOptionsMember" abstract="true" name="ForeignExchangeForwardAndForeignExchangeOptionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_InterestAndDebtExpenseMember" abstract="true" name="InterestAndDebtExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_DebtBasisAdjustmentLongTermBorrowingsMember" abstract="true" name="DebtBasisAdjustmentLongTermBorrowingsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_OtherComprehensiveIncomeLossFairValueHedgeGainLossReclassificationBeforeTax" abstract="false" name="OtherComprehensiveIncomeLossFairValueHedgeGainLossReclassificationBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_StandardAndExtendedProductWarrantyAccrualOtherIncreaseDecrease" abstract="false" name="StandardAndExtendedProductWarrantyAccrualOtherIncreaseDecrease" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_RestructuringReserveSpinoffAdjustment" abstract="false" name="RestructuringReserveSpinoffAdjustment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_PaymentsForRestructuringAndOtherAdjustments" abstract="false" name="PaymentsForRestructuringAndOtherAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_WeightedAverageContractualTermAbstract" abstract="true" name="WeightedAverageContractualTermAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="gehc_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExpiredInPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExpiredInPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="gehc_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestOutstandingNumber" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestOutstandingNumber" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="gehc_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisesInPeriodWeightedAverageGrantDateFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisesInPeriodWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="gehc_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExpiredWeightedAverageGrantDateFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExpiredWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="gehc_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestOutstandingWeightedAverageGrantDateFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestOutstandingWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="gehc_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestOutstandingWeightedAverageRemainingContractualTerm" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestOutstandingWeightedAverageRemainingContractualTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="gehc_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestOutstandingAggregateIntrinsicValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestOutstandingAggregateIntrinsicValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_ShareBasedCompensationArrangementByShareBasedPaymentAwardExercisedAndVestedInPeriodIntrinsicValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardExercisedAndVestedInPeriodIntrinsicValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_PrepaidExpensesAndDeferredCostsCurrent" abstract="false" name="PrepaidExpensesAndDeferredCostsCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_ContractWithCustomerAssetAfterAllowanceForCreditLossAndDeferredCostsNoncurrent" abstract="false" name="ContractWithCustomerAssetAfterAllowanceForCreditLossAndDeferredCostsNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_SalesAllowancesAndRelatedLiabilitiesCurrent" abstract="false" name="SalesAllowancesAndRelatedLiabilitiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_DeferredIncomeTaxesAndOtherTaxLiabilitiesCurrent" abstract="false" name="DeferredIncomeTaxesAndOtherTaxLiabilitiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_AccruedFreightAndUtilitiesCurrent" abstract="false" name="AccruedFreightAndUtilitiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_AssetRetirementObligationAndAccruedEnvironmentalLossContingenciesCurrent" abstract="false" name="AssetRetirementObligationAndAccruedEnvironmentalLossContingenciesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_AssetRetirementObligationAndAccruedEnvironmentalLossContingenciesNoncurrent" abstract="false" name="AssetRetirementObligationAndAccruedEnvironmentalLossContingenciesNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_SalesAllowancesAndRelatedLiabilitiesNoncurrent" abstract="false" name="SalesAllowancesAndRelatedLiabilitiesNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_NihonMediPhysicsCoLtdMember" abstract="true" name="NihonMediPhysicsCoLtdMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="gehc_SupplierFinanceProgramForeignExchangeAndOther" abstract="false" name="SupplierFinanceProgramForeignExchangeAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_NoncontrollingInterestDecreaseFromRedemptionsAndDistributionsToNoncontrollingInterestHoldersAndOther" abstract="false" name="NoncontrollingInterestDecreaseFromRedemptionsAndDistributionsToNoncontrollingInterestHoldersAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_OtherItemsIncomeExpenseNet" abstract="false" name="OtherItemsIncomeExpenseNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="gehc_SeparationCostsPensionBenefitAndContributionPlansMember" abstract="true" name="SeparationCostsPensionBenefitAndContributionPlansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_ShareBasedCompensationExpenseMember" abstract="true" name="ShareBasedCompensationExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_TransitionServicesAgreementMember" abstract="true" name="TransitionServicesAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_TaxMattersAgreementMember" abstract="true" name="TaxMattersAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_RelatedPartyTransactionAgreementTerm" abstract="false" name="RelatedPartyTransactionAgreementTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="gehc_RelatedPartyTransactionRestrictionsPeriodFollowingDistributionDate" abstract="false" name="RelatedPartyTransactionRestrictionsPeriodFollowingDistributionDate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="gehc_CentralizedServicesCostsMember" abstract="true" name="CentralizedServicesCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_EmployeeMedicalInsuranceCostsMember" abstract="true" name="EmployeeMedicalInsuranceCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="gehc_CorporateAndSharedServicesCostsMember" abstract="true" name="CorporateAndSharedServicesCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+</xs:schema>

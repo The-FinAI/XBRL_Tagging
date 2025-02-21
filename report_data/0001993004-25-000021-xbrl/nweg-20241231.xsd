@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:397ebad4-bcf9-451f-bfee-dc0de15587e2,g:eeb9642c-d356-4e73-946f-0ee7f8ee30b4-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:nweg="http://www.northwesternenergy.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.northwesternenergy.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/naics/2024" schemaLocation="https://xbrl.sec.gov/naics/2024/naics-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/stpr/2024" schemaLocation="https://xbrl.sec.gov/stpr/2024/stpr-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nweg-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nweg-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nweg-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nweg-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverpageCoverpage" roleURI="http://www.northwesternenergy.com/role/CoverpageCoverpage">
+        <link:definition>0000001 - Document - Cover page Cover page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.northwesternenergy.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFINCOME" roleURI="http://www.northwesternenergy.com/role/CONSOLIDATEDSTATEMENTSOFINCOME">
+        <link:definition>9952151 - Statement - CONSOLIDATED STATEMENTS OF INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME" roleURI="http://www.northwesternenergy.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME">
+        <link:definition>9952152 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://www.northwesternenergy.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>9952153 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSPARENTHETICALParentheticals" roleURI="http://www.northwesternenergy.com/role/CONSOLIDATEDBALANCESHEETSPARENTHETICALParentheticals">
+        <link:definition>9952154 - Statement - CONSOLIDATED BALANCE SHEETS PARENTHETICAL (Parentheticals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.northwesternenergy.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>9952155 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMMONSHAREHOLDERSEQUITY" roleURI="http://www.northwesternenergy.com/role/CONSOLIDATEDSTATEMENTSOFCOMMONSHAREHOLDERSEQUITY">
+        <link:definition>9952156 - Statement - CONSOLIDATED STATEMENTS OF COMMON SHAREHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NatureofOperationsandBasisofConsolidation" roleURI="http://www.northwesternenergy.com/role/NatureofOperationsandBasisofConsolidation">
+        <link:definition>9952157 - Disclosure - Nature of Operations and Basis of Consolidation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPolicies" roleURI="http://www.northwesternenergy.com/role/SignificantAccountingPolicies">
+        <link:definition>9952158 - Disclosure - Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMatters" roleURI="http://www.northwesternenergy.com/role/RegulatoryMatters">
+        <link:definition>9952159 - Disclosure - Regulatory Matters</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryAssetsandLiabilities" roleURI="http://www.northwesternenergy.com/role/RegulatoryAssetsandLiabilities">
+        <link:definition>9952160 - Disclosure - Regulatory Assets and Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipment" roleURI="http://www.northwesternenergy.com/role/PropertyPlantandEquipment">
+        <link:definition>9952161 - Disclosure - Property, Plant and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligations" roleURI="http://www.northwesternenergy.com/role/AssetRetirementObligations">
+        <link:definition>9952162 - Disclosure - Asset Retirement Obligations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Goodwill" roleURI="http://www.northwesternenergy.com/role/Goodwill">
+        <link:definition>9952163 - Disclosure - Goodwill</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RiskManagementandHedgingActivities" roleURI="http://www.northwesternenergy.com/role/RiskManagementandHedgingActivities">
+        <link:definition>9952164 - Disclosure - Risk Management and Hedging Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.northwesternenergy.com/role/FairValueMeasurements">
+        <link:definition>9952165 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsandCreditArrangements" roleURI="http://www.northwesternenergy.com/role/ShortTermBorrowingsandCreditArrangements">
+        <link:definition>9952166 - Disclosure - Short-Term Borrowings and Credit Arrangements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtandCapitalLeases" roleURI="http://www.northwesternenergy.com/role/LongTermDebtandCapitalLeases">
+        <link:definition>9952167 - Disclosure - Long-Term Debt and Capital Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.northwesternenergy.com/role/IncomeTaxes">
+        <link:definition>9952168 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComprehensiveIncomeLoss" roleURI="http://www.northwesternenergy.com/role/ComprehensiveIncomeLoss">
+        <link:definition>9952169 - Disclosure - Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlans" roleURI="http://www.northwesternenergy.com/role/EmployeeBenefitPlans">
+        <link:definition>9952170 - Disclosure - Employee Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://www.northwesternenergy.com/role/StockBasedCompensation">
+        <link:definition>9952171 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommonStock" roleURI="http://www.northwesternenergy.com/role/CommonStock">
+        <link:definition>9952172 - Disclosure - Common Stock</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShare" roleURI="http://www.northwesternenergy.com/role/EarningsPerShare">
+        <link:definition>9952173 - Disclosure - Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.northwesternenergy.com/role/CommitmentsandContingencies">
+        <link:definition>9952174 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersDisaggegationofRevenue" roleURI="http://www.northwesternenergy.com/role/RevenuefromContractswithCustomersDisaggegationofRevenue">
+        <link:definition>9952175 - Disclosure - Revenue from Contracts with Customers Disaggegation of Revenue</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandRelatedInformation" roleURI="http://www.northwesternenergy.com/role/SegmentandRelatedInformation">
+        <link:definition>9952176 - Disclosure - Segment and Related Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QuarterlyFinancialDataUnaudited" roleURI="http://www.northwesternenergy.com/role/QuarterlyFinancialDataUnaudited">
+        <link:definition>9952177 - Disclosure - Quarterly Financial Data (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SECScheduleArticle1204CondensedFinancialInformationofRegistrant" roleURI="http://www.northwesternenergy.com/role/SECScheduleArticle1204CondensedFinancialInformationofRegistrant">
+        <link:definition>9952178 - Disclosure - SEC Schedule, Article 12-04, Condensed Financial Information of Registrant</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesPolicies" roleURI="http://www.northwesternenergy.com/role/SignificantAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersAccountingPolicyPolicies" roleURI="http://www.northwesternenergy.com/role/RevenuefromContractswithCustomersAccountingPolicyPolicies">
+        <link:definition>9955512 - Disclosure - Revenue from Contracts with Customers Accounting Policy (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesTables" roleURI="http://www.northwesternenergy.com/role/SignificantAccountingPoliciesTables">
+        <link:definition>9955513 - Disclosure - Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryAssetsandLiabilitiesTables" roleURI="http://www.northwesternenergy.com/role/RegulatoryAssetsandLiabilitiesTables">
+        <link:definition>9955514 - Disclosure - Regulatory Assets and Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentTables" roleURI="http://www.northwesternenergy.com/role/PropertyPlantandEquipmentTables">
+        <link:definition>9955515 - Disclosure - Property, Plant and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligationsTables" roleURI="http://www.northwesternenergy.com/role/AssetRetirementObligationsTables">
+        <link:definition>9955516 - Disclosure - Asset Retirement Obligations (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillTables" roleURI="http://www.northwesternenergy.com/role/GoodwillTables">
+        <link:definition>9955517 - Disclosure - Goodwill (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RiskManagementandHedgingActivitiesTables" roleURI="http://www.northwesternenergy.com/role/RiskManagementandHedgingActivitiesTables">
+        <link:definition>9955518 - Disclosure - Risk Management and Hedging Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.northwesternenergy.com/role/FairValueMeasurementsTables">
+        <link:definition>9955519 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsandCreditArrangementsTables" roleURI="http://www.northwesternenergy.com/role/ShortTermBorrowingsandCreditArrangementsTables">
+        <link:definition>9955520 - Disclosure - Short-Term Borrowings and Credit Arrangements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtandCapitalLeasesTables" roleURI="http://www.northwesternenergy.com/role/LongTermDebtandCapitalLeasesTables">
+        <link:definition>9955521 - Disclosure - Long-Term Debt and Capital Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.northwesternenergy.com/role/IncomeTaxesTables">
+        <link:definition>9955522 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComprehensiveIncomeLossTables" roleURI="http://www.northwesternenergy.com/role/ComprehensiveIncomeLossTables">
+        <link:definition>9955523 - Disclosure - Comprehensive Income (Loss) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansTables" roleURI="http://www.northwesternenergy.com/role/EmployeeBenefitPlansTables">
+        <link:definition>9955524 - Disclosure - Employee Benefit Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://www.northwesternenergy.com/role/StockBasedCompensationTables">
+        <link:definition>9955525 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://www.northwesternenergy.com/role/EarningsPerShareTables">
+        <link:definition>9955526 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesTables" roleURI="http://www.northwesternenergy.com/role/CommitmentsandContingenciesTables">
+        <link:definition>9955527 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersDisaggregationofRevenueTables" roleURI="http://www.northwesternenergy.com/role/RevenuefromContractswithCustomersDisaggregationofRevenueTables">
+        <link:definition>9955528 - Disclosure - Revenue from Contracts with Customers Disaggregation of Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandRelatedInformationTables" roleURI="http://www.northwesternenergy.com/role/SegmentandRelatedInformationTables">
+        <link:definition>9955529 - Disclosure - Segment and Related Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QuarterlyFinancialDataUnauditedTables" roleURI="http://www.northwesternenergy.com/role/QuarterlyFinancialDataUnauditedTables">
+        <link:definition>9955530 - Disclosure - Quarterly Financial Data (Unaudited) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedFinancialsStandaloneNorthWesternEnergyGroupTables" roleURI="http://www.northwesternenergy.com/role/CondensedFinancialsStandaloneNorthWesternEnergyGroupTables">
+        <link:definition>9955531 - Disclosure - Condensed Financials Standalone NorthWestern Energy Group (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NatureofOperationsandBasisofConsolidationDetails" roleURI="http://www.northwesternenergy.com/role/NatureofOperationsandBasisofConsolidationDetails">
+        <link:definition>9955532 - Disclosure - Nature of Operations and Basis of Consolidation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesNarrativeDetails" roleURI="http://www.northwesternenergy.com/role/SignificantAccountingPoliciesNarrativeDetails">
+        <link:definition>9955533 - Disclosure - Significant Accounting Policies Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesInventoryDetails" roleURI="http://www.northwesternenergy.com/role/SignificantAccountingPoliciesInventoryDetails">
+        <link:definition>9955534 - Disclosure - Significant Accounting Policies Inventory (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesPropertyplantequipmentDetails" roleURI="http://www.northwesternenergy.com/role/SignificantAccountingPoliciesPropertyplantequipmentDetails">
+        <link:definition>9955535 - Disclosure - Significant Accounting Policies Property plant equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesScheduleofAccruedLiabilitiesDetails" roleURI="http://www.northwesternenergy.com/role/SignificantAccountingPoliciesScheduleofAccruedLiabilitiesDetails">
+        <link:definition>9955536 - Disclosure - Significant Accounting Policies Schedule of Accrued Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesOtherNoncurrentLiabilitiesDetails" roleURI="http://www.northwesternenergy.com/role/SignificantAccountingPoliciesOtherNoncurrentLiabilitiesDetails">
+        <link:definition>9955537 - Disclosure - Significant Accounting Policies Other Noncurrent Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesSupplementalCashFlowsDetails" roleURI="http://www.northwesternenergy.com/role/SignificantAccountingPoliciesSupplementalCashFlowsDetails">
+        <link:definition>9955538 - Disclosure - Significant Accounting Policies Supplemental Cash Flows (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesReconciliationofCashandRestrictedCashDetails" roleURI="http://www.northwesternenergy.com/role/SignificantAccountingPoliciesReconciliationofCashandRestrictedCashDetails">
+        <link:definition>9955539 - Disclosure - Significant Accounting Policies Reconciliation of Cash and Restricted Cash (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMattersDetails" roleURI="http://www.northwesternenergy.com/role/RegulatoryMattersDetails">
+        <link:definition>9955540 - Disclosure - Regulatory Matters (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryAssetsandLiabilitiesDetails" roleURI="http://www.northwesternenergy.com/role/RegulatoryAssetsandLiabilitiesDetails">
+        <link:definition>9955541 - Disclosure - Regulatory Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryAssetsandLiabilitiesNarrativeDetails" roleURI="http://www.northwesternenergy.com/role/RegulatoryAssetsandLiabilitiesNarrativeDetails">
+        <link:definition>9955542 - Disclosure - Regulatory Assets and Liabilities Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentDetails" roleURI="http://www.northwesternenergy.com/role/PropertyPlantandEquipmentDetails">
+        <link:definition>9955543 - Disclosure - Property, Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentJointOwnershipDetails" roleURI="http://www.northwesternenergy.com/role/PropertyPlantandEquipmentJointOwnershipDetails">
+        <link:definition>9955544 - Disclosure - Property, Plant and Equipment Joint Ownership (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligationsRollforwardDetails" roleURI="http://www.northwesternenergy.com/role/AssetRetirementObligationsRollforwardDetails">
+        <link:definition>9955545 - Disclosure - Asset Retirement Obligations Rollforward (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligationsNarrativeDetails" roleURI="http://www.northwesternenergy.com/role/AssetRetirementObligationsNarrativeDetails">
+        <link:definition>9955546 - Disclosure - Asset Retirement Obligations Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillDetails" roleURI="http://www.northwesternenergy.com/role/GoodwillDetails">
+        <link:definition>9955547 - Disclosure - Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RiskManagementandHedgingActivitiesDetails" roleURI="http://www.northwesternenergy.com/role/RiskManagementandHedgingActivitiesDetails">
+        <link:definition>9955548 - Disclosure - Risk Management and Hedging Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsFairValueRecurringBasisDetails" roleURI="http://www.northwesternenergy.com/role/FairValueMeasurementsFairValueRecurringBasisDetails">
+        <link:definition>9955549 - Disclosure - Fair Value Measurements Fair Value Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsFairValueFinancialInstrumentsDetails" roleURI="http://www.northwesternenergy.com/role/FairValueMeasurementsFairValueFinancialInstrumentsDetails">
+        <link:definition>9955550 - Disclosure - Fair Value Measurements Fair Value Financial Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsandCreditArrangementsDetails" roleURI="http://www.northwesternenergy.com/role/ShortTermBorrowingsandCreditArrangementsDetails">
+        <link:definition>9955551 - Disclosure - Short-Term Borrowings and Credit Arrangements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsandCreditArrangementsDetails_1" roleURI="http://www.northwesternenergy.com/role/ShortTermBorrowingsandCreditArrangementsDetails_1">
+        <link:definition>9955552 - Disclosure - Short-Term Borrowings and Credit Arrangements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtandCapitalLeasesScheduleofDebtDetails" roleURI="http://www.northwesternenergy.com/role/LongTermDebtandCapitalLeasesScheduleofDebtDetails">
+        <link:definition>9955553 - Disclosure - Long-Term Debt and Capital Leases Schedule of Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtandCapitalLeasesScheduleofLongTermDebtDetails" roleURI="http://www.northwesternenergy.com/role/LongTermDebtandCapitalLeasesScheduleofLongTermDebtDetails">
+        <link:definition>9955554 - Disclosure - Long-Term Debt and Capital Leases Schedule of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtandCapitalLeasesDetails" roleURI="http://www.northwesternenergy.com/role/LongTermDebtandCapitalLeasesDetails">
+        <link:definition>9955555 - Disclosure - Long-Term Debt and Capital Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.northwesternenergy.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>9955556 - Disclosure - Income Taxes Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDomesticTaxComponentsDetails" roleURI="http://www.northwesternenergy.com/role/IncomeTaxesDomesticTaxComponentsDetails">
+        <link:definition>9955557 - Disclosure - Income Taxes Domestic Tax Components (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DeferredIncomeTaxesComponentsDetails" roleURI="http://www.northwesternenergy.com/role/DeferredIncomeTaxesComponentsDetails">
+        <link:definition>9955558 - Disclosure - Deferred Income Taxes Components (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesEffectiveRateReconciliationDetails" roleURI="http://www.northwesternenergy.com/role/IncomeTaxesEffectiveRateReconciliationDetails">
+        <link:definition>9955559 - Disclosure - Income Taxes Effective Rate Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesOperatingLossDetails" roleURI="http://www.northwesternenergy.com/role/IncomeTaxesOperatingLossDetails">
+        <link:definition>9955560 - Disclosure - Income Taxes Operating Loss (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDeferredTaxLiabilityDetails" roleURI="http://www.northwesternenergy.com/role/IncomeTaxesDeferredTaxLiabilityDetails">
+        <link:definition>9955561 - Disclosure - Income Taxes Deferred Tax Liability (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesUncertainTaxPositionsDetails" roleURI="http://www.northwesternenergy.com/role/IncomeTaxesUncertainTaxPositionsDetails">
+        <link:definition>9955562 - Disclosure - Income Taxes Uncertain Tax Positions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComprehensiveIncomeLossDetails" roleURI="http://www.northwesternenergy.com/role/ComprehensiveIncomeLossDetails">
+        <link:definition>9955563 - Disclosure - Comprehensive Income (Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComprehensiveIncomeLossComponentsofAOCIDetails" roleURI="http://www.northwesternenergy.com/role/ComprehensiveIncomeLossComponentsofAOCIDetails">
+        <link:definition>9955564 - Disclosure - Comprehensive Income (Loss) Components of AOCI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansBenefitObligationAndFundedStatusDetails" roleURI="http://www.northwesternenergy.com/role/EmployeeBenefitPlansBenefitObligationAndFundedStatusDetails">
+        <link:definition>9955565 - Disclosure - Employee Benefit Plans Benefit Obligation And Funded Status (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansNetPeriodicCostsDetails" roleURI="http://www.northwesternenergy.com/role/EmployeeBenefitPlansNetPeriodicCostsDetails">
+        <link:definition>9955566 - Disclosure - Employee Benefit Plans Net Periodic Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansActuarialAssumptionsDetails" roleURI="http://www.northwesternenergy.com/role/EmployeeBenefitPlansActuarialAssumptionsDetails">
+        <link:definition>9955567 - Disclosure - Employee Benefit Plans Actuarial Assumptions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansInvestmentStrategyDetails" roleURI="http://www.northwesternenergy.com/role/EmployeeBenefitPlansInvestmentStrategyDetails">
+        <link:definition>9955568 - Disclosure - Employee Benefit Plans Investment Strategy (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansCashFlowsDetails" roleURI="http://www.northwesternenergy.com/role/EmployeeBenefitPlansCashFlowsDetails">
+        <link:definition>9955569 - Disclosure - Employee Benefit Plans Cash Flows (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansEstimatedPaymentsDetails" roleURI="http://www.northwesternenergy.com/role/EmployeeBenefitPlansEstimatedPaymentsDetails">
+        <link:definition>9955570 - Disclosure - Employee Benefit Plans Estimated Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansNarrativeDetails" roleURI="http://www.northwesternenergy.com/role/EmployeeBenefitPlansNarrativeDetails">
+        <link:definition>9955571 - Disclosure - Employee Benefit Plans Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationDetails" roleURI="http://www.northwesternenergy.com/role/StockBasedCompensationDetails">
+        <link:definition>9955572 - Disclosure - Stock-Based Compensation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationNonvestedDetails" roleURI="http://www.northwesternenergy.com/role/StockBasedCompensationNonvestedDetails">
+        <link:definition>9955573 - Disclosure - Stock-Based Compensation Nonvested (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommonStockCommonStockDetails" roleURI="http://www.northwesternenergy.com/role/CommonStockCommonStockDetails">
+        <link:definition>9955574 - Disclosure - Common Stock Common Stock (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareDetails" roleURI="http://www.northwesternenergy.com/role/EarningsPerShareDetails">
+        <link:definition>9955575 - Disclosure - Earnings Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesQualifyingFacilitiesLiabilityDetails" roleURI="http://www.northwesternenergy.com/role/CommitmentsandContingenciesQualifyingFacilitiesLiabilityDetails">
+        <link:definition>9955576 - Disclosure - Commitments and Contingencies Qualifying Facilities Liability (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesLongTermSupplyandCapacityPurchaseObligationsDetails" roleURI="http://www.northwesternenergy.com/role/CommitmentsandContingenciesLongTermSupplyandCapacityPurchaseObligationsDetails">
+        <link:definition>9955577 - Disclosure - Commitments and Contingencies Long Term Supply and Capacity Purchase Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesEnvironmentalLiabilitiesDetails" roleURI="http://www.northwesternenergy.com/role/CommitmentsandContingenciesEnvironmentalLiabilitiesDetails">
+        <link:definition>9955578 - Disclosure - Commitments and Contingencies Environmental Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesLegalProceedingsDetails" roleURI="http://www.northwesternenergy.com/role/CommitmentsandContingenciesLegalProceedingsDetails">
+        <link:definition>9955579 - Disclosure - Commitments and Contingencies Legal Proceedings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersDisaggregationofRevenueDetails" roleURI="http://www.northwesternenergy.com/role/RevenuefromContractswithCustomersDisaggregationofRevenueDetails">
+        <link:definition>9955580 - Disclosure - Revenue from Contracts with Customers Disaggregation of Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandRelatedInformationDetails" roleURI="http://www.northwesternenergy.com/role/SegmentandRelatedInformationDetails">
+        <link:definition>9955581 - Disclosure - Segment and Related Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QuarterlyFinancialDataUnauditedDetails" roleURI="http://www.northwesternenergy.com/role/QuarterlyFinancialDataUnauditedDetails">
+        <link:definition>9955582 - Disclosure - Quarterly Financial Data (Unaudited) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedFinancialInformationParentCompanyOnlyDetails" roleURI="http://www.northwesternenergy.com/role/CondensedFinancialInformationParentCompanyOnlyDetails">
+        <link:definition>9955583 - Disclosure - Condensed Financial Information - Parent Company Only (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="nweg_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_UtilityOperatingExpenseFuelPurchasedSupplyAndDirectTransmissionExpense" abstract="false" name="UtilityOperatingExpenseFuelPurchasedSupplyAndDirectTransmissionExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_StatementofFinancialPositionParentheticalAbstract" abstract="true" name="StatementofFinancialPositionParentheticalAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_AmortizationOfDebtIssueCostsAndDiscountAndDeferredHedgeGain" abstract="false" name="AmortizationOfDebtIssueCostsAndDiscountAndDeferredHedgeGain" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_ReconciliationofCashandRestrictedCashTableTextBlock" abstract="false" name="ReconciliationofCashandRestrictedCashTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="nweg_ScheduleOfRegulatoryAssetsAndLiabilitiesTableTextBlock" abstract="false" name="ScheduleOfRegulatoryAssetsAndLiabilitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="nweg_ScheduleOfIncomeTaxExpenseDomesticTableTextBlock" abstract="false" name="ScheduleOfIncomeTaxExpenseDomesticTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="nweg_ComponentsOfDefferedIncomeTaxTableTextBlock" abstract="false" name="ComponentsOfDefferedIncomeTaxTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nweg_AccumulatedOtherComprehensiveIncomeTableTextBlock" abstract="false" name="AccumulatedOtherComprehensiveIncomeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="nweg_ScheduleOfPensionAndPostretirementBenefitsInvestmentStrategyTableTextBlock" abstract="false" name="ScheduleOfPensionAndPostretirementBenefitsInvestmentStrategyTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="nweg_ScheduleOfPensionContributionsTableTextBlock" abstract="false" name="ScheduleOfPensionContributionsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="nweg_ScheduleOfChangesInQualifyingFacilityLiabilityTableTextBlock" abstract="false" name="ScheduleOfChangesInQualifyingFacilityLiabilityTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="nweg_ScheduleOfEstimatedGrossContractualObligationLessAmountsRecoverableThroughRatesTableTextBlock" abstract="false" name="ScheduleOfEstimatedGrossContractualObligationLessAmountsRecoverableThroughRatesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="nweg_OperationsAndBasisOfConsolidationTable" abstract="true" name="OperationsAndBasisOfConsolidationTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_QualifyingFacilityContractsMember" abstract="true" name="QualifyingFacilityContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_NumberOfCustomers" abstract="false" name="NumberOfCustomers" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nweg_NumberOfMonthsOrLessOfMaturityToBeConsideredCashEquivalent" abstract="false" name="NumberOfMonthsOrLessOfMaturityToBeConsideredCashEquivalent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nweg_CustomerAdvances" abstract="false" name="CustomerAdvances" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_QualifyingFacilityLiability" abstract="false" name="QualifyingFacilityLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_ProductionTaxCreditsCashTransfers" abstract="false" name="ProductionTaxCreditsCashTransfers" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_ScheduleOfRegulatedOperationsTable" abstract="true" name="ScheduleOfRegulatedOperationsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_BaseElectricRateMember" abstract="true" name="BaseElectricRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_BasePCCAMInterimRateMember" abstract="true" name="BasePCCAMInterimRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_PublicUtilitiesApprovedRateOfReturn" abstract="false" name="PublicUtilitiesApprovedRateOfReturn" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nweg_RequestedRateBase" abstract="false" name="RequestedRateBase" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_ApprovedRateBase" abstract="false" name="ApprovedRateBase" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_RequestedRateOfReturn" abstract="false" name="RequestedRateOfReturn" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nweg_ForecastedRateBase" abstract="false" name="ForecastedRateBase" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_ScheduleOfRegulatoryAssetsAndLiabilitiesTable" abstract="true" name="ScheduleOfRegulatoryAssetsAndLiabilitiesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_ExcessDeferredIncomeTaxesMember" abstract="true" name="ExcessDeferredIncomeTaxesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_EmployeeRelatedBenefitsMember" abstract="true" name="EmployeeRelatedBenefitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_DeferredFinaincingCostsMember" abstract="true" name="DeferredFinaincingCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_WildfireMitigationMember" abstract="true" name="WildfireMitigationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_SupplyCostsMember" abstract="true" name="SupplyCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_StateAndLocalTaxesAndFeesMember" abstract="true" name="StateAndLocalTaxesAndFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_EnvironmentalRemediationObligationsMember" abstract="true" name="EnvironmentalRemediationObligationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_RegulatoryAssetsAndLiabilitiesLineItems" abstract="true" name="RegulatoryAssetsAndLiabilitiesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_ElectricSupplyCostsMember" abstract="true" name="ElectricSupplyCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_NaturalGasSupplyCostsMember" abstract="true" name="NaturalGasSupplyCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_PercentageOfInterestEarnedOnElectricAndNaturalGasSupplyCosts" abstract="false" name="PercentageOfInterestEarnedOnElectricAndNaturalGasSupplyCosts" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="nweg_ElectricPlantMember" abstract="true" name="ElectricPlantMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_NaturalGasPlantMember" abstract="true" name="NaturalGasPlantMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_PlantAcquisitionAdjustmentMember" abstract="true" name="PlantAcquisitionAdjustmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_CommonPlantMember" abstract="true" name="CommonPlantMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ConstructionWorkInProgressMember" abstract="true" name="ConstructionWorkInProgressMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ColstripOwnershipInUnit3And4EffectiveDecember312025Member" abstract="true" name="ColstripOwnershipInUnit3And4EffectiveDecember312025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_BigStoneGeneratingFacilityMember" abstract="true" name="BigStoneGeneratingFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_Neal4GeneratingFacilityMember" abstract="true" name="Neal4GeneratingFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_CoyoteGeneratingFacilityMember" abstract="true" name="CoyoteGeneratingFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ColstripUnit4Member" abstract="true" name="ColstripUnit4Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ColstripOwnershipInUnit3And4EffectiveDecember312025AcquiredFromAvistaCorporationMember" abstract="true" name="ColstripOwnershipInUnit3And4EffectiveDecember312025AcquiredFromAvistaCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ColstripOwnershipInUnit3And4EffectiveDecember312025AcquiredFromPugetMember" abstract="true" name="ColstripOwnershipInUnit3And4EffectiveDecember312025AcquiredFromPugetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_NumberOfJointOwnershipInterestElectricGeneratingPlants" abstract="false" name="NumberOfJointOwnershipInterestElectricGeneratingPlants" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nweg_ElectricDomesticRegulatedMember" abstract="true" name="ElectricDomesticRegulatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_GasDomesticRegulatedMember" abstract="true" name="GasDomesticRegulatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_PhysicalPurchaseAndSaleOfGasAndElectricityAtFixedPrices" abstract="false" name="PhysicalPurchaseAndSaleOfGasAndElectricityAtFixedPrices" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_RestrictedCashFairValueDisclosure" abstract="false" name="RestrictedCashFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_RabbiTrustInvestmentFairValueDisclosure" abstract="false" name="RabbiTrustInvestmentFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_RevolvingCreditFacilityDue2028Member" abstract="true" name="RevolvingCreditFacilityDue2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_SwinglineCreditFacilityMember" abstract="true" name="SwinglineCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_RevolvingCreditFacilityDue2023Member" abstract="true" name="RevolvingCreditFacilityDue2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_RevolvingCreditFacilityDue2021Member" abstract="true" name="RevolvingCreditFacilityDue2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_RevolvingCreditFacilityDue2024Member" abstract="true" name="RevolvingCreditFacilityDue2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_RevolvingCreditFacilityDue2028EffectiveJanuary12024Member" abstract="true" name="RevolvingCreditFacilityDue2028EffectiveJanuary12024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_NorthwesternCorporationRevolvingCreditFacilityTerminated2024Member" abstract="true" name="NorthwesternCorporationRevolvingCreditFacilityTerminated2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_NWEPublicServiceMember" abstract="true" name="NWEPublicServiceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_NorthWesternEnergyGroupInc.Member" abstract="true" name="NorthWesternEnergyGroupInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_NWCorpMember" abstract="true" name="NWCorpMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_TermLoanDue2025Member" abstract="true" name="TermLoanDue2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_MontanaFirstMortgageBondsDueMarch282031Member" abstract="true" name="MontanaFirstMortgageBondsDueMarch282031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_SouthDakotaFirstMortgageBondsDue20345.55IssuedMarch2024Member" abstract="true" name="SouthDakotaFirstMortgageBondsDue20345.55IssuedMarch2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_SouthDakotaFirstMortgageBondsDue20345.75IssuedMarch2024Member" abstract="true" name="SouthDakotaFirstMortgageBondsDue20345.75IssuedMarch2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_MaximumRatioOfIndebtednessToNetCapitalThresholdPercentage" abstract="false" name="MaximumRatioOfIndebtednessToNetCapitalThresholdPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="nweg_CreditFacilityIncreaseToMaximumBorrowingCapacity" abstract="false" name="CreditFacilityIncreaseToMaximumBorrowingCapacity" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_LineOfCreditFacilityBaseSublimit" abstract="false" name="LineOfCreditFacilityBaseSublimit" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_CreditFacilityBorrowingsandLetterofCreditAmountOutstanding" abstract="false" name="CreditFacilityBorrowingsandLetterofCreditAmountOutstanding" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DebtInstrumentUnamortizedDiscountPremiumandDebtIssuanceCostsNetMember" abstract="true" name="DebtInstrumentUnamortizedDiscountPremiumandDebtIssuanceCostsNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_MontanaFirstMortgageBondsDue2024Member" abstract="true" name="MontanaFirstMortgageBondsDue2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtSouthDakotaDue2025Member" abstract="true" name="SecuredDebtSouthDakotaDue2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtSouthDakotaDue2026Member" abstract="true" name="SecuredDebtSouthDakotaDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtSouthDakotaDue20262.66Member" abstract="true" name="SecuredDebtSouthDakotaDue20262.66Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SouthDakotaFirstMortgageBondsDue20295.55IssuedMarch2024Member" abstract="true" name="SouthDakotaFirstMortgageBondsDue20295.55IssuedMarch2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtSouthDakotaDue2030Member" abstract="true" name="SecuredDebtSouthDakotaDue2030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SouthDakotaFirstMortgageBondsDue2033Member" abstract="true" name="SouthDakotaFirstMortgageBondsDue2033Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SouthDakotaFirstMortgageBondsDue2033IssuedMay2023Member" abstract="true" name="SouthDakotaFirstMortgageBondsDue2033IssuedMay2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtSouthDakotaDue2040Member" abstract="true" name="SecuredDebtSouthDakotaDue2040Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtSouthDakotaDue2042Member" abstract="true" name="SecuredDebtSouthDakotaDue2042Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtSouthDakotaDue2043Member" abstract="true" name="SecuredDebtSouthDakotaDue2043Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtSouthDakotaDue2044Member" abstract="true" name="SecuredDebtSouthDakotaDue2044Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtSouthDakotaDue2052Member" abstract="true" name="SecuredDebtSouthDakotaDue2052Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDue2025Member" abstract="true" name="SecuredDebtMontanaDue2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDue20253.11Member" abstract="true" name="SecuredDebtMontanaDue20253.11Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDue2028Member" abstract="true" name="SecuredDebtMontanaDue2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDue2030Member" abstract="true" name="SecuredDebtMontanaDue2030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_MontanaFirstMortgageBondsDueMarch302033Member" abstract="true" name="MontanaFirstMortgageBondsDueMarch302033Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDue2039Member" abstract="true" name="SecuredDebtMontanaDue2039Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDue2042Member" abstract="true" name="SecuredDebtMontanaDue2042Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDue2043Member" abstract="true" name="SecuredDebtMontanaDue2043Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDue2044Member" abstract="true" name="SecuredDebtMontanaDue2044Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDue2045Member" abstract="true" name="SecuredDebtMontanaDue2045Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDue2047Member" abstract="true" name="SecuredDebtMontanaDue2047Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDue2049Member" abstract="true" name="SecuredDebtMontanaDue2049Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDue2052Member" abstract="true" name="SecuredDebtMontanaDue2052Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDueJune2049Member" abstract="true" name="SecuredDebtMontanaDueJune2049Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_MontanaFirstMortgageBondsDue2033Member" abstract="true" name="MontanaFirstMortgageBondsDue2033Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontanaDueSeptember2049Member" abstract="true" name="SecuredDebtMontanaDueSeptember2049Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontana2.00Due2023Member" abstract="true" name="SecuredDebtMontana2.00Due2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SecuredDebtMontana388Due2028Member" abstract="true" name="SecuredDebtMontana388Due2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_NewMarketTaxCreditFinancingMember" abstract="true" name="NewMarketTaxCreditFinancingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_SouthDakotaFirstMortgageBondsDueMay12033Member" abstract="true" name="SouthDakotaFirstMortgageBondsDueMay12033Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_AdjustmentsToDeferredIncomeTaxesForProductionTaxCreditCashTransfers" abstract="false" name="AdjustmentsToDeferredIncomeTaxesForProductionTaxCreditCashTransfers" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DeferredTaxExpenseExcludingItemsBelow" abstract="false" name="DeferredTaxExpenseExcludingItemsBelow" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_AdjustmentsToOtherNoncurrentLiabilitiesRegulatoryAssetsAndLiabilities" abstract="false" name="AdjustmentsToOtherNoncurrentLiabilitiesRegulatoryAssetsAndLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DeferredTaxBenefitExpense" abstract="false" name="DeferredTaxBenefitExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_SignificantDifferencesFromFederalStatutoryRateAbstract" abstract="true" name="SignificantDifferencesFromFederalStatutoryRateAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_EffectiveIncomeTaxRateReconciliationPermanentOrFlowThroughAdjutsmentsAbstract" abstract="true" name="EffectiveIncomeTaxRateReconciliationPermanentOrFlowThroughAdjutsmentsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_EffectiveIncomeTaxRateReconciliationUnregulatedTaxCutsAndJobsActExcessDeferredIncomeTaxesPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationUnregulatedTaxCutsAndJobsActExcessDeferredIncomeTaxesPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nweg_EffectiveIncomeTaxRateReconciliationUnrecognizedTaxBenefitsPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationUnrecognizedTaxBenefitsPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="nweg_EffectiveIncomeTaxRateReconciliationAmortizationofExcessDeferredTaxesPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationAmortizationofExcessDeferredTaxesPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="nweg_IncomeTaxReconciliationAcceleratedTaxDepreciationFlowThroughAdjustment" abstract="false" name="IncomeTaxReconciliationAcceleratedTaxDepreciationFlowThroughAdjustment" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="nweg_ReductionToPreviouslyClaimedAlternativeMinimumTaxCreditPercent" abstract="false" name="ReductionToPreviouslyClaimedAlternativeMinimumTaxCreditPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nweg_EffectiveIncomeTaxRateReconciliationUnregulatedTaxCutsAndJobsActExcessDeferredIncomeTaxesAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationUnregulatedTaxCutsAndJobsActExcessDeferredIncomeTaxesAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_EffectiveIncomeTaxRateReconciliationReductionResultingfromLapseofApplicableStatuteofLimitations" abstract="false" name="EffectiveIncomeTaxRateReconciliationReductionResultingfromLapseofApplicableStatuteofLimitations" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_EffectiveIncomeTaxRateReconciliationAmortizationofExcessDeferredTaxes" abstract="false" name="EffectiveIncomeTaxRateReconciliationAmortizationofExcessDeferredTaxes" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_IncomeTaxReconciliationDeductionsAcceleratedTaxDepreciationFlowThroughAdjustment" abstract="false" name="IncomeTaxReconciliationDeductionsAcceleratedTaxDepreciationFlowThroughAdjustment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_ReductionToPreviouslyClaimedAlternativeMinimumTaxCredit" abstract="false" name="ReductionToPreviouslyClaimedAlternativeMinimumTaxCredit" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_EffectiveIncomeTaxRateReconciliationGasRepairsSafeHarborMethodChangeAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationGasRepairsSafeHarborMethodChangeAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_EffectiveIncomeTaxRateReconciliationGasRepairsSafeHarborMethodChangePercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationGasRepairsSafeHarborMethodChangePercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nweg_GasRepairsSafeHarborMethodChangeTaxBenefit" abstract="false" name="GasRepairsSafeHarborMethodChangeTaxBenefit" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_TaxCreditCarryforwardExpirationDateAxis" abstract="true" name="TaxCreditCarryforwardExpirationDateAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_TaxCreditCarryforwardExpirationDateDomain" abstract="true" name="TaxCreditCarryforwardExpirationDateDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ProductionTaxCreditsExpiringIn2036Member" abstract="true" name="ProductionTaxCreditsExpiringIn2036Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ProductionTaxCreditsExpiringIn2037Member" abstract="true" name="ProductionTaxCreditsExpiringIn2037Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ProductionTaxCreditsExpiringIn2038Member" abstract="true" name="ProductionTaxCreditsExpiringIn2038Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ProductionTaxCreditsExpiringIn2040Member" abstract="true" name="ProductionTaxCreditsExpiringIn2040Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ProductionTaxCreditsExpiringIn2041Member" abstract="true" name="ProductionTaxCreditsExpiringIn2041Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ProductionTaxCreditsExpiringIn2042Member" abstract="true" name="ProductionTaxCreditsExpiringIn2042Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ProductionTaxCreditsExpiringIn2039Member" abstract="true" name="ProductionTaxCreditsExpiringIn2039Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ProductionTaxCreditsExpiringIn2035Member" abstract="true" name="ProductionTaxCreditsExpiringIn2035Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_ProductionTaxCreditsExpiringIn2043Member" abstract="true" name="ProductionTaxCreditsExpiringIn2043Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_ProductionTaxCreditsExpiringIn2044Member" abstract="true" name="ProductionTaxCreditsExpiringIn2044Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_Deferredtaxassetsproductiontaxcredits" abstract="false" name="Deferredtaxassetsproductiontaxcredits" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DeferredTaxAssetsCustomerAdvances" abstract="false" name="DeferredTaxAssetsCustomerAdvances" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DeferredTaxAssetsUnbilledRevenue" abstract="false" name="DeferredTaxAssetsUnbilledRevenue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DeferredTaxAssetsEnvironmentalLiability" abstract="false" name="DeferredTaxAssetsEnvironmentalLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DeferredTaxLiabilitiesExcessTaxDepreciation" abstract="false" name="DeferredTaxLiabilitiesExcessTaxDepreciation" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DeferredTaxLiabilitiesFlowThroughDepreciation" abstract="false" name="DeferredTaxLiabilitiesFlowThroughDepreciation" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_IRSRevenueProcedure202315SafeHarborMethodOfAccountingForGasRepairsExpendituresMember" abstract="true" name="IRSRevenueProcedure202315SafeHarborMethodOfAccountingForGasRepairsExpendituresMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_ExpirationOfStatuteOfLimitationsMember" abstract="true" name="ExpirationOfStatuteOfLimitationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_LapseOfStatuteOfLimitationsMember" abstract="true" name="LapseOfStatuteOfLimitationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_UnrecognizedTaxBenefitMoreLikelyThanNotPercentageThreshold" abstract="false" name="UnrecognizedTaxBenefitMoreLikelyThanNotPercentageThreshold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="nweg_IncomeTaxBenefitFromDecreaseInUnrecognizedTaxBenefits" abstract="false" name="IncomeTaxBenefitFromDecreaseInUnrecognizedTaxBenefits" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_ComponentsofAOCIAbstract" abstract="true" name="ComponentsofAOCIAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_PensionSettlementTypeAxis" abstract="true" name="PensionSettlementTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_PensionSettlementTypeDomain" abstract="true" name="PensionSettlementTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_FinalSettlementReconciliationMember" abstract="true" name="FinalSettlementReconciliationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_AssetDefinedBenefitPlanNoncurrent" abstract="false" name="AssetDefinedBenefitPlanNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DefinedBenefitPlanAmortizationOfPriorServiceCostCreditRegulatoryAssets" abstract="false" name="DefinedBenefitPlanAmortizationOfPriorServiceCostCreditRegulatoryAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DefinedBenefitPlanActuarialNetGainsLossesInRegulatoryAssets" abstract="false" name="DefinedBenefitPlanActuarialNetGainsLossesInRegulatoryAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_PlanAssetsUsedToPurchaseAnnuityContract" abstract="false" name="PlanAssetsUsedToPurchaseAnnuityContract" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_PensionPlanParticipantsIncludedInPensionSettlement" abstract="false" name="PensionPlanParticipantsIncludedInPensionSettlement" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nweg_DefinedBenefitPlanRegulatoryDeferralofNetPeriodicBenefitCosts" abstract="false" name="DefinedBenefitPlanRegulatoryDeferralofNetPeriodicBenefitCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DefinedBenefitPlanPreviouslyDeferredCostsRecognized" abstract="false" name="DefinedBenefitPlanPreviouslyDeferredCostsRecognized" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DefinedBenefitPlanNetPeriodicBenefitCostAfterRegulatoryAdjustments" abstract="false" name="DefinedBenefitPlanNetPeriodicBenefitCostAfterRegulatoryAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_NorthWesternCorporationPensionPlanMember" abstract="true" name="NorthWesternCorporationPensionPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_NorthWesternEnergyPensionPlanMember" abstract="true" name="NorthWesternEnergyPensionPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_NonunionMember" abstract="true" name="NonunionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_UnionMember" abstract="true" name="UnionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_InterestCreditRating" abstract="false" name="InterestCreditRating" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="nweg_DefinedBenefitPlanFixedIncomeSecuritiesNonUSMember" abstract="true" name="DefinedBenefitPlanFixedIncomeSecuritiesNonUSMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_DefinedBenefitPlanEquitySecuritiesGlobalMember" abstract="true" name="DefinedBenefitPlanEquitySecuritiesGlobalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_PrivateRealEstateMember" abstract="true" name="PrivateRealEstateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_NorthWesternEnergyPensionPlanMTMember" abstract="true" name="NorthWesternEnergyPensionPlanMTMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_NorthwesternEnergyHealthAndWelfareMember" abstract="true" name="NorthwesternEnergyHealthAndWelfareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_DefinedContributionPlanEmployerContribution" abstract="false" name="DefinedContributionPlanEmployerContribution" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_DefinedBenefitPlanPercentageThresholdOfDifferencesBetweenActuarialAssumptionsAndActualPlanResultsThatAreGreaterThanProjectedBenefitOrMarketValue" abstract="false" name="DefinedBenefitPlanPercentageThresholdOfDifferencesBetweenActuarialAssumptionsAndActualPlanResultsThatAreGreaterThanProjectedBenefitOrMarketValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="nweg_ExecutiveRetirementRetentionProgramMember" abstract="true" name="ExecutiveRetirementRetentionProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ShareBasedCompensationArrangementByShareBasedPaymentAwardPerformanceBasedAwardsPercentageOfSharesIssuedRelativeToCompanyActualPerformance" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardPerformanceBasedAwardsPercentageOfSharesIssuedRelativeToCompanyActualPerformance" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="nweg_NorthwesternCorporationMember" abstract="true" name="NorthwesternCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_NorthwesternPublicServiceCorporationMember" abstract="true" name="NorthwesternPublicServiceCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_CombinedCommonAndPreferredStockSharesAuthorized" abstract="false" name="CombinedCommonAndPreferredStockSharesAuthorized" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nweg_AmountOfUnrestrictedNetAssetsForNorthwesternCorporationConsolidatedAndUnconsolidatedSubsidiaries" abstract="false" name="AmountOfUnrestrictedNetAssetsForNorthwesternCorporationConsolidatedAndUnconsolidatedSubsidiaries" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_AmountOfUnrestrictedNetAssetsForNorthwesternPublicServiceCorporationConsolidatedAndUnconsolidatedSubsidiaries" abstract="false" name="AmountOfUnrestrictedNetAssetsForNorthwesternPublicServiceCorporationConsolidatedAndUnconsolidatedSubsidiaries" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_CommonEquityRatioDividendRestrictionThreshold" abstract="false" name="CommonEquityRatioDividendRestrictionThreshold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="nweg_AverageSharesUsedInComputingBasicAndDilutedEarningsPerShareTable" abstract="true" name="AverageSharesUsedInComputingBasicAndDilutedEarningsPerShareTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_GrossObligationMember" abstract="true" name="GrossObligationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_RecoverableAmountsMember" abstract="true" name="RecoverableAmountsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_NetAmountMember" abstract="true" name="NetAmountMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_PricePerMwhOfEnergyRequiredToBePurchasePerQfAgreement" abstract="false" name="PricePerMwhOfEnergyRequiredToBePurchasePerQfAgreement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_UnrecoveredLiabilityAmount" abstract="false" name="UnrecoveredLiabilityAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_HydroelectricLicenseCommitmentsMember" abstract="true" name="HydroelectricLicenseCommitmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_LongTermCommittmentTermInYears" abstract="false" name="LongTermCommittmentTermInYears" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="nweg_LongTermPurchaseCommittmentsCostsIncurred" abstract="false" name="LongTermPurchaseCommittmentsCostsIncurred" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_ScheduleOfEnvironmentalLiabilitiesAndRegulationTable" abstract="true" name="ScheduleOfEnvironmentalLiabilitiesAndRegulationTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_CombinedManufacturingSitesMember" abstract="true" name="CombinedManufacturingSitesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_AberdeenSouthDakotaSiteMember" abstract="true" name="AberdeenSouthDakotaSiteMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ManufacturedGasPlantsMember" abstract="true" name="ManufacturedGasPlantsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_EnvironmentalRemediationObligationMinimum" abstract="false" name="EnvironmentalRemediationObligationMinimum" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_EnvironmentalRemediationObligationMaximum" abstract="false" name="EnvironmentalRemediationObligationMaximum" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_EnvironmentalRemediationObligationToBeIncurredDuringNext5Years" abstract="false" name="EnvironmentalRemediationObligationToBeIncurredDuringNext5Years" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_RegulatoryAmortizationMember" abstract="true" name="RegulatoryAmortizationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_TotalRevenueMember" abstract="true" name="TotalRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_ResidentialCustomersMember" abstract="true" name="ResidentialCustomersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_CommercialCustomersMember" abstract="true" name="CommercialCustomersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_IndustrialCustomersMember" abstract="true" name="IndustrialCustomersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_OtherCustomersMember" abstract="true" name="OtherCustomersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_TotalcustomerrevenueMember" abstract="true" name="TotalcustomerrevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_OtherTariffBasedRevenueMember" abstract="true" name="OtherTariffBasedRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="nweg_TransmissionCustomersMember" abstract="true" name="TransmissionCustomersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_OtherEnergySalesRevenue" abstract="false" name="OtherEnergySalesRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nweg_RegulatedElectricAndNaturalGasSegmentsMember" abstract="true" name="RegulatedElectricAndNaturalGasSegmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_ConsolidationAxis" abstract="true" name="ConsolidationAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_ConsolidationDomain" abstract="true" name="ConsolidationDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_ParentCompanyCondensedIncomeStatementMember" abstract="true" name="ParentCompanyCondensedIncomeStatementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nweg_CondensedFinancialInformationParentCompanyOnlyTable" abstract="true" name="CondensedFinancialInformationParentCompanyOnlyTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="nweg_CondensedFinancialInformationParentCompanyOnlyLineItems" abstract="true" name="CondensedFinancialInformationParentCompanyOnlyLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+</xs:schema>

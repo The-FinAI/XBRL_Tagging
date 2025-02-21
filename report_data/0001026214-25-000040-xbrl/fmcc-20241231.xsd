@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:4fdd603d-8ddd-4404-9c76-2b28f6c4bcfa,g:6806e6f2-a979-421e-a793-2e7af607e2a4-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:fmcc="http://www.freddiemac.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.freddiemac.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/stpr/2024" schemaLocation="https://xbrl.sec.gov/stpr/2024/stpr-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="fmcc-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="fmcc-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="fmcc-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="fmcc-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.freddiemac.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.freddiemac.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncomeLoss" roleURI="http://www.freddiemac.com/role/ConsolidatedStatementsofComprehensiveIncomeLoss">
+        <link:definition>9952151 - Statement - Consolidated Statements of Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.freddiemac.com/role/ConsolidatedBalanceSheets">
+        <link:definition>9952152 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.freddiemac.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>9952153 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofEquity" roleURI="http://www.freddiemac.com/role/ConsolidatedStatementsofEquity">
+        <link:definition>9952154 - Statement - Consolidated Statements of Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://www.freddiemac.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>9952155 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofEquityParenthetical" roleURI="http://www.freddiemac.com/role/ConsolidatedStatementsofEquityParenthetical">
+        <link:definition>9952156 - Statement - Consolidated Statements of Equity (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.freddiemac.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>9952157 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConservatorshipandRelatedMatters" roleURI="http://www.freddiemac.com/role/ConservatorshipandRelatedMatters">
+        <link:definition>9952158 - Disclosure - Conservatorship and Related Matters</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritizationsandVariableInterestEntities" roleURI="http://www.freddiemac.com/role/SecuritizationsandVariableInterestEntities">
+        <link:definition>9952159 - Disclosure - Securitizations and Variable Interest Entities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoans" roleURI="http://www.freddiemac.com/role/MortgageLoans">
+        <link:definition>9952160 - Disclosure - Mortgage Loans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GuaranteesandOtherOffBalanceSheetCreditExposures" roleURI="http://www.freddiemac.com/role/GuaranteesandOtherOffBalanceSheetCreditExposures">
+        <link:definition>9952161 - Disclosure - Guarantees and Other Off-Balance Sheet Credit Exposures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCreditLosses" roleURI="http://www.freddiemac.com/role/AllowanceforCreditLosses">
+        <link:definition>9952162 - Disclosure - Allowance for Credit Losses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecurities" roleURI="http://www.freddiemac.com/role/InvestmentSecurities">
+        <link:definition>9952163 - Disclosure - Investment Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Debt" roleURI="http://www.freddiemac.com/role/Debt">
+        <link:definition>9952164 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Derivatives" roleURI="http://www.freddiemac.com/role/Derivatives">
+        <link:definition>9952165 - Disclosure - Derivatives</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CollateralizedAgreements" roleURI="http://www.freddiemac.com/role/CollateralizedAgreements">
+        <link:definition>9952166 - Disclosure - Collateralized Agreements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityandEarningsperShare" roleURI="http://www.freddiemac.com/role/StockholdersEquityandEarningsperShare">
+        <link:definition>9952167 - Disclosure - Stockholders' Equity and Earnings per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetInterestIncome" roleURI="http://www.freddiemac.com/role/NetInterestIncome">
+        <link:definition>9952168 - Disclosure - Net Interest Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.freddiemac.com/role/IncomeTaxes">
+        <link:definition>9952169 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReporting" roleURI="http://www.freddiemac.com/role/SegmentReporting">
+        <link:definition>9952170 - Disclosure - Segment Reporting</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationofCreditandOtherRisks" roleURI="http://www.freddiemac.com/role/ConcentrationofCreditandOtherRisks">
+        <link:definition>9952171 - Disclosure - Concentration of Credit and Other Risks</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosures" roleURI="http://www.freddiemac.com/role/FairValueDisclosures">
+        <link:definition>9952172 - Disclosure - Fair Value Disclosures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LegalContingencies" roleURI="http://www.freddiemac.com/role/LegalContingencies">
+        <link:definition>9952173 - Disclosure - Legal Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryCapital" roleURI="http://www.freddiemac.com/role/RegulatoryCapital">
+        <link:definition>9952174 - Disclosure - Regulatory Capital</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.freddiemac.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritizationsandVariableInterestEntitiesTables" roleURI="http://www.freddiemac.com/role/SecuritizationsandVariableInterestEntitiesTables">
+        <link:definition>9955512 - Disclosure - Securitizations and Variable Interest Entities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansTables" roleURI="http://www.freddiemac.com/role/MortgageLoansTables">
+        <link:definition>9955513 - Disclosure - Mortgage Loans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GuaranteesandOtherOffBalanceSheetCreditExposuresTables" roleURI="http://www.freddiemac.com/role/GuaranteesandOtherOffBalanceSheetCreditExposuresTables">
+        <link:definition>9955514 - Disclosure - Guarantees and Other Off-Balance Sheet Credit Exposures (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCreditLossesTables" roleURI="http://www.freddiemac.com/role/AllowanceforCreditLossesTables">
+        <link:definition>9955515 - Disclosure - Allowance for Credit Losses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesTables" roleURI="http://www.freddiemac.com/role/InvestmentSecuritiesTables">
+        <link:definition>9955516 - Disclosure - Investment Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTables" roleURI="http://www.freddiemac.com/role/DebtTables">
+        <link:definition>9955517 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesTables" roleURI="http://www.freddiemac.com/role/DerivativesTables">
+        <link:definition>9955518 - Disclosure - Derivatives (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CollateralizedAgreementsTables" roleURI="http://www.freddiemac.com/role/CollateralizedAgreementsTables">
+        <link:definition>9955519 - Disclosure - Collateralized Agreements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityandEarningsperShareTables" roleURI="http://www.freddiemac.com/role/StockholdersEquityandEarningsperShareTables">
+        <link:definition>9955520 - Disclosure - Stockholders' Equity and Earnings per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetInterestIncomeTables" roleURI="http://www.freddiemac.com/role/NetInterestIncomeTables">
+        <link:definition>9955521 - Disclosure - Net Interest Income (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.freddiemac.com/role/IncomeTaxesTables">
+        <link:definition>9955522 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingTables" roleURI="http://www.freddiemac.com/role/SegmentReportingTables">
+        <link:definition>9955523 - Disclosure - Segment Reporting (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationofCreditandOtherRisksTables" roleURI="http://www.freddiemac.com/role/ConcentrationofCreditandOtherRisksTables">
+        <link:definition>9955524 - Disclosure - Concentration of Credit and Other Risks (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresTables" roleURI="http://www.freddiemac.com/role/FairValueDisclosuresTables">
+        <link:definition>9955525 - Disclosure - Fair Value Disclosures (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryCapitalTables" roleURI="http://www.freddiemac.com/role/RegulatoryCapitalTables">
+        <link:definition>9955526 - Disclosure - Regulatory Capital (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConservatorshipandRelatedMattersDetails" roleURI="http://www.freddiemac.com/role/ConservatorshipandRelatedMattersDetails">
+        <link:definition>9955527 - Disclosure - Conservatorship and Related Matters (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritizationsandVariableInterestEntitiesDetails" roleURI="http://www.freddiemac.com/role/SecuritizationsandVariableInterestEntitiesDetails">
+        <link:definition>9955528 - Disclosure - Securitizations and Variable Interest Entities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritizationsandVariableInterestEntitiesNonConsolidatedVIEsDetails" roleURI="http://www.freddiemac.com/role/SecuritizationsandVariableInterestEntitiesNonConsolidatedVIEsDetails">
+        <link:definition>9955529 - Disclosure - Securitizations and Variable Interest Entities - Non-Consolidated VIEs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansDetails">
+        <link:definition>9955530 - Disclosure - Mortgage Loans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansMortgageLoansDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansMortgageLoansDetails">
+        <link:definition>9955531 - Disclosure - Mortgage Loans - Mortgage Loans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansLoansPurchasedandSoldDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansLoansPurchasedandSoldDetails">
+        <link:definition>9955532 - Disclosure - Mortgage Loans - Loans Purchased and Sold (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansLoanReclassificationsDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansLoanReclassificationsDetails">
+        <link:definition>9955533 - Disclosure - Mortgage Loans - Loan Reclassifications (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansAmortizedCostBasisofHeldforInvestmentLoansonNonaccrualDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansAmortizedCostBasisofHeldforInvestmentLoansonNonaccrualDetails">
+        <link:definition>9955534 - Disclosure - Mortgage Loans - Amortized Cost Basis of Held-for-Investment Loans on Nonaccrual (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansAccruedInterestReceivableandRelatedChargeOffsDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansAccruedInterestReceivableandRelatedChargeOffsDetails">
+        <link:definition>9955535 - Disclosure - Mortgage Loans - Accrued Interest Receivable and Related Charge-Offs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansAmortizedCostBasisofSingleFamilyHeldforInvestmentLoansbyCurrentLTVRatiosandVintageDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansAmortizedCostBasisofSingleFamilyHeldforInvestmentLoansbyCurrentLTVRatiosandVintageDetails">
+        <link:definition>9955536 - Disclosure - Mortgage Loans - Amortized Cost Basis of Single-Family Held-for-Investment Loans by Current LTV Ratios and Vintage (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansAmortizedCostBasisofMultifamilyHeldforInvestmentLoansbyCreditQualityIndicatorbyVintageDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansAmortizedCostBasisofMultifamilyHeldforInvestmentLoansbyCreditQualityIndicatorbyVintageDetails">
+        <link:definition>9955537 - Disclosure - Mortgage Loans -Amortized Cost Basis of Multifamily Held- for-Investment Loans by Credit Quality Indicator by Vintage (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansAmortizedCostBasisofHeldforInvestmentLoansbyPaymentStatusDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansAmortizedCostBasisofHeldforInvestmentLoansbyPaymentStatusDetails">
+        <link:definition>9955538 - Disclosure - Mortgage Loans - Amortized Cost Basis of Held-for-Investment Loans by Payment Status (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansSingleFamilyLoanRestructuringsInvolvingBorrowersExperiencingFinancialDifficultyDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansSingleFamilyLoanRestructuringsInvolvingBorrowersExperiencingFinancialDifficultyDetails">
+        <link:definition>9955539 - Disclosure - Mortgage Loans - Single-Family Loan Restructurings Involving Borrowers Experiencing Financial Difficulty (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansFinancialEffectsofSingleFamilyLoanRestructuringsInvolvingBorrowersExperiencingFinancialDifficultyDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansFinancialEffectsofSingleFamilyLoanRestructuringsInvolvingBorrowersExperiencingFinancialDifficultyDetails">
+        <link:definition>9955540 - Disclosure - Mortgage Loans - Financial Effects of Single-Family Loan Restructurings Involving Borrowers Experiencing Financial Difficulty (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansSubsequentDefaultsofSingleFamilyRestructuredLoansInvolvingBorrowersExperiencingFinancialDifficultyDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansSubsequentDefaultsofSingleFamilyRestructuredLoansInvolvingBorrowersExperiencingFinancialDifficultyDetails">
+        <link:definition>9955541 - Disclosure - Mortgage Loans - Subsequent Defaults of Single-Family Restructured Loans Involving Borrowers Experiencing Financial Difficulty (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansAmortizedCostBasisofSingleFamilyRestructuredLoansInvolvingBorrowersExperiencingFinancialDifficultybyPaymentStatusDetails" roleURI="http://www.freddiemac.com/role/MortgageLoansAmortizedCostBasisofSingleFamilyRestructuredLoansInvolvingBorrowersExperiencingFinancialDifficultybyPaymentStatusDetails">
+        <link:definition>9955542 - Disclosure - Mortgage Loans - Amortized Cost Basis of Single-Family Restructured Loans Involving Borrowers Experiencing Financial Difficulty by Payment Status (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GuaranteesandOtherOffBalanceSheetCreditExposuresFinancialGuaranteesDetails" roleURI="http://www.freddiemac.com/role/GuaranteesandOtherOffBalanceSheetCreditExposuresFinancialGuaranteesDetails">
+        <link:definition>9955543 - Disclosure - Guarantees and Other Off-Balance Sheet Credit Exposures - Financial Guarantees (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GuaranteesandOtherOffBalanceSheetCreditExposuresUPBofUnconsolidatedLoansbyPaymentStatusDetails" roleURI="http://www.freddiemac.com/role/GuaranteesandOtherOffBalanceSheetCreditExposuresUPBofUnconsolidatedLoansbyPaymentStatusDetails">
+        <link:definition>9955544 - Disclosure - Guarantees and Other Off-Balance Sheet Credit Exposures - UPB of Unconsolidated Loans by Payment Status (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GuaranteesandOtherOffBalanceSheetCreditExposuresOtherOffBalanceSheetCreditExposureDetails" roleURI="http://www.freddiemac.com/role/GuaranteesandOtherOffBalanceSheetCreditExposuresOtherOffBalanceSheetCreditExposureDetails">
+        <link:definition>9955545 - Disclosure - Guarantees and Other Off-Balance Sheet Credit Exposures - Other Off-Balance Sheet Credit Exposure (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCreditLossesDetailsoftheAllowanceforCreditLossesDetails" roleURI="http://www.freddiemac.com/role/AllowanceforCreditLossesDetailsoftheAllowanceforCreditLossesDetails">
+        <link:definition>9955546 - Disclosure - Allowance for Credit Losses - Details of the Allowance for Credit Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesDetails" roleURI="http://www.freddiemac.com/role/InvestmentSecuritiesDetails">
+        <link:definition>9955547 - Disclosure - Investment Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesInvestmentSecuritiesDetails" roleURI="http://www.freddiemac.com/role/InvestmentSecuritiesInvestmentSecuritiesDetails">
+        <link:definition>9955548 - Disclosure - Investment Securities - Investment Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsSecuritiesTradingSecuritiesDetails" roleURI="http://www.freddiemac.com/role/InvestmentsSecuritiesTradingSecuritiesDetails">
+        <link:definition>9955549 - Disclosure - Investments Securities - Trading Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetTradingGainsLossesDetail" roleURI="http://www.freddiemac.com/role/NetTradingGainsLossesDetail">
+        <link:definition>9955550 - Disclosure - Net Trading Gains (Losses) (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsSecuritiesAvailableForSaleSecuritiesDetails" roleURI="http://www.freddiemac.com/role/InvestmentsSecuritiesAvailableForSaleSecuritiesDetails">
+        <link:definition>9955551 - Disclosure - Investments Securities - Available-For-Sale Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesAvailableForSaleSecuritiesinaGrossUnrealizedLossPositionDetails" roleURI="http://www.freddiemac.com/role/InvestmentSecuritiesAvailableForSaleSecuritiesinaGrossUnrealizedLossPositionDetails">
+        <link:definition>9955552 - Disclosure - Investment Securities - Available-For-Sale Securities in a Gross Unrealized Loss Position (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsSecuritiesGrossRealizedGainsandGrossRealizedLossesonSalesofAvailableForSaleSecuritiesDetails" roleURI="http://www.freddiemac.com/role/InvestmentsSecuritiesGrossRealizedGainsandGrossRealizedLossesonSalesofAvailableForSaleSecuritiesDetails">
+        <link:definition>9955553 - Disclosure - Investments Securities - Gross Realized Gains and Gross Realized Losses on Sales of Available-For-Sale Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTotalDebtDetails" roleURI="http://www.freddiemac.com/role/DebtTotalDebtDetails">
+        <link:definition>9955554 - Disclosure - Debt - Total Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDebtSecuritiesofConsolidatedTrustsDetails" roleURI="http://www.freddiemac.com/role/DebtDebtSecuritiesofConsolidatedTrustsDetails">
+        <link:definition>9955555 - Disclosure - Debt - Debt Securities of Consolidated Trusts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtOtherShortTermDebtDetails" roleURI="http://www.freddiemac.com/role/DebtOtherShortTermDebtDetails">
+        <link:definition>9955556 - Disclosure - Debt - Other Short-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtOtherLongTermDebtDetails" roleURI="http://www.freddiemac.com/role/DebtOtherLongTermDebtDetails">
+        <link:definition>9955557 - Disclosure - Debt - Other Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtContractualMaturityofOtherLongtermDebtandDebtSecuritiesDetails" roleURI="http://www.freddiemac.com/role/DebtContractualMaturityofOtherLongtermDebtandDebtSecuritiesDetails">
+        <link:definition>9955558 - Disclosure - Debt - Contractual Maturity of Other Long-term Debt and Debt Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesDetails" roleURI="http://www.freddiemac.com/role/DerivativesDetails">
+        <link:definition>9955559 - Disclosure - Derivatives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesDerivativeAssetsandLiabilitiesatFairValueDetails" roleURI="http://www.freddiemac.com/role/DerivativesDerivativeAssetsandLiabilitiesatFairValueDetails">
+        <link:definition>9955560 - Disclosure - Derivatives - Derivative Assets and Liabilities at Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingofDerivativesAssetsDetails" roleURI="http://www.freddiemac.com/role/OffsettingofDerivativesAssetsDetails">
+        <link:definition>9955561 - Disclosure - Offsetting of Derivatives - Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingofDerivativesLiabilitiesDetails" roleURI="http://www.freddiemac.com/role/OffsettingofDerivativesLiabilitiesDetails">
+        <link:definition>9955562 - Disclosure - Offsetting of Derivatives - Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesGainsandLossesonDerivativesDetails" roleURI="http://www.freddiemac.com/role/DerivativesGainsandLossesonDerivativesDetails">
+        <link:definition>9955563 - Disclosure - Derivatives - Gains and Losses on Derivatives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesGainsandLossesonFairValueHedgeDetails" roleURI="http://www.freddiemac.com/role/DerivativesGainsandLossesonFairValueHedgeDetails">
+        <link:definition>9955564 - Disclosure - Derivatives - Gains and Losses on Fair Value Hedge (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesCumulativeBasisAdjustmentonFairValueHedgesDetails" roleURI="http://www.freddiemac.com/role/DerivativesCumulativeBasisAdjustmentonFairValueHedgesDetails">
+        <link:definition>9955565 - Disclosure - Derivatives - Cumulative Basis Adjustment on Fair Value Hedges (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CollateralizedAgreementsDetails" roleURI="http://www.freddiemac.com/role/CollateralizedAgreementsDetails">
+        <link:definition>9955566 - Disclosure - Collateralized Agreements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CollateralizedAgreementsandOffsettingArrangementsOffsettingofFinancialAssetsDetails" roleURI="http://www.freddiemac.com/role/CollateralizedAgreementsandOffsettingArrangementsOffsettingofFinancialAssetsDetails">
+        <link:definition>9955567 - Disclosure - Collateralized Agreements and Offsetting Arrangements - Offsetting of Financial Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CollateralizedAgreementsandOffsettingArrangementsOffsettingofFinancialLiabilitiesDetails" roleURI="http://www.freddiemac.com/role/CollateralizedAgreementsandOffsettingArrangementsOffsettingofFinancialLiabilitiesDetails">
+        <link:definition>9955568 - Disclosure - Collateralized Agreements and Offsetting Arrangements - Offsetting of Financial Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CollateralizedAgreementsandOffsettingArrangementsUnderlyingCollateralPledgedDetails" roleURI="http://www.freddiemac.com/role/CollateralizedAgreementsandOffsettingArrangementsUnderlyingCollateralPledgedDetails">
+        <link:definition>9955569 - Disclosure - Collateralized Agreements and Offsetting Arrangements - Underlying Collateral Pledged (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CollateralizedAgreementsandOffsettingArrangementsCollateralintheFormofSecuritiesPledgedDetails" roleURI="http://www.freddiemac.com/role/CollateralizedAgreementsandOffsettingArrangementsCollateralintheFormofSecuritiesPledgedDetails">
+        <link:definition>9955570 - Disclosure - Collateralized Agreements and Offsetting Arrangements - Collateral in the Form of Securities Pledged (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityandEarningsperShareDetails" roleURI="http://www.freddiemac.com/role/StockholdersEquityandEarningsperShareDetails">
+        <link:definition>9955571 - Disclosure - Stockholders' Equity and Earnings per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityandEarningsperShareSeniorPreferredStockDetails" roleURI="http://www.freddiemac.com/role/StockholdersEquityandEarningsperShareSeniorPreferredStockDetails">
+        <link:definition>9955572 - Disclosure - Stockholders' Equity and Earnings per Share - Senior Preferred Stock (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityandEarningsperSharePreferredStockDetails" roleURI="http://www.freddiemac.com/role/StockholdersEquityandEarningsperSharePreferredStockDetails">
+        <link:definition>9955573 - Disclosure - Stockholders' Equity and Earnings per Share - Preferred Stock (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetInterestIncomeDetails" roleURI="http://www.freddiemac.com/role/NetInterestIncomeDetails">
+        <link:definition>9955574 - Disclosure - Net Interest Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.freddiemac.com/role/IncomeTaxesDetails">
+        <link:definition>9955575 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesFederalIncomeTaxExpenseDetails" roleURI="http://www.freddiemac.com/role/IncomeTaxesFederalIncomeTaxExpenseDetails">
+        <link:definition>9955576 - Disclosure - Income Taxes - Federal Income Tax Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationofStatutorytoEffectiveTaxRateDetails" roleURI="http://www.freddiemac.com/role/IncomeTaxesReconciliationofStatutorytoEffectiveTaxRateDetails">
+        <link:definition>9955577 - Disclosure - Income Taxes - Reconciliation of Statutory to Effective Tax Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDeferredTaxAssetsandLiabilitiesDetails" roleURI="http://www.freddiemac.com/role/IncomeTaxesDeferredTaxAssetsandLiabilitiesDetails">
+        <link:definition>9955578 - Disclosure - Income Taxes - Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingDetails" roleURI="http://www.freddiemac.com/role/SegmentReportingDetails">
+        <link:definition>9955579 - Disclosure - Segment Reporting (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingSegmentFinancialResultsDetails" roleURI="http://www.freddiemac.com/role/SegmentReportingSegmentFinancialResultsDetails">
+        <link:definition>9955580 - Disclosure - Segment Reporting - Segment Financial Results (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingSegmentAssetsDetails" roleURI="http://www.freddiemac.com/role/SegmentReportingSegmentAssetsDetails">
+        <link:definition>9955581 - Disclosure - Segment Reporting - Segment Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationofCreditandOtherRisksDetails" roleURI="http://www.freddiemac.com/role/ConcentrationofCreditandOtherRisksDetails">
+        <link:definition>9955582 - Disclosure - Concentration of Credit and Other Risks (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationofCreditandOtherRisksConcentrationofCreditRiskSingleFamilyMortgagePortfolioDetails" roleURI="http://www.freddiemac.com/role/ConcentrationofCreditandOtherRisksConcentrationofCreditRiskSingleFamilyMortgagePortfolioDetails">
+        <link:definition>9955583 - Disclosure - Concentration of Credit and Other Risks - Concentration of Credit Risk - Single-Family Mortgage Portfolio (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationofCreditandOtherRisksConcentrationofCreditRiskMultifamilyMortgagePortfolioDetails" roleURI="http://www.freddiemac.com/role/ConcentrationofCreditandOtherRisksConcentrationofCreditRiskMultifamilyMortgagePortfolioDetails">
+        <link:definition>9955584 - Disclosure - Concentration of Credit and Other Risks - Concentration of Credit Risk - Multifamily Mortgage Portfolio (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationofCreditandOtherRisksMortgageInsurerConcentrationDetails" roleURI="http://www.freddiemac.com/role/ConcentrationofCreditandOtherRisksMortgageInsurerConcentrationDetails">
+        <link:definition>9955585 - Disclosure - Concentration of Credit and Other Risks - Mortgage Insurer Concentration (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresAssetsandLiabilitiesonOurConsolidatedBalanceSheetsMeasuredatFairValueonaRecurringBasisDetails" roleURI="http://www.freddiemac.com/role/FairValueDisclosuresAssetsandLiabilitiesonOurConsolidatedBalanceSheetsMeasuredatFairValueonaRecurringBasisDetails">
+        <link:definition>9955586 - Disclosure - Fair Value Disclosures - Assets and Liabilities on Our Consolidated Balance Sheets Measured at Fair Value on a Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresAssetsandLiabilitiesonOurConsolidatedBalanceSheetsMeasuredatFairValueonaRecurringBasisUsingSignificantUnobservableInputsDetails" roleURI="http://www.freddiemac.com/role/FairValueDisclosuresAssetsandLiabilitiesonOurConsolidatedBalanceSheetsMeasuredatFairValueonaRecurringBasisUsingSignificantUnobservableInputsDetails">
+        <link:definition>9955587 - Disclosure - Fair Value Disclosures - Assets and Liabilities on Our Consolidated Balance Sheets Measured at Fair Value on a Recurring Basis Using Significant Unobservable Inputs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresQuantitativeInformationaboutRecurringLevel3FairValueMeasurementsforAssetsandLiabilitiesMeasuredonOurConsolidatedBalanceSheetsatFairValueDetails" roleURI="http://www.freddiemac.com/role/FairValueDisclosuresQuantitativeInformationaboutRecurringLevel3FairValueMeasurementsforAssetsandLiabilitiesMeasuredonOurConsolidatedBalanceSheetsatFairValueDetails">
+        <link:definition>9955588 - Disclosure - Fair Value Disclosures - Quantitative Information about Recurring Level 3 Fair Value Measurements for Assets and Liabilities Measured on Our Consolidated Balance Sheets at Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresAssetsonOurConsolidatedBalanceSheetsMeasuredatFairValueonaNonRecurringBasisDetails" roleURI="http://www.freddiemac.com/role/FairValueDisclosuresAssetsonOurConsolidatedBalanceSheetsMeasuredatFairValueonaNonRecurringBasisDetails">
+        <link:definition>9955589 - Disclosure - Fair Value Disclosures - Assets on Our Consolidated Balance Sheets Measured at Fair Value on a Non-Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresQuantitativeInformationaboutNonRecurringLevel3FairValueMeasurementsforAssetsandLiabilitiesMeasuredonOurConsolidatedBalanceSheetsatFairValueDetails" roleURI="http://www.freddiemac.com/role/FairValueDisclosuresQuantitativeInformationaboutNonRecurringLevel3FairValueMeasurementsforAssetsandLiabilitiesMeasuredonOurConsolidatedBalanceSheetsatFairValueDetails">
+        <link:definition>9955590 - Disclosure - Fair Value Disclosures - Quantitative Information about Non-Recurring Level 3 Fair Value Measurements for Assets and Liabilities Measured on Our Consolidated Balance Sheets at Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresFairValueofFinancialInstrumentsDetails" roleURI="http://www.freddiemac.com/role/FairValueDisclosuresFairValueofFinancialInstrumentsDetails">
+        <link:definition>9955591 - Disclosure - Fair Value Disclosures - Fair Value of Financial Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresDifferencebetweenFairValueandUPBforCertainFinancialInstrumentswithFairValueOptionElectedDetails" roleURI="http://www.freddiemac.com/role/FairValueDisclosuresDifferencebetweenFairValueandUPBforCertainFinancialInstrumentswithFairValueOptionElectedDetails">
+        <link:definition>9955592 - Disclosure - Fair Value Disclosures - Difference between Fair Value and UPB for Certain Financial Instruments with Fair Value Option Elected (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosuresChangesinFairValueundertheFVOoptionDetails" roleURI="http://www.freddiemac.com/role/FairValueDisclosuresChangesinFairValueundertheFVOoptionDetails">
+        <link:definition>9955593 - Disclosure - Fair Value Disclosures - Changes in Fair Value under the FVO option (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LegalContingenciesDetails" roleURI="http://www.freddiemac.com/role/LegalContingenciesDetails">
+        <link:definition>9955594 - Disclosure - Legal Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryCapitalDetails" roleURI="http://www.freddiemac.com/role/RegulatoryCapitalDetails">
+        <link:definition>9955595 - Disclosure - Regulatory Capital (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryCapitalTableERCFCapitalRequirementsDetails" roleURI="http://www.freddiemac.com/role/RegulatoryCapitalTableERCFCapitalRequirementsDetails">
+        <link:definition>9955596 - Disclosure - Regulatory Capital Table - ERCF Capital Requirements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="fmcc_NumberOneClassYear1996VariableRateMember" abstract="true" name="NumberOneClassYear1996VariableRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberThreeClassPercent5Member" abstract="true" name="NumberThreeClassPercent5Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberFourClassYear1998VariableRateMember" abstract="true" name="NumberFourClassYear1998VariableRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberFiveClassPercent5Point10Member" abstract="true" name="NumberFiveClassPercent5Point10Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberEightClassPercent5Point79Member" abstract="true" name="NumberEightClassPercent5Point79Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberNineClassYear1999VariableRateMember" abstract="true" name="NumberNineClassYear1999VariableRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberTenClassYear2001VariableRateMember" abstract="true" name="NumberTenClassYear2001VariableRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberElevenClassYear2001VariableRateMember" abstract="true" name="NumberElevenClassYear2001VariableRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberTwelveClassPercent5Point81Member" abstract="true" name="NumberTwelveClassPercent5Point81Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberThirteenClassPercent6Member" abstract="true" name="NumberThirteenClassPercent6Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberFourteenClassYear2001VariableRateMember" abstract="true" name="NumberFourteenClassYear2001VariableRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberFifteenClassPercent5Point70Member" abstract="true" name="NumberFifteenClassPercent5Point70Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberSeventeenClassYear2006VariableRateMember" abstract="true" name="NumberSeventeenClassYear2006VariableRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberEighteenClassPercent6Point42Member" abstract="true" name="NumberEighteenClassPercent6Point42Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberNineteenClassPercent5Point9Member" abstract="true" name="NumberNineteenClassPercent5Point9Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberTwentyClassPercent5Point57Member" abstract="true" name="NumberTwentyClassPercent5Point57Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberTwentyOneClassPercent5Point66Member" abstract="true" name="NumberTwentyOneClassPercent5Point66Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberTwentyTwoClassPercent6Point02Member" abstract="true" name="NumberTwentyTwoClassPercent6Point02Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberTwentyThreeClassPercent6Point55Member" abstract="true" name="NumberTwentyThreeClassPercent6Point55Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberTwentyFourClassYear2007FixedToFloatingRateMember" abstract="true" name="NumberTwentyFourClassYear2007FixedToFloatingRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_Guaranteefeeincome" abstract="false" name="Guaranteefeeincome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_ProfessionalServicesTechnologyAndOccupancy" abstract="false" name="ProfessionalServicesTechnologyAndOccupancy" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Creditenhancementexpense" abstract="false" name="Creditenhancementexpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Recoveries" abstract="false" name="Recoveries" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_LegislativeAssessmentExpense" abstract="false" name="LegislativeAssessmentExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_SeniorPreferredStock" abstract="false" name="SeniorPreferredStock" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_AccumulatedOtherComprehensiveIncomeLossOtherAfterTax" abstract="false" name="AccumulatedOtherComprehensiveIncomeLossOtherAfterTax" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_SeniorPreferredStockMember" abstract="true" name="SeniorPreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_CommonStockOutstandingMember" abstract="true" name="CommonStockOutstandingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_OtherComprehensiveIncomeLossOtherNetOfTaxPortionAttributableToParent" abstract="false" name="OtherComprehensiveIncomeLossOtherNetOfTaxPortionAttributableToParent" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Costbasisadjustmentamortization" abstract="false" name="Costbasisadjustmentamortization" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_InvestmentGainsLossesNet" abstract="false" name="InvestmentGainsLossesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_ProceedsFromSaleOfInvestments" abstract="false" name="ProceedsFromSaleOfInvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_ProceedsFromMaturityAndCollectionOfInvestments" abstract="false" name="ProceedsFromMaturityAndCollectionOfInvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Advancesundersecuredlendingarrangements" abstract="false" name="Advancesundersecuredlendingarrangements" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Netincreasedecreaseinsecuritiessoldunderagreementstorepurchase" abstract="false" name="Netincreasedecreaseinsecuritiessoldunderagreementstorepurchase" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_CashPaidReceivedForAbstract" abstract="true" name="CashPaidReceivedForAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_OtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentTaxPortionAttributableToParent" abstract="false" name="OtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentTaxPortionAttributableToParent" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_OtherComprehensiveIncomeLossOtherTaxPortionAttributableToParent" abstract="false" name="OtherComprehensiveIncomeLossOtherTaxPortionAttributableToParent" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_ConservatorshipAndRelatedMattersAbstract" abstract="true" name="ConservatorshipAndRelatedMattersAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_ConservatorshipAndRelatedMattersTextBlock" abstract="false" name="ConservatorshipAndRelatedMattersTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="fmcc_BalanceSheetOffsettingTextBlock" abstract="false" name="BalanceSheetOffsettingTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="fmcc_ComponentsOfNetInterestIncomeAbstract" abstract="true" name="ComponentsOfNetInterestIncomeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_ComplianceWithRegulatoryCapitalRequirementsERCFAbstract" abstract="true" name="ComplianceWithRegulatoryCapitalRequirementsERCFAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_ComprehensiveIncomePolicyTextBlock" abstract="false" name="ComprehensiveIncomePolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="fmcc_LoanRestructuringsPolicyTextBlock" abstract="false" name="LoanRestructuringsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="fmcc_FinancingReceivableLoanRestructuringTableTextBlock" abstract="false" name="FinancingReceivableLoanRestructuringTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="fmcc_ScheduleOfPcDebtTableTextBlock" abstract="false" name="ScheduleOfPcDebtTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="fmcc_OffsettingDerivativesTableTextBlockTableTextBlock" abstract="false" name="OffsettingDerivativesTableTextBlockTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="fmcc_CumulativeBasisAdjustmentonFairValueHedgesTableTextBlock" abstract="false" name="CumulativeBasisAdjustmentonFairValueHedgesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="fmcc_ScheduleOfSeniorPreferredStockTableTextBlock" abstract="false" name="ScheduleOfSeniorPreferredStockTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="fmcc_ScheduleOfComplianceWithRegulatoryCapitalRequirementsERCFTableTextBlock" abstract="false" name="ScheduleOfComplianceWithRegulatoryCapitalRequirementsERCFTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="fmcc_ConservatorshipAndRelatedMattersTable" abstract="true" name="ConservatorshipAndRelatedMattersTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_CSSMember" abstract="true" name="CSSMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_ConservatorshipAndRelatedMattersLineItemsLineItems" abstract="true" name="ConservatorshipAndRelatedMattersLineItemsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_RemainingfundingavailableunderPurchaseAgreement" abstract="false" name="RemainingfundingavailableunderPurchaseAgreement" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_InitialLiquidationPreferenceOfSeniorPreferredStock" abstract="false" name="InitialLiquidationPreferenceOfSeniorPreferredStock" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_CommonStockWarrantPercentageOfSecuritiesCalledByWarrants" abstract="false" name="CommonStockWarrantPercentageOfSecuritiesCalledByWarrants" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_CashProceedsReceivedUponIssuingTheSeniorPreferredStock" abstract="false" name="CashProceedsReceivedUponIssuingTheSeniorPreferredStock" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_IncreaseinSeniorPreferredStock" abstract="false" name="IncreaseinSeniorPreferredStock" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_SeniorPreferredStockAtRedemptionValue" abstract="false" name="SeniorPreferredStockAtRedemptionValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Applicablecapitalreserveamountifwedontpaythefulldividendrequirement" abstract="false" name="Applicablecapitalreserveamountifwedontpaythefulldividendrequirement" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_AggregatePaymentsOfDividendToTreasuryUnderPurchaseAgreement" abstract="false" name="AggregatePaymentsOfDividendToTreasuryUnderPurchaseAgreement" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_PercentPerAnnumPortionOfQuarterlySeniorPreferredStockDividendRequirementAfterCapitalReserveEndDateWhenDividendPaidInFull" abstract="false" name="PercentPerAnnumPortionOfQuarterlySeniorPreferredStockDividendRequirementAfterCapitalReserveEndDateWhenDividendPaidInFull" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_PercentPerAnnumPortionOfQuarterlySeniorPreferredStockDividendRequirementAfterCapitalReserveEndDateWhenDividendIsNotPaidInFull" abstract="false" name="PercentPerAnnumPortionOfQuarterlySeniorPreferredStockDividendRequirementAfterCapitalReserveEndDateWhenDividendIsNotPaidInFull" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_AllowanceOfNonOrdinaryCourseAssetSales" abstract="false" name="AllowanceOfNonOrdinaryCourseAssetSales" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_MortgageRelatedInvestmentsPortfolioLimitUnderPurchaseAgreement" abstract="false" name="MortgageRelatedInvestmentsPortfolioLimitUnderPurchaseAgreement" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UnpaidPrincipalBalanceAmountOfMortgageRelatedInvestmentsPortfolio" abstract="false" name="UnpaidPrincipalBalanceAmountOfMortgageRelatedInvestmentsPortfolio" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_TenpercentofnotionalamountofIOsecurities" abstract="false" name="TenpercentofnotionalamountofIOsecurities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_AgencyMBSMaximum" abstract="false" name="AgencyMBSMaximum" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_DebtCapUnderPurchaseAgreement" abstract="false" name="DebtCapUnderPurchaseAgreement" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_DebtCapAggregateIndebtedness" abstract="false" name="DebtCapAggregateIndebtedness" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_BasispointsofeachdollarofnewbusinesspurchasesrequiredbyGSEAct." abstract="false" name="BasispointsofeachdollarofnewbusinesspurchasesrequiredbyGSEAct." nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_ExpenseOfBasisPointAllocationForNewBusinessPurchases" abstract="false" name="ExpenseOfBasisPointAllocationForNewBusinessPurchases" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_LegislatedBasisPointFee" abstract="false" name="LegislatedBasisPointFee" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Level1SecuritizationproductsMember" abstract="true" name="Level1SecuritizationproductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_OtherSecuritizationTrustMember" abstract="true" name="OtherSecuritizationTrustMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_Multifamily55DayPCsMember" abstract="true" name="Multifamily55DayPCsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_WIkdealcertificatesMember" abstract="true" name="WIkdealcertificatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_OtherSecuritizationProductMember" abstract="true" name="OtherSecuritizationProductMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SingleFamilyGuaranteeSegmentMember" abstract="true" name="SingleFamilyGuaranteeSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MultifamilySegmentMember" abstract="true" name="MultifamilySegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_FannieMaeSecuritiesBackingFreddieMacResecuritizationTrustMember" abstract="true" name="FannieMaeSecuritiesBackingFreddieMacResecuritizationTrustMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_VariableInterestEntityConsolidatedUPB" abstract="false" name="VariableInterestEntityConsolidatedUPB" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UnpaidPrincipalBalanceOfIssuancesAndGuarantees" abstract="false" name="UnpaidPrincipalBalanceOfIssuancesAndGuarantees" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_SecuritizationsAndVariableInterestEntitiesAbstract" abstract="true" name="SecuritizationsAndVariableInterestEntitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_FannieMaeCollateralIncludedInFreddieMacCommingledSecurity" abstract="false" name="FannieMaeCollateralIncludedInFreddieMacCommingledSecurity" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_AssetsInVIEInWhichWeDoNotHaveAVariableInterestIn" abstract="false" name="AssetsInVIEInWhichWeDoNotHaveAVariableInterestIn" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UnpaidPrincipalBalanceRemovedFromConsolidatedTrust" abstract="false" name="UnpaidPrincipalBalanceRemovedFromConsolidatedTrust" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_AmortizedCostBasisOfSFHFILoansInTrialPeriodModificationPlans" abstract="false" name="AmortizedCostBasisOfSFHFILoansInTrialPeriodModificationPlans" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_TransfersFromAdvancesToLendersToLoansHeldForInvestment" abstract="false" name="TransfersFromAdvancesToLendersToLoansHeldForInvestment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_CumulativeBasisAdjustmentonFairValueHedgeAxis" abstract="true" name="CumulativeBasisAdjustmentonFairValueHedgeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_CumulativeBasisAdjustmentonFairValueHedgeDomain" abstract="true" name="CumulativeBasisAdjustmentonFairValueHedgeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_HeldforInvestmentMember" abstract="true" name="HeldforInvestmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MortgageLoansUnpaidPrincipalBalanceHFS" abstract="false" name="MortgageLoansUnpaidPrincipalBalanceHFS" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_DeferredfeesunamortizedpremiumsdiscountsandothercostbasisadjustmentsHFS" abstract="false" name="DeferredfeesunamortizedpremiumsdiscountsandothercostbasisadjustmentsHFS" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_MortgageLoansUnpaidPrincipalBalanceHFI" abstract="false" name="MortgageLoansUnpaidPrincipalBalanceHFI" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_DeferredFeesUnamortizedPremiumsDiscountsAndOtherCostBasisAdjustmentsHFI" abstract="false" name="DeferredFeesUnamortizedPremiumsDiscountsAndOtherCostBasisAdjustmentsHFI" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_MortgageLoansNet" abstract="false" name="MortgageLoansNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_HeldforSaleMember" abstract="true" name="HeldforSaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MortgageLoansUnpaidPrincipalBalanceReclassifiedfromHFItoHFS" abstract="false" name="MortgageLoansUnpaidPrincipalBalanceReclassifiedfromHFItoHFS" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_ValuationAllowanceEstablishedorReversed" abstract="false" name="ValuationAllowanceEstablishedorReversed" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_MortgageLoansUnpaidPrincipalBalanceReclassifiedfromHFStoHFI" abstract="false" name="MortgageLoansUnpaidPrincipalBalanceReclassifiedfromHFStoHFI" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_AllowanceforCreditLossesReversedorEstablished" abstract="false" name="AllowanceforCreditLossesReversedorEstablished" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_SingleFamily20And30YearOrMoreAmortizingFixedRateMember" abstract="true" name="SingleFamily20And30YearOrMoreAmortizingFixedRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SingleFamily15YearAmortizingFixedRateMember" abstract="true" name="SingleFamily15YearAmortizingFixedRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SingleFamilyAdjustableRateMember" abstract="true" name="SingleFamilyAdjustableRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_DebtToValueRatioLessThan60PerentMember" abstract="true" name="DebtToValueRatioLessThan60PerentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_DebtToValueRatio80To90PercentMember" abstract="true" name="DebtToValueRatio80To90PercentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_DebtToValueRatio90To100PercentMember" abstract="true" name="DebtToValueRatio90To100PercentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_GreaterThan100LoanToValueRatioMember" abstract="true" name="GreaterThan100LoanToValueRatioMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SingleFamily15YearOrLessAmortizingFixedRateMember" abstract="true" name="SingleFamily15YearOrLessAmortizingFixedRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SingleFamilyAdjustableRateAndOtherMember" abstract="true" name="SingleFamilyAdjustableRateAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_FinancingReceivable1" abstract="false" name="FinancingReceivable1" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_FinancingReceivableLoanRestructuringTable" abstract="true" name="FinancingReceivableLoanRestructuringTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_PaymentDelayMember" abstract="true" name="PaymentDelayMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_PaymentDelayAndTermExtensionMember" abstract="true" name="PaymentDelayAndTermExtensionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_PaymentDelayInterestRateReductionAndTermExtensionMember" abstract="true" name="PaymentDelayInterestRateReductionAndTermExtensionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_FinancingReceivableLoanRestructuringLineItems" abstract="true" name="FinancingReceivableLoanRestructuringLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_AmortizedCostBasisOfLoansInPaymentDeferralPlans" abstract="false" name="AmortizedCostBasisOfLoansInPaymentDeferralPlans" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_WeightedAveragePaymentDelayOrPrincipalForbearance" abstract="false" name="WeightedAveragePaymentDelayOrPrincipalForbearance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_CRTRelatedDerivativesMember" abstract="true" name="CRTRelatedDerivativesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_UnpaidPrincipalBalanceMortgage" abstract="false" name="UnpaidPrincipalBalanceMortgage" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_GuarantorObligationsTerm1" abstract="false" name="GuarantorObligationsTerm1" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="fmcc_UPBofUnconsolidatedloanscurrent" abstract="false" name="UPBofUnconsolidatedloanscurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UPBofUnconsolidatedloans30to59dayspastdue" abstract="false" name="UPBofUnconsolidatedloans30to59dayspastdue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UPBofUnconsolidatedloans60to89dayspastdue" abstract="false" name="UPBofUnconsolidatedloans60to89dayspastdue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UPBofUnconsolidatedloansequaltoorgreaterthan90dayspastdue" abstract="false" name="UPBofUnconsolidatedloansequaltoorgreaterthan90dayspastdue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_TotalUPBofUnconsolidatedloansbypaymentstatus" abstract="false" name="TotalUPBofUnconsolidatedloansbypaymentstatus" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_MortgageLoanPurchaseCommitments" abstract="false" name="MortgageLoanPurchaseCommitments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UnsettledSecuritiesPurchasedUnderAgreementsToResellNet" abstract="false" name="UnsettledSecuritiesPurchasedUnderAgreementsToResellNet" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_OtherLoanCommitments" abstract="false" name="OtherLoanCommitments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UnpaidPrincipalBalanceOfoffBalanceSheetCreditExposure" abstract="false" name="UnpaidPrincipalBalanceOfoffBalanceSheetCreditExposure" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_CommitmentsWithFVOElection" abstract="false" name="CommitmentsWithFVOElection" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UnsettledSSUAR" abstract="false" name="UnsettledSSUAR" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_OtherAllowanceForCreditLossesMember" abstract="true" name="OtherAllowanceForCreditLossesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_InvestmentSecuritiesAcquiredandPCDebtIssuedviaNonCashTransaction" abstract="false" name="InvestmentSecuritiesAcquiredandPCDebtIssuedviaNonCashTransaction" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_DeconsolidationOfInvestments" abstract="false" name="DeconsolidationOfInvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_NonMortgageRelatedSecuritiesMember" abstract="true" name="NonMortgageRelatedSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NonAgencyAndOtherMember" abstract="true" name="NonAgencyAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="fmcc_Singlefamily20And30YearOrMoreFixedRateMember" abstract="true" name="Singlefamily20And30YearOrMoreFixedRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SingleFamily15YearOrLessFixedRateMember" abstract="true" name="SingleFamily15YearOrLessFixedRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_UnpaidPrincipalBalanceOfDebtSecuritiesOfConsolidatedTrustsHeldByThirdParties" abstract="false" name="UnpaidPrincipalBalanceOfDebtSecuritiesOfConsolidatedTrustsHeldByThirdParties" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_WeightedAverageCoupon" abstract="false" name="WeightedAverageCoupon" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_ParValueOfTotalOtherShortTermDebt" abstract="false" name="ParValueOfTotalOtherShortTermDebt" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_LongTermDebtInterestRateTypeAxis" abstract="true" name="LongTermDebtInterestRateTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_LongTermDebtInterestRateTypeDomain" abstract="true" name="LongTermDebtInterestRateTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_FixedRateMember" abstract="true" name="FixedRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_VariableRateMember" abstract="true" name="VariableRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_ZeroCouponMember" abstract="true" name="ZeroCouponMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_CallableMediumTermNotesMember" abstract="true" name="CallableMediumTermNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_OtherMember" abstract="true" name="OtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_ParValueOfTotalOtherLongTermDebt" abstract="false" name="ParValueOfTotalOtherLongTermDebt" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_ParValueOfTotalLongTermDebt" abstract="false" name="ParValueOfTotalLongTermDebt" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UnpaidPrincipalBalanceOfSTACRDebt" abstract="false" name="UnpaidPrincipalBalanceOfSTACRDebt" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UnpaidPrincipalBalanceOfSCRDebt" abstract="false" name="UnpaidPrincipalBalanceOfSCRDebt" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_NetuncollateralizedexposuretoderivativecounterpartiesMember" abstract="true" name="NetuncollateralizedexposuretoderivativecounterpartiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SPEquivalentInvestmentGradeRatingMember" abstract="true" name="SPEquivalentInvestmentGradeRatingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_Numberofcounterparties" abstract="false" name="Numberofcounterparties" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="fmcc_WrittenOptionMember" abstract="true" name="WrittenOptionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_PurchasedOptionsMember" abstract="true" name="PurchasedOptionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_CommitmentMember" abstract="true" name="CommitmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_CreditrisktransferMember" abstract="true" name="CreditrisktransferMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_DerivativeOtherReceivable" abstract="false" name="DerivativeOtherReceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_DerivativeOtherPayable" abstract="false" name="DerivativeOtherPayable" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_ExchangeTradedAndClearedMember" abstract="true" name="ExchangeTradedAndClearedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_DerivativeFairValueOfDerivativeAssetGross" abstract="false" name="DerivativeFairValueOfDerivativeAssetGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_DerivativeFairValueOfDerivativeLiabilityGross" abstract="false" name="DerivativeFairValueOfDerivativeLiabilityGross" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_DerivativeGainsLossesTypesAxis" abstract="true" name="DerivativeGainsLossesTypesAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_DerivativeGainsLossesTypesDomain" abstract="true" name="DerivativeGainsLossesTypesDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_DerivativeGainsLossesExcludingAccrualOfPeriodicSettlementsMember" abstract="true" name="DerivativeGainsLossesExcludingAccrualOfPeriodicSettlementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_InterestrateriskonheldforinvestmentmortgageloanMember" abstract="true" name="InterestrateriskonheldforinvestmentmortgageloanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_InterestrateriskondebtMemberMember" abstract="true" name="InterestrateriskondebtMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_Interestaccrualonfairvaluehedgingderivativesforheldforinvestmentloan" abstract="false" name="Interestaccrualonfairvaluehedgingderivativesforheldforinvestmentloan" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Interestaccrualsonfairvaluehedgingderivativesfordebt" abstract="false" name="Interestaccrualsonfairvaluehedgingderivativesfordebt" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Discontinuedhedgerelatedbasisadjustmentamortization" abstract="false" name="Discontinuedhedgerelatedbasisadjustmentamortization" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_CumulativeBasisAdjustmentonFairValueHedgeTable" abstract="true" name="CumulativeBasisAdjustmentonFairValueHedgeTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_MortgageLoansHeldForInvestmentMember" abstract="true" name="MortgageLoansHeldForInvestmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MortgageLoansHeldForSaleMember" abstract="true" name="MortgageLoansHeldForSaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_CumulativeBasisAdjustmentonFairValueHedgeLineItems" abstract="true" name="CumulativeBasisAdjustmentonFairValueHedgeLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_Securitiespurchasedunderagreementstoresellusedtoprovidefinancingtoinvestors" abstract="false" name="Securitiespurchasedunderagreementstoresellusedtoprovidefinancingtoinvestors" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_TradingsecuritiesMember" abstract="true" name="TradingsecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_StockholdersEquityTextTable" abstract="true" name="StockholdersEquityTextTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_StockholdersEquityTextLineItems" abstract="true" name="StockholdersEquityTextLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_PermittedProceedsFromFutureCommonStockIssuance" abstract="false" name="PermittedProceedsFromFutureCommonStockIssuance" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_NumberOfPreferredStockClasses" abstract="false" name="NumberOfPreferredStockClasses" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="fmcc_PaymentForCashDividendsOnSeniorPreferredStock" abstract="false" name="PaymentForCashDividendsOnSeniorPreferredStock" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Numberofseniorpreferredstockclass" abstract="false" name="Numberofseniorpreferredstockclass" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="fmcc_NumberOfPreferredStockClassesDelisted" abstract="false" name="NumberOfPreferredStockClassesDelisted" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:intItemType"/>
+  <xs:element id="fmcc_Increaseinliquidationpreferenceduetonetworthincrease" abstract="false" name="Increaseinliquidationpreferenceduetonetworthincrease" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Nondrawadjustment" abstract="false" name="Nondrawadjustment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_IncreaseInLiquidationPreference" abstract="false" name="IncreaseInLiquidationPreference" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_NumberTwoClassPercent5Point81Member" abstract="true" name="NumberTwoClassPercent5Point81Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberSixClassPercent5Point30Member" abstract="true" name="NumberSixClassPercent5Point30Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberSevenClassPercent5Point10Member" abstract="true" name="NumberSevenClassPercent5Point10Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NumberSixteenClassPercent5Point81Member" abstract="true" name="NumberSixteenClassPercent5Point81Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_PercentageAddedToApplicableBenchmarkRate" abstract="false" name="PercentageAddedToApplicableBenchmarkRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_PercentageDeductedFromApplicableBenchmarkRate" abstract="false" name="PercentageDeductedFromApplicableBenchmarkRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_DenominatorAmountUsedInCalculation" abstract="false" name="DenominatorAmountUsedInCalculation" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="fmcc_PreferredStockDividendRateResetPeriod" abstract="false" name="PreferredStockDividendRateResetPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="fmcc_ComponentsOfNetInterestIncomeTable" abstract="true" name="ComponentsOfNetInterestIncomeTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_ComponentsOfNetInterestIncomeLineItems" abstract="true" name="ComponentsOfNetInterestIncomeLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_InterestExpenseOfDebtSecurities" abstract="false" name="InterestExpenseOfDebtSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_NetInterestIncomeAfterBenefitProvisionForCreditLosses" abstract="false" name="NetInterestIncomeAfterBenefitProvisionForCreditLosses" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_OperatingSegmentsAndCorporateNonSegmentMember" abstract="true" name="OperatingSegmentsAndCorporateNonSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SingleFamilyTop10SellersMember" abstract="true" name="SingleFamilyTop10SellersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_TopSingleFamilyNonDepositorySellerMember" abstract="true" name="TopSingleFamilyNonDepositorySellerMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SellerservicersMember" abstract="true" name="SellerservicersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SingleFamilyServicersMember" abstract="true" name="SingleFamilyServicersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_TopSingleFamilyNonDepositoryServicersMember" abstract="true" name="TopSingleFamilyNonDepositoryServicersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MultifamilySellersMember" abstract="true" name="MultifamilySellersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MultifamilyServicersMember" abstract="true" name="MultifamilyServicersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MortgageInsurersMember" abstract="true" name="MortgageInsurersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_CashAndOtherInvestmentCounterpartiesMember" abstract="true" name="CashAndOtherInvestmentCounterpartiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_TopTenSinglefamilySellerServicersMember" abstract="true" name="TopTenSinglefamilySellerServicersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_FiveLargestNonDepositorySellersMember" abstract="true" name="FiveLargestNonDepositorySellersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_TopTenMultifamilySellerServicersMember" abstract="true" name="TopTenMultifamilySellerServicersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SingleFamilyLoanPurchaseVolumeMember" abstract="true" name="SingleFamilyLoanPurchaseVolumeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SingleFamilyLoanServicedMember" abstract="true" name="SingleFamilyLoanServicedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SingleFamilyUnpaidPrincipalBalanceMember" abstract="true" name="SingleFamilyUnpaidPrincipalBalanceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MultifamilyLoanPurchaseVolumeMember" abstract="true" name="MultifamilyLoanPurchaseVolumeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MultifamilyLoanServicedMember" abstract="true" name="MultifamilyLoanServicedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_UnpaidPrincipalBalanceRepurchaseRequestsIssuedToSingleFamilySellerServicers" abstract="false" name="UnpaidPrincipalBalanceRepurchaseRequestsIssuedToSingleFamilySellerServicers" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UPBOfLoansRelatedToRecoveredLossesFromRepurchaseRequestsToSingleFamilySellerServicers" abstract="false" name="UPBOfLoansRelatedToRecoveredLossesFromRepurchaseRequestsToSingleFamilySellerServicers" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_CreditProtectionCoverageFromMortgageInsurersForSingleFamilyMortgagePortfolio" abstract="false" name="CreditProtectionCoverageFromMortgageInsurersForSingleFamilyMortgagePortfolio" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UnpaidPrincipalBalanceOfSingleFamilyMortgagePortfolioWithMortgageInsuranceCoverage" abstract="false" name="UnpaidPrincipalBalanceOfSingleFamilyMortgagePortfolioWithMortgageInsuranceCoverage" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_CashAndOtherNonMortgageInvestments" abstract="false" name="CashAndOtherNonMortgageInvestments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_WestMember" abstract="true" name="WestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NortheastMember" abstract="true" name="NortheastMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SoutheastMember" abstract="true" name="SoutheastMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_SouthwestMember" abstract="true" name="SouthwestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NorthCentralMember" abstract="true" name="NorthCentralMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_AllOtherStatesMember" abstract="true" name="AllOtherStatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_ConcentrationRiskUnpaidPrincipalBalance" abstract="false" name="ConcentrationRiskUnpaidPrincipalBalance" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_UnpaidPrincipalBalancePercentOfPortfolio" abstract="false" name="UnpaidPrincipalBalancePercentOfPortfolio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_SingleFamilySeriousDelinquencyRate" abstract="false" name="SingleFamilySeriousDelinquencyRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_MultifamilyUnpaidPrincipalBalanceMember" abstract="true" name="MultifamilyUnpaidPrincipalBalanceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MultifamilyDelinquencyRate" abstract="false" name="MultifamilyDelinquencyRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_MortgageInsuranceCoverageMember" abstract="true" name="MortgageInsuranceCoverageMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_ArchMortgageInsuranceCompanyMember" abstract="true" name="ArchMortgageInsuranceCompanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MortgageGuarantyInsuranceCorporationMember" abstract="true" name="MortgageGuarantyInsuranceCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_RadianGuarantyInc.Member" abstract="true" name="RadianGuarantyInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_EnactMember" abstract="true" name="EnactMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_EssentGuarantyInc.Member" abstract="true" name="EssentGuarantyInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_NationalMortgageInsuranceCorporationMember" abstract="true" name="NationalMortgageInsuranceCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_CounterpartiesAccountedForTenPercentOrMoreMember" abstract="true" name="CounterpartiesAccountedForTenPercentOrMoreMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MortgageInsurerCounterpartyMember" abstract="true" name="MortgageInsurerCounterpartyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MortgageLoansAbstract" abstract="true" name="MortgageLoansAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_GuaranteeAssetsFairValueDisclosure" abstract="false" name="GuaranteeAssetsFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_AllOtherAssetsFairValueDisclosure" abstract="false" name="AllOtherAssetsFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_AllOtherLiabilitiesFairValueDisclosure" abstract="false" name="AllOtherLiabilitiesFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_OtherAssetFairValueMember" abstract="true" name="OtherAssetFairValueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_PriceMember" abstract="true" name="PriceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_OtherValuationTechniquesMember" abstract="true" name="OtherValuationTechniquesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_FairValueInputsExternalPricingSources" abstract="false" name="FairValueInputsExternalPricingSources" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="fmcc_FairValueInputsOptionAdjustedSpreadPercentage" abstract="false" name="FairValueInputsOptionAdjustedSpreadPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_MeasurementCategoryAxis" abstract="true" name="MeasurementCategoryAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_MeasurementCategoryDomain" abstract="true" name="MeasurementCategoryDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_AmortizedCostMember" abstract="true" name="AmortizedCostMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_LowerOfCostOrFairValueMember" abstract="true" name="LowerOfCostOrFairValueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_FairValueThroughNetIncomeMember" abstract="true" name="FairValueThroughNetIncomeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_TotalAssetNettingAdjustment" abstract="false" name="TotalAssetNettingAdjustment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_NonDerivativePurchaseCommitmentLiabilities" abstract="false" name="NonDerivativePurchaseCommitmentLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_TotalLiabilityNettingAdjustment" abstract="false" name="TotalLiabilityNettingAdjustment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_LoansHeldForInvestmentFairValueDisclosure" abstract="false" name="LoansHeldForInvestmentFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_LoansUnpaidPrincipalBalanceWithFairValueOptionElected" abstract="false" name="LoansUnpaidPrincipalBalanceWithFairValueOptionElected" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_LongTermDebtUnpaidPrincipalBalanceWithFairValueOptionElected" abstract="false" name="LongTermDebtUnpaidPrincipalBalanceWithFairValueOptionElected" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_NonDerivativeHFSPurchaseCommitmentnet" abstract="false" name="NonDerivativeHFSPurchaseCommitmentnet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_ClassOfShareholderAxis" abstract="true" name="ClassOfShareholderAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_ClassOfShareholderDomain" abstract="true" name="ClassOfShareholderDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="fmcc_JuniorPreferredShareholderMember" abstract="true" name="JuniorPreferredShareholderMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="fmcc_CommonShareholderMember" abstract="true" name="CommonShareholderMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="fmcc_CET1CapitalRatio" abstract="false" name="CET1CapitalRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_Tier1CapitalRiskBasedRatio" abstract="false" name="Tier1CapitalRiskBasedRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_AdjustedTotalCapitalRatio" abstract="false" name="AdjustedTotalCapitalRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_TotalCapitalStatutoryRatio" abstract="false" name="TotalCapitalStatutoryRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_MinimumStressCapitalBuffer" abstract="false" name="MinimumStressCapitalBuffer" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_StabilityCapitalBuffer" abstract="false" name="StabilityCapitalBuffer" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_CountercyclicalCapitalBuffer" abstract="false" name="CountercyclicalCapitalBuffer" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_MinimumTier1CapitalLeverageRatio" abstract="false" name="MinimumTier1CapitalLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_MinimumCoreCapitalStatutoryRatio" abstract="false" name="MinimumCoreCapitalStatutoryRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_PrescribedLeverageBufferAmount" abstract="false" name="PrescribedLeverageBufferAmount" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_Adjustedtotalassets" abstract="false" name="Adjustedtotalassets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_RiskWeightedAssetsStandardizedApproach" abstract="false" name="RiskWeightedAssetsStandardizedApproach" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_ComplianceWithRegulatoryCapitalRequirementsERCFTable" abstract="true" name="ComplianceWithRegulatoryCapitalRequirementsERCFTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_RegulatoryCapitalRequirementsAxis" abstract="true" name="RegulatoryCapitalRequirementsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_RegulatoryCapitalRequirementsDomain" abstract="true" name="RegulatoryCapitalRequirementsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_MinimumCapitalRequirementMember" abstract="true" name="MinimumCapitalRequirementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_CapitalRequirementIncludingBufferMember" abstract="true" name="CapitalRequirementIncludingBufferMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_AvailableCapitalActualMember" abstract="true" name="AvailableCapitalActualMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="fmcc_ComplianceWithRegulatoryCapitalRequirementsERCFLineItems" abstract="true" name="ComplianceWithRegulatoryCapitalRequirementsERCFLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_RiskBasedCapitalAmountsAbstract" abstract="true" name="RiskBasedCapitalAmountsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_TotalCapitalStatutory" abstract="false" name="TotalCapitalStatutory" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_CET1Capital" abstract="false" name="CET1Capital" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Tier1CapitalRiskBased" abstract="false" name="Tier1CapitalRiskBased" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_AdjustedTotalCapital" abstract="false" name="AdjustedTotalCapital" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_RiskBasedCapitalRatiosAbstract" abstract="true" name="RiskBasedCapitalRatiosAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_LeverageCapitalAmountsAbstract" abstract="true" name="LeverageCapitalAmountsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_CoreCapitalStatutory" abstract="false" name="CoreCapitalStatutory" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_Tier1CapitalLeverage" abstract="false" name="Tier1CapitalLeverage" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="fmcc_LeverageCapitalRatiosAbstract" abstract="true" name="LeverageCapitalRatiosAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="fmcc_CoreCapitalStatutoryRatio" abstract="false" name="CoreCapitalStatutoryRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="fmcc_Tier1CapitalLeverageRatio" abstract="false" name="Tier1CapitalLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+</xs:schema>

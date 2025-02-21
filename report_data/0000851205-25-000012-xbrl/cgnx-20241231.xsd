@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:6abacc18-a2b7-49fc-a7c2-9a55de473aa7,g:b2bf2ad7-589f-41d7-85c1-902f84842ef8-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:cgnx="http://cognex.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://cognex.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/currency/2024" schemaLocation="https://xbrl.sec.gov/currency/2024/currency-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cgnx-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cgnx-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cgnx-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cgnx-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://cognex.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://cognex.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFOPERATIONS" roleURI="http://cognex.com/role/CONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>9952151 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME" roleURI="http://cognex.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME">
+        <link:definition>9952152 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMEParenthetical" roleURI="http://cognex.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMEParenthetical">
+        <link:definition>9952153 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://cognex.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>9952154 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://cognex.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>9952155 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://cognex.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>9952156 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFSHAREHOLDERSEQUITY" roleURI="http://cognex.com/role/CONSOLIDATEDSTATEMENTSOFSHAREHOLDERSEQUITY">
+        <link:definition>9952157 - Statement - CONSOLIDATED STATEMENTS OF SHAREHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFSHAREHOLDERSEQUITYParenthetical" roleURI="http://cognex.com/role/CONSOLIDATEDSTATEMENTSOFSHAREHOLDERSEQUITYParenthetical">
+        <link:definition>9952158 - Statement - CONSOLIDATED STATEMENTS OF SHAREHOLDERS' EQUITY (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://cognex.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>9952159 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NewPronouncements" roleURI="http://cognex.com/role/NewPronouncements">
+        <link:definition>9952160 - Disclosure - New Pronouncements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://cognex.com/role/FairValueMeasurements">
+        <link:definition>9952161 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandInvestments" roleURI="http://cognex.com/role/CashCashEquivalentsandInvestments">
+        <link:definition>9952162 - Disclosure - Cash, Cash Equivalents, and Investments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Inventories" roleURI="http://cognex.com/role/Inventories">
+        <link:definition>9952163 - Disclosure - Inventories</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipment" roleURI="http://cognex.com/role/PropertyPlantandEquipment">
+        <link:definition>9952164 - Disclosure - Property, Plant, and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLeases" roleURI="http://cognex.com/role/LeasesLeases">
+        <link:definition>9952165 - Disclosure - Leases Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Goodwill" roleURI="http://cognex.com/role/Goodwill">
+        <link:definition>9952166 - Disclosure - Goodwill</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssets" roleURI="http://cognex.com/role/IntangibleAssets">
+        <link:definition>9952167 - Disclosure - Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpenses" roleURI="http://cognex.com/role/AccruedExpenses">
+        <link:definition>9952168 - Disclosure - Accrued Expenses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://cognex.com/role/CommitmentsandContingencies">
+        <link:definition>9952169 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IndemnificationProvisions" roleURI="http://cognex.com/role/IndemnificationProvisions">
+        <link:definition>9952170 - Disclosure - Indemnification Provisions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstruments" roleURI="http://cognex.com/role/DerivativeInstruments">
+        <link:definition>9952171 - Disclosure - Derivative Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognition" roleURI="http://cognex.com/role/RevenueRecognition">
+        <link:definition>9952172 - Disclosure - Revenue Recognition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquity" roleURI="http://cognex.com/role/ShareholdersEquity">
+        <link:definition>9952173 - Disclosure - Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://cognex.com/role/StockBasedCompensation">
+        <link:definition>9952174 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeSavingsPlan" roleURI="http://cognex.com/role/EmployeeSavingsPlan">
+        <link:definition>9952175 - Disclosure - Employee Savings Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://cognex.com/role/IncomeTaxes">
+        <link:definition>9952176 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WeightedAverageShares" roleURI="http://cognex.com/role/WeightedAverageShares">
+        <link:definition>9952177 - Disclosure - Weighted Average Shares</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandGeographicInformation" roleURI="http://cognex.com/role/SegmentandGeographicInformation">
+        <link:definition>9952178 - Disclosure - Segment and Geographic Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitions" roleURI="http://cognex.com/role/BusinessAcquisitions">
+        <link:definition>9952179 - Disclosure - Business Acquisitions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LossfromFire" roleURI="http://cognex.com/role/LossfromFire">
+        <link:definition>9952180 - Disclosure - Loss from Fire</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://cognex.com/role/SubsequentEvents">
+        <link:definition>9952181 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccounts" roleURI="http://cognex.com/role/ScheduleIIValuationandQualifyingAccounts">
+        <link:definition>9952182 - Disclosure - Schedule II - Valuation and Qualifying Accounts</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://cognex.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://cognex.com/role/FairValueMeasurementsTables">
+        <link:definition>9955512 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandInvestmentsTables" roleURI="http://cognex.com/role/CashCashEquivalentsandInvestmentsTables">
+        <link:definition>9955513 - Disclosure - Cash, Cash Equivalents, and Investments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesTables" roleURI="http://cognex.com/role/InventoriesTables">
+        <link:definition>9955514 - Disclosure - Inventories (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentTables" roleURI="http://cognex.com/role/PropertyPlantandEquipmentTables">
+        <link:definition>9955515 - Disclosure - Property, Plant, and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://cognex.com/role/LeasesTables">
+        <link:definition>9955516 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillTables" roleURI="http://cognex.com/role/GoodwillTables">
+        <link:definition>9955517 - Disclosure - Goodwill (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsTables" roleURI="http://cognex.com/role/IntangibleAssetsTables">
+        <link:definition>9955518 - Disclosure - Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpensesTables" roleURI="http://cognex.com/role/AccruedExpensesTables">
+        <link:definition>9955519 - Disclosure - Accrued Expenses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsTables" roleURI="http://cognex.com/role/DerivativeInstrumentsTables">
+        <link:definition>9955520 - Disclosure - Derivative Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionTables" roleURI="http://cognex.com/role/RevenueRecognitionTables">
+        <link:definition>9955521 - Disclosure - Revenue Recognition (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://cognex.com/role/StockBasedCompensationTables">
+        <link:definition>9955522 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://cognex.com/role/IncomeTaxesTables">
+        <link:definition>9955523 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WeightedAverageSharesTables" roleURI="http://cognex.com/role/WeightedAverageSharesTables">
+        <link:definition>9955524 - Disclosure - Weighted Average Shares (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandGeographicInformationTables" roleURI="http://cognex.com/role/SegmentandGeographicInformationTables">
+        <link:definition>9955525 - Disclosure - Segment and Geographic Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionsTables" roleURI="http://cognex.com/role/BusinessAcquisitionsTables">
+        <link:definition>9955526 - Disclosure - Business Acquisitions - (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesAdditionalInformationDetail" roleURI="http://cognex.com/role/SummaryofSignificantAccountingPoliciesAdditionalInformationDetail">
+        <link:definition>9955527 - Disclosure - Summary of Significant Accounting Policies - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesIntangibleAssetsDetails" roleURI="http://cognex.com/role/SummaryofSignificantAccountingPoliciesIntangibleAssetsDetails">
+        <link:definition>9955528 - Disclosure - Summary of Significant Accounting Policies - Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesWarrantyDetails" roleURI="http://cognex.com/role/SummaryofSignificantAccountingPoliciesWarrantyDetails">
+        <link:definition>9955529 - Disclosure - Summary of Significant Accounting Policies - Warranty (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofSignificantAccountingPoliciesRevenueRecognitionDetails" roleURI="http://cognex.com/role/SummaryofSignificantAccountingPoliciesSummaryofSignificantAccountingPoliciesRevenueRecognitionDetails">
+        <link:definition>9955530 - Disclosure - Summary of Significant Accounting Policies Summary of Significant Accounting Policies - Revenue Recognition (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesAdvertisingCostsDetails" roleURI="http://cognex.com/role/SummaryofSignificantAccountingPoliciesAdvertisingCostsDetails">
+        <link:definition>9955531 - Disclosure - Summary of Significant Accounting Policies - Advertising Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesComprehensiveIncomeDetails" roleURI="http://cognex.com/role/SummaryofSignificantAccountingPoliciesComprehensiveIncomeDetails">
+        <link:definition>9955532 - Disclosure - Summary of Significant Accounting Policies - Comprehensive Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsAssetsandLiabilitiesMeasuredatFairValueonaRecurringBasisDetail" roleURI="http://cognex.com/role/FairValueMeasurementsAssetsandLiabilitiesMeasuredatFairValueonaRecurringBasisDetail">
+        <link:definition>9955533 - Disclosure - Fair Value Measurements - Assets and Liabilities Measured at Fair Value on a Recurring Basis (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandInvestmentsComponentsofCashCashEquivalentsandInvestmentsDetail" roleURI="http://cognex.com/role/CashCashEquivalentsandInvestmentsComponentsofCashCashEquivalentsandInvestmentsDetail">
+        <link:definition>9955534 - Disclosure - Cash, Cash Equivalents and Investments - Components of Cash, Cash Equivalents and Investments (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandInvestmentsAdditionalInformationDetail" roleURI="http://cognex.com/role/CashCashEquivalentsandInvestmentsAdditionalInformationDetail">
+        <link:definition>9955535 - Disclosure - Cash, Cash Equivalents and Investments - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandInvestmentsAmortizedCosttoFairValueDetail" roleURI="http://cognex.com/role/CashCashEquivalentsandInvestmentsAmortizedCosttoFairValueDetail">
+        <link:definition>9955536 - Disclosure - Cash, Cash Equivalents and Investments - Amortized Cost to Fair Value (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandInvestmentsGrossUnrealizedLossesandFairValueforAvailableforSaleInvestmentsDetail" roleURI="http://cognex.com/role/CashCashEquivalentsandInvestmentsGrossUnrealizedLossesandFairValueforAvailableforSaleInvestmentsDetail">
+        <link:definition>9955537 - Disclosure - Cash, Cash Equivalents and Investments - Gross Unrealized Losses and Fair Value for Available-for-Sale Investments (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandInvestmentsRealizedGainLossonInvestmentsDetails" roleURI="http://cognex.com/role/CashCashEquivalentsandInvestmentsRealizedGainLossonInvestmentsDetails">
+        <link:definition>9955538 - Disclosure - Cash, Cash Equivalents, and Investments - Realized Gain (Loss) on Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandInvestmentsEffectiveMaturityDatesofAvailableforSaleInvestmentsDetail" roleURI="http://cognex.com/role/CashCashEquivalentsandInvestmentsEffectiveMaturityDatesofAvailableforSaleInvestmentsDetail">
+        <link:definition>9955539 - Disclosure - Cash, Cash Equivalents and Investments - Effective Maturity Dates of Available-for-Sale Investments (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesInventoriesDetail" roleURI="http://cognex.com/role/InventoriesInventoriesDetail">
+        <link:definition>9955540 - Disclosure - Inventories - Inventories (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentPropertyPlantandEquipmentDetail" roleURI="http://cognex.com/role/PropertyPlantandEquipmentPropertyPlantandEquipmentDetail">
+        <link:definition>9955541 - Disclosure - Property, Plant, and Equipment - Property, Plant, and Equipment (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentAdditionalInformationDetails" roleURI="http://cognex.com/role/PropertyPlantandEquipmentAdditionalInformationDetails">
+        <link:definition>9955542 - Disclosure - Property, Plant and Equipment - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesDetails" roleURI="http://cognex.com/role/LeasesDetails">
+        <link:definition>9955543 - Disclosure - Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofPaymentsDetails" roleURI="http://cognex.com/role/LeasesScheduleofPaymentsDetails">
+        <link:definition>9955544 - Disclosure - Leases - Schedule of Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillChangesintheCarryingValueofGoodwillDetail" roleURI="http://cognex.com/role/GoodwillChangesintheCarryingValueofGoodwillDetail">
+        <link:definition>9955545 - Disclosure - Goodwill - Changes in the Carrying Value of Goodwill (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsAmortizedIntangibleAssetsDetail" roleURI="http://cognex.com/role/IntangibleAssetsAmortizedIntangibleAssetsDetail">
+        <link:definition>9955546 - Disclosure - Intangible Assets - Amortized Intangible Assets (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsNarrativeDetails" roleURI="http://cognex.com/role/IntangibleAssetsNarrativeDetails">
+        <link:definition>9955547 - Disclosure - Intangible Assets - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsEstimatedAmortizationExpenseSucceedingFiscalYearsDetail" roleURI="http://cognex.com/role/IntangibleAssetsEstimatedAmortizationExpenseSucceedingFiscalYearsDetail">
+        <link:definition>9955548 - Disclosure - Intangible Assets - Estimated Amortization Expense Succeeding Fiscal Years (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpensesConstituentsofAccruedExpensesDetail" roleURI="http://cognex.com/role/AccruedExpensesConstituentsofAccruedExpensesDetail">
+        <link:definition>9955549 - Disclosure - Accrued Expenses - Constituents of Accrued Expenses (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpensesChangesinWarrantyObligationsDetail" roleURI="http://cognex.com/role/AccruedExpensesChangesinWarrantyObligationsDetail">
+        <link:definition>9955550 - Disclosure - Accrued Expenses - Changes in Warranty Obligations (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesAdditionalInformationDetail" roleURI="http://cognex.com/role/CommitmentsandContingenciesAdditionalInformationDetail">
+        <link:definition>9955551 - Disclosure - Commitments and Contingencies - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsAdditionalDetailsDetails" roleURI="http://cognex.com/role/DerivativeInstrumentsAdditionalDetailsDetails">
+        <link:definition>9955552 - Disclosure - Derivative Instruments - Additional Details (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsOutstandingForwardContractsDetails" roleURI="http://cognex.com/role/DerivativeInstrumentsOutstandingForwardContractsDetails">
+        <link:definition>9955553 - Disclosure - Derivative Instruments - Outstanding Forward Contracts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsBalanceSheetLocationDetails" roleURI="http://cognex.com/role/DerivativeInstrumentsBalanceSheetLocationDetails">
+        <link:definition>9955554 - Disclosure - Derivative Instruments - Balance Sheet Location (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsAssetsandliabilitiespresentedonanetbasisduetotherightofoffsetDetails" roleURI="http://cognex.com/role/DerivativeInstrumentsAssetsandliabilitiespresentedonanetbasisduetotherightofoffsetDetails">
+        <link:definition>9955555 - Disclosure - Derivative Instruments - Assets and liabilities presented on a net basis due to the right of offset (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsGainLossRecognizedinOtherComprehensiveIncomeLossDetails" roleURI="http://cognex.com/role/DerivativeInstrumentsGainLossRecognizedinOtherComprehensiveIncomeLossDetails">
+        <link:definition>9955556 - Disclosure - Derivative Instruments - Gain (Loss) Recognized in Other Comprehensive Income (Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionNarrativesDetails" roleURI="http://cognex.com/role/RevenueRecognitionNarrativesDetails">
+        <link:definition>9955557 - Disclosure - Revenue Recognition - Narratives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionDisaggregationbyGeographyandTypeDetails" roleURI="http://cognex.com/role/RevenueRecognitionDisaggregationbyGeographyandTypeDetails">
+        <link:definition>9955558 - Disclosure - Revenue Recognition - Disaggregation by Geography and Type (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionAllowanceforCreditLossDetails" roleURI="http://cognex.com/role/RevenueRecognitionAllowanceforCreditLossDetails">
+        <link:definition>9955559 - Disclosure - Revenue Recognition - Allowance for Credit Loss (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionDeferredRevenueandCustomerDepositsRollforwardDetails" roleURI="http://cognex.com/role/RevenueRecognitionDeferredRevenueandCustomerDepositsRollforwardDetails">
+        <link:definition>9955560 - Disclosure - Revenue Recognition - Deferred Revenue and Customer Deposits Rollforward (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityAdditionalInformationDetail" roleURI="http://cognex.com/role/ShareholdersEquityAdditionalInformationDetail">
+        <link:definition>9955561 - Disclosure - Shareholders' Equity - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationExpenseAdditionalInformationDetail" roleURI="http://cognex.com/role/StockBasedCompensationExpenseAdditionalInformationDetail">
+        <link:definition>9955562 - Disclosure - Stock-Based Compensation Expense - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationExpenseSummaryofStockOptionActivityDetail" roleURI="http://cognex.com/role/StockBasedCompensationExpenseSummaryofStockOptionActivityDetail">
+        <link:definition>9955563 - Disclosure - Stock-Based Compensation Expense - Summary of Stock Option Activity (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationExpenseWeightedAverageAssumptionsUsedinEstimatingFairValuesofStockOptionsGrantedDetail" roleURI="http://cognex.com/role/StockBasedCompensationExpenseWeightedAverageAssumptionsUsedinEstimatingFairValuesofStockOptionsGrantedDetail">
+        <link:definition>9955564 - Disclosure - Stock-Based Compensation Expense - Weighted-Average Assumptions Used in Estimating Fair Values of Stock Options Granted (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationExpenseSummaryofRestrictedStockOptionActivityDetail" roleURI="http://cognex.com/role/StockBasedCompensationExpenseSummaryofRestrictedStockOptionActivityDetail">
+        <link:definition>9955565 - Disclosure - Stock-Based Compensation Expense - Summary of Restricted Stock Option Activity (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationExpenseStockBasedCompensationExpenseDetail" roleURI="http://cognex.com/role/StockBasedCompensationExpenseStockBasedCompensationExpenseDetail">
+        <link:definition>9955566 - Disclosure - Stock-Based Compensation Expense - Stock-Based Compensation Expense (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleofPerformanceRestrictedStockUnitsDetails" roleURI="http://cognex.com/role/StockBasedCompensationScheduleofPerformanceRestrictedStockUnitsDetails">
+        <link:definition>9955567 - Disclosure - Stock-Based Compensation - Schedule of Performance Restricted Stock Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeSavingsPlanAdditionalInformationDetail" roleURI="http://cognex.com/role/EmployeeSavingsPlanAdditionalInformationDetail">
+        <link:definition>9955568 - Disclosure - Employee Savings Plan - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesAdditionalInformationDetails" roleURI="http://cognex.com/role/IncomeTaxesAdditionalInformationDetails">
+        <link:definition>9955569 - Disclosure - Income Taxes - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesConstituentsofProvisionforIncomeTaxesDetails" roleURI="http://cognex.com/role/IncomeTaxesConstituentsofProvisionforIncomeTaxesDetails">
+        <link:definition>9955570 - Disclosure - Income Taxes - Constituents of Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationoftheUnitedStatesFederalStatutoryCorporateTaxRatetoCompanysEffectiveTaxRateorIncomeTaxProvisionDetails" roleURI="http://cognex.com/role/IncomeTaxesReconciliationoftheUnitedStatesFederalStatutoryCorporateTaxRatetoCompanysEffectiveTaxRateorIncomeTaxProvisionDetails">
+        <link:definition>9955571 - Disclosure - Income Taxes - Reconciliation of the United States Federal Statutory Corporate Tax Rate to Company's Effective Tax Rate or Income Tax Provision (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesChangesintheReserveforIncomeTaxesExcludingInterestandPenaltiesDetails" roleURI="http://cognex.com/role/IncomeTaxesChangesintheReserveforIncomeTaxesExcludingInterestandPenaltiesDetails">
+        <link:definition>9955572 - Disclosure - Income Taxes - Changes in the Reserve for Income Taxes, Excluding Interest and Penalties (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesConstituentsofDeferredTaxAssetsDetails" roleURI="http://cognex.com/role/IncomeTaxesConstituentsofDeferredTaxAssetsDetails">
+        <link:definition>9955573 - Disclosure - Income Taxes - Constituents of Deferred Tax Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WeightedAverageSharesCalculationofWeightedAverageSharesDetail" roleURI="http://cognex.com/role/WeightedAverageSharesCalculationofWeightedAverageSharesDetail">
+        <link:definition>9955574 - Disclosure - Weighted Average Shares - Calculation of Weighted Average Shares (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WeightedAverageSharesAdditionalInformationDetail" roleURI="http://cognex.com/role/WeightedAverageSharesAdditionalInformationDetail">
+        <link:definition>9955575 - Disclosure - Weighted Average Shares - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandGeographicInformationAdditionalInformationDetail" roleURI="http://cognex.com/role/SegmentandGeographicInformationAdditionalInformationDetail">
+        <link:definition>9955576 - Disclosure - Segment and Geographic Information - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandGeographicInformationScheduleofRevenuefromExternalCustomersandLongLivedAssetsbyGeographicalAreasDetail" roleURI="http://cognex.com/role/SegmentandGeographicInformationScheduleofRevenuefromExternalCustomersandLongLivedAssetsbyGeographicalAreasDetail">
+        <link:definition>9955577 - Disclosure - Segment and Geographic Information - Schedule of Revenue from External Customers and Long-Lived Assets, by Geographical Areas (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandGeographicInformationDisaggregationofSegmentExpensesDetails" roleURI="http://cognex.com/role/SegmentandGeographicInformationDisaggregationofSegmentExpensesDetails">
+        <link:definition>9955578 - Disclosure - Segment and Geographic Information - Disaggregation of Segment Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionsMoritexNarrativeDetails" roleURI="http://cognex.com/role/BusinessAcquisitionsMoritexNarrativeDetails">
+        <link:definition>9955579 - Disclosure - Business Acquisitions - Moritex Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionsMoritexPurchasePriceAllocationDetails" roleURI="http://cognex.com/role/BusinessAcquisitionsMoritexPurchasePriceAllocationDetails">
+        <link:definition>9955580 - Disclosure - Business Acquisitions - Moritex Purchase Price Allocation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LossfromFireDetails" roleURI="http://cognex.com/role/LossfromFireDetails">
+        <link:definition>9955581 - Disclosure - Loss from Fire (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsDetails" roleURI="http://cognex.com/role/SubsequentEventsDetails">
+        <link:definition>9955582 - Disclosure - Subsequent Events - (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccountsDetail" roleURI="http://cognex.com/role/ScheduleIIValuationandQualifyingAccountsDetail">
+        <link:definition>9955583 - Disclosure - Schedule II -Valuation and Qualifying Accounts (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="cgnx_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cgnx_LossGainFromCatastrophes" abstract="false" name="LossGainFromCatastrophes" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_CurrencytranslationadjustmentAbstract" abstract="true" name="CurrencytranslationadjustmentAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cgnx_NonCashLossFromCatastrophes" abstract="false" name="NonCashLossFromCatastrophes" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_ExcessAndObsoleteInventoryCharges" abstract="false" name="ExcessAndObsoleteInventoryCharges" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_FairValueAdjustmentOnAcquiredInventories" abstract="false" name="FairValueAdjustmentOnAcquiredInventories" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_IndemnificationProvisionsTextBlock" abstract="false" name="IndemnificationProvisionsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="cgnx_CatastropheTextBlock" abstract="false" name="CatastropheTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="cgnx_NatureOfOperationsPolicyTextBlock" abstract="false" name="NatureOfOperationsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="cgnx_ConcentrationsOfRiskPolicyPolicyTextBlock" abstract="false" name="ConcentrationsOfRiskPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="cgnx_ComponentsOfCashCashEquivalentsAndInvestmentsTableTableTextBlock" abstract="false" name="ComponentsOfCashCashEquivalentsAndInvestmentsTableTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="cgnx_ComputerHardwareAndSoftwareMember" abstract="true" name="ComputerHardwareAndSoftwareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_AvailableforsaleSecuritiesDebtMaturitiesEffectiveTermMaximum" abstract="false" name="AvailableforsaleSecuritiesDebtMaturitiesEffectiveTermMaximum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cgnx_MaximumInvestmentOfCompanyInPartnership" abstract="false" name="MaximumInvestmentOfCompanyInPartnership" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="cgnx_CompletedTechnologiesAndOtherIntangibleAssetsMember" abstract="true" name="CompletedTechnologiesAndOtherIntangibleAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_CustomerContractsAndRelationshipsMember" abstract="true" name="CustomerContractsAndRelationshipsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_ProductWarrantyPeriod" abstract="false" name="ProductWarrantyPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cgnx_RevenuePaymentTerms" abstract="false" name="RevenuePaymentTerms" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cgnx_MoneyMarketInstrumentsFairValueDisclosure" abstract="false" name="MoneyMarketInstrumentsFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_CorporateBondsFairValueDisclosure" abstract="false" name="CorporateBondsFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_TreasuryBillsFairValueDisclosure" abstract="false" name="TreasuryBillsFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_AssetBackedSecuritiesFairValueDisclosure" abstract="false" name="AssetBackedSecuritiesFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_SovereignBondsFairValueDisclosure" abstract="false" name="SovereignBondsFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_AgencyBondsMember" abstract="true" name="AgencyBondsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_CashCashEquivalentsShortTermAndLongTermInvestments" abstract="false" name="CashCashEquivalentsShortTermAndLongTermInvestments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_DueFromForeignBanks" abstract="false" name="DueFromForeignBanks" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_InvestmentDurationAxis" abstract="true" name="InvestmentDurationAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="cgnx_InvestmentDurationDomain" abstract="true" name="InvestmentDurationDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_LongTermInvestmentsMember" abstract="true" name="LongTermInvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_AvailableForSaleSecuritiesDebtMaturitiesAfterOneYearBeforeTwoYearsFairValue" abstract="false" name="AvailableForSaleSecuritiesDebtMaturitiesAfterOneYearBeforeTwoYearsFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_AvailableForSaleSecuritiesDebtMaturitiesAfterTwoYearsBeforeThreeYearsFairValue" abstract="false" name="AvailableForSaleSecuritiesDebtMaturitiesAfterTwoYearsBeforeThreeYearsFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_AvailableForSaleSecuritiesDebtMaturitiesAfterThreeYearsBeforeFourYearsFairValue" abstract="false" name="AvailableForSaleSecuritiesDebtMaturitiesAfterThreeYearsBeforeFourYearsFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_AvailableForSaleSecuritiesDebtMaturitiesAfterFourYearsBeforeFiveYearsFairValue" abstract="false" name="AvailableForSaleSecuritiesDebtMaturitiesAfterFourYearsBeforeFiveYearsFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_AvailableForSaleSecuritiesDebtMaturitiesAfterFiveYearsBeforeSevenYearsFairValue" abstract="false" name="AvailableForSaleSecuritiesDebtMaturitiesAfterFiveYearsBeforeSevenYearsFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_MoritexCorporationMember" abstract="true" name="MoritexCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_HardwareAndSoftwareMember" abstract="true" name="HardwareAndSoftwareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_BacNinhVietnamMember" abstract="true" name="BacNinhVietnamMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_AachenGermanyMember" abstract="true" name="AachenGermanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_A88000SquareFootPremisesMember" abstract="true" name="A88000SquareFootPremisesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_A27000SquareFootPremisesMember" abstract="true" name="A27000SquareFootPremisesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_OperatingLeaseExpenseNoLiabilityOrAssetRecognized" abstract="false" name="OperatingLeaseExpenseNoLiabilityOrAssetRecognized" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_OperatingLeaseLiabilityDiscountedPresentValue" abstract="false" name="OperatingLeaseLiabilityDiscountedPresentValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_LesseeOperatingLeaseOptionToRenewTermOfContract" abstract="false" name="LesseeOperatingLeaseOptionToRenewTermOfContract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cgnx_LesseeOperatingLeaseComponents" abstract="false" name="LesseeOperatingLeaseComponents" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cgnx_UnrecordedUncontditionalPurchaseObligationRenewalTerm" abstract="false" name="UnrecordedUncontditionalPurchaseObligationRenewalTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cgnx_SACSiriusAdvancedCyberneticsGmbHMember" abstract="true" name="SACSiriusAdvancedCyberneticsGmbHMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_DistributionNetworksAndCustomerRelationshipsMember" abstract="true" name="DistributionNetworksAndCustomerRelationshipsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_CompletedTechnologyMember" abstract="true" name="CompletedTechnologyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_RetirementAllowance" abstract="false" name="RetirementAllowance" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_GreaterChinaMember" abstract="true" name="GreaterChinaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_OtherAsiaMember" abstract="true" name="OtherAsiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_StandardProductandServicesMember" abstract="true" name="StandardProductandServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_ApplicationofCustomerSpecificSolutionsMember" abstract="true" name="ApplicationofCustomerSpecificSolutionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_AccountsReceivableAllowanceForCreditLossForeignExchangeRateAdjustment" abstract="false" name="AccountsReceivableAllowanceForCreditLossForeignExchangeRateAdjustment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_CustomerContractsLiabilityCurrentRollForward" abstract="true" name="CustomerContractsLiabilityCurrentRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cgnx_ContractWithCustomerLiabilityPeriodIncreaseDecrease" abstract="false" name="ContractWithCustomerLiabilityPeriodIncreaseDecrease" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_ContractWithCustomerLiabilityCurrentAndPriorPeriodRevenueRecognized" abstract="false" name="ContractWithCustomerLiabilityCurrentAndPriorPeriodRevenueRecognized" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_ContractLiabilityForeignExchangeRateChanges" abstract="false" name="ContractLiabilityForeignExchangeRateChanges" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_RepurchaseProgramMarch2020Member" abstract="true" name="RepurchaseProgramMarch2020Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_RepurchaseProgramMarch2022Member" abstract="true" name="RepurchaseProgramMarch2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_VoteEntitledForEachCommonShareOutstanding" abstract="false" name="VoteEntitledForEachCommonShareOutstanding" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cgnx_StockRepurchaseProgramBuybackExciseTax" abstract="false" name="StockRepurchaseProgramBuybackExciseTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_CognexCorporation2023StockOptionAndIncentivePlanMember" abstract="true" name="CognexCorporation2023StockOptionAndIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_CognexCorporation2021And2007StockOptionAndIncentivePlansMember" abstract="true" name="CognexCorporation2021And2007StockOptionAndIncentivePlansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_ExpirationPeriodOfStockOptionPlan" abstract="false" name="ExpirationPeriodOfStockOptionPlan" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cgnx_NumberOfGroupsWithinEmployeePopulation" abstract="false" name="NumberOfGroupsWithinEmployeePopulation" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cgnx_EstimatedForfeitureRateForUnvestedOptionsForSeniorManagement" abstract="false" name="EstimatedForfeitureRateForUnvestedOptionsForSeniorManagement" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="cgnx_EstimatedForfeitureRateForUnvestedOptionsForAllNonSeniorManagement" abstract="false" name="EstimatedForfeitureRateForUnvestedOptionsForAllNonSeniorManagement" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="cgnx_IncreaseDecreaseInCompensationExpenseDueToRevisedEstimatedForfeitureRates" abstract="false" name="IncreaseDecreaseInCompensationExpenseDueToRevisedEstimatedForfeitureRates" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_SharesBasedCompensationArrangementBySharesBasedPaymentAwardOptionsExercisedIntrinsicValue" abstract="false" name="SharesBasedCompensationArrangementBySharesBasedPaymentAwardOptionsExercisedIntrinsicValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedFairValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_EmployeeServiceShareBasedCompensationRecognizedPeriodCostsCapitalizedAmount" abstract="false" name="EmployeeServiceShareBasedCompensationRecognizedPeriodCostsCapitalizedAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_EstimatedForfeitureRateForUnvestedOptionsForCEO" abstract="false" name="EstimatedForfeitureRateForUnvestedOptionsForCEO" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="cgnx_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisableAggregateIntrinsicValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisableAggregateIntrinsicValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_ProductCostOfRevenueMember" abstract="true" name="ProductCostOfRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_SellingGeneralAndAdministrativeMember" abstract="true" name="SellingGeneralAndAdministrativeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_MinimumAgeToBeEligibleToDefinedContributionPlan" abstract="false" name="MinimumAgeToBeEligibleToDefinedContributionPlan" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cgnx_CompanyContributionsVestAtEndOfOneYear" abstract="false" name="CompanyContributionsVestAtEndOfOneYear" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="cgnx_CompanyContributionsVestAtEndOfTwoYear" abstract="false" name="CompanyContributionsVestAtEndOfTwoYear" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="cgnx_CompanyContributionsVestAtEndOfThreeYears" abstract="false" name="CompanyContributionsVestAtEndOfThreeYears" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="cgnx_CompanyContributionsVestAtEndOfFourYears" abstract="false" name="CompanyContributionsVestAtEndOfFourYears" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="cgnx_OperatingLossCarryforwardMember" abstract="true" name="OperatingLossCarryforwardMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_TaxCreditCarryforwardMember" abstract="true" name="TaxCreditCarryforwardMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_UnrecognizedTaxBenefitsGross" abstract="false" name="UnrecognizedTaxBenefitsGross" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_UnrecognizedTaxBenefitsGrossNoncurrentLiability" abstract="false" name="UnrecognizedTaxBenefitsGrossNoncurrentLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_UnrecognizedTaxBenefitsGrossOffsetToTaxAttributes" abstract="false" name="UnrecognizedTaxBenefitsGrossOffsetToTaxAttributes" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_MinimumDecreaseInIncomeTaxExpenseDueToReleaseInReserves" abstract="false" name="MinimumDecreaseInIncomeTaxExpenseDueToReleaseInReserves" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_MaximumDecreaseInIncomeTaxExpenseDueToReleaseInReserves" abstract="false" name="MaximumDecreaseInIncomeTaxExpenseDueToReleaseInReserves" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_DeferredTaxAssetsTaxCreditCarryforwardsState" abstract="false" name="DeferredTaxAssetsTaxCreditCarryforwardsState" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_DeferredTaxAssetsForeignTaxStructureChange" abstract="false" name="DeferredTaxAssetsForeignTaxStructureChange" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_DeferredTaxLiabilitiesTaxCutsAndJobsActGlobalIntangibleLowTaxIncome" abstract="false" name="DeferredTaxLiabilitiesTaxCutsAndJobsActGlobalIntangibleLowTaxIncome" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_EffectiveIncomeTaxRateReconciliationTaxationOnMultinationalOperationsPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationTaxationOnMultinationalOperationsPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="cgnx_EffectiveIncomeTaxRateReconciliationTaxReservesPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationTaxReservesPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="cgnx_EffectiveIncomeTaxRateReconciliationExecutiveCompensationPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationExecutiveCompensationPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="cgnx_EffectiveIncomeTaxRateReconciliationAuditSettlementPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationAuditSettlementPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="cgnx_DeferredTaxAssetsIntangibleAssetChangeinTaxStructure" abstract="false" name="DeferredTaxAssetsIntangibleAssetChangeinTaxStructure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_NoncurrentDeferredTaxAssetsDeprecation" abstract="false" name="NoncurrentDeferredTaxAssetsDeprecation" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_DeferredTaxAssetsCapitalizationOfResearchAndDevelopmentExpenses" abstract="false" name="DeferredTaxAssetsCapitalizationOfResearchAndDevelopmentExpenses" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_DeferredTaxAssetsOtherNoncurrent" abstract="false" name="DeferredTaxAssetsOtherNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_DeferredTaxAssetsWithJurisdictionalNettingGross" abstract="false" name="DeferredTaxAssetsWithJurisdictionalNettingGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_DeferredTaxLiabilitiesAmortizationOfIntangibleAssets" abstract="false" name="DeferredTaxLiabilitiesAmortizationOfIntangibleAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_DeferredIncomeTaxAssetsLiabilitiesNet" abstract="false" name="DeferredIncomeTaxAssetsLiabilitiesNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_Customer2Member" abstract="true" name="Customer2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_Customer1Member" abstract="true" name="Customer1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_OtherGeographicAreaMember" abstract="true" name="OtherGeographicAreaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="cgnx_ResearchDevelopmentAndEngineeringExpensesMember" abstract="true" name="ResearchDevelopmentAndEngineeringExpensesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_SegmentGeneralAndEngineeringExpenseMember" abstract="true" name="SegmentGeneralAndEngineeringExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_IncentiveCompensationExpenseBonusAndSalesCommissions" abstract="false" name="IncentiveCompensationExpenseBonusAndSalesCommissions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_BusinessCombinationEnterpriseValue" abstract="false" name="BusinessCombinationEnterpriseValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedReserveForIncomeTaxes" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedReserveForIncomeTaxes" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_GrossLossFromCatastrophes" abstract="false" name="GrossLossFromCatastrophes" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_InsuranceRecoveriesBusinessInterruption" abstract="false" name="InsuranceRecoveriesBusinessInterruption" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_InsuranceRecoveriesLostInventoryAndOtherLosses" abstract="false" name="InsuranceRecoveriesLostInventoryAndOtherLosses" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cgnx_JoergKuechenMember" abstract="true" name="JoergKuechenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_JoergKuechenRuleTradingArrangementCommonStockPurchaseMember" abstract="true" name="JoergKuechenRuleTradingArrangementCommonStockPurchaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cgnx_JoergKuechenRuleTradingArrangementCommonStockSaleMember" abstract="true" name="JoergKuechenRuleTradingArrangementCommonStockSaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 02/12/2025-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2025 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <link:roleRef roleURI="http://nftn.com/role/Cover" xlink:href="nftn-20241031.xsd#Cover" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/BalanceSheets" xlink:href="nftn-20241031.xsd#BalanceSheets" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/BalanceSheetsParenthetical" xlink:href="nftn-20241031.xsd#BalanceSheetsParenthetical" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StatementsOfOperations" xlink:href="nftn-20241031.xsd#StatementsOfOperations" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StatementsOfChangesInStockholdersEquity" xlink:href="nftn-20241031.xsd#StatementsOfChangesInStockholdersEquity" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StatementsOfCashFlows" xlink:href="nftn-20241031.xsd#StatementsOfCashFlows" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/InsiderTradingArragements" xlink:href="nftn-20241031.xsd#InsiderTradingArragements" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/OrganizationAndDescriptionOfBusiness" xlink:href="nftn-20241031.xsd#OrganizationAndDescriptionOfBusiness" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/GoingConcern" xlink:href="nftn-20241031.xsd#GoingConcern" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/SummaryOfSignificantAccountingPolicies" xlink:href="nftn-20241031.xsd#SummaryOfSignificantAccountingPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/RecentAccountingPronoucements" xlink:href="nftn-20241031.xsd#RecentAccountingPronoucements" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/RelatedPartyTransactions" xlink:href="nftn-20241031.xsd#RelatedPartyTransactions" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StockholdersDeficit" xlink:href="nftn-20241031.xsd#StockholdersDeficit" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/SubsequentEvents" xlink:href="nftn-20241031.xsd#SubsequentEvents" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:href="nftn-20241031.xsd#SummaryOfSignificantAccountingPoliciesPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/GoingConcernDetailsNarrative" xlink:href="nftn-20241031.xsd#GoingConcernDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/RelatedPartyTransactionsDetailsNarrative" xlink:href="nftn-20241031.xsd#RelatedPartyTransactionsDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StockholdersEquityDetailsNarrative" xlink:href="nftn-20241031.xsd#StockholdersEquityDetailsNarrative" xlink:type="simple" />
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/Cover" xlink:title="00000001 - Document - Cover Page Information">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_CoverAbstract" xlink:label="loc_deiCoverAbstract" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityRegistrantName" xlink:label="loc_deiEntityRegistrantName" />
+    <link:presentationArc order="0" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityRegistrantName" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityCentralIndexKey" xlink:label="loc_deiEntityCentralIndexKey" />
+    <link:presentationArc order="1" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityCentralIndexKey" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_DocumentType" xlink:label="loc_deiDocumentType" />
+    <link:presentationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiDocumentType" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_AmendmentFlag" xlink:label="loc_deiAmendmentFlag" />
+    <link:presentationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiAmendmentFlag" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityVoluntaryFilers" xlink:label="loc_deiEntityVoluntaryFilers" />
+    <link:presentationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityVoluntaryFilers" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_CurrentFiscalYearEndDate" xlink:label="loc_deiCurrentFiscalYearEndDate" />
+    <link:presentationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiCurrentFiscalYearEndDate" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityWellKnownSeasonedIssuer" xlink:label="loc_deiEntityWellKnownSeasonedIssuer" />
+    <link:presentationArc order="6" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityWellKnownSeasonedIssuer" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntitySmallBusiness" xlink:label="loc_deiEntitySmallBusiness" />
+    <link:presentationArc order="7" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntitySmallBusiness" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityShellCompany" xlink:label="loc_deiEntityShellCompany" />
+    <link:presentationArc order="8" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityShellCompany" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityEmergingGrowthCompany" xlink:label="loc_deiEntityEmergingGrowthCompany" />
+    <link:presentationArc order="9" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityEmergingGrowthCompany" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityCurrentReportingStatus" xlink:label="loc_deiEntityCurrentReportingStatus" />
+    <link:presentationArc order="10" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityCurrentReportingStatus" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_DocumentPeriodEndDate" xlink:label="loc_deiDocumentPeriodEndDate" />
+    <link:presentationArc order="11" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiDocumentPeriodEndDate" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityFilerCategory" xlink:label="loc_deiEntityFilerCategory" />
+    <link:presentationArc order="12" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityFilerCategory" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_DocumentFiscalPeriodFocus" xlink:label="loc_deiDocumentFiscalPeriodFocus" />
+    <link:presentationArc order="13" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiDocumentFiscalPeriodFocus" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_DocumentFiscalYearFocus" xlink:label="loc_deiDocumentFiscalYearFocus" />
+    <link:presentationArc order="14" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiDocumentFiscalYearFocus" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityExTransitionPeriod" xlink:label="loc_deiEntityExTransitionPeriod" />
+    <link:presentationArc order="15" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityExTransitionPeriod" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityCommonStockSharesOutstanding" xlink:label="loc_deiEntityCommonStockSharesOutstanding" />
+    <link:presentationArc order="16" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityCommonStockSharesOutstanding" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityPublicFloat" xlink:label="loc_deiEntityPublicFloat" />
+    <link:presentationArc order="17" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityPublicFloat" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_DocumentAnnualReport" xlink:label="loc_deiDocumentAnnualReport" />
+    <link:presentationArc order="18" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiDocumentAnnualReport" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_DocumentTransitionReport" xlink:label="loc_deiDocumentTransitionReport" />
+    <link:presentationArc order="19" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiDocumentTransitionReport" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_DocumentFinStmtErrorCorrectionFlag" xlink:label="loc_deiDocumentFinStmtErrorCorrectionFlag" />
+    <link:presentationArc order="20" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiDocumentFinStmtErrorCorrectionFlag" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityFileNumber" xlink:label="loc_deiEntityFileNumber" />
+    <link:presentationArc order="21" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityFileNumber" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityIncorporationStateCountryCode" xlink:label="loc_deiEntityIncorporationStateCountryCode" />
+    <link:presentationArc order="22" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityIncorporationStateCountryCode" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityTaxIdentificationNumber" xlink:label="loc_deiEntityTaxIdentificationNumber" />
+    <link:presentationArc order="23" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityTaxIdentificationNumber" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityAddressAddressLine1" xlink:label="loc_deiEntityAddressAddressLine1" />
+    <link:presentationArc order="24" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityAddressAddressLine1" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityAddressAddressLine2" xlink:label="loc_deiEntityAddressAddressLine2" />
+    <link:presentationArc order="25" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityAddressAddressLine2" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityAddressAddressLine3" xlink:label="loc_deiEntityAddressAddressLine3" />
+    <link:presentationArc order="26" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityAddressAddressLine3" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityAddressCityOrTown" xlink:label="loc_deiEntityAddressCityOrTown" />
+    <link:presentationArc order="27" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityAddressCityOrTown" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityAddressCountry" xlink:label="loc_deiEntityAddressCountry" />
+    <link:presentationArc order="28" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityAddressCountry" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_CityAreaCode" xlink:label="loc_deiCityAreaCode" />
+    <link:presentationArc order="29" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiCityAreaCode" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_IcfrAuditorAttestationFlag" xlink:label="loc_deiIcfrAuditorAttestationFlag" />
+    <link:presentationArc order="30" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiIcfrAuditorAttestationFlag" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_LocalPhoneNumber" xlink:label="loc_deiLocalPhoneNumber" />
+    <link:presentationArc order="31" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiLocalPhoneNumber" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityInteractiveDataCurrent" xlink:label="loc_deiEntityInteractiveDataCurrent" />
+    <link:presentationArc order="32" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityInteractiveDataCurrent" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_EntityAddressPostalZipCode" xlink:label="loc_deiEntityAddressPostalZipCode" />
+    <link:presentationArc order="33" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiEntityAddressPostalZipCode" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_AuditorName" xlink:label="loc_deiAuditorName" />
+    <link:presentationArc order="34" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiAuditorName" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_AuditorFirmId" xlink:label="loc_deiAuditorFirmId" />
+    <link:presentationArc order="35" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiAuditorFirmId" xlink:type="arc" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_AuditorLocation" xlink:label="loc_deiAuditorLocation" />
+    <link:presentationArc order="36" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_deiCoverAbstract" xlink:to="loc_deiAuditorLocation" xlink:type="arc" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/BalanceSheets" xlink:title="000002 - Statement - Balance Sheets">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementOfFinancialPositionAbstract" xlink:label="loc_us-gaapStatementOfFinancialPositionAbstract_23877d" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AssetsAbstract" xlink:label="loc_us-gaapAssetsAbstract_d63eff" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_23877d" xlink:to="loc_us-gaapAssetsAbstract_d63eff" order="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AssetsCurrentAbstract" xlink:label="loc_us-gaapAssetsCurrentAbstract_7a08b3" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_23877d" xlink:to="loc_us-gaapAssetsCurrentAbstract_7a08b3" order="2" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents" xlink:label="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents_9d02d7" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_23877d" xlink:to="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents_9d02d7" order="3" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AssetsCurrent" xlink:label="loc_us-gaapAssetsCurrent_f55522" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_23877d" xlink:to="loc_us-gaapAssetsCurrent_f55522" order="4" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_Assets" xlink:label="loc_us-gaapAssets_6a4676" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_23877d" xlink:to="loc_us-gaapAssets_6a4676" order="5" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_LiabilitiesAndStockholdersEquityAbstract" xlink:label="loc_us-gaapLiabilitiesAndStockholdersEquityAbstract_af0b1e" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_23877d" xlink:to="loc_us-gaapLiabilitiesAndStockholdersEquityAbstract_af0b1e" order="6" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_LiabilitiesCurrentAbstract" xlink:label="loc_us-gaapLiabilitiesCurrentAbstract_62dc13" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_23877d" xlink:to="loc_us-gaapLiabilitiesCurrentAbstract_62dc13" order="7" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AccountsPayableCurrent" xlink:label="loc_us-gaapAccountsPayableCurrent_375f07" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapLiabilitiesCurrentAbstract_62dc13" xlink:to="loc_us-gaapAccountsPayableCurrent_375f07" order="8" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OtherLoansPayableCurrent" xlink:label="loc_us-gaapOtherLoansPayableCurrent_bdba27" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapLiabilitiesCurrentAbstract_62dc13" xlink:to="loc_us-gaapOtherLoansPayableCurrent_bdba27" order="9" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_LoansPayableToShareholdersCurrent" xlink:label="loc_nftnLoansPayableToShareholdersCurrent_7f8298" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapLiabilitiesCurrentAbstract_62dc13" xlink:to="loc_nftnLoansPayableToShareholdersCurrent_7f8298" order="10" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_RelatedPartyTransactionsLoansPayableCurrent" xlink:label="loc_nftnRelatedPartyTransactionsLoansPayableCurrent_80862f" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapLiabilitiesCurrentAbstract_62dc13" xlink:to="loc_nftnRelatedPartyTransactionsLoansPayableCurrent_80862f" order="11" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_LiabilitiesCurrent" xlink:label="loc_us-gaapLiabilitiesCurrent_ee3272" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapLiabilitiesCurrentAbstract_62dc13" xlink:to="loc_us-gaapLiabilitiesCurrent_ee3272" order="12" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommitmentsAndContingenciesDisclosureAbstract" xlink:label="loc_us-gaapCommitmentsAndContingenciesDisclosureAbstract_8127f7" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_23877d" xlink:to="loc_us-gaapCommitmentsAndContingenciesDisclosureAbstract_8127f7" order="13" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StockholdersEquityAbstract" xlink:label="loc_us-gaapStockholdersEquityAbstract_0a95b9" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_23877d" xlink:to="loc_us-gaapStockholdersEquityAbstract_0a95b9" order="14" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockValue" xlink:label="loc_us-gaapCommonStockValue_f8c42d" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStockholdersEquityAbstract_0a95b9" xlink:to="loc_us-gaapCommonStockValue_f8c42d" order="15" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AdditionalPaidInCapital" xlink:label="loc_us-gaapAdditionalPaidInCapital_3f0be9" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStockholdersEquityAbstract_0a95b9" xlink:to="loc_us-gaapAdditionalPaidInCapital_3f0be9" order="16" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RetainedEarningsAccumulatedDeficit" xlink:label="loc_us-gaapRetainedEarningsAccumulatedDeficit_148295" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStockholdersEquityAbstract_0a95b9" xlink:to="loc_us-gaapRetainedEarningsAccumulatedDeficit_148295" order="17" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StockholdersEquity" xlink:label="loc_us-gaapStockholdersEquity_6e5272" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStockholdersEquityAbstract_0a95b9" xlink:to="loc_us-gaapStockholdersEquity_6e5272" order="18" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_LiabilitiesAndStockholdersEquity" xlink:label="loc_us-gaapLiabilitiesAndStockholdersEquity_bb8d81" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_23877d" xlink:to="loc_us-gaapLiabilitiesAndStockholdersEquity_bb8d81" order="19" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/BalanceSheetsParenthetical" xlink:title="000003 - Statement - Balance Sheets (Parenthetical)">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementOfFinancialPositionAbstract" xlink:label="loc_us-gaapStatementOfFinancialPositionAbstract_a8e35f" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockParOrStatedValuePerShare" xlink:label="loc_us-gaapCommonStockParOrStatedValuePerShare_f8a47a" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_a8e35f" xlink:to="loc_us-gaapCommonStockParOrStatedValuePerShare_f8a47a" order="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockSharesAuthorized" xlink:label="loc_us-gaapCommonStockSharesAuthorized_75045d" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_a8e35f" xlink:to="loc_us-gaapCommonStockSharesAuthorized_75045d" order="2" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockSharesIssued" xlink:label="loc_us-gaapCommonStockSharesIssued_a17302" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_a8e35f" xlink:to="loc_us-gaapCommonStockSharesIssued_a17302" order="3" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockSharesOutstanding" xlink:label="loc_us-gaapCommonStockSharesOutstanding_06592d" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfFinancialPositionAbstract_a8e35f" xlink:to="loc_us-gaapCommonStockSharesOutstanding_06592d" order="4" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/StatementsOfOperations" xlink:title="000004 - Statement - Statements of Operations">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_IncomeStatementAbstract" xlink:label="loc_us-gaapIncomeStatementAbstract_d28717" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_Revenues" xlink:label="loc_us-gaapRevenues_a83e6a" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapIncomeStatementAbstract_d28717" xlink:to="loc_us-gaapRevenues_a83e6a" order="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OperatingExpensesAbstract" xlink:label="loc_us-gaapOperatingExpensesAbstract_300a76" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapIncomeStatementAbstract_d28717" xlink:to="loc_us-gaapOperatingExpensesAbstract_300a76" order="2" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ProfessionalFees" xlink:label="loc_us-gaapProfessionalFees_1f2561" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapOperatingExpensesAbstract_300a76" xlink:to="loc_us-gaapProfessionalFees_1f2561" order="3" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OperatingExpenses" xlink:label="loc_us-gaapOperatingExpenses_f688d2" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapOperatingExpensesAbstract_300a76" xlink:to="loc_us-gaapOperatingExpenses_f688d2" order="4" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OperatingIncomeLoss" xlink:label="loc_us-gaapOperatingIncomeLoss_94c079" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapOperatingExpensesAbstract_300a76" xlink:to="loc_us-gaapOperatingIncomeLoss_94c079" order="5" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetIncomeLoss" xlink:label="loc_us-gaapNetIncomeLoss_98c51d" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapIncomeStatementAbstract_d28717" xlink:to="loc_us-gaapNetIncomeLoss_98c51d" order="6" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_EarningsPerShareDiluted" xlink:label="loc_us-gaapEarningsPerShareDiluted_ead705" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapIncomeStatementAbstract_d28717" xlink:to="loc_us-gaapEarningsPerShareDiluted_ead705" order="7" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_WeightedAverageNumberOfDilutedSharesOutstanding" xlink:label="loc_us-gaapWeightedAverageNumberOfDilutedSharesOutstanding_690f56" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapIncomeStatementAbstract_d28717" xlink:to="loc_us-gaapWeightedAverageNumberOfDilutedSharesOutstanding_690f56" order="8" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/StatementsOfChangesInStockholdersEquity" xlink:title="000005 - Statement - Statements of Changes in Stockholders' Equity">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementOfStockholdersEquityAbstract" xlink:label="loc_us-gaapStatementOfStockholdersEquityAbstract_27fc30" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementTable" xlink:label="loc_us-gaapStatementTable_4a6b5f" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfStockholdersEquityAbstract_27fc30" xlink:to="loc_us-gaapStatementTable_4a6b5f" order="100" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementLineItems" xlink:label="loc_us-gaapStatementLineItems_2708ce" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementTable_4a6b5f" xlink:to="loc_us-gaapStatementLineItems_2708ce" order="2000" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementEquityComponentsAxis" xlink:label="loc_us-gaapStatementEquityComponentsAxis_4acd63" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementTable_4a6b5f" xlink:to="loc_us-gaapStatementEquityComponentsAxis_4acd63" order="20" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_EquityComponentDomain" xlink:label="loc_us-gaapEquityComponentDomain_53eb85" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementEquityComponentsAxis_4acd63" xlink:to="loc_us-gaapEquityComponentDomain_53eb85" order="20" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockMember" xlink:label="loc_us-gaapCommonStockMember_8ca58d" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapEquityComponentDomain_53eb85" xlink:to="loc_us-gaapCommonStockMember_8ca58d" order="21" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AdditionalPaidInCapitalMember" xlink:label="loc_us-gaapAdditionalPaidInCapitalMember_3bb9a6" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapEquityComponentDomain_53eb85" xlink:to="loc_us-gaapAdditionalPaidInCapitalMember_3bb9a6" order="22" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RetainedEarningsMember" xlink:label="loc_us-gaapRetainedEarningsMember_95a089" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapEquityComponentDomain_53eb85" xlink:to="loc_us-gaapRetainedEarningsMember_95a089" order="23" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_SharesIssued" xlink:label="loc_us-gaapSharesIssued_f58a81" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementLineItems_2708ce" xlink:to="loc_us-gaapSharesIssued_f58a81" order="1" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StockholdersEquity" xlink:label="loc_us-gaapStockholdersEquity_e4bad0" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementLineItems_2708ce" xlink:to="loc_us-gaapStockholdersEquity_e4bad0" order="2" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetIncomeLoss" xlink:label="loc_us-gaapNetIncomeLoss_d025d2" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementLineItems_2708ce" xlink:to="loc_us-gaapNetIncomeLoss_d025d2" order="3" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_SharesIssued" xlink:label="loc_us-gaapSharesIssued_9852bd" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementLineItems_2708ce" xlink:to="loc_us-gaapSharesIssued_9852bd" order="4" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StockholdersEquity" xlink:label="loc_us-gaapStockholdersEquity_5978f2" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementLineItems_2708ce" xlink:to="loc_us-gaapStockholdersEquity_5978f2" order="5" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/StatementsOfCashFlows" xlink:title="000006 - Statement - Statements of Cash Flows">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementOfCashFlowsAbstract" xlink:label="loc_us-gaapStatementOfCashFlowsAbstract_70e787" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivitiesAbstract" xlink:label="loc_us-gaapNetCashProvidedByUsedInOperatingActivitiesAbstract_cbb9c2" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfCashFlowsAbstract_70e787" xlink:to="loc_us-gaapNetCashProvidedByUsedInOperatingActivitiesAbstract_cbb9c2" order="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ProfitLoss" xlink:label="loc_us-gaapProfitLoss_bf65d1" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivitiesAbstract_cbb9c2" xlink:to="loc_us-gaapProfitLoss_bf65d1" order="2" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivitiesAbstract" xlink:label="loc_us-gaapAdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivitiesAbstract_51aabc" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivitiesAbstract_cbb9c2" xlink:to="loc_us-gaapAdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivitiesAbstract_51aabc" order="3" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_IncreaseDecreaseInOperatingCapitalAbstract" xlink:label="loc_us-gaapIncreaseDecreaseInOperatingCapitalAbstract_d168f1" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapAdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperatingActivitiesAbstract_51aabc" xlink:to="loc_us-gaapIncreaseDecreaseInOperatingCapitalAbstract_d168f1" order="4" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_IncreaseDecreaseInAccountsPayable" xlink:label="loc_us-gaapIncreaseDecreaseInAccountsPayable_b6e584" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapIncreaseDecreaseInOperatingCapitalAbstract_d168f1" xlink:to="loc_us-gaapIncreaseDecreaseInAccountsPayable_b6e584" order="5" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInOperatingActivities_80bb59" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapIncreaseDecreaseInOperatingCapitalAbstract_d168f1" xlink:to="loc_us-gaapNetCashProvidedByUsedInOperatingActivities_80bb59" order="6" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetCashProvidedByUsedInInvestingActivitiesAbstract" xlink:label="loc_us-gaapNetCashProvidedByUsedInInvestingActivitiesAbstract_6eae5a" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfCashFlowsAbstract_70e787" xlink:to="loc_us-gaapNetCashProvidedByUsedInInvestingActivitiesAbstract_6eae5a" order="7" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivitiesAbstract" xlink:label="loc_us-gaapNetCashProvidedByUsedInFinancingActivitiesAbstract_45dd51" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfCashFlowsAbstract_70e787" xlink:to="loc_us-gaapNetCashProvidedByUsedInFinancingActivitiesAbstract_45dd51" order="8" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ProceedsFromOtherDebt" xlink:label="loc_us-gaapProceedsFromOtherDebt_aa4bb8" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivitiesAbstract_45dd51" xlink:to="loc_us-gaapProceedsFromOtherDebt_aa4bb8" order="9" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_ProceedsFromLoanPayableShareholders" xlink:label="loc_nftnProceedsFromLoanPayableShareholders_e48c9d" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivitiesAbstract_45dd51" xlink:to="loc_nftnProceedsFromLoanPayableShareholders_e48c9d" order="10" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ProceedsFromRelatedPartyDebt" xlink:label="loc_us-gaapProceedsFromRelatedPartyDebt_b96aec" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivitiesAbstract_45dd51" xlink:to="loc_us-gaapProceedsFromRelatedPartyDebt_b96aec" order="11" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInFinancingActivities_5d4fa0" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivitiesAbstract_45dd51" xlink:to="loc_us-gaapNetCashProvidedByUsedInFinancingActivities_5d4fa0" order="12" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" xlink:label="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect_a2672d" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfCashFlowsAbstract_70e787" xlink:to="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect_a2672d" order="13" preferredLabel="http://www.xbrl.org/2003/role/totalLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents" xlink:label="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents_30bab4" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfCashFlowsAbstract_70e787" xlink:to="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents_30bab4" order="14" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents" xlink:label="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents_24fb6d" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfCashFlowsAbstract_70e787" xlink:to="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents_24fb6d" order="15" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_SupplementalCashFlowElementsAbstract" xlink:label="loc_us-gaapSupplementalCashFlowElementsAbstract_1dd923" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfCashFlowsAbstract_70e787" xlink:to="loc_us-gaapSupplementalCashFlowElementsAbstract_1dd923" order="16" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_CashPaidDuringYearForAbstract" xlink:label="loc_nftnCashPaidDuringYearForAbstract_392eb7" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapSupplementalCashFlowElementsAbstract_1dd923" xlink:to="loc_nftnCashPaidDuringYearForAbstract_392eb7" order="17" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_InterestPaidNet" xlink:label="loc_us-gaapInterestPaidNet_987b6d" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_nftnCashPaidDuringYearForAbstract_392eb7" xlink:to="loc_us-gaapInterestPaidNet_987b6d" order="18" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_IncomeTaxesPaidNet" xlink:label="loc_us-gaapIncomeTaxesPaidNet_540543" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementOfCashFlowsAbstract_70e787" xlink:to="loc_us-gaapIncomeTaxesPaidNet_540543" order="19" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/InsiderTradingArragements" xlink:title="000007 - Disclosure - Insider Trading Arragements">
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_InsiderTradingArragementsAbstract" xlink:label="loc_nftnInsiderTradingArragementsAbstract_463c75" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd#ecd_InsiderTradingArrLineItems" xlink:label="loc_ecdInsiderTradingArrLineItems_a8c8c1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd#ecd_Rule10b51ArrAdoptedFlag" xlink:label="loc_ecdRule10b51ArrAdoptedFlag_aeb5aa" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_ecdInsiderTradingArrLineItems_a8c8c1" xlink:to="loc_ecdRule10b51ArrAdoptedFlag_aeb5aa" order="2" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd#ecd_Rule10b51ArrTrmntdFlag" xlink:label="loc_ecdRule10b51ArrTrmntdFlag_38ff04" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_ecdInsiderTradingArrLineItems_a8c8c1" xlink:to="loc_ecdRule10b51ArrTrmntdFlag_38ff04" order="3" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd#ecd_NonRule10b51ArrAdoptedFlag" xlink:label="loc_ecdNonRule10b51ArrAdoptedFlag_a55aac" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_ecdInsiderTradingArrLineItems_a8c8c1" xlink:to="loc_ecdNonRule10b51ArrAdoptedFlag_a55aac" order="4" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd#ecd_NonRule10b51ArrTrmntdFlag" xlink:label="loc_ecdNonRule10b51ArrTrmntdFlag_ae48c2" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_ecdInsiderTradingArrLineItems_a8c8c1" xlink:to="loc_ecdNonRule10b51ArrTrmntdFlag_ae48c2" order="5" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/OrganizationAndDescriptionOfBusiness" xlink:title="000008 - Disclosure - ORGANIZATION AND DESCRIPTION OF BUSINESS">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OrganizationConsolidationAndPresentationOfFinancialStatementsAbstract" xlink:label="loc_us-gaapOrganizationConsolidationAndPresentationOfFinancialStatementsAbstract_d3b7ae" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_BusinessDescriptionAndBasisOfPresentationTextBlock" xlink:label="loc_us-gaapBusinessDescriptionAndBasisOfPresentationTextBlock_d41a68" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapOrganizationConsolidationAndPresentationOfFinancialStatementsAbstract_d3b7ae" xlink:to="loc_us-gaapBusinessDescriptionAndBasisOfPresentationTextBlock_d41a68" order="1" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/GoingConcern" xlink:title="000009 - Disclosure - GOING CONCERN">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RisksAndUncertaintiesAbstract" xlink:label="loc_us-gaapRisksAndUncertaintiesAbstract_38b1c2" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_SubstantialDoubtAboutGoingConcernTextBlock" xlink:label="loc_us-gaapSubstantialDoubtAboutGoingConcernTextBlock_6893d4" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapRisksAndUncertaintiesAbstract_38b1c2" xlink:to="loc_us-gaapSubstantialDoubtAboutGoingConcernTextBlock_6893d4" order="1" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/SummaryOfSignificantAccountingPolicies" xlink:title="000010 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AccountingPoliciesAbstract" xlink:label="loc_us-gaapAccountingPoliciesAbstract_f00ffe" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_SignificantAccountingPoliciesTextBlock" xlink:label="loc_us-gaapSignificantAccountingPoliciesTextBlock_f5ba2a" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapAccountingPoliciesAbstract_f00ffe" xlink:to="loc_us-gaapSignificantAccountingPoliciesTextBlock_f5ba2a" order="1" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/RecentAccountingPronoucements" xlink:title="000011 - Disclosure - RECENT ACCOUNTING PRONOUCEMENTS">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RestructuringAndRelatedActivitiesAbstract" xlink:label="loc_us-gaapRestructuringAndRelatedActivitiesAbstract_8e4dec" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NewAccountingPronouncementsAndChangesInAccountingPrinciplesTextBlock" xlink:label="loc_us-gaapNewAccountingPronouncementsAndChangesInAccountingPrinciplesTextBlock_344229" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapRestructuringAndRelatedActivitiesAbstract_8e4dec" xlink:to="loc_us-gaapNewAccountingPronouncementsAndChangesInAccountingPrinciplesTextBlock_344229" order="1" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/RelatedPartyTransactions" xlink:title="000012 - Disclosure - RELATED PARTY TRANSACTIONS">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RelatedPartyTransactionsAbstract" xlink:label="loc_us-gaapRelatedPartyTransactionsAbstract_5cf43a" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RelatedPartyTransactionsDisclosureTextBlock" xlink:label="loc_us-gaapRelatedPartyTransactionsDisclosureTextBlock_70d882" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapRelatedPartyTransactionsAbstract_5cf43a" xlink:to="loc_us-gaapRelatedPartyTransactionsDisclosureTextBlock_70d882" order="1" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/StockholdersDeficit" xlink:title="000013 - Disclosure - STOCKHOLDERS DEFICIT">
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_StockholdersDeficitAbstract" xlink:label="loc_nftnStockholdersDeficitAbstract_57d01a" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StockholdersEquityNoteDisclosureTextBlock" xlink:label="loc_us-gaapStockholdersEquityNoteDisclosureTextBlock_4b2f83" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_nftnStockholdersDeficitAbstract_57d01a" xlink:to="loc_us-gaapStockholdersEquityNoteDisclosureTextBlock_4b2f83" order="1" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/SubsequentEvents" xlink:title="000014 - Disclosure - SUBSEQUENT EVENTS">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_SubsequentEventsAbstract" xlink:label="loc_us-gaapSubsequentEventsAbstract_555758" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_SubsequentEventsTextBlock" xlink:label="loc_us-gaapSubsequentEventsTextBlock_1d9bbd" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapSubsequentEventsAbstract_555758" xlink:to="loc_us-gaapSubsequentEventsTextBlock_1d9bbd" order="1" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:title="000015 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AccountingPoliciesAbstract" xlink:label="loc_us-gaapAccountingPoliciesAbstract_ce4eba" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_BasisOfAccountingPolicyPolicyTextBlock" xlink:label="loc_us-gaapBasisOfAccountingPolicyPolicyTextBlock_57daf0" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapAccountingPoliciesAbstract_ce4eba" xlink:to="loc_us-gaapBasisOfAccountingPolicyPolicyTextBlock_57daf0" order="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_EarningsPerSharePolicyTextBlock" xlink:label="loc_us-gaapEarningsPerSharePolicyTextBlock_3f679d" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapAccountingPoliciesAbstract_ce4eba" xlink:to="loc_us-gaapEarningsPerSharePolicyTextBlock_3f679d" order="2" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CashAndCashEquivalentsPolicyTextBlock" xlink:label="loc_us-gaapCashAndCashEquivalentsPolicyTextBlock_96873d" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapAccountingPoliciesAbstract_ce4eba" xlink:to="loc_us-gaapCashAndCashEquivalentsPolicyTextBlock_96873d" order="3" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_UseOfEstimates" xlink:label="loc_us-gaapUseOfEstimates_9be62e" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapAccountingPoliciesAbstract_ce4eba" xlink:to="loc_us-gaapUseOfEstimates_9be62e" order="4" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_FairValueOfFinancialInstrumentsPolicy" xlink:label="loc_us-gaapFairValueOfFinancialInstrumentsPolicy_cc9b11" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapAccountingPoliciesAbstract_ce4eba" xlink:to="loc_us-gaapFairValueOfFinancialInstrumentsPolicy_cc9b11" order="5" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_IncomeTaxPolicyTextBlock" xlink:label="loc_us-gaapIncomeTaxPolicyTextBlock_d5cc85" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapAccountingPoliciesAbstract_ce4eba" xlink:to="loc_us-gaapIncomeTaxPolicyTextBlock_d5cc85" order="6" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RevenueRecognitionPolicyTextBlock" xlink:label="loc_us-gaapRevenueRecognitionPolicyTextBlock_b4c369" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapAccountingPoliciesAbstract_ce4eba" xlink:to="loc_us-gaapRevenueRecognitionPolicyTextBlock_b4c369" order="7" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AdvertisingCostsPolicyTextBlock" xlink:label="loc_us-gaapAdvertisingCostsPolicyTextBlock_e1b09a" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapAccountingPoliciesAbstract_ce4eba" xlink:to="loc_us-gaapAdvertisingCostsPolicyTextBlock_e1b09a" order="8" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ShareBasedCompensationOptionAndIncentivePlansPolicy" xlink:label="loc_us-gaapShareBasedCompensationOptionAndIncentivePlansPolicy_7c1341" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapAccountingPoliciesAbstract_ce4eba" xlink:to="loc_us-gaapShareBasedCompensationOptionAndIncentivePlansPolicy_7c1341" order="9" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/GoingConcernDetailsNarrative" xlink:title="000016 - Disclosure - GOING CONCERN (Details Narrative)">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RisksAndUncertaintiesAbstract" xlink:label="loc_us-gaapRisksAndUncertaintiesAbstract_f746a8" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_WorkingCapitalDeficits" xlink:label="loc_nftnWorkingCapitalDeficits_93ab18" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapRisksAndUncertaintiesAbstract_f746a8" xlink:to="loc_nftnWorkingCapitalDeficits_93ab18" order="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CashEquivalentsAtCarryingValue" xlink:label="loc_us-gaapCashEquivalentsAtCarryingValue_861de9" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapRisksAndUncertaintiesAbstract_f746a8" xlink:to="loc_us-gaapCashEquivalentsAtCarryingValue_861de9" order="2" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RetainedEarningsAccumulatedDeficit" xlink:label="loc_us-gaapRetainedEarningsAccumulatedDeficit_36bd0d" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapRisksAndUncertaintiesAbstract_f746a8" xlink:to="loc_us-gaapRetainedEarningsAccumulatedDeficit_36bd0d" order="3" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/RelatedPartyTransactionsDetailsNarrative" xlink:title="000017 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RelatedPartyTransactionsAbstract" xlink:label="loc_us-gaapRelatedPartyTransactionsAbstract_52e174" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementTable" xlink:label="loc_us-gaapStatementTable_06c19a" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapRelatedPartyTransactionsAbstract_52e174" xlink:to="loc_us-gaapStatementTable_06c19a" order="100" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementLineItems" xlink:label="loc_us-gaapStatementLineItems_9a133f" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementTable_06c19a" xlink:to="loc_us-gaapStatementLineItems_9a133f" order="2000" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd#srt_TitleOfIndividualAxis" xlink:label="loc_srtTitleOfIndividualAxis_eb801b" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementTable_06c19a" xlink:to="loc_srtTitleOfIndividualAxis_eb801b" order="20" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd#srt_TitleOfIndividualWithRelationshipToEntityDomain" xlink:label="loc_srtTitleOfIndividualWithRelationshipToEntityDomain_aea662" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_srtTitleOfIndividualAxis_eb801b" xlink:to="loc_srtTitleOfIndividualWithRelationshipToEntityDomain_aea662" order="20" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_ShareholdersMember" xlink:label="loc_nftnShareholdersMember_6d655b" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_srtTitleOfIndividualWithRelationshipToEntityDomain_aea662" xlink:to="loc_nftnShareholdersMember_6d655b" order="21" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_ProceedsFromLoanPayableShareholders" xlink:label="loc_nftnProceedsFromLoanPayableShareholders_d5591e" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementLineItems_9a133f" xlink:to="loc_nftnProceedsFromLoanPayableShareholders_d5591e" order="1" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_RelatedPartyTransactionsLoansPayableCurrent" xlink:label="loc_nftnRelatedPartyTransactionsLoansPayableCurrent_cdc437" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementLineItems_9a133f" xlink:to="loc_nftnRelatedPartyTransactionsLoansPayableCurrent_cdc437" order="2" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_LoansPayableToShareholdersCurrent" xlink:label="loc_nftnLoansPayableToShareholdersCurrent_2416f6" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapStatementLineItems_9a133f" xlink:to="loc_nftnLoansPayableToShareholdersCurrent_2416f6" order="3" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+  </link:presentationLink>
+  <link:presentationLink xlink:type="extended" xlink:role="http://nftn.com/role/StockholdersEquityDetailsNarrative" xlink:title="000018 - Disclosure - STOCKHOLDERS EQUITY (Details Narrative)">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_EquityAbstract" xlink:label="loc_us-gaapEquityAbstract_cbebb8" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockParOrStatedValuePerShare" xlink:label="loc_us-gaapCommonStockParOrStatedValuePerShare_a40922" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapEquityAbstract_cbebb8" xlink:to="loc_us-gaapCommonStockParOrStatedValuePerShare_a40922" order="1" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockSharesAuthorized" xlink:label="loc_us-gaapCommonStockSharesAuthorized_00c8ed" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapEquityAbstract_cbebb8" xlink:to="loc_us-gaapCommonStockSharesAuthorized_00c8ed" order="2" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockSharesIssued" xlink:label="loc_us-gaapCommonStockSharesIssued_b3a597" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapEquityAbstract_cbebb8" xlink:to="loc_us-gaapCommonStockSharesIssued_b3a597" order="3" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockSharesOutstanding" xlink:label="loc_us-gaapCommonStockSharesOutstanding_799ec0" />
+    <link:presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="loc_us-gaapEquityAbstract_cbebb8" xlink:to="loc_us-gaapCommonStockSharesOutstanding_799ec0" order="4" preferredLabel="http://www.xbrl.org/2003/role/verboseLabel" />
+  </link:presentationLink>
+</link:linkbase>

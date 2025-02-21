@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:7ff1ffd4-6573-47e6-8ced-6aca65c5a05f,g:85434b49-215c-4217-ae39-72533baf8e59-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:iqv="http://www.iqvia.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.iqvia.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/currency/2024" schemaLocation="https://xbrl.sec.gov/currency/2024/currency-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="iqv-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="iqv-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="iqv-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="iqv-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.iqvia.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.iqvia.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFINCOME" roleURI="http://www.iqvia.com/role/CONSOLIDATEDSTATEMENTSOFINCOME">
+        <link:definition>9952151 - Statement - CONSOLIDATED STATEMENTS OF INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS" roleURI="http://www.iqvia.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS">
+        <link:definition>9952152 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSSParenthetical" roleURI="http://www.iqvia.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSSParenthetical">
+        <link:definition>9952153 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS) (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://www.iqvia.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>9952154 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://www.iqvia.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>9952155 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.iqvia.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>9952156 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITY" roleURI="http://www.iqvia.com/role/CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITY">
+        <link:definition>9952157 - Statement - CONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.iqvia.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>9952158 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesbyGeographyConcentrationofCreditRiskandRemainingPerformanceObligations" roleURI="http://www.iqvia.com/role/RevenuesbyGeographyConcentrationofCreditRiskandRemainingPerformanceObligations">
+        <link:definition>9952159 - Disclosure - Revenues by Geography, Concentration of Credit Risk and Remaining Performance Obligations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TradeAccountsReceivableUnbilledServicesandUnearnedIncome" roleURI="http://www.iqvia.com/role/TradeAccountsReceivableUnbilledServicesandUnearnedIncome">
+        <link:definition>9952160 - Disclosure - Trade Accounts Receivable, Unbilled Services and Unearned Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Investments" roleURI="http://www.iqvia.com/role/Investments">
+        <link:definition>9952161 - Disclosure - Investments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Derivatives" roleURI="http://www.iqvia.com/role/Derivatives">
+        <link:definition>9952162 - Disclosure - Derivatives</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.iqvia.com/role/FairValueMeasurements">
+        <link:definition>9952163 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipment" roleURI="http://www.iqvia.com/role/PropertyandEquipment">
+        <link:definition>9952164 - Disclosure - Property and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIdentifiableIntangibleAssets" roleURI="http://www.iqvia.com/role/GoodwillandIdentifiableIntangibleAssets">
+        <link:definition>9952165 - Disclosure - Goodwill and Identifiable Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpenses" roleURI="http://www.iqvia.com/role/AccruedExpenses">
+        <link:definition>9952166 - Disclosure - Accrued Expenses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditArrangements" roleURI="http://www.iqvia.com/role/CreditArrangements">
+        <link:definition>9952167 - Disclosure - Credit Arrangements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.iqvia.com/role/Leases">
+        <link:definition>9952168 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Contingencies" roleURI="http://www.iqvia.com/role/Contingencies">
+        <link:definition>9952169 - Disclosure - Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquity" roleURI="http://www.iqvia.com/role/StockholdersEquity">
+        <link:definition>9952170 - Disclosure - Stockholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinations" roleURI="http://www.iqvia.com/role/BusinessCombinations">
+        <link:definition>9952171 - Disclosure - Business Combinations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Restructuring" roleURI="http://www.iqvia.com/role/Restructuring">
+        <link:definition>9952172 - Disclosure - Restructuring</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.iqvia.com/role/IncomeTaxes">
+        <link:definition>9952173 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlans" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlans">
+        <link:definition>9952174 - Disclosure - Employee Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactions" roleURI="http://www.iqvia.com/role/RelatedPartyTransactions">
+        <link:definition>9952175 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyEquipmentandSoftwarebyGeography" roleURI="http://www.iqvia.com/role/PropertyEquipmentandSoftwarebyGeography">
+        <link:definition>9952176 - Disclosure - Property, Equipment and Software by Geography</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Segments" roleURI="http://www.iqvia.com/role/Segments">
+        <link:definition>9952177 - Disclosure - Segments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShare" roleURI="http://www.iqvia.com/role/EarningsPerShare">
+        <link:definition>9952178 - Disclosure - Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveLossIncome" roleURI="http://www.iqvia.com/role/AccumulatedOtherComprehensiveLossIncome">
+        <link:definition>9952179 - Disclosure - Accumulated Other Comprehensive (Loss) Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalCashFlowInformation" roleURI="http://www.iqvia.com/role/SupplementalCashFlowInformation">
+        <link:definition>9952180 - Disclosure - Supplemental Cash Flow Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleICondensedFinancialInformationofRegistrant" roleURI="http://www.iqvia.com/role/ScheduleICondensedFinancialInformationofRegistrant">
+        <link:definition>9952181 - Disclosure - Schedule I - Condensed Financial Information of Registrant</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccounts" roleURI="http://www.iqvia.com/role/ScheduleIIValuationandQualifyingAccounts">
+        <link:definition>9952182 - Disclosure - Schedule II - Valuation and Qualifying Accounts</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.iqvia.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesTables" roleURI="http://www.iqvia.com/role/SummaryofSignificantAccountingPoliciesTables">
+        <link:definition>9955512 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesbyGeographyConcentrationofCreditRiskandRemainingPerformanceObligationsTables" roleURI="http://www.iqvia.com/role/RevenuesbyGeographyConcentrationofCreditRiskandRemainingPerformanceObligationsTables">
+        <link:definition>9955513 - Disclosure - Revenues by Geography, Concentration of Credit Risk and Remaining Performance Obligations (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TradeAccountsReceivableUnbilledServicesandUnearnedIncomeTables" roleURI="http://www.iqvia.com/role/TradeAccountsReceivableUnbilledServicesandUnearnedIncomeTables">
+        <link:definition>9955514 - Disclosure - Trade Accounts Receivable, Unbilled Services and Unearned Income (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsTables" roleURI="http://www.iqvia.com/role/InvestmentsTables">
+        <link:definition>9955515 - Disclosure - Investments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesTables" roleURI="http://www.iqvia.com/role/DerivativesTables">
+        <link:definition>9955516 - Disclosure - Derivatives (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.iqvia.com/role/FairValueMeasurementsTables">
+        <link:definition>9955517 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentTables" roleURI="http://www.iqvia.com/role/PropertyandEquipmentTables">
+        <link:definition>9955518 - Disclosure - Property and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIdentifiableIntangibleAssetsTables" roleURI="http://www.iqvia.com/role/GoodwillandIdentifiableIntangibleAssetsTables">
+        <link:definition>9955519 - Disclosure - Goodwill and Identifiable Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpensesTables" roleURI="http://www.iqvia.com/role/AccruedExpensesTables">
+        <link:definition>9955520 - Disclosure - Accrued Expenses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditArrangementsTables" roleURI="http://www.iqvia.com/role/CreditArrangementsTables">
+        <link:definition>9955521 - Disclosure - Credit Arrangements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.iqvia.com/role/LeasesTables">
+        <link:definition>9955522 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityTables" roleURI="http://www.iqvia.com/role/StockholdersEquityTables">
+        <link:definition>9955523 - Disclosure - Stockholders' Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsTables" roleURI="http://www.iqvia.com/role/BusinessCombinationsTables">
+        <link:definition>9955524 - Disclosure - Business Combinations (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringTables" roleURI="http://www.iqvia.com/role/RestructuringTables">
+        <link:definition>9955525 - Disclosure - Restructuring (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.iqvia.com/role/IncomeTaxesTables">
+        <link:definition>9955526 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansTables" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansTables">
+        <link:definition>9955527 - Disclosure - Employee Benefit Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyEquipmentandSoftwarebyGeographyTables" roleURI="http://www.iqvia.com/role/PropertyEquipmentandSoftwarebyGeographyTables">
+        <link:definition>9955528 - Disclosure - Property, Equipment and Software by Geography (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsTables" roleURI="http://www.iqvia.com/role/SegmentsTables">
+        <link:definition>9955529 - Disclosure - Segments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://www.iqvia.com/role/EarningsPerShareTables">
+        <link:definition>9955530 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveLossIncomeTables" roleURI="http://www.iqvia.com/role/AccumulatedOtherComprehensiveLossIncomeTables">
+        <link:definition>9955531 - Disclosure - Accumulated Other Comprehensive (Loss) Income (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalCashFlowInformationTables" roleURI="http://www.iqvia.com/role/SupplementalCashFlowInformationTables">
+        <link:definition>9955532 - Disclosure - Supplemental Cash Flow Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/SummaryofSignificantAccountingPoliciesAdditionalInformationDetail">
+        <link:definition>9955533 - Disclosure - Summary of Significant Accounting Policies - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPropertyandEquipmentatCostUsingStraightLineMethodDetail" roleURI="http://www.iqvia.com/role/SummaryofSignificantAccountingPoliciesPropertyandEquipmentatCostUsingStraightLineMethodDetail">
+        <link:definition>9955534 - Disclosure - Summary of Significant Accounting Policies - Property and Equipment at Cost Using Straight-Line Method (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesDefinitelivedidentifiableintangibleassetsamortizedDetail" roleURI="http://www.iqvia.com/role/SummaryofSignificantAccountingPoliciesDefinitelivedidentifiableintangibleassetsamortizedDetail">
+        <link:definition>9955535 - Disclosure - Summary of Significant Accounting Policies - Definite-lived identifiable intangible assets amortized (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesbyGeographyConcentrationofCreditRiskandRemainingPerformanceObligationsSummaryofRevenuesbyGeographicalRegionandReportableSegmentDetail" roleURI="http://www.iqvia.com/role/RevenuesbyGeographyConcentrationofCreditRiskandRemainingPerformanceObligationsSummaryofRevenuesbyGeographicalRegionandReportableSegmentDetail">
+        <link:definition>9955536 - Disclosure - Revenues by Geography, Concentration of Credit Risk and Remaining Performance Obligations - Summary of Revenues by Geographical Region and Reportable Segment (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesbyGeographyConcentrationofCreditRiskandRemainingPerformanceObligationsCreditRiskDetail" roleURI="http://www.iqvia.com/role/RevenuesbyGeographyConcentrationofCreditRiskandRemainingPerformanceObligationsCreditRiskDetail">
+        <link:definition>9955537 - Disclosure - Revenues by Geography, Concentration of Credit Risk and Remaining Performance Obligations - Credit Risk (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesbyGeographyConcentrationofCreditRiskandRemainingPerformanceObligationsFutureObligationsDetail" roleURI="http://www.iqvia.com/role/RevenuesbyGeographyConcentrationofCreditRiskandRemainingPerformanceObligationsFutureObligationsDetail">
+        <link:definition>9955538 - Disclosure - Revenues by Geography, Concentration of Credit Risk and Remaining Performance Obligations - Future Obligations (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesbyGeographyConcentrationofCreditRiskandRemainingPerformanceObligationsFutureObligationsDetail_1" roleURI="http://www.iqvia.com/role/RevenuesbyGeographyConcentrationofCreditRiskandRemainingPerformanceObligationsFutureObligationsDetail_1">
+        <link:definition>9955538 - Disclosure - Revenues by Geography, Concentration of Credit Risk and Remaining Performance Obligations - Future Obligations (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TradeAccountsReceivableUnbilledServicesandUnearnedIncomeTradeAccountsReceivableandUnbilledServicesDetail" roleURI="http://www.iqvia.com/role/TradeAccountsReceivableUnbilledServicesandUnearnedIncomeTradeAccountsReceivableandUnbilledServicesDetail">
+        <link:definition>9955539 - Disclosure - Trade Accounts Receivable, Unbilled Services and Unearned Income - Trade Accounts Receivable and Unbilled Services (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TradeAccountsReceivableUnbilledServicesandUnearnedIncomeScheduleofNetContractAssetsLiabilitiesDetail" roleURI="http://www.iqvia.com/role/TradeAccountsReceivableUnbilledServicesandUnearnedIncomeScheduleofNetContractAssetsLiabilitiesDetail">
+        <link:definition>9955540 - Disclosure - Trade Accounts Receivable, Unbilled Services and Unearned Income - Schedule of Net Contract Assets (Liabilities) (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TradeAccountsReceivableUnbilledServicesandUnearnedIncomeAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/TradeAccountsReceivableUnbilledServicesandUnearnedIncomeAdditionalInformationDetail">
+        <link:definition>9955541 - Disclosure - Trade Accounts Receivable, Unbilled Services and Unearned Income - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsInvestmentsinandAdvancestoUnconsolidatedAffiliatesDetail" roleURI="http://www.iqvia.com/role/InvestmentsInvestmentsinandAdvancestoUnconsolidatedAffiliatesDetail">
+        <link:definition>9955542 - Disclosure - Investments - Investments in and Advances to Unconsolidated Affiliates (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsSummaryofInvestmentsinUnconsolidatedVariableInterestEntitiesandEstimatedMaximumExposuretoLossDetail" roleURI="http://www.iqvia.com/role/InvestmentsSummaryofInvestmentsinUnconsolidatedVariableInterestEntitiesandEstimatedMaximumExposuretoLossDetail">
+        <link:definition>9955543 - Disclosure - Investments - Summary of Investments in Unconsolidated Variable Interest Entities and Estimated Maximum Exposure to Loss (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/DerivativesAdditionalInformationDetail">
+        <link:definition>9955544 - Disclosure - Derivatives - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesSummaryofFairValuesofDerivativeInstrumentsDesignatedasHedgesDetail" roleURI="http://www.iqvia.com/role/DerivativesSummaryofFairValuesofDerivativeInstrumentsDesignatedasHedgesDetail">
+        <link:definition>9955545 - Disclosure - Derivatives - Summary of Fair Values of Derivative Instruments Designated as Hedges (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesPretaxEffectofCashFlowHedgingInstrumentsonOtherComprehensiveLossIncomeDetail" roleURI="http://www.iqvia.com/role/DerivativesPretaxEffectofCashFlowHedgingInstrumentsonOtherComprehensiveLossIncomeDetail">
+        <link:definition>9955546 - Disclosure - Derivatives - Pre-tax Effect of Cash Flow Hedging Instruments on Other Comprehensive (Loss) Income (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/FairValueMeasurementsAdditionalInformationDetail">
+        <link:definition>9955547 - Disclosure - Fair Value Measurements - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsFairValueofFinancialAssetsandLiabilitiesMeasuredonRecurringBasisDetail" roleURI="http://www.iqvia.com/role/FairValueMeasurementsFairValueofFinancialAssetsandLiabilitiesMeasuredonRecurringBasisDetail">
+        <link:definition>9955548 - Disclosure - Fair Value Measurements - Fair Value of Financial Assets and Liabilities Measured on Recurring Basis (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsChangesinLevel3FinancialAssetsandLiabilitiesMeasuredonRecurringBasisDetail" roleURI="http://www.iqvia.com/role/FairValueMeasurementsChangesinLevel3FinancialAssetsandLiabilitiesMeasuredonRecurringBasisDetail">
+        <link:definition>9955549 - Disclosure - Fair Value Measurements - Changes in Level 3 Financial Assets and Liabilities Measured on Recurring Basis (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentSummaryofMajorClassesofPropertyandEquipmentDetail" roleURI="http://www.iqvia.com/role/PropertyandEquipmentSummaryofMajorClassesofPropertyandEquipmentDetail">
+        <link:definition>9955550 - Disclosure - Property and Equipment - Summary of Major Classes of Property and Equipment (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentScheduleofPropertyandEquipmentDepreciationExpenseDetail" roleURI="http://www.iqvia.com/role/PropertyandEquipmentScheduleofPropertyandEquipmentDepreciationExpenseDetail">
+        <link:definition>9955551 - Disclosure - Property and Equipment -Schedule of Property and Equipment Depreciation Expense (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIdentifiableIntangibleAssetsAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/GoodwillandIdentifiableIntangibleAssetsAdditionalInformationDetail">
+        <link:definition>9955552 - Disclosure - Goodwill and Identifiable Intangible Assets - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIdentifiableIntangibleAssetsSummaryofAmortizationExpenseAssociatedwithIdentifiableDefiniteLivedIntangibleAssetsDetail" roleURI="http://www.iqvia.com/role/GoodwillandIdentifiableIntangibleAssetsSummaryofAmortizationExpenseAssociatedwithIdentifiableDefiniteLivedIntangibleAssetsDetail">
+        <link:definition>9955553 - Disclosure - Goodwill and Identifiable Intangible Assets - Summary of Amortization Expense Associated with Identifiable Definite-Lived Intangible Assets (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIdentifiableIntangibleAssetsSummaryofIdentifiableIntangibleAssetsDetail" roleURI="http://www.iqvia.com/role/GoodwillandIdentifiableIntangibleAssetsSummaryofIdentifiableIntangibleAssetsDetail">
+        <link:definition>9955554 - Disclosure - Goodwill and Identifiable Intangible Assets - Summary of Identifiable Intangible Assets (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIdentifiableIntangibleAssetsSummaryofGoodwillbySegmentDetail" roleURI="http://www.iqvia.com/role/GoodwillandIdentifiableIntangibleAssetsSummaryofGoodwillbySegmentDetail">
+        <link:definition>9955555 - Disclosure - Goodwill and Identifiable Intangible Assets - Summary of Goodwill by Segment (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpensesAccruedExpensesDetail" roleURI="http://www.iqvia.com/role/AccruedExpensesAccruedExpensesDetail">
+        <link:definition>9955556 - Disclosure - Accrued Expenses - Accrued Expenses (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditArrangementsSummaryofCreditFacilitiesDetail" roleURI="http://www.iqvia.com/role/CreditArrangementsSummaryofCreditFacilitiesDetail">
+        <link:definition>9955557 - Disclosure - Credit Arrangements - Summary of Credit Facilities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditArrangementsSummaryofDebtDetail" roleURI="http://www.iqvia.com/role/CreditArrangementsSummaryofDebtDetail">
+        <link:definition>9955558 - Disclosure - Credit Arrangements - Summary of Debt (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditArrangementsContractualMaturitiesofLongtermDebtDetail" roleURI="http://www.iqvia.com/role/CreditArrangementsContractualMaturitiesofLongtermDebtDetail">
+        <link:definition>9955559 - Disclosure - Credit Arrangements - Contractual Maturities of Long-term Debt (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditArrangementsSeniorCreditFacilitiesDetails" roleURI="http://www.iqvia.com/role/CreditArrangementsSeniorCreditFacilitiesDetails">
+        <link:definition>9955560 - Disclosure - Credit Arrangements - Senior Credit Facilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditArrangementsSeniorNotesDetails" roleURI="http://www.iqvia.com/role/CreditArrangementsSeniorNotesDetails">
+        <link:definition>9955561 - Disclosure - Credit Arrangements - Senior Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditArrangementsReceivablesFinancingFacilityDetails" roleURI="http://www.iqvia.com/role/CreditArrangementsReceivablesFinancingFacilityDetails">
+        <link:definition>9955562 - Disclosure - Credit Arrangements - Receivables Financing Facility (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesComponentsofLeaseExpenseDetail" roleURI="http://www.iqvia.com/role/LeasesComponentsofLeaseExpenseDetail">
+        <link:definition>9955563 - Disclosure - Leases - Components of Lease Expense (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesOtherInformationRelatedtoLeasesDetail" roleURI="http://www.iqvia.com/role/LeasesOtherInformationRelatedtoLeasesDetail">
+        <link:definition>9955564 - Disclosure - Leases - Other Information Related to Leases (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesFutureMinimumLeasePaymentsUnderNoncancellableLeasesDetail" roleURI="http://www.iqvia.com/role/LeasesFutureMinimumLeasePaymentsUnderNoncancellableLeasesDetail">
+        <link:definition>9955565 - Disclosure - Leases - Future Minimum Lease Payments Under Non-cancellable Leases (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesFutureMinimumLeasePaymentsUnderNoncancellableLeasesDetail_1" roleURI="http://www.iqvia.com/role/LeasesFutureMinimumLeasePaymentsUnderNoncancellableLeasesDetail_1">
+        <link:definition>9955565 - Disclosure - Leases - Future Minimum Lease Payments Under Non-cancellable Leases (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ContingenciesAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/ContingenciesAdditionalInformationDetail">
+        <link:definition>9955566 - Disclosure - Contingencies - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/StockholdersEquityAdditionalInformationDetail">
+        <link:definition>9955567 - Disclosure - Stockholders' Equity - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityScheduleofShareRepurchasesMadeBothUnderandOutsideofRepurchaseProgramDetail" roleURI="http://www.iqvia.com/role/StockholdersEquityScheduleofShareRepurchasesMadeBothUnderandOutsideofRepurchaseProgramDetail">
+        <link:definition>9955568 - Disclosure - Stockholders' Equity - Schedule of Share Repurchases Made Both Under and Outside of Repurchase Program (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsScheduleofRecognizedIdentifiedAssetsAcquiredandLiabilitiesAssumedDetails" roleURI="http://www.iqvia.com/role/BusinessCombinationsScheduleofRecognizedIdentifiedAssetsAcquiredandLiabilitiesAssumedDetails">
+        <link:definition>9955569 - Disclosure - Business Combinations - Schedule of Recognized Identified Assets Acquired and Liabilities Assumed (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsNarrativeDetails" roleURI="http://www.iqvia.com/role/BusinessCombinationsNarrativeDetails">
+        <link:definition>9955570 - Disclosure - Business Combinations - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsIndefiniteLivedIntangibleAssetsAcquiredasPartofBusinessCombinationDetails" roleURI="http://www.iqvia.com/role/BusinessCombinationsIndefiniteLivedIntangibleAssetsAcquiredasPartofBusinessCombinationDetails">
+        <link:definition>9955571 - Disclosure - Business Combinations - Indefinite-Lived Intangible Assets Acquired as Part of Business Combination (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/RestructuringAdditionalInformationDetail">
+        <link:definition>9955572 - Disclosure - Restructuring - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringSummaryofAmountsRecordedforRestructuringPlansDetail" roleURI="http://www.iqvia.com/role/RestructuringSummaryofAmountsRecordedforRestructuringPlansDetail">
+        <link:definition>9955573 - Disclosure - Restructuring - Summary of Amounts Recorded for Restructuring Plans (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesComponentsofIncomeBeforeIncomeTaxesandEquityinEarningsLossesofUnconsolidatedAffiliatesDetail" roleURI="http://www.iqvia.com/role/IncomeTaxesComponentsofIncomeBeforeIncomeTaxesandEquityinEarningsLossesofUnconsolidatedAffiliatesDetail">
+        <link:definition>9955574 - Disclosure - Income Taxes - Components of Income Before Income Taxes and Equity in Earnings (Losses) of Unconsolidated Affiliates (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesComponentsofIncomeTaxExpenseAttributabletoContinuingOperationsDetail" roleURI="http://www.iqvia.com/role/IncomeTaxesComponentsofIncomeTaxExpenseAttributabletoContinuingOperationsDetail">
+        <link:definition>9955575 - Disclosure - Income Taxes - Components of Income Tax Expense Attributable to Continuing Operations (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/IncomeTaxesAdditionalInformationDetail">
+        <link:definition>9955576 - Disclosure - Income Taxes - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesEffectiveIncomeTaxRateReconciliationDetail" roleURI="http://www.iqvia.com/role/IncomeTaxesEffectiveIncomeTaxRateReconciliationDetail">
+        <link:definition>9955577 - Disclosure - Income Taxes - Effective Income Tax Rate Reconciliation (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxEffectsofTemporaryDifferencesfromContinuingOperationsthatGiveRisetoSignificantPortionsofDeferredIncomeTaxAssetsLiabilitiesDetail" roleURI="http://www.iqvia.com/role/IncomeTaxesIncomeTaxEffectsofTemporaryDifferencesfromContinuingOperationsthatGiveRisetoSignificantPortionsofDeferredIncomeTaxAssetsLiabilitiesDetail">
+        <link:definition>9955578 - Disclosure - Income Taxes - Income Tax Effects of Temporary Differences from Continuing Operations that Give Rise to Significant Portions of Deferred Income Tax Assets (Liabilities) (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationofBeginningandEndingAmountofGrossUnrecognizedIncomeTaxBenefitsDetail" roleURI="http://www.iqvia.com/role/IncomeTaxesReconciliationofBeginningandEndingAmountofGrossUnrecognizedIncomeTaxBenefitsDetail">
+        <link:definition>9955579 - Disclosure - Income Taxes - Reconciliation of Beginning and Ending Amount of Gross Unrecognized Income Tax Benefits (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryofTaxYearsOpenforExaminationDetail" roleURI="http://www.iqvia.com/role/IncomeTaxesSummaryofTaxYearsOpenforExaminationDetail">
+        <link:definition>9955580 - Disclosure - Income Taxes - Summary of Tax Years Open for Examination (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansSummaryofChangesinBenefitObligationPlanAssetsandFundedStatusofPensionBenefitPlansDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansSummaryofChangesinBenefitObligationPlanAssetsandFundedStatusofPensionBenefitPlansDetail">
+        <link:definition>9955581 - Disclosure - Employee Benefit Plans - Summary of Changes in Benefit Obligation, Plan Assets and Funded Status of Pension Benefit Plans (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansSummaryofAmountsRecognizedinConsolidatedBalanceSheetsRelatedtothePensionBenefitPlansDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansSummaryofAmountsRecognizedinConsolidatedBalanceSheetsRelatedtothePensionBenefitPlansDetail">
+        <link:definition>9955582 - Disclosure - Employee Benefit Plans - Summary of Amounts Recognized in Consolidated Balance Sheets Related to the Pension Benefit Plans (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansAccumulatedBenefitObligationForPensionBenefitPlansDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansAccumulatedBenefitObligationForPensionBenefitPlansDetail">
+        <link:definition>9955583 - Disclosure - Employee Benefit Plans - Accumulated Benefit Obligation For Pension Benefit Plans (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansSummaryofPensionPlanswithAccumulatedBenefitObligationinExcessofPlanAssetsandProjectedBenefitObligationsinExcessofPlanAssetsDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansSummaryofPensionPlanswithAccumulatedBenefitObligationinExcessofPlanAssetsandProjectedBenefitObligationsinExcessofPlanAssetsDetail">
+        <link:definition>9955584 - Disclosure - Employee Benefit Plans - Summary of Pension Plans with Accumulated Benefit Obligation in Excess of Plan Assets and Projected Benefit Obligations in Excess of Plan Assets (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansComponentsofNetPeriodicBenefitCostandOtherChangesinPlanAssetsandBenefitObligationsRecognizedinOtherComprehensiveIncomeLossDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansComponentsofNetPeriodicBenefitCostandOtherChangesinPlanAssetsandBenefitObligationsRecognizedinOtherComprehensiveIncomeLossDetail">
+        <link:definition>9955585 - Disclosure - Employee Benefit Plans - Components of Net Periodic Benefit Cost and Other Changes in Plan Assets and Benefit Obligations Recognized in Other Comprehensive Income (Loss) (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansScheduleofWeightedAverageAssumptionsUsedtoDetermineNetPeriodicBenefitCostandBenefitObligationsDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansScheduleofWeightedAverageAssumptionsUsedtoDetermineNetPeriodicBenefitCostandBenefitObligationsDetail">
+        <link:definition>9955586 - Disclosure - Employee Benefit Plans - Schedule of Weighted Average Assumptions Used to Determine Net Periodic Benefit Cost and Benefit Obligations (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansDefinedContributionPlansAndDefinedBenefitPlansAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansDefinedContributionPlansAndDefinedBenefitPlansAdditionalInformationDetail">
+        <link:definition>9955587 - Disclosure - Employee Benefit Plans - Defined Contribution Plans And Defined Benefit Plans - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansScheduleofPensionPlanWeightedAverageAssetAllocationsDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansScheduleofPensionPlanWeightedAverageAssetAllocationsDetail">
+        <link:definition>9955588 - Disclosure - Employee Benefit Plans - Schedule of Pension Plan Weighted Average Asset Allocations (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansScheduleofPlanAssetsMeasuredatFairValueDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansScheduleofPlanAssetsMeasuredatFairValueDetail">
+        <link:definition>9955589 - Disclosure - Employee Benefit Plans - Schedule of Plan Assets Measured at Fair Value (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansScheduleofExpectedBenefitPaymentsNetofExpectedParticipantsContributionsforPensionBenefitsDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansScheduleofExpectedBenefitPaymentsNetofExpectedParticipantsContributionsforPensionBenefitsDetail">
+        <link:definition>9955590 - Disclosure - Employee Benefit Plans - Schedule of Expected Benefit Payments, Net of Expected Participants Contributions for Pension Benefits (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansStockIncentivePlansAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansStockIncentivePlansAdditionalInformationDetail">
+        <link:definition>9955591 - Disclosure - Employee Benefit Plans - Stock Incentive Plans - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansAssumptionsUsedtoEstimateValueofStockBasedCompensationforStockOptionsandStockAppreciationRightsIssuedDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansAssumptionsUsedtoEstimateValueofStockBasedCompensationforStockOptionsandStockAppreciationRightsIssuedDetail">
+        <link:definition>9955592 - Disclosure - Employee Benefit Plans - Assumptions Used to Estimate Value of Stock-Based Compensation for Stock Options and Stock Appreciation Rights Issued (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansSummaryofStockOptionActivityDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansSummaryofStockOptionActivityDetail">
+        <link:definition>9955593 - Disclosure - Employee Benefit Plans - Summary of Stock Option Activity (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansScheduleofStockAppreciationRightsStockSettledAndCashSettledActivityDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansScheduleofStockAppreciationRightsStockSettledAndCashSettledActivityDetail">
+        <link:definition>9955594 - Disclosure - Employee Benefit Plans - Schedule of Stock Appreciation Rights - Stock Settled And Cash Settled Activity (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansSummaryofPerformanceAwardActivityDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansSummaryofPerformanceAwardActivityDetail">
+        <link:definition>9955595 - Disclosure - Employee Benefit Plans - Summary of Performance Award Activity (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansSummaryofRestrictedStockUnitsStockSettledAndCashSettledActivityDetail" roleURI="http://www.iqvia.com/role/EmployeeBenefitPlansSummaryofRestrictedStockUnitsStockSettledAndCashSettledActivityDetail">
+        <link:definition>9955596 - Disclosure - Employee Benefit Plans - Summary of Restricted Stock Units - Stock Settled And Cash Settled Activity (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyEquipmentandSoftwarebyGeographyPropertyEquipmentandSoftwareNetbyGeographicRegionDetail" roleURI="http://www.iqvia.com/role/PropertyEquipmentandSoftwarebyGeographyPropertyEquipmentandSoftwareNetbyGeographicRegionDetail">
+        <link:definition>9955597 - Disclosure - Property, Equipment and Software by Geography - Property, Equipment and Software, Net, by Geographic Region (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/SegmentsAdditionalInformationDetail">
+        <link:definition>9955598 - Disclosure - Segments - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsOperationsbyReportableSegmentsDetail" roleURI="http://www.iqvia.com/role/SegmentsOperationsbyReportableSegmentsDetail">
+        <link:definition>9955599 - Disclosure - Segments - Operations by Reportable Segments (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareReconcilestheBasictoDilutedWeightedAverageSharesOutstandingDetail" roleURI="http://www.iqvia.com/role/EarningsPerShareReconcilestheBasictoDilutedWeightedAverageSharesOutstandingDetail">
+        <link:definition>9955600 - Disclosure - Earnings Per Share - Reconciles the Basic to Diluted Weighted Average Shares Outstanding (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareNarrativeDetail" roleURI="http://www.iqvia.com/role/EarningsPerShareNarrativeDetail">
+        <link:definition>9955601 - Disclosure - Earnings Per Share - Narrative (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveLossIncomeSummaryofComponentsofAOCIDetail" roleURI="http://www.iqvia.com/role/AccumulatedOtherComprehensiveLossIncomeSummaryofComponentsofAOCIDetail">
+        <link:definition>9955602 - Disclosure - Accumulated Other Comprehensive (Loss) Income - Summary of Components of AOCI (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveLossIncomeSummaryofAdjustmentsforGainsLossesReclassifiedfromAOCIintoCondensedConsolidatedStatementsofIncomeandAffectedFinancialStatementLineItemDetail" roleURI="http://www.iqvia.com/role/AccumulatedOtherComprehensiveLossIncomeSummaryofAdjustmentsforGainsLossesReclassifiedfromAOCIintoCondensedConsolidatedStatementsofIncomeandAffectedFinancialStatementLineItemDetail">
+        <link:definition>9955603 - Disclosure - Accumulated Other Comprehensive (Loss) Income - Summary of Adjustments for (Gains) Losses Reclassified from AOCI into Condensed Consolidated Statements of Income and Affected Financial Statement Line Item (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalCashFlowInformationSupplementalCashFlowInformationDetail" roleURI="http://www.iqvia.com/role/SupplementalCashFlowInformationSupplementalCashFlowInformationDetail">
+        <link:definition>9955604 - Disclosure - Supplemental Cash Flow Information - Supplemental Cash Flow Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleICondensedStatementsofIncomeAndComprehensiveIncomeDetail" roleURI="http://www.iqvia.com/role/ScheduleICondensedStatementsofIncomeAndComprehensiveIncomeDetail">
+        <link:definition>9955605 - Disclosure - Schedule I - Condensed Statements of Income And Comprehensive Income (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleICondensedBalanceSheetsDetail" roleURI="http://www.iqvia.com/role/ScheduleICondensedBalanceSheetsDetail">
+        <link:definition>9955606 - Disclosure - Schedule I - Condensed Balance Sheets (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleICondensedBalanceSheetsNarrativeDetail" roleURI="http://www.iqvia.com/role/ScheduleICondensedBalanceSheetsNarrativeDetail">
+        <link:definition>9955607 - Disclosure - Schedule I - Condensed Balance Sheets -Narrative (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleICondensedStatementsofCashFlowsDetail" roleURI="http://www.iqvia.com/role/ScheduleICondensedStatementsofCashFlowsDetail">
+        <link:definition>9955608 - Disclosure - Schedule I - Condensed Statements of Cash Flows (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIAdditionalInformationDetail" roleURI="http://www.iqvia.com/role/ScheduleIAdditionalInformationDetail">
+        <link:definition>9955609 - Disclosure - Schedule I - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIDividendsPaidDetail" roleURI="http://www.iqvia.com/role/ScheduleIDividendsPaidDetail">
+        <link:definition>9955610 - Disclosure - Schedule I - Dividends Paid (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccountsDetail" roleURI="http://www.iqvia.com/role/ScheduleIIValuationandQualifyingAccountsDetail">
+        <link:definition>9955611 - Disclosure - Schedule II - Valuation and Qualifying Accounts (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="iqv_AuditorInformationAbstract" abstract="true" name="AuditorInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_IncomeLossFromContinuingOperationsAfterIncomeTaxesAndBeforeEquityInEarningsOfUnconsolidatedAffiliates" abstract="false" name="IncomeLossFromContinuingOperationsAfterIncomeTaxesAndBeforeEquityInEarningsOfUnconsolidatedAffiliates" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_TradeAccountsReceivableAndUnbilledServicesNet" abstract="false" name="TradeAccountsReceivableAndUnbilledServicesNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_OtherAssetsCurrentAndReceivables" abstract="false" name="OtherAssetsCurrentAndReceivables" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_LongTermInvestmentsExcludingEquityMethodInvestments" abstract="false" name="LongTermInvestmentsExcludingEquityMethodInvestments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_DepositsAndOtherAssetsNoncurrent" abstract="false" name="DepositsAndOtherAssetsNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_IncreaseDecreaseInContractWithCustomerUnearnedIncome" abstract="false" name="IncreaseDecreaseInContractWithCustomerUnearnedIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_PaymentsForProceedsFromMarketableSecurities" abstract="false" name="PaymentsForProceedsFromMarketableSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_PaymentsToAcquireEquityMethodInvestmentsAndProceedsFromEquityMethodInvestmentDividendsOrDistributionsReturnOfCapital" abstract="false" name="PaymentsToAcquireEquityMethodInvestmentsAndProceedsFromEquityMethodInvestmentDividendsOrDistributionsReturnOfCapital" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_PaymentsForProceedsFromStockOptionsExercised" abstract="false" name="PaymentsForProceedsFromStockOptionsExercised" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_TradeAccountsReceivableUnbilledServicesAndUnearnedIncomeDisclosureTextBlock" abstract="false" name="TradeAccountsReceivableUnbilledServicesAndUnearnedIncomeDisclosureTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="iqv_PropertyEquipmentAndSoftwareByGeographyAbstract" abstract="true" name="PropertyEquipmentAndSoftwareByGeographyAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_GeographicInformationTextBlock" abstract="false" name="GeographicInformationTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="iqv_ScheduleOfPropertyAndEquipmentDepreciationExpenseTableTableTextBlock" abstract="false" name="ScheduleOfPropertyAndEquipmentDepreciationExpenseTableTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="iqv_ScheduleOfOtherInformationRelatedToLeasesTableTableTextBlock" abstract="false" name="ScheduleOfOtherInformationRelatedToLeasesTableTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="iqv_SummaryOfPlanAssetsTableTextBlock" abstract="false" name="SummaryOfPlanAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="iqv_SummaryOfSignificantAccountingPoliciesTable" abstract="true" name="SummaryOfSignificantAccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_SummaryOfSignificantAccountingPoliciesLineItems" abstract="true" name="SummaryOfSignificantAccountingPoliciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_SubscriptionArrangementsTerm" abstract="false" name="SubscriptionArrangementsTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="iqv_NoncompeteAgreementsAndOtherMember" abstract="true" name="NoncompeteAgreementsAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_TechnologyAndAnalyticsSolutionsMember" abstract="true" name="TechnologyAndAnalyticsSolutionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_ResearchAndDevelopmentSolutionsMember" abstract="true" name="ResearchAndDevelopmentSolutionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_ContractSalesAndMedicalSolutionsMember" abstract="true" name="ContractSalesAndMedicalSolutionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_UnbilledContractsReceivablesRollForward" abstract="true" name="UnbilledContractsReceivablesRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_ContractWithCustomerChangeInUnbilledContractsReceivable" abstract="false" name="ContractWithCustomerChangeInUnbilledContractsReceivable" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_ContractWithCustomerLiabilityCurrentRollForward" abstract="true" name="ContractWithCustomerLiabilityCurrentRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_ContractWithCustomerNetContractAssetLiabilities" abstract="false" name="ContractWithCustomerNetContractAssetLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_ContractWithCustomerIncreaseDecreaseInNetContractAssetLiabilities" abstract="false" name="ContractWithCustomerIncreaseDecreaseInNetContractAssetLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_UnbilledReceivablesAsAPercentageOfTotalReceivablePercentage" abstract="false" name="UnbilledReceivablesAsAPercentageOfTotalReceivablePercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="iqv_ContractAssetsPercentageOfTotalReceivablesPercentage" abstract="false" name="ContractAssetsPercentageOfTotalReceivablesPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="iqv_TradeAccountsReceivable" abstract="false" name="TradeAccountsReceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_CashProceedsFromTradeAccounts" abstract="false" name="CashProceedsFromTradeAccounts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_NovaQuestPharmaOpportunitiesFundFiveLpMember" abstract="true" name="NovaQuestPharmaOpportunitiesFundFiveLpMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_NostraDataPtyLtdMember" abstract="true" name="NostraDataPtyLtdMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_NovaQuestPharmaOpportunitiesFundFourLpMember" abstract="true" name="NovaQuestPharmaOpportunitiesFundFourLpMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_NovaQuestPrivateEquityFundOneLpMember" abstract="true" name="NovaQuestPrivateEquityFundOneLpMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_LongwoodFundVLPMember" abstract="true" name="LongwoodFundVLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_HelparoundMember" abstract="true" name="HelparoundMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_NovaQuestPharmaOpportunitiesFundThreeLpMember" abstract="true" name="NovaQuestPharmaOpportunitiesFundThreeLpMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_OtherUnconsolidatedAffiliatesMember" abstract="true" name="OtherUnconsolidatedAffiliatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_PappasLifeScienceVenturesVLPMember" abstract="true" name="PappasLifeScienceVenturesVLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_ForwardStartingInterestRateSwapsMember" abstract="true" name="ForwardStartingInterestRateSwapsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_ForeignCurrencyDenominatedDebtMember" abstract="true" name="ForeignCurrencyDenominatedDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_SeniorSecuredNotesDue20296250Member" abstract="true" name="SeniorSecuredNotesDue20296250Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="iqv_SeniorSecuredFacilitiesTermB4DollarLoansMember" abstract="true" name="SeniorSecuredFacilitiesTermB4DollarLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="iqv_DebtCurrencyAxis" abstract="true" name="DebtCurrencyAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_DebtCurrencyDomain" abstract="true" name="DebtCurrencyDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="iqv_ForeignCurrencyTransactionLossBeforeTaxInterestRateReduction" abstract="false" name="ForeignCurrencyTransactionLossBeforeTaxInterestRateReduction" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_OtherAssetsAndLiabilitiesMember" abstract="true" name="OtherAssetsAndLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_OtherCurrentAssetsAndLiabilitiesMember" abstract="true" name="OtherCurrentAssetsAndLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_FairValueInputsLevel1AndLevel2Member" abstract="true" name="FairValueInputsLevel1AndLevel2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_BusinessCombinationContingentConsiderationPercentageAccruedOfMaximumConsiderationPaymentsToBecomePayable" abstract="false" name="BusinessCombinationContingentConsiderationPercentageAccruedOfMaximumConsiderationPaymentsToBecomePayable" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="iqv_CostAndEquityMethodInvestmentFairValueDisclosure" abstract="false" name="CostAndEquityMethodInvestmentFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_ContingentConsiderationMember" abstract="true" name="ContingentConsiderationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityBusinessCombinations" abstract="false" name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityBusinessCombinations" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityContingentConsiderationPaid" abstract="false" name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityContingentConsiderationPaid" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityGainLossIncludedInEarningsAndForeignCurrencyTranslationAdjustments" abstract="false" name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityGainLossIncludedInEarningsAndForeignCurrencyTranslationAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_ClientRelationshipsAndBacklogMember" abstract="true" name="ClientRelationshipsAndBacklogMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_AccruedPassThroughExpenses" abstract="false" name="AccruedPassThroughExpenses" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_ContingentConsiderationAndDeferredPurchasePriceCurrent" abstract="false" name="ContingentConsiderationAndDeferredPurchasePriceCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_USDRevolvingCreditFacilityMember" abstract="true" name="USDRevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_AccountsReceivableFinancingFacilityMember" abstract="true" name="AccountsReceivableFinancingFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_SOFRMember" abstract="true" name="SOFRMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="iqv_DebtInstrumentRedemptionPeriodSixMember" abstract="true" name="DebtInstrumentRedemptionPeriodSixMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_DebtInstrumentRedemptionPeriodSevenMember" abstract="true" name="DebtInstrumentRedemptionPeriodSevenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_DebtInstrumentRedemptionPeriodEightMember" abstract="true" name="DebtInstrumentRedemptionPeriodEightMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_SeniorSecuredFacilitiesTermALoanMember" abstract="true" name="SeniorSecuredFacilitiesTermALoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_SeniorSecuredTermALoanAtOnePointThirtyThreePercentMember" abstract="true" name="SeniorSecuredTermALoanAtOnePointThirtyThreePercentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_SeniorSecuredTermALoanAtOnePointTwentyFivePecentMember" abstract="true" name="SeniorSecuredTermALoanAtOnePointTwentyFivePecentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_SeniorSecuredFacilitiesTermBLoanMember" abstract="true" name="SeniorSecuredFacilitiesTermBLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_SeniorSecuredAdditionalTermBLoanMember" abstract="true" name="SeniorSecuredAdditionalTermBLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_FivePointZeroPercentageSeniorNotesMember" abstract="true" name="FivePointZeroPercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_TwoPointEightSevenFivePercentageSeniorNotesMember" abstract="true" name="TwoPointEightSevenFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_OnePointSevenFivePercentageSeniorNotesMember" abstract="true" name="OnePointSevenFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_TwoPointTwoFivePercentageSeniorNotesMember" abstract="true" name="TwoPointTwoFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_SeniorSecuredTermALoanAtFivePointSixSevenPercentMember" abstract="true" name="SeniorSecuredTermALoanAtFivePointSixSevenPercentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_ThreePointFivePercentageSeniorNotesMember" abstract="true" name="ThreePointFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_SeniorNotesDue20306500Member" abstract="true" name="SeniorNotesDue20306500Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="iqv_SeniorSecuredNotesDue20285700Member" abstract="true" name="SeniorSecuredNotesDue20285700Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="iqv_LIBORMember" abstract="true" name="LIBORMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="iqv_EURIBORMember" abstract="true" name="EURIBORMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_AverageFloatingRate" abstract="false" name="AverageFloatingRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="iqv_SeniorSecuredCreditFacilitiesMember" abstract="true" name="SeniorSecuredCreditFacilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_SeniorSecuredCreditFacilitiesAvailableInUSDollarsEuroSwissFrancsAndOtherForeignCurrenciesMember" abstract="true" name="SeniorSecuredCreditFacilitiesAvailableInUSDollarsEuroSwissFrancsAndOtherForeignCurrenciesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_SeniorSecuredCreditFacilitiesAvailableInUSDollarsAndYenMember" abstract="true" name="SeniorSecuredCreditFacilitiesAvailableInUSDollarsAndYenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_SeniorSecuredFacilitiesTermBLoan185PercentMember" abstract="true" name="SeniorSecuredFacilitiesTermBLoan185PercentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="iqv_DebtInstrumentCreditSpreadAdjustment" abstract="false" name="DebtInstrumentCreditSpreadAdjustment" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="iqv_DebtInstrumentTermFloorPercent" abstract="false" name="DebtInstrumentTermFloorPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="iqv_AccountsReceivableFinancingFacilityTermLoanMember" abstract="true" name="AccountsReceivableFinancingFacilityTermLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_AccountsReceivableFinancingFacilityRevolvingLoanCommitmentMember" abstract="true" name="AccountsReceivableFinancingFacilityRevolvingLoanCommitmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_BankruptcyRemoteSpecialPurposeEntitySPEMember" abstract="true" name="BankruptcyRemoteSpecialPurposeEntitySPEMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_PledgedReceivablesToSecureCreditFacility" abstract="false" name="PledgedReceivablesToSecureCreditFacility" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_DepreciationAndAmortizationAndInterestMember" abstract="true" name="DepreciationAndAmortizationAndInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_FinanceLeaseCosts" abstract="false" name="FinanceLeaseCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_CashPaidForAmountsIncludedInMeasurementOfLeaseLiabilitiesAbstract" abstract="true" name="CashPaidForAmountsIncludedInMeasurementOfLeaseLiabilitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_FinanceLeasePayments" abstract="false" name="FinanceLeasePayments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_RightOfUseAssetsObtainedInExchangeForLeaseObligationsAbstract" abstract="true" name="RightOfUseAssetsObtainedInExchangeForLeaseObligationsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_WeightedAverageRemainingLeaseTermAbstract" abstract="true" name="WeightedAverageRemainingLeaseTermAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_WeightedAverageDiscountRateAbstract" abstract="true" name="WeightedAverageDiscountRateAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_VeevaSystemsIncMember" abstract="true" name="VeevaSystemsIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_EquityRepurchaseUnderRepurchaseProgramMember" abstract="true" name="EquityRepurchaseUnderRepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_EquityRepurchaseOutsideOfRepurchaseProgramMember" abstract="true" name="EquityRepurchaseOutsideOfRepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_Q2SolutionsMember" abstract="true" name="Q2SolutionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_QuestDiagnosticsIncorporatedMember" abstract="true" name="QuestDiagnosticsIncorporatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_StockRepurchaseProgramAdditionalAuthorizedAmount" abstract="false" name="StockRepurchaseProgramAdditionalAuthorizedAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_ShareRepurchaseProgramIncreaseInAuthorizedAmount" abstract="false" name="ShareRepurchaseProgramIncreaseInAuthorizedAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_EquityRepurchaseUnderAndOutsideOfRepurchaseProgramMember" abstract="true" name="EquityRepurchaseUnderAndOutsideOfRepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_BusinessCombinationContingentConsiderationLiabilityAndDeferredPurchasePayments" abstract="false" name="BusinessCombinationContingentConsiderationLiabilityAndDeferredPurchasePayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_SeveranceAndRelatedCostsMember" abstract="true" name="SeveranceAndRelatedCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_DeferredIncomeTaxExpenseBenefitNetOfAdjustments" abstract="false" name="DeferredIncomeTaxExpenseBenefitNetOfAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_IndefinitePeriodMember" abstract="true" name="IndefinitePeriodMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_FederalStateAndForeignTaxMember" abstract="true" name="FederalStateAndForeignTaxMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_ForeignTaxMember" abstract="true" name="ForeignTaxMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_TaxCutsAndJobsActGlobalIntangibleLowTaxedIncomeAndForeignDerivedIntangibleIncomeIncomeTaxExpenseBenefit" abstract="false" name="TaxCutsAndJobsActGlobalIntangibleLowTaxedIncomeAndForeignDerivedIntangibleIncomeIncomeTaxExpenseBenefit" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_TaxCutsAndJobsActForeignDerivedIntangibleIncomeIncomeTaxExpenseBenefit" abstract="false" name="TaxCutsAndJobsActForeignDerivedIntangibleIncomeIncomeTaxExpenseBenefit" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_TaxCutsAndJobsActGlobalIntangibleLowTaxedIncomeAndForeignDerivedIntangibleIncomeDeferredTaxLiability" abstract="false" name="TaxCutsAndJobsActGlobalIntangibleLowTaxedIncomeAndForeignDerivedIntangibleIncomeDeferredTaxLiability" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_FinalRegulationsOnForeignTaxCreditsIncomeTaxExpenseBenefit" abstract="false" name="FinalRegulationsOnForeignTaxCreditsIncomeTaxExpenseBenefit" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_DeferredTaxAssetsTaxCreditAndTaxLossCarryForwards" abstract="false" name="DeferredTaxAssetsTaxCreditAndTaxLossCarryForwards" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_IncomeTaxExaminationAdditionReductionOfPenaltiesAndInterestExpense" abstract="false" name="IncomeTaxExaminationAdditionReductionOfPenaltiesAndInterestExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_EffectiveIncomeTaxRateReconciliationGILTIAndOtherForeignEntitiesAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationGILTIAndOtherForeignEntitiesAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_IncomeTaxReconciliationNonTaxableGainOnAcquisitionAdjustment" abstract="false" name="IncomeTaxReconciliationNonTaxableGainOnAcquisitionAdjustment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_DeferredTaxAssetsAccruedExpenses" abstract="false" name="DeferredTaxAssetsAccruedExpenses" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_DeferredTaxAssetsLeaseLiability" abstract="false" name="DeferredTaxAssetsLeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_DeferredTaxAssetsUSInterestExpenseLimitation" abstract="false" name="DeferredTaxAssetsUSInterestExpenseLimitation" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_DeferredTaxLiabilitiesDepreciationAndAmortization" abstract="false" name="DeferredTaxLiabilitiesDepreciationAndAmortization" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_DeferredTaxLiabilityLeaseRightOfUseAsset" abstract="false" name="DeferredTaxLiabilityLeaseRightOfUseAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_DeferredTaxLiabilitiesForeignExchangeOnDebtInstrument" abstract="false" name="DeferredTaxLiabilitiesForeignExchangeOnDebtInstrument" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_UnrecognizedTaxBenefitsIncreasesDecreasesResultingFromForeignCurrencyTranslation" abstract="false" name="UnrecognizedTaxBenefitsIncreasesDecreasesResultingFromForeignCurrencyTranslation" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_AccumulatedDefinedBenefitPlansAdjustmentActuarialNetGainLossMember" abstract="true" name="AccumulatedDefinedBenefitPlansAdjustmentActuarialNetGainLossMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_AccumulatedOtherComprehensiveIncomeLossDefinedBenefitPensionAndOtherPostretirementPlansNetOfTaxAttributableToParent" abstract="false" name="AccumulatedOtherComprehensiveIncomeLossDefinedBenefitPensionAndOtherPostretirementPlansNetOfTaxAttributableToParent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_DefinedContributionAndDefinedBenefitPlansTable" abstract="true" name="DefinedContributionAndDefinedBenefitPlansTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_DefinedContributionAndDefinedBenefitPlansLineItems" abstract="true" name="DefinedContributionAndDefinedBenefitPlansLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_DefinedBenefitPlanInvestmentCreditTerm" abstract="false" name="DefinedBenefitPlanInvestmentCreditTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="iqv_DefinedBenefitPlanCashBalanceCreditingRateAsPortionOfYield" abstract="false" name="DefinedBenefitPlanCashBalanceCreditingRateAsPortionOfYield" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="iqv_DefinedBenefitPlanMinimumCashBalanceCreditingRate" abstract="false" name="DefinedBenefitPlanMinimumCashBalanceCreditingRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="iqv_DefinedBenefitPlanAssetCategoriesOtherAssetsMember" abstract="true" name="DefinedBenefitPlanAssetCategoriesOtherAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_DomesticEquitiesMember" abstract="true" name="DomesticEquitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_InternationalEquitiesMember" abstract="true" name="InternationalEquitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_InvestmentsFundsMember" abstract="true" name="InvestmentsFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_InsuranceContractsMember" abstract="true" name="InsuranceContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_OtherAssetCategoriesMember" abstract="true" name="OtherAssetCategoriesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_DefinedBenefitPlanFairValueOfPlanAssetsExcludingAssetsNotClassifiedInFairValueHierarchy" abstract="false" name="DefinedBenefitPlanFairValueOfPlanAssetsExcludingAssetsNotClassifiedInFairValueHierarchy" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_DefinedBenefitPlanAssetsNetAssetValue" abstract="false" name="DefinedBenefitPlanAssetsNetAssetValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_DefinedBenefitPlanExpectedFutureBenefitPayments" abstract="false" name="DefinedBenefitPlanExpectedFutureBenefitPayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_StockIncentivePlanMember" abstract="true" name="StockIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_StockSettledStockAppreciationRightsMember" abstract="true" name="StockSettledStockAppreciationRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_StockSettledRestrictedStockUnitsMember" abstract="true" name="StockSettledRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_CashSettledStockAppreciationRightsMember" abstract="true" name="CashSettledStockAppreciationRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_CashSettledRestrictedStockUnitsMember" abstract="true" name="CashSettledRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_LongTermIncentiveAwardsMember" abstract="true" name="LongTermIncentiveAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationAwardTrancheFiveMember" abstract="true" name="ShareBasedCompensationAwardTrancheFiveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsExpirationTerm" abstract="false" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsExpirationTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationArrangementByShareBasedPaymentAwardOtherThanOptionsExercisesInPeriodIntrinsicValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOtherThanOptionsExercisesInPeriodIntrinsicValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestExercisableAggregateIntrinsicValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestExercisableAggregateIntrinsicValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_StockSettlementPeriod" abstract="false" name="StockSettlementPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="iqv_ShareBasedPaymentArrangementFixedMonetaryAmount" abstract="false" name="ShareBasedPaymentArrangementFixedMonetaryAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsMethodUsedTable" abstract="true" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsMethodUsedTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsMethodUsedLineItems" abstract="true" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsMethodUsedLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsWeightedAverageGrantPriceAbstract" abstract="true" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsWeightedAverageGrantPriceAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsOutstandingWeightedAverageGrantPrice" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsOutstandingWeightedAverageGrantPrice" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsGrantsInPeriodWeightedAverageGrantPrice" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsGrantsInPeriodWeightedAverageGrantPrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsExercisableWeightedAverageGrantPrice" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsExercisableWeightedAverageGrantPrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsForfeituresInPeriodWeightedAverageGrantPrice" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsForfeituresInPeriodWeightedAverageGrantPrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsAdditionalGoalAchievementSharesInPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsAdditionalGoalAchievementSharesInPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="iqv_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsAdditionalGoalAchievementSharesInPeriodInPeriodWeightedAverageGrantDateFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsAdditionalGoalAchievementSharesInPeriodInPeriodWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="iqv_DirectorDeferralPlanMember" abstract="true" name="DirectorDeferralPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_PropertyEquipmentAndSoftwareByGeographyTable" abstract="true" name="PropertyEquipmentAndSoftwareByGeographyTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_OtherAmericasMember" abstract="true" name="OtherAmericasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="iqv_LongLivedAssetsGeographicLineItems" abstract="true" name="LongLivedAssetsGeographicLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="iqv_PropertyEquipmentAndSoftwareNet" abstract="false" name="PropertyEquipmentAndSoftwareNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_InvestmentInSubsidiaries" abstract="false" name="InvestmentInSubsidiaries" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_InvestmentsInAndAdvanceToAffiliatesAndSubsidiaries" abstract="false" name="InvestmentsInAndAdvanceToAffiliatesAndSubsidiaries" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_AccountsPayableToSubsidiaries" abstract="false" name="AccountsPayableToSubsidiaries" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_ProceedsFromPaymentsToSubsidiaries" abstract="false" name="ProceedsFromPaymentsToSubsidiaries" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="iqv_MinimumPercentageOfRestrictedNetAssetsOfConsolidatedAndUnconsolidatedSubsidiariesToConsolidatedNetAssetsToFileCondensedFinancialInformation" abstract="false" name="MinimumPercentageOfRestrictedNetAssetsOfConsolidatedAndUnconsolidatedSubsidiariesToConsolidatedNetAssetsToFileCondensedFinancialInformation" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+</xs:schema>

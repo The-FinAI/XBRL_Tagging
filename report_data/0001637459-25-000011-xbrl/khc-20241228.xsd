@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:9fb6e20a-611d-45bc-a6ec-62f661a374b0,g:e6cf3c4a-dae4-4b0f-9a3b-17520c2eb7bc-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:khc="http://www.kraftheinzcompany.com/20241228" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.kraftheinzcompany.com/20241228">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/currency/2024" schemaLocation="https://xbrl.sec.gov/currency/2024/currency-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="khc-20241228_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="khc-20241228_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="khc-20241228_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="khc-20241228_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.kraftheinzcompany.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.kraftheinzcompany.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofIncome" roleURI="http://www.kraftheinzcompany.com/role/ConsolidatedStatementsofIncome">
+        <link:definition>9952151 - Statement - Consolidated Statements of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncome" roleURI="http://www.kraftheinzcompany.com/role/ConsolidatedStatementsofComprehensiveIncome">
+        <link:definition>9952152 - Statement - Consolidated Statements of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.kraftheinzcompany.com/role/ConsolidatedBalanceSheets">
+        <link:definition>9952153 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.kraftheinzcompany.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>9952154 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://www.kraftheinzcompany.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>9952155 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofEquity" roleURI="http://www.kraftheinzcompany.com/role/ConsolidatedStatementsofEquity">
+        <link:definition>9952156 - Disclosure - Consolidated Statements of Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationNotes" roleURI="http://www.kraftheinzcompany.com/role/BasisofPresentationNotes">
+        <link:definition>9952157 - Disclosure - Basis of Presentation (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesNotes" roleURI="http://www.kraftheinzcompany.com/role/SignificantAccountingPoliciesNotes">
+        <link:definition>9952158 - Disclosure - Significant Accounting Policies (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NewAccountingStandardsNotes" roleURI="http://www.kraftheinzcompany.com/role/NewAccountingStandardsNotes">
+        <link:definition>9952159 - Disclosure - New Accounting Standards (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresNotes" roleURI="http://www.kraftheinzcompany.com/role/AcquisitionsandDivestituresNotes">
+        <link:definition>9952160 - Disclosure - Acquisitions and Divestitures (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringActivitiesNotes" roleURI="http://www.kraftheinzcompany.com/role/RestructuringActivitiesNotes">
+        <link:definition>9952161 - Disclosure - Restructuring Activities (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesNotes" roleURI="http://www.kraftheinzcompany.com/role/InventoriesNotes">
+        <link:definition>9952162 - Disclosure - Inventories (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentNotes" roleURI="http://www.kraftheinzcompany.com/role/PropertyPlantandEquipmentNotes">
+        <link:definition>9952163 - Disclosure - Property, Plant and Equipment (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNotes" roleURI="http://www.kraftheinzcompany.com/role/GoodwillandIntangibleAssetsNotes">
+        <link:definition>9952164 - Disclosure - Goodwill and Intangible Assets (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNotes" roleURI="http://www.kraftheinzcompany.com/role/IncomeTaxesNotes">
+        <link:definition>9952165 - Disclosure - Income Taxes (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeesStockIncentivePlansNotes" roleURI="http://www.kraftheinzcompany.com/role/EmployeesStockIncentivePlansNotes">
+        <link:definition>9952166 - Disclosure - Employees' Stock Incentive Plans (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsNotes" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsNotes">
+        <link:definition>9952167 - Disclosure - Postemployment Benefits (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsNotes" roleURI="http://www.kraftheinzcompany.com/role/FinancialInstrumentsNotes">
+        <link:definition>9952168 - Disclosure - Financial Instruments (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossesNotes" roleURI="http://www.kraftheinzcompany.com/role/AccumulatedOtherComprehensiveIncomeLossesNotes">
+        <link:definition>9952169 - Disclosure - Accumulated Other Comprehensive Income/(Losses) (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingArrangementsNotes" roleURI="http://www.kraftheinzcompany.com/role/FinancingArrangementsNotes">
+        <link:definition>9952170 - Disclosure - Financing Arrangements (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesNotes" roleURI="http://www.kraftheinzcompany.com/role/CommitmentsandContingenciesNotes">
+        <link:definition>9952171 - Disclosure - Commitments and Contingencies (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtNotes" roleURI="http://www.kraftheinzcompany.com/role/DebtNotes">
+        <link:definition>9952172 - Disclosure - Debt (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNotes" roleURI="http://www.kraftheinzcompany.com/role/LeasesNotes">
+        <link:definition>9952173 - Disclosure - Leases (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStockNotes" roleURI="http://www.kraftheinzcompany.com/role/CapitalStockNotes">
+        <link:definition>9952174 - Disclosure - Capital Stock (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareNotes" roleURI="http://www.kraftheinzcompany.com/role/EarningsPerShareNotes">
+        <link:definition>9952175 - Disclosure - Earnings Per Share (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingNotes" roleURI="http://www.kraftheinzcompany.com/role/SegmentReportingNotes">
+        <link:definition>9952176 - Disclosure - Segment Reporting (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialDataNotes" roleURI="http://www.kraftheinzcompany.com/role/OtherFinancialDataNotes">
+        <link:definition>9952177 - Disclosure - Other Financial Data (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ValuationandQualifyingAccounts" roleURI="http://www.kraftheinzcompany.com/role/ValuationandQualifyingAccounts">
+        <link:definition>9952178 - Disclosure - Valuation and Qualifying Accounts</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationConsolidationandPresentationofFinancialStatementsPolicies" roleURI="http://www.kraftheinzcompany.com/role/OrganizationConsolidationandPresentationofFinancialStatementsPolicies">
+        <link:definition>9955511 - Disclosure - Organization, Consolidation and Presentation of Financial Statements (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesPolicies" roleURI="http://www.kraftheinzcompany.com/role/SignificantAccountingPoliciesPolicies">
+        <link:definition>9955512 - Disclosure - Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresTables" roleURI="http://www.kraftheinzcompany.com/role/AcquisitionsandDivestituresTables">
+        <link:definition>9955513 - Disclosure - Acquisitions and Divestitures (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringActivitiesTables" roleURI="http://www.kraftheinzcompany.com/role/RestructuringActivitiesTables">
+        <link:definition>9955514 - Disclosure - Restructuring Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesTables" roleURI="http://www.kraftheinzcompany.com/role/InventoriesTables">
+        <link:definition>9955515 - Disclosure - Inventories (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentTables" roleURI="http://www.kraftheinzcompany.com/role/PropertyPlantandEquipmentTables">
+        <link:definition>9955516 - Disclosure - Property, Plant and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsTables" roleURI="http://www.kraftheinzcompany.com/role/GoodwillandIntangibleAssetsTables">
+        <link:definition>9955517 - Disclosure - Goodwill and Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.kraftheinzcompany.com/role/IncomeTaxesTables">
+        <link:definition>9955518 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeesStockIncentivePlansTables" roleURI="http://www.kraftheinzcompany.com/role/EmployeesStockIncentivePlansTables">
+        <link:definition>9955519 - Disclosure - Employees' Stock Incentive Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsTables" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsTables">
+        <link:definition>9955520 - Disclosure - Postemployment Benefits (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsTables" roleURI="http://www.kraftheinzcompany.com/role/FinancialInstrumentsTables">
+        <link:definition>9955521 - Disclosure - Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossesTables" roleURI="http://www.kraftheinzcompany.com/role/AccumulatedOtherComprehensiveIncomeLossesTables">
+        <link:definition>9955522 - Disclosure - Accumulated Other Comprehensive Income/(Losses) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesTables" roleURI="http://www.kraftheinzcompany.com/role/CommitmentsandContingenciesTables">
+        <link:definition>9955523 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTables" roleURI="http://www.kraftheinzcompany.com/role/DebtTables">
+        <link:definition>9955524 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.kraftheinzcompany.com/role/LeasesTables">
+        <link:definition>9955525 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStockTables" roleURI="http://www.kraftheinzcompany.com/role/CapitalStockTables">
+        <link:definition>9955526 - Disclosure - Capital Stock (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://www.kraftheinzcompany.com/role/EarningsPerShareTables">
+        <link:definition>9955527 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingTables" roleURI="http://www.kraftheinzcompany.com/role/SegmentReportingTables">
+        <link:definition>9955528 - Disclosure - Segment Reporting (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialDataTables" roleURI="http://www.kraftheinzcompany.com/role/OtherFinancialDataTables">
+        <link:definition>9955529 - Disclosure - Other Financial Data (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationDetails" roleURI="http://www.kraftheinzcompany.com/role/BasisofPresentationDetails">
+        <link:definition>9955530 - Disclosure - Basis of Presentation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/SignificantAccountingPoliciesAdditionalInformationDetails">
+        <link:definition>9955531 - Disclosure - Significant Accounting Policies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesStockBasedCompensationDetails" roleURI="http://www.kraftheinzcompany.com/role/SignificantAccountingPoliciesStockBasedCompensationDetails">
+        <link:definition>9955532 - Disclosure - Significant Accounting Policies - Stock-Based Compensation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesPropertyPlantandEquipmentDetails" roleURI="http://www.kraftheinzcompany.com/role/SignificantAccountingPoliciesPropertyPlantandEquipmentDetails">
+        <link:definition>9955533 - Disclosure - Significant Accounting Policies - Property, Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesGoodwillandIntangibleAssetsDetails" roleURI="http://www.kraftheinzcompany.com/role/SignificantAccountingPoliciesGoodwillandIntangibleAssetsDetails">
+        <link:definition>9955534 - Disclosure - Significant Accounting Policies - Goodwill and Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesDivestitureRelatedLicenseIncomeDetails" roleURI="http://www.kraftheinzcompany.com/role/SignificantAccountingPoliciesDivestitureRelatedLicenseIncomeDetails">
+        <link:definition>9955535 - Disclosure - Significant Accounting Policies - Divestiture-Related License Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresHemmerAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/AcquisitionsandDivestituresHemmerAdditionalInformationDetails">
+        <link:definition>9955536 - Disclosure - Acquisitions and Divestitures - Hemmer Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresHemmerPurchasePriceAllocationtoAssetsAcquiredandLiabilitiesAssumedDetails" roleURI="http://www.kraftheinzcompany.com/role/AcquisitionsandDivestituresHemmerPurchasePriceAllocationtoAssetsAcquiredandLiabilitiesAssumedDetails">
+        <link:definition>9955537 - Disclosure - Acquisitions and Divestitures - Hemmer Purchase Price Allocation to Assets Acquired and Liabilities Assumed (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresHemmerPurchasePriceAllocationtoIdentifiableIntangibleAssetsAcquiredDetails" roleURI="http://www.kraftheinzcompany.com/role/AcquisitionsandDivestituresHemmerPurchasePriceAllocationtoIdentifiableIntangibleAssetsAcquiredDetails">
+        <link:definition>9955538 - Disclosure - Acquisitions and Divestitures - Hemmer Purchase Price Allocation to Identifiable Intangible Assets Acquired (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresJustSpicesAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/AcquisitionsandDivestituresJustSpicesAdditionalInformationDetails">
+        <link:definition>9955539 - Disclosure - Acquisitions and Divestitures - Just Spices Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresJustSpicesPurchasePriceAllocationtoAssetsAcquiredandLiabilitiesAssumedDetails" roleURI="http://www.kraftheinzcompany.com/role/AcquisitionsandDivestituresJustSpicesPurchasePriceAllocationtoAssetsAcquiredandLiabilitiesAssumedDetails">
+        <link:definition>9955540 - Disclosure - Acquisitions and Divestitures - Just Spices Purchase Price Allocation to Assets Acquired and Liabilities Assumed (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresJustSpicesPurchasePriceAllocationtoIdentifiableIntangibleAssetsAcquiredDetails" roleURI="http://www.kraftheinzcompany.com/role/AcquisitionsandDivestituresJustSpicesPurchasePriceAllocationtoIdentifiableIntangibleAssetsAcquiredDetails">
+        <link:definition>9955541 - Disclosure - Acquisitions and Divestitures - Just Spices Purchase Price Allocation to Identifiable Intangible Assets Acquired (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresDetails" roleURI="http://www.kraftheinzcompany.com/role/AcquisitionsandDivestituresDetails">
+        <link:definition>9955542 - Disclosure - Acquisitions and Divestitures (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresRussiaInfantTransactionAdditionalDetails" roleURI="http://www.kraftheinzcompany.com/role/AcquisitionsandDivestituresRussiaInfantTransactionAdditionalDetails">
+        <link:definition>9955543 - Disclosure - Acquisitions and Divestitures - Russia Infant Transaction Additional (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresPapuaNewGuineaTransactionDetails" roleURI="http://www.kraftheinzcompany.com/role/AcquisitionsandDivestituresPapuaNewGuineaTransactionDetails">
+        <link:definition>9955544 - Disclosure - Acquisitions and Divestitures - Papua New Guinea Transaction (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresPowderedCheeseTransactionAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/AcquisitionsandDivestituresPowderedCheeseTransactionAdditionalInformationDetails">
+        <link:definition>9955545 - Disclosure - Acquisitions and Divestitures - Powdered Cheese Transaction Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringActivitiesAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/RestructuringActivitiesAdditionalInformationDetails">
+        <link:definition>9955546 - Disclosure - Restructuring Activities - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringActivitiesRestructuringReserveRollforwardDetails" roleURI="http://www.kraftheinzcompany.com/role/RestructuringActivitiesRestructuringReserveRollforwardDetails">
+        <link:definition>9955547 - Disclosure - Restructuring Activities - Restructuring Reserve Roll-forward (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringActivitiesRestructuringCostsbyTypeandIncomeStatementLocationDetails" roleURI="http://www.kraftheinzcompany.com/role/RestructuringActivitiesRestructuringCostsbyTypeandIncomeStatementLocationDetails">
+        <link:definition>9955548 - Disclosure - Restructuring Activities - Restructuring Costs by Type and Income Statement Location (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringActivitiesRestructuringCostsExcludedfromSegmentsDetails" roleURI="http://www.kraftheinzcompany.com/role/RestructuringActivitiesRestructuringCostsExcludedfromSegmentsDetails">
+        <link:definition>9955549 - Disclosure - Restructuring Activities - Restructuring Costs Excluded from Segments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesComponentsofInventoriesDetails" roleURI="http://www.kraftheinzcompany.com/role/InventoriesComponentsofInventoriesDetails">
+        <link:definition>9955550 - Disclosure - Inventories - Components of Inventories (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentSummaryofPropertyPlantandEquipmentDetails" roleURI="http://www.kraftheinzcompany.com/role/PropertyPlantandEquipmentSummaryofPropertyPlantandEquipmentDetails">
+        <link:definition>9955551 - Disclosure - Property, Plant and Equipment - Summary of Property, Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentAdditionalinformationDetails" roleURI="http://www.kraftheinzcompany.com/role/PropertyPlantandEquipmentAdditionalinformationDetails">
+        <link:definition>9955552 - Disclosure - Property, Plant and Equipment - Additional information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsChangesintheCarryingAmountofGoodwillbySegmentDetails" roleURI="http://www.kraftheinzcompany.com/role/GoodwillandIntangibleAssetsChangesintheCarryingAmountofGoodwillbySegmentDetails">
+        <link:definition>9955553 - Disclosure - Goodwill and Intangible Assets - Changes in the Carrying Amount of Goodwill by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsGoodwillAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/GoodwillandIntangibleAssetsGoodwillAdditionalInformationDetails">
+        <link:definition>9955554 - Disclosure - Goodwill and Intangible Assets - Goodwill Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsChangesintheCarryingAmountofIndefiniteLivedIntangibleAssetsDetails" roleURI="http://www.kraftheinzcompany.com/role/GoodwillandIntangibleAssetsChangesintheCarryingAmountofIndefiniteLivedIntangibleAssetsDetails">
+        <link:definition>9955555 - Disclosure - Goodwill and Intangible Assets - Changes in the Carrying Amount of Indefinite-Lived Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsIndefiniteLivedIntangibleAssetsAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/GoodwillandIntangibleAssetsIndefiniteLivedIntangibleAssetsAdditionalInformationDetails">
+        <link:definition>9955556 - Disclosure - Goodwill and Intangible Assets - Indefinite-Lived Intangible Assets Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsDefiniteLivedIntangibleAssetsDetails" roleURI="http://www.kraftheinzcompany.com/role/GoodwillandIntangibleAssetsDefiniteLivedIntangibleAssetsDetails">
+        <link:definition>9955557 - Disclosure - Goodwill and Intangible Assets - Definite-Lived Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsDefiniteLivedIntangibleAssetsAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/GoodwillandIntangibleAssetsDefiniteLivedIntangibleAssetsAdditionalInformationDetails">
+        <link:definition>9955558 - Disclosure - Goodwill and Intangible Assets - Definite-Lived Intangible Assets Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeBeforeIncomeTaxesandProvisionforIncomeTaxesDetails" roleURI="http://www.kraftheinzcompany.com/role/IncomeTaxesIncomeBeforeIncomeTaxesandProvisionforIncomeTaxesDetails">
+        <link:definition>9955559 - Disclosure - Income Taxes - Income Before Income Taxes and Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/IncomeTaxesAdditionalInformationDetails">
+        <link:definition>9955560 - Disclosure - Income Taxes - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesEffectiveTaxRateDetails" roleURI="http://www.kraftheinzcompany.com/role/IncomeTaxesEffectiveTaxRateDetails">
+        <link:definition>9955561 - Disclosure - Income Taxes - Effective Tax Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDeferredIncomeTaxAssetsandLiabilitiesDetails" roleURI="http://www.kraftheinzcompany.com/role/IncomeTaxesDeferredIncomeTaxAssetsandLiabilitiesDetails">
+        <link:definition>9955562 - Disclosure - Income Taxes - Deferred Income Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesChangesinUnrecognizedTaxBenefitsDetails" roleURI="http://www.kraftheinzcompany.com/role/IncomeTaxesChangesinUnrecognizedTaxBenefitsDetails">
+        <link:definition>9955563 - Disclosure - Income Taxes - Changes in Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeesStockIncentivePlansAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/EmployeesStockIncentivePlansAdditionalInformationDetails">
+        <link:definition>9955564 - Disclosure - Employees' Stock Incentive Plans - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeesStockIncentivePlansScheduleofWeightedAverageBlackScholesFairValueAssumptionsDetails" roleURI="http://www.kraftheinzcompany.com/role/EmployeesStockIncentivePlansScheduleofWeightedAverageBlackScholesFairValueAssumptionsDetails">
+        <link:definition>9955565 - Disclosure - Employees' Stock Incentive Plans - Schedule of Weighted Average Black-Scholes Fair Value Assumptions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeesStockIncentivePlansScheduleofStockOptionActivityandRelatedInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/EmployeesStockIncentivePlansScheduleofStockOptionActivityandRelatedInformationDetails">
+        <link:definition>9955566 - Disclosure - Employees' Stock Incentive Plans - Schedule of Stock Option Activity and Related Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeesStockIncentivePlansScheduleofUnvestedStockOptionsandRelatedInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/EmployeesStockIncentivePlansScheduleofUnvestedStockOptionsandRelatedInformationDetails">
+        <link:definition>9955567 - Disclosure - Employees' Stock Incentive Plans - Schedule of Unvested Stock Options and Related Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeesStockIncentivePlansScheduleofRSUActivityandRelatedInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/EmployeesStockIncentivePlansScheduleofRSUActivityandRelatedInformationDetails">
+        <link:definition>9955568 - Disclosure - Employees' Stock Incentive Plans - Schedule of RSU Activity and Related Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeesStockIncentivePlansScheduleofPSUActivityandRelatedInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/EmployeesStockIncentivePlansScheduleofPSUActivityandRelatedInformationDetails">
+        <link:definition>9955569 - Disclosure - Employees' Stock Incentive Plans - Schedule of PSU Activity and Related Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeesStockIncentivePlansScheduleofCompensationCostsRelatedtoEquityPlansDetails" roleURI="http://www.kraftheinzcompany.com/role/EmployeesStockIncentivePlansScheduleofCompensationCostsRelatedtoEquityPlansDetails">
+        <link:definition>9955570 - Disclosure - Employees' Stock Incentive Plans - Schedule of Compensation Costs Related to Equity Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPensionPlansChangesinBenefitObligationsFairValueofPlanAssetsandFundedStatusDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPensionPlansChangesinBenefitObligationsFairValueofPlanAssetsandFundedStatusDetails">
+        <link:definition>9955571 - Disclosure - Postemployment Benefits - Pension Plans - Changes in Benefit Obligations, Fair Value of Plan Assets, and Funded Status (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsBenefitPlansAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsBenefitPlansAdditionalInformationDetails">
+        <link:definition>9955572 - Disclosure - Postemployment Benefits - Benefit Plans - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPensionPlansAmountsRecognizedinBalanceSheetDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPensionPlansAmountsRecognizedinBalanceSheetDetails">
+        <link:definition>9955573 - Disclosure - Postemployment Benefits - Pension Plans - Amounts Recognized in Balance Sheet (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPensionPlansScheduleofAccumulatedBenefitObligationinExcessofFairValueofPlanAssetsDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPensionPlansScheduleofAccumulatedBenefitObligationinExcessofFairValueofPlanAssetsDetails">
+        <link:definition>9955574 - Disclosure - Postemployment Benefits - Pension Plans - Schedule of Accumulated Benefit Obligation in Excess of Fair Value of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPensionPlansScheduleofProjectedBenefitObligationinExcessofFairValueofPlanAssetsDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPensionPlansScheduleofProjectedBenefitObligationinExcessofFairValueofPlanAssetsDetails">
+        <link:definition>9955575 - Disclosure - Postemployment Benefits - Pension Plans - Schedule of Projected Benefit Obligation in Excess of Fair Value of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPensionPlansWeightedAverageAssumptionsUsedPensionBenefitObligationDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPensionPlansWeightedAverageAssumptionsUsedPensionBenefitObligationDetails">
+        <link:definition>9955576 - Disclosure - Postemployment Benefits - Pension Plans - Weighted Average Assumptions Used, Pension Benefit Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPensionPlansNetCostBenefitDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPensionPlansNetCostBenefitDetails">
+        <link:definition>9955577 - Disclosure - Postemployment Benefits - Pension Plans - Net Cost/(Benefit) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPensionPlansWeightedAverageAssumptionsUsedNetPensionCostDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPensionPlansWeightedAverageAssumptionsUsedNetPensionCostDetails">
+        <link:definition>9955578 - Disclosure - Postemployment Benefits - Pension Plans - Weighted Average Assumptions Used, Net Pension Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPensionPlansWeightedAverageAssetAllocationofPlanAssetsDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPensionPlansWeightedAverageAssetAllocationofPlanAssetsDetails">
+        <link:definition>9955579 - Disclosure - Postemployment Benefits - Pension Plans - Weighted Average Asset Allocation of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPensionPlansFairValueofPlanAssetsDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPensionPlansFairValueofPlanAssetsDetails">
+        <link:definition>9955580 - Disclosure - Postemployment Benefits - Pension Plans - Fair Value of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPensionPlansChangesinLevel3PlanAssetsDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPensionPlansChangesinLevel3PlanAssetsDetails">
+        <link:definition>9955581 - Disclosure - Postemployment Benefits - Pension Plans - Changes in Level 3 Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPensionPlansExpectedFutureBenefitPaymentsDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPensionPlansExpectedFutureBenefitPaymentsDetails">
+        <link:definition>9955582 - Disclosure - Postemployment Benefits - Pension Plans - Expected Future Benefit Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPostretirementBenefitPlansChangesinAccumulatedBenefitObligationFairValueofPlanAssetsandFundedStatusDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPostretirementBenefitPlansChangesinAccumulatedBenefitObligationFairValueofPlanAssetsandFundedStatusDetails">
+        <link:definition>9955583 - Disclosure - Postemployment Benefits - Postretirement Benefit Plans - Changes in Accumulated Benefit Obligation, Fair Value of Plan Assets, and Funded Status (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPostretirementBenefitPlansAmountsRecognizedonBalanceSheetDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPostretirementBenefitPlansAmountsRecognizedonBalanceSheetDetails">
+        <link:definition>9955584 - Disclosure - Postemployment Benefits - Postretirement Benefit Plans - Amounts Recognized on Balance Sheet (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPostretirementBenefitPlansScheduleofAccumulatedBenefitObligationinExcessofFairValueofPlanAssetsDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPostretirementBenefitPlansScheduleofAccumulatedBenefitObligationinExcessofFairValueofPlanAssetsDetails">
+        <link:definition>9955585 - Disclosure - Postemployment Benefits - Postretirement Benefit Plans - Schedule of Accumulated Benefit Obligation in Excess of Fair Value of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPostretirementBenefitPlansWeightedAverageAssumptionsUsedPostretirementBenefitObligationDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPostretirementBenefitPlansWeightedAverageAssumptionsUsedPostretirementBenefitObligationDetails">
+        <link:definition>9955586 - Disclosure - Postemployment Benefits - Postretirement Benefit Plans - Weighted Average Assumptions Used, Postretirement Benefit Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPostretirementBenefitPlansNetCostBenefitDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPostretirementBenefitPlansNetCostBenefitDetails">
+        <link:definition>9955587 - Disclosure - Postemployment Benefits - Postretirement Benefit Plans - Net Cost/(Benefit) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPostretirementBenefitPlansWeightedAverageAssumptionsUsedNetPostretirementCostDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPostretirementBenefitPlansWeightedAverageAssumptionsUsedNetPostretirementCostDetails">
+        <link:definition>9955588 - Disclosure - Postemployment Benefits - Postretirement Benefit Plans - Weighted Average Assumptions Used, Net Postretirement Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPostretirementBenefitPlansWeightedAverageAssetAllocationofPlanAssetsDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPostretirementBenefitPlansWeightedAverageAssetAllocationofPlanAssetsDetails">
+        <link:definition>9955589 - Disclosure - Postemployment Benefits - Postretirement Benefit Plans - Weighted Average Asset Allocation of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPostretirementBenefitPlansFairValueofPlanAssetsDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPostretirementBenefitPlansFairValueofPlanAssetsDetails">
+        <link:definition>9955590 - Disclosure - Postemployment Benefits - Postretirement Benefit Plans - Fair Value of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPostretirementBenefitPlansExpectedFutureBenefitPaymentsDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPostretirementBenefitPlansExpectedFutureBenefitPaymentsDetails">
+        <link:definition>9955591 - Disclosure - Postemployment Benefits - Postretirement Benefit Plans - Expected Future Benefit Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPostretirementBenefitPlansBenefitBalancesinAccumulatedOtherComprehensiveIncomeLossDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPostretirementBenefitPlansBenefitBalancesinAccumulatedOtherComprehensiveIncomeLossDetails">
+        <link:definition>9955592 - Disclosure - Postemployment Benefits - Postretirement Benefit Plans - Benefit Balances in Accumulated Other Comprehensive Income/(Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PostemploymentBenefitsPostretirementBenefitPlansBenefitsRecognizedOtherComprehensiveIncomeLossDetails" roleURI="http://www.kraftheinzcompany.com/role/PostemploymentBenefitsPostretirementBenefitPlansBenefitsRecognizedOtherComprehensiveIncomeLossDetails">
+        <link:definition>9955593 - Disclosure - Postemployment Benefits - Postretirement Benefit Plans - Benefits Recognized Other Comprehensive Income/(Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsScheduleofNotionalValuesofOutstandingDerivativesDetails" roleURI="http://www.kraftheinzcompany.com/role/FinancialInstrumentsScheduleofNotionalValuesofOutstandingDerivativesDetails">
+        <link:definition>9955594 - Disclosure - Financial Instruments - Schedule of Notional Values of Outstanding Derivatives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsScheduleofDerivativeFairValuesDetails" roleURI="http://www.kraftheinzcompany.com/role/FinancialInstrumentsScheduleofDerivativeFairValuesDetails">
+        <link:definition>9955595 - Disclosure - Financial Instruments - Schedule of Derivative Fair Values (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/FinancialInstrumentsAdditionalInformationDetails">
+        <link:definition>9955596 - Disclosure - Financial Instruments - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsDerivativeImpactonStatementsofOtherComprehensiveIncomeDetails" roleURI="http://www.kraftheinzcompany.com/role/FinancialInstrumentsDerivativeImpactonStatementsofOtherComprehensiveIncomeDetails">
+        <link:definition>9955597 - Disclosure - Financial Instruments - Derivative Impact on Statements of Other Comprehensive Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsDerivativeImpactonStatementsofIncomeDetails" roleURI="http://www.kraftheinzcompany.com/role/FinancialInstrumentsDerivativeImpactonStatementsofIncomeDetails">
+        <link:definition>9955598 - Disclosure - Financial Instruments - Derivative Impact on Statements of Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossesComponentsOfAOCIDetails" roleURI="http://www.kraftheinzcompany.com/role/AccumulatedOtherComprehensiveIncomeLossesComponentsOfAOCIDetails">
+        <link:definition>9955599 - Disclosure - Accumulated Other Comprehensive Income/(Losses) - Components Of AOCI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossesGrossAmountandRelatedTaxBenefitExpenseRecordedinandAssociatedwitheachComponentofOtherComprehensiveIncomeLossDetails" roleURI="http://www.kraftheinzcompany.com/role/AccumulatedOtherComprehensiveIncomeLossesGrossAmountandRelatedTaxBenefitExpenseRecordedinandAssociatedwitheachComponentofOtherComprehensiveIncomeLossDetails">
+        <link:definition>9955600 - Disclosure - Accumulated Other Comprehensive Income/(Losses) - Gross Amount and Related Tax Benefit/(Expense) Recorded in and Associated with each Component of Other Comprehensive Income/(Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossesAmountsReclassifiedfromAccumulatedOtherComprehensiveIncomeLossesDetails" roleURI="http://www.kraftheinzcompany.com/role/AccumulatedOtherComprehensiveIncomeLossesAmountsReclassifiedfromAccumulatedOtherComprehensiveIncomeLossesDetails">
+        <link:definition>9955601 - Disclosure - Accumulated Other Comprehensive Income/(Losses) - Amounts Reclassified from Accumulated Other Comprehensive Income/(Losses) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingArrangementsAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/FinancingArrangementsAdditionalInformationDetails">
+        <link:definition>9955602 - Disclosure - Financing Arrangements - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/CommitmentsandContingenciesAdditionalInformationDetails">
+        <link:definition>9955603 - Disclosure - Commitments and Contingencies Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesScheduleofFutureTakeorPayPurchaseObligationsDetails" roleURI="http://www.kraftheinzcompany.com/role/CommitmentsandContingenciesScheduleofFutureTakeorPayPurchaseObligationsDetails">
+        <link:definition>9955604 - Disclosure - Commitments and Contingencies - Schedule of Future Take-or-Pay Purchase Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtBorrowingArragementsInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/DebtBorrowingArragementsInformationDetails">
+        <link:definition>9955605 - Disclosure - Debt - Borrowing Arragements Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtScheduleofLongtermDebtInstrumentsDetails" roleURI="http://www.kraftheinzcompany.com/role/DebtScheduleofLongtermDebtInstrumentsDetails">
+        <link:definition>9955606 - Disclosure - Debt - Schedule of Long-term Debt Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtScheduleofMaturitiesofLongtermDebtDetails" roleURI="http://www.kraftheinzcompany.com/role/DebtScheduleofMaturitiesofLongtermDebtDetails">
+        <link:definition>9955607 - Disclosure - Debt - Schedule of Maturities of Long-term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtOpenMarketDebtRepurchasesDetails" roleURI="http://www.kraftheinzcompany.com/role/DebtOpenMarketDebtRepurchasesDetails">
+        <link:definition>9955608 - Disclosure - Debt - Open Market Debt Repurchases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDebtIssuancesDetails" roleURI="http://www.kraftheinzcompany.com/role/DebtDebtIssuancesDetails">
+        <link:definition>9955609 - Disclosure - Debt - Debt Issuances (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNarrativeDetails" roleURI="http://www.kraftheinzcompany.com/role/LeasesNarrativeDetails">
+        <link:definition>9955610 - Disclosure - Leases - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesComponentsofLeaseCostDetails" roleURI="http://www.kraftheinzcompany.com/role/LeasesComponentsofLeaseCostDetails">
+        <link:definition>9955611 - Disclosure - Leases - Components of Lease Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesSupplementalBalanceSheetInformationRelatedtoLeasesDetails" roleURI="http://www.kraftheinzcompany.com/role/LeasesSupplementalBalanceSheetInformationRelatedtoLeasesDetails">
+        <link:definition>9955612 - Disclosure - Leases - Supplemental Balance Sheet Information Related to Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesCashFlowsArisingfromLeaseTransactionsDetails" roleURI="http://www.kraftheinzcompany.com/role/LeasesCashFlowsArisingfromLeaseTransactionsDetails">
+        <link:definition>9955613 - Disclosure - Leases - Cash Flows Arising from Lease Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesFutureMinimumLeasePaymentsforLeasesinEffectDetails" roleURI="http://www.kraftheinzcompany.com/role/LeasesFutureMinimumLeasePaymentsforLeasesinEffectDetails">
+        <link:definition>9955614 - Disclosure - Leases - Future Minimum Lease Payments for Leases in Effect (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesFutureMinimumLeasePaymentsforLeasesinEffectDetails_1" roleURI="http://www.kraftheinzcompany.com/role/LeasesFutureMinimumLeasePaymentsforLeasesinEffectDetails_1">
+        <link:definition>9955614 - Disclosure - Leases - Future Minimum Lease Payments for Leases in Effect (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesSyntheticLeaseArrangementsDetails" roleURI="http://www.kraftheinzcompany.com/role/LeasesSyntheticLeaseArrangementsDetails">
+        <link:definition>9955615 - Disclosure - Leases - Synthetic Lease Arrangements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStockAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/CapitalStockAdditionalInformationDetails">
+        <link:definition>9955616 - Disclosure - Capital Stock - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStockCommonStockIssuedinTreasuryandOutstandingDetails" roleURI="http://www.kraftheinzcompany.com/role/CapitalStockCommonStockIssuedinTreasuryandOutstandingDetails">
+        <link:definition>9955617 - Disclosure - Capital Stock - Common Stock Issued, in Treasury, and Outstanding (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareScheduleofEarningsPerCommonShareBasicandDilutedDetails" roleURI="http://www.kraftheinzcompany.com/role/EarningsPerShareScheduleofEarningsPerCommonShareBasicandDilutedDetails">
+        <link:definition>9955618 - Disclosure - Earnings Per Share - Schedule of Earnings Per Common Share, Basic and Diluted (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/EarningsPerShareAdditionalInformationDetails">
+        <link:definition>9955619 - Disclosure - Earnings Per Share - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/SegmentReportingAdditionalInformationDetails">
+        <link:definition>9955620 - Disclosure - Segment Reporting - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingNetSalesbySegmentDetails" roleURI="http://www.kraftheinzcompany.com/role/SegmentReportingNetSalesbySegmentDetails">
+        <link:definition>9955621 - Disclosure - Segment Reporting - Net Sales by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingSegmentAdjustedEBITDADetails" roleURI="http://www.kraftheinzcompany.com/role/SegmentReportingSegmentAdjustedEBITDADetails">
+        <link:definition>9955622 - Disclosure - Segment Reporting - Segment Adjusted EBITDA (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingDepreciationandAmortizationExpensebySegmentDetails" roleURI="http://www.kraftheinzcompany.com/role/SegmentReportingDepreciationandAmortizationExpensebySegmentDetails">
+        <link:definition>9955623 - Disclosure - Segment Reporting - Depreciation and Amortization Expense by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingCapitalExpendituresbySegmentDetails" roleURI="http://www.kraftheinzcompany.com/role/SegmentReportingCapitalExpendituresbySegmentDetails">
+        <link:definition>9955624 - Disclosure - Segment Reporting - Capital Expenditures by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingNetSalesbyPlatformDetails" roleURI="http://www.kraftheinzcompany.com/role/SegmentReportingNetSalesbyPlatformDetails">
+        <link:definition>9955625 - Disclosure - Segment Reporting - Net Sales by Platform (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingNetSalesbyGeographyDetails" roleURI="http://www.kraftheinzcompany.com/role/SegmentReportingNetSalesbyGeographyDetails">
+        <link:definition>9955626 - Disclosure - Segment Reporting - Net Sales by Geography (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingLonglivedAssetsbyGeographyDetails" roleURI="http://www.kraftheinzcompany.com/role/SegmentReportingLonglivedAssetsbyGeographyDetails">
+        <link:definition>9955627 - Disclosure - Segment Reporting - Long-lived Assets by Geography (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialDataScheduleofOtherExpenseIncomeDetails" roleURI="http://www.kraftheinzcompany.com/role/OtherFinancialDataScheduleofOtherExpenseIncomeDetails">
+        <link:definition>9955628 - Disclosure - Other Financial Data - Schedule of Other Expense/(Income) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialDataAdditionalInformationDetails" roleURI="http://www.kraftheinzcompany.com/role/OtherFinancialDataAdditionalInformationDetails">
+        <link:definition>9955629 - Disclosure - Other Financial Data - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ValuationandQualifyingAccountsDetails" roleURI="http://www.kraftheinzcompany.com/role/ValuationandQualifyingAccountsDetails">
+        <link:definition>9955630 - Disclosure - Valuation and Qualifying Accounts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="khc_FloatingRateSeniorNotesDue2025Member" abstract="true" name="FloatingRateSeniorNotesDue2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_FloatingRateSeniorNotesDue2029Member" abstract="true" name="FloatingRateSeniorNotesDue2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_AuditorInformationAbstract" abstract="true" name="AuditorInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="khc_SellingGeneralAndAdministrativeExpenseExcludingImpairmentLosses" abstract="false" name="SellingGeneralAndAdministrativeExpenseExcludingImpairmentLosses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_OtherComprehensiveIncomeLossNetInvestmentHedgeGainLossBeforeReclassificationAfterTax" abstract="false" name="OtherComprehensiveIncomeLossNetInvestmentHedgeGainLossBeforeReclassificationAfterTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_OtherComprehensiveIncomeLossNetInvestmentHedgeExcludedComponentIncreaseDecreasebeforeAdjustmentsafterTax" abstract="false" name="OtherComprehensiveIncomeLossNetInvestmentHedgeExcludedComponentIncreaseDecreasebeforeAdjustmentsafterTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_OtherComprehensiveIncomeLossNetInvestmentHedgeGainLossReclassificationafterTax" abstract="false" name="OtherComprehensiveIncomeLossNetInvestmentHedgeGainLossReclassificationafterTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_OtherComprehensiveIncomeLossCashFlowHedgeExcludedComponentIncreaseDecreasebeforeAdjustmentsafterTax" abstract="false" name="OtherComprehensiveIncomeLossCashFlowHedgeExcludedComponentIncreaseDecreasebeforeAdjustmentsafterTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_DivestitureRelatedLicenseIncome" abstract="false" name="DivestitureRelatedLicenseIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_PaymentRepaymentForPensionAndOtherPostretirementBenefits" abstract="false" name="PaymentRepaymentForPensionAndOtherPostretirementBenefits" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_Noncashadjustmentnonmonetarycurrencydevaluation" abstract="false" name="Noncashadjustmentnonmonetarycurrencydevaluation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_DebtPrepaymentAndExtinguishmentBenefitCosts" abstract="false" name="DebtPrepaymentAndExtinguishmentBenefitCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_OtherComprehensiveIncomeLossNetOfTaxExcludingRedeemableNoncontrollingInterest" abstract="false" name="OtherComprehensiveIncomeLossNetOfTaxExcludingRedeemableNoncontrollingInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_DividendsDeclaredPerShareAbstract" abstract="true" name="DividendsDeclaredPerShareAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="khc_NoncontrollingInterestDividendsPerShareDeclared" abstract="false" name="NoncontrollingInterestDividendsPerShareDeclared" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="khc_HostingArrangementServiceContractPolicyTextBlock" abstract="false" name="HostingArrangementServiceContractPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="khc_HighlyInflationaryAccountingPolicyTextBlock" abstract="false" name="HighlyInflationaryAccountingPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="khc_DivestitureRelatedLicenseIncomePolicyTextBlock" abstract="false" name="DivestitureRelatedLicenseIncomePolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="khc_HemmerAcquisitionMember" abstract="true" name="HemmerAcquisitionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_JustSpicesAcquisitionMember" abstract="true" name="JustSpicesAcquisitionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_ScheduleofRestructuringandRelatedCostsExcludedfromSegmentsTableTextBlock" abstract="false" name="ScheduleofRestructuringandRelatedCostsExcludedfromSegmentsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="khc_ScheduleofCashFlowHedgesandNetInvestmentHedgesinAccumulatedOtherComprehensiveIncomeLossTableTextBlock" abstract="false" name="ScheduleofCashFlowHedgesandNetInvestmentHedgesinAccumulatedOtherComprehensiveIncomeLossTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="khc_SegmentAdjustedEBITDATableTextBlock" abstract="false" name="SegmentAdjustedEBITDATableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="khc_DepreciationandAmortizationExpensebySegmentTableTextBlock" abstract="false" name="DepreciationandAmortizationExpensebySegmentTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="khc_CapitalExpendituresbySegmentsTableTextBlock" abstract="false" name="CapitalExpendituresbySegmentsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="khc_RevenueFromExternalCustomersByPlatformTableTextBlock" abstract="false" name="RevenueFromExternalCustomersByPlatformTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="khc_DisposalGroupIncludingDiscontinuedOperationRevenueRecognitionTerm" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationRevenueRecognitionTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="khc_DisposalGroupIncludingDiscontinuedOperationsAnnualRevenueExpected" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationsAnnualRevenueExpected" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_CheeseTransactionMember" abstract="true" name="CheeseTransactionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_CheeseDivestitureLicensesMember" abstract="true" name="CheeseDivestitureLicensesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_ReportingUnitGoodwillBalanceHeldMember" abstract="true" name="ReportingUnitGoodwillBalanceHeldMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_BrandsAxis" abstract="true" name="BrandsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="khc_BrandsDomain" abstract="true" name="BrandsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_KraftAndVelveetaMember" abstract="true" name="KraftAndVelveetaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_PhiladelphiaMember" abstract="true" name="PhiladelphiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_BusinessCombinationRecognizedIdentifiableAssetsAcquireAndLiabilitiesAssumedCurrentLiabilitiesShortTermDebt" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquireAndLiabilitiesAssumedCurrentLiabilitiesShortTermDebt" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_BusinessCombinationAcquisitionOfLessThan100PercentRedeemableNoncontrollingInterestFairValue" abstract="false" name="BusinessCombinationAcquisitionOfLessThan100PercentRedeemableNoncontrollingInterestFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_PowderedCheeseTransactionMember" abstract="true" name="PowderedCheeseTransactionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_PapuaNewGuineaTransactionMember" abstract="true" name="PapuaNewGuineaTransactionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_RussiaInfantTransactionMember" abstract="true" name="RussiaInfantTransactionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_RestructuringActivitiesMember" abstract="true" name="RestructuringActivitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_RestructuringIncurredCostStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" abstract="false" name="RestructuringIncurredCostStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="khc_OtherCostsMember" abstract="true" name="OtherCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_NorthAmericaSegmentMember" abstract="true" name="NorthAmericaSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_InternationalSegmentMember" abstract="true" name="InternationalSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_InternationalDevelopedMarketsSegmentMember" abstract="true" name="InternationalDevelopedMarketsSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_EmergingMarketsSegmentMember" abstract="true" name="EmergingMarketsSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_EquipmentAndOtherMember" abstract="true" name="EquipmentAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_GoodwillImpairmentLossExcludingImpairmentLossOnTheDisposalGroupHeldForSale" abstract="false" name="GoodwillImpairmentLossExcludingImpairmentLossOnTheDisposalGroupHeldForSale" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_GoodwillForeignCurrencyTranslationGainLossandOther" abstract="false" name="GoodwillForeignCurrencyTranslationGainLossandOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_MCReportingUnitMeatAndCheeseMember" abstract="true" name="MCReportingUnitMeatAndCheeseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_TMSReportingUnitReadyMealsAndSnackingMember" abstract="true" name="TMSReportingUnitReadyMealsAndSnackingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_HDReportingUnitHydrationDessertsMember" abstract="true" name="HDReportingUnitHydrationDessertsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_AFHReportingUnitAwayFromHomeAndKraftHeinzIngredientsMember" abstract="true" name="AFHReportingUnitAwayFromHomeAndKraftHeinzIngredientsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_ContinentalEuropeMember" abstract="true" name="ContinentalEuropeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_LATAMMember" abstract="true" name="LATAMMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_SixReportingUnitsMember" abstract="true" name="SixReportingUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_TwoReportingUnitsMember" abstract="true" name="TwoReportingUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_FourReportingUnitsMember" abstract="true" name="FourReportingUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_CanadaAndNorthAmericaCoffeeMember" abstract="true" name="CanadaAndNorthAmericaCoffeeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_PreReorganizationNumberOfReportingUnitsWithReassignmentOfAssetsAndLiabilitiesThatMaintainedAGoodwillBalanceMember" abstract="true" name="PreReorganizationNumberOfReportingUnitsWithReassignmentOfAssetsAndLiabilitiesThatMaintainedAGoodwillBalanceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_PreReorganizationNumberOfReportingUnitsWithNoGoodwillBalanceMember" abstract="true" name="PreReorganizationNumberOfReportingUnitsWithNoGoodwillBalanceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_CanadaRetailMember" abstract="true" name="CanadaRetailMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_PuertoRicoReportingUnitMember" abstract="true" name="PuertoRicoReportingUnitMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_ReportingUnitsWith20OrLessExcessFairValueOverCarryingAmountMember" abstract="true" name="ReportingUnitsWith20OrLessExcessFairValueOverCarryingAmountMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_ReportingUnitsWithMoreThan20ExcessFairValueOverCarryingAmountMember" abstract="true" name="ReportingUnitsWithMoreThan20ExcessFairValueOverCarryingAmountMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_ReportingUnitPercentRangeOfFairValueInExcessOfCarryingAmountAxis" abstract="true" name="ReportingUnitPercentRangeOfFairValueInExcessOfCarryingAmountAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="khc_ReportingUnitPercentRangeOfFairValueInExcessOfCarryingAmountDomain" abstract="true" name="ReportingUnitPercentRangeOfFairValueInExcessOfCarryingAmountDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_PercentRange20OrLessMember" abstract="true" name="PercentRange20OrLessMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_PercentRange2050Member" abstract="true" name="PercentRange2050Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_ImpairmentOfIntangibleAssetIndefiniteLivedExcludingGoodwillStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" abstract="false" name="ImpairmentOfIntangibleAssetIndefiniteLivedExcludingGoodwillStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="khc_IndefiniteLivedIntangibleAssetsTransfersToDefiniteLivedIntangibleAssets" abstract="false" name="IndefiniteLivedIntangibleAssetsTransfersToDefiniteLivedIntangibleAssets" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="khc_MaxwellHouseMiracleWhipJetPuffedClassicoMember" abstract="true" name="MaxwellHouseMiracleWhipJetPuffedClassicoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_LunchablesClaussenAndWattiesMember" abstract="true" name="LunchablesClaussenAndWattiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_OscarMayerMember" abstract="true" name="OscarMayerMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_PercentRangeinExcessof50Member" abstract="true" name="PercentRangeinExcessof50Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_ImpairedBrandMember" abstract="true" name="ImpairedBrandMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_NumberOfBrands" abstract="false" name="NumberOfBrands" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="khc_Brandpercentageoffairvalueinexcessofcarryingvalue" abstract="false" name="Brandpercentageoffairvalueinexcessofcarryingvalue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="khc_IndefiniteLivedIntangibleAssetsTransfersToDefiniteLivedIntangibleAssetsValue" abstract="false" name="IndefiniteLivedIntangibleAssetsTransfersToDefiniteLivedIntangibleAssetsValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_GlobalMinimumTaxPercentage" abstract="false" name="GlobalMinimumTaxPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="khc_DeferredTaxAssetsTaxCreditCarryforwardsState" abstract="false" name="DeferredTaxAssetsTaxCreditCarryforwardsState" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_DeferredTaxAssetsTaxCreditCarryforwardUSForeign" abstract="false" name="DeferredTaxAssetsTaxCreditCarryforwardUSForeign" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_IncomeTaxExaminationEstimateOfPossibleLossFromPenalties" abstract="false" name="IncomeTaxExaminationEstimateOfPossibleLossFromPenalties" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_EffectiveIncomeTaxRateReconciliationAuditSettlementsAndChangesInUncertainTaxPositionsPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationAuditSettlementsAndChangesInUncertainTaxPositionsPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="khc_EffectiveIncomeTaxRateReconciliationGoodwillImpairmentPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationGoodwillImpairmentPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="khc_EffectiveIncomeTaxRateReconciliationDeferredTaxEffectOfTaxLawChangesPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationDeferredTaxEffectOfTaxLawChangesPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="khc_EffectiveIncomeTaxRateReconciliationForeignIncomeInclusionPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationForeignIncomeInclusionPercent" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_EffectiveIncomeTaxRateReconciliationChangeInPriorYearEstimatesPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationChangeInPriorYearEstimatesPercent" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_EffectiveIncomeTaxRateReconciliationDeferredTaxAdjustmentsPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationDeferredTaxAdjustmentsPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="khc_DeferredTaxLiabilitiesRightOfUseAssets" abstract="false" name="DeferredTaxLiabilitiesRightOfUseAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_DeferredTaxAssetsLeaseLiabilities" abstract="false" name="DeferredTaxAssetsLeaseLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_A2020OmnibusIncentivePlanMember" abstract="true" name="A2020OmnibusIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_A2016OmnibusIncentivePlanMember" abstract="true" name="A2016OmnibusIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_A2016OmnibusIncentivePlanAwardsGrantedPrior2019Member" abstract="true" name="A2016OmnibusIncentivePlanAwardsGrantedPrior2019Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_A2016OmnibusIncentivePlanAwardsGrantedIn2019Member" abstract="true" name="A2016OmnibusIncentivePlanAwardsGrantedIn2019Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_A2013OmnibusIncentivePlanMember" abstract="true" name="A2013OmnibusIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_A2012PerformanceIncentivePlanMember" abstract="true" name="A2012PerformanceIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_NonQualifiedStockOptionsMember" abstract="true" name="NonQualifiedStockOptionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_PSUsMember" abstract="true" name="PSUsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_AllEquityAwardsMember" abstract="true" name="AllEquityAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_InvoluntaryterminationwithoutcauseMember" abstract="true" name="InvoluntaryterminationwithoutcauseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingAnnualInstallmentsPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingAnnualInstallmentsPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="khc_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardExercisableAnnualInstallmentsPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardExercisableAnnualInstallmentsPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="khc_Businessacquisitioncommonstockofparentconversionrationtocommonstockofsuccessorcompany" abstract="false" name="Businessacquisitioncommonstockofparentconversionrationtocommonstockofsuccessorcompany" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="khc_Businessacquisitionrestrictedstockunitsacquireeconvertedtorestrictedstockunitsofsuccessorcompanynumberofshares" abstract="false" name="Businessacquisitionrestrictedstockunitsacquireeconvertedtorestrictedstockunitsofsuccessorcompanynumberofshares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="khc_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardExercisableNumberOfAnnualInstallments" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardExercisableNumberOfAnnualInstallments" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="khc_ShareBasedCompensationArrangementByShareBasedPaymentAwardAcceleratedVestingForTerminatedEmployeesAfterAcquisitionTerminationPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAcceleratedVestingForTerminatedEmployeesAfterAcquisitionTerminationPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="khc_DefinedBenefitPlanNetPeriodicBenefitCostCreditGainLossDueToSettlementPreTax" abstract="false" name="DefinedBenefitPlanNetPeriodicBenefitCostCreditGainLossDueToSettlementPreTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_RealAssetsAndDiversifiedCreditMember" abstract="true" name="RealAssetsAndDiversifiedCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_ReturnseekingassetsMember" abstract="true" name="ReturnseekingassetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_MultiAssetCreditMember" abstract="true" name="MultiAssetCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_DefinedBenefitPlanPlanAssetsContributionsByEmployerExcludingNegativeContributionAmountFromSurplusAssetDistribution" abstract="false" name="DefinedBenefitPlanPlanAssetsContributionsByEmployerExcludingNegativeContributionAmountFromSurplusAssetDistribution" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_PostretirementPlanPlanAssetsContributionsByEmployerExcludingNegativeContributionAmountFromSurplusAssetDistribution" abstract="false" name="PostretirementPlanPlanAssetsContributionsByEmployerExcludingNegativeContributionAmountFromSurplusAssetDistribution" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_DefinedBenefitPlanAssetsForPlanBenefitsPlanSurplus" abstract="false" name="DefinedBenefitPlanAssetsForPlanBenefitsPlanSurplus" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_Definedbenefitplanassumptionsusedcalculatingnetperiodicbenefitcostdiscountrateonservicecost" abstract="false" name="Definedbenefitplanassumptionsusedcalculatingnetperiodicbenefitcostdiscountrateonservicecost" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="khc_Definedbenefitplanassumptionsusedcalculatingnetperiodicbenefitcostdiscountrateoninterestcost" abstract="false" name="Definedbenefitplanassumptionsusedcalculatingnetperiodicbenefitcostdiscountrateoninterestcost" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="khc_CertaininsurancecontractsMember" abstract="true" name="CertaininsurancecontractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_TotalDefinedBenefitPlanPlanAssetsMember" abstract="true" name="TotalDefinedBenefitPlanPlanAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_GovernmentbondsMember" abstract="true" name="GovernmentbondsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_CorporatebondsandotherfixedincomesecuritiesMember" abstract="true" name="CorporatebondsandotherfixedincomesecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_DefinedBenefitPlanPlanAssetsLevel3ReconciliationPlanAssetAdditions" abstract="false" name="DefinedBenefitPlanPlanAssetsLevel3ReconciliationPlanAssetAdditions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_DefinedBenefitPlanPlanAssetsContributionsByEmployerNet" abstract="false" name="DefinedBenefitPlanPlanAssetsContributionsByEmployerNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_ChangeinFairValueofPlanAssetsOther" abstract="false" name="ChangeinFairValueofPlanAssetsOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_Definedbenefitplanassumptionsusedcalculatingnetperiodicbenefitcosthealthcarecosttrendrate" abstract="false" name="Definedbenefitplanassumptionsusedcalculatingnetperiodicbenefitcosthealthcarecosttrendrate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="khc_OtherComprehensiveIncomeLossDefinedBenefitPlanGainLossFromSettlementAndCurtailmentReclassificationFromAOCIBeforeTax" abstract="false" name="OtherComprehensiveIncomeLossDefinedBenefitPlanGainLossFromSettlementAndCurtailmentReclassificationFromAOCIBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_MarginDepositLiability" abstract="false" name="MarginDepositLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_NonDerivativeInstrumentsGainLossRecognizedInOtherComprehensiveIncomeLossNet" abstract="false" name="NonDerivativeInstrumentsGainLossRecognizedInOtherComprehensiveIncomeLossNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_OtherComprehensiveIncomeLossCashFlowHedgeExcludedComponentIncreaseDecreasebeforeAdjustmentsandTax" abstract="false" name="OtherComprehensiveIncomeLossCashFlowHedgeExcludedComponentIncreaseDecreasebeforeAdjustmentsandTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_OtherComprehensiveIncomeLossNetInvestmentHedgeExcludedComponentIncreaseDecreasebeforeAdjustmentsandTax" abstract="false" name="OtherComprehensiveIncomeLossNetInvestmentHedgeExcludedComponentIncreaseDecreasebeforeAdjustmentsandTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_OtherComprehensiveIncomeLossDerivativeGainLossbeforeReclassificationandTax" abstract="false" name="OtherComprehensiveIncomeLossDerivativeGainLossbeforeReclassificationandTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_AccumulatedGainLossNetNetInvestmentHedgeParentMember" abstract="true" name="AccumulatedGainLossNetNetInvestmentHedgeParentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_AccumulatedGainLossNetFairValueHedgeParentMember" abstract="true" name="AccumulatedGainLossNetFairValueHedgeParentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_AccumulatedGainLossNetHedgeParentMember" abstract="true" name="AccumulatedGainLossNetHedgeParentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_AccumulatedDefinedBenefitPlansAdjustmentSettlementAndCurtailmentAttributableToParentMember" abstract="true" name="AccumulatedDefinedBenefitPlansAdjustmentSettlementAndCurtailmentAttributableToParentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_AdditionsToAccountsPayableTrade" abstract="false" name="AdditionsToAccountsPayableTrade" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_SettlementOfAccountsPayableTrade" abstract="false" name="SettlementOfAccountsPayableTrade" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_LineOfCreditFacilityRevolvingCreditFacilitySubLimitForBorrowingsInAlternativeCurrenciesMember" abstract="true" name="LineOfCreditFacilityRevolvingCreditFacilitySubLimitForBorrowingsInAlternativeCurrenciesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_SwinglineSubFacilityMember" abstract="true" name="SwinglineSubFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_RevolvingCommitmentsAndorTermLoansMember" abstract="true" name="RevolvingCommitmentsAndorTermLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_Minimumshareholdersequityrequiredtomaintainexcludingaccumulatedothercomprehensiveincomelosses" abstract="false" name="Minimumshareholdersequityrequiredtomaintainexcludingaccumulatedothercomprehensiveincomelosses" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_OtherU.S.dollarnotesMember" abstract="true" name="OtherU.S.dollarnotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_EuronotesMember" abstract="true" name="EuronotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_PoundSterlingSeniorNotesDue2030Member" abstract="true" name="PoundSterlingSeniorNotesDue2030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_OtherBritishpoundsterlingnotesMember" abstract="true" name="OtherBritishpoundsterlingnotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_OtherlongtermdebtMember" abstract="true" name="OtherlongtermdebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_A2022RepurchasesSeniorNotesMember" abstract="true" name="A2022RepurchasesSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_WriteOffOfUnamortizedDebtDiscounts" abstract="false" name="WriteOffOfUnamortizedDebtDiscounts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_Q22022RepurchasesSeniorNotesMember" abstract="true" name="Q22022RepurchasesSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_Q32022RepurchasesSeniorNotesMember" abstract="true" name="Q32022RepurchasesSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_WriteOffOfUnamortizedDebtPremiums" abstract="false" name="WriteOffOfUnamortizedDebtPremiums" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_SeniorNotesDueMay2029Member" abstract="true" name="SeniorNotesDueMay2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_SeniorNotesDueMay2024Member" abstract="true" name="SeniorNotesDueMay2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_SeniorNotesDueMay2025Member" abstract="true" name="SeniorNotesDueMay2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_SeniorNotesDueJune2023Member" abstract="true" name="SeniorNotesDueJune2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_SeniorNotesDueInMarch2022Member" abstract="true" name="SeniorNotesDueInMarch2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_SeniorNotesDueJune2022Member" abstract="true" name="SeniorNotesDueJune2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_SeniorNotesDueInAugust2022Member" abstract="true" name="SeniorNotesDueInAugust2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_Fairvalueoftotaldebt" abstract="false" name="Fairvalueoftotaldebt" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_Carryingvalueoftotaldebt" abstract="false" name="Carryingvalueoftotaldebt" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_ConstructionInProgressResidualValueGuaranteePercentage" abstract="false" name="ConstructionInProgressResidualValueGuaranteePercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="khc_LesseeOperatingLeaseLeaseNotYetCommencedEstimatedFuturePayments" abstract="false" name="LesseeOperatingLeaseLeaseNotYetCommencedEstimatedFuturePayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_LesseeFinanceLeaseLeaseNotYetCommencedEstimatedFuturePayments" abstract="false" name="LesseeFinanceLeaseLeaseNotYetCommencedEstimatedFuturePayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_CashFlowLesseeAbstract" abstract="true" name="CashFlowLesseeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="khc_SupplementalNonCashInformationOnLeaseLiabilitiesArisingFromObtainingRightOfUseAssetsAbstract" abstract="true" name="SupplementalNonCashInformationOnLeaseLiabilitiesArisingFromObtainingRightOfUseAssetsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="khc_NonCancellableSyntheticLeaseFutureMinimumPaymentsDue" abstract="false" name="NonCancellableSyntheticLeaseFutureMinimumPaymentsDue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_Exerciseofstockoptionsissuanceofotherstockawardsandothersharesissued" abstract="false" name="Exerciseofstockoptionsissuanceofotherstockawardsandothersharesissued" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="khc_Exerciseofstockoptionsissuanceofotherstockawardsandothertreasuryshares" abstract="false" name="Exerciseofstockoptionsissuanceofotherstockawardsandothertreasuryshares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="khc_Exerciseofstockoptionsissuanceofotherstockawardsandothersharesoutstanding" abstract="false" name="Exerciseofstockoptionsissuanceofotherstockawardsandothersharesoutstanding" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="khc_WalmartIncMember" abstract="true" name="WalmartIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_NonOrdinaryLegalAndRegulatoryMatters" abstract="false" name="NonOrdinaryLegalAndRegulatoryMatters" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_SegmentAdjustedEBITDA" abstract="false" name="SegmentAdjustedEBITDA" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_Integrationandrestructuringexpenses" abstract="false" name="Integrationandrestructuringexpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_UnrealizedGainLossonCommodityHedgeContracts" abstract="false" name="UnrealizedGainLossonCommodityHedgeContracts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_AdjustedCostOfProductsSold" abstract="false" name="AdjustedCostOfProductsSold" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_OtherSegmentCosts" abstract="false" name="OtherSegmentCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_RevenueFromExternalCustomersByPlatformTable" abstract="true" name="RevenueFromExternalCustomersByPlatformTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="khc_Srt_PlatformAxisAxis" abstract="true" name="Srt_PlatformAxisAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="khc_PlatformDomain" abstract="true" name="PlatformDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_TasteElevationMember" abstract="true" name="TasteElevationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_OtherPlatformMember" abstract="true" name="OtherPlatformMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_EasyReadyMealsMember" abstract="true" name="EasyReadyMealsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_SubstantialSnackingMember" abstract="true" name="SubstantialSnackingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_AccelerateMember" abstract="true" name="AccelerateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_DessertsMember" abstract="true" name="DessertsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_HydrationMember" abstract="true" name="HydrationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_ProtectMember" abstract="true" name="ProtectMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_CheeseMember" abstract="true" name="CheeseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_CoffeeMember" abstract="true" name="CoffeeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_MeatsMember" abstract="true" name="MeatsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_BalanceMember" abstract="true" name="BalanceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="khc_OtherGeographicalAreasMember" abstract="true" name="OtherGeographicalAreasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="khc_DerivativeGainLossOnDerivativeExcludingNetInvestmentHedgesNet" abstract="false" name="DerivativeGainLossOnDerivativeExcludingNetInvestmentHedgesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_Othermiscellaneousexpenseincome" abstract="false" name="Othermiscellaneousexpenseincome" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_IncreaseDecreaseInYearOverYearInvestIncomeInterest" abstract="false" name="IncreaseDecreaseInYearOverYearInvestIncomeInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="khc_YearOverYearChangeInGainLossOnDispositionOfBusiness" abstract="false" name="YearOverYearChangeInGainLossOnDispositionOfBusiness" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

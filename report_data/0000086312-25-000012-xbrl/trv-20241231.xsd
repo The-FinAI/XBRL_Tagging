@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:383ecaec-d33f-4208-9267-642910392530,g:14980cdb-529f-41b6-aab7-3dc0c226ed89-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:trv="http://www.travelers.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.travelers.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="trv-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="trv-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="trv-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="trv-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.travelers.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.travelers.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofIncome" roleURI="http://www.travelers.com/role/ConsolidatedStatementofIncome">
+        <link:definition>9952151 - Statement - Consolidated Statement of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofComprehensiveIncomeLoss" roleURI="http://www.travelers.com/role/ConsolidatedStatementofComprehensiveIncomeLoss">
+        <link:definition>9952152 - Statement - Consolidated Statement of Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheet" roleURI="http://www.travelers.com/role/ConsolidatedBalanceSheet">
+        <link:definition>9952153 - Statement - Consolidated Balance Sheet</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetParentheticals" roleURI="http://www.travelers.com/role/ConsolidatedBalanceSheetParentheticals">
+        <link:definition>9952154 - Statement - Consolidated Balance Sheet Parentheticals</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofChangesinShareholdersEquity" roleURI="http://www.travelers.com/role/ConsolidatedStatementofChangesinShareholdersEquity">
+        <link:definition>9952155 - Statement - Consolidated Statement of Changes in Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofCashFlows" roleURI="http://www.travelers.com/role/ConsolidatedStatementofCashFlows">
+        <link:definition>9952156 - Statement - Consolidated Statement of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.travelers.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>9952157 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformation" roleURI="http://www.travelers.com/role/SegmentInformation">
+        <link:definition>9952158 - Disclosure - Segment Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Investments" roleURI="http://www.travelers.com/role/Investments">
+        <link:definition>9952159 - Disclosure - Investments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.travelers.com/role/FairValueMeasurements">
+        <link:definition>9952160 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforExpectedCreditLosses" roleURI="http://www.travelers.com/role/AllowanceforExpectedCreditLosses">
+        <link:definition>9952161 - Disclosure - Allowance for Expected Credit Losses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Reinsurance" roleURI="http://www.travelers.com/role/Reinsurance">
+        <link:definition>9952162 - Disclosure - Reinsurance</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssets" roleURI="http://www.travelers.com/role/GoodwillandOtherIntangibleAssets">
+        <link:definition>9952163 - Disclosure - Goodwill and Other Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InsuranceClaimReserves" roleURI="http://www.travelers.com/role/InsuranceClaimReserves">
+        <link:definition>9952164 - Disclosure - Insurance Claim Reserves</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Debt" roleURI="http://www.travelers.com/role/Debt">
+        <link:definition>9952165 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityandDividendAvailability" roleURI="http://www.travelers.com/role/ShareholdersEquityandDividendAvailability">
+        <link:definition>9952166 - Disclosure - Shareholders' Equity and Dividend Availability</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherComprehensiveIncomeLossandAccumulatedOtherComprehensiveIncomeLoss" roleURI="http://www.travelers.com/role/OtherComprehensiveIncomeLossandAccumulatedOtherComprehensiveIncomeLoss">
+        <link:definition>9952167 - Disclosure - Other Comprehensive Income (Loss) and Accumulated Other Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsperShare" roleURI="http://www.travelers.com/role/EarningsperShare">
+        <link:definition>9952168 - Disclosure - Earnings per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.travelers.com/role/IncomeTaxes">
+        <link:definition>9952169 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedIncentiveCompensation" roleURI="http://www.travelers.com/role/ShareBasedIncentiveCompensation">
+        <link:definition>9952170 - Disclosure - Share-Based Incentive Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionPlansRetirementBenefitsandSavingsPlans" roleURI="http://www.travelers.com/role/PensionPlansRetirementBenefitsandSavingsPlans">
+        <link:definition>9952171 - Disclosure - Pension Plans, Retirement Benefits and Savings Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.travelers.com/role/Leases">
+        <link:definition>9952172 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ContingenciesCommitmentsandGuarantees" roleURI="http://www.travelers.com/role/ContingenciesCommitmentsandGuarantees">
+        <link:definition>9952173 - Disclosure - Contingencies, Commitments and Guarantees</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NoncashInvestingandFinancingActivities" roleURI="http://www.travelers.com/role/NoncashInvestingandFinancingActivities">
+        <link:definition>9952174 - Disclosure - Noncash Investing and Financing Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleII" roleURI="http://www.travelers.com/role/ScheduleII">
+        <link:definition>9952175 - Disclosure - Schedule II</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIII" roleURI="http://www.travelers.com/role/ScheduleIII">
+        <link:definition>9952176 - Disclosure - Schedule III</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleV" roleURI="http://www.travelers.com/role/ScheduleV">
+        <link:definition>9952177 - Disclosure - Schedule V</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleVI" roleURI="http://www.travelers.com/role/ScheduleVI">
+        <link:definition>9952178 - Disclosure - Schedule VI</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.travelers.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationTables" roleURI="http://www.travelers.com/role/SegmentInformationTables">
+        <link:definition>9955512 - Disclosure - Segment Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsTables" roleURI="http://www.travelers.com/role/InvestmentsTables">
+        <link:definition>9955513 - Disclosure - Investments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.travelers.com/role/FairValueMeasurementsTables">
+        <link:definition>9955514 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforExpectedCreditLossesTables" roleURI="http://www.travelers.com/role/AllowanceforExpectedCreditLossesTables">
+        <link:definition>9955515 - Disclosure - Allowance for Expected Credit Losses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReinsuranceTables" roleURI="http://www.travelers.com/role/ReinsuranceTables">
+        <link:definition>9955516 - Disclosure - Reinsurance (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsTables" roleURI="http://www.travelers.com/role/GoodwillandOtherIntangibleAssetsTables">
+        <link:definition>9955517 - Disclosure - Goodwill and Other Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InsuranceClaimReservesTables" roleURI="http://www.travelers.com/role/InsuranceClaimReservesTables">
+        <link:definition>9955518 - Disclosure - Insurance Claim Reserves (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTables" roleURI="http://www.travelers.com/role/DebtTables">
+        <link:definition>9955519 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherComprehensiveIncomeLossandAccumulatedOtherComprehensiveIncomeLossTables" roleURI="http://www.travelers.com/role/OtherComprehensiveIncomeLossandAccumulatedOtherComprehensiveIncomeLossTables">
+        <link:definition>9955520 - Disclosure - Other Comprehensive Income (Loss) and Accumulated Other Comprehensive Income (Loss) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsperShareTable" roleURI="http://www.travelers.com/role/EarningsperShareTable">
+        <link:definition>9955521 - Disclosure - Earnings per Share (Table)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.travelers.com/role/IncomeTaxesTables">
+        <link:definition>9955522 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedIncentiveCompensationTables" roleURI="http://www.travelers.com/role/ShareBasedIncentiveCompensationTables">
+        <link:definition>9955523 - Disclosure - Share-Based Incentive Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionPlansRetirementBenefitsandSavingsPlansTables" roleURI="http://www.travelers.com/role/PensionPlansRetirementBenefitsandSavingsPlansTables">
+        <link:definition>9955524 - Disclosure - Pension Plans, Retirement Benefits and Savings Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.travelers.com/role/LeasesTables">
+        <link:definition>9955525 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesDetails" roleURI="http://www.travelers.com/role/SummaryofSignificantAccountingPoliciesDetails">
+        <link:definition>9955526 - Disclosure - Summary of Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesDetailsPolicyDetails" roleURI="http://www.travelers.com/role/SummaryofSignificantAccountingPoliciesDetailsPolicyDetails">
+        <link:definition>9955527 - Disclosure - Summary of Significant Accounting Policies (Details) - Policy Details</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesDetailsAdditionalDetails" roleURI="http://www.travelers.com/role/SummaryofSignificantAccountingPoliciesDetailsAdditionalDetails">
+        <link:definition>9955528 - Disclosure - Summary of Significant Accounting Policies (Details) - Additional Details</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesDetailsEquityMethodInvestment" roleURI="http://www.travelers.com/role/SummaryofSignificantAccountingPoliciesDetailsEquityMethodInvestment">
+        <link:definition>9955529 - Disclosure - Summary of Significant Accounting Policies (Details) - Equity Method Investment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationDetails" roleURI="http://www.travelers.com/role/SegmentInformationDetails">
+        <link:definition>9955530 - Disclosure - Segment Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationDetailsPriorYearDevelopmentandCatastrophes" roleURI="http://www.travelers.com/role/SegmentInformationDetailsPriorYearDevelopmentandCatastrophes">
+        <link:definition>9955531 - Disclosure - Segment Information (Details) - Prior Year Development and Catastrophes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationDetailsAmortizationandDepreciation" roleURI="http://www.travelers.com/role/SegmentInformationDetailsAmortizationandDepreciation">
+        <link:definition>9955532 - Disclosure - Segment Information (Details) - Amortization and Depreciation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationDetailsNetWrittenPremiums" roleURI="http://www.travelers.com/role/SegmentInformationDetailsNetWrittenPremiums">
+        <link:definition>9955533 - Disclosure - Segment Information (Details) - Net Written Premiums</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationDetailsAssetsbySegment" roleURI="http://www.travelers.com/role/SegmentInformationDetailsAssetsbySegment">
+        <link:definition>9955534 - Disclosure - Segment Information (Details) - Assets by Segment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationDetailsEnterpriseWideDisclosures" roleURI="http://www.travelers.com/role/SegmentInformationDetailsEnterpriseWideDisclosures">
+        <link:definition>9955535 - Disclosure - Segment Information (Details) - Enterprise-Wide Disclosures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsDetailsFixedMaturities" roleURI="http://www.travelers.com/role/InvestmentsDetailsFixedMaturities">
+        <link:definition>9955536 - Disclosure - Investments (Details) - Fixed Maturities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsDetailsContractualMaturities" roleURI="http://www.travelers.com/role/InvestmentsDetailsContractualMaturities">
+        <link:definition>9955537 - Disclosure - Investments (Details) - Contractual Maturities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsDetailsFixedMaturitiesNarrative" roleURI="http://www.travelers.com/role/InvestmentsDetailsFixedMaturitiesNarrative">
+        <link:definition>9955538 - Disclosure - Investments (Details) - Fixed Maturities Narrative</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsDetailsEquitySecurities" roleURI="http://www.travelers.com/role/InvestmentsDetailsEquitySecurities">
+        <link:definition>9955539 - Disclosure - Investments (Details) - Equity Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsDetailsAdditionalInformation" roleURI="http://www.travelers.com/role/InvestmentsDetailsAdditionalInformation">
+        <link:definition>9955540 - Disclosure - Investments (Details) - Additional Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsDetailsUnrealizedLosses" roleURI="http://www.travelers.com/role/InvestmentsDetailsUnrealizedLosses">
+        <link:definition>9955541 - Disclosure - Investments (Details) - Unrealized Losses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsDetailsImpairmentCharges" roleURI="http://www.travelers.com/role/InvestmentsDetailsImpairmentCharges">
+        <link:definition>9955542 - Disclosure - Investments (Details) - Impairment Charges</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsDetailsAllowanceforExpectedCreditLosses" roleURI="http://www.travelers.com/role/InvestmentsDetailsAllowanceforExpectedCreditLosses">
+        <link:definition>9955543 - Disclosure - Investments (Details) - Allowance for Expected Credit Losses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsDetailsConcentrationsandCreditQuality" roleURI="http://www.travelers.com/role/InvestmentsDetailsConcentrationsandCreditQuality">
+        <link:definition>9955544 - Disclosure - Investments (Details) - Concentrations and Credit Quality</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsDetailsNetInvestmentIncome" roleURI="http://www.travelers.com/role/InvestmentsDetailsNetInvestmentIncome">
+        <link:definition>9955545 - Disclosure - Investments (Details) - Net Investment Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsDetailsNetUnrealizedInvestmentGainsLosses" roleURI="http://www.travelers.com/role/InvestmentsDetailsNetUnrealizedInvestmentGainsLosses">
+        <link:definition>9955546 - Disclosure - Investments (Details) - Net Unrealized Investment Gains (Losses)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsDetailsAdditionalInformation" roleURI="http://www.travelers.com/role/FairValueMeasurementsDetailsAdditionalInformation">
+        <link:definition>9955547 - Disclosure - Fair Value Measurements (Details) - Additional Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsDetailsFairValueHierarchy" roleURI="http://www.travelers.com/role/FairValueMeasurementsDetailsFairValueHierarchy">
+        <link:definition>9955548 - Disclosure - Fair Value Measurements (Details) - Fair Value Hierarchy</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsDetailsChangesinLevel3" roleURI="http://www.travelers.com/role/FairValueMeasurementsDetailsChangesinLevel3">
+        <link:definition>9955549 - Disclosure - Fair Value Measurements (Details) - Changes in Level 3</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsDetailsFinancialInstruments" roleURI="http://www.travelers.com/role/FairValueMeasurementsDetailsFinancialInstruments">
+        <link:definition>9955550 - Disclosure - Fair Value Measurements (Details) - Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforExpectedCreditLossesDetailsChangesintheAllowanceforExpectedCreditLossesonPremiumsReceivable" roleURI="http://www.travelers.com/role/AllowanceforExpectedCreditLossesDetailsChangesintheAllowanceforExpectedCreditLossesonPremiumsReceivable">
+        <link:definition>9955551 - Disclosure - Allowance for Expected Credit Losses (Details) - Changes in the Allowance for Expected Credit Losses on Premiums Receivable</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforExpectedCreditLossesDetailsChangesintheAllowanceforEstimatedUncollectibleReinsurance" roleURI="http://www.travelers.com/role/AllowanceforExpectedCreditLossesDetailsChangesintheAllowanceforEstimatedUncollectibleReinsurance">
+        <link:definition>9955552 - Disclosure - Allowance for Expected Credit Losses (Details) - Changes in the Allowance for Estimated Uncollectible Reinsurance</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforExpectedCreditLossesDetailsNarrative" roleURI="http://www.travelers.com/role/AllowanceforExpectedCreditLossesDetailsNarrative">
+        <link:definition>9955553 - Disclosure - Allowance for Expected Credit Losses (Details) - Narrative</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforExpectedCreditLossesDetailsChangesintheAllowanceforExpectedCreditLossesonContractholderReceivables" roleURI="http://www.travelers.com/role/AllowanceforExpectedCreditLossesDetailsChangesintheAllowanceforExpectedCreditLossesonContractholderReceivables">
+        <link:definition>9955554 - Disclosure - Allowance for Expected Credit Losses (Details) - Changes in the Allowance for Expected Credit Losses on Contractholder Receivables</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReinsuranceDetails" roleURI="http://www.travelers.com/role/ReinsuranceDetails">
+        <link:definition>9955555 - Disclosure - Reinsurance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsDetailsGoodwill" roleURI="http://www.travelers.com/role/GoodwillandOtherIntangibleAssetsDetailsGoodwill">
+        <link:definition>9955556 - Disclosure - Goodwill and Other Intangible Assets (Details) - Goodwill</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsDetailsOtherIntangibleAssets" roleURI="http://www.travelers.com/role/GoodwillandOtherIntangibleAssetsDetailsOtherIntangibleAssets">
+        <link:definition>9955557 - Disclosure - Goodwill and Other Intangible Assets (Details) - Other Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InsuranceClaimReservesDetails" roleURI="http://www.travelers.com/role/InsuranceClaimReservesDetails">
+        <link:definition>9955558 - Disclosure - Insurance Claim Reserves (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InsuranceClaimReservesDetailsPriorYearReserveDevelopment" roleURI="http://www.travelers.com/role/InsuranceClaimReservesDetailsPriorYearReserveDevelopment">
+        <link:definition>9955559 - Disclosure - Insurance Claim Reserves (Details) - Prior Year Reserve Development</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InsuranceClaimReservesDetailsClaimsandClaimAdjustmentExpensesReservesSummary" roleURI="http://www.travelers.com/role/InsuranceClaimReservesDetailsClaimsandClaimAdjustmentExpensesReservesSummary">
+        <link:definition>9955560 - Disclosure - Insurance Claim Reserves (Details) - Claims and Claim Adjustment Expenses Reserves Summary</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InsuranceClaimReservesDetailsClaimDevelopment" roleURI="http://www.travelers.com/role/InsuranceClaimReservesDetailsClaimDevelopment">
+        <link:definition>9955561 - Disclosure - Insurance Claim Reserves (Details) - Claim Development</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InsuranceClaimReservesDetailsHistoricalClaimDuration" roleURI="http://www.travelers.com/role/InsuranceClaimReservesDetailsHistoricalClaimDuration">
+        <link:definition>9955562 - Disclosure - Insurance Claim Reserves (Details) - Historical Claim Duration</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InsuranceClaimReservesDetailsAsbestosandEnvironmentalReserves" roleURI="http://www.travelers.com/role/InsuranceClaimReservesDetailsAsbestosandEnvironmentalReserves">
+        <link:definition>9955563 - Disclosure - Insurance Claim Reserves (Details) - Asbestos and Environmental Reserves</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InsuranceClaimReservesDetailsSubsequentEvent" roleURI="http://www.travelers.com/role/InsuranceClaimReservesDetailsSubsequentEvent">
+        <link:definition>9955564 - Disclosure - Insurance Claim Reserves (Details) - Subsequent Event</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDetails" roleURI="http://www.travelers.com/role/DebtDetails">
+        <link:definition>9955565 - Disclosure - Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDetailsDebtIssuance" roleURI="http://www.travelers.com/role/DebtDetailsDebtIssuance">
+        <link:definition>9955566 - Disclosure - Debt (Details) - Debt Issuance</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDetailsCommercialPaper" roleURI="http://www.travelers.com/role/DebtDetailsCommercialPaper">
+        <link:definition>9955567 - Disclosure - Debt (Details) - Commercial Paper</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDetailsJuniorSubordinatedDebtandDebtGuaranteed" roleURI="http://www.travelers.com/role/DebtDetailsJuniorSubordinatedDebtandDebtGuaranteed">
+        <link:definition>9955568 - Disclosure - Debt (Details) - Junior Subordinated Debt and Debt Guaranteed</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDetailsMaturities" roleURI="http://www.travelers.com/role/DebtDetailsMaturities">
+        <link:definition>9955569 - Disclosure - Debt (Details) - Maturities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDetailsLineofCredit" roleURI="http://www.travelers.com/role/DebtDetailsLineofCredit">
+        <link:definition>9955570 - Disclosure - Debt (Details) - Line of Credit</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityandDividendAvailabilityDetails" roleURI="http://www.travelers.com/role/ShareholdersEquityandDividendAvailabilityDetails">
+        <link:definition>9955571 - Disclosure - Shareholders' Equity and Dividend Availability (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityandDividendAvailabilityDetailsDividendAvailability" roleURI="http://www.travelers.com/role/ShareholdersEquityandDividendAvailabilityDetailsDividendAvailability">
+        <link:definition>9955572 - Disclosure - Shareholders' Equity and Dividend Availability (Details) - Dividend Availability</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherComprehensiveIncomeLossandAccumulatedOtherComprehensiveIncomeLossDetails" roleURI="http://www.travelers.com/role/OtherComprehensiveIncomeLossandAccumulatedOtherComprehensiveIncomeLossDetails">
+        <link:definition>9955573 - Disclosure - Other Comprehensive Income (Loss) and Accumulated Other Comprehensive Income (Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherComprehensiveIncomeLossandAccumulatedOtherComprehensiveIncomeLossDetailsReclassifications" roleURI="http://www.travelers.com/role/OtherComprehensiveIncomeLossandAccumulatedOtherComprehensiveIncomeLossDetailsReclassifications">
+        <link:definition>9955574 - Disclosure - Other Comprehensive Income (Loss) and Accumulated Other Comprehensive Income (Loss) (Details) - Reclassifications</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsperShareDetails" roleURI="http://www.travelers.com/role/EarningsperShareDetails">
+        <link:definition>9955575 - Disclosure - Earnings per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.travelers.com/role/IncomeTaxesDetails">
+        <link:definition>9955576 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetailsEffectiveTaxRate" roleURI="http://www.travelers.com/role/IncomeTaxesDetailsEffectiveTaxRate">
+        <link:definition>9955577 - Disclosure - Income Taxes (Details) - Effective Tax Rate</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetailsDeferredTaxAssetandLiability" roleURI="http://www.travelers.com/role/IncomeTaxesDetailsDeferredTaxAssetandLiability">
+        <link:definition>9955578 - Disclosure - Income Taxes (Details) - Deferred Tax Asset and Liability</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetailsNOLCarryforwards" roleURI="http://www.travelers.com/role/IncomeTaxesDetailsNOLCarryforwards">
+        <link:definition>9955579 - Disclosure - Income Taxes (Details) - NOL Carryforwards</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetailsUnrecognizedTaxBenefits" roleURI="http://www.travelers.com/role/IncomeTaxesDetailsUnrecognizedTaxBenefits">
+        <link:definition>9955580 - Disclosure - Income Taxes (Details) - Unrecognized Tax Benefits</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedIncentiveCompensationDetails" roleURI="http://www.travelers.com/role/SharebasedIncentiveCompensationDetails">
+        <link:definition>9955581 - Disclosure - Share-based Incentive Compensation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedIncentiveCompensationDetailsRestrictedStock" roleURI="http://www.travelers.com/role/ShareBasedIncentiveCompensationDetailsRestrictedStock">
+        <link:definition>9955582 - Disclosure - Share-Based Incentive Compensation (Details) - Restricted Stock</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedIncentiveCompensationDetailsCostRecognition" roleURI="http://www.travelers.com/role/ShareBasedIncentiveCompensationDetailsCostRecognition">
+        <link:definition>9955583 - Disclosure - Share-Based Incentive Compensation (Details) - Cost Recognition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionPlansRetirementBenefitsandSavingsPlansDetails" roleURI="http://www.travelers.com/role/PensionPlansRetirementBenefitsandSavingsPlansDetails">
+        <link:definition>9955584 - Disclosure - Pension Plans, Retirement Benefits and Savings Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionPlansRetirementBenefitsandSavingsPlansDetailsAdditionalPensionDisclosures" roleURI="http://www.travelers.com/role/PensionPlansRetirementBenefitsandSavingsPlansDetailsAdditionalPensionDisclosures">
+        <link:definition>9955585 - Disclosure - Pension Plans, Retirement Benefits and Savings Plans (Details) - Additional Pension Disclosures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionPlansRetirementBenefitsandSavingsPlansDetailsAssumptions" roleURI="http://www.travelers.com/role/PensionPlansRetirementBenefitsandSavingsPlansDetailsAssumptions">
+        <link:definition>9955586 - Disclosure - Pension Plans, Retirement Benefits and Savings Plans (Details) - Assumptions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionPlansRetirementBenefitsandSavingsPlansDetailsAdditionalInformation" roleURI="http://www.travelers.com/role/PensionPlansRetirementBenefitsandSavingsPlansDetailsAdditionalInformation">
+        <link:definition>9955587 - Disclosure - Pension Plans, Retirement Benefits and Savings Plans (Details) - Additional Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionPlansRetirementBenefitsandSavingsPlansDetailsFairValue" roleURI="http://www.travelers.com/role/PensionPlansRetirementBenefitsandSavingsPlansDetailsFairValue">
+        <link:definition>9955588 - Disclosure - Pension Plans, Retirement Benefits and Savings Plans (Details) - Fair Value</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionPlansRetirementBenefitsandSavingsPlansDetailsFuturePayments" roleURI="http://www.travelers.com/role/PensionPlansRetirementBenefitsandSavingsPlansDetailsFuturePayments">
+        <link:definition>9955589 - Disclosure - Pension Plans, Retirement Benefits and Savings Plans (Details) - Future Payments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionPlansRetirementBenefitsandSavingsPlansDetailsSavingsPlan" roleURI="http://www.travelers.com/role/PensionPlansRetirementBenefitsandSavingsPlansDetailsSavingsPlan">
+        <link:definition>9955590 - Disclosure - Pension Plans, Retirement Benefits and Savings Plans (Details) - Savings Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesDetails" roleURI="http://www.travelers.com/role/LeasesDetails">
+        <link:definition>9955591 - Disclosure - Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesDetailsContractualMaturities" roleURI="http://www.travelers.com/role/LeasesDetailsContractualMaturities">
+        <link:definition>9955592 - Disclosure - Leases (Details) - Contractual Maturities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesDetailsContractualMaturities_1" roleURI="http://www.travelers.com/role/LeasesDetailsContractualMaturities_1">
+        <link:definition>9955592 - Disclosure - Leases (Details) - Contractual Maturities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ContingenciesCommitmentsandGuaranteesDetailsCommitments" roleURI="http://www.travelers.com/role/ContingenciesCommitmentsandGuaranteesDetailsCommitments">
+        <link:definition>9955593 - Disclosure - Contingencies, Commitments and Guarantees (Details) - Commitments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ContingenciesCommitmentsandGuaranteesDetailsGuarantees" roleURI="http://www.travelers.com/role/ContingenciesCommitmentsandGuaranteesDetailsGuarantees">
+        <link:definition>9955594 - Disclosure - Contingencies, Commitments and Guarantees (Details) - Guarantees</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NoncashInvestingandFinancingActivitiesDetails" roleURI="http://www.travelers.com/role/NoncashInvestingandFinancingActivitiesDetails">
+        <link:definition>9955595 - Disclosure - Noncash Investing and Financing Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIDetailsCondensedIncomeStatement" roleURI="http://www.travelers.com/role/ScheduleIIDetailsCondensedIncomeStatement">
+        <link:definition>9955596 - Disclosure - Schedule II (Details) - Condensed Income Statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIDetailsCondensedStatementofComprehensiveIncome" roleURI="http://www.travelers.com/role/ScheduleIIDetailsCondensedStatementofComprehensiveIncome">
+        <link:definition>9955597 - Disclosure - Schedule II (Details) - Condensed Statement of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIDetailsCondensedStatementofComprehensiveIncome_1" roleURI="http://www.travelers.com/role/ScheduleIIDetailsCondensedStatementofComprehensiveIncome_1">
+        <link:definition>9955597 - Disclosure - Schedule II (Details) - Condensed Statement of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIDetailsCondensedBalanceSheet" roleURI="http://www.travelers.com/role/ScheduleIIDetailsCondensedBalanceSheet">
+        <link:definition>9955598 - Disclosure - Schedule II (Details) - Condensed Balance Sheet</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIDetailsCondensedStatementofCashFlows" roleURI="http://www.travelers.com/role/ScheduleIIDetailsCondensedStatementofCashFlows">
+        <link:definition>9955599 - Disclosure - Schedule II (Details) - Condensed Statement of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIDetailsGuarantees" roleURI="http://www.travelers.com/role/ScheduleIIDetailsGuarantees">
+        <link:definition>9955600 - Disclosure - Schedule II (Details) - Guarantees</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIDetailsGuaranteesSchedule" roleURI="http://www.travelers.com/role/ScheduleIIDetailsGuaranteesSchedule">
+        <link:definition>9955601 - Disclosure - Schedule II (Details) - Guarantees Schedule</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIIDetails" roleURI="http://www.travelers.com/role/ScheduleIIIDetails">
+        <link:definition>9955602 - Disclosure - Schedule III (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleVDetails" roleURI="http://www.travelers.com/role/ScheduleVDetails">
+        <link:definition>9955603 - Disclosure - Schedule V (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleVIDetails" roleURI="http://www.travelers.com/role/ScheduleVIDetails">
+        <link:definition>9955604 - Disclosure - Schedule VI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="trv_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="trv_InsuranceFeeIncome" abstract="false" name="InsuranceFeeIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_ChangeInNetUnrealizedGainLossOnInvestmentSecuritiesHavingCreditLossesRecognizedInConsolidatedStatementOfIncomeBeforeTaxPortionAttributableToParent" abstract="false" name="ChangeInNetUnrealizedGainLossOnInvestmentSecuritiesHavingCreditLossesRecognizedInConsolidatedStatementOfIncomeBeforeTaxPortionAttributableToParent" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_ContractholderReceivables" abstract="false" name="ContractholderReceivables" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_ContractholderPayables" abstract="false" name="ContractholderPayables" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_ContractholderReceivablesAllowanceForCreditLoss" abstract="false" name="ContractholderReceivablesAllowanceForCreditLoss" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_SecuritiesTransactionsInCourseOfSettlement" abstract="false" name="SecuritiesTransactionsInCourseOfSettlement" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_OtherComprehensiveIncomeAndAccumulatedOtherComprehensiveIncomeDisclosureAbstract" abstract="true" name="OtherComprehensiveIncomeAndAccumulatedOtherComprehensiveIncomeDisclosureAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="trv_ContingenciesCommitmentsandGuaranteesAbstract" abstract="true" name="ContingenciesCommitmentsandGuaranteesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="trv_NetInvestmentIncomePolicyPolicyTextBlock" abstract="false" name="NetInvestmentIncomePolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_InvestmentGainsAndLossesPolicyPolicyTextBlock" abstract="false" name="InvestmentGainsAndLossesPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_InvestmentImpairmentsPolicyPolicyTextBlock" abstract="false" name="InvestmentImpairmentsPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_ContractholderReceivablesAndPayablesPolicyPolicyTextBlock" abstract="false" name="ContractholderReceivablesAndPayablesPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_OtherLiabilitiesPolicyPolicyTextBlock" abstract="false" name="OtherLiabilitiesPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_FeeIncomePolicyPolicyTextBlock" abstract="false" name="FeeIncomePolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_OtherRevenuesPolicyPolicyTextBlock" abstract="false" name="OtherRevenuesPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_NetWrittenPremiumsByMarketTableTextBlock" abstract="false" name="NetWrittenPremiumsByMarketTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_PeriodForWhichFairValueIsLessThanEightyPercentOfAmortizedCostTableTextBlock" abstract="false" name="PeriodForWhichFairValueIsLessThanEightyPercentOfAmortizedCostTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_ContractholderReceivablesAllowanceForCreditLossTableTextBlock" abstract="false" name="ContractholderReceivablesAllowanceForCreditLossTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_ReinsuranceRecoverablesTableTextBlock" abstract="false" name="ReinsuranceRecoverablesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_ClaimsAndClaimAdjustmentExpenseReservesTableTextBlock" abstract="false" name="ClaimsAndClaimAdjustmentExpenseReservesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_UnamortizedFairValueAdjustmentsAndRelatedEffectiveInterestRateTableTextBlock" abstract="false" name="UnamortizedFairValueAdjustmentsAndRelatedEffectiveInterestRateTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="trv_CorvusMember" abstract="true" name="CorvusMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="trv_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedIntangibleAssetsIncludingGoodwill" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedIntangibleAssetsIncludingGoodwill" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_RealEstateMaximumLifeUsedForDepreciation" abstract="false" name="RealEstateMaximumLifeUsedForDepreciation" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_MaximumOriginalMaturityOfShortTermSecurities" abstract="false" name="MaximumOriginalMaturityOfShortTermSecurities" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_AvailabilityOfFinancialInformationProvidedByPrivateEquityAndRealEstatePartnershipsMaximum" abstract="false" name="AvailabilityOfFinancialInformationProvidedByPrivateEquityAndRealEstatePartnershipsMaximum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_AvailabilityOfFinancialInformationProvidedByHedgeFunds" abstract="false" name="AvailabilityOfFinancialInformationProvidedByHedgeFunds" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_EstimatedRecoveryTimeForSecuritiesForWhichIssuerIsInBankruptcy" abstract="false" name="EstimatedRecoveryTimeForSecuritiesForWhichIssuerIsInBankruptcy" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_EstimatedRecoveryTimeForSecuritiesForWhichIssuerIsFinanciallyTroubledButNotInBankruptcy" abstract="false" name="EstimatedRecoveryTimeForSecuritiesForWhichIssuerIsFinanciallyTroubledButNotInBankruptcy" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_MinimumCollateralProvidedByBorrowersOfSecuritiesAsPercentageOfMarketValueOfLoanedSecuritiesPlusAccruedInterest" abstract="false" name="MinimumCollateralProvidedByBorrowersOfSecuritiesAsPercentageOfMarketValueOfLoanedSecuritiesPlusAccruedInterest" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_MinimumExpectedPaymentPeriodForLossBasedAssessmentsAndRecoveries" abstract="false" name="MinimumExpectedPaymentPeriodForLossBasedAssessmentsAndRecoveries" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_NetWrittenPremiumsForParticipatingDividendPoliciesAsPercentOfTotalNetWrittenPremiums" abstract="false" name="NetWrittenPremiumsForParticipatingDividendPoliciesAsPercentOfTotalNetWrittenPremiums" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_PercentOfCapitalProvidedByInternationalToLloydsSyndicate" abstract="false" name="PercentOfCapitalProvidedByInternationalToLloydsSyndicate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_NumberOfPrincipalBusinessUnitsThroughWhichLloydsSyndicateWritesBusiness" abstract="false" name="NumberOfPrincipalBusinessUnitsThroughWhichLloydsSyndicateWritesBusiness" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="trv_JMalucelliMember" abstract="true" name="JMalucelliMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_CorporateAndReconcilingItemsMember" abstract="true" name="CorporateAndReconcilingItemsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_BusinessAndInternationalInsuranceMember" abstract="true" name="BusinessAndInternationalInsuranceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_BondAndSpecialtyInsuranceMember" abstract="true" name="BondAndSpecialtyInsuranceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_PersonalInsuranceMember" abstract="true" name="PersonalInsuranceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_WorkersCompensationMember" abstract="true" name="WorkersCompensationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_AutomobileMember" abstract="true" name="AutomobileMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_PropertyMember" abstract="true" name="PropertyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_CommercialMultiPerilMember" abstract="true" name="CommercialMultiPerilMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_OtherProductsAndServicesMember" abstract="true" name="OtherProductsAndServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_FidelityAndSuretyMember" abstract="true" name="FidelityAndSuretyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_OtherBondAndSpecialtyProductsAndServicesMember" abstract="true" name="OtherBondAndSpecialtyProductsAndServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_HomeownersAndOtherMember" abstract="true" name="HomeownersAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_RevenuesExcludingRealizedGainLoss" abstract="false" name="RevenuesExcludingRealizedGainLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_OperatingIncomeLossNetOfTax" abstract="false" name="OperatingIncomeLossNetOfTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_NetRealizedInvestmentGainsLossesAfterTax" abstract="false" name="NetRealizedInvestmentGainsLossesAfterTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_AfterTaxInterestExpense" abstract="false" name="AfterTaxInterestExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_NetFavorablePriorYearReserveDevelopmentImpactingResultsOfOperations" abstract="false" name="NetFavorablePriorYearReserveDevelopmentImpactingResultsOfOperations" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_PolicyholderBenefitsAndClaimsIncurredNetCatastropheLosses" abstract="false" name="PolicyholderBenefitsAndClaimsIncurredNetCatastropheLosses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_SelectAccountsMember" abstract="true" name="SelectAccountsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_MiddleMarketMember" abstract="true" name="MiddleMarketMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_NationalAccountsMember" abstract="true" name="NationalAccountsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_OtherDomesticMember" abstract="true" name="OtherDomesticMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_ManagementLiabilityMember" abstract="true" name="ManagementLiabilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SuretyMember" abstract="true" name="SuretyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_OtherNonUnitedStatesMember" abstract="true" name="OtherNonUnitedStatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_CustomerConcentrationRiskThresholdForDisclosurePercentage" abstract="false" name="CustomerConcentrationRiskThresholdForDisclosurePercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_USStatesAndPoliticalSubdivisionsLocalGeneralObligationMember" abstract="true" name="USStatesAndPoliticalSubdivisionsLocalGeneralObligationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_USStatesAndPoliticalSubdivisionsRevenueMember" abstract="true" name="USStatesAndPoliticalSubdivisionsRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_USStatesAndPoliticalSubdivisionsStateGeneralObligationMember" abstract="true" name="USStatesAndPoliticalSubdivisionsStateGeneralObligationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_USStatesAndPoliticalSubdivisionsPreRefundedMember" abstract="true" name="USStatesAndPoliticalSubdivisionsPreRefundedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_MortgageBackedSecuritiesIssuedByUSOrCADGovernmentSponsoredEnterprisesMember" abstract="true" name="MortgageBackedSecuritiesIssuedByUSOrCADGovernmentSponsoredEnterprisesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_NonGuaranteedCollateralizedDebtObligationsMember" abstract="true" name="NonGuaranteedCollateralizedDebtObligationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_CommercialMortgageBackedSecuritiesContainingGuaranteesByUSGovernmentOrGovernmentSponsoredEnterpriseMember" abstract="true" name="CommercialMortgageBackedSecuritiesContainingGuaranteesByUSGovernmentOrGovernmentSponsoredEnterpriseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_CommercialMortgageBackedSecuritiesNonGuaranteedSecuritiesMember" abstract="true" name="CommercialMortgageBackedSecuritiesNonGuaranteedSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_PercentGuaranteedByOrFullyCollateralizedBySecuritiesIssuedByGnmaFnmaOrFhlmc" abstract="false" name="PercentGuaranteedByOrFullyCollateralizedBySecuritiesIssuedByGnmaFnmaOrFhlmc" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_DebtSecuritiesAvailableForSaleSalesRealizedLoss" abstract="false" name="DebtSecuritiesAvailableForSaleSalesRealizedLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_DebtSecuritiesAvailableForSaleEarlyRedemptionRealizedLoss" abstract="false" name="DebtSecuritiesAvailableForSaleEarlyRedemptionRealizedLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_PledgedFinancialInstrumentsNotSeparatelyReportedSecuritiesForVariousObligations" abstract="false" name="PledgedFinancialInstrumentsNotSeparatelyReportedSecuritiesForVariousObligations" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_FairValueOfOwnedSecuritiesPledgedIntoALloydsTrustAccountToSupportCapitalRequirementsForTheCompanysOperationsAtLloyds" abstract="false" name="FairValueOfOwnedSecuritiesPledgedIntoALloydsTrustAccountToSupportCapitalRequirementsForTheCompanysOperationsAtLloyds" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_CombinedAverageDaysToMaturityOfShortTermSecurities" abstract="false" name="CombinedAverageDaysToMaturityOfShortTermSecurities" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_MinimumVieEquityInterestPercentageToBeConsideredSignificant" abstract="false" name="MinimumVieEquityInterestPercentageToBeConsideredSignificant" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_AvailableForSaleSecuritiesForWhichFairValueIsLessThanEightyPercentOfAmortizedCostThreeMonthsOrLess" abstract="false" name="AvailableForSaleSecuritiesForWhichFairValueIsLessThanEightyPercentOfAmortizedCostThreeMonthsOrLess" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_AvailableForSaleSecuritiesForWhichFairValueIsLessThanEightyPercentOfAmortizedCostGreaterThanThreeMonthsSixMonthsOrLess" abstract="false" name="AvailableForSaleSecuritiesForWhichFairValueIsLessThanEightyPercentOfAmortizedCostGreaterThanThreeMonthsSixMonthsOrLess" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_AvailableForSaleSecuritiesForWhichFairValueIsLessThanEightyPercentOfAmortizedCostGreaterThanSixMonthsTwelveMonthsOrLess" abstract="false" name="AvailableForSaleSecuritiesForWhichFairValueIsLessThanEightyPercentOfAmortizedCostGreaterThanSixMonthsTwelveMonthsOrLess" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_AvailableForSaleSecuritiesForWhichFairValueIsLessThanEightyPercentOfAmortizedCostGreaterThanTwelveMonths" abstract="false" name="AvailableForSaleSecuritiesForWhichFairValueIsLessThanEightyPercentOfAmortizedCostGreaterThanTwelveMonths" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_AvailableForSaleSecuritiesForWhichFairValueIsLessThanEightyPercentOfAmortizedCostTotal" abstract="false" name="AvailableForSaleSecuritiesForWhichFairValueIsLessThanEightyPercentOfAmortizedCostTotal" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_DebtSecuritiesAvailableForSaleTotalCreditImpairmentChargesRecognizedInNetRealizedInvestmentGainsLosses" abstract="false" name="DebtSecuritiesAvailableForSaleTotalCreditImpairmentChargesRecognizedInNetRealizedInvestmentGainsLosses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_TotalNetImpairmentChargesIncludingCreditImpairmentsReportedInNetRealizedInvestmentGainsLosses" abstract="false" name="TotalNetImpairmentChargesIncludingCreditImpairmentsReportedInNetRealizedInvestmentGainsLosses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_DebtSecuritiesAvailableForSaleCreditLossesRecognizedInEarningsForThePeriodAsPercentageOfFixedMaturityPortfolioOnPretaxBasis" abstract="false" name="DebtSecuritiesAvailableForSaleCreditLossesRecognizedInEarningsForThePeriodAsPercentageOfFixedMaturityPortfolioOnPretaxBasis" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_DebtSecuritiesAvailableForSaleCreditLossesRecognizedInEarningsForThePeriodAsPercentageOfShareholdersEquityOnAfterTaxBasis" abstract="false" name="DebtSecuritiesAvailableForSaleCreditLossesRecognizedInEarningsForThePeriodAsPercentageOfShareholdersEquityOnAfterTaxBasis" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_AccumulatedNetUnrealizedInvestmentGainLossAndOtherThanTemporaryImpairmentMember" abstract="true" name="AccumulatedNetUnrealizedInvestmentGainLossAndOtherThanTemporaryImpairmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_ChangeInNetUnrealizedInvestmentGainsLossesRollForward" abstract="true" name="ChangeInNetUnrealizedInvestmentGainsLossesRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="trv_PercentOfFixedMaturitiesForWhichPricingServiceEstimatesFairValue" abstract="false" name="PercentOfFixedMaturitiesForWhichPricingServiceEstimatesFairValue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_PercentChangeInMonthlyPriceRequiringEvaluation" abstract="false" name="PercentChangeInMonthlyPriceRequiringEvaluation" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_InvestmentsInVariousNonpublicCommonAndPreferredEquitySecuritiesMember" abstract="true" name="InvestmentsInVariousNonpublicCommonAndPreferredEquitySecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_InvestmentsInVariousPubliclyTradedSecuritiesMember" abstract="true" name="InvestmentsInVariousPubliclyTradedSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_ReinsuranceRecoverablesAfterDeductionOfMandatoryPoolsAndAssociationsBeforeAllowanceMember" abstract="true" name="ReinsuranceRecoverablesAfterDeductionOfMandatoryPoolsAndAssociationsBeforeAllowanceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_ReinsuranceRecoverablesAfterDeductionOfMandatoryPoolsAndAssociationsBeforeAllowanceRatedByAMBestMember" abstract="true" name="ReinsuranceRecoverablesAfterDeductionOfMandatoryPoolsAndAssociationsBeforeAllowanceRatedByAMBestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_RatedByAMBestMember" abstract="true" name="RatedByAMBestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_NotRatedByAMBestMember" abstract="true" name="NotRatedByAMBestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_CaptiveInsuranceCompaniesMember" abstract="true" name="CaptiveInsuranceCompaniesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_OtherCompaniesNotRatedByAMBestMember" abstract="true" name="OtherCompaniesNotRatedByAMBestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_CreditRatingAMBestProvidedRatingMember" abstract="true" name="CreditRatingAMBestProvidedRatingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_AMBestAMinusRatingOrBetterMember" abstract="true" name="AMBestAMinusRatingOrBetterMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_ContractholderReceivablesAllowanceForCreditLossRollForward" abstract="true" name="ContractholderReceivablesAllowanceForCreditLossRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="trv_ContractholderReceivablesCreditLossExpenseReversal" abstract="false" name="ContractholderReceivablesCreditLossExpenseReversal" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_ContractholderReceivablesLossOnUncollectibleAccountsInPeriod" abstract="false" name="ContractholderReceivablesLossOnUncollectibleAccountsInPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_PercentageOfResidualMarketBusinessWrittenDirectlyForMandatoryPoolsAndCededBackToMandatoryPools" abstract="false" name="PercentageOfResidualMarketBusinessWrittenDirectlyForMandatoryPoolsAndCededBackToMandatoryPools" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_ReinsuranceRecoverablesGrossExcludingStructuredSettlementsAndMandatoryPoolsAndAssociations" abstract="false" name="ReinsuranceRecoverablesGrossExcludingStructuredSettlementsAndMandatoryPoolsAndAssociations" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_ReinsuranceRecoverablesStructuredSettlements" abstract="false" name="ReinsuranceRecoverablesStructuredSettlements" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_ReinsuranceRecoverablesMandatoryPoolsAndAssociations" abstract="false" name="ReinsuranceRecoverablesMandatoryPoolsAndAssociations" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_TerrorismRiskInsuranceProgramAnnualAggregateIndustryLossMinimumInOrderForLossToBeCoveredMaximum" abstract="false" name="TerrorismRiskInsuranceProgramAnnualAggregateIndustryLossMinimumInOrderForLossToBeCoveredMaximum" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_TerrorismRiskInsuranceProgramReimbursedPercentageMinimum" abstract="false" name="TerrorismRiskInsuranceProgramReimbursedPercentageMinimum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_TerrorismRiskInsuranceProgramDeductiblePercentage" abstract="false" name="TerrorismRiskInsuranceProgramDeductiblePercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_TerrorismRiskInsuranceProgramCompanysEstimatedDeductible" abstract="false" name="TerrorismRiskInsuranceProgramCompanysEstimatedDeductible" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_TerrorismRiskInsuranceProgramAnnualCap" abstract="false" name="TerrorismRiskInsuranceProgramAnnualCap" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_TerrorismRiskInsuranceProgramLossesTriggeringProgramCoverageSinceEstablishmentOfProgram" abstract="false" name="TerrorismRiskInsuranceProgramLossesTriggeringProgramCoverageSinceEstablishmentOfProgram" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_AmountOfIncreaseDecreaseInGrossClaimsAndClaimAdjustmentExpenseReserves" abstract="false" name="AmountOfIncreaseDecreaseInGrossClaimsAndClaimAdjustmentExpenseReserves" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_AmountOfIncreaseDecreaseInReinsuranceRecoverablesOnUnpaidLosses" abstract="false" name="AmountOfIncreaseDecreaseInReinsuranceRecoverablesOnUnpaidLosses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_OtherInsuranceContractsMember" abstract="true" name="OtherInsuranceContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_UnallocatedLossAdjustmentExpenseReserveMember" abstract="true" name="UnallocatedLossAdjustmentExpenseReserveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_OtherIncludingImpactsOfRetroactiveReinsuranceMember" abstract="true" name="OtherIncludingImpactsOfRetroactiveReinsuranceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SupplementalInformationForPropertyCasualtyInsuranceUnderwritersDiscountDeductedFromReservesNetOfReinsurance" abstract="false" name="SupplementalInformationForPropertyCasualtyInsuranceUnderwritersDiscountDeductedFromReservesNetOfReinsurance" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_SupplementalInformationForPropertyCasualtyInsuranceUnderwritersDiscountDeductedFromReservesAmountRelatedToCededReserves" abstract="false" name="SupplementalInformationForPropertyCasualtyInsuranceUnderwritersDiscountDeductedFromReservesAmountRelatedToCededReserves" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_ShortdurationInsuranceContractsLiabilityForUnpaidClaimsAndAllocatedClaimAdjustmentExpenseNetSubtotalForSeparatelyPresented" abstract="false" name="ShortdurationInsuranceContractsLiabilityForUnpaidClaimsAndAllocatedClaimAdjustmentExpenseNetSubtotalForSeparatelyPresented" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_AsbestosClaimReviewCurrentCaseReservesThresholdForInclusion" abstract="false" name="AsbestosClaimReviewCurrentCaseReservesThresholdForInclusion" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_SeniorNotes7.75PercentDueApril2026Member" abstract="true" name="SeniorNotes7.75PercentDueApril2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_JuniorSubordinatedDebentures7.625PercentDueDecember2027Member" abstract="true" name="JuniorSubordinatedDebentures7.625PercentDueDecember2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes6.375PercentDueMarch2033Member" abstract="true" name="SeniorNotes6.375PercentDueMarch2033Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes6.75PercentDueJune2036Member" abstract="true" name="SeniorNotes6.75PercentDueJune2036Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes6.25PercentDueJune2037Member" abstract="true" name="SeniorNotes6.25PercentDueJune2037Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes5.35PercentDueNovember2040Member" abstract="true" name="SeniorNotes5.35PercentDueNovember2040Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes4.60PercentDueAugust2043Member" abstract="true" name="SeniorNotes4.60PercentDueAugust2043Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes4.30PercentDueAugust2045Member" abstract="true" name="SeniorNotes4.30PercentDueAugust2045Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_JuniorSubordinatedDebentures8.50PercentDueDecember2045Member" abstract="true" name="JuniorSubordinatedDebentures8.50PercentDueDecember2045Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes3.75PercentDueMay2046Member" abstract="true" name="SeniorNotes3.75PercentDueMay2046Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_JuniorSubordinatedDebentures8.312PercentDueJuly2046Member" abstract="true" name="JuniorSubordinatedDebentures8.312PercentDueJuly2046Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes4.00PercentDueMay2047Member" abstract="true" name="SeniorNotes4.00PercentDueMay2047Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes4.05DueMarch72048Member" abstract="true" name="SeniorNotes4.05DueMarch72048Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes4.10DueMarch2049Member" abstract="true" name="SeniorNotes4.10DueMarch2049Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes255DueApril2050Member" abstract="true" name="SeniorNotes255DueApril2050Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes3050DueJune2051Member" abstract="true" name="SeniorNotes3050DueJune2051Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_SeniorNotes545DueMay2053Member" abstract="true" name="SeniorNotes545DueMay2053Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="trv_DebtInstrumentCarryingAmountExcludingCurrentMaturities" abstract="false" name="DebtInstrumentCarryingAmountExcludingCurrentMaturities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_DebtLongTermAndShortTerm" abstract="false" name="DebtLongTermAndShortTerm" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_UnamortizedPurchasePriceAdjustment" abstract="false" name="UnamortizedPurchasePriceAdjustment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_DebtInstrumentRedemptionPriceCalculationInterestAssumptionBasisSpread" abstract="false" name="DebtInstrumentRedemptionPriceCalculationInterestAssumptionBasisSpread" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_NumberOfJuniorSubordinatedDebenturesNotFixedToFloatingRate" abstract="false" name="NumberOfJuniorSubordinatedDebenturesNotFixedToFloatingRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="trv_NumberOfSeparateTrustsThatIssuedPreferredSecuritesToPurchaseSubordinatedDebenturesNotFixedToFloating" abstract="false" name="NumberOfSeparateTrustsThatIssuedPreferredSecuritesToPurchaseSubordinatedDebenturesNotFixedToFloating" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="trv_ImpactOfAmortizationOfFairValueAdjustmentOnInterestExpense" abstract="false" name="ImpactOfAmortizationOfFairValueAdjustmentOnInterestExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_AmountOfDebtObligationsUnconditionallyGuaranteedByParent" abstract="false" name="AmountOfDebtObligationsUnconditionallyGuaranteedByParent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_RevolvingCreditAgreementDueToExpireIn2027Member" abstract="true" name="RevolvingCreditAgreementDueToExpireIn2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_RevolvingCreditAgreementDueToExpireIn2023Member" abstract="true" name="RevolvingCreditAgreementDueToExpireIn2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_LineOfCreditFacilityMaximumPercentageOfTrustPreferredSecuritiesRelativeToTotalCapitalInDeterminingConsolidatedNetWorth" abstract="false" name="LineOfCreditFacilityMaximumPercentageOfTrustPreferredSecuritiesRelativeToTotalCapitalInDeterminingConsolidatedNetWorth" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_LineOfCreditFacilityMaximumPercentageOfTrustPreferredSecuritiesAndMandatorilyConvertibleSecuritiesRelativeToTotalCapitalInDeterminingConsolidatedNetWorth" abstract="false" name="LineOfCreditFacilityMaximumPercentageOfTrustPreferredSecuritiesAndMandatorilyConvertibleSecuritiesRelativeToTotalCapitalInDeterminingConsolidatedNetWorth" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_LineOfCreditFacilityThresholdOfShareholdersEquityReducedForGoodwillAndOtherIntangibleAssets" abstract="false" name="LineOfCreditFacilityThresholdOfShareholdersEquityReducedForGoodwillAndOtherIntangibleAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_LineOfCreditFacilityConsolidatedNetWorthThresholdStatedAsPercentageOfShareholdersEquityPerAgreement" abstract="false" name="LineOfCreditFacilityConsolidatedNetWorthThresholdStatedAsPercentageOfShareholdersEquityPerAgreement" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_LineOfCreditFacilityChangeInControlPercentage" abstract="false" name="LineOfCreditFacilityChangeInControlPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_LineOfCreditFacilityMaximumBorrowingCapacityPortionUtilizedToSupportObligationsAtLloyds" abstract="false" name="LineOfCreditFacilityMaximumBorrowingCapacityPortionUtilizedToSupportObligationsAtLloyds" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_SharesAuthorizedTotal" abstract="false" name="SharesAuthorizedTotal" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="trv_SharesAuthorizedVotingCommonStock" abstract="false" name="SharesAuthorizedVotingCommonStock" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="trv_ConnecticutInsuranceDepartmentMember" abstract="true" name="ConnecticutInsuranceDepartmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_InsuranceSubsidiariesMember" abstract="true" name="InsuranceSubsidiariesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_DeferredTaxAssetsInternallyDevelopedSoftware" abstract="false" name="DeferredTaxAssetsInternallyDevelopedSoftware" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_UnrecognizedTaxBenefitsForWhichDeductibilityIsCertainButTimingIsUncertain" abstract="false" name="UnrecognizedTaxBenefitsForWhichDeductibilityIsCertainButTimingIsUncertain" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_UnrecognizedTaxBenefitsInterestOnIncomeTaxesBenefit" abstract="false" name="UnrecognizedTaxBenefitsInterestOnIncomeTaxesBenefit" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_TheTravelersCompaniesInc2023StockIncentivePlanMember" abstract="true" name="TheTravelersCompaniesInc2023StockIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="trv_DirectorDeferredStockAwardMember" abstract="true" name="DirectorDeferredStockAwardMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingDatePeriodBeforeAnnualMeeting" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingDatePeriodBeforeAnnualMeeting" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardDisitributionPeriodAfterTerminationOfServiceAsDirector" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardDisitributionPeriodAfterTerminationOfServiceAsDirector" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsExpectedDividendPaymentPerShare" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsExpectedDividendPaymentPerShare" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedOutstandingNumber" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedOutstandingNumber" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedOutstandingWeightedAverageExercisePrice" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedOutstandingWeightedAverageExercisePrice" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="trv_SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsVestedOutstandingWeightedAverageRemainingContractualTerm1" abstract="false" name="SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsVestedOutstandingWeightedAverageRemainingContractualTerm1" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedOutstandingAggregateIntrinsicValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedOutstandingAggregateIntrinsicValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_RestrictedStockUnitsDeferredStockUnitsAndPerformanceSharesMember" abstract="true" name="RestrictedStockUnitsDeferredStockUnitsAndPerformanceSharesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_RestrictedStockUnitsAndDeferredStockUnitsMember" abstract="true" name="RestrictedStockUnitsAndDeferredStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_RestrictedStockUnitsMember" abstract="true" name="RestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementsByShareBasedPaymentAwardPerformanceSharesPerformancePeriod" abstract="false" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardPerformanceSharesPerformancePeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfPerformanceSharesToVestThresholdNotMet" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfPerformanceSharesToVestThresholdNotMet" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfSharesToVest" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfSharesToVest" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsPerformanceBasedAdjustment" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsPerformanceBasedAdjustment" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsPerformanceBasedAdjustmentWeightedAverageGrantDateFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsPerformanceBasedAdjustmentWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonvestedDividendEquivalentsNumber" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonvestedDividendEquivalentsNumber" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="trv_ShareBasedCompensationArrangementByShareBasedPaymentPerformanceAwardEstimatedAttainment" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentPerformanceAwardEstimatedAttainment" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_EstimatedAnnualForfeitureRateReflectedInShareBasedCompensationCost" abstract="false" name="EstimatedAnnualForfeitureRateReflectedInShareBasedCompensationCost" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_CompensationCostAdjustmentsForUpdatedEstimateOfPerformanceSharesDueToAttainingCertainPerformanceLevels" abstract="false" name="CompensationCostAdjustmentsForUpdatedEstimateOfPerformanceSharesDueToAttainingCertainPerformanceLevels" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_NonqualifiedAndForeignPensionPlansMember" abstract="true" name="NonqualifiedAndForeignPensionPlansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="trv_PolicyholderBenefitsAndClaimsIncurredNetMember" abstract="true" name="PolicyholderBenefitsAndClaimsIncurredNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_DefinedBenefitPlansRequiredEmployerContributions" abstract="false" name="DefinedBenefitPlansRequiredEmployerContributions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_DefinedBenefitPlansRequiredFutureEmployerContributionsInNextFiscalYear" abstract="false" name="DefinedBenefitPlansRequiredFutureEmployerContributionsInNextFiscalYear" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansForeignCurrencyExchangeRateChangeBeforeTax" abstract="false" name="OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansForeignCurrencyExchangeRateChangeBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRateServiceCost" abstract="false" name="DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRateServiceCost" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_DefinedBenefitPlanAssumptionsUsedCalculatingPeriodicBenefitCostDiscountRateInterestCost" abstract="false" name="DefinedBenefitPlanAssumptionsUsedCalculatingPeriodicBenefitCostDiscountRateInterestCost" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_DefinedBenefitPlanHealthCareCostTrendRateAssumedNextFiscalYearCompanyBaseline" abstract="false" name="DefinedBenefitPlanHealthCareCostTrendRateAssumedNextFiscalYearCompanyBaseline" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="trv_InvestmentsForLongTermGrowthMember" abstract="true" name="InvestmentsForLongTermGrowthMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_InvestmentsForNearTermBenefitPaymentsMember" abstract="true" name="InvestmentsForNearTermBenefitPaymentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_CashAndShortTermInvestmentsMember" abstract="true" name="CashAndShortTermInvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_CashAndShortTermSecuritiesOtherMember" abstract="true" name="CashAndShortTermSecuritiesOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_TheTravelers401kSavingsPlanMember" abstract="true" name="TheTravelers401kSavingsPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_DefinedContributionPlanMaximumEmployerAnnualMatchingContributionsPerEmployee" abstract="false" name="DefinedContributionPlanMaximumEmployerAnnualMatchingContributionsPerEmployee" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_DefinedContributionPlanVestingPercentageAfterVestingPeriod" abstract="false" name="DefinedContributionPlanVestingPercentageAfterVestingPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="trv_DefinedContributionPlanEmployerContributionVestingPeriod" abstract="false" name="DefinedContributionPlanEmployerContributionVestingPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="trv_OperatingLeaseAndShortTermLeaseCost" abstract="false" name="OperatingLeaseAndShortTermLeaseCost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_UnfundedCommitmentsToPrivateEquityLimitedPartnershipsRealEstatePartnershipsAndOther" abstract="false" name="UnfundedCommitmentsToPrivateEquityLimitedPartnershipsRealEstatePartnershipsAndOther" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_PaymentGuaranteeCertainInsurancePolicyObligationsMember" abstract="true" name="PaymentGuaranteeCertainInsurancePolicyObligationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="trv_GuarantorObligationsAmountRecoverableFromThirdParty" abstract="false" name="GuarantorObligationsAmountRecoverableFromThirdParty" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_StockIssuedNetShareSettlementEmployeeOptions" abstract="false" name="StockIssuedNetShareSettlementEmployeeOptions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_IncomeLossBeforeEquityInNetIncomeOfSubsidiarie" abstract="false" name="IncomeLossBeforeEquityInNetIncomeOfSubsidiarie" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_OtherComprehensiveIncomeLossNetOfTaxBeforeOCIOfSubsidiaries" abstract="false" name="OtherComprehensiveIncomeLossNetOfTaxBeforeOCIOfSubsidiaries" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_OtherComprehensiveIncomeLossFromSubsidiariesNetOfTax" abstract="false" name="OtherComprehensiveIncomeLossFromSubsidiariesNetOfTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_InvestmentInSubsidiaries" abstract="false" name="InvestmentInSubsidiaries" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_OtherAssetsCondensed" abstract="false" name="OtherAssetsCondensed" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_OtherLiabilitiesCondensed" abstract="false" name="OtherLiabilitiesCondensed" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_CapitalRepaidFromContributedToSubsidiariesByParent" abstract="false" name="CapitalRepaidFromContributedToSubsidiariesByParent" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_OtherInvestmentsNet" abstract="false" name="OtherInvestmentsNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="trv_ScheduleIIGuaranteesFootnoteTextBlock" abstract="false" name="ScheduleIIGuaranteesFootnoteTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+</xs:schema>

@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:cc38bd97-7c29-461f-b98e-952716398295,g:948fbf0f-ce01-4263-b723-19577bfef9ea-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:tnet="http://www.trinet.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.trinet.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tnet-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tnet-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tnet-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tnet-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.trinet.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.trinet.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFINCOMEANDCOMPREHENSIVEINCOME" roleURI="http://www.trinet.com/role/CONSOLIDATEDSTATEMENTSOFINCOMEANDCOMPREHENSIVEINCOME">
+        <link:definition>9952151 - Statement - CONSOLIDATED STATEMENTS OF INCOME AND COMPREHENSIVE INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://www.trinet.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>9952152 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://www.trinet.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>9952153 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITY" roleURI="http://www.trinet.com/role/CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITY">
+        <link:definition>9952154 - Statement - CONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.trinet.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>9952155 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIES" roleURI="http://www.trinet.com/role/DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIES">
+        <link:definition>9952156 - Disclosure - DESCRIPTION OF BUSINESS AND SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CASHCASHEQUIVALENTSANDINVESTMENTSUNRESTRICTEDANDRESTRICTED" roleURI="http://www.trinet.com/role/CASHCASHEQUIVALENTSANDINVESTMENTSUNRESTRICTEDANDRESTRICTED">
+        <link:definition>9952157 - Disclosure - CASH, CASH EQUIVALENTS AND INVESTMENTS - UNRESTRICTED AND RESTRICTED</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTS" roleURI="http://www.trinet.com/role/INVESTMENTS">
+        <link:definition>9952158 - Disclosure - INVESTMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYANDEQUIPMENTNET" roleURI="http://www.trinet.com/role/PROPERTYANDEQUIPMENTNET">
+        <link:definition>9952159 - Disclosure - PROPERTY AND EQUIPMENT, NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNET" roleURI="http://www.trinet.com/role/GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNET">
+        <link:definition>9952160 - Disclosure - GOODWILL, SOFTWARE AND OTHER INTANGIBLE ASSETS, NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCRUEDWORKERSCOMPENSATIONCOSTS" roleURI="http://www.trinet.com/role/ACCRUEDWORKERSCOMPENSATIONCOSTS">
+        <link:definition>9952161 - Disclosure - ACCRUED WORKERS' COMPENSATION COSTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASES" roleURI="http://www.trinet.com/role/LEASES">
+        <link:definition>9952162 - Disclosure - LEASES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMDEBTANDREVOLVINGCREDITAGREEMENTBORROWINGS" roleURI="http://www.trinet.com/role/LONGTERMDEBTANDREVOLVINGCREDITAGREEMENTBORROWINGS">
+        <link:definition>9952163 - Disclosure - LONG-TERM DEBT AND REVOLVING CREDIT AGREEMENT BORROWINGS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSANDCONTINGENCIES" roleURI="http://www.trinet.com/role/COMMITMENTSANDCONTINGENCIES">
+        <link:definition>9952164 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATION" roleURI="http://www.trinet.com/role/STOCKBASEDCOMPENSATION">
+        <link:definition>9952165 - Disclosure - STOCK BASED COMPENSATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITY" roleURI="http://www.trinet.com/role/STOCKHOLDERSEQUITY">
+        <link:definition>9952166 - Disclosure - STOCKHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXES" roleURI="http://www.trinet.com/role/INCOMETAXES">
+        <link:definition>9952167 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHARE" roleURI="http://www.trinet.com/role/EARNINGSPERSHARE">
+        <link:definition>9952168 - Disclosure - EARNINGS PER SHARE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="A401kPLAN" roleURI="http://www.trinet.com/role/A401kPLAN">
+        <link:definition>9952169 - Disclosure - 401(k) PLAN</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RELATEDPARTYTRANSACTIONS" roleURI="http://www.trinet.com/role/RELATEDPARTYTRANSACTIONS">
+        <link:definition>9952170 - Disclosure - RELATED PARTY TRANSACTIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURING" roleURI="http://www.trinet.com/role/RESTRUCTURING">
+        <link:definition>9952171 - Disclosure - RESTRUCTURING</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTINFORMATION" roleURI="http://www.trinet.com/role/SEGMENTINFORMATION">
+        <link:definition>9952172 - Disclosure - SEGMENT INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESPolicies" roleURI="http://www.trinet.com/role/DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESPolicies">
+        <link:definition>9955511 - Disclosure - DESCRIPTION OF BUSINESS AND SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESTables" roleURI="http://www.trinet.com/role/DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESTables">
+        <link:definition>9955512 - Disclosure - DESCRIPTION OF BUSINESS AND SIGNIFICANT ACCOUNTING POLICIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CASHCASHEQUIVALENTSANDINVESTMENTSUNRESTRICTEDANDRESTRICTEDTables" roleURI="http://www.trinet.com/role/CASHCASHEQUIVALENTSANDINVESTMENTSUNRESTRICTEDANDRESTRICTEDTables">
+        <link:definition>9955513 - Disclosure - CASH, CASH EQUIVALENTS AND INVESTMENTS - UNRESTRICTED AND RESTRICTED (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTSTables" roleURI="http://www.trinet.com/role/INVESTMENTSTables">
+        <link:definition>9955514 - Disclosure - INVESTMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYANDEQUIPMENTNETTables" roleURI="http://www.trinet.com/role/PROPERTYANDEQUIPMENTNETTables">
+        <link:definition>9955515 - Disclosure - PROPERTY AND EQUIPMENT, NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNETTables" roleURI="http://www.trinet.com/role/GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNETTables">
+        <link:definition>9955516 - Disclosure - GOODWILL, SOFTWARE AND OTHER INTANGIBLE ASSETS, NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCRUEDWORKERSCOMPENSATIONCOSTSTables" roleURI="http://www.trinet.com/role/ACCRUEDWORKERSCOMPENSATIONCOSTSTables">
+        <link:definition>9955517 - Disclosure - ACCRUED WORKERS' COMPENSATION COSTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESTables" roleURI="http://www.trinet.com/role/LEASESTables">
+        <link:definition>9955518 - Disclosure - LEASES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMDEBTANDREVOLVINGCREDITAGREEMENTBORROWINGSTables" roleURI="http://www.trinet.com/role/LONGTERMDEBTANDREVOLVINGCREDITAGREEMENTBORROWINGSTables">
+        <link:definition>9955519 - Disclosure - LONG-TERM DEBT AND REVOLVING CREDIT AGREEMENT BORROWINGS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONTables" roleURI="http://www.trinet.com/role/STOCKBASEDCOMPENSATIONTables">
+        <link:definition>9955520 - Disclosure - STOCK BASED COMPENSATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITYTables" roleURI="http://www.trinet.com/role/STOCKHOLDERSEQUITYTables">
+        <link:definition>9955521 - Disclosure - STOCKHOLDERS' EQUITY (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESTables" roleURI="http://www.trinet.com/role/INCOMETAXESTables">
+        <link:definition>9955522 - Disclosure - INCOME TAXES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHARETables" roleURI="http://www.trinet.com/role/EARNINGSPERSHARETables">
+        <link:definition>9955523 - Disclosure - EARNINGS PER SHARE (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURINGTables" roleURI="http://www.trinet.com/role/RESTRUCTURINGTables">
+        <link:definition>9955524 - Disclosure - RESTRUCTURING (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTINFORMATIONTables" roleURI="http://www.trinet.com/role/SEGMENTINFORMATIONTables">
+        <link:definition>9955525 - Disclosure - SEGMENT INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESNarrativeDetails" roleURI="http://www.trinet.com/role/DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESNarrativeDetails">
+        <link:definition>9955526 - Disclosure - DESCRIPTION OF BUSINESS AND SIGNIFICANT ACCOUNTING POLICIES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESAssetsandLiabilitiesoftheTrustDetails" roleURI="http://www.trinet.com/role/DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESAssetsandLiabilitiesoftheTrustDetails">
+        <link:definition>9955527 - Disclosure - DESCRIPTION OF BUSINESS AND SIGNIFICANT ACCOUNTING POLICIES - Assets and Liabilities of the Trust (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESScheduleofWorksiteEmployeeChangesDetails" roleURI="http://www.trinet.com/role/DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESScheduleofWorksiteEmployeeChangesDetails">
+        <link:definition>9955528 - Disclosure - DESCRIPTION OF BUSINESS AND SIGNIFICANT ACCOUNTING POLICIES - Schedule of Worksite Employee Changes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESScheduleofChangeinBalanceoftheRecoveryCreditUnsatisfiedPerformanceObligationDetails" roleURI="http://www.trinet.com/role/DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESScheduleofChangeinBalanceoftheRecoveryCreditUnsatisfiedPerformanceObligationDetails">
+        <link:definition>9955529 - Disclosure - DESCRIPTION OF BUSINESS AND SIGNIFICANT ACCOUNTING POLICIES - Schedule of Change in Balance of the Recovery Credit Unsatisfied Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESScheduleofCapitalizedContractCostDetails" roleURI="http://www.trinet.com/role/DESCRIPTIONOFBUSINESSANDSIGNIFICANTACCOUNTINGPOLICIESScheduleofCapitalizedContractCostDetails">
+        <link:definition>9955530 - Disclosure - DESCRIPTION OF BUSINESS AND SIGNIFICANT ACCOUNTING POLICIES - Schedule of Capitalized Contract Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CASHCASHEQUIVALENTSANDINVESTMENTSUNRESTRICTEDANDRESTRICTEDDetails" roleURI="http://www.trinet.com/role/CASHCASHEQUIVALENTSANDINVESTMENTSUNRESTRICTEDANDRESTRICTEDDetails">
+        <link:definition>9955531 - Disclosure - CASH, CASH EQUIVALENTS AND INVESTMENTS - UNRESTRICTED AND RESTRICTED (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTSScheduleofFinancialInstrumentsbySignificantCategoriesandFairValueMeasurementonaRecurringBasisDetails" roleURI="http://www.trinet.com/role/INVESTMENTSScheduleofFinancialInstrumentsbySignificantCategoriesandFairValueMeasurementonaRecurringBasisDetails">
+        <link:definition>9955532 - Disclosure - INVESTMENTS - Schedule of Financial Instruments by Significant Categories and Fair Value Measurement on a Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTSScheduleofFairValueofDebtInvestmentsbyContractualMaturityDetails" roleURI="http://www.trinet.com/role/INVESTMENTSScheduleofFairValueofDebtInvestmentsbyContractualMaturityDetails">
+        <link:definition>9955533 - Disclosure - INVESTMENTS - Schedule of Fair Value of Debt Investments by Contractual Maturity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTSScheduleofGrossProceedsfromAFSdebtsecuritiesDetails" roleURI="http://www.trinet.com/role/INVESTMENTSScheduleofGrossProceedsfromAFSdebtsecuritiesDetails">
+        <link:definition>9955534 - Disclosure - INVESTMENTS - Schedule of Gross Proceeds from AFS debt securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTSNarrativeDetails" roleURI="http://www.trinet.com/role/INVESTMENTSNarrativeDetails">
+        <link:definition>9955535 - Disclosure - INVESTMENTS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYANDEQUIPMENTNETScheduleofPropertyandEquipmentNetDetails" roleURI="http://www.trinet.com/role/PROPERTYANDEQUIPMENTNETScheduleofPropertyandEquipmentNetDetails">
+        <link:definition>9955536 - Disclosure - PROPERTY AND EQUIPMENT, NET - Schedule of Property and Equipment, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYANDEQUIPMENTNETNarrativeDetails" roleURI="http://www.trinet.com/role/PROPERTYANDEQUIPMENTNETNarrativeDetails">
+        <link:definition>9955537 - Disclosure - PROPERTY AND EQUIPMENT, NET - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNETScheduleofChangesinGoodwillDetails" roleURI="http://www.trinet.com/role/GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNETScheduleofChangesinGoodwillDetails">
+        <link:definition>9955538 - Disclosure - GOODWILL, SOFTWARE AND OTHER INTANGIBLE ASSETS, NET - Schedule of Changes in Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNETNarrativeDetails" roleURI="http://www.trinet.com/role/GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNETNarrativeDetails">
+        <link:definition>9955539 - Disclosure - GOODWILL, SOFTWARE AND OTHER INTANGIBLE ASSETS, NET - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNETScheduleofSoftwareandOtherIntangibleAssetsDetails" roleURI="http://www.trinet.com/role/GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNETScheduleofSoftwareandOtherIntangibleAssetsDetails">
+        <link:definition>9955540 - Disclosure - GOODWILL, SOFTWARE AND OTHER INTANGIBLE ASSETS, NET - Schedule of Software and Other Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNETScheduleofCapitalizedInternallyDevelopedSoftwareCostsandRelatedDepreciationExpenseDetails" roleURI="http://www.trinet.com/role/GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNETScheduleofCapitalizedInternallyDevelopedSoftwareCostsandRelatedDepreciationExpenseDetails">
+        <link:definition>9955541 - Disclosure - GOODWILL, SOFTWARE AND OTHER INTANGIBLE ASSETS, NET - Schedule of Capitalized Internally Developed Software Costs and Related Depreciation Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNETScheduleofExpectedExpenseRelatedtoIntangiblesAmortizationinFuturePeriodsDetailsDetails" roleURI="http://www.trinet.com/role/GOODWILLSOFTWAREANDOTHERINTANGIBLEASSETSNETScheduleofExpectedExpenseRelatedtoIntangiblesAmortizationinFuturePeriodsDetailsDetails">
+        <link:definition>9955542 - Disclosure - GOODWILL, SOFTWARE AND OTHER INTANGIBLE ASSETS, NET - Schedule of Expected Expense Related to Intangibles Amortization in Future Periods (Details) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCRUEDWORKERSCOMPENSATIONCOSTSScheduleofActivitiesinLiabilityforUnpaidClaimsandClaimsAdjustmentExpensesDetails" roleURI="http://www.trinet.com/role/ACCRUEDWORKERSCOMPENSATIONCOSTSScheduleofActivitiesinLiabilityforUnpaidClaimsandClaimsAdjustmentExpensesDetails">
+        <link:definition>9955543 - Disclosure - ACCRUED WORKERS' COMPENSATION COSTS - Schedule of Activities in Liability for Unpaid Claims and Claims Adjustment Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCRUEDWORKERSCOMPENSATIONCOSTSScheduleofWorkersCompensationLiabilitiesDetails" roleURI="http://www.trinet.com/role/ACCRUEDWORKERSCOMPENSATIONCOSTSScheduleofWorkersCompensationLiabilitiesDetails">
+        <link:definition>9955544 - Disclosure - ACCRUED WORKERS' COMPENSATION COSTS - Schedule of Workers' Compensation Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCRUEDWORKERSCOMPENSATIONCOSTSScheduleofWorkersCompensationLiabilitiesDetails_1" roleURI="http://www.trinet.com/role/ACCRUEDWORKERSCOMPENSATIONCOSTSScheduleofWorkersCompensationLiabilitiesDetails_1">
+        <link:definition>9955544 - Disclosure - ACCRUED WORKERS' COMPENSATION COSTS - Schedule of Workers' Compensation Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCRUEDWORKERSCOMPENSATIONCOSTSNarrativeDetails" roleURI="http://www.trinet.com/role/ACCRUEDWORKERSCOMPENSATIONCOSTSNarrativeDetails">
+        <link:definition>9955545 - Disclosure - ACCRUED WORKERS' COMPENSATION COSTS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESNarrativeDetails" roleURI="http://www.trinet.com/role/LEASESNarrativeDetails">
+        <link:definition>9955546 - Disclosure - LEASES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofOperatingLeasePaymentsDetails" roleURI="http://www.trinet.com/role/LEASESScheduleofOperatingLeasePaymentsDetails">
+        <link:definition>9955547 - Disclosure - LEASES - Schedule of Operating Lease Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofOperatingLeasePaymentsDetails_1" roleURI="http://www.trinet.com/role/LEASESScheduleofOperatingLeasePaymentsDetails_1">
+        <link:definition>9955547 - Disclosure - LEASES - Schedule of Operating Lease Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMDEBTANDREVOLVINGCREDITAGREEMENTSScheduleofSeniorNotesPayableDetails" roleURI="http://www.trinet.com/role/LONGTERMDEBTANDREVOLVINGCREDITAGREEMENTSScheduleofSeniorNotesPayableDetails">
+        <link:definition>9955548 - Disclosure - LONG-TERM DEBT AND REVOLVING CREDIT AGREEMENTS - Schedule of Senior Notes Payable (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMDEBTANDREVOLVINGCREDITAGREEMENTBORROWINGSNarrativeDetails" roleURI="http://www.trinet.com/role/LONGTERMDEBTANDREVOLVINGCREDITAGREEMENTBORROWINGSNarrativeDetails">
+        <link:definition>9955549 - Disclosure - LONG-TERM DEBT AND REVOLVING CREDIT AGREEMENT BORROWINGS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONNarrativeDetails" roleURI="http://www.trinet.com/role/STOCKBASEDCOMPENSATIONNarrativeDetails">
+        <link:definition>9955550 - Disclosure - STOCK BASED COMPENSATION - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONScheduleofRSUandRSAActivityDetails" roleURI="http://www.trinet.com/role/STOCKBASEDCOMPENSATIONScheduleofRSUandRSAActivityDetails">
+        <link:definition>9955551 - Disclosure - STOCK BASED COMPENSATION - Schedule of RSU and RSA Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONScheduleofAdditionalDisclosuresforEquityBasedPlansDetails" roleURI="http://www.trinet.com/role/STOCKBASEDCOMPENSATIONScheduleofAdditionalDisclosuresforEquityBasedPlansDetails">
+        <link:definition>9955552 - Disclosure - STOCK BASED COMPENSATION - Schedule of Additional Disclosures for Equity Based Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONScheduleofWeightedAverageAssumptionsUsedtoEstimateFairValueofStockOptionsDetails" roleURI="http://www.trinet.com/role/STOCKBASEDCOMPENSATIONScheduleofWeightedAverageAssumptionsUsedtoEstimateFairValueofStockOptionsDetails">
+        <link:definition>9955553 - Disclosure - STOCK BASED COMPENSATION - Schedule of Weighted-Average Assumptions Used to Estimate Fair Value of Stock Options (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONScheduleofStockBasedCompensationExpenseDetails" roleURI="http://www.trinet.com/role/STOCKBASEDCOMPENSATIONScheduleofStockBasedCompensationExpenseDetails">
+        <link:definition>9955554 - Disclosure - STOCK BASED COMPENSATION - Schedule of Stock Based Compensation Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONScheduleofUnrecognizedCompensationExpenseDetails" roleURI="http://www.trinet.com/role/STOCKBASEDCOMPENSATIONScheduleofUnrecognizedCompensationExpenseDetails">
+        <link:definition>9955555 - Disclosure - STOCK BASED COMPENSATION - Schedule of Unrecognized Compensation Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITYScheduleofCommonStockDetails" roleURI="http://www.trinet.com/role/STOCKHOLDERSEQUITYScheduleofCommonStockDetails">
+        <link:definition>9955556 - Disclosure - STOCKHOLDERS' EQUITY - Schedule of Common Stock (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITYNarrativeDetails" roleURI="http://www.trinet.com/role/STOCKHOLDERSEQUITYNarrativeDetails">
+        <link:definition>9955557 - Disclosure - STOCKHOLDERS' EQUITY - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITYScheduleofStockRepurchasesDetails" roleURI="http://www.trinet.com/role/STOCKHOLDERSEQUITYScheduleofStockRepurchasesDetails">
+        <link:definition>9955558 - Disclosure - STOCKHOLDERS' EQUITY - Schedule of Stock Repurchases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofProvisionforIncomeTaxesDetails" roleURI="http://www.trinet.com/role/INCOMETAXESScheduleofProvisionforIncomeTaxesDetails">
+        <link:definition>9955559 - Disclosure - INCOME TAXES - Schedule of Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofUSFederalStatutoryIncomeTaxRateReconciledtoEffectiveTaxRateDetails" roleURI="http://www.trinet.com/role/INCOMETAXESScheduleofUSFederalStatutoryIncomeTaxRateReconciledtoEffectiveTaxRateDetails">
+        <link:definition>9955560 - Disclosure - INCOME TAXES - Schedule of U.S. Federal Statutory Income Tax Rate Reconciled to Effective Tax Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESNarrativeDetails" roleURI="http://www.trinet.com/role/INCOMETAXESNarrativeDetails">
+        <link:definition>9955561 - Disclosure - INCOME TAXES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofSignificantComponentsofDeferredTaxAssetsandLiabilitiesDetails" roleURI="http://www.trinet.com/role/INCOMETAXESScheduleofSignificantComponentsofDeferredTaxAssetsandLiabilitiesDetails">
+        <link:definition>9955562 - Disclosure - INCOME TAXES - Schedule of Significant Components of Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofReconciliationofBeginningandEndingValuationAllowanceDetails" roleURI="http://www.trinet.com/role/INCOMETAXESScheduleofReconciliationofBeginningandEndingValuationAllowanceDetails">
+        <link:definition>9955563 - Disclosure - INCOME TAXES - Schedule of Reconciliation of Beginning and Ending Valuation Allowance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofReconciliationofBeginningandEndingUnrecognizedTaxBenefitsDetails" roleURI="http://www.trinet.com/role/INCOMETAXESScheduleofReconciliationofBeginningandEndingUnrecognizedTaxBenefitsDetails">
+        <link:definition>9955564 - Disclosure - INCOME TAXES - Schedule of Reconciliation of Beginning and Ending Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHAREDetails" roleURI="http://www.trinet.com/role/EARNINGSPERSHAREDetails">
+        <link:definition>9955565 - Disclosure - EARNINGS PER SHARE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="A401kPLANDetails" roleURI="http://www.trinet.com/role/A401kPLANDetails">
+        <link:definition>9955566 - Disclosure - 401(k) PLAN (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RELATEDPARTYTRANSACTIONSDetails" roleURI="http://www.trinet.com/role/RELATEDPARTYTRANSACTIONSDetails">
+        <link:definition>9955567 - Disclosure - RELATED PARTY TRANSACTIONS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURINGScheduleofComponentsofRestructuringExpensesDetails" roleURI="http://www.trinet.com/role/RESTRUCTURINGScheduleofComponentsofRestructuringExpensesDetails">
+        <link:definition>9955568 - Disclosure - RESTRUCTURING - Schedule of Components of Restructuring Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURINGScheduleofChangesinAccruedSeveranceandExitandDisposalCostsDetails" roleURI="http://www.trinet.com/role/RESTRUCTURINGScheduleofChangesinAccruedSeveranceandExitandDisposalCostsDetails">
+        <link:definition>9955569 - Disclosure - RESTRUCTURING - Schedule of Changes in Accrued Severance and Exit and Disposal Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTINFORMATIONNarrativeDetails" roleURI="http://www.trinet.com/role/SEGMENTINFORMATIONNarrativeDetails">
+        <link:definition>9955570 - Disclosure - SEGMENT INFORMATION - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTINFORMATIONScheduleofSignificantExpensesDetails" roleURI="http://www.trinet.com/role/SEGMENTINFORMATIONScheduleofSignificantExpensesDetails">
+        <link:definition>9955571 - Disclosure - SEGMENT INFORMATION - Schedule of Significant Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="tnet_AuditorInformationAbstract" abstract="true" name="AuditorInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnet_ProfessionalServicesMember" abstract="true" name="ProfessionalServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_InsuranceServicesMember" abstract="true" name="InsuranceServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortizationAndOperatingInsuranceAndClaimsCostsProduction" abstract="false" name="CostOfGoodsAndServiceExcludingDepreciationDepletionAndAmortizationAndOperatingInsuranceAndClaimsCostsProduction" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_InterestExpenseBankFeesAndOther" abstract="false" name="InterestExpenseBankFeesAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_OtherPayrollAssetsCurrent" abstract="false" name="OtherPayrollAssetsCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_CollateralPaidToInsuranceCarriersNetOfHealthBenefitLossReservesCurrent" abstract="false" name="CollateralPaidToInsuranceCarriersNetOfHealthBenefitLossReservesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_AccruedPayrollTaxLiabilitiesAndOtherPayrollWithholdings" abstract="false" name="AccruedPayrollTaxLiabilitiesAndOtherPayrollWithholdings" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_InsurancePremiumsAndOtherPayables" abstract="false" name="InsurancePremiumsAndOtherPayables" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_AccretionOfDiscountRateOnLeaseLiabilities" abstract="false" name="AccretionOfDiscountRateOnLeaseLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_IncreaseDecreaseInOtherPayrollAssets" abstract="false" name="IncreaseDecreaseInOtherPayrollAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_ChangeInVariableInterestEntityAssetsAndLiabilitiesNet" abstract="false" name="ChangeInVariableInterestEntityAssetsAndLiabilitiesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_PaymentsOfLongTermFinancingFeesAndDebtIssuanceCosts" abstract="false" name="PaymentsOfLongTermFinancingFeesAndDebtIssuanceCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_CashCashEquivalentsAndInvestmentsTextBlock" abstract="false" name="CashCashEquivalentsAndInvestmentsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="tnet_ScheduleOfWorksiteEmployeChangesTableTextBlock" abstract="false" name="ScheduleOfWorksiteEmployeChangesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="tnet_ScheduleOfCapitalizedInternallyDevelopedSoftwareCostsAndDepreciationExpenseTableTextBlock" abstract="false" name="ScheduleOfCapitalizedInternallyDevelopedSoftwareCostsAndDepreciationExpenseTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="tnet_SummaryOfSignificantAccountingPolicyTable" abstract="true" name="SummaryOfSignificantAccountingPolicyTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnet_SummaryOfSignificantAccountingPolicyLineItems" abstract="true" name="SummaryOfSignificantAccountingPolicyLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnet_ContractWithCustomerAssetAfterAllowanceForCreditLossAdvancePayments" abstract="false" name="ContractWithCustomerAssetAfterAllowanceForCreditLossAdvancePayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_LiabilityforUnpaidClaimsandClaimsAdjustmentExpenseReimbursementtoInsuranceCarriersperClaimAmount" abstract="false" name="LiabilityforUnpaidClaimsandClaimsAdjustmentExpenseReimbursementtoInsuranceCarriersperClaimAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_WorkersCompensationPlanYearsToBeSettledPeriod" abstract="false" name="WorkersCompensationPlanYearsToBeSettledPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="tnet_EmployeeRelatedLiabilitiesEmployeeRetentionTaxCredits" abstract="false" name="EmployeeRelatedLiabilitiesEmployeeRetentionTaxCredits" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_EmployeeRelatedLiabilitiesEmployeeRetentionTaxCreditsDistributed" abstract="false" name="EmployeeRelatedLiabilitiesEmployeeRetentionTaxCreditsDistributed" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_BadDebtExpenseNetOfRecoveries" abstract="false" name="BadDebtExpenseNetOfRecoveries" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_TriNetTrustMember" abstract="true" name="TriNetTrustMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnet_NetCashProvidedByUsedInOperatingActivitiesAmountsReclassified" abstract="false" name="NetCashProvidedByUsedInOperatingActivitiesAmountsReclassified" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_NetCashProvidedByUsedInFinancingActivitiesAmountsReclassified" abstract="false" name="NetCashProvidedByUsedInFinancingActivitiesAmountsReclassified" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_UnsatisfiedPerformanceObligationRollForward" abstract="true" name="UnsatisfiedPerformanceObligationRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnet_RevenueRemainingPerformanceObligationProvision" abstract="false" name="RevenueRemainingPerformanceObligationProvision" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_CapitalizedContractCostAmountCapitalized" abstract="false" name="CapitalizedContractCostAmountCapitalized" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_AvailableForSaleMarketableSecuritiesMember" abstract="true" name="AvailableForSaleMarketableSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnet_CollateralbyTypeAxis" abstract="true" name="CollateralbyTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnet_CollateralbyTypeDomain" abstract="true" name="CollateralbyTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_PayrollFundsCollectedMember" abstract="true" name="PayrollFundsCollectedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_HealthBenefitClaimsCollateralMember" abstract="true" name="HealthBenefitClaimsCollateralMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_WorkersCompensationClaimsCollateralMember" abstract="true" name="WorkersCompensationClaimsCollateralMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_TrustForOurHRISUsersCollateralMember" abstract="true" name="TrustForOurHRISUsersCollateralMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnet_InsuranceCarriersSecurityDepositsMember" abstract="true" name="InsuranceCarriersSecurityDepositsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_RestrictedCashAndCashEquivalentsAndInvestmentsMember" abstract="true" name="RestrictedCashAndCashEquivalentsAndInvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_A2029NotesPayableMember" abstract="true" name="A2029NotesPayableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_A2031NotesPayableMember" abstract="true" name="A2031NotesPayableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnet_ProjectsInProgressMember" abstract="true" name="ProjectsInProgressMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_ImpairmentsOfPropertyPlantAndEquipment" abstract="false" name="ImpairmentsOfPropertyPlantAndEquipment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_FiniteLivedIntangibleAssetsNetExcludingCIP" abstract="false" name="FiniteLivedIntangibleAssetsNetExcludingCIP" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_LiabilityforClaimsandClaimsAdjustmentExpenseRollForward" abstract="true" name="LiabilityforClaimsandClaimsAdjustmentExpenseRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnet_LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseCollateral" abstract="false" name="LiabilityForUnpaidClaimsAndClaimsAdjustmentExpenseCollateral" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_CollateralPaidToInsuranceCarriersNetOfWorkersCompensationLossReservesCurrent" abstract="false" name="CollateralPaidToInsuranceCarriersNetOfWorkersCompensationLossReservesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_CollateralPaidToInsuranceCarriersNetOfWorkersCompensationLossReservesNoncurrent" abstract="false" name="CollateralPaidToInsuranceCarriersNetOfWorkersCompensationLossReservesNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_CollateralHeldByInsuranceCarriers" abstract="false" name="CollateralHeldByInsuranceCarriers" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_A2021RevolvingCreditFacilityMember" abstract="true" name="A2021RevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_LondonInterbankOfferedRateMember" abstract="true" name="LondonInterbankOfferedRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnet_AdjustedTermSOFRRateMember" abstract="true" name="AdjustedTermSOFRRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnet_OneMonthTermSOFRSecuredOvernightFinancingRateMember" abstract="true" name="OneMonthTermSOFRSecuredOvernightFinancingRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnet_DebtInstrumentRedemptionAmountAxis" abstract="true" name="DebtInstrumentRedemptionAmountAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnet_DebtInstrumentRedemptionAmountDomain" abstract="true" name="DebtInstrumentRedemptionAmountDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_PartialRedemptionMember" abstract="true" name="PartialRedemptionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_InterestRateTermsAxis" abstract="true" name="InterestRateTermsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnet_InterestRateTermsDomain" abstract="true" name="InterestRateTermsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_CreditRatingBelowInvestmentGradeMember" abstract="true" name="CreditRatingBelowInvestmentGradeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_TimeBasedRestrictedStockUnitsMember" abstract="true" name="TimeBasedRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_PerformanceBasedRestrictedStockUnitsMember" abstract="true" name="PerformanceBasedRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_EmployeeStockPurchasePlanMember" abstract="true" name="EmployeeStockPurchasePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_ShareBasedCompensationArrangementByShareBasedPaymentAwardOfferingPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOfferingPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="tnet_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantedInPeriodFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantedInPeriodFairValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_SystemsDevelopmentAndProgrammingCostsMember" abstract="true" name="SystemsDevelopmentAndProgrammingCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_AtairosGroupMember" abstract="true" name="AtairosGroupMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnet_StockRepurchaseProgramIncreaseInAuthorizedAmount" abstract="false" name="StockRepurchaseProgramIncreaseInAuthorizedAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_StockRepurchasePlanMember" abstract="true" name="StockRepurchasePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnet_StockRepurchasedDuringPeriodAverageCostPerShare" abstract="false" name="StockRepurchasedDuringPeriodAverageCostPerShare" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="tnet_IncomeTaxesDisclosureTable" abstract="true" name="IncomeTaxesDisclosureTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnet_IncomeTaxesDisclosureLineItems" abstract="true" name="IncomeTaxesDisclosureLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnet_IncreaseDecreaseInEffectiveIncomeTaxRatePercent" abstract="false" name="IncreaseDecreaseInEffectiveIncomeTaxRatePercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="tnet_DeferredTaxAssetsRecoveryCredit" abstract="false" name="DeferredTaxAssetsRecoveryCredit" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_DeferredTaxAssetsOperatingLeaseLiabilities" abstract="false" name="DeferredTaxAssetsOperatingLeaseLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_DeferredTaxLiabilitiesPrepaidCommissionExpense" abstract="false" name="DeferredTaxLiabilitiesPrepaidCommissionExpense" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_ValuationAllowanceRollForward" abstract="true" name="ValuationAllowanceRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnet_ValuationAllowanceDeferredTaxAssetCreditedToNetIncomeAmount" abstract="false" name="ValuationAllowanceDeferredTaxAssetCreditedToNetIncomeAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_SoftwareServiceProviderMember" abstract="true" name="SoftwareServiceProviderMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnet_RestructuringChargesProfessionalFees" abstract="false" name="RestructuringChargesProfessionalFees" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_NonCashRestructuringCostAbstract" abstract="true" name="NonCashRestructuringCostAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnet_NoncashRestructuringChargesGoodwillAndIntangibleAssetImpairments" abstract="false" name="NoncashRestructuringChargesGoodwillAndIntangibleAssetImpairments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_NoncashRestructuringChargesFixedAssetAndRightOfUseAssetImpairments" abstract="false" name="NoncashRestructuringChargesFixedAssetAndRightOfUseAssetImpairments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_NoncashRestructuringCharges" abstract="false" name="NoncashRestructuringCharges" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_AccruedSalariesCurrentMember" abstract="true" name="AccruedSalariesCurrentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnet_ReportableSegmentMember" abstract="true" name="ReportableSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnet_WorkersCompensationCosts" abstract="false" name="WorkersCompensationCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_HealthInsuranceCosts" abstract="false" name="HealthInsuranceCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_SellingAndMarketingExpenseExcludingStockBasedCompensationAndOther" abstract="false" name="SellingAndMarketingExpenseExcludingStockBasedCompensationAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_ClientSupportCosts" abstract="false" name="ClientSupportCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_CorporateAdministrationExpenses" abstract="false" name="CorporateAdministrationExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_SystemSupportAndDevelopmentExpenses" abstract="false" name="SystemSupportAndDevelopmentExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnet_PaulChamberlainMember" abstract="true" name="PaulChamberlainMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>

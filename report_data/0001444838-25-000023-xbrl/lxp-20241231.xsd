@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:1b7852a3-5254-4d45-97d0-7ccdeaae951b,g:e760ecdf-c9b5-4282-85d4-b3d4942ef183-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:lxp="http://lxp.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://lxp.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="lxp-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="lxp-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="lxp-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="lxp-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://lxp.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://lxp.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://lxp.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>9952151 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://lxp.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>9952152 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFOPERATIONS" roleURI="http://lxp.com/role/CONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>9952153 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS" roleURI="http://lxp.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS">
+        <link:definition>9952154 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCHANGESINEQUITY" roleURI="http://lxp.com/role/CONSOLIDATEDSTATEMENTSOFCHANGESINEQUITY">
+        <link:definition>9952155 - Statement - CONSOLIDATED STATEMENTS OF CHANGES IN EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCHANGESINEQUITYParenthetical" roleURI="http://lxp.com/role/CONSOLIDATEDSTATEMENTSOFCHANGESINEQUITYParenthetical">
+        <link:definition>9952156 - Statement - CONSOLIDATED STATEMENTS OF CHANGES IN EQUITY (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://lxp.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>9952157 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TheCompanyandFinancialStatementPresentation" roleURI="http://lxp.com/role/TheCompanyandFinancialStatementPresentation">
+        <link:definition>9952158 - Disclosure - The Company and Financial Statement Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://lxp.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>9952159 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShare" roleURI="http://lxp.com/role/EarningsPerShare">
+        <link:definition>9952160 - Disclosure - Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinRealEstate" roleURI="http://lxp.com/role/InvestmentsinRealEstate">
+        <link:definition>9952161 - Disclosure - Investments in Real Estate</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DispositionsandImpairment" roleURI="http://lxp.com/role/DispositionsandImpairment">
+        <link:definition>9952162 - Disclosure - Dispositions and Impairment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://lxp.com/role/FairValueMeasurements">
+        <link:definition>9952163 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinNonConsolidatedEntities" roleURI="http://lxp.com/role/InvestmentsinNonConsolidatedEntities">
+        <link:definition>9952164 - Disclosure - Investments in Non-Consolidated Entities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://lxp.com/role/Leases">
+        <link:definition>9952165 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCreditLoss" roleURI="http://lxp.com/role/AllowanceforCreditLoss">
+        <link:definition>9952166 - Disclosure - Allowance for Credit Loss</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgagesandNotesPayable" roleURI="http://lxp.com/role/MortgagesandNotesPayable">
+        <link:definition>9952167 - Disclosure - Mortgages and Notes Payable</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SeniorNotesConvertibleNotesandTrustPreferredSecurities" roleURI="http://lxp.com/role/SeniorNotesConvertibleNotesandTrustPreferredSecurities">
+        <link:definition>9952168 - Disclosure - Senior Notes, Convertible Notes and Trust Preferred Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesandHedgingActivities" roleURI="http://lxp.com/role/DerivativesandHedgingActivities">
+        <link:definition>9952169 - Disclosure - Derivatives and Hedging Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationofRisk" roleURI="http://lxp.com/role/ConcentrationofRisk">
+        <link:definition>9952170 - Disclosure - Concentration of Risk</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Equity" roleURI="http://lxp.com/role/Equity">
+        <link:definition>9952171 - Disclosure - Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReporting" roleURI="http://lxp.com/role/SegmentReporting">
+        <link:definition>9952172 - Disclosure - Segment Reporting</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlans" roleURI="http://lxp.com/role/BenefitPlans">
+        <link:definition>9952173 - Disclosure - Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactions" roleURI="http://lxp.com/role/RelatedPartyTransactions">
+        <link:definition>9952174 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://lxp.com/role/IncomeTaxes">
+        <link:definition>9952175 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://lxp.com/role/CommitmentsandContingencies">
+        <link:definition>9952176 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalDisclosureofStatementofCashFlowInformation" roleURI="http://lxp.com/role/SupplementalDisclosureofStatementofCashFlowInformation">
+        <link:definition>9952177 - Disclosure - Supplemental Disclosure of Statement of Cash Flow Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://lxp.com/role/SubsequentEvents">
+        <link:definition>9952178 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIIRealEstateandAccumulatedDepreciationandAmortization" roleURI="http://lxp.com/role/ScheduleIIIRealEstateandAccumulatedDepreciationandAmortization">
+        <link:definition>9952179 - Disclosure - Schedule III - Real Estate and Accumulated Depreciation and Amortization</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://lxp.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesTables" roleURI="http://lxp.com/role/SummaryofSignificantAccountingPoliciesTables">
+        <link:definition>9955512 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://lxp.com/role/EarningsPerShareTables">
+        <link:definition>9955513 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinRealEstateTables" roleURI="http://lxp.com/role/InvestmentsinRealEstateTables">
+        <link:definition>9955514 - Disclosure - Investments in Real Estate (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DispositionsandImpairmentTables" roleURI="http://lxp.com/role/DispositionsandImpairmentTables">
+        <link:definition>9955515 - Disclosure - Dispositions and Impairment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://lxp.com/role/FairValueMeasurementsTables">
+        <link:definition>9955516 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinNonConsolidatedEntitiesTables" roleURI="http://lxp.com/role/InvestmentsinNonConsolidatedEntitiesTables">
+        <link:definition>9955517 - Disclosure - Investments in Non-Consolidated Entities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://lxp.com/role/LeasesTables">
+        <link:definition>9955518 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCreditLossTables" roleURI="http://lxp.com/role/AllowanceforCreditLossTables">
+        <link:definition>9955519 - Disclosure - Allowance for Credit Loss (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgagesandNotesPayableTables" roleURI="http://lxp.com/role/MortgagesandNotesPayableTables">
+        <link:definition>9955520 - Disclosure - Mortgages and Notes Payable (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SeniorNotesConvertibleNotesandTrustPreferredSecuritiesTables" roleURI="http://lxp.com/role/SeniorNotesConvertibleNotesandTrustPreferredSecuritiesTables">
+        <link:definition>9955521 - Disclosure - Senior Notes, Convertible Notes and Trust Preferred Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesandHedgingActivitiesTables" roleURI="http://lxp.com/role/DerivativesandHedgingActivitiesTables">
+        <link:definition>9955522 - Disclosure - Derivatives and Hedging Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityTables" roleURI="http://lxp.com/role/EquityTables">
+        <link:definition>9955523 - Disclosure - Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlansTables" roleURI="http://lxp.com/role/BenefitPlansTables">
+        <link:definition>9955524 - Disclosure - Benefit Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://lxp.com/role/IncomeTaxesTables">
+        <link:definition>9955525 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalDisclosureofStatementofCashFlowInformationTables" roleURI="http://lxp.com/role/SupplementalDisclosureofStatementofCashFlowInformationTables">
+        <link:definition>9955526 - Disclosure - Supplemental Disclosure of Statement of Cash Flow Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TheCompanyandFinancialStatementPresentationDetails" roleURI="http://lxp.com/role/TheCompanyandFinancialStatementPresentationDetails">
+        <link:definition>9955527 - Disclosure - The Company and Financial Statement Presentation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesAdditionalInformationDetails" roleURI="http://lxp.com/role/SummaryofSignificantAccountingPoliciesAdditionalInformationDetails">
+        <link:definition>9955528 - Disclosure - Summary of Significant Accounting Policies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesVariableInterestEntitiesDetails" roleURI="http://lxp.com/role/SummaryofSignificantAccountingPoliciesVariableInterestEntitiesDetails">
+        <link:definition>9955529 - Disclosure - Summary of Significant Accounting Policies - Variable Interest Entities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareScheduleofEarningsPerShareReconciliationDetails" roleURI="http://lxp.com/role/EarningsPerShareScheduleofEarningsPerShareReconciliationDetails">
+        <link:definition>9955530 - Disclosure - Earnings Per Share - Schedule of Earnings Per Share Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareScheduleofAntidilutiveSecuritiesExcludedfromComputationofEarningsPerShareDetails" roleURI="http://lxp.com/role/EarningsPerShareScheduleofAntidilutiveSecuritiesExcludedfromComputationofEarningsPerShareDetails">
+        <link:definition>9955531 - Disclosure - Earnings Per Share - Schedule of Antidilutive Securities Excluded from Computation of Earnings Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinRealEstateScheduleofNetRealEstateDetails" roleURI="http://lxp.com/role/InvestmentsinRealEstateScheduleofNetRealEstateDetails">
+        <link:definition>9955532 - Disclosure - Investments in Real Estate - Schedule of Net Real Estate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinRealEstateAdditionalInformationDetails" roleURI="http://lxp.com/role/InvestmentsinRealEstateAdditionalInformationDetails">
+        <link:definition>9955533 - Disclosure - Investments in Real Estate - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinRealEstateScheduleofBelowMarketLeaseFutureAmortizationIncomeDetails" roleURI="http://lxp.com/role/InvestmentsinRealEstateScheduleofBelowMarketLeaseFutureAmortizationIncomeDetails">
+        <link:definition>9955534 - Disclosure - Investments in Real Estate - Schedule of Below Market Lease, Future Amortization Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinRealEstateScheduleofRealEstateAcquisitionsDetails" roleURI="http://lxp.com/role/InvestmentsinRealEstateScheduleofRealEstateAcquisitionsDetails">
+        <link:definition>9955535 - Disclosure - Investments in Real Estate - Schedule of Real Estate Acquisitions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinRealEstateLandHeldforDevelopmentDetails" roleURI="http://lxp.com/role/InvestmentsinRealEstateLandHeldforDevelopmentDetails">
+        <link:definition>9955536 - Disclosure - Investments in Real Estate - Land Held for Development (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DispositionsandImpairmentAdditionalInformationDetails" roleURI="http://lxp.com/role/DispositionsandImpairmentAdditionalInformationDetails">
+        <link:definition>9955537 - Disclosure - Dispositions and Impairment - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DispositionsandImpairmentScheduleofPropertiesHeldforSaleDetails" roleURI="http://lxp.com/role/DispositionsandImpairmentScheduleofPropertiesHeldforSaleDetails">
+        <link:definition>9955538 - Disclosure - Dispositions and Impairment - Schedule of Properties Held for Sale (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsScheduleofFairValueMeasurementsInputsDetails" roleURI="http://lxp.com/role/FairValueMeasurementsScheduleofFairValueMeasurementsInputsDetails">
+        <link:definition>9955539 - Disclosure - Fair Value Measurements - Schedule of Fair Value Measurements Inputs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsFairValuebyBalanceSheetGroupingDetails" roleURI="http://lxp.com/role/FairValueMeasurementsFairValuebyBalanceSheetGroupingDetails">
+        <link:definition>9955540 - Disclosure - Fair Value Measurements - Fair Value, by Balance Sheet Grouping (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinNonConsolidatedEntitiesScheduleofInvestmentsinandNonconsolidatedEntitiesDetails" roleURI="http://lxp.com/role/InvestmentsinNonConsolidatedEntitiesScheduleofInvestmentsinandNonconsolidatedEntitiesDetails">
+        <link:definition>9955541 - Disclosure - Investments in Non-Consolidated Entities - Schedule of Investments in and Non-consolidated Entities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinNonConsolidatedEntitiesAdditionalInformationDetails" roleURI="http://lxp.com/role/InvestmentsinNonConsolidatedEntitiesAdditionalInformationDetails">
+        <link:definition>9955542 - Disclosure - Investments in Non-Consolidated Entities - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesAdditionalinformationDetails" roleURI="http://lxp.com/role/LeasesAdditionalinformationDetails">
+        <link:definition>9955543 - Disclosure - Leases - Additional information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLeaseIncomeDetails" roleURI="http://lxp.com/role/LeasesLeaseIncomeDetails">
+        <link:definition>9955544 - Disclosure - Leases - Lease Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesFutureFixedRentalReceiptsDetails" roleURI="http://lxp.com/role/LeasesFutureFixedRentalReceiptsDetails">
+        <link:definition>9955545 - Disclosure - Leases - Future Fixed Rental Receipts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesSupplementalBalanceSheetInformationDetails" roleURI="http://lxp.com/role/LeasesSupplementalBalanceSheetInformationDetails">
+        <link:definition>9955546 - Disclosure - Leases - Supplemental Balance Sheet Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesComponentsofLeaseExpenseDetails" roleURI="http://lxp.com/role/LeasesComponentsofLeaseExpenseDetails">
+        <link:definition>9955547 - Disclosure - Leases - Components of Lease Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesOperatingLeaseLiabilitiesMaturityDetails" roleURI="http://lxp.com/role/LeasesOperatingLeaseLiabilitiesMaturityDetails">
+        <link:definition>9955548 - Disclosure - Leases - Operating Lease Liabilities Maturity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesOperatingLeaseLiabilitiesMaturityDetails_1" roleURI="http://lxp.com/role/LeasesOperatingLeaseLiabilitiesMaturityDetails_1">
+        <link:definition>9955548 - Disclosure - Leases - Operating Lease Liabilities Maturity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCreditLossAdditionalInformationDetails" roleURI="http://lxp.com/role/AllowanceforCreditLossAdditionalInformationDetails">
+        <link:definition>9955549 - Disclosure - Allowance for Credit Loss - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCreditLossSalesTypeLeaseAllowanceDetails" roleURI="http://lxp.com/role/AllowanceforCreditLossSalesTypeLeaseAllowanceDetails">
+        <link:definition>9955550 - Disclosure - Allowance for Credit Loss - Sales-Type Lease, Allowance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCreditLossInvestmentinSalesTypeLeaseDetails" roleURI="http://lxp.com/role/AllowanceforCreditLossInvestmentinSalesTypeLeaseDetails">
+        <link:definition>9955551 - Disclosure - Allowance for Credit Loss - Investment in Sales-Type Lease (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgagesandNotesPayableScheduleofMortgagesandNotesPayableDetails" roleURI="http://lxp.com/role/MortgagesandNotesPayableScheduleofMortgagesandNotesPayableDetails">
+        <link:definition>9955552 - Disclosure - Mortgages and Notes Payable - Schedule of Mortgages and Notes Payable (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgagesandNotesPayableAdditionalInformationDetails" roleURI="http://lxp.com/role/MortgagesandNotesPayableAdditionalInformationDetails">
+        <link:definition>9955553 - Disclosure - Mortgages and Notes Payable - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgagesandNotesPayableCreditAgreementTermsDetails" roleURI="http://lxp.com/role/MortgagesandNotesPayableCreditAgreementTermsDetails">
+        <link:definition>9955554 - Disclosure - Mortgages and Notes Payable - Credit Agreement Terms (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgagesandNotesPayableMaturitiesofLongtermDebtDetails" roleURI="http://lxp.com/role/MortgagesandNotesPayableMaturitiesofLongtermDebtDetails">
+        <link:definition>9955555 - Disclosure - Mortgages and Notes Payable - Maturities of Long-term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SeniorNotesConvertibleNotesandTrustPreferredSecuritiesScheduleofLongtermDebtInstrumentsDetails" roleURI="http://lxp.com/role/SeniorNotesConvertibleNotesandTrustPreferredSecuritiesScheduleofLongtermDebtInstrumentsDetails">
+        <link:definition>9955556 - Disclosure - Senior Notes, Convertible Notes and Trust Preferred Securities - Schedule of Long-term Debt Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SeniorNotesConvertibleNotesandTrustPreferredSecuritiesAdditionalInformationDetails" roleURI="http://lxp.com/role/SeniorNotesConvertibleNotesandTrustPreferredSecuritiesAdditionalInformationDetails">
+        <link:definition>9955557 - Disclosure - Senior Notes, Convertible Notes and Trust Preferred Securities - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SeniorNotesConvertibleNotesandTrustPreferredSecuritiesScheduleofMaturitiesofLongtermDebtDetails" roleURI="http://lxp.com/role/SeniorNotesConvertibleNotesandTrustPreferredSecuritiesScheduleofMaturitiesofLongtermDebtDetails">
+        <link:definition>9955558 - Disclosure - Senior Notes, Convertible Notes and Trust Preferred Securities - Schedule of Maturities of Long-term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesandHedgingActivitiesScheduleofthetermsofouroutstandingfinancialinstrumentsonthecompanysbalancesheetDetails" roleURI="http://lxp.com/role/DerivativesandHedgingActivitiesScheduleofthetermsofouroutstandingfinancialinstrumentsonthecompanysbalancesheetDetails">
+        <link:definition>9955559 - Disclosure - Derivatives and Hedging Activities - Schedule of the terms of our outstanding financial instruments on the company's balance sheet (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesandHedgingActivitiesAdditionalInformationDetails" roleURI="http://lxp.com/role/DerivativesandHedgingActivitiesAdditionalInformationDetails">
+        <link:definition>9955560 - Disclosure - Derivatives and Hedging Activities - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesandHedgingActivitiesScheduleofDerivativeInstrumentsDetails" roleURI="http://lxp.com/role/DerivativesandHedgingActivitiesScheduleofDerivativeInstrumentsDetails">
+        <link:definition>9955561 - Disclosure - Derivatives and Hedging Activities - Schedule of Derivative Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityAdditionalInformationDetails" roleURI="http://lxp.com/role/EquityAdditionalInformationDetails">
+        <link:definition>9955562 - Disclosure - Equity - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityScheduleofChangesinAOCIDetails" roleURI="http://lxp.com/role/EquityScheduleofChangesinAOCIDetails">
+        <link:definition>9955563 - Disclosure - Equity - Schedule of Changes in AOCI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityScheduleofEffectsofChangesinNoncontrollingInterestDetails" roleURI="http://lxp.com/role/EquityScheduleofEffectsofChangesinNoncontrollingInterestDetails">
+        <link:definition>9955564 - Disclosure - Equity - Schedule of Effects of Changes in Noncontrolling Interest (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlansNonVestedShareActivityDetails" roleURI="http://lxp.com/role/BenefitPlansNonVestedShareActivityDetails">
+        <link:definition>9955565 - Disclosure - Benefit Plans - Non-Vested Share Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlansSharesGrantedtoCertainEmployeesandTrusteesDetails" roleURI="http://lxp.com/role/BenefitPlansSharesGrantedtoCertainEmployeesandTrusteesDetails">
+        <link:definition>9955566 - Disclosure - Benefit Plans - Shares Granted to Certain Employees and Trustees (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlansAdditionalInformationDetails" roleURI="http://lxp.com/role/BenefitPlansAdditionalInformationDetails">
+        <link:definition>9955567 - Disclosure - Benefit Plans - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesComponentsofIncomeTaxProvisionDetails" roleURI="http://lxp.com/role/IncomeTaxesComponentsofIncomeTaxProvisionDetails">
+        <link:definition>9955568 - Disclosure - Income Taxes - Components of Income Tax Provision (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesAdditionalInformationDetails" roleURI="http://lxp.com/role/IncomeTaxesAdditionalInformationDetails">
+        <link:definition>9955569 - Disclosure - Income Taxes - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesStatutoryFederalIncomeTaxDetails" roleURI="http://lxp.com/role/IncomeTaxesStatutoryFederalIncomeTaxDetails">
+        <link:definition>9955570 - Disclosure - Income Taxes - Statutory Federal Income Tax (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryofAverageTaxableNatureofDividendsDetails" roleURI="http://lxp.com/role/IncomeTaxesSummaryofAverageTaxableNatureofDividendsDetails">
+        <link:definition>9955571 - Disclosure - Income Taxes - Summary of Average Taxable Nature of Dividends (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesDetails" roleURI="http://lxp.com/role/CommitmentsandContingenciesDetails">
+        <link:definition>9955572 - Disclosure - Commitments and Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalDisclosureofStatementofCashFlowInformationSupplementalDisclosureofStatementofCashFlowInformationDetails" roleURI="http://lxp.com/role/SupplementalDisclosureofStatementofCashFlowInformationSupplementalDisclosureofStatementofCashFlowInformationDetails">
+        <link:definition>9955573 - Disclosure - Supplemental Disclosure of Statement of Cash Flow Information - Supplemental Disclosure of Statement of Cash Flow Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalDisclosureofStatementofCashFlowInformationAdditionalInformationDetails" roleURI="http://lxp.com/role/SupplementalDisclosureofStatementofCashFlowInformationAdditionalInformationDetails">
+        <link:definition>9955574 - Disclosure - Supplemental Disclosure of Statement of Cash Flow Information - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsDetails" roleURI="http://lxp.com/role/SubsequentEventsDetails">
+        <link:definition>9955575 - Disclosure - Subsequent Events (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIIRealEstateandAccumulatedDepreciationandAmortizationScheduleIIIDetails" roleURI="http://lxp.com/role/ScheduleIIIRealEstateandAccumulatedDepreciationandAmortizationScheduleIIIDetails">
+        <link:definition>9955576 - Disclosure - Schedule III - Real Estate and Accumulated Depreciation and Amortization - Schedule III (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIIRealEstateandAccumulatedDepreciationandAmortizationSummaryDetails" roleURI="http://lxp.com/role/ScheduleIIIRealEstateandAccumulatedDepreciationandAmortizationSummaryDetails">
+        <link:definition>9955577 - Disclosure - Schedule III - Real Estate and Accumulated Depreciation and Amortization - Summary (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="lxp_AuditorInformationAbstract" abstract="true" name="AuditorInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="lxp_RealEstateInvestmentPropertyFiniteLivedIntangibleAssetsAndConstructionInProgressGross" abstract="false" name="RealEstateInvestmentPropertyFiniteLivedIntangibleAssetsAndConstructionInProgressGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_RealEstateInvestmentPropertyAccumulatedDepreciationAndAmortization" abstract="false" name="RealEstateInvestmentPropertyAccumulatedDepreciationAndAmortization" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_NoncontrollingInterestDecreaseFromRedemptionsForCommonSharesShares" abstract="false" name="NoncontrollingInterestDecreaseFromRedemptionsForCommonSharesShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="lxp_NoncontrollingInterestAmountPurchasedInConsolidatedJointVenture" abstract="false" name="NoncontrollingInterestAmountPurchasedInConsolidatedJointVenture" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_CommonSharesIssuanceAndDeferredCompensationCostsAmortizationShares" abstract="false" name="CommonSharesIssuanceAndDeferredCompensationCostsAmortizationShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="lxp_CommonSharesIssuanceAndDeferredCompensationCostsAmortization" abstract="false" name="CommonSharesIssuanceAndDeferredCompensationCostsAmortization" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_ImpairmentChargesAndLoanLossesContinuingOperations" abstract="false" name="ImpairmentChargesAndLoanLossesContinuingOperations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_ProceedsFromSalesTypeLeaseNetInvestmentInLease" abstract="false" name="ProceedsFromSalesTypeLeaseNetInvestmentInLease" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_PaymentsToAcquireAdditionalInterestInSubsidiariesFinancingActivities" abstract="false" name="PaymentsToAcquireAdditionalInterestInSubsidiariesFinancingActivities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_ImpairmentOfEquityMethodInvestmentsPolicyTextBlock" abstract="false" name="ImpairmentOfEquityMethodInvestmentsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="lxp_CostCapitalizationPolicyTextBlock" abstract="false" name="CostCapitalizationPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="lxp_CommonDevelopmentCostEstimatesForLandSoldPolicyTextBlock" abstract="false" name="CommonDevelopmentCostEstimatesForLandSoldPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="lxp_ShortTermInvestmentsPolicyPolicyTextBlock" abstract="false" name="ShortTermInvestmentsPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="lxp_ScheduleOfAcquiredPropertiesTableTextBlock" abstract="false" name="ScheduleOfAcquiredPropertiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="lxp_ScheduleOfCarryingAmountsAndFairValueOfFinancialInstrumentsTableTextBlock" abstract="false" name="ScheduleOfCarryingAmountsAndFairValueOfFinancialInstrumentsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="lxp_SummaryOfAverageTaxableNatureOfDividendsTableTextBlock" abstract="false" name="SummaryOfAverageTaxableNatureOfDividendsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="lxp_JointVenturesWithDevelopersMember" abstract="true" name="JointVenturesWithDevelopersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_OnGoingDevelopmentProjectsMember" abstract="true" name="OnGoingDevelopmentProjectsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_LandJointVenturesMember" abstract="true" name="LandJointVenturesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_LepercqCorporateIncomeFundLPMember" abstract="true" name="LepercqCorporateIncomeFundLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_NumberOfJointVentureInterests" abstract="false" name="NumberOfJointVentureInterests" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="lxp_JointVentureOwnershipPercentage" abstract="false" name="JointVentureOwnershipPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="lxp_ConsolidationLessThanWhollyOwnedSubsidiaryParentOwnershipInterestChangesPurchaseOfInterestByParentPercent" abstract="false" name="ConsolidationLessThanWhollyOwnedSubsidiaryParentOwnershipInterestChangesPurchaseOfInterestByParentPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="lxp_IncomeLossFromContinuingOperationsAttributableToCommonShareholdersNetOfDeductions" abstract="false" name="IncomeLossFromContinuingOperationsAttributableToCommonShareholdersNetOfDeductions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_IncrementalCommonSharesAttributableToOperatingPartnershipUnits" abstract="false" name="IncrementalCommonSharesAttributableToOperatingPartnershipUnits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="lxp_OrlandoFloridaWarehouseMember" abstract="true" name="OrlandoFloridaWarehouseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_BelowMarketLeaseAmortizationIncomeThroughYearFive" abstract="false" name="BelowMarketLeaseAmortizationIncomeThroughYearFive" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_PhoenixArizonaMember" abstract="true" name="PhoenixArizonaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_CentralFloridaMember" abstract="true" name="CentralFloridaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_IndianapolisIndianaMember" abstract="true" name="IndianapolisIndianaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GreenvilleSpartanburgSouthCarolinaMember" abstract="true" name="GreenvilleSpartanburgSouthCarolinaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ColumbusOHMember" abstract="true" name="ColumbusOHMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_DallasTexasMember" abstract="true" name="DallasTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ColumbusOhioMember" abstract="true" name="ColumbusOhioMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_SavannahGAMember" abstract="true" name="SavannahGAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_AtlantaGAMember" abstract="true" name="AtlantaGAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_HoustonTXMember" abstract="true" name="HoustonTXMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_PhoenixAZIndustrialPropertyExpiringJanuary2031Member" abstract="true" name="PhoenixAZIndustrialPropertyExpiringJanuary2031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_CentralFloridaIndustrialPropertyLeaseExpirationDateNotAvailablePlacedInServiceFebruary2024Member" abstract="true" name="CentralFloridaIndustrialPropertyLeaseExpirationDateNotAvailablePlacedInServiceFebruary2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_IndianapolisINIndustrialPropertyLeaseExpirationDateNotAvailableMember" abstract="true" name="IndianapolisINIndustrialPropertyLeaseExpirationDateNotAvailableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_GreenvilleSpartanburgSCIndustrialPropertyLeaseExpirationDateNotAvailableMember" abstract="true" name="GreenvilleSpartanburgSCIndustrialPropertyLeaseExpirationDateNotAvailableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_CentralFloridaIndustrialPropertyLeaseExpirationDateNotAvailablePlacedInServiceJune2024Member" abstract="true" name="CentralFloridaIndustrialPropertyLeaseExpirationDateNotAvailablePlacedInServiceJune2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_CentralFloridaIndustrialPropertyLeaseExpirationDateNotAvailablePlacedInServiceJuly2024Member" abstract="true" name="CentralFloridaIndustrialPropertyLeaseExpirationDateNotAvailablePlacedInServiceJuly2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_ColumbusOHIndustrialPropertyLeaseExpirationDateOctober2029Member" abstract="true" name="ColumbusOHIndustrialPropertyLeaseExpirationDateOctober2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_SavannahGAIndustrialPropertyLeaseExpirationDateJanuary2034Member" abstract="true" name="SavannahGAIndustrialPropertyLeaseExpirationDateJanuary2034Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_AtlantaGAIndustrialPropertyLeaseExpirationDateAugust2027Member" abstract="true" name="AtlantaGAIndustrialPropertyLeaseExpirationDateAugust2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_AtlantaGAIndustrialPropertyLeaseExpirationDateMay2029Member" abstract="true" name="AtlantaGAIndustrialPropertyLeaseExpirationDateMay2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_HoustonTXIndustrialPropertyLeaseExpirationDateFebruary2034Member" abstract="true" name="HoustonTXIndustrialPropertyLeaseExpirationDateFebruary2034Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_GreenvilleSpartanburgSCIndustrialPropertyLeaseExpirationDateDecember2036Member" abstract="true" name="GreenvilleSpartanburgSCIndustrialPropertyLeaseExpirationDateDecember2036Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_PhoenixAZIndustrialPropertyExpiringAugust2033Member" abstract="true" name="PhoenixAZIndustrialPropertyExpiringAugust2033Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_DallasTXIndustrialPropertyMember" abstract="true" name="DallasTXIndustrialPropertyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_ColumbusOhioIndustrialPropertyExpiringOctober2033Member" abstract="true" name="ColumbusOhioIndustrialPropertyExpiringOctober2033Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_GreenvilleSpartanburgSCIndustrialPropertyExpiringFeburary2029Member" abstract="true" name="GreenvilleSpartanburgSCIndustrialPropertyExpiringFeburary2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_CentralFloridaIndustrialPropertyExpiringJanuary2029Member" abstract="true" name="CentralFloridaIndustrialPropertyExpiringJanuary2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_LeaseStatusAxis" abstract="true" name="LeaseStatusAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="lxp_LeaseStatusDomain" abstract="true" name="LeaseStatusDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_RealEstateInvestmentPropertyLeasedMember" abstract="true" name="RealEstateInvestmentPropertyLeasedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_InvestmentBuildingAndBuildingImprovementsAcquiredDuringPeriod" abstract="false" name="InvestmentBuildingAndBuildingImprovementsAcquiredDuringPeriod" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_InvestmentBuildingAndBuildingImprovementsPlacedInServiceVacantTermAfterCompletion" abstract="false" name="InvestmentBuildingAndBuildingImprovementsPlacedInServiceVacantTermAfterCompletion" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="lxp_RealEstateUnderConstructionPercentLeased" abstract="false" name="RealEstateUnderConstructionPercentLeased" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="lxp_RealEstateInvestmentPropertyPurchasedNumberOfAcres" abstract="false" name="RealEstateInvestmentPropertyPurchasedNumberOfAcres" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:areaItemType"/>
+  <xs:element id="lxp_RealEstateUnderConstructionTermOfLease" abstract="false" name="RealEstateUnderConstructionTermOfLease" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="lxp_ReemsOliveMember" abstract="true" name="ReemsOliveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_MtComfortPhaseIIMember" abstract="true" name="MtComfortPhaseIIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_FairburnJVMember" abstract="true" name="FairburnJVMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_RealEstateUnderConstructionProjectOwnershipPercentage" abstract="false" name="RealEstateUnderConstructionProjectOwnershipPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="lxp_AreaOfLandHeldForDevelopment" abstract="false" name="AreaOfLandHeldForDevelopment" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:areaItemType"/>
+  <xs:element id="lxp_LandHeldForDevelopmentAmountFunded" abstract="false" name="LandHeldForDevelopmentAmountFunded" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_NumberofRealEstatePropertiesHeldForSale" abstract="false" name="NumberofRealEstatePropertiesHeldForSale" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="lxp_DisposalGroupIncludingDiscontinuedOperationRealEstateAtCost" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationRealEstateAtCost" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_DisposalGroupIncludingDiscontinuedOperationsAccountsPayableAndOtherLiabilities" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationsAccountsPayableAndOtherLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_DisposalGroupIncludingDiscontinuedOperationAdvanceRent" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationAdvanceRent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_ResidualCapitalizationRateMember" abstract="true" name="ResidualCapitalizationRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_ImpairedRealEstateAssetsFairValueDisclosure" abstract="false" name="ImpairedRealEstateAssetsFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_ImpairedAssetHeldForSaleMeasurementInput" abstract="false" name="ImpairedAssetHeldForSaleMeasurementInput" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="lxp_SalesTypeLeaseNetInvestmentInLeaseFairValueDisclosure" abstract="false" name="SalesTypeLeaseNetInvestmentInLeaseFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_MFGColdJVMember" abstract="true" name="MFGColdJVMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_NNNOfficeJointVentureMember" abstract="true" name="NNNOfficeJointVentureMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_EtnaPark70Member" abstract="true" name="EtnaPark70Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_EtnaPark70EastLLCMember" abstract="true" name="EtnaPark70EastLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_BSHLesseeLPMember" abstract="true" name="BSHLesseeLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_LombardStreetLotsLLCMember" abstract="true" name="LombardStreetLotsLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_NNNOfficeJointVenturePropertiesMember" abstract="true" name="NNNOfficeJointVenturePropertiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ETNABuildingDMember" abstract="true" name="ETNABuildingDMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_BSHLesseeJointVenturePropertiesMember" abstract="true" name="BSHLesseeJointVenturePropertiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_RealEstateInvestmentPropertiesAvailableForLeaseMember" abstract="true" name="RealEstateInvestmentPropertiesAvailableForLeaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_RealEstateNumberofPropertiesSold" abstract="false" name="RealEstateNumberofPropertiesSold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="lxp_IncomeLossFromEquityMethodInvestmentsGainOnSaleOfAssets" abstract="false" name="IncomeLossFromEquityMethodInvestmentsGainOnSaleOfAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_RealEstateInvestmentPropertyEstimatedCost" abstract="false" name="RealEstateInvestmentPropertyEstimatedCost" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_LexingtonRealityAdvisorsIncMember" abstract="true" name="LexingtonRealityAdvisorsIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_COVID19PandemicMember" abstract="true" name="COVID19PandemicMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_UnspecifiedMember" abstract="true" name="UnspecifiedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_LessorOperatingLeaseAccountReceivableWriteoff" abstract="false" name="LessorOperatingLeaseAccountReceivableWriteoff" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_NumberOfTenantsExercisingPurchaseOption" abstract="false" name="NumberOfTenantsExercisingPurchaseOption" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="lxp_SalesTypeLeaseNetInvestmentInLeaseAllowanceForCreditLossToTotalPercent" abstract="false" name="SalesTypeLeaseNetInvestmentInLeaseAllowanceForCreditLossToTotalPercent" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="lxp_MortgagesAndNotesPayableMember" abstract="true" name="MortgagesAndNotesPayableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ConstructionInProgressCapitalizedInterest" abstract="false" name="ConstructionInProgressCapitalizedInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_UnsecuredRevolvingCreditFacilityExpiringFebruary2023Member" abstract="true" name="UnsecuredRevolvingCreditFacilityExpiringFebruary2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_UnsecuredTermLoanExpiringJanuary2025Member" abstract="true" name="UnsecuredTermLoanExpiringJanuary2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_RevolvingCreditFacilityExpiresInJuly2026Member" abstract="true" name="RevolvingCreditFacilityExpiresInJuly2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_UnsecuredTermLoanExpiringJanuary2027Member" abstract="true" name="UnsecuredTermLoanExpiringJanuary2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_TermLoanForwardSwapMember" abstract="true" name="TermLoanForwardSwapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_UnsecuredTermLoanMember" abstract="true" name="UnsecuredTermLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_DebtInstrumentBasisSpreadOnVariableRateIncreaseDecreaseDuringPeriod" abstract="false" name="DebtInstrumentBasisSpreadOnVariableRateIncreaseDecreaseDuringPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="lxp_MortgagesNotesPayableCreditFacilityBorrowingsandTermLoansMember" abstract="true" name="MortgagesNotesPayableCreditFacilityBorrowingsandTermLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_SeniorNotesDue2024Member" abstract="true" name="SeniorNotesDue2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_SeniorNotesDue2028Member" abstract="true" name="SeniorNotesDue2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_SeniorNotesDue2030Member" abstract="true" name="SeniorNotesDue2030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_SeniorNotesDue2031Member" abstract="true" name="SeniorNotesDue2031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_DebtInstrumentPercentageofIssuancePrice" abstract="false" name="DebtInstrumentPercentageofIssuancePrice" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="lxp_SixPointEightZeroFourPercentTrustPreferredSecuritiesMember" abstract="true" name="SixPointEightZeroFourPercentTrustPreferredSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_TrustPreferredSecuritiesMember" abstract="true" name="TrustPreferredSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_TrustPreferredSecuritiesDueIn2037Member" abstract="true" name="TrustPreferredSecuritiesDueIn2037Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_TrustPreferredForwardSwapSecuritiesMember" abstract="true" name="TrustPreferredForwardSwapSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_DebtInstrumentInterestRateStatedPercentageAdjustmentToVariableRate" abstract="false" name="DebtInstrumentInterestRateStatedPercentageAdjustmentToVariableRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="lxp_SeniorNotesConvertibleNotesandTrustPreferredSecuritiesMember" abstract="true" name="SeniorNotesConvertibleNotesandTrustPreferredSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_TermLoanInterestRateSwapMember" abstract="true" name="TermLoanInterestRateSwapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_TermLoanForwardInterestRateSwapMember" abstract="true" name="TermLoanForwardInterestRateSwapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_TrustPreferredSecuritiesForwardInterestRateSwapMember" abstract="true" name="TrustPreferredSecuritiesForwardInterestRateSwapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_CashflowHedgeMember" abstract="true" name="CashflowHedgeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_EquityTable" abstract="true" name="EquityTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="lxp_AtMarketMember" abstract="true" name="AtMarketMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_UnderwrittenOfferingMember" abstract="true" name="UnderwrittenOfferingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_LCIFPartnershipMember" abstract="true" name="LCIFPartnershipMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_EquityLineItems" abstract="true" name="EquityLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="lxp_SaleofStockAuthorizedAmount" abstract="false" name="SaleofStockAuthorizedAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_PreferredStockConversionThresholdConversionPricePercentage" abstract="false" name="PreferredStockConversionThresholdConversionPricePercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="lxp_PartnersCapitalAccountSharesIssuedForUnitsRedeemed" abstract="false" name="PartnersCapitalAccountSharesIssuedForUnitsRedeemed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="lxp_PartnersCapitalAccountExchangesAndConversionsExchangeRatio" abstract="false" name="PartnersCapitalAccountExchangesAndConversionsExchangeRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="lxp_ConsolidationLessthanWhollyOwnedSubsidiaryParentOwnershipInterestChangesRedemptionOfOperatingPartnershipUnits" abstract="false" name="ConsolidationLessthanWhollyOwnedSubsidiaryParentOwnershipInterestChangesRedemptionOfOperatingPartnershipUnits" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_NonVestedSharesMember" abstract="true" name="NonVestedSharesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_IndexPerformanceSharesMember" abstract="true" name="IndexPerformanceSharesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_PeerPerformanceSharesMember" abstract="true" name="PeerPerformanceSharesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_NonVestedCommonSharesMember" abstract="true" name="NonVestedCommonSharesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantedInPeriodFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantedInPeriodFairValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_SharebasedCompensationArrangementbySharebasedPaymentAwardMeasurementPeriod" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardMeasurementPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="lxp_NonManagementAwardGrantMember" abstract="true" name="NonManagementAwardGrantMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_SharesSubjectToTimeMember" abstract="true" name="SharesSubjectToTimeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_SharesSubjectToPerformanceMember" abstract="true" name="SharesSubjectToPerformanceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_InitialVestingPercentage" abstract="false" name="InitialVestingPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="lxp_VestingPercentage" abstract="false" name="VestingPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="lxp_DefinedContributionPlanVestingPeriod" abstract="false" name="DefinedContributionPlanVestingPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="lxp_IncomeTaxesTable" abstract="true" name="IncomeTaxesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="lxp_IncomeTaxesLineItems" abstract="true" name="IncomeTaxesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="lxp_StateTaxesPaid" abstract="false" name="StateTaxesPaid" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_TaxOnDividendsByNatureAxis" abstract="true" name="TaxOnDividendsByNatureAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="lxp_TaxOnDividendsByNatureDomain" abstract="true" name="TaxOnDividendsByNatureDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_OrdinaryIncomeMember" abstract="true" name="OrdinaryIncomeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_FifteenPercentRateQualifyingDividendMember" abstract="true" name="FifteenPercentRateQualifyingDividendMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_FifteenPercentRateGainMember" abstract="true" name="FifteenPercentRateGainMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ReturnOfCapitalMember" abstract="true" name="ReturnOfCapitalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_TaxablePercentageAllocationOnDividends" abstract="false" name="TaxablePercentageAllocationOnDividends" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="lxp_RealEstateInvestmentPropertyEstimatedDevelopmentCosts" abstract="false" name="RealEstateInvestmentPropertyEstimatedDevelopmentCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_PaloAltoOfficePropertyMember" abstract="true" name="PaloAltoOfficePropertyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_PaloAltoCaliforniaMember" abstract="true" name="PaloAltoCaliforniaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_NoncashInvestmentIncreasedInvestmentInRealEstateUnderConstruction" abstract="false" name="NoncashInvestmentIncreasedInvestmentInRealEstateUnderConstruction" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_RealEstateInvestmentPropertyAtCostNoncashIncreaseDecrease" abstract="false" name="RealEstateInvestmentPropertyAtCostNoncashIncreaseDecrease" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_GainLossOnPurchaseOfLandRecognizedAsDecreaseToLandBasisAcquired" abstract="false" name="GainLossOnPurchaseOfLandRecognizedAsDecreaseToLandBasisAcquired" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_NoncashDispositionOfRealEstateCostDerecognized" abstract="false" name="NoncashDispositionOfRealEstateCostDerecognized" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_NoncashDispositionOfRealEstateAccumulatedDepreciationAndAmortizationDerecognized" abstract="false" name="NoncashDispositionOfRealEstateAccumulatedDepreciationAndAmortizationDerecognized" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_ChandlerArizonaMember" abstract="true" name="ChandlerArizonaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GoodyearArizonaMember" abstract="true" name="GoodyearArizonaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_TollesonArizonaMember" abstract="true" name="TollesonArizonaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_LakelandFloridaMember" abstract="true" name="LakelandFloridaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_OcalaFloridaMember" abstract="true" name="OcalaFloridaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_OrlandoFloridaMember" abstract="true" name="OrlandoFloridaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_PlantCityFloridaMember" abstract="true" name="PlantCityFloridaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_RuskinFloridaMember" abstract="true" name="RuskinFloridaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_TampaFloridaMember" abstract="true" name="TampaFloridaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_AdairsvilleGeorgiaMember" abstract="true" name="AdairsvilleGeorgiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_AustellGeorgiaMember" abstract="true" name="AustellGeorgiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_CartersvilleGeorgiaMember" abstract="true" name="CartersvilleGeorgiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_FairburnGeorgiaMember" abstract="true" name="FairburnGeorgiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_McDonoughGeorgiaMember" abstract="true" name="McDonoughGeorgiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_PoolerGeorgiaMember" abstract="true" name="PoolerGeorgiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_RinconGeorgiaMember" abstract="true" name="RinconGeorgiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_UnionCityGAMember" abstract="true" name="UnionCityGAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_EdwardsvilleIllinoisMember" abstract="true" name="EdwardsvilleIllinoisMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_RantoulIllinoisMember" abstract="true" name="RantoulIllinoisMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_RockfordIllinoisMember" abstract="true" name="RockfordIllinoisMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GreenfieldIllinoisMember" abstract="true" name="GreenfieldIllinoisMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_LafayetteIndianaMember" abstract="true" name="LafayetteIndianaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_LebanonIndianaMember" abstract="true" name="LebanonIndianaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WhitelandIndianaMember" abstract="true" name="WhitelandIndianaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WhitestownIndianaMember" abstract="true" name="WhitestownIndianaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_NewCenturyKansasMember" abstract="true" name="NewCenturyKansasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WaltonKYMember" abstract="true" name="WaltonKYMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_MinneapolisMinnesotaMember" abstract="true" name="MinneapolisMinnesotaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ByhaliaMississippiMember" abstract="true" name="ByhaliaMississippiMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_CantonMississippiMember" abstract="true" name="CantonMississippiMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_OliveBranchMississippiMember" abstract="true" name="OliveBranchMississippiMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_ShelbyNorthCarolinaMember" abstract="true" name="ShelbyNorthCarolinaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_StatesvilleNorthCarolinaMember" abstract="true" name="StatesvilleNorthCarolinaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ErwinNewYorkMember" abstract="true" name="ErwinNewYorkMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_LongIslandCityNewYorkMember" abstract="true" name="LongIslandCityNewYorkMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ChillicotheOhioMember" abstract="true" name="ChillicotheOhioMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_EtnaOHMember" abstract="true" name="EtnaOHMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_HebronOhioMember" abstract="true" name="HebronOhioMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_LockbourneOhioMember" abstract="true" name="LockbourneOhioMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_MonroeOhioMember" abstract="true" name="MonroeOhioMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_StreetsboroOhioMember" abstract="true" name="StreetsboroOhioMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_BristolPennsylvaniaMember" abstract="true" name="BristolPennsylvaniaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_DuncanSouthCarolinaMember" abstract="true" name="DuncanSouthCarolinaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GreerSouthCarolinaMember" abstract="true" name="GreerSouthCarolinaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_PiedmontSouthCarolinaMember" abstract="true" name="PiedmontSouthCarolinaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_SpartanburgSouthCarolinaMember" abstract="true" name="SpartanburgSouthCarolinaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_AntiochTennesseeMember" abstract="true" name="AntiochTennesseeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ClevelandTennesseeMember" abstract="true" name="ClevelandTennesseeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_JacksonTennesseeMember" abstract="true" name="JacksonTennesseeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_LewisburgTennesseeMember" abstract="true" name="LewisburgTennesseeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_MillingtonTennesseeMember" abstract="true" name="MillingtonTennesseeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_SmyrnaTennesseeMember" abstract="true" name="SmyrnaTennesseeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_CarrolltonTexasMember" abstract="true" name="CarrolltonTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_DeerParkTexasMember" abstract="true" name="DeerParkTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GrandPrairieTexasMember" abstract="true" name="GrandPrairieTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_HoustonTexasMember" abstract="true" name="HoustonTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_HutchinsTexasMember" abstract="true" name="HutchinsTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_LancasterTexasMember" abstract="true" name="LancasterTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_MissouriCityTexasMember" abstract="true" name="MissouriCityTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_NorthlakeTexasMember" abstract="true" name="NorthlakeTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_PasadenaTexasMember" abstract="true" name="PasadenaTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_SanAntonioTexasMember" abstract="true" name="SanAntonioTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ChesterVirginiaMember" abstract="true" name="ChesterVirginiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WinchesterVirginiaMember" abstract="true" name="WinchesterVirginiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ChandlerAZIndustrialPropertyAcquiredNov20Member" abstract="true" name="ChandlerAZIndustrialPropertyAcquiredNov20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_GoodyearAZIndustrialPropertyAcquiredNov18Member" abstract="true" name="GoodyearAZIndustrialPropertyAcquiredNov18Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GoodyearAZIndustrialPropertyAcquiredNov19Member" abstract="true" name="GoodyearAZIndustrialPropertyAcquiredNov19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GoodyearAZIndustrialPropertyAcquiredJan20Member" abstract="true" name="GoodyearAZIndustrialPropertyAcquiredJan20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GoodyearAZIndustrialPropertyAcquiredSep21Member" abstract="true" name="GoodyearAZIndustrialPropertyAcquiredSep21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GoodyearAZIndustrialPropertyAcquiredNov21Member" abstract="true" name="GoodyearAZIndustrialPropertyAcquiredNov21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_GoodyearAZIndustrialPropertyAcquiredFeb24Member" abstract="true" name="GoodyearAZIndustrialPropertyAcquiredFeb24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_PhoenixAZIndustrialPropertyAcquiredDec21Member" abstract="true" name="PhoenixAZIndustrialPropertyAcquiredDec21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_PhoenixAZIndustrialPropertyAcquiredApr22Member" abstract="true" name="PhoenixAZIndustrialPropertyAcquiredApr22Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_TollesonAZIndustrialPropertyAcquiredOct19Member" abstract="true" name="TollesonAZIndustrialPropertyAcquiredOct19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_LakelandFLIndustrialPropertyAcquiredJan21Member" abstract="true" name="LakelandFLIndustrialPropertyAcquiredJan21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_OcalaFLIndustrialPropertyAcquiredJun20Member" abstract="true" name="OcalaFLIndustrialPropertyAcquiredJun20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_OcalaFLIndustrialPropertyAcquiredMar24Member" abstract="true" name="OcalaFLIndustrialPropertyAcquiredMar24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_OrlandoFLIndustrialPropertyAcquiredDec06Member" abstract="true" name="OrlandoFLIndustrialPropertyAcquiredDec06Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_PlantCityFLIndustrialPropertyAcquiredDec21Member" abstract="true" name="PlantCityFLIndustrialPropertyAcquiredDec21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_RuskinFLIndustrialPropertyAcquiredJun24Member" abstract="true" name="RuskinFLIndustrialPropertyAcquiredJun24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_RuskinFLIndustrialPropertyAcquiredJul24Member" abstract="true" name="RuskinFLIndustrialPropertyAcquiredJul24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_TampaFLIndustrialPropertyAcquiredJul88Member" abstract="true" name="TampaFLIndustrialPropertyAcquiredJul88Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_AdairsvilleGAIndustrialPropertyAcquiredDec21Member" abstract="true" name="AdairsvilleGAIndustrialPropertyAcquiredDec21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_AdairsvilleGAIndustrialPropertyAcquiredNov24Member" abstract="true" name="AdairsvilleGAIndustrialPropertyAcquiredNov24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_AustellGAIndustrialPropertyAcquiredJun19Member" abstract="true" name="AustellGAIndustrialPropertyAcquiredJun19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_CartersvilleGAIndustrialPropertyAcquiredDec21Member" abstract="true" name="CartersvilleGAIndustrialPropertyAcquiredDec21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_CartersvilleGAIndustrialPropertyAcquiredDec21Property2Member" abstract="true" name="CartersvilleGAIndustrialPropertyAcquiredDec21Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_CartersvilleGAIndustrialPropertyAcquiredNov24Member" abstract="true" name="CartersvilleGAIndustrialPropertyAcquiredNov24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_FairburnGAIndustrialPropertyAcquiredNov21Member" abstract="true" name="FairburnGAIndustrialPropertyAcquiredNov21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_McDonoughGAIndustrialPropertyAcquiredAug17Member" abstract="true" name="McDonoughGAIndustrialPropertyAcquiredAug17Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_McDonoughGAIndustrialPropertyAcquiredFeb19Member" abstract="true" name="McDonoughGAIndustrialPropertyAcquiredFeb19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_PoolerGAIndustrialPropertyAcquiredApr20Member" abstract="true" name="PoolerGAIndustrialPropertyAcquiredApr20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_RinconGAIndustrialPropertyAcquiredSep20Member" abstract="true" name="RinconGAIndustrialPropertyAcquiredSep20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_RinconGAIndustrialPropertyAcquiredOct24Member" abstract="true" name="RinconGAIndustrialPropertyAcquiredOct24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_SavannahGAIndustrialPropertyAcquiredJun20Member" abstract="true" name="SavannahGAIndustrialPropertyAcquiredJun20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_SavannahGAIndustrialPropertyAcquiredJun20Property2Member" abstract="true" name="SavannahGAIndustrialPropertyAcquiredJun20Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_UnionCityGAIndustrialPropertyAcquiredJun19Member" abstract="true" name="UnionCityGAIndustrialPropertyAcquiredJun19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_EdwardsvilleILIndustrialPropertyAcquiredDec16Member" abstract="true" name="EdwardsvilleILIndustrialPropertyAcquiredDec16Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_EdwardsvilleILIndustrialPropertyAcquiredJun18Member" abstract="true" name="EdwardsvilleILIndustrialPropertyAcquiredJun18Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_RantoulILIndustrialPropertyAcquiredJan14Member" abstract="true" name="RantoulILIndustrialPropertyAcquiredJan14Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_RockfordILIndustrialPropertyAcquiredDec06Member" abstract="true" name="RockfordILIndustrialPropertyAcquiredDec06Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_RockfordILIndustrialPropertyAcquiredDec06Property2Member" abstract="true" name="RockfordILIndustrialPropertyAcquiredDec06Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GreenfieldINIndustrialPropertyAcquiredMar24Member" abstract="true" name="GreenfieldINIndustrialPropertyAcquiredMar24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_LafayetteINIndustrialPropertyAcquiredOct17Member" abstract="true" name="LafayetteINIndustrialPropertyAcquiredOct17Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_LebanonINIndustrialPropertyAcquiredFeb17Member" abstract="true" name="LebanonINIndustrialPropertyAcquiredFeb17Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_WhitelandINIndustrialPropertyAcquiredOct21Member" abstract="true" name="WhitelandINIndustrialPropertyAcquiredOct21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WhitelandINIndustrialPropertyAcquiredOct21Property2Member" abstract="true" name="WhitelandINIndustrialPropertyAcquiredOct21Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WhitelandINIndustrialPropertyAcquiredOct21Property3Member" abstract="true" name="WhitelandINIndustrialPropertyAcquiredOct21Property3Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WhitestownINIndustrialPropertyAcquiredJan19Member" abstract="true" name="WhitestownINIndustrialPropertyAcquiredJan19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WhitestownINIndustrialPropertyAcquiredJan21Member" abstract="true" name="WhitestownINIndustrialPropertyAcquiredJan21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WhitestownINIndustrialPropertyAcquiredJan21Property2Member" abstract="true" name="WhitestownINIndustrialPropertyAcquiredJan21Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WhitestownINIndustrialPropertyAcquiredDec21Member" abstract="true" name="WhitestownINIndustrialPropertyAcquiredDec21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_NewCenturyKSIndustrialPropertyAcquiredFeb17Member" abstract="true" name="NewCenturyKSIndustrialPropertyAcquiredFeb17Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_WaltonKYIndustrialPropertyAcquiredFeb22Member" abstract="true" name="WaltonKYIndustrialPropertyAcquiredFeb22Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WaltonKYIndustrialPropertyAcquiredFeb22Property2Member" abstract="true" name="WaltonKYIndustrialPropertyAcquiredFeb22Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_MinneapolisMNIndustrialPropertyAcquiredSep12Member" abstract="true" name="MinneapolisMNIndustrialPropertyAcquiredSep12Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_ByhaliaMSIndustrialPropertyAcquiredMay11Member" abstract="true" name="ByhaliaMSIndustrialPropertyAcquiredMay11Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ByhaliaMSIndustrialPropertyAcquiredSep17Member" abstract="true" name="ByhaliaMSIndustrialPropertyAcquiredSep17Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_CantonMSIndustrialPropertyAcquiredMar15Member" abstract="true" name="CantonMSIndustrialPropertyAcquiredMar15Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_OliveBranchMSIndustrialPropertyAcquiredApr18Member" abstract="true" name="OliveBranchMSIndustrialPropertyAcquiredApr18Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_OliveBranchMSIndustrialPropertyAcquiredApr18Property2Member" abstract="true" name="OliveBranchMSIndustrialPropertyAcquiredApr18Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_OliveBranchMSIndustrialPropertyAcquiredMay19Member" abstract="true" name="OliveBranchMSIndustrialPropertyAcquiredMay19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_OliveBranchMSIndustrialPropertyAcquiredMay19Property2Member" abstract="true" name="OliveBranchMSIndustrialPropertyAcquiredMay19Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_ShelbyNCIndustrialPropertyAcquiredJune11Member" abstract="true" name="ShelbyNCIndustrialPropertyAcquiredJune11Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_StatesvilleNCIndustrialPropertyAcquiredDec06Member" abstract="true" name="StatesvilleNCIndustrialPropertyAcquiredDec06Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_ErwinNYIndustrialPropertyAcquiredSep12Member" abstract="true" name="ErwinNYIndustrialPropertyAcquiredSep12Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_LongIslandCityNYIndustrialPropertyAcquiredMar13Member" abstract="true" name="LongIslandCityNYIndustrialPropertyAcquiredMar13Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_ChillicotheOHIndustrialPropertyAcquiredOct11Member" abstract="true" name="ChillicotheOHIndustrialPropertyAcquiredOct11Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_ColumbusOHIndustrialPropertyAcquiredAug21Member" abstract="true" name="ColumbusOHIndustrialPropertyAcquiredAug21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_EtnaOHIndustrialPropertyAcquired2023Member" abstract="true" name="EtnaOHIndustrialPropertyAcquired2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_EtnaOHIndustrialPropertyAcquiredAug24Member" abstract="true" name="EtnaOHIndustrialPropertyAcquiredAug24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_HebronOHIndustrialPropertyAcquiredDec97Member" abstract="true" name="HebronOHIndustrialPropertyAcquiredDec97Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_HebronOHIndustrialPropertyAcquiredDec01Member" abstract="true" name="HebronOHIndustrialPropertyAcquiredDec01Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_LockbourneOHIndustrialPropertyAcquiredMar21Member" abstract="true" name="LockbourneOHIndustrialPropertyAcquiredMar21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_MonroeOHIndustrialPropertyAcquiredSep19Member" abstract="true" name="MonroeOHIndustrialPropertyAcquiredSep19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_MonroeOHIndustrialPropertyAcquiredSep19Property2Member" abstract="true" name="MonroeOHIndustrialPropertyAcquiredSep19Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_MonroeOHIndustrialPropertyAcquiredSep19Property3Member" abstract="true" name="MonroeOHIndustrialPropertyAcquiredSep19Property3Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_MonroeOHIndustrialPropertyAcquiredDec21Member" abstract="true" name="MonroeOHIndustrialPropertyAcquiredDec21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_StreetsboroOHIndustrialPropertyAcquiredJun07Member" abstract="true" name="StreetsboroOHIndustrialPropertyAcquiredJun07Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_BristolPAIndustrialPropertyAcquiredMar98Member" abstract="true" name="BristolPAIndustrialPropertyAcquiredMar98Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_DuncanSCIndustrialPropertyAcquiredApr19Member" abstract="true" name="DuncanSCIndustrialPropertyAcquiredApr19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_DuncanSCIndustrialPropertyAcquiredOct19Member" abstract="true" name="DuncanSCIndustrialPropertyAcquiredOct19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_DuncanSCIndustrialPropertyAcquiredOct19Property2Member" abstract="true" name="DuncanSCIndustrialPropertyAcquiredOct19Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_DuncanSCIndustrialPropertyAcquiredJul21Member" abstract="true" name="DuncanSCIndustrialPropertyAcquiredJul21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_DuncanSCIndustrialPropertyAcquiredJul21Property2Member" abstract="true" name="DuncanSCIndustrialPropertyAcquiredJul21Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_DuncanSCIndustrialPropertyAcquiredJul21Property3Member" abstract="true" name="DuncanSCIndustrialPropertyAcquiredJul21Property3Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_DuncanSCIndustrialPropertyAcquiredJul21Property4Member" abstract="true" name="DuncanSCIndustrialPropertyAcquiredJul21Property4Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GreerSCIndustrialPropertyAcquiredDec19Member" abstract="true" name="GreerSCIndustrialPropertyAcquiredDec19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GreerSCIndustrialPropertyAcquiredJun21Member" abstract="true" name="GreerSCIndustrialPropertyAcquiredJun21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GreerSCIndustrialPropertyAcquiredJun21Property2Member" abstract="true" name="GreerSCIndustrialPropertyAcquiredJun21Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_GreerSCIndustrialPropertyAcquired2022Member" abstract="true" name="GreerSCIndustrialPropertyAcquired2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_GreerSCIndustrialPropertyAcquiredDec23Member" abstract="true" name="GreerSCIndustrialPropertyAcquiredDec23Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_GreerSCIndustrialPropertyAcquiredApr24Member" abstract="true" name="GreerSCIndustrialPropertyAcquiredApr24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_PiedmontSCIndustrialPropertyAcquiredDec24Member" abstract="true" name="PiedmontSCIndustrialPropertyAcquiredDec24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_SpartanburgSCIndustrialPropertyAcquiredAug18Member" abstract="true" name="SpartanburgSCIndustrialPropertyAcquiredAug18Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_SpartanburgSCIndustrialPropertyAcquiredDec20Member" abstract="true" name="SpartanburgSCIndustrialPropertyAcquiredDec20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_AntiochTNIndustrialPropertyAcquiredMay07Member" abstract="true" name="AntiochTNIndustrialPropertyAcquiredMay07Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_ClevelandTNIndustrialPropertyAcquiredMay17Member" abstract="true" name="ClevelandTNIndustrialPropertyAcquiredMay17Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_JacksonTNIndustrialPropertyAcquiredSep17Member" abstract="true" name="JacksonTNIndustrialPropertyAcquiredSep17Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_LewisburgTNIndustrialPropertyAcquiredMay14Member" abstract="true" name="LewisburgTNIndustrialPropertyAcquiredMay14Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_MillingtonTNIndustrialPropertyAcquiredApr05Member" abstract="true" name="MillingtonTNIndustrialPropertyAcquiredApr05Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_SmyrnaTNIndustrialPropertyAcquiredSep17Member" abstract="true" name="SmyrnaTNIndustrialPropertyAcquiredSep17Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_CarrolltonTXIndustrialPropertyAcquiredSep18Member" abstract="true" name="CarrolltonTXIndustrialPropertyAcquiredSep18Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_DallasTXIndustrialPropertyAcquiredApr19Member" abstract="true" name="DallasTXIndustrialPropertyAcquiredApr19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_DeerParkTXIndustrialPropertyAcquiredMay2021Member" abstract="true" name="DeerParkTXIndustrialPropertyAcquiredMay2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_GrandPrairieTXIndustrialPropertyAcquiredJun17Member" abstract="true" name="GrandPrairieTXIndustrialPropertyAcquiredJun17Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_HoustonTXIndustrialPropertyAcquiredMar13Member" abstract="true" name="HoustonTXIndustrialPropertyAcquiredMar13Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_HutchinsTXIndustrialPropertyAcquiredMay20Member" abstract="true" name="HutchinsTXIndustrialPropertyAcquiredMay20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_LancasterTXIndustrialPropertyAcquiredDec20Member" abstract="true" name="LancasterTXIndustrialPropertyAcquiredDec20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_LancasterTXIndustrialPropertyAcquiredJul2023Member" abstract="true" name="LancasterTXIndustrialPropertyAcquiredJul2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_MissouriCityTXIndustrialPropertyAcquiredApr12Member" abstract="true" name="MissouriCityTXIndustrialPropertyAcquiredApr12Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_NorthlakeTXIndustrialPropertyAcquiredFeb20Member" abstract="true" name="NorthlakeTXIndustrialPropertyAcquiredFeb20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_NorthlakeTXIndustrialPropertyAcquiredDec20Member" abstract="true" name="NorthlakeTXIndustrialPropertyAcquiredDec20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_PasadenaTXIndustrialPropertyAcquiredAug18Member" abstract="true" name="PasadenaTXIndustrialPropertyAcquiredAug18Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_PasadenaTXIndustrialPropertyAcquiredJun20Member" abstract="true" name="PasadenaTXIndustrialPropertyAcquiredJun20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_PasadenaTXIndustrialPropertyAcquiredMay21Member" abstract="true" name="PasadenaTXIndustrialPropertyAcquiredMay21Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_PasadenaTXIndustrialPropertyAcquiredMay21Property2Member" abstract="true" name="PasadenaTXIndustrialPropertyAcquiredMay21Property2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_PasadenaTXIndustrialPropertyAcquiredNov24Member" abstract="true" name="PasadenaTXIndustrialPropertyAcquiredNov24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_SanAntonioTXIndustrialPropertyAcquiredJun17Member" abstract="true" name="SanAntonioTXIndustrialPropertyAcquiredJun17Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_ChesterVAIndustrialPropertyAcquiredDec18Member" abstract="true" name="ChesterVAIndustrialPropertyAcquiredDec18Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lxp_WinchesterVAIndustrialPropertyAcquiredDec17Member" abstract="true" name="WinchesterVAIndustrialPropertyAcquiredDec17Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WinchesterVAIndustrialPropertyAcquiredSept20Member" abstract="true" name="WinchesterVAIndustrialPropertyAcquiredSept20Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_WinchesterVAIndustrialPropertyAcquiredJun07Member" abstract="true" name="WinchesterVAIndustrialPropertyAcquiredJun07Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lxp_SECSchedule1228RealEstateCompaniesInvestmentInRealEstateAndAccumulatedDepreciationAmountOfEncumbrancesNetOfDeferredFinanceCosts" abstract="false" name="SECSchedule1228RealEstateCompaniesInvestmentInRealEstateAndAccumulatedDepreciationAmountOfEncumbrancesNetOfDeferredFinanceCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_RealEstatePropertiesSold" abstract="false" name="RealEstatePropertiesSold" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lxp_RealEstateAccumulatedDepreciationOtherReclassifications" abstract="false" name="RealEstateAccumulatedDepreciationOtherReclassifications" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

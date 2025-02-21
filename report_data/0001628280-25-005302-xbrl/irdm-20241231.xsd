@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:85325ebf-3f10-4f46-978c-c486c6f19b1b,g:fd45aca5-e91e-48a9-af2f-af9c2978e890-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:irdm="http://www.iridium.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.iridium.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/exch/2024" schemaLocation="https://xbrl.sec.gov/exch/2024/exch-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="irdm-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="irdm-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="irdm-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="irdm-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.iridium.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.iridium.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.iridium.com/role/ConsolidatedBalanceSheets">
+        <link:definition>9952151 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.iridium.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>9952152 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofOperationsandComprehensiveIncome" roleURI="http://www.iridium.com/role/ConsolidatedStatementsofOperationsandComprehensiveIncome">
+        <link:definition>9952153 - Statement - Consolidated Statements of Operations and Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofChangesinStockholdersEquity" roleURI="http://www.iridium.com/role/ConsolidatedStatementsofChangesinStockholdersEquity">
+        <link:definition>9952154 - Statement - Consolidated Statements of Changes in Stockholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://www.iridium.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>9952155 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBusiness" roleURI="http://www.iridium.com/role/OrganizationandBusiness">
+        <link:definition>9952156 - Disclosure - Organization and Business</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountingPolicies" roleURI="http://www.iridium.com/role/AccountingPolicies">
+        <link:definition>9952157 - Disclosure - Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashandCashEquivalentsandMarketableSecurities" roleURI="http://www.iridium.com/role/CashandCashEquivalentsandMarketableSecurities">
+        <link:definition>9952158 - Disclosure - Cash and Cash Equivalents and Marketable Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipment" roleURI="http://www.iridium.com/role/PropertyandEquipment">
+        <link:definition>9952159 - Disclosure - Property and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssets" roleURI="http://www.iridium.com/role/IntangibleAssets">
+        <link:definition>9952160 - Disclosure - Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Debt" roleURI="http://www.iridium.com/role/Debt">
+        <link:definition>9952161 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsNotes" roleURI="http://www.iridium.com/role/DerivativeInstrumentsNotes">
+        <link:definition>9952162 - Disclosure - Derivative Instruments (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityTransactions" roleURI="http://www.iridium.com/role/EquityTransactions">
+        <link:definition>9952163 - Disclosure - Equity Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueNotes" roleURI="http://www.iridium.com/role/RevenueNotes">
+        <link:definition>9952164 - Disclosure - Revenue (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNotes" roleURI="http://www.iridium.com/role/LeasesNotes">
+        <link:definition>9952165 - Disclosure - Leases (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://www.iridium.com/role/StockBasedCompensation">
+        <link:definition>9952166 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsAssetAcquisitionsandJointVentureFormation" roleURI="http://www.iridium.com/role/BusinessCombinationsAssetAcquisitionsandJointVentureFormation">
+        <link:definition>9952167 - Disclosure - Business Combinations, Asset Acquisitions, and Joint Venture Formation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.iridium.com/role/IncomeTaxes">
+        <link:definition>9952168 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionDisclosureRelatedPartyTransactions" roleURI="http://www.iridium.com/role/RelatedPartyTransactionDisclosureRelatedPartyTransactions">
+        <link:definition>9952169 - Disclosure - Related Party Transaction Disclosure Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerShare" roleURI="http://www.iridium.com/role/NetIncomeLossPerShare">
+        <link:definition>9952170 - Disclosure - Net Income (Loss) Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsSignificantCustomersSupplierandServiceProvidersandGeographicInformation" roleURI="http://www.iridium.com/role/SegmentsSignificantCustomersSupplierandServiceProvidersandGeographicInformation">
+        <link:definition>9952171 - Disclosure - Segments, Significant Customers, Supplier and Service Providers and Geographic Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlan" roleURI="http://www.iridium.com/role/EmployeeBenefitPlan">
+        <link:definition>9952172 - Disclosure - Employee Benefit Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesandBasisofPresentationPolicies" roleURI="http://www.iridium.com/role/SignificantAccountingPoliciesandBasisofPresentationPolicies">
+        <link:definition>9955511 - Disclosure - Significant Accounting Policies and Basis of Presentation (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuePolicies" roleURI="http://www.iridium.com/role/RevenuePolicies">
+        <link:definition>9955512 - Disclosure - Revenue (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesandBasisofPresentationTables" roleURI="http://www.iridium.com/role/SignificantAccountingPoliciesandBasisofPresentationTables">
+        <link:definition>9955513 - Disclosure - Significant Accounting Policies and Basis of Presentation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashandCashEquivalentsandMarketableSecuritiesTables" roleURI="http://www.iridium.com/role/CashandCashEquivalentsandMarketableSecuritiesTables">
+        <link:definition>9955514 - Disclosure - Cash and Cash Equivalents and Marketable Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentTables" roleURI="http://www.iridium.com/role/PropertyandEquipmentTables">
+        <link:definition>9955515 - Disclosure - Property and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsTables" roleURI="http://www.iridium.com/role/IntangibleAssetsTables">
+        <link:definition>9955516 - Disclosure - Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTables" roleURI="http://www.iridium.com/role/DebtTables">
+        <link:definition>9955517 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsTables" roleURI="http://www.iridium.com/role/DerivativeInstrumentsTables">
+        <link:definition>9955518 - Disclosure - Derivative Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueTables" roleURI="http://www.iridium.com/role/RevenueTables">
+        <link:definition>9955519 - Disclosure - Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.iridium.com/role/LeasesTables">
+        <link:definition>9955520 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://www.iridium.com/role/StockBasedCompensationTables">
+        <link:definition>9955521 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsAssetAcquisitionsandJointVentureFormationTables" roleURI="http://www.iridium.com/role/BusinessCombinationsAssetAcquisitionsandJointVentureFormationTables">
+        <link:definition>9955522 - Disclosure - Business Combinations, Asset Acquisitions, and Joint Venture Formation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.iridium.com/role/IncomeTaxesTables">
+        <link:definition>9955523 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerShareTables" roleURI="http://www.iridium.com/role/NetIncomeLossPerShareTables">
+        <link:definition>9955524 - Disclosure - Net Income (Loss) Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsSignificantCustomersSupplierandServiceProvidersandGeographicInformationTables" roleURI="http://www.iridium.com/role/SegmentsSignificantCustomersSupplierandServiceProvidersandGeographicInformationTables">
+        <link:definition>9955525 - Disclosure - Segments, Significant Customers, Supplier and Service Providers and Geographic Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesandBasisofPresentationScheduleofInventoryDetails" roleURI="http://www.iridium.com/role/SignificantAccountingPoliciesandBasisofPresentationScheduleofInventoryDetails">
+        <link:definition>9955526 - Disclosure - Significant Accounting Policies and Basis of Presentation - Schedule of Inventory (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesandBasisofPresentationClassificationofStockbasedCompensationDetails" roleURI="http://www.iridium.com/role/SignificantAccountingPoliciesandBasisofPresentationClassificationofStockbasedCompensationDetails">
+        <link:definition>9955527 - Disclosure - Significant Accounting Policies and Basis of Presentation - Classification of Stock-based Compensation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesandBasisofPresentationScheduleofPropertyandEquipmentUsefulLivesDetails" roleURI="http://www.iridium.com/role/SignificantAccountingPoliciesandBasisofPresentationScheduleofPropertyandEquipmentUsefulLivesDetails">
+        <link:definition>9955528 - Disclosure - Significant Accounting Policies and Basis of Presentation - Schedule of Property and Equipment Useful Lives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesandBasisofPresentationNarrativeDetails" roleURI="http://www.iridium.com/role/SignificantAccountingPoliciesandBasisofPresentationNarrativeDetails">
+        <link:definition>9955529 - Disclosure - Significant Accounting Policies and Basis of Presentation - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashandCashEquivalentsDetails" roleURI="http://www.iridium.com/role/CashandCashEquivalentsDetails">
+        <link:definition>9955530 - Disclosure - Cash and Cash Equivalents (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentSummaryofPropertyPlantandEquipmentDetails" roleURI="http://www.iridium.com/role/PropertyandEquipmentSummaryofPropertyPlantandEquipmentDetails">
+        <link:definition>9955531 - Disclosure - Property and Equipment - Summary of Property, Plant, and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentNarrativeDetails" roleURI="http://www.iridium.com/role/PropertyandEquipmentNarrativeDetails">
+        <link:definition>9955532 - Disclosure - Property and Equipment - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsIndentifiableIntangibleAssetsDetails" roleURI="http://www.iridium.com/role/IntangibleAssetsIndentifiableIntangibleAssetsDetails">
+        <link:definition>9955533 - Disclosure - Intangible Assets - Indentifiable Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsFutureAmortizationExpenseDetails" roleURI="http://www.iridium.com/role/IntangibleAssetsFutureAmortizationExpenseDetails">
+        <link:definition>9955534 - Disclosure - Intangible Assets - Future Amortization Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsNarrativeDetails" roleURI="http://www.iridium.com/role/IntangibleAssetsNarrativeDetails">
+        <link:definition>9955535 - Disclosure - Intangible Assets - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtNarrativeDetails" roleURI="http://www.iridium.com/role/DebtNarrativeDetails">
+        <link:definition>9955536 - Disclosure - Debt- Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtInterestIncurredDetails" roleURI="http://www.iridium.com/role/DebtInterestIncurredDetails">
+        <link:definition>9955537 - Disclosure - Debt - Interest Incurred (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtFuturePaymentsDetails" roleURI="http://www.iridium.com/role/DebtFuturePaymentsDetails">
+        <link:definition>9955538 - Disclosure - Debt Future Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsSummaryofUnrealizedGainsandLossesDetails" roleURI="http://www.iridium.com/role/DerivativeInstrumentsSummaryofUnrealizedGainsandLossesDetails">
+        <link:definition>9955539 - Disclosure - Derivative Instruments - Summary of Unrealized Gains and Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsNarrativeDetails" roleURI="http://www.iridium.com/role/DerivativeInstrumentsNarrativeDetails">
+        <link:definition>9955540 - Disclosure - Derivative Instruments - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityTransactionsNarrativeDetails" roleURI="http://www.iridium.com/role/EquityTransactionsNarrativeDetails">
+        <link:definition>9955541 - Disclosure - Equity Transactions Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueNarrativeDetails" roleURI="http://www.iridium.com/role/RevenueNarrativeDetails">
+        <link:definition>9955542 - Disclosure - Revenue - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueSummaryofServiceRevenueDetails" roleURI="http://www.iridium.com/role/RevenueSummaryofServiceRevenueDetails">
+        <link:definition>9955543 - Disclosure - Revenue - Summary of Service Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueSummaryofContractCostsDetails" roleURI="http://www.iridium.com/role/RevenueSummaryofContractCostsDetails">
+        <link:definition>9955544 - Disclosure - Revenue - Summary of Contract Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseAccountSummaryDetails" roleURI="http://www.iridium.com/role/LeaseAccountSummaryDetails">
+        <link:definition>9955545 - Disclosure - Lease Account Summary (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseFuturePaymentObligationsDetails" roleURI="http://www.iridium.com/role/LeaseFuturePaymentObligationsDetails">
+        <link:definition>9955546 - Disclosure - Lease Future Payment Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LessorPaymentstobeReceivedDetails" roleURI="http://www.iridium.com/role/LessorPaymentstobeReceivedDetails">
+        <link:definition>9955547 - Disclosure - Lessor Payments to be Received (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNarrativeDetails" roleURI="http://www.iridium.com/role/LeasesNarrativeDetails">
+        <link:definition>9955548 - Disclosure - Leases Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationOutstandingRSUsDetails" roleURI="http://www.iridium.com/role/StockBasedCompensationOutstandingRSUsDetails">
+        <link:definition>9955549 - Disclosure - Stock-Based Compensation Outstanding RSUs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationActivityOfCompanysStockOptionsDetails" roleURI="http://www.iridium.com/role/StockBasedCompensationActivityOfCompanysStockOptionsDetails">
+        <link:definition>9955550 - Disclosure - Stock-Based Compensation Activity Of Company's Stock Options (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationNarrativeDetails" roleURI="http://www.iridium.com/role/StockBasedCompensationNarrativeDetails">
+        <link:definition>9955551 - Disclosure - Stock-Based Compensation Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsAssetAcquisitionsandJointVentureFormationDetails" roleURI="http://www.iridium.com/role/BusinessCombinationsAssetAcquisitionsandJointVentureFormationDetails">
+        <link:definition>9955552 - Disclosure - Business Combinations, Asset Acquisitions, and Joint Venture Formation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsAssetAcquisitionsandJointVentureFormationDetails_1" roleURI="http://www.iridium.com/role/BusinessCombinationsAssetAcquisitionsandJointVentureFormationDetails_1">
+        <link:definition>9955553 - Disclosure - Business Combinations, Asset Acquisitions, and Joint Venture Formation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsAssetAcquisitionsandJointVentureFormationDetails_2" roleURI="http://www.iridium.com/role/BusinessCombinationsAssetAcquisitionsandJointVentureFormationDetails_2">
+        <link:definition>9955554 - Disclosure - Business Combinations, Asset Acquisitions, and Joint Venture Formation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsAssetAcquisitionsandJointVentureFormationDetails_3" roleURI="http://www.iridium.com/role/BusinessCombinationsAssetAcquisitionsandJointVentureFormationDetails_3">
+        <link:definition>9955555 - Disclosure - Business Combinations, Asset Acquisitions, and Joint Venture Formation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomelossbeforeTaxesTableDetails" roleURI="http://www.iridium.com/role/IncomelossbeforeTaxesTableDetails">
+        <link:definition>9955556 - Disclosure - Income (loss) before Taxes Table (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxExpenseBenefitDetails" roleURI="http://www.iridium.com/role/IncomeTaxExpenseBenefitDetails">
+        <link:definition>9955557 - Disclosure - Income Tax Expense (Benefit) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxRateReconciliationComponentsDetails" roleURI="http://www.iridium.com/role/IncomeTaxRateReconciliationComponentsDetails">
+        <link:definition>9955558 - Disclosure - Income Tax Rate Reconciliation Components (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DeferredTaxAssetsLiabilitiesDetails" roleURI="http://www.iridium.com/role/DeferredTaxAssetsLiabilitiesDetails">
+        <link:definition>9955559 - Disclosure - Deferred Tax Assets (Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="UnrecognizedTaxBenefitsDetails" roleURI="http://www.iridium.com/role/UnrecognizedTaxBenefitsDetails">
+        <link:definition>9955560 - Disclosure - Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.iridium.com/role/IncomeTaxesDetails">
+        <link:definition>9955561 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionDisclosureDetails" roleURI="http://www.iridium.com/role/RelatedPartyTransactionDisclosureDetails">
+        <link:definition>9955562 - Disclosure - Related Party Transaction Disclosure (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerShareScheduleofEarningsPerShareBasicandDilutedDetails" roleURI="http://www.iridium.com/role/NetIncomeLossPerShareScheduleofEarningsPerShareBasicandDilutedDetails">
+        <link:definition>9955563 - Disclosure - Net Income (Loss) Per Share - Schedule of Earnings Per Share, Basic and Diluted (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerShareAntiDilutiveSharesDetails" roleURI="http://www.iridium.com/role/NetIncomeLossPerShareAntiDilutiveSharesDetails">
+        <link:definition>9955564 - Disclosure - Net Income (Loss) Per Share - Anti-Dilutive Shares (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomePerShareDetails" roleURI="http://www.iridium.com/role/NetIncomePerShareDetails">
+        <link:definition>9955565 - Disclosure - Net Income Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsSignificantCustomersSupplierandServiceProvidersandGeographicInformationNetPropertyandEquipmentDetails" roleURI="http://www.iridium.com/role/SegmentsSignificantCustomersSupplierandServiceProvidersandGeographicInformationNetPropertyandEquipmentDetails">
+        <link:definition>9955566 - Disclosure - Segments, Significant Customers, Supplier and Service Providers and Geographic Information Net Property and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsSignificantCustomersSupplierandServiceProvidersandGeographicInformationRevenueByGeographicDetails" roleURI="http://www.iridium.com/role/SegmentsSignificantCustomersSupplierandServiceProvidersandGeographicInformationRevenueByGeographicDetails">
+        <link:definition>9955567 - Disclosure - Segments, Significant Customers, Supplier and Service Providers and Geographic Information Revenue By Geographic (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsSignificantCustomersSupplierandServiceProvidersandGeographicInformationNarrativeDetails" roleURI="http://www.iridium.com/role/SegmentsSignificantCustomersSupplierandServiceProvidersandGeographicInformationNarrativeDetails">
+        <link:definition>9955568 - Disclosure - Segments, Significant Customers, Supplier and Service Providers and Geographic Information Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlanNarrativeDetails" roleURI="http://www.iridium.com/role/EmployeeBenefitPlanNarrativeDetails">
+        <link:definition>9955569 - Disclosure - Employee Benefit Plan Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="irdm_EngineeringandSupportServicesMember" abstract="true" name="EngineeringandSupportServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_CommonStockAmountMember" abstract="true" name="CommonStockAmountMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_AdjustmentsToAdditionalPaidInCapitalStockWithheldToCoverEmployeeTaxes" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalStockWithheldToCoverEmployeeTaxes" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_TermLoanBMember" abstract="true" name="TermLoanBMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_SupplementalDisclosureOfNonCashInvestingActivitiesAbstract" abstract="true" name="SupplementalDisclosureOfNonCashInvestingActivitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="irdm_OtherConstructionInProcessTableTextBlock" abstract="false" name="OtherConstructionInProcessTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="irdm_EarningsPerShareTableTextBlockTextBlock" abstract="false" name="EarningsPerShareTableTextBlockTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="irdm_SummaryofCompanysEngineeringandSupportServiceRevenueTableTextBlock" abstract="false" name="SummaryofCompanysEngineeringandSupportServiceRevenueTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="irdm_OperatingLeasesRightofUseAssetsandLiabilitiesTableTextBlock" abstract="false" name="OperatingLeasesRightofUseAssetsandLiabilitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="irdm_BusinessCombinationEarningsOrLossOfAcquireeSinceAcquisitionDateActualTableTextBlock" abstract="false" name="BusinessCombinationEarningsOrLossOfAcquireeSinceAcquisitionDateActualTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="irdm_ShareBasedCompensationPropertyAndEquipmentNetMember" abstract="true" name="ShareBasedCompensationPropertyAndEquipmentNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="irdm_ShareBasedCompensationInventoryNetMember" abstract="true" name="ShareBasedCompensationInventoryNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="irdm_ShareBasedCompensationEquipmentExpenseMember" abstract="true" name="ShareBasedCompensationEquipmentExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="irdm_ShareBasedCompensationCostOfServicesMember" abstract="true" name="ShareBasedCompensationCostOfServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="irdm_ShareBasedCompensationResearchAndDevelopmentMember" abstract="true" name="ShareBasedCompensationResearchAndDevelopmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="irdm_ShareBasedCompensationSellingGeneralAndAdministrativeExpenseMember" abstract="true" name="ShareBasedCompensationSellingGeneralAndAdministrativeExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="irdm_SatelliteSystemMember" abstract="true" name="SatelliteSystemMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="irdm_HostedPayloadandOtherDataServicesMember" abstract="true" name="HostedPayloadandOtherDataServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_DepreciationExpenseIncreaseDecreaseDueChangeInEstimatedUsefulLife" abstract="false" name="DepreciationExpenseIncreaseDecreaseDueChangeInEstimatedUsefulLife" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_RevenueIncreaseDecreaseDueToChangeInEstimate" abstract="false" name="RevenueIncreaseDecreaseDueToChangeInEstimate" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_DefinitionThreeYearCumulativeInflationRateHighlyInflationaryEconomy" abstract="false" name="DefinitionThreeYearCumulativeInflationRateHighlyInflationaryEconomy" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="irdm_SatelliteSystemGross" abstract="false" name="SatelliteSystemGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_GroundSystemGross" abstract="false" name="GroundSystemGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_PropertyPlantAndEquipmentNetExcludingConstructionInProcessAndLand" abstract="false" name="PropertyPlantAndEquipmentNetExcludingConstructionInProcessAndLand" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_SpareSatellites" abstract="false" name="SpareSatellites" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_OtherConstructionInProcess" abstract="false" name="OtherConstructionInProcess" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_GroundSystemMember" abstract="true" name="GroundSystemMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_SpectrumAndLicensingMember" abstract="true" name="SpectrumAndLicensingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_AssembledWorkforceMember" abstract="true" name="AssembledWorkforceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_TermLoanBAdditionalMember" abstract="true" name="TermLoanBAdditionalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_TermLoanBRefinancedMember" abstract="true" name="TermLoanBRefinancedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_DiscountOnDebtIssuance" abstract="false" name="DiscountOnDebtIssuance" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="irdm_ExcessCashFlowPrepayment" abstract="false" name="ExcessCashFlowPrepayment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_CreditFacilityDrawdownFloorforApplicationofFirstLienNetLeverageRatio" abstract="false" name="CreditFacilityDrawdownFloorforApplicationofFirstLienNetLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="irdm_TotalAuthorizedPreferredStockNumber" abstract="false" name="TotalAuthorizedPreferredStockNumber" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="irdm_TreasuryStockValueTax" abstract="false" name="TreasuryStockValueTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_CommercialMember" abstract="true" name="CommercialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_USGovernmentMember" abstract="true" name="USGovernmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_CommercialVoiceandDataServicesMember" abstract="true" name="CommercialVoiceandDataServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_CommercialIoTDataServicesMember" abstract="true" name="CommercialIoTDataServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_CommercialBroadbandServicesMember" abstract="true" name="CommercialBroadbandServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_CommissionsMember" abstract="true" name="CommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_OtherContractAssetsMember" abstract="true" name="OtherContractAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVested" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVested" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="irdm_StockOptionContractualTerm" abstract="false" name="StockOptionContractualTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="irdm_ServiceBasedRSUMember" abstract="true" name="ServiceBasedRSUMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_ShareBaseCompensationAwardReductionInSharesAvailableForIssuanceBySharesIssuedPursuantToAnyAppreciationAward" abstract="false" name="ShareBaseCompensationAwardReductionInSharesAvailableForIssuanceBySharesIssuedPursuantToAnyAppreciationAward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="irdm_ShareBasedCompensationAwardReductioninSharesAvailableforIssuancebySharesIssuedPursuanttoAnyStockAwardthatisnotanAppreciationAward" abstract="false" name="ShareBasedCompensationAwardReductioninSharesAvailableforIssuancebySharesIssuedPursuanttoAnyStockAwardthatisnotanAppreciationAward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="irdm_SharebasedCompensationArrangementbySharebasedPaymentAwardAwardPerformancePeriod" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardAwardPerformancePeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="irdm_SatellesAcquireeMember" abstract="true" name="SatellesAcquireeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="irdm_SatellesInc.Member" abstract="true" name="SatellesInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="irdm_BusinessCombinationEarningsOrLossOfAcquireeSinceAcquisitionDateActualTable" abstract="true" name="BusinessCombinationEarningsOrLossOfAcquireeSinceAcquisitionDateActualTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="irdm_BusinessCombinationEarningsOrLossOfAcquireeSinceAcquisitionDateActualLineItems" abstract="true" name="BusinessCombinationEarningsOrLossOfAcquireeSinceAcquisitionDateActualLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="irdm_IncomeTaxReconciliationChangeInStateTaxValuationAllowance" abstract="false" name="IncomeTaxReconciliationChangeInStateTaxValuationAllowance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_EffectiveIncomeTaxRateReconciliationLimitationonExecutiveCompensation" abstract="false" name="EffectiveIncomeTaxRateReconciliationLimitationonExecutiveCompensation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_DeferredTaxAssetsLongTermContracts" abstract="false" name="DeferredTaxAssetsLongTermContracts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_DeferredTaxLiabilitiesFixedAssetsAndIntangibles" abstract="false" name="DeferredTaxLiabilitiesFixedAssetsAndIntangibles" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_TaxYear2022andLaterMember" abstract="true" name="TaxYear2022andLaterMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_AireonMember" abstract="true" name="AireonMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_HostingAgreementMember" abstract="true" name="HostingAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_RelatedPartyFutureAxis" abstract="true" name="RelatedPartyFutureAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="irdm_RelatedPartyFutureDomain" abstract="true" name="RelatedPartyFutureDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_InvestorBridgeLoanCommitment" abstract="false" name="InvestorBridgeLoanCommitment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="irdm_SatellitesInOrbitMember" abstract="true" name="SatellitesInOrbitMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_AllOtherMember" abstract="true" name="AllOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_PrimeContractsWithUsGovernmentMember" abstract="true" name="PrimeContractsWithUsGovernmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="irdm_NoSingleCustomerOver10TotalRevenueCommercial" abstract="false" name="NoSingleCustomerOver10TotalRevenueCommercial" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="irdm_NoSingleCustomerOver10TotalARGovernment" abstract="false" name="NoSingleCustomerOver10TotalARGovernment" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="irdm_NoSingleCustomerOver10TotalRevenueGovernment" abstract="false" name="NoSingleCustomerOver10TotalRevenueGovernment" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="irdm_NoSingleCountryGreaterthanStatedPercentagePPE" abstract="false" name="NoSingleCountryGreaterthanStatedPercentagePPE" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="irdm_NoSingleCountryorRegionRepresentingMoreThanStatedPercentageofTotalRevenue" abstract="false" name="NoSingleCountryorRegionRepresentingMoreThanStatedPercentageofTotalRevenue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+</xs:schema>

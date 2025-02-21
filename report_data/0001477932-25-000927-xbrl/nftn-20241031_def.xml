@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 02/12/2025-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2025 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <link:roleRef roleURI="http://nftn.com/role/Cover" xlink:href="nftn-20241031.xsd#Cover" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/BalanceSheets" xlink:href="nftn-20241031.xsd#BalanceSheets" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/BalanceSheetsParenthetical" xlink:href="nftn-20241031.xsd#BalanceSheetsParenthetical" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StatementsOfOperations" xlink:href="nftn-20241031.xsd#StatementsOfOperations" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StatementsOfChangesInStockholdersEquity" xlink:href="nftn-20241031.xsd#StatementsOfChangesInStockholdersEquity" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StatementsOfCashFlows" xlink:href="nftn-20241031.xsd#StatementsOfCashFlows" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/InsiderTradingArragements" xlink:href="nftn-20241031.xsd#InsiderTradingArragements" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/OrganizationAndDescriptionOfBusiness" xlink:href="nftn-20241031.xsd#OrganizationAndDescriptionOfBusiness" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/GoingConcern" xlink:href="nftn-20241031.xsd#GoingConcern" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/SummaryOfSignificantAccountingPolicies" xlink:href="nftn-20241031.xsd#SummaryOfSignificantAccountingPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/RecentAccountingPronoucements" xlink:href="nftn-20241031.xsd#RecentAccountingPronoucements" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/RelatedPartyTransactions" xlink:href="nftn-20241031.xsd#RelatedPartyTransactions" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StockholdersDeficit" xlink:href="nftn-20241031.xsd#StockholdersDeficit" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/SubsequentEvents" xlink:href="nftn-20241031.xsd#SubsequentEvents" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:href="nftn-20241031.xsd#SummaryOfSignificantAccountingPoliciesPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/GoingConcernDetailsNarrative" xlink:href="nftn-20241031.xsd#GoingConcernDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/RelatedPartyTransactionsDetailsNarrative" xlink:href="nftn-20241031.xsd#RelatedPartyTransactionsDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StockholdersEquityDetailsNarrative" xlink:href="nftn-20241031.xsd#StockholdersEquityDetailsNarrative" xlink:type="simple" />
+  <link:arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension" arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension" />
+  <link:arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain" arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain" />
+  <link:arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member" arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" />
+  <link:arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all" arcroleURI="http://xbrl.org/int/dim/arcrole/all" />
+  <link:arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#notAll" arcroleURI="http://xbrl.org/int/dim/arcrole/notAll" />
+  <link:arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default" arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-default" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/Cover" xlink:title="00000001 - Document - Cover Page Information">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.sec.gov/dei/2024/dei-2024.xsd#dei_CoverAbstract" xlink:label="loc_deiCover" />
+  </link:definitionLink>
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/BalanceSheets" xlink:title="000002 - Statement - Balance Sheets" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/BalanceSheetsParenthetical" xlink:title="000003 - Statement - Balance Sheets (Parenthetical)" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/StatementsOfOperations" xlink:title="000004 - Statement - Statements of Operations" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/StatementsOfChangesInStockholdersEquity" xlink:title="000005 - Statement - Statements of Changes in Stockholders' Equity">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementLineItems" xlink:label="loc_us-gaapStatementLineItems" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementTable" xlink:label="loc_us-gaapStatementTable" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="loc_us-gaapStatementLineItems" xlink:to="loc_us-gaapStatementTable" order="2000" xbrldt:contextElement="segment" xbrldt:closed="true" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementEquityComponentsAxis" xlink:label="loc_us-gaapStatementEquityComponentsAxis" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="loc_us-gaapStatementTable" xlink:to="loc_us-gaapStatementEquityComponentsAxis" order="20" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_EquityComponentDomain" xlink:label="loc_us-gaapEquityComponentDomain" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="loc_us-gaapStatementEquityComponentsAxis" xlink:to="loc_us-gaapEquityComponentDomain" order="30" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_EquityComponentDomain" xlink:label="loc_us-gaapEquityComponentDomain_10" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default" xlink:from="loc_us-gaapStatementEquityComponentsAxis" xlink:to="loc_us-gaapEquityComponentDomain_10" order="40" xbrldt:contextElement="segment" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockMember" xlink:label="loc_us-gaapCommonStockMember" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="loc_us-gaapEquityComponentDomain" xlink:to="loc_us-gaapCommonStockMember" order="21" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AdditionalPaidInCapitalMember" xlink:label="loc_us-gaapAdditionalPaidInCapitalMember" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="loc_us-gaapEquityComponentDomain" xlink:to="loc_us-gaapAdditionalPaidInCapitalMember" order="22" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RetainedEarningsMember" xlink:label="loc_us-gaapRetainedEarningsMember" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="loc_us-gaapEquityComponentDomain" xlink:to="loc_us-gaapRetainedEarningsMember" order="23" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_SharesIssued" xlink:label="loc_us-gaapSharesIssued" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="loc_us-gaapStatementLineItems" xlink:to="loc_us-gaapSharesIssued" order="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StockholdersEquity" xlink:label="loc_us-gaapStockholdersEquity" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="loc_us-gaapStatementLineItems" xlink:to="loc_us-gaapStockholdersEquity" order="2" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetIncomeLoss" xlink:label="loc_us-gaapNetIncomeLoss" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="loc_us-gaapStatementLineItems" xlink:to="loc_us-gaapNetIncomeLoss" order="3" />
+  </link:definitionLink>
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/StatementsOfCashFlows" xlink:title="000006 - Statement - Statements of Cash Flows" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/InsiderTradingArragements" xlink:title="000007 - Disclosure - Insider Trading Arragements" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/OrganizationAndDescriptionOfBusiness" xlink:title="000008 - Disclosure - ORGANIZATION AND DESCRIPTION OF BUSINESS" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/GoingConcern" xlink:title="000009 - Disclosure - GOING CONCERN" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/SummaryOfSignificantAccountingPolicies" xlink:title="000010 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/RecentAccountingPronoucements" xlink:title="000011 - Disclosure - RECENT ACCOUNTING PRONOUCEMENTS" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/RelatedPartyTransactions" xlink:title="000012 - Disclosure - RELATED PARTY TRANSACTIONS" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/StockholdersDeficit" xlink:title="000013 - Disclosure - STOCKHOLDERS DEFICIT" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/SubsequentEvents" xlink:title="000014 - Disclosure - SUBSEQUENT EVENTS" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:title="000015 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/GoingConcernDetailsNarrative" xlink:title="000016 - Disclosure - GOING CONCERN (Details Narrative)" />
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/RelatedPartyTransactionsDetailsNarrative" xlink:title="000017 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementLineItems" xlink:label="loc_us-gaapStatementLineItems" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StatementTable" xlink:label="loc_us-gaapStatementTable" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="loc_us-gaapStatementLineItems" xlink:to="loc_us-gaapStatementTable" order="2000" xbrldt:contextElement="segment" xbrldt:closed="true" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd#srt_TitleOfIndividualAxis" xlink:label="loc_srtTitleOfIndividualAxis" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="loc_us-gaapStatementTable" xlink:to="loc_srtTitleOfIndividualAxis" order="20" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd#srt_TitleOfIndividualWithRelationshipToEntityDomain" xlink:label="loc_srtTitleOfIndividualWithRelationshipToEntityDomain" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="loc_srtTitleOfIndividualAxis" xlink:to="loc_srtTitleOfIndividualWithRelationshipToEntityDomain" order="30" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd#srt_TitleOfIndividualWithRelationshipToEntityDomain" xlink:label="loc_srtTitleOfIndividualWithRelationshipToEntityDomain_10" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default" xlink:from="loc_srtTitleOfIndividualAxis" xlink:to="loc_srtTitleOfIndividualWithRelationshipToEntityDomain_10" order="40" xbrldt:contextElement="segment" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_ShareholdersMember" xlink:label="loc_nftnShareholdersMember" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="loc_srtTitleOfIndividualWithRelationshipToEntityDomain" xlink:to="loc_nftnShareholdersMember" order="21" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_ProceedsFromLoanPayableShareholders" xlink:label="loc_nftnProceedsFromLoanPayableShareholders" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="loc_us-gaapStatementLineItems" xlink:to="loc_nftnProceedsFromLoanPayableShareholders" order="1" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_RelatedPartyTransactionsLoansPayableCurrent" xlink:label="loc_nftnRelatedPartyTransactionsLoansPayableCurrent" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="loc_us-gaapStatementLineItems" xlink:to="loc_nftnRelatedPartyTransactionsLoansPayableCurrent" order="2" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_LoansPayableToShareholdersCurrent" xlink:label="loc_nftnLoansPayableToShareholdersCurrent" />
+    <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="loc_us-gaapStatementLineItems" xlink:to="loc_nftnLoansPayableToShareholdersCurrent" order="3" />
+  </link:definitionLink>
+  <link:definitionLink xlink:type="extended" xlink:role="http://nftn.com/role/StockholdersEquityDetailsNarrative" xlink:title="000018 - Disclosure - STOCKHOLDERS EQUITY (Details Narrative)" />
+</link:linkbase>

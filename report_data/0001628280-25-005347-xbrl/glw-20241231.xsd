@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:e374a09e-a87a-4cf6-afe0-fcf8aec69a92,g:09d21eef-c99c-4dab-80e3-4c084f511774-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:glw="http://www.corning.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.corning.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/currency/2024" schemaLocation="https://xbrl.sec.gov/currency/2024/currency-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="glw-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="glw-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="glw-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="glw-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.corning.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.corning.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofIncome" roleURI="http://www.corning.com/role/ConsolidatedStatementsofIncome">
+        <link:definition>9952151 - Statement - Consolidated Statements of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncome" roleURI="http://www.corning.com/role/ConsolidatedStatementsofComprehensiveIncome">
+        <link:definition>9952152 - Statement - Consolidated Statements of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.corning.com/role/ConsolidatedBalanceSheets">
+        <link:definition>9952153 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParentheticals" roleURI="http://www.corning.com/role/ConsolidatedBalanceSheetsParentheticals">
+        <link:definition>9952154 - Statement - Consolidated Balance Sheets (Parentheticals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://www.corning.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>9952155 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofChangesinShareholdersEquity" roleURI="http://www.corning.com/role/ConsolidatedStatementsofChangesinShareholdersEquity">
+        <link:definition>9952156 - Statement - Consolidated Statements of Changes in Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofChangesinShareholdersEquityParentheticals" roleURI="http://www.corning.com/role/ConsolidatedStatementsofChangesinShareholdersEquityParentheticals">
+        <link:definition>9952157 - Statement - Consolidated Statements of Changes in Shareholders' Equity (Parentheticals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.corning.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>9952158 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringImpairmentandOtherChargesandCredits" roleURI="http://www.corning.com/role/RestructuringImpairmentandOtherChargesandCredits">
+        <link:definition>9952159 - Disclosure - Restructuring, Impairment and Other Charges and Credits</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Revenue" roleURI="http://www.corning.com/role/Revenue">
+        <link:definition>9952160 - Disclosure - Revenue</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Inventories" roleURI="http://www.corning.com/role/Inventories">
+        <link:definition>9952161 - Disclosure - Inventories</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.corning.com/role/Leases">
+        <link:definition>9952162 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.corning.com/role/IncomeTaxes">
+        <link:definition>9952163 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentNetofAccumulatedDepreciation" roleURI="http://www.corning.com/role/PropertyPlantandEquipmentNetofAccumulatedDepreciation">
+        <link:definition>9952164 - Disclosure - Property, Plant and Equipment, Net of Accumulated Depreciation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssets" roleURI="http://www.corning.com/role/GoodwillandOtherIntangibleAssets">
+        <link:definition>9952165 - Disclosure - Goodwill and Other Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAssetsandOtherLiabilities" roleURI="http://www.corning.com/role/OtherAssetsandOtherLiabilities">
+        <link:definition>9952166 - Disclosure - Other Assets and Other Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Debt" roleURI="http://www.corning.com/role/Debt">
+        <link:definition>9952167 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementPlans" roleURI="http://www.corning.com/role/EmployeeRetirementPlans">
+        <link:definition>9952168 - Disclosure - Employee Retirement Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesandGuarantees" roleURI="http://www.corning.com/role/CommitmentsContingenciesandGuarantees">
+        <link:definition>9952169 - Disclosure - Commitments, Contingencies and Guarantees</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstruments" roleURI="http://www.corning.com/role/FinancialInstruments">
+        <link:definition>9952170 - Disclosure - Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquity" roleURI="http://www.corning.com/role/ShareholdersEquity">
+        <link:definition>9952171 - Disclosure - Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerCommonShare" roleURI="http://www.corning.com/role/EarningsPerCommonShare">
+        <link:definition>9952172 - Disclosure - Earnings Per Common Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensation" roleURI="http://www.corning.com/role/SharebasedCompensation">
+        <link:definition>9952173 - Disclosure - Share-based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReportableSegments" roleURI="http://www.corning.com/role/ReportableSegments">
+        <link:definition>9952174 - Disclosure - Reportable Segments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.corning.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesTables" roleURI="http://www.corning.com/role/SummaryofSignificantAccountingPoliciesTables">
+        <link:definition>9955512 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringImpairmentandOtherChargesandCreditsTables" roleURI="http://www.corning.com/role/RestructuringImpairmentandOtherChargesandCreditsTables">
+        <link:definition>9955513 - Disclosure - Restructuring, Impairment and Other Charges and Credits (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueTables" roleURI="http://www.corning.com/role/RevenueTables">
+        <link:definition>9955514 - Disclosure - Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesTables" roleURI="http://www.corning.com/role/InventoriesTables">
+        <link:definition>9955515 - Disclosure - Inventories (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.corning.com/role/LeasesTables">
+        <link:definition>9955516 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.corning.com/role/IncomeTaxesTables">
+        <link:definition>9955517 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentNetofAccumulatedDepreciationTables" roleURI="http://www.corning.com/role/PropertyPlantandEquipmentNetofAccumulatedDepreciationTables">
+        <link:definition>9955518 - Disclosure - Property, Plant and Equipment, Net of Accumulated Depreciation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsTables" roleURI="http://www.corning.com/role/GoodwillandOtherIntangibleAssetsTables">
+        <link:definition>9955519 - Disclosure - Goodwill and Other Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAssetsandOtherLiabilitiesTables" roleURI="http://www.corning.com/role/OtherAssetsandOtherLiabilitiesTables">
+        <link:definition>9955520 - Disclosure - Other Assets and Other Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTables" roleURI="http://www.corning.com/role/DebtTables">
+        <link:definition>9955521 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementPlansTables" roleURI="http://www.corning.com/role/EmployeeRetirementPlansTables">
+        <link:definition>9955522 - Disclosure - Employee Retirement Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesandGuaranteesTables" roleURI="http://www.corning.com/role/CommitmentsContingenciesandGuaranteesTables">
+        <link:definition>9955523 - Disclosure - Commitments, Contingencies and Guarantees (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsTables" roleURI="http://www.corning.com/role/FinancialInstrumentsTables">
+        <link:definition>9955524 - Disclosure - Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityTables" roleURI="http://www.corning.com/role/ShareholdersEquityTables">
+        <link:definition>9955525 - Disclosure - Shareholders' Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerCommonShareTables" roleURI="http://www.corning.com/role/EarningsPerCommonShareTables">
+        <link:definition>9955526 - Disclosure - Earnings Per Common Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationTables" roleURI="http://www.corning.com/role/SharebasedCompensationTables">
+        <link:definition>9955527 - Disclosure - Share-based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReportableSegmentsTables" roleURI="http://www.corning.com/role/ReportableSegmentsTables">
+        <link:definition>9955528 - Disclosure - Reportable Segments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesNarrativeDetails" roleURI="http://www.corning.com/role/SummaryofSignificantAccountingPoliciesNarrativeDetails">
+        <link:definition>9955529 - Disclosure - Summary of Significant Accounting Policies - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesScheduleofSupplementalofCashFlowDetails" roleURI="http://www.corning.com/role/SummaryofSignificantAccountingPoliciesScheduleofSupplementalofCashFlowDetails">
+        <link:definition>9955530 - Disclosure - Summary of Significant Accounting Policies - Schedule of Supplemental of Cash Flow (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesScheduleofPropertyPlantandEquipmentEstimatedUsefulLivesDetails" roleURI="http://www.corning.com/role/SummaryofSignificantAccountingPoliciesScheduleofPropertyPlantandEquipmentEstimatedUsefulLivesDetails">
+        <link:definition>9955531 - Disclosure - Summary of Significant Accounting Policies - Schedule of Property Plant and Equipment, Estimated Useful Lives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringImpairmentandOtherChargesandCreditsRestructuringImpairmentandOtherChargesandCreditsReflectedonConsolidatedStatementofIncomeLossDetails" roleURI="http://www.corning.com/role/RestructuringImpairmentandOtherChargesandCreditsRestructuringImpairmentandOtherChargesandCreditsReflectedonConsolidatedStatementofIncomeLossDetails">
+        <link:definition>9955532 - Disclosure - Restructuring, Impairment and Other Charges and Credits - Restructuring, Impairment and Other Charges and Credits Reflected on Consolidated Statement of Income (Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringImpairmentandOtherChargesandCreditsNarrativeDetails" roleURI="http://www.corning.com/role/RestructuringImpairmentandOtherChargesandCreditsNarrativeDetails">
+        <link:definition>9955533 - Disclosure - Restructuring, Impairment and Other Charges and Credits - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueScheduleofDisaggregationofRevenueDetails" roleURI="http://www.corning.com/role/RevenueScheduleofDisaggregationofRevenueDetails">
+        <link:definition>9955534 - Disclosure - Revenue - Schedule of Disaggregation of Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueNarrativeDetails" roleURI="http://www.corning.com/role/RevenueNarrativeDetails">
+        <link:definition>9955535 - Disclosure - Revenue - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesDetails" roleURI="http://www.corning.com/role/InventoriesDetails">
+        <link:definition>9955536 - Disclosure - Inventories (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesComponentsofLeaseCostDetails" roleURI="http://www.corning.com/role/LeasesComponentsofLeaseCostDetails">
+        <link:definition>9955537 - Disclosure - Leases - Components of Lease Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMeasurementofLeaseLiabilitiesDetails" roleURI="http://www.corning.com/role/LeasesMeasurementofLeaseLiabilitiesDetails">
+        <link:definition>9955538 - Disclosure - Leases - Measurement of Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesSupplementalBalanceSheetDetails" roleURI="http://www.corning.com/role/LeasesSupplementalBalanceSheetDetails">
+        <link:definition>9955539 - Disclosure - Leases - Supplemental Balance Sheet (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMaturitiesofOperatingLeaseLiabilitiesDetails" roleURI="http://www.corning.com/role/LeasesMaturitiesofOperatingLeaseLiabilitiesDetails">
+        <link:definition>9955540 - Disclosure - Leases - Maturities of Operating Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMaturitiesofOperatingLeaseLiabilitiesDetails_1" roleURI="http://www.corning.com/role/LeasesMaturitiesofOperatingLeaseLiabilitiesDetails_1">
+        <link:definition>9955540 - Disclosure - Leases - Maturities of Operating Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNarrativeDetails" roleURI="http://www.corning.com/role/LeasesNarrativeDetails">
+        <link:definition>9955541 - Disclosure - Leases - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeBeforeIncomeTaxesDetails" roleURI="http://www.corning.com/role/IncomeTaxesIncomeBeforeIncomeTaxesDetails">
+        <link:definition>9955542 - Disclosure - Income Taxes - Income Before Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesCurrentandDeferredAmountsofProvisionDetails" roleURI="http://www.corning.com/role/IncomeTaxesCurrentandDeferredAmountsofProvisionDetails">
+        <link:definition>9955543 - Disclosure - Income Taxes - Current and Deferred Amounts of Provision (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationoftheUSStatutoryIncomeTaxRatetoEffectiveTaxRateDetails" roleURI="http://www.corning.com/role/IncomeTaxesReconciliationoftheUSStatutoryIncomeTaxRatetoEffectiveTaxRateDetails">
+        <link:definition>9955544 - Disclosure - Income Taxes - Reconciliation of the U.S. Statutory Income Tax Rate to Effective Tax Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTaxEffectsofTemporaryDifferencesandCarryforwardsofDeferredTaxAssetsandLiabilitiesDetails" roleURI="http://www.corning.com/role/IncomeTaxesTaxEffectsofTemporaryDifferencesandCarryforwardsofDeferredTaxAssetsandLiabilitiesDetails">
+        <link:definition>9955545 - Disclosure - Income Taxes - Tax Effects of Temporary Differences and Carryforwards of Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNetDeferredTaxAssetsDetails" roleURI="http://www.corning.com/role/IncomeTaxesNetDeferredTaxAssetsDetails">
+        <link:definition>9955546 - Disclosure - Income Taxes - Net Deferred Tax Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDeferredTaxAssetsforLossandTaxCreditCarryforwardsDetails" roleURI="http://www.corning.com/role/IncomeTaxesDeferredTaxAssetsforLossandTaxCreditCarryforwardsDetails">
+        <link:definition>9955547 - Disclosure - Income Taxes - Deferred Tax Assets for Loss and Tax Credit Carryforwards (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDeferredTaxValuationAllowancesDetails" roleURI="http://www.corning.com/role/IncomeTaxesDeferredTaxValuationAllowancesDetails">
+        <link:definition>9955548 - Disclosure - Income Taxes - Deferred Tax Valuation Allowances (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationofUnrecognizedTaxBenefitsDetails" roleURI="http://www.corning.com/role/IncomeTaxesReconciliationofUnrecognizedTaxBenefitsDetails">
+        <link:definition>9955549 - Disclosure - Income Taxes - Reconciliation of Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.corning.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>9955550 - Disclosure - Income Taxes - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentNetofAccumulatedDepreciationScheduleofPropertyPlantandEquipmentNetofAccumulatedDepreciationDetails" roleURI="http://www.corning.com/role/PropertyPlantandEquipmentNetofAccumulatedDepreciationScheduleofPropertyPlantandEquipmentNetofAccumulatedDepreciationDetails">
+        <link:definition>9955551 - Disclosure - Property, Plant and Equipment, Net of Accumulated Depreciation - Schedule of Property, Plant and Equipment, Net of Accumulated Depreciation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsCarryingAmountofGoodwillDetails" roleURI="http://www.corning.com/role/GoodwillandOtherIntangibleAssetsCarryingAmountofGoodwillDetails">
+        <link:definition>9955552 - Disclosure - Goodwill and Other Intangible Assets - Carrying Amount of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsNarrativeDetails" roleURI="http://www.corning.com/role/GoodwillandOtherIntangibleAssetsNarrativeDetails">
+        <link:definition>9955553 - Disclosure - Goodwill and Other Intangible Assets - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsOtherIntangibleAssetsDetails" roleURI="http://www.corning.com/role/GoodwillandOtherIntangibleAssetsOtherIntangibleAssetsDetails">
+        <link:definition>9955554 - Disclosure - Goodwill and Other Intangible Assets - Other Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAssetsandOtherLiabilitiesScheduleofOtherAssetsDetails" roleURI="http://www.corning.com/role/OtherAssetsandOtherLiabilitiesScheduleofOtherAssetsDetails">
+        <link:definition>9955555 - Disclosure - Other Assets and Other Liabilities - Schedule of Other Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAssetsandOtherLiabilitiesScheduleofOtherLiabilitiesDetails" roleURI="http://www.corning.com/role/OtherAssetsandOtherLiabilitiesScheduleofOtherLiabilitiesDetails">
+        <link:definition>9955556 - Disclosure - Other Assets and Other Liabilities - Schedule of Other Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtScheduleofDebtDetails" roleURI="http://www.corning.com/role/DebtScheduleofDebtDetails">
+        <link:definition>9955557 - Disclosure - Debt - Schedule of Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtNarrativeDetails" roleURI="http://www.corning.com/role/DebtNarrativeDetails">
+        <link:definition>9955558 - Disclosure - Debt - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtScheduleofDebtMaturitiesDetails" roleURI="http://www.corning.com/role/DebtScheduleofDebtMaturitiesDetails">
+        <link:definition>9955559 - Disclosure - Debt - Schedule of Debt Maturities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementPlansNarrativeDetails" roleURI="http://www.corning.com/role/EmployeeRetirementPlansNarrativeDetails">
+        <link:definition>9955560 - Disclosure - Employee Retirement Plans - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementPlansScheduleofBenefitObligationandFundedStatusDetails" roleURI="http://www.corning.com/role/EmployeeRetirementPlansScheduleofBenefitObligationandFundedStatusDetails">
+        <link:definition>9955561 - Disclosure - Employee Retirement Plans - Schedule of Benefit Obligation and Funded Status (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementPlansScheduleofBenefitObligationsinExcessofFairValueofPlanAssetsDetails" roleURI="http://www.corning.com/role/EmployeeRetirementPlansScheduleofBenefitObligationsinExcessofFairValueofPlanAssetsDetails">
+        <link:definition>9955562 - Disclosure - Employee Retirement Plans - Schedule of Benefit Obligations in Excess of Fair Value of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementPlansScheduleofNetPeriodicBenefitExpenseDetails" roleURI="http://www.corning.com/role/EmployeeRetirementPlansScheduleofNetPeriodicBenefitExpenseDetails">
+        <link:definition>9955563 - Disclosure - Employee Retirement Plans - Schedule of Net Periodic Benefit Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementPlansScheduleofWeightedaverageAssumptionsUsedtoDetermineBenefitObligationsandNetPeriodicBenefitCostDetails" roleURI="http://www.corning.com/role/EmployeeRetirementPlansScheduleofWeightedaverageAssumptionsUsedtoDetermineBenefitObligationsandNetPeriodicBenefitCostDetails">
+        <link:definition>9955564 - Disclosure - Employee Retirement Plans - Schedule of Weighted-average Assumptions Used to Determine Benefit Obligations and Net Periodic Benefit Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementPlansScheduleofAssumedHealthCareTrendRatesDetails" roleURI="http://www.corning.com/role/EmployeeRetirementPlansScheduleofAssumedHealthCareTrendRatesDetails">
+        <link:definition>9955565 - Disclosure - Employee Retirement Plans - Schedule of Assumed Health Care Trend Rates (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementPlansScheduleofDomesticDefinedBenefitPlanAssetsDetails" roleURI="http://www.corning.com/role/EmployeeRetirementPlansScheduleofDomesticDefinedBenefitPlanAssetsDetails">
+        <link:definition>9955566 - Disclosure - Employee Retirement Plans - Schedule of Domestic Defined Benefit Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementPlansScheduleofInternationalDefinedBenefitPlanAssetsDetails" roleURI="http://www.corning.com/role/EmployeeRetirementPlansScheduleofInternationalDefinedBenefitPlanAssetsDetails">
+        <link:definition>9955567 - Disclosure - Employee Retirement Plans - Schedule of International Defined Benefit Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementPlansScheduleofChangeinFairValueofLevel3AssetsforDefinedBenefitPlanDetails" roleURI="http://www.corning.com/role/EmployeeRetirementPlansScheduleofChangeinFairValueofLevel3AssetsforDefinedBenefitPlanDetails">
+        <link:definition>9955568 - Disclosure - Employee Retirement Plans - Schedule of Change in Fair Value of Level 3 Assets for Defined Benefit Plan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementPlansScheduleofEstimatedFutureBenefitPaymentsandGrossMedicaretobeReceiveDetails" roleURI="http://www.corning.com/role/EmployeeRetirementPlansScheduleofEstimatedFutureBenefitPaymentsandGrossMedicaretobeReceiveDetails">
+        <link:definition>9955569 - Disclosure - Employee Retirement Plans - Schedule of Estimated Future Benefit Payments and Gross Medicare to be Receive (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesandGuaranteesScheduleofRecordedUnconditionalPurchaseObligationsDetails" roleURI="http://www.corning.com/role/CommitmentsContingenciesandGuaranteesScheduleofRecordedUnconditionalPurchaseObligationsDetails">
+        <link:definition>9955570 - Disclosure - Commitments, Contingencies and Guarantees - Schedule of Recorded Unconditional Purchase Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesandGuaranteesNarrativeDetails" roleURI="http://www.corning.com/role/CommitmentsContingenciesandGuaranteesNarrativeDetails">
+        <link:definition>9955571 - Disclosure - Commitments, Contingencies and Guarantees - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsScheduleofNotionalAmountsandRespectiveFairValuesofDerivativeFinancialInstrumentsonaGrossBasisDetails" roleURI="http://www.corning.com/role/FinancialInstrumentsScheduleofNotionalAmountsandRespectiveFairValuesofDerivativeFinancialInstrumentsonaGrossBasisDetails">
+        <link:definition>9955572 - Disclosure - Financial Instruments -Schedule of Notional Amounts and Respective Fair Values of Derivative Financial Instruments on a Gross Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsScheduleofTotalGrossNotionalValueforTranslatedEarningsContractsDetails" roleURI="http://www.corning.com/role/FinancialInstrumentsScheduleofTotalGrossNotionalValueforTranslatedEarningsContractsDetails">
+        <link:definition>9955573 - Disclosure - Financial Instruments - Schedule of Total Gross Notional Value for Translated Earnings Contracts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsNarrativeDetails" roleURI="http://www.corning.com/role/FinancialInstrumentsNarrativeDetails">
+        <link:definition>9955574 - Disclosure - Financial Instruments - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsScheduleofEffectofDesignatedDerivativeFinancialInstrumentsonConsolidatedFinancialStatementsDetails" roleURI="http://www.corning.com/role/FinancialInstrumentsScheduleofEffectofDesignatedDerivativeFinancialInstrumentsonConsolidatedFinancialStatementsDetails">
+        <link:definition>9955575 - Disclosure - Financial Instruments - Schedule of Effect of Designated Derivative Financial Instruments on Consolidated Financial Statements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsScheduleofEffectofUndesignatedDerivativeFinancialInstrumentsonConsolidatedFinancialStatementsDetails" roleURI="http://www.corning.com/role/FinancialInstrumentsScheduleofEffectofUndesignatedDerivativeFinancialInstrumentsonConsolidatedFinancialStatementsDetails">
+        <link:definition>9955576 - Disclosure - Financial Instruments - Schedule of Effect of Undesignated Derivative Financial Instruments on Consolidated Financial Statements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityNarrativeDetails" roleURI="http://www.corning.com/role/ShareholdersEquityNarrativeDetails">
+        <link:definition>9955577 - Disclosure - Shareholders' Equity - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityChangesinCapitalStockDetails" roleURI="http://www.corning.com/role/ShareholdersEquityChangesinCapitalStockDetails">
+        <link:definition>9955578 - Disclosure - Shareholders' Equity - Changes in Capital Stock (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityAccumulatedOtherComprehensiveLossDetails" roleURI="http://www.corning.com/role/ShareholdersEquityAccumulatedOtherComprehensiveLossDetails">
+        <link:definition>9955579 - Disclosure - Shareholders' Equity - Accumulated Other Comprehensive Loss (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityReclassificationOutofAccumulatedOtherComprehensiveIncomebyComponentDetails" roleURI="http://www.corning.com/role/ShareholdersEquityReclassificationOutofAccumulatedOtherComprehensiveIncomebyComponentDetails">
+        <link:definition>9955580 - Disclosure - Shareholders' Equity - Reclassification Out of Accumulated Other Comprehensive Income by Component (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerCommonShareReconciliationofEarningsPerCommonShareDetails" roleURI="http://www.corning.com/role/EarningsPerCommonShareReconciliationofEarningsPerCommonShareDetails">
+        <link:definition>9955581 - Disclosure - Earnings Per Common Share - Reconciliation of Earnings Per Common Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationScheduleofCompensationCostforShareBasedCompensationCostsbyPlanDetails" roleURI="http://www.corning.com/role/SharebasedCompensationScheduleofCompensationCostforShareBasedCompensationCostsbyPlanDetails">
+        <link:definition>9955582 - Disclosure - Share-based Compensation - Schedule of Compensation Cost for Share-Based Compensation Costs by Plan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationNarrativeDetails" roleURI="http://www.corning.com/role/SharebasedCompensationNarrativeDetails">
+        <link:definition>9955583 - Disclosure - Share-based Compensation - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationSummaryofRestrictedStockandRestrictedStockUnitsDetails" roleURI="http://www.corning.com/role/SharebasedCompensationSummaryofRestrictedStockandRestrictedStockUnitsDetails">
+        <link:definition>9955584 - Disclosure - Share-based Compensation - Summary of Restricted Stock and Restricted Stock Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationSummaryofPerformancebasedRestrictedStockUnitsDetails" roleURI="http://www.corning.com/role/SharebasedCompensationSummaryofPerformancebasedRestrictedStockUnitsDetails">
+        <link:definition>9955585 - Disclosure - Share-based Compensation - Summary of Performance-based Restricted Stock Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReportableSegmentsNarrativeDetails" roleURI="http://www.corning.com/role/ReportableSegmentsNarrativeDetails">
+        <link:definition>9955586 - Disclosure - Reportable Segments - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReportableSegmentsConstantCurrencyReportingDetails" roleURI="http://www.corning.com/role/ReportableSegmentsConstantCurrencyReportingDetails">
+        <link:definition>9955587 - Disclosure - Reportable Segments - Constant Currency Reporting (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReportableSegmentsSegmentinformationDetails" roleURI="http://www.corning.com/role/ReportableSegmentsSegmentinformationDetails">
+        <link:definition>9955588 - Disclosure - Reportable Segments - Segment information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReportableSegmentsScheduleofReconciliationofNetSalesofReportableSegmentstoConsolidatedNetSalesDetails" roleURI="http://www.corning.com/role/ReportableSegmentsScheduleofReconciliationofNetSalesofReportableSegmentstoConsolidatedNetSalesDetails">
+        <link:definition>9955589 - Disclosure - Reportable Segments - Schedule of Reconciliation of Net Sales of Reportable Segments to Consolidated Net Sales (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReportableSegmentsScheduleofReconciliationofNetIncomeofReportableSegmentstoConsolidatedNetIncomeDetails" roleURI="http://www.corning.com/role/ReportableSegmentsScheduleofReconciliationofNetIncomeofReportableSegmentstoConsolidatedNetIncomeDetails">
+        <link:definition>9955590 - Disclosure - Reportable Segments - Schedule of Reconciliation of Net Income of Reportable Segments to Consolidated Net Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReportableSegmentsScheduleofReconciliationofTotalAssetsofReportableSegmentsDetails" roleURI="http://www.corning.com/role/ReportableSegmentsScheduleofReconciliationofTotalAssetsofReportableSegmentsDetails">
+        <link:definition>9955591 - Disclosure - Reportable Segments - Schedule of Reconciliation of Total Assets of Reportable Segments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReportableSegmentsScheduleofSelectedFinancialInformationOnProductLinesandReportableSegmentsDetails" roleURI="http://www.corning.com/role/ReportableSegmentsScheduleofSelectedFinancialInformationOnProductLinesandReportableSegmentsDetails">
+        <link:definition>9955592 - Disclosure - Reportable Segments - Schedule of Selected Financial Information On Product Lines and Reportable Segments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReportableSegmentsScheduleofInformationConcerningPrincipalGeographicAreasDetails" roleURI="http://www.corning.com/role/ReportableSegmentsScheduleofInformationConcerningPrincipalGeographicAreasDetails">
+        <link:definition>9955593 - Disclosure - Reportable Segments - Schedule of Information Concerning Principal Geographic Areas (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="glw_A3.875NotesDue2026Member" abstract="true" name="A3.875NotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_A4.125NotesDue2031Member" abstract="true" name="A4.125NotesDue2031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="glw_ResearchDevelopmentAndEngineeringExpenses" abstract="false" name="ResearchDevelopmentAndEngineeringExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_TranslatedEarningsContractGainNet" abstract="false" name="TranslatedEarningsContractGainNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_TranslationGainLossOnJapaneseYenDenominatedDebt" abstract="false" name="TranslationGainLossOnJapaneseYenDenominatedDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_TranslatedEarningsContractGainLossNet" abstract="false" name="TranslatedEarningsContractGainLossNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_ReleaseOfCumulativeTranslationLosses" abstract="false" name="ReleaseOfCumulativeTranslationLosses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_IncreaseDecreaseInCustomerDepositsAndIncentives" abstract="false" name="IncreaseDecreaseInCustomerDepositsAndIncentives" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_IncreaseDecreaseInDeferredIncome" abstract="false" name="IncreaseDecreaseInDeferredIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_InvestmentsInAndProceedsFromUnconsolidatedEntitiesNet" abstract="false" name="InvestmentsInAndProceedsFromUnconsolidatedEntitiesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_SharesIssuedToBenefitPlansAndForOptionExercises" abstract="false" name="SharesIssuedToBenefitPlansAndForOptionExercises" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_OtherAssetsAndOtherLiabilitiesDisclosureTextBlock" abstract="false" name="OtherAssetsAndOtherLiabilitiesDisclosureTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="glw_AssetsAndLiabilitiesLesseeTableTextBlock" abstract="false" name="AssetsAndLiabilitiesLesseeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="glw_ScheduleOfNetDeferredTaxAssetsTableTextBlock" abstract="false" name="ScheduleOfNetDeferredTaxAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="glw_ReconciliationOfNetIncomeLossFromSegmentsToConsolidatedTableTextBlock" abstract="false" name="ReconciliationOfNetIncomeLossFromSegmentsToConsolidatedTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="glw_SummaryOfSignificantAccountingPoliciesTable" abstract="true" name="SummaryOfSignificantAccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="glw_UnitsTestedForImpairmentOfGoodwillMember" abstract="true" name="UnitsTestedForImpairmentOfGoodwillMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_CashIncentivesMember" abstract="true" name="CashIncentivesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_SummaryOfSignificantAccountingPoliciesLineItems" abstract="true" name="SummaryOfSignificantAccountingPoliciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="glw_ManufacturingEquipmentMember" abstract="true" name="ManufacturingEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_CurtailmentAndSpecialTerminationBenefitChargesMember" abstract="true" name="CurtailmentAndSpecialTerminationBenefitChargesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_GrossMarginMember" abstract="true" name="GrossMarginMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="glw_CapacityRealignment" abstract="false" name="CapacityRealignment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_SubstantialLiquidationAndDispositionOfForeignEntitiesMember" abstract="true" name="SubstantialLiquidationAndDispositionOfForeignEntitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="glw_EmergingGrowthBusinessesMember" abstract="true" name="EmergingGrowthBusinessesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="glw_OtherAccruedLiabilitiesMember" abstract="true" name="OtherAccruedLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_TelecommunicationProductsMember" abstract="true" name="TelecommunicationProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_DisplayProductsMember" abstract="true" name="DisplayProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_SpecialtyGlassProductsMember" abstract="true" name="SpecialtyGlassProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_EnvironmentalSubstrateAndFilterProductsMember" abstract="true" name="EnvironmentalSubstrateAndFilterProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_LifeScienceProductsMember" abstract="true" name="LifeScienceProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_PolycrystallineSiliconMember" abstract="true" name="PolycrystallineSiliconMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_HSGMember" abstract="true" name="HSGMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_LongTermSupplyCommitmentPeriod" abstract="false" name="LongTermSupplyCommitmentPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="glw_FacilityLeaseMember" abstract="true" name="FacilityLeaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="glw_EquipmentLeaseMember" abstract="true" name="EquipmentLeaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="glw_EstimatedConstructionCosts" abstract="false" name="EstimatedConstructionCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_EstimatedPurchaseAndInstallationCosts" abstract="false" name="EstimatedPurchaseAndInstallationCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_EffectiveIncomeTaxRateReconciliationReleaseOfCumulativeTranslationLossesPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationReleaseOfCumulativeTranslationLossesPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="glw_EffectiveIncomeTaxRateReconciliationRemeasurementOfDeferredTaxAssetsAndLiabilitiesPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationRemeasurementOfDeferredTaxAssetsAndLiabilitiesPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="glw_EffectiveIncomeTaxRateReconciliationIntercompanyLoanAdjustmentPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationIntercompanyLoanAdjustmentPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="glw_DeferredTaxAssetsLossAndTaxCreditCarryForward" abstract="false" name="DeferredTaxAssetsLossAndTaxCreditCarryForward" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_DeferredTaxAssetsResearchAndDevelopmentCapitalization" abstract="false" name="DeferredTaxAssetsResearchAndDevelopmentCapitalization" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsAssetImpairmentsAndRestructuringReserves" abstract="false" name="DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsAssetImpairmentsAndRestructuringReserves" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_TaxYears2025Through2029Member" abstract="true" name="TaxYears2025Through2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_TaxYears2030Through2034Member" abstract="true" name="TaxYears2030Through2034Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_TaxYears2035Through2044Member" abstract="true" name="TaxYears2035Through2044Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_IndefiniteMember" abstract="true" name="IndefiniteMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_DeferredTaxAssetsValuationAllowanceRollForward" abstract="true" name="DeferredTaxAssetsValuationAllowanceRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="glw_DeferredTaxAssetsValuationAllowanceAdditions" abstract="false" name="DeferredTaxAssetsValuationAllowanceAdditions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_DeferredTaxAssetsValuationAllowanceReduction" abstract="false" name="DeferredTaxAssetsValuationAllowanceReduction" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_UnrecognizedTaxBenefitsSettlementsAndLapseOfStatuteOfLimitations" abstract="false" name="UnrecognizedTaxBenefitsSettlementsAndLapseOfStatuteOfLimitations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_IncomeTaxesTable" abstract="true" name="IncomeTaxesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="glw_NationalTaxServiceOfKoreaMember" abstract="true" name="NationalTaxServiceOfKoreaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_IncomeTaxesLineItems" abstract="true" name="IncomeTaxesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="glw_PreciousMetals" abstract="false" name="PreciousMetals" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_OpticalCommunicationsMember" abstract="true" name="OpticalCommunicationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_DisplayTechnologiesMember" abstract="true" name="DisplayTechnologiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_SpecialtyMaterialsMember" abstract="true" name="SpecialtyMaterialsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_HemlockAndEmergingGrowthBusinessesMember" abstract="true" name="HemlockAndEmergingGrowthBusinessesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_PatentsTrademarksAndTradenamesMember" abstract="true" name="PatentsTrademarksAndTradenamesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_CustomerListsAndOtherMember" abstract="true" name="CustomerListsAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_ReceivableNoncurrentDisputedTaxDeposit" abstract="false" name="ReceivableNoncurrentDisputedTaxDeposit" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_Debentures685Due2029Member" abstract="true" name="Debentures685Due2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_Debentures7.25Due2036Member" abstract="true" name="Debentures7.25Due2036Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_Debentures470Due2037Member" abstract="true" name="Debentures470Due2037Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_Debentures575Due2040Member" abstract="true" name="Debentures575Due2040Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_Debentures475Due2042Member" abstract="true" name="Debentures475Due2042Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_Debentures535Due2048Member" abstract="true" name="Debentures535Due2048Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_Debentures3.9Due2049Member" abstract="true" name="Debentures3.9Due2049Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_Debentures4.375Due2057Member" abstract="true" name="Debentures4.375Due2057Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_Debentures5.85Due2068Member" abstract="true" name="Debentures5.85Due2068Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_Debentures5.45Due2079Member" abstract="true" name="Debentures5.45Due2079Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_YenDenominatedDebentures0.698Due2024Member" abstract="true" name="YenDenominatedDebentures0.698Due2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="glw_YenDenominatedDebentures0.722Due2025Member" abstract="true" name="YenDenominatedDebentures0.722Due2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_YenDenominatedDebentures0.922Due2027Member" abstract="true" name="YenDenominatedDebentures0.922Due2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_YenDenominatedDebentures1.043Due2028Member" abstract="true" name="YenDenominatedDebentures1.043Due2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_YenDenominatedDebentures1.219Due2030Member" abstract="true" name="YenDenominatedDebentures1.219Due2030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_YenDenominatedDebentures1.153Due2031Member" abstract="true" name="YenDenominatedDebentures1.153Due2031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_YenDenominatedDebentures1.583Due2037Member" abstract="true" name="YenDenominatedDebentures1.583Due2037Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_YenDenominatedDebentures1.513Due2039Member" abstract="true" name="YenDenominatedDebentures1.513Due2039Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_EuroDenominatedNotes3.875Due2026Member" abstract="true" name="EuroDenominatedNotes3.875Due2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_EuroDenominatedNotes4.125Due2031Member" abstract="true" name="EuroDenominatedNotes4.125Due2031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_FinancingLeasesAverageDiscountRate4.5DueThrough2044Member" abstract="true" name="FinancingLeasesAverageDiscountRate4.5DueThrough2044Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_OtherAverageRate3.61DueThrough2042Member" abstract="true" name="OtherAverageRate3.61DueThrough2042Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_ExistingCreditFacilityMember" abstract="true" name="ExistingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_UnsecuredVariableRateLoanFacilitiesMember" abstract="true" name="UnsecuredVariableRateLoanFacilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_The2024NotesMember" abstract="true" name="The2024NotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="glw_The2027And2028NotesPayableMember" abstract="true" name="The2027And2028NotesPayableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_The2027NotesMember" abstract="true" name="The2027NotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_The2028NotesMember" abstract="true" name="The2028NotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_A2026NotesMember" abstract="true" name="A2026NotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_A2031NotesMember" abstract="true" name="A2031NotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_Notes2026AndNotes2031Member" abstract="true" name="Notes2026AndNotes2031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_BondInvestmentsMember" abstract="true" name="BondInvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_DefinedBenefitPlanVoluntaryContributionsByEmployer" abstract="false" name="DefinedBenefitPlanVoluntaryContributionsByEmployer" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_CapOnContributionTowardFutureRetireeMedicalCoverage" abstract="false" name="CapOnContributionTowardFutureRetireeMedicalCoverage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="glw_PercentageOfCostToBePaidByEmployeesForRetireeMedicalUponRetirement" abstract="false" name="PercentageOfCostToBePaidByEmployeesForRetireeMedicalUponRetirement" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="glw_WeightedAverageDiscountRateRoundedAmount" abstract="false" name="WeightedAverageDiscountRateRoundedAmount" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="glw_PercentToYield" abstract="false" name="PercentToYield" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="glw_LiquidityRiskLongtermInvestmentsInPrivateEquityAndRealEstate" abstract="false" name="LiquidityRiskLongtermInvestmentsInPrivateEquityAndRealEstate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="glw_DefinedBenefitPlanBenefitObligationForeignCurrencyTranslation" abstract="false" name="DefinedBenefitPlanBenefitObligationForeignCurrencyTranslation" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_SettlementCharge" abstract="false" name="SettlementCharge" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_SpecialTerminationBenefitCharge" abstract="false" name="SpecialTerminationBenefitCharge" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_CurtailmentEffects" abstract="false" name="CurtailmentEffects" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_Settlements" abstract="false" name="Settlements" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_OtherComprehensiveIncomeLossDefinedBenefitPlanAmortizationOfGainLossReclassificationAdjustmentFromAociBeforeTax" abstract="false" name="OtherComprehensiveIncomeLossDefinedBenefitPlanAmortizationOfGainLossReclassificationAdjustmentFromAociBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_CurrentYearPriorServiceCost" abstract="false" name="CurrentYearPriorServiceCost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_DefinedBenefitPlanAssumptionsUsedCalculatingBenefitObligationEmployeeContributionsCreditingRate" abstract="false" name="DefinedBenefitPlanAssumptionsUsedCalculatingBenefitObligationEmployeeContributionsCreditingRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="glw_DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostEmployeeContributionsCreditingRate" abstract="false" name="DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostEmployeeContributionsCreditingRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="glw_RetireBeforeAge65Member" abstract="true" name="RetireBeforeAge65Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_RetireAfterAge65Member" abstract="true" name="RetireAfterAge65Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_PensionPlanAndOtherPostretirementBenefitsPlanMember" abstract="true" name="PensionPlanAndOtherPostretirementBenefitsPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_InsuranceContractsMember" abstract="true" name="InsuranceContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_OtherMember" abstract="true" name="OtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_DefinedBenefitPlanPlanAssetsLevel3ReconciliationIncreaseDecreaseForChangeInInsuranceContractValuation" abstract="false" name="DefinedBenefitPlanPlanAssetsLevel3ReconciliationIncreaseDecreaseForChangeInInsuranceContractValuation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_PurchaseObligationsMember" abstract="true" name="PurchaseObligationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_LessThan1YearMember" abstract="true" name="LessThan1YearMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_OneToThreeYearsMember" abstract="true" name="OneToThreeYearsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_ThreeToFiveYearsMember" abstract="true" name="ThreeToFiveYearsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_FiveYearsAndThereafterMember" abstract="true" name="FiveYearsAndThereafterMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_DowCorningCorporationMember" abstract="true" name="DowCorningCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_DowCorningChapter11RelatedMattersMember" abstract="true" name="DowCorningChapter11RelatedMattersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_DowCorningEnvironmentalClaimsMember" abstract="true" name="DowCorningEnvironmentalClaimsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_EnvironmentalLitigationMember" abstract="true" name="EnvironmentalLitigationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_IndemnificationOfExcessLiability" abstract="false" name="IndemnificationOfExcessLiability" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="glw_NumberOfHazardousWasteSites" abstract="false" name="NumberOfHazardousWasteSites" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="glw_EnvironmentalLossContingencyStatementOfFinancialPositionExtensibleEnumerationNotDisclosedFlag" abstract="false" name="EnvironmentalLossContingencyStatementOfFinancialPositionExtensibleEnumerationNotDisclosedFlag" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="glw_TranslatedEarningsContractsMember" abstract="true" name="TranslatedEarningsContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_LeasePreciousMetalsMember" abstract="true" name="LeasePreciousMetalsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_NonderivativeSubjectToMasterNettingArrangementBeforeOffset" abstract="false" name="NonderivativeSubjectToMasterNettingArrangementBeforeOffset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_DeferredPayments" abstract="false" name="DeferredPayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_AverageRateForwardContractsChineseYuandenominationMember" abstract="true" name="AverageRateForwardContractsChineseYuandenominationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_AverageRateForwardContractsJapaneseYenDenominatedMember" abstract="true" name="AverageRateForwardContractsJapaneseYenDenominatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_AverageRateForwardContractsSouthKoreanWonDenominatedMember" abstract="true" name="AverageRateForwardContractsSouthKoreanWonDenominatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_AverageRateForwardContractsNewTaiwanDollarDenominatedMember" abstract="true" name="AverageRateForwardContractsNewTaiwanDollarDenominatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="glw_AverageRateForwardContractsEuroDenominatedMember" abstract="true" name="AverageRateForwardContractsEuroDenominatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="glw_AverageRateForwardContractsMexicanPesoDenominatedMember" abstract="true" name="AverageRateForwardContractsMexicanPesoDenominatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="glw_OptionsContractsJapaneseYenDenominatedMember" abstract="true" name="OptionsContractsJapaneseYenDenominatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_OptionContractsEuroDenominatedMember" abstract="true" name="OptionContractsEuroDenominatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="glw_LeasedPreciousMetalPoolsMember" abstract="true" name="LeasedPreciousMetalPoolsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_O2024Q4DividendsMember" abstract="true" name="O2024Q4DividendsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="glw_SeriesAConvertiblePreferredStockMember" abstract="true" name="SeriesAConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_ConvertedFromPreferredStockMember" abstract="true" name="ConvertedFromPreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_SamsungMember" abstract="true" name="SamsungMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_ShareRepurchaseAgreementMember" abstract="true" name="ShareRepurchaseAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_The2018And2019RepurchaseProgramsMember" abstract="true" name="The2018And2019RepurchaseProgramsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_The2019RepurchaseProgramMember" abstract="true" name="The2019RepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_NumberOfSharesHeldByCounterPartySubjectToSevenYearLockupPeriod" abstract="false" name="NumberOfSharesHeldByCounterPartySubjectToSevenYearLockupPeriod" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="glw_ShareRepurchaseAgreementMakeWholePaymentCapPercentage" abstract="false" name="ShareRepurchaseAgreementMakeWholePaymentCapPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="glw_LiabilitiesForFreestandingWrittenPutOption" abstract="false" name="LiabilitiesForFreestandingWrittenPutOption" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_ShareRepurchaseProgramRollForward" abstract="true" name="ShareRepurchaseProgramRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="glw_NumberOfSharesIssuedToBenefitPlansAndForOptionExercise" abstract="false" name="NumberOfSharesIssuedToBenefitPlansAndForOptionExercise" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="glw_StockOptionsAndOtherAwardsMember" abstract="true" name="StockOptionsAndOtherAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_RestrictedStockAndRestrictedStockUnitsMember" abstract="true" name="RestrictedStockAndRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_PerformancebasedRestrictedStockUnitsMember" abstract="true" name="PerformancebasedRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_SharebasedCompensationArrangementBySharebasedPaymentAwardEquityInstrumentsOtherThanOptionsPerformanceAdjustments" abstract="false" name="SharebasedCompensationArrangementBySharebasedPaymentAwardEquityInstrumentsOtherThanOptionsPerformanceAdjustments" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="glw_SharebasedCompensationArrangementBySharebasedPaymentAwardEquityInstrumentsOtherThanOptionsPerformanceAdjustmentsWeightedAverageGrantDateFairValue" abstract="false" name="SharebasedCompensationArrangementBySharebasedPaymentAwardEquityInstrumentsOtherThanOptionsPerformanceAdjustmentsWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="glw_EnvironmentalTechnologiesMember" abstract="true" name="EnvironmentalTechnologiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_NetSalesOfReportableSegmentsAndAllOther" abstract="false" name="NetSalesOfReportableSegmentsAndAllOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_OtherSegmentItems" abstract="false" name="OtherSegmentItems" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_ReportableSegmentsMember" abstract="true" name="ReportableSegmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_ForeignCurrencyTranslationsNotIncludedInSegmentNetIncome" abstract="false" name="ForeignCurrencyTranslationsNotIncludedInSegmentNetIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_ImpairmentOfUpfrontFeesToCustomer" abstract="false" name="ImpairmentOfUpfrontFeesToCustomer" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_GainLossOnJapaneseTranslationOfYendenominatedDebtNotIncludedInSegmentNetIncome" abstract="false" name="GainLossOnJapaneseTranslationOfYendenominatedDebtNotIncludedInSegmentNetIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_CapacityRealignmentAndOtherRestructuringCosts" abstract="false" name="CapacityRealignmentAndOtherRestructuringCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_ReconciliationOfOtherCorporateItems" abstract="false" name="ReconciliationOfOtherCorporateItems" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="glw_CarrierNetworkMember" abstract="true" name="CarrierNetworkMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_EnterpriseNetworkMember" abstract="true" name="EnterpriseNetworkMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_CorningGorillaGlassMember" abstract="true" name="CorningGorillaGlassMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_AdvancedOpticsAndOtherSpeciallyGlassMember" abstract="true" name="AdvancedOpticsAndOtherSpeciallyGlassMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_AutomotiveAndOtherMember" abstract="true" name="AutomotiveAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_DieselMember" abstract="true" name="DieselMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_LabwareMember" abstract="true" name="LabwareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_CellCultureProductsMember" abstract="true" name="CellCultureProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_OtherAsiaPacificMember" abstract="true" name="OtherAsiaPacificMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_OtherEuropeMember" abstract="true" name="OtherEuropeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="glw_AllOtherMember" abstract="true" name="AllOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+</xs:schema>

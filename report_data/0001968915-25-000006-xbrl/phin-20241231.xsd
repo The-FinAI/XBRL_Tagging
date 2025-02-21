@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:cb0a1982-e5d8-4cab-a7e3-6941f623019d,g:809b6bae-9c41-4379-9013-d68a045e9a70-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:phin="http://www.phinia.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.phinia.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/currency/2024" schemaLocation="https://xbrl.sec.gov/currency/2024/currency-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="phin-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="phin-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="phin-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="phin-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.phinia.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.phinia.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://www.phinia.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>9952151 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://www.phinia.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>9952152 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFOPERATIONS" roleURI="http://www.phinia.com/role/CONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>9952153 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVELOSSINCOME" roleURI="http://www.phinia.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVELOSSINCOME">
+        <link:definition>9952154 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE ( LOSS) INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.phinia.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>9952155 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFEQUITY" roleURI="http://www.phinia.com/role/CONSOLIDATEDSTATEMENTSOFEQUITY">
+        <link:definition>9952156 - Statement - CONSOLIDATED STATEMENTS OF EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFEQUITYParenthetical" roleURI="http://www.phinia.com/role/CONSOLIDATEDSTATEMENTSOFEQUITYParenthetical">
+        <link:definition>9952157 - Statement - CONSOLIDATED STATEMENTS OF EQUITY (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INTRODUCTION" roleURI="http://www.phinia.com/role/INTRODUCTION">
+        <link:definition>9952158 - Disclosure - INTRODUCTION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIES" roleURI="http://www.phinia.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIES">
+        <link:definition>9952159 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEFROMCONTRACTSWITHCUSTOMERS" roleURI="http://www.phinia.com/role/REVENUEFROMCONTRACTSWITHCUSTOMERS">
+        <link:definition>9952160 - Disclosure - REVENUE FROM CONTRACTS WITH CUSTOMERS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESEARCHANDDEVELOPMENTCOSTS" roleURI="http://www.phinia.com/role/RESEARCHANDDEVELOPMENTCOSTS">
+        <link:definition>9952161 - Disclosure - RESEARCH AND DEVELOPMENT COSTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHEROPERATINGEXPENSEINCOMENET" roleURI="http://www.phinia.com/role/OTHEROPERATINGEXPENSEINCOMENET">
+        <link:definition>9952162 - Disclosure - OTHER OPERATING EXPENSE (INCOME), NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXES" roleURI="http://www.phinia.com/role/INCOMETAXES">
+        <link:definition>9952163 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECEIVABLESNET" roleURI="http://www.phinia.com/role/RECEIVABLESNET">
+        <link:definition>9952164 - Disclosure - RECEIVABLES, NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVENTORIES" roleURI="http://www.phinia.com/role/INVENTORIES">
+        <link:definition>9952165 - Disclosure - INVENTORIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCURRENTANDNONCURRENTASSETS" roleURI="http://www.phinia.com/role/OTHERCURRENTANDNONCURRENTASSETS">
+        <link:definition>9952166 - Disclosure - OTHER CURRENT AND NON-CURRENT ASSETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYPLANTANDEQUIPMENTNET" roleURI="http://www.phinia.com/role/PROPERTYPLANTANDEQUIPMENTNET">
+        <link:definition>9952167 - Disclosure - PROPERTY, PLANT AND EQUIPMENT, NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDOTHERINTANGIBLES" roleURI="http://www.phinia.com/role/GOODWILLANDOTHERINTANGIBLES">
+        <link:definition>9952168 - Disclosure - GOODWILL AND OTHER INTANGIBLES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PRODUCTWARRANTY" roleURI="http://www.phinia.com/role/PRODUCTWARRANTY">
+        <link:definition>9952169 - Disclosure - PRODUCT WARRANTY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NOTESPAYABLEANDDEBT" roleURI="http://www.phinia.com/role/NOTESPAYABLEANDDEBT">
+        <link:definition>9952170 - Disclosure - NOTES PAYABLE AND DEBT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCURRENTANDNONCURRENTLIABILITIES" roleURI="http://www.phinia.com/role/OTHERCURRENTANDNONCURRENTLIABILITIES">
+        <link:definition>9952171 - Disclosure - OTHER CURRENT AND NON-CURRENT LIABILITIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTS" roleURI="http://www.phinia.com/role/FINANCIALINSTRUMENTS">
+        <link:definition>9952172 - Disclosure - FINANCIAL INSTRUMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTBENEFITPLANS" roleURI="http://www.phinia.com/role/RETIREMENTBENEFITPLANS">
+        <link:definition>9952173 - Disclosure - RETIREMENT BENEFIT PLANS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATION" roleURI="http://www.phinia.com/role/STOCKBASEDCOMPENSATION">
+        <link:definition>9952174 - Disclosure - STOCK-BASED COMPENSATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVELOSS" roleURI="http://www.phinia.com/role/ACCUMULATEDOTHERCOMPREHENSIVELOSS">
+        <link:definition>9952175 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE LOSS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONTINGENCIES" roleURI="http://www.phinia.com/role/CONTINGENCIES">
+        <link:definition>9952176 - Disclosure - CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESANDCOMMITMENTS" roleURI="http://www.phinia.com/role/LEASESANDCOMMITMENTS">
+        <link:definition>9952177 - Disclosure - LEASES AND COMMITMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHARE" roleURI="http://www.phinia.com/role/EARNINGSPERSHARE">
+        <link:definition>9952178 - Disclosure - EARNINGS PER SHARE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RELATEDPARTY" roleURI="http://www.phinia.com/role/RELATEDPARTY">
+        <link:definition>9952179 - Disclosure - RELATED PARTY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REPORTABLESEGMENTSANDRELATEDINFORMATION" roleURI="http://www.phinia.com/role/REPORTABLESEGMENTSANDRELATEDINFORMATION">
+        <link:definition>9952180 - Disclosure - REPORTABLE SEGMENTS AND RELATED INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OPERATINGCASHFLOWSANDOTHERSUPPLEMENTALFINANCIALINFORMATION" roleURI="http://www.phinia.com/role/OPERATINGCASHFLOWSANDOTHERSUPPLEMENTALFINANCIALINFORMATION">
+        <link:definition>9952181 - Disclosure - OPERATING CASH FLOWS AND OTHER SUPPLEMENTAL FINANCIAL INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESPolicies" roleURI="http://www.phinia.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESPolicies">
+        <link:definition>9955511 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEFROMCONTRACTSWITHCUSTOMERSTables" roleURI="http://www.phinia.com/role/REVENUEFROMCONTRACTSWITHCUSTOMERSTables">
+        <link:definition>9955512 - Disclosure - REVENUE FROM CONTRACTS WITH CUSTOMERS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESEARCHANDDEVELOPMENTCOSTSTables" roleURI="http://www.phinia.com/role/RESEARCHANDDEVELOPMENTCOSTSTables">
+        <link:definition>9955513 - Disclosure - RESEARCH AND DEVELOPMENT COSTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHEROPERATINGEXPENSEINCOMENETTables" roleURI="http://www.phinia.com/role/OTHEROPERATINGEXPENSEINCOMENETTables">
+        <link:definition>9955514 - Disclosure - OTHER OPERATING EXPENSE (INCOME), NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESTables" roleURI="http://www.phinia.com/role/INCOMETAXESTables">
+        <link:definition>9955515 - Disclosure - INCOME TAXES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECEIVABLESNETTables" roleURI="http://www.phinia.com/role/RECEIVABLESNETTables">
+        <link:definition>9955516 - Disclosure - RECEIVABLES, NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVENTORIESTables" roleURI="http://www.phinia.com/role/INVENTORIESTables">
+        <link:definition>9955517 - Disclosure - INVENTORIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCURRENTANDNONCURRENTASSETSTables" roleURI="http://www.phinia.com/role/OTHERCURRENTANDNONCURRENTASSETSTables">
+        <link:definition>9955518 - Disclosure - OTHER CURRENT AND NON-CURRENT ASSETS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYPLANTANDEQUIPMENTNETTables" roleURI="http://www.phinia.com/role/PROPERTYPLANTANDEQUIPMENTNETTables">
+        <link:definition>9955519 - Disclosure - PROPERTY, PLANT AND EQUIPMENT, NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDOTHERINTANGIBLESTables" roleURI="http://www.phinia.com/role/GOODWILLANDOTHERINTANGIBLESTables">
+        <link:definition>9955520 - Disclosure - GOODWILL AND OTHER INTANGIBLES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PRODUCTWARRANTYTables" roleURI="http://www.phinia.com/role/PRODUCTWARRANTYTables">
+        <link:definition>9955521 - Disclosure - PRODUCT WARRANTY (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NOTESPAYABLEANDDEBTTables" roleURI="http://www.phinia.com/role/NOTESPAYABLEANDDEBTTables">
+        <link:definition>9955522 - Disclosure - NOTES PAYABLE AND DEBT (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCURRENTANDNONCURRENTLIABILITIESTables" roleURI="http://www.phinia.com/role/OTHERCURRENTANDNONCURRENTLIABILITIESTables">
+        <link:definition>9955523 - Disclosure - OTHER CURRENT AND NON-CURRENT LIABILITIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSTables" roleURI="http://www.phinia.com/role/FINANCIALINSTRUMENTSTables">
+        <link:definition>9955524 - Disclosure - FINANCIAL INSTRUMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTBENEFITPLANSTables" roleURI="http://www.phinia.com/role/RETIREMENTBENEFITPLANSTables">
+        <link:definition>9955525 - Disclosure - RETIREMENT BENEFIT PLANS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONTables" roleURI="http://www.phinia.com/role/STOCKBASEDCOMPENSATIONTables">
+        <link:definition>9955526 - Disclosure - STOCK-BASED COMPENSATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVELOSSTables" roleURI="http://www.phinia.com/role/ACCUMULATEDOTHERCOMPREHENSIVELOSSTables">
+        <link:definition>9955527 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE LOSS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESANDCOMMITMENTSTables" roleURI="http://www.phinia.com/role/LEASESANDCOMMITMENTSTables">
+        <link:definition>9955528 - Disclosure - LEASES AND COMMITMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://www.phinia.com/role/EarningsPerShareTables">
+        <link:definition>9955529 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RELATEDPARTYTables" roleURI="http://www.phinia.com/role/RELATEDPARTYTables">
+        <link:definition>9955530 - Disclosure - RELATED PARTY (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REPORTABLESEGMENTSANDRELATEDINFORMATIONTables" roleURI="http://www.phinia.com/role/REPORTABLESEGMENTSANDRELATEDINFORMATIONTables">
+        <link:definition>9955531 - Disclosure - REPORTABLE SEGMENTS AND RELATED INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OPERATINGCASHFLOWSANDOTHERSUPPLEMENTALFINANCIALINFORMATIONTables" roleURI="http://www.phinia.com/role/OPERATINGCASHFLOWSANDOTHERSUPPLEMENTALFINANCIALINFORMATIONTables">
+        <link:definition>9955532 - Disclosure - OPERATING CASH FLOWS AND OTHER SUPPLEMENTAL FINANCIAL INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INTRODUCTIONDetails" roleURI="http://www.phinia.com/role/INTRODUCTIONDetails">
+        <link:definition>9955533 - Disclosure - INTRODUCTION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESDetails" roleURI="http://www.phinia.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESDetails">
+        <link:definition>9955534 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEFROMCONTRACTSWITHCUSTOMERSNarrativeDetails" roleURI="http://www.phinia.com/role/REVENUEFROMCONTRACTSWITHCUSTOMERSNarrativeDetails">
+        <link:definition>9955535 - Disclosure - REVENUE FROM CONTRACTS WITH CUSTOMERS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEFROMCONTRACTSWITHCUSTOMERSScheduleofDisaggregationofRevenueDetails" roleURI="http://www.phinia.com/role/REVENUEFROMCONTRACTSWITHCUSTOMERSScheduleofDisaggregationofRevenueDetails">
+        <link:definition>9955536 - Disclosure - REVENUE FROM CONTRACTS WITH CUSTOMERS - Schedule of Disaggregation of Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESEARCHANDDEVELOPMENTCOSTSScheduleofResearchandDevelopmentCostsDetails" roleURI="http://www.phinia.com/role/RESEARCHANDDEVELOPMENTCOSTSScheduleofResearchandDevelopmentCostsDetails">
+        <link:definition>9955537 - Disclosure - RESEARCH AND DEVELOPMENT COSTS - Schedule of Research and Development Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESEARCHANDDEVELOPMENTCOSTSNarrativeDetails" roleURI="http://www.phinia.com/role/RESEARCHANDDEVELOPMENTCOSTSNarrativeDetails">
+        <link:definition>9955538 - Disclosure - RESEARCH AND DEVELOPMENT COSTS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHEROPERATINGEXPENSEINCOMENETScheduleofOtherOperatingExpenseIncomeNetDetails" roleURI="http://www.phinia.com/role/OTHEROPERATINGEXPENSEINCOMENETScheduleofOtherOperatingExpenseIncomeNetDetails">
+        <link:definition>9955539 - Disclosure - OTHER OPERATING EXPENSE (INCOME), NET - Schedule of Other Operating Expense (Income), Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHEROPERATINGEXPENSEINCOMENETNarrativeDetails" roleURI="http://www.phinia.com/role/OTHEROPERATINGEXPENSEINCOMENETNarrativeDetails">
+        <link:definition>9955540 - Disclosure - OTHER OPERATING EXPENSE (INCOME), NET - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofIncomeTaxExpenseDetails" roleURI="http://www.phinia.com/role/INCOMETAXESScheduleofIncomeTaxExpenseDetails">
+        <link:definition>9955541 - Disclosure - INCOME TAXES - Schedule of Income Tax Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESNarrativeDetails" roleURI="http://www.phinia.com/role/INCOMETAXESNarrativeDetails">
+        <link:definition>9955542 - Disclosure - INCOME TAXES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofIncomeTaxReconciliationDetails" roleURI="http://www.phinia.com/role/INCOMETAXESScheduleofIncomeTaxReconciliationDetails">
+        <link:definition>9955543 - Disclosure - INCOME TAXES - Schedule of Income Tax Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofUnrecognizedTaxBenefitsDetails" roleURI="http://www.phinia.com/role/INCOMETAXESScheduleofUnrecognizedTaxBenefitsDetails">
+        <link:definition>9955544 - Disclosure - INCOME TAXES - Schedule of Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofDeferredTaxAssetsandLiabilitiesDetails" roleURI="http://www.phinia.com/role/INCOMETAXESScheduleofDeferredTaxAssetsandLiabilitiesDetails">
+        <link:definition>9955545 - Disclosure - INCOME TAXES - Schedule of Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofValuationAllowanceDetails" roleURI="http://www.phinia.com/role/INCOMETAXESScheduleofValuationAllowanceDetails">
+        <link:definition>9955546 - Disclosure - INCOME TAXES - Schedule of Valuation Allowance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECEIVABLESNETScheduleofAccountsNotesLoansandFinancingReceivableDetails" roleURI="http://www.phinia.com/role/RECEIVABLESNETScheduleofAccountsNotesLoansandFinancingReceivableDetails">
+        <link:definition>9955547 - Disclosure - RECEIVABLES, NET - Schedule of Accounts, Notes, Loans and Financing Receivable (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECEIVABLESNETScheduleofAccountsReceivableAllowanceforCreditLossDetails" roleURI="http://www.phinia.com/role/RECEIVABLESNETScheduleofAccountsReceivableAllowanceforCreditLossDetails">
+        <link:definition>9955548 - Disclosure - RECEIVABLES, NET - Schedule of Accounts Receivable, Allowance for Credit Loss (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECEIVABLESNETNarrativeDetails" roleURI="http://www.phinia.com/role/RECEIVABLESNETNarrativeDetails">
+        <link:definition>9955549 - Disclosure - RECEIVABLES, NET - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVENTORIESDetails" roleURI="http://www.phinia.com/role/INVENTORIESDetails">
+        <link:definition>9955550 - Disclosure - INVENTORIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCURRENTANDNONCURRENTASSETSDetails" roleURI="http://www.phinia.com/role/OTHERCURRENTANDNONCURRENTASSETSDetails">
+        <link:definition>9955551 - Disclosure - OTHER CURRENT AND NON-CURRENT ASSETS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYPLANTANDEQUIPMENTNETDetails" roleURI="http://www.phinia.com/role/PROPERTYPLANTANDEQUIPMENTNETDetails">
+        <link:definition>9955552 - Disclosure - PROPERTY, PLANT AND EQUIPMENT, NET (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDOTHERINTANGIBLESScheduleofGoodwillDetails" roleURI="http://www.phinia.com/role/GOODWILLANDOTHERINTANGIBLESScheduleofGoodwillDetails">
+        <link:definition>9955553 - Disclosure - GOODWILL AND OTHER INTANGIBLES - Schedule of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDOTHERINTANGIBLESScheduleofIntangibleAssetsDetails" roleURI="http://www.phinia.com/role/GOODWILLANDOTHERINTANGIBLESScheduleofIntangibleAssetsDetails">
+        <link:definition>9955554 - Disclosure - GOODWILL AND OTHER INTANGIBLES - Schedule of Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDOTHERINTANGIBLESNarrativeDetails" roleURI="http://www.phinia.com/role/GOODWILLANDOTHERINTANGIBLESNarrativeDetails">
+        <link:definition>9955555 - Disclosure - GOODWILL AND OTHER INTANGIBLES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDOTHERINTANGIBLESScheduleofRollforwardofIntangibleassetsDetails" roleURI="http://www.phinia.com/role/GOODWILLANDOTHERINTANGIBLESScheduleofRollforwardofIntangibleassetsDetails">
+        <link:definition>9955556 - Disclosure - GOODWILL AND OTHER INTANGIBLES - Schedule of Rollforward of Intangible assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PRODUCTWARRANTYNarrativeDetails" roleURI="http://www.phinia.com/role/PRODUCTWARRANTYNarrativeDetails">
+        <link:definition>9955557 - Disclosure - PRODUCT WARRANTY - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PRODUCTWARRANTYScheduleofProductWarrantyLiabilityDetails" roleURI="http://www.phinia.com/role/PRODUCTWARRANTYScheduleofProductWarrantyLiabilityDetails">
+        <link:definition>9955558 - Disclosure - PRODUCT WARRANTY - Schedule of Product Warranty Liability (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NOTESPAYABLEANDDEBTScheduleofLongTermDebtInstrumentsDetails" roleURI="http://www.phinia.com/role/NOTESPAYABLEANDDEBTScheduleofLongTermDebtInstrumentsDetails">
+        <link:definition>9955559 - Disclosure - NOTES PAYABLE AND DEBT - Schedule of Long-Term Debt Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NOTESPAYABLEANDDEBTNarrativeDetails" roleURI="http://www.phinia.com/role/NOTESPAYABLEANDDEBTNarrativeDetails">
+        <link:definition>9955560 - Disclosure - NOTES PAYABLE AND DEBT - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NOTESPAYABLEANDDEBTScheduleofAnnualPrincipalPaymentsDetails" roleURI="http://www.phinia.com/role/NOTESPAYABLEANDDEBTScheduleofAnnualPrincipalPaymentsDetails">
+        <link:definition>9955561 - Disclosure - NOTES PAYABLE AND DEBT - Schedule of Annual Principal Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCURRENTANDNONCURRENTLIABILITIESDetails" roleURI="http://www.phinia.com/role/OTHERCURRENTANDNONCURRENTLIABILITIESDetails">
+        <link:definition>9955562 - Disclosure - OTHER CURRENT AND NON-CURRENT LIABILITIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSNarrativeDetails" roleURI="http://www.phinia.com/role/FINANCIALINSTRUMENTSNarrativeDetails">
+        <link:definition>9955563 - Disclosure - FINANCIAL INSTRUMENTS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSScheduleofCashFlowHedgesIncludedinAccumulatedOtherComprehensiveIncomeLossDetails" roleURI="http://www.phinia.com/role/FINANCIALINSTRUMENTSScheduleofCashFlowHedgesIncludedinAccumulatedOtherComprehensiveIncomeLossDetails">
+        <link:definition>9955564 - Disclosure - FINANCIAL INSTRUMENTS - Schedule of Cash Flow Hedges Included in Accumulated Other Comprehensive Income (Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSScheduleofOtherComprehensiveIncomeLossDetails" roleURI="http://www.phinia.com/role/FINANCIALINSTRUMENTSScheduleofOtherComprehensiveIncomeLossDetails">
+        <link:definition>9955565 - Disclosure - FINANCIAL INSTRUMENTS - Schedule of Other Comprehensive Income (Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSScheduleofDerivativesNotDesignatedasHedgingInstrumentsDetails" roleURI="http://www.phinia.com/role/FINANCIALINSTRUMENTSScheduleofDerivativesNotDesignatedasHedgingInstrumentsDetails">
+        <link:definition>9955566 - Disclosure - FINANCIAL INSTRUMENTS - Schedule of Derivatives Not Designated as Hedging Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTBENEFITPLANSScheduleofExpenseforDefinedContributionandDefinedBenefitPensionPlansDetails" roleURI="http://www.phinia.com/role/RETIREMENTBENEFITPLANSScheduleofExpenseforDefinedContributionandDefinedBenefitPensionPlansDetails">
+        <link:definition>9955567 - Disclosure - RETIREMENT BENEFIT PLANS - Schedule of Expense for Defined Contribution and Defined Benefit Pension Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTBENEFITPLANSScheduleofBenefitObligationandPlanAssetsDetails" roleURI="http://www.phinia.com/role/RETIREMENTBENEFITPLANSScheduleofBenefitObligationandPlanAssetsDetails">
+        <link:definition>9955568 - Disclosure - RETIREMENT BENEFIT PLANS - Schedule of Benefit Obligation and Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTBENEFITPLANSScheduleofFundedStatusofPlanswithABOinExcessofPlanAssetsDetails" roleURI="http://www.phinia.com/role/RETIREMENTBENEFITPLANSScheduleofFundedStatusofPlanswithABOinExcessofPlanAssetsDetails">
+        <link:definition>9955569 - Disclosure - RETIREMENT BENEFIT PLANS - Schedule of Funded Status of Plans with ABO in Excess of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTBENEFITPLANSScheduleofAssetAllocationsDetails" roleURI="http://www.phinia.com/role/RETIREMENTBENEFITPLANSScheduleofAssetAllocationsDetails">
+        <link:definition>9955570 - Disclosure - RETIREMENT BENEFIT PLANS - Schedule of Asset Allocations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTBENEFITPLANSNarrativeDetails" roleURI="http://www.phinia.com/role/RETIREMENTBENEFITPLANSNarrativeDetails">
+        <link:definition>9955571 - Disclosure - RETIREMENT BENEFIT PLANS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTBENEFITPLANSScheduleofDefinedBenefitPlanAssetsDetails" roleURI="http://www.phinia.com/role/RETIREMENTBENEFITPLANSScheduleofDefinedBenefitPlanAssetsDetails">
+        <link:definition>9955572 - Disclosure - RETIREMENT BENEFIT PLANS - Schedule of Defined Benefit Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTBENEFITPLANSScheduleofReconciliationofLevel3DefinedBenefitPlanAssetsDetails" roleURI="http://www.phinia.com/role/RETIREMENTBENEFITPLANSScheduleofReconciliationofLevel3DefinedBenefitPlanAssetsDetails">
+        <link:definition>9955573 - Disclosure - RETIREMENT BENEFIT PLANS - Schedule of Reconciliation of Level 3 Defined Benefit Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTBENEFITPLANSScheduleofComponentsofNetPeriodicBenefitCostDetails" roleURI="http://www.phinia.com/role/RETIREMENTBENEFITPLANSScheduleofComponentsofNetPeriodicBenefitCostDetails">
+        <link:definition>9955574 - Disclosure - RETIREMENT BENEFIT PLANS - Schedule of Components of Net Periodic Benefit Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTBENEFITPLANSScheduleofDefinedBenefitPlanWeightedAverageAssumptionsUsedinCalculatingBenefitObligationsDetails" roleURI="http://www.phinia.com/role/RETIREMENTBENEFITPLANSScheduleofDefinedBenefitPlanWeightedAverageAssumptionsUsedinCalculatingBenefitObligationsDetails">
+        <link:definition>9955575 - Disclosure - RETIREMENT BENEFIT PLANS - Schedule of Defined Benefit Plan Weighted Average Assumptions Used in Calculating Benefit Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTBENEFITPLANSScheduleofEstimatedFuturePaymentsDetails" roleURI="http://www.phinia.com/role/RETIREMENTBENEFITPLANSScheduleofEstimatedFuturePaymentsDetails">
+        <link:definition>9955576 - Disclosure - RETIREMENT BENEFIT PLANS - Schedule of Estimated Future Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONNarrativeDetails" roleURI="http://www.phinia.com/role/STOCKBASEDCOMPENSATIONNarrativeDetails">
+        <link:definition>9955577 - Disclosure - STOCK-BASED COMPENSATION - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONScheduleofRestrictedStockCompensationExpenseDetails" roleURI="http://www.phinia.com/role/STOCKBASEDCOMPENSATIONScheduleofRestrictedStockCompensationExpenseDetails">
+        <link:definition>9955578 - Disclosure - STOCK-BASED COMPENSATION - Schedule of Restricted Stock Compensation Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONScheduleofRestrictedStockandRestrictedStockUnitActivityDetails" roleURI="http://www.phinia.com/role/STOCKBASEDCOMPENSATIONScheduleofRestrictedStockandRestrictedStockUnitActivityDetails">
+        <link:definition>9955579 - Disclosure - STOCK-BASED COMPENSATION - Schedule of Restricted Stock and Restricted Stock Unit, Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONScheduleofExpenseforPerformanceBasedStockUnitsDetails" roleURI="http://www.phinia.com/role/STOCKBASEDCOMPENSATIONScheduleofExpenseforPerformanceBasedStockUnitsDetails">
+        <link:definition>9955580 - Disclosure - STOCK-BASED COMPENSATION - Schedule of Expense for Performance Based Stock Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONScheduleofPerformanceStockPlansDetails" roleURI="http://www.phinia.com/role/STOCKBASEDCOMPENSATIONScheduleofPerformanceStockPlansDetails">
+        <link:definition>9955581 - Disclosure - STOCK-BASED COMPENSATION - Schedule of Performance Stock Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVELOSSDetails" roleURI="http://www.phinia.com/role/ACCUMULATEDOTHERCOMPREHENSIVELOSSDetails">
+        <link:definition>9955582 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE LOSS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESANDCOMMITMENTSScheduleofOperatingLeaseAssetsandLeaseLiabilitiesDetails" roleURI="http://www.phinia.com/role/LEASESANDCOMMITMENTSScheduleofOperatingLeaseAssetsandLeaseLiabilitiesDetails">
+        <link:definition>9955583 - Disclosure - LEASES AND COMMITMENTS - Schedule of Operating Lease Assets and Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESANDCOMMITMENTSScheduleofLeaseObligationsDetails" roleURI="http://www.phinia.com/role/LEASESANDCOMMITMENTSScheduleofLeaseObligationsDetails">
+        <link:definition>9955584 - Disclosure - LEASES AND COMMITMENTS - Schedule of Lease Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESANDCOMMITMENTSScheduleofMaturityofLeaseLiabilitiesDetails" roleURI="http://www.phinia.com/role/LEASESANDCOMMITMENTSScheduleofMaturityofLeaseLiabilitiesDetails">
+        <link:definition>9955585 - Disclosure - LEASES AND COMMITMENTS - Schedule of Maturity of Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESANDCOMMITMENTSScheduleofMaturityofLeaseLiabilitiesDetails_1" roleURI="http://www.phinia.com/role/LEASESANDCOMMITMENTSScheduleofMaturityofLeaseLiabilitiesDetails_1">
+        <link:definition>9955585 - Disclosure - LEASES AND COMMITMENTS - Schedule of Maturity of Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESANDCOMMITMENTSNarrativeDetails" roleURI="http://www.phinia.com/role/LEASESANDCOMMITMENTSNarrativeDetails">
+        <link:definition>9955586 - Disclosure - LEASES AND COMMITMENTS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESANDCOMMITMENTSScheduleofTermsandDiscountRatesDetails" roleURI="http://www.phinia.com/role/LEASESANDCOMMITMENTSScheduleofTermsandDiscountRatesDetails">
+        <link:definition>9955587 - Disclosure - LEASES AND COMMITMENTS - Schedule of Terms and Discount Rates (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHARENarrativeDetails" roleURI="http://www.phinia.com/role/EARNINGSPERSHARENarrativeDetails">
+        <link:definition>9955588 - Disclosure - EARNINGS PER SHARE - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHAREScheduleofEarningsPerShareCommonStockDetails" roleURI="http://www.phinia.com/role/EARNINGSPERSHAREScheduleofEarningsPerShareCommonStockDetails">
+        <link:definition>9955589 - Disclosure - EARNINGS PER SHARE - Schedule of Earnings Per Share Common Stock (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RELATEDPARTYAllocationofGeneralCorporateandOtherExpensesDetails" roleURI="http://www.phinia.com/role/RELATEDPARTYAllocationofGeneralCorporateandOtherExpensesDetails">
+        <link:definition>9955590 - Disclosure - RELATED PARTY - Allocation of General Corporate and Other Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RELATEDPARTYScheduleofRelatedPartyTransactionsDetails" roleURI="http://www.phinia.com/role/RELATEDPARTYScheduleofRelatedPartyTransactionsDetails">
+        <link:definition>9955591 - Disclosure - RELATED PARTY - Schedule of Related Party Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REPORTABLESEGMENTSANDRELATEDINFORMATIONNarrativeDetails" roleURI="http://www.phinia.com/role/REPORTABLESEGMENTSANDRELATEDINFORMATIONNarrativeDetails">
+        <link:definition>9955592 - Disclosure - REPORTABLE SEGMENTS AND RELATED INFORMATION - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REPORTABLESEGMENTSANDRELATEDINFORMATIONScheduleofSegmentRevenuesandSignificantExpensesDetails" roleURI="http://www.phinia.com/role/REPORTABLESEGMENTSANDRELATEDINFORMATIONScheduleofSegmentRevenuesandSignificantExpensesDetails">
+        <link:definition>9955593 - Disclosure - REPORTABLE SEGMENTS AND RELATED INFORMATION - Schedule of Segment Revenues and Significant Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REPORTABLESEGMENTSANDRELATEDINFORMATIONScheduleofSegmentAdjustedOperatingIncomeDetails" roleURI="http://www.phinia.com/role/REPORTABLESEGMENTSANDRELATEDINFORMATIONScheduleofSegmentAdjustedOperatingIncomeDetails">
+        <link:definition>9955594 - Disclosure - REPORTABLE SEGMENTS AND RELATED INFORMATION - Schedule of Segment Adjusted Operating Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REPORTABLESEGMENTSANDRELATEDINFORMATIONScheduleofGeographicInformationDetails" roleURI="http://www.phinia.com/role/REPORTABLESEGMENTSANDRELATEDINFORMATIONScheduleofGeographicInformationDetails">
+        <link:definition>9955595 - Disclosure - REPORTABLE SEGMENTS AND RELATED INFORMATION - Schedule of Geographic Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REPORTABLESEGMENTSANDRELATEDINFORMATIONScheduleofSegmentReportingInformationbySegmentDetails" roleURI="http://www.phinia.com/role/REPORTABLESEGMENTSANDRELATEDINFORMATIONScheduleofSegmentReportingInformationbySegmentDetails">
+        <link:definition>9955596 - Disclosure - REPORTABLE SEGMENTS AND RELATED INFORMATION - Schedule of Segment Reporting Information, by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REPORTABLESEGMENTSANDRELATEDINFORMATIONScheduleofSalesbyProductLineDetails" roleURI="http://www.phinia.com/role/REPORTABLESEGMENTSANDRELATEDINFORMATIONScheduleofSalesbyProductLineDetails">
+        <link:definition>9955597 - Disclosure - REPORTABLE SEGMENTS AND RELATED INFORMATION - Schedule of Sales by Product Line (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OPERATINGCASHFLOWSANDOTHERSUPPLEMENTALFINANCIALINFORMATIONDetails" roleURI="http://www.phinia.com/role/OPERATINGCASHFLOWSANDOTHERSUPPLEMENTALFINANCIALINFORMATIONDetails">
+        <link:definition>9955598 - Disclosure - OPERATING CASH FLOWS AND OTHER SUPPLEMENTAL FINANCIAL INFORMATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="phin_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="phin_ShortTermDebtAndCurrentMaturitiesOfLongTermDebt" abstract="false" name="ShortTermDebtAndCurrentMaturitiesOfLongTermDebt" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_NetTransfersToFromFormerParent" abstract="false" name="NetTransfersToFromFormerParent" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_InvestmentInLieuOfStockholdersEquityMember" abstract="true" name="InvestmentInLieuOfStockholdersEquityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_InvestmentsInLieuOfEquityNetTransfersFromInvestment" abstract="false" name="InvestmentsInLieuOfEquityNetTransfersFromInvestment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ReclassificationOfFormerParentsNetInvestmentAndIssuanceOfOrdinarySharesInConnectionWithSpinOffInShares" abstract="false" name="ReclassificationOfFormerParentsNetInvestmentAndIssuanceOfOrdinarySharesInConnectionWithSpinOffInShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="phin_ReclassificationOfFormerParentsNetInvestmentAndIssuanceOfOrdinarySharesInConnectionWithSpinOff" abstract="false" name="ReclassificationOfFormerParentsNetInvestmentAndIssuanceOfOrdinarySharesInConnectionWithSpinOff" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_PreProductionCostLongTermSupplyArrangementsPolicyTextBlock" abstract="false" name="PreProductionCostLongTermSupplyArrangementsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="phin_OtherLossAccrualsAndValuationAllowancesPolicyPolicyTextBlock" abstract="false" name="OtherLossAccrualsAndValuationAllowancesPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="phin_GrossCarryingAmountsOfIntangibleAssetsAndAccumulatedAmortizationTableTextBlock" abstract="false" name="GrossCarryingAmountsOfIntangibleAssetsAndAccumulatedAmortizationTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="phin_RestrictedStockCompensationExpenseTableTextBlock" abstract="false" name="RestrictedStockCompensationExpenseTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="phin_LesseeOperatingLeaseBalanceSheetInformationTableTextBlock" abstract="false" name="LesseeOperatingLeaseBalanceSheetInformationTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="phin_CorporateExpenseAllocationMember" abstract="true" name="CorporateExpenseAllocationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_LongTermSupplyArrangementsMember" abstract="true" name="LongTermSupplyArrangementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_DelphiTVSDieselSystemsLtdMember" abstract="true" name="DelphiTVSDieselSystemsLtdMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_NumberOfEquityMethodInvestments" abstract="false" name="NumberOfEquityMethodInvestments" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="phin_EquityMethodInvestmentBoardOfDirectorsRepresentationPercent" abstract="false" name="EquityMethodInvestmentBoardOfDirectorsRepresentationPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="phin_StandardProductWarrantyWarrantyTerm" abstract="false" name="StandardProductWarrantyWarrantyTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="phin_GovernmentGrantRelatedLiabilities" abstract="false" name="GovernmentGrantRelatedLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_GovernmentGrantRelatedCredits" abstract="false" name="GovernmentGrantRelatedCredits" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ContractLiabilitiesMember" abstract="true" name="ContractLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_FuelSystemsMember" abstract="true" name="FuelSystemsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_AfterMarketMember" abstract="true" name="AfterMarketMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_NetResearchAndDevelopmentExpendituresAsPercentageOfNetSales" abstract="false" name="NetResearchAndDevelopmentExpendituresAsPercentageOfNetSales" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="phin_SeparationAndTransactionCosts" abstract="false" name="SeparationAndTransactionCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_GainsLossesForOtherOneTimeEvents" abstract="false" name="GainsLossesForOtherOneTimeEvents" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_RoyaltyIncomeOperating" abstract="false" name="RoyaltyIncomeOperating" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_OtherMiscellaneousOperatingIncome" abstract="false" name="OtherMiscellaneousOperatingIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_TaxCreditCarryforwardGrantPeriod" abstract="false" name="TaxCreditCarryforwardGrantPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="phin_EffectiveIncomeTaxRateReconciliationNondeductibleExpenseTransactionChargesAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationNondeductibleExpenseTransactionChargesAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_EffectiveIncomeTaxRateReconciliationProvisionToReturnAndPriorPeriodTrueUps" abstract="false" name="EffectiveIncomeTaxRateReconciliationProvisionToReturnAndPriorPeriodTrueUps" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_EffectiveIncomeTaxReconciliationU.S.TaxOnNonU.S.Earnings" abstract="false" name="EffectiveIncomeTaxReconciliationU.S.TaxOnNonU.S.Earnings" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_EffectiveIncomeTaxRateReconciliationForeignCurrencyRemeasurement" abstract="false" name="EffectiveIncomeTaxRateReconciliationForeignCurrencyRemeasurement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_UnrecognizedTaxBenefitsIncreaseDecreaseResultingFromPriorPeriodTaxPositions" abstract="false" name="UnrecognizedTaxBenefitsIncreaseDecreaseResultingFromPriorPeriodTaxPositions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_UnrecognizedTaxBenefitsIncreasesDecreaseResultingFromAcquisition" abstract="false" name="UnrecognizedTaxBenefitsIncreasesDecreaseResultingFromAcquisition" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_UnrecognizedTaxBenefitsIncreaseDecreaseResultingFromForeignCurrencyTranslation" abstract="false" name="UnrecognizedTaxBenefitsIncreaseDecreaseResultingFromForeignCurrencyTranslation" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_DeferredTaxAssetsInterestLimitationCarryforwards" abstract="false" name="DeferredTaxAssetsInterestLimitationCarryforwards" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_DeferredTaxLiabilitiesUnrealizedGainLossOnEquitySecurities" abstract="false" name="DeferredTaxLiabilitiesUnrealizedGainLossOnEquitySecurities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_DeferredTaxLiabilitiesFixedAssets" abstract="false" name="DeferredTaxLiabilitiesFixedAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ValuationAllowanceRollForward" abstract="true" name="ValuationAllowanceRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="phin_ValuationAllowanceDeferredTaxAssetEstablishmentOfNewAllowance" abstract="false" name="ValuationAllowanceDeferredTaxAssetEstablishmentOfNewAllowance" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ValuationAllowanceDeferredTaxAssetNetChangeToExistingAllowances" abstract="false" name="ValuationAllowanceDeferredTaxAssetNetChangeToExistingAllowances" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ValuationAllowanceDeferredTaxAssetOpeningBalanceSheetEquityOther" abstract="false" name="ValuationAllowanceDeferredTaxAssetOpeningBalanceSheetEquityOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ValuationAllowanceDeferredTaxAssetIncreaseDecreaseResultingFromForeignCurrencyTranslation" abstract="false" name="ValuationAllowanceDeferredTaxAssetIncreaseDecreaseResultingFromForeignCurrencyTranslation" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ValuationAllowanceDeferredTaxAssetChangesInAccountingMethodsAndFilingPositions" abstract="false" name="ValuationAllowanceDeferredTaxAssetChangesInAccountingMethodsAndFilingPositions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ReceivablesDueFromFormerParent" abstract="false" name="ReceivablesDueFromFormerParent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ExpenseFromSaleOfReceivable" abstract="false" name="ExpenseFromSaleOfReceivable" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_PrepaidEngineering" abstract="false" name="PrepaidEngineering" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_PrepaidCustomerTooling" abstract="false" name="PrepaidCustomerTooling" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_PrepaidSoftware" abstract="false" name="PrepaidSoftware" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_LongTermReceivables" abstract="false" name="LongTermReceivables" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_InvestmentsAndLongTermReceivablesDueFromFormerParent" abstract="false" name="InvestmentsAndLongTermReceivablesDueFromFormerParent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ContractWithCustomerCustomerNoncurrentIncentivePayments" abstract="false" name="ContractWithCustomerCustomerNoncurrentIncentivePayments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetExcludingToolingBeforeAccumulatedDepreciationAndAmortization" abstract="false" name="PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetExcludingToolingBeforeAccumulatedDepreciationAndAmortization" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_PropertyPlantAndEquipmentNetOfAccumulatedDepreciationBeforeTooling" abstract="false" name="PropertyPlantAndEquipmentNetOfAccumulatedDepreciationBeforeTooling" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ToolingNetOfAmortization" abstract="false" name="ToolingNetOfAmortization" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ScheduleOfFiniteAndIndefiniteLivedIntangibleAssetsByMajorClassTable" abstract="true" name="ScheduleOfFiniteAndIndefiniteLivedIntangibleAssetsByMajorClassTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="phin_PatentedAndUnpatentedTechnologyMember" abstract="true" name="PatentedAndUnpatentedTechnologyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_ScheduleOfFiniteAndIndefiniteLivedIntangibleAssetsByMajorClassLineItems" abstract="true" name="ScheduleOfFiniteAndIndefiniteLivedIntangibleAssetsByMajorClassLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="phin_IntangibleAssetsExcludingGoodwillGrossRollForward" abstract="true" name="IntangibleAssetsExcludingGoodwillGrossRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="phin_IntangibleAssetsExcludingGoodwillAccumulatedAmortization" abstract="false" name="IntangibleAssetsExcludingGoodwillAccumulatedAmortization" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_IntangibleAssetsExcludingGoodwillTranslationAdjustments" abstract="false" name="IntangibleAssetsExcludingGoodwillTranslationAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_IntangibleAssetsAccumulatedAmortizationRollForward" abstract="true" name="IntangibleAssetsAccumulatedAmortizationRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="phin_AmortizationOfIntangibleAssetTranslationAdjustment" abstract="false" name="AmortizationOfIntangibleAssetTranslationAdjustment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_SeniorNotesDueOctober2025Member" abstract="true" name="SeniorNotesDueOctober2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_SeniorSecuredNotesAprilDue2029Member" abstract="true" name="SeniorSecuredNotesAprilDue2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_SeniorNotesDueOctober2032Member" abstract="true" name="SeniorNotesDueOctober2032Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_TermLoanAFacilityMember" abstract="true" name="TermLoanAFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_TermLoanBFacilityMember" abstract="true" name="TermLoanBFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_CreditAgreementMember" abstract="true" name="CreditAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_SeniorUnsecuredNotesDue2032Member" abstract="true" name="SeniorUnsecuredNotesDue2032Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_SeniorNotesDue2025Member" abstract="true" name="SeniorNotesDue2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_TermLoanATermLoanBFacilityMember" abstract="true" name="TermLoanATermLoanBFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_DebtInstrumentCovenantInterestCoverageRatioMinimum" abstract="false" name="DebtInstrumentCovenantInterestCoverageRatioMinimum" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="phin_DebtInstrumentCovenantLeverageRatioMaximum" abstract="false" name="DebtInstrumentCovenantLeverageRatioMaximum" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="phin_DebtInstrumentCovenantLeverageRatioStepUpForQualifyingAcquisitionMaximum" abstract="false" name="DebtInstrumentCovenantLeverageRatioStepUpForQualifyingAcquisitionMaximum" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="phin_PercentageOfExchangedAndCancelledNotes" abstract="false" name="PercentageOfExchangedAndCancelledNotes" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="phin_LiabilitiesAssumedInConnectionWithSpinOffTransaction" abstract="false" name="LiabilitiesAssumedInConnectionWithSpinOffTransaction" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_DebtDifferenceBetweenFairValueAndCarryingValue" abstract="false" name="DebtDifferenceBetweenFairValueAndCarryingValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_TotalDebtPrincipalPayments" abstract="false" name="TotalDebtPrincipalPayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_CustomerRelatedLiability" abstract="false" name="CustomerRelatedLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_AccruedFreight" abstract="false" name="AccruedFreight" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_AccruedUncertainTaxPositions" abstract="false" name="AccruedUncertainTaxPositions" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_AccruedSupplierItems" abstract="false" name="AccruedSupplierItems" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_DeferredEngineeringReimbursementsCurrent" abstract="false" name="DeferredEngineeringReimbursementsCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_AccumulatedOtherComprehensiveIncomeLossCumulativeChangesInNetGainLossFromHedgesBeforeTax" abstract="false" name="AccumulatedOtherComprehensiveIncomeLossCumulativeChangesInNetGainLossFromHedgesBeforeTax" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_ChangeInProjectedBenefitObligationMember" abstract="true" name="ChangeInProjectedBenefitObligationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_DefinedBenefitPlanOther" abstract="false" name="DefinedBenefitPlanOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_OtherForeignMember" abstract="true" name="OtherForeignMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_AccumulatedBenefitObligationsAbstract" abstract="true" name="AccumulatedBenefitObligationsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="phin_ProjectedBenefitObligationsAbstract" abstract="true" name="ProjectedBenefitObligationsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="phin_DefinedBenefitPlanPensionPlanWithProjectedBenefitObligationInExcessOfPlanAssetFundedStatus" abstract="false" name="DefinedBenefitPlanPensionPlanWithProjectedBenefitObligationInExcessOfPlanAssetFundedStatus" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_RealEstateAndOtherMember" abstract="true" name="RealEstateAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_DefinedBenefitPlanEstimatedFutureEmployerContributionsInNextFiscalYearUnderContractualObligation" abstract="false" name="DefinedBenefitPlanEstimatedFutureEmployerContributionsInNextFiscalYearUnderContractualObligation" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_DefinedBenefitPlanPlanAssetsLevel3ReconciliationTranslationAdjustment" abstract="false" name="DefinedBenefitPlanPlanAssetsLevel3ReconciliationTranslationAdjustment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_A2018StockIncentivePlanMember" abstract="true" name="A2018StockIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_ShareBasedCompensationArrangementByShareBasedPaymentSpinOffConversionRatio" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentSpinOffConversionRatio" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="phin_ShareBasedCompensationArrangementByShareBasedPaymentAwardRecognizedRestrictionPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardRecognizedRestrictionPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="phin_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsConvertedInPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsConvertedInPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="phin_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsConvertedWeightedAverageGrantDateFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsConvertedWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="phin_MarketBasedMember" abstract="true" name="MarketBasedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_PerformanceBasedMember" abstract="true" name="PerformanceBasedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_TotalLeaseAssets" abstract="false" name="TotalLeaseAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_TotalLeaseLiabilities" abstract="false" name="TotalLeaseLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_RightOfUseAssetObtainedInExchangeForCapitalLeaseObligations" abstract="false" name="RightOfUseAssetObtainedInExchangeForCapitalLeaseObligations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_WeightedAverageRemainingLeaseTermAbstract" abstract="true" name="WeightedAverageRemainingLeaseTermAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="phin_LeasesWeightedAverageDiscountRateAbstract" abstract="true" name="LeasesWeightedAverageDiscountRateAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="phin_GeneralFinancingActivitiesMember" abstract="true" name="GeneralFinancingActivitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_CashPoolingAndOtherEquitySettledBalancesMember" abstract="true" name="CashPoolingAndOtherEquitySettledBalancesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_RelatedPartyNotesConvertedToEquityMember" abstract="true" name="RelatedPartyNotesConvertedToEquityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_CorporateAllocationsMember" abstract="true" name="CorporateAllocationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_ResearchAndDevelopmentIncomeMember" abstract="true" name="ResearchAndDevelopmentIncomeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_StockBasedCompensationMember" abstract="true" name="StockBasedCompensationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_OtherNonCashActivitiesMember" abstract="true" name="OtherNonCashActivitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_CashPoolingAndIntercompanyFinancingActivitiesMember" abstract="true" name="CashPoolingAndIntercompanyFinancingActivitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_NetTransfersFromRelatedPartyCashFlowImpact" abstract="false" name="NetTransfersFromRelatedPartyCashFlowImpact" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_GeneralMotorsMember" abstract="true" name="GeneralMotorsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_CustomerMember" abstract="true" name="CustomerMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_IntersegmentMember" abstract="true" name="IntersegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_SegmentReportingCorporateAllocation" abstract="false" name="SegmentReportingCorporateAllocation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_OtherEuropeMember" abstract="true" name="OtherEuropeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="phin_AftermarketProductsAndOriginalEquipmentServicesMember" abstract="true" name="AftermarketProductsAndOriginalEquipmentServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_LightPassengerVehicleApplicationsMember" abstract="true" name="LightPassengerVehicleApplicationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_CommercialVehicleAndIndustrialApplicationsMember" abstract="true" name="CommercialVehicleAndIndustrialApplicationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_LightCommercialVehicleApplicationsMember" abstract="true" name="LightCommercialVehicleApplicationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="phin_AdjustmentsToReconcileNetEarningsToNetCashFlowsFromOperationsAbstract" abstract="true" name="AdjustmentsToReconcileNetEarningsToNetCashFlowsFromOperationsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="phin_ChangesInAssetsAndLiabilitiesExcludingEffectsOfAcquisitionsDivestituresAndForeignCurrencyTranslationAdjustmentsAbstract" abstract="true" name="ChangesInAssetsAndLiabilitiesExcludingEffectsOfAcquisitionsDivestituresAndForeignCurrencyTranslationAdjustmentsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="phin_IncreaseDecreaseInPrepaidTaxesAndIncomeTaxesPayable" abstract="false" name="IncreaseDecreaseInPrepaidTaxesAndIncomeTaxesPayable" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="phin_NonCashInvestingTransactionsAbstract" abstract="true" name="NonCashInvestingTransactionsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+</xs:schema>

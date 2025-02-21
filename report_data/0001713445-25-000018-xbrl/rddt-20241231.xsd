@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:13ad48e4-639f-49ee-8b40-1f09b3860a38,g:7847958c-694d-443a-a425-09a85a9573c9-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:rddt="http://www.redditinc.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.redditinc.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rddt-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rddt-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rddt-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rddt-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.redditinc.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.redditinc.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.redditinc.com/role/ConsolidatedBalanceSheets">
+        <link:definition>9952151 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParentheticals" roleURI="http://www.redditinc.com/role/ConsolidatedBalanceSheetsParentheticals">
+        <link:definition>9952152 - Statement - Consolidated Balance Sheets (Parentheticals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofOperations" roleURI="http://www.redditinc.com/role/ConsolidatedStatementsofOperations">
+        <link:definition>9952153 - Statement - Consolidated Statements of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncomeLoss" roleURI="http://www.redditinc.com/role/ConsolidatedStatementsofComprehensiveIncomeLoss">
+        <link:definition>9952154 - Statement - Consolidated Statements of Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofConvertiblePreferredStockandStockholdersEquityDeficit" roleURI="http://www.redditinc.com/role/ConsolidatedStatementsofConvertiblePreferredStockandStockholdersEquityDeficit">
+        <link:definition>9952155 - Statement - Consolidated Statements of Convertible Preferred Stock and Stockholders' Equity (Deficit)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://www.redditinc.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>9952156 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusiness" roleURI="http://www.redditinc.com/role/DescriptionofBusiness">
+        <link:definition>9952157 - Disclosure - Description of Business</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSignificantAccountingPolicies" roleURI="http://www.redditinc.com/role/BasisofPresentationandSignificantAccountingPolicies">
+        <link:definition>9952158 - Disclosure - Basis of Presentation and Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Revenue" roleURI="http://www.redditinc.com/role/Revenue">
+        <link:definition>9952159 - Disclosure - Revenue</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossperShare" roleURI="http://www.redditinc.com/role/NetIncomeLossperShare">
+        <link:definition>9952160 - Disclosure - Net Income (Loss) per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.redditinc.com/role/FairValueMeasurements">
+        <link:definition>9952161 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetComponents" roleURI="http://www.redditinc.com/role/BalanceSheetComponents">
+        <link:definition>9952162 - Disclosure - Balance Sheet Components</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingLeases" roleURI="http://www.redditinc.com/role/OperatingLeases">
+        <link:definition>9952163 - Disclosure - Operating Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Acquisitions" roleURI="http://www.redditinc.com/role/Acquisitions">
+        <link:definition>9952164 - Disclosure - Acquisitions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssets" roleURI="http://www.redditinc.com/role/GoodwillandIntangibleAssets">
+        <link:definition>9952165 - Disclosure - Goodwill and Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Debt" roleURI="http://www.redditinc.com/role/Debt">
+        <link:definition>9952166 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentandContingencies" roleURI="http://www.redditinc.com/role/CommitmentandContingencies">
+        <link:definition>9952167 - Disclosure - Commitment and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConvertiblePreferredStock" roleURI="http://www.redditinc.com/role/ConvertiblePreferredStock">
+        <link:definition>9952168 - Disclosure - Convertible Preferred Stock</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityDeficit" roleURI="http://www.redditinc.com/role/StockholdersEquityDeficit">
+        <link:definition>9952169 - Disclosure - Stockholders' Equity (Deficit)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://www.redditinc.com/role/StockBasedCompensation">
+        <link:definition>9952170 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlans" roleURI="http://www.redditinc.com/role/EmployeeBenefitPlans">
+        <link:definition>9952171 - Disclosure - Employee Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.redditinc.com/role/IncomeTaxes">
+        <link:definition>9952172 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartiesandRelatedPartyTransactions" roleURI="http://www.redditinc.com/role/RelatedPartiesandRelatedPartyTransactions">
+        <link:definition>9952173 - Disclosure - Related Parties and Related-Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandGeographicInformation" roleURI="http://www.redditinc.com/role/SegmentandGeographicInformation">
+        <link:definition>9952174 - Disclosure - Segment and Geographic Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://www.redditinc.com/role/SubsequentEvents">
+        <link:definition>9952175 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSignificantAccountingPoliciesPolicies" roleURI="http://www.redditinc.com/role/BasisofPresentationandSignificantAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Basis of Presentation and Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueTables" roleURI="http://www.redditinc.com/role/RevenueTables">
+        <link:definition>9955512 - Disclosure - Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossperShareTables" roleURI="http://www.redditinc.com/role/NetIncomeLossperShareTables">
+        <link:definition>9955513 - Disclosure - Net Income (Loss) per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.redditinc.com/role/FairValueMeasurementsTables">
+        <link:definition>9955514 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetComponentsTables" roleURI="http://www.redditinc.com/role/BalanceSheetComponentsTables">
+        <link:definition>9955515 - Disclosure - Balance Sheet Components (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingLeasesTables" roleURI="http://www.redditinc.com/role/OperatingLeasesTables">
+        <link:definition>9955516 - Disclosure - Operating Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsTables" roleURI="http://www.redditinc.com/role/GoodwillandIntangibleAssetsTables">
+        <link:definition>9955517 - Disclosure - Goodwill and Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentandContingenciesTables" roleURI="http://www.redditinc.com/role/CommitmentandContingenciesTables">
+        <link:definition>9955518 - Disclosure - Commitment and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConvertiblePreferredStockTables" roleURI="http://www.redditinc.com/role/ConvertiblePreferredStockTables">
+        <link:definition>9955519 - Disclosure - Convertible Preferred Stock (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityDeficitTables" roleURI="http://www.redditinc.com/role/StockholdersEquityDeficitTables">
+        <link:definition>9955520 - Disclosure - Stockholders' Equity (Deficit) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://www.redditinc.com/role/StockBasedCompensationTables">
+        <link:definition>9955521 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.redditinc.com/role/IncomeTaxesTables">
+        <link:definition>9955522 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandGeographicInformationTables" roleURI="http://www.redditinc.com/role/SegmentandGeographicInformationTables">
+        <link:definition>9955523 - Disclosure - Segment and Geographic Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSignificantAccountingPoliciesDetails" roleURI="http://www.redditinc.com/role/BasisofPresentationandSignificantAccountingPoliciesDetails">
+        <link:definition>9955524 - Disclosure - Basis of Presentation and Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueDisaggregationofRevenuebySourceDetails" roleURI="http://www.redditinc.com/role/RevenueDisaggregationofRevenuebySourceDetails">
+        <link:definition>9955525 - Disclosure - Revenue - Disaggregation of Revenue by Source (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueDisaggregationofRevenuebyGeographyDetails" roleURI="http://www.redditinc.com/role/RevenueDisaggregationofRevenuebyGeographyDetails">
+        <link:definition>9955526 - Disclosure - Revenue - Disaggregation of Revenue by Geography (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueNarrativeDetails" roleURI="http://www.redditinc.com/role/RevenueNarrativeDetails">
+        <link:definition>9955527 - Disclosure - Revenue - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueNarrativeDetails_1" roleURI="http://www.redditinc.com/role/RevenueNarrativeDetails_1">
+        <link:definition>9955527 - Disclosure - Revenue - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossperShareNarrativeDetails" roleURI="http://www.redditinc.com/role/NetIncomeLossperShareNarrativeDetails">
+        <link:definition>9955528 - Disclosure - Net Income (Loss) per Share - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossperShareComputationofNetIncomeLossperShareDetails" roleURI="http://www.redditinc.com/role/NetIncomeLossperShareComputationofNetIncomeLossperShareDetails">
+        <link:definition>9955529 - Disclosure - Net Income (Loss) per Share - Computation of Net Income (Loss) per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossperShareAntidilutiveSharesExcludedfromComputationofNetIncomeLossperShareDetails" roleURI="http://www.redditinc.com/role/NetIncomeLossperShareAntidilutiveSharesExcludedfromComputationofNetIncomeLossperShareDetails">
+        <link:definition>9955530 - Disclosure - Net Income (Loss) per Share - Anti-dilutive Shares Excluded from Computation of Net Income (Loss) per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsScheduleofFinancialAssetsMeasuredatFairValueonaRecurringBasisDetails" roleURI="http://www.redditinc.com/role/FairValueMeasurementsScheduleofFinancialAssetsMeasuredatFairValueonaRecurringBasisDetails">
+        <link:definition>9955531 - Disclosure - Fair Value Measurements - Schedule of Financial Assets Measured at Fair Value on a Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsScheduleofFinancialAssetsMeasuredatFairValueonaRecurringBasisDetails_1" roleURI="http://www.redditinc.com/role/FairValueMeasurementsScheduleofFinancialAssetsMeasuredatFairValueonaRecurringBasisDetails_1">
+        <link:definition>9955531 - Disclosure - Fair Value Measurements - Schedule of Financial Assets Measured at Fair Value on a Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsNarrativeDetails" roleURI="http://www.redditinc.com/role/FairValueMeasurementsNarrativeDetails">
+        <link:definition>9955532 - Disclosure - Fair Value Measurements - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetComponentsPrepaidExpensesandOtherCurrentAssetsDetails" roleURI="http://www.redditinc.com/role/BalanceSheetComponentsPrepaidExpensesandOtherCurrentAssetsDetails">
+        <link:definition>9955533 - Disclosure - Balance Sheet Components - Prepaid Expenses and Other Current Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetComponentsPropertyandEquipmentNetDetails" roleURI="http://www.redditinc.com/role/BalanceSheetComponentsPropertyandEquipmentNetDetails">
+        <link:definition>9955534 - Disclosure - Balance Sheet Components - Property and Equipment, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetComponentsAccruedExpensesandOtherCurrentLiabilitiesDetails" roleURI="http://www.redditinc.com/role/BalanceSheetComponentsAccruedExpensesandOtherCurrentLiabilitiesDetails">
+        <link:definition>9955535 - Disclosure - Balance Sheet Components - Accrued Expenses and Other Current Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingLeasesComponentsofLeaseCostDetails" roleURI="http://www.redditinc.com/role/OperatingLeasesComponentsofLeaseCostDetails">
+        <link:definition>9955536 - Disclosure - Operating Leases - Components of Lease Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingLeasesLeaseTermandDiscountRateDetails" roleURI="http://www.redditinc.com/role/OperatingLeasesLeaseTermandDiscountRateDetails">
+        <link:definition>9955537 - Disclosure - Operating Leases - Lease Term and Discount Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingLeasesMaturityofLeaseLiabilitiesDetails" roleURI="http://www.redditinc.com/role/OperatingLeasesMaturityofLeaseLiabilitiesDetails">
+        <link:definition>9955538 - Disclosure - Operating Leases - Maturity of Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingLeasesMaturityofLeaseLiabilitiesDetails_1" roleURI="http://www.redditinc.com/role/OperatingLeasesMaturityofLeaseLiabilitiesDetails_1">
+        <link:definition>9955538 - Disclosure - Operating Leases - Maturity of Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingLeasesNarrativeDetails" roleURI="http://www.redditinc.com/role/OperatingLeasesNarrativeDetails">
+        <link:definition>9955539 - Disclosure - Operating Leases - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsDetails" roleURI="http://www.redditinc.com/role/AcquisitionsDetails">
+        <link:definition>9955540 - Disclosure - Acquisitions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsScheduleofGoodwillDetails" roleURI="http://www.redditinc.com/role/GoodwillandIntangibleAssetsScheduleofGoodwillDetails">
+        <link:definition>9955541 - Disclosure - Goodwill and Intangible Assets - Schedule of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsAcquiredIntangibleAssetsDetails" roleURI="http://www.redditinc.com/role/GoodwillandIntangibleAssetsAcquiredIntangibleAssetsDetails">
+        <link:definition>9955542 - Disclosure - Goodwill and Intangible Assets - Acquired Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNarrativeDetails" roleURI="http://www.redditinc.com/role/GoodwillandIntangibleAssetsNarrativeDetails">
+        <link:definition>9955543 - Disclosure - Goodwill and Intangible Assets - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsFutureAmortizationExpenseDetails" roleURI="http://www.redditinc.com/role/GoodwillandIntangibleAssetsFutureAmortizationExpenseDetails">
+        <link:definition>9955544 - Disclosure - Goodwill and Intangible Assets - Future Amortization Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDetails" roleURI="http://www.redditinc.com/role/DebtDetails">
+        <link:definition>9955545 - Disclosure - Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentandContingenciesNarrativeDetails" roleURI="http://www.redditinc.com/role/CommitmentandContingenciesNarrativeDetails">
+        <link:definition>9955546 - Disclosure - Commitment and Contingencies - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentandContingenciesFuturePaymentsunderNonCancellablePurchaseObligationsDetails" roleURI="http://www.redditinc.com/role/CommitmentandContingenciesFuturePaymentsunderNonCancellablePurchaseObligationsDetails">
+        <link:definition>9955547 - Disclosure - Commitment and Contingencies - Future Payments under Non-Cancellable Purchase Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConvertiblePreferredStockScheduleofOutstandingConvertiblePreferredStockDetails" roleURI="http://www.redditinc.com/role/ConvertiblePreferredStockScheduleofOutstandingConvertiblePreferredStockDetails">
+        <link:definition>9955548 - Disclosure - Convertible Preferred Stock - Schedule of Outstanding Convertible Preferred Stock (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConvertiblePreferredStockNarrativeDetails" roleURI="http://www.redditinc.com/role/ConvertiblePreferredStockNarrativeDetails">
+        <link:definition>9955549 - Disclosure - Convertible Preferred Stock - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityDeficitNarrativeDetails" roleURI="http://www.redditinc.com/role/StockholdersEquityDeficitNarrativeDetails">
+        <link:definition>9955550 - Disclosure - Stockholders' Equity (Deficit) - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityDeficitStockReservedforFutureIssuanceDetails" roleURI="http://www.redditinc.com/role/StockholdersEquityDeficitStockReservedforFutureIssuanceDetails">
+        <link:definition>9955551 - Disclosure - Stockholders' Equity (Deficit) - Stock Reserved for Future Issuance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationNarrativeDetails" roleURI="http://www.redditinc.com/role/StockBasedCompensationNarrativeDetails">
+        <link:definition>9955552 - Disclosure - Stock-Based Compensation - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationRSUsandRSAActivityDetails" roleURI="http://www.redditinc.com/role/StockBasedCompensationRSUsandRSAActivityDetails">
+        <link:definition>9955553 - Disclosure - Stock-Based Compensation - RSUs and RSA Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationStockOptionActivityDetails" roleURI="http://www.redditinc.com/role/StockBasedCompensationStockOptionActivityDetails">
+        <link:definition>9955554 - Disclosure - Stock-Based Compensation - Stock Option Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationWeightedAverageAssumptionsofEmployeeStockOptionsDetails" roleURI="http://www.redditinc.com/role/StockBasedCompensationWeightedAverageAssumptionsofEmployeeStockOptionsDetails">
+        <link:definition>9955555 - Disclosure - Stock-Based Compensation - Weighted Average Assumptions of Employee Stock Options (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationComponentsofStockBasedCompensationExpenseDetails" roleURI="http://www.redditinc.com/role/StockBasedCompensationComponentsofStockBasedCompensationExpenseDetails">
+        <link:definition>9955556 - Disclosure - Stock-Based Compensation - Components of Stock-Based Compensation Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansDetails" roleURI="http://www.redditinc.com/role/EmployeeBenefitPlansDetails">
+        <link:definition>9955557 - Disclosure - Employee Benefit Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesGeographicalBreakdownofIncomeLossbeforeIncomeTaxesDetails" roleURI="http://www.redditinc.com/role/IncomeTaxesGeographicalBreakdownofIncomeLossbeforeIncomeTaxesDetails">
+        <link:definition>9955558 - Disclosure - Income Taxes - Geographical Breakdown of Income (Loss) before Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesComponentsofIncomeTaxExpenseBenefitDetails" roleURI="http://www.redditinc.com/role/IncomeTaxesComponentsofIncomeTaxExpenseBenefitDetails">
+        <link:definition>9955559 - Disclosure - Income Taxes - Components of Income Tax Expense (Benefit) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationofEffectiveTaxRateFromStatutoryFederalRateDetails" roleURI="http://www.redditinc.com/role/IncomeTaxesReconciliationofEffectiveTaxRateFromStatutoryFederalRateDetails">
+        <link:definition>9955560 - Disclosure - Income Taxes - Reconciliation of Effective Tax Rate From Statutory Federal Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesComponentsofDeferredTaxAssetsandDeferredTaxLiabilitiesDetails" roleURI="http://www.redditinc.com/role/IncomeTaxesComponentsofDeferredTaxAssetsandDeferredTaxLiabilitiesDetails">
+        <link:definition>9955561 - Disclosure - Income Taxes - Components of Deferred Tax Assets and Deferred Tax Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.redditinc.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>9955562 - Disclosure - Income Taxes - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesGrossUnrecognizedTaxBenefitsRollforwardDetails" roleURI="http://www.redditinc.com/role/IncomeTaxesGrossUnrecognizedTaxBenefitsRollforwardDetails">
+        <link:definition>9955563 - Disclosure - Income Taxes - Gross Unrecognized Tax Benefits Rollforward (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartiesandRelatedPartyTransactionsDetails" roleURI="http://www.redditinc.com/role/RelatedPartiesandRelatedPartyTransactionsDetails">
+        <link:definition>9955564 - Disclosure - Related Parties and Related-Party Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandGeographicInformationNarrativeDetails" roleURI="http://www.redditinc.com/role/SegmentandGeographicInformationNarrativeDetails">
+        <link:definition>9955565 - Disclosure - Segment and Geographic Information - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandGeographicInformationScheduleofSegmentNetIncomeLossDetails" roleURI="http://www.redditinc.com/role/SegmentandGeographicInformationScheduleofSegmentNetIncomeLossDetails">
+        <link:definition>9955566 - Disclosure - Segment and Geographic Information - Schedule of Segment Net Income (Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandGeographicInformationScheduleofSegmentNetIncomeLossAdjustedCostofRevenueReconciliationDetails" roleURI="http://www.redditinc.com/role/SegmentandGeographicInformationScheduleofSegmentNetIncomeLossAdjustedCostofRevenueReconciliationDetails">
+        <link:definition>9955567 - Disclosure - Segment and Geographic Information - Schedule of Segment Net Income (Loss), Adjusted Cost of Revenue Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandGeographicInformationScheduleofSegmentNetIncomeLossAdjustedOperatingExpensesReconciliationDetails" roleURI="http://www.redditinc.com/role/SegmentandGeographicInformationScheduleofSegmentNetIncomeLossAdjustedOperatingExpensesReconciliationDetails">
+        <link:definition>9955568 - Disclosure - Segment and Geographic Information - Schedule of Segment Net Income (Loss), Adjusted Operating Expenses Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="rddt_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rddt_ConversionOfClassBCommonStockToClassACommonStockMember" abstract="true" name="ConversionOfClassBCommonStockToClassACommonStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_ConversionOfRedeemableConvertiblePreferredStockToCommonStockMember" abstract="true" name="ConversionOfRedeemableConvertiblePreferredStockToCommonStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_TemporaryEquitySharesConversionOfConvertibleSecurities" abstract="false" name="TemporaryEquitySharesConversionOfConvertibleSecurities" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="rddt_TemporaryEquityValueConversionOfConvertibleSecurities" abstract="false" name="TemporaryEquityValueConversionOfConvertibleSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_AdjustmentsToAdditionalPaidInCapitalEarlyExercisedStockOptions" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalEarlyExercisedStockOptions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_IncreaseDecreaseInOperatingLeaseAssetAndLiability" abstract="false" name="IncreaseDecreaseInOperatingLeaseAssetAndLiability" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_PaymentForDeferredConsiderationAndHoldbacksForAcquisitions" abstract="false" name="PaymentForDeferredConsiderationAndHoldbacksForAcquisitions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_ReclassificationOfDeferredOfferingCostsToAdditionalPaidInCapitalUponInitialPublicOffering" abstract="false" name="ReclassificationOfDeferredOfferingCostsToAdditionalPaidInCapitalUponInitialPublicOffering" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_TemporaryEquityTextBlock" abstract="false" name="TemporaryEquityTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="rddt_ConcentrationRiskBusinessRiskPolicyPolicyTextBlock" abstract="false" name="ConcentrationRiskBusinessRiskPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="rddt_StockSoldByIndividualTypeAxis" abstract="true" name="StockSoldByIndividualTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="rddt_StockSoldByIndividualTypeDomain" abstract="true" name="StockSoldByIndividualTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_StockholdersMember" abstract="true" name="StockholdersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_UnderwritingDiscountsAndCommissions" abstract="false" name="UnderwritingDiscountsAndCommissions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_NumberOfClassesOfCommonStock" abstract="false" name="NumberOfClassesOfCommonStock" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rddt_SharesAuthorized" abstract="false" name="SharesAuthorized" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="rddt_OtherRevenueMember" abstract="true" name="OtherRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_TemporaryEquityConvertibleConversionRatio" abstract="false" name="TemporaryEquityConvertibleConversionRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rddt_RestrictedStockUnitsAndRestrictedStockAwardsMember" abstract="true" name="RestrictedStockUnitsAndRestrictedStockAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_MarketableSecuritiesMember" abstract="true" name="MarketableSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_AssetsAmortizedCost" abstract="false" name="AssetsAmortizedCost" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_ComputerEquipmentFurnitureAndFixturesMember" abstract="true" name="ComputerEquipmentFurnitureAndFixturesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_RevenueSharePayableCurrent" abstract="false" name="RevenueSharePayableCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_HoldbackLiabilityFromAcquisitionsCurrent" abstract="false" name="HoldbackLiabilityFromAcquisitionsCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_July2024AcquisitionMember" abstract="true" name="July2024AcquisitionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_BusinessCombinationSeparatelyRecognizedTransactionsPostCombinationExpenses" abstract="false" name="BusinessCombinationSeparatelyRecognizedTransactionsPostCombinationExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_RevolvingCreditFacilityAndStandbyLetterOfCreditAgreementMember" abstract="true" name="RevolvingCreditFacilityAndStandbyLetterOfCreditAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_RevolvingCreditFacilityAndStandbyLetterOfCreditAgreementABRLoansMember" abstract="true" name="RevolvingCreditFacilityAndStandbyLetterOfCreditAgreementABRLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_RevolvingCreditFacilityAndStandbyLetterOfCreditAgreementOutstandingTermBenchmarkLoansMember" abstract="true" name="RevolvingCreditFacilityAndStandbyLetterOfCreditAgreementOutstandingTermBenchmarkLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_RevolvingCreditFacilityAndStandbyLetterOfCreditAgreementOutstandingSONIALoansMember" abstract="true" name="RevolvingCreditFacilityAndStandbyLetterOfCreditAgreementOutstandingSONIALoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_NewYorkFederalReserveBankRateMember" abstract="true" name="NewYorkFederalReserveBankRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_AdjustedDailySimpleSterlingOverNightIndexedAverageRateSONIAMember" abstract="true" name="AdjustedDailySimpleSterlingOverNightIndexedAverageRateSONIAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_DebtInstrumentNumberOfInstruments" abstract="false" name="DebtInstrumentNumberOfInstruments" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rddt_DebtInstrumentFloorInterestRate" abstract="false" name="DebtInstrumentFloorInterestRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rddt_DebtInstrumentAdditionalBasisSpread" abstract="false" name="DebtInstrumentAdditionalBasisSpread" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rddt_CloudInfrastructureAgreementsMember" abstract="true" name="CloudInfrastructureAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_SeriesAConvertiblePreferredStockMember" abstract="true" name="SeriesAConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_SeriesA1ConvertiblePreferredStockMember" abstract="true" name="SeriesA1ConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_SeriesBConvertiblePreferredStockMember" abstract="true" name="SeriesBConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_SeriesCConvertiblePreferredStockMember" abstract="true" name="SeriesCConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_SeriesDConvertiblePreferredStockMember" abstract="true" name="SeriesDConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_SeriesD1ConvertiblePreferredStockMember" abstract="true" name="SeriesD1ConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_SeriesEConvertiblePreferredStockMember" abstract="true" name="SeriesEConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_SeriesFConvertiblePreferredStockMember" abstract="true" name="SeriesFConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_SeriesF1ConvertiblePreferredStockMember" abstract="true" name="SeriesF1ConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_TemporaryEquityOriginalIssuePricePerShare" abstract="false" name="TemporaryEquityOriginalIssuePricePerShare" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="rddt_SeriesASeriesA1SeriesBSeriesCSeriesDSeriesD1SeriesEAndSeriesFConvertiblePreferredStockMember" abstract="true" name="SeriesASeriesA1SeriesBSeriesCSeriesDSeriesD1SeriesEAndSeriesFConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_SeriesDAndSeriesD1PreferredStockMember" abstract="true" name="SeriesDAndSeriesD1PreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_SeriesAAndSeriesA1ConvertiblePreferredStockMember" abstract="true" name="SeriesAAndSeriesA1ConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_TemporaryEquityDividendRate" abstract="false" name="TemporaryEquityDividendRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rddt_TemporaryEquityDividendRatePerDollarAmount" abstract="false" name="TemporaryEquityDividendRatePerDollarAmount" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="rddt_TemporaryEquityVotingRightsNumberOfDirectors" abstract="false" name="TemporaryEquityVotingRightsNumberOfDirectors" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rddt_CommonStockVotingRightsNumberOfDirectors" abstract="false" name="CommonStockVotingRightsNumberOfDirectors" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rddt_TemporaryEquityAndCommonStockVotingRightsNumberOfDirectors" abstract="false" name="TemporaryEquityAndCommonStockVotingRightsNumberOfDirectors" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rddt_TemporaryEquityConversionRatio" abstract="false" name="TemporaryEquityConversionRatio" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rddt_TemporaryEquityAutomaticConversionThresholdClosingOfInitialPublicOfferingAggregateNetProceeds" abstract="false" name="TemporaryEquityAutomaticConversionThresholdClosingOfInitialPublicOfferingAggregateNetProceeds" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_TemporaryEquityAutomaticConversionThresholdLiquidationEventValue" abstract="false" name="TemporaryEquityAutomaticConversionThresholdLiquidationEventValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_A2024IncentiveAwardPlanMember" abstract="true" name="A2024IncentiveAwardPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_CommonStockVotingRightsVotesPerShare" abstract="false" name="CommonStockVotingRightsVotesPerShare" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rddt_CommonStockConversionRatio" abstract="false" name="CommonStockConversionRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rddt_CommonStockAutomaticConversionThresholdMinimumPercentageOfOutstandingSharesOfConvertibleClassOfCommonStockAsPercentageOfTotalOutstandingCommonStock" abstract="false" name="CommonStockAutomaticConversionThresholdMinimumPercentageOfOutstandingSharesOfConvertibleClassOfCommonStockAsPercentageOfTotalOutstandingCommonStock" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rddt_ShareBasedCompensationArrangementByShareBasedPaymentAwardAnnualIncreaseInSharesAuthorizedAsAPercentOfSharesOutstanding" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAnnualIncreaseInSharesAuthorizedAsAPercentOfSharesOutstanding" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rddt_ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAuthorizedToBeIssuedUponExerciseOfStockOptions" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAuthorizedToBeIssuedUponExerciseOfStockOptions" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="rddt_A2017EquityIncentiveAndGrantPlanMember" abstract="true" name="A2017EquityIncentiveAndGrantPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_CommunityImpactInitiativesAndCharitableActivitiesMember" abstract="true" name="CommunityImpactInitiativesAndCharitableActivitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_ServiceAndPerformanceBasedRSUsMember" abstract="true" name="ServiceAndPerformanceBasedRSUsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_ServiceBasedRSUsMember" abstract="true" name="ServiceBasedRSUsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_A2023CEOCOOEquityAwardsMember" abstract="true" name="A2023CEOCOOEquityAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_FormerEmployeesMember" abstract="true" name="FormerEmployeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardContractualTerm" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardContractualTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="rddt_MarketAndPerformanceBasedRSUsMember" abstract="true" name="MarketAndPerformanceBasedRSUsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionForfeitedAndCanceledInPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionForfeitedAndCanceledInPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="rddt_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsForfeituresAndCancellationsWeightedAverageGrantDateFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsForfeituresAndCancellationsWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="rddt_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeituresAndCancellationsInPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeituresAndCancellationsInPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="rddt_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeituresAndCancellationsInPeriodWeightedAverageExercisePrice" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeituresAndCancellationsInPeriodWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="rddt_DefinedContributionPlanMatchAxis" abstract="true" name="DefinedContributionPlanMatchAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="rddt_DefinedContributionPlanMatchDomain" abstract="true" name="DefinedContributionPlanMatchDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_DefinedContributionPlanTrancheOneMember" abstract="true" name="DefinedContributionPlanTrancheOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_DefinedContributionPlanTrancheTwoMember" abstract="true" name="DefinedContributionPlanTrancheTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_DefinedContributionPlanEmployerMatchingContributionAmountOfMatch" abstract="false" name="DefinedContributionPlanEmployerMatchingContributionAmountOfMatch" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_DeferredTaxAssetsLeasingArrangements" abstract="false" name="DeferredTaxAssetsLeasingArrangements" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_DeferredTaxAssetsCapitalizedResearchAndDevelopment" abstract="false" name="DeferredTaxAssetsCapitalizedResearchAndDevelopment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_AdvanceMagazinePublishersInc.Member" abstract="true" name="AdvanceMagazinePublishersInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_RedditInc.Member" abstract="true" name="RedditInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_NumberOfDirectorsRightToNominate" abstract="false" name="NumberOfDirectorsRightToNominate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rddt_NumberOfObserversToTheBoardOfDirectorsRightToNominate" abstract="false" name="NumberOfObserversToTheBoardOfDirectorsRightToNominate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rddt_NumberOfDirectorsAbleToSitOnEachCommitteeOfTheBoardExcludingAuditCommittee" abstract="false" name="NumberOfDirectorsAbleToSitOnEachCommitteeOfTheBoardExcludingAuditCommittee" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rddt_AffirmativeVoteOrWrittenConsentOfCounterpartyRequiredMinimumOwnershipThreshold" abstract="false" name="AffirmativeVoteOrWrittenConsentOfCounterpartyRequiredMinimumOwnershipThreshold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rddt_AffirmativeVoteOrWrittenConsentOfCounterpartyRequiredMinimumOwnershipPercentageUponClosingOfTheInitialPublicOffering" abstract="false" name="AffirmativeVoteOrWrittenConsentOfCounterpartyRequiredMinimumOwnershipPercentageUponClosingOfTheInitialPublicOffering" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rddt_AffirmativeVoteOrWrittenConsentOfCounterpartyRequiredMinimumOwnershipPercentageSubsequentToInitialPublicOffering" abstract="false" name="AffirmativeVoteOrWrittenConsentOfCounterpartyRequiredMinimumOwnershipPercentageSubsequentToInitialPublicOffering" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rddt_ReportableSegmentMember" abstract="true" name="ReportableSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_CostOfGoodsAndServiceAdjusted" abstract="false" name="CostOfGoodsAndServiceAdjusted" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_GrossProfitAdjusted" abstract="false" name="GrossProfitAdjusted" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_OperatingExpensesExcludingDepreciationDepletionAmortizationAndShareBasedPaymentArrangementExpenseAdjusted" abstract="false" name="OperatingExpensesExcludingDepreciationDepletionAmortizationAndShareBasedPaymentArrangementExpenseAdjusted" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_ShareBasedPaymentArrangementExpenseAndTaxes" abstract="false" name="ShareBasedPaymentArrangementExpenseAndTaxes" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rddt_AndrewVolleroMember" abstract="true" name="AndrewVolleroMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_CommonClassATradingArrangementMember" abstract="true" name="CommonClassATradingArrangementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_RestrictedStockUnitCommonClassATradingArrangementMember" abstract="true" name="RestrictedStockUnitCommonClassATradingArrangementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_BenjaminLeeMember" abstract="true" name="BenjaminLeeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rddt_MichelleReynoldsMember" abstract="true" name="MichelleReynoldsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>

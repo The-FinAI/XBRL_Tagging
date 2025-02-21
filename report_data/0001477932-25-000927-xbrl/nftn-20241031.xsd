@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 02/12/2025-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2025 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2024" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2024" xmlns:exch="http://xbrl.sec.gov/exch/2024" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2024" xmlns:us-types="http://fasb.org/us-types/2024" xmlns:stpr="http://xbrl.sec.gov/stpr/2024" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2024" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2024" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2024" xmlns:dei="http://xbrl.sec.gov/dei/2024" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2024" xmlns:us-gaap="http://fasb.org/us-gaap/2024" xmlns:ecd="http://xbrl.sec.gov/ecd/2024" xmlns:nftn="http://nftn.com/20241031" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://nftn.com/20241031">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://nftn.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/BalanceSheets" id="BalanceSheets">
+        <link:definition>000002 - Statement - Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/BalanceSheetsParenthetical" id="BalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/StatementsOfOperations" id="StatementsOfOperations">
+        <link:definition>000004 - Statement - Statements of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/StatementsOfChangesInStockholdersEquity" id="StatementsOfChangesInStockholdersEquity">
+        <link:definition>000005 - Statement - Statements of Changes in Stockholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/StatementsOfCashFlows" id="StatementsOfCashFlows">
+        <link:definition>000006 - Statement - Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/InsiderTradingArragements" id="InsiderTradingArragements">
+        <link:definition>000007 - Disclosure - Insider Trading Arragements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/OrganizationAndDescriptionOfBusiness" id="OrganizationAndDescriptionOfBusiness">
+        <link:definition>000008 - Disclosure - ORGANIZATION AND DESCRIPTION OF BUSINESS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/GoingConcern" id="GoingConcern">
+        <link:definition>000009 - Disclosure - GOING CONCERN</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/SummaryOfSignificantAccountingPolicies" id="SummaryOfSignificantAccountingPolicies">
+        <link:definition>000010 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/RecentAccountingPronoucements" id="RecentAccountingPronoucements">
+        <link:definition>000011 - Disclosure - RECENT ACCOUNTING PRONOUCEMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/RelatedPartyTransactions" id="RelatedPartyTransactions">
+        <link:definition>000012 - Disclosure - RELATED PARTY TRANSACTIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/StockholdersDeficit" id="StockholdersDeficit">
+        <link:definition>000013 - Disclosure - STOCKHOLDERS DEFICIT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000014 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/SummaryOfSignificantAccountingPoliciesPolicies" id="SummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>000015 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/GoingConcernDetailsNarrative" id="GoingConcernDetailsNarrative">
+        <link:definition>000016 - Disclosure - GOING CONCERN (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/RelatedPartyTransactionsDetailsNarrative" id="RelatedPartyTransactionsDetailsNarrative">
+        <link:definition>000017 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://nftn.com/role/StockholdersEquityDetailsNarrative" id="StockholdersEquityDetailsNarrative">
+        <link:definition>000018 - Disclosure - STOCKHOLDERS EQUITY (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="nftn-20241031_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="nftn-20241031_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="nftn-20241031_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="nftn-20241031_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2024" schemaLocation="https://xbrl.sec.gov/currency/2024/currency-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2024" schemaLocation="https://xbrl.sec.gov/exch/2024/exch-2024.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2024" schemaLocation="https://xbrl.sec.gov/naics/2024/naics-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2024" schemaLocation="https://xbrl.sec.gov/sic/2024/sic-2024.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-roles-2024.xsd" />
+  <import namespace="http://fasb.org/srt-types/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-types-2024.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2024" schemaLocation="https://xbrl.sec.gov/stpr/2024/stpr-2024.xsd" />
+  <import namespace="http://fasb.org/us-roles/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-roles-2024.xsd" />
+  <import namespace="http://fasb.org/us-types/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-types-2024.xsd" />
+  <import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd" />
+  <element id="nftn_LoansPayableToShareholdersCurrent" name="LoansPayableToShareholdersCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="nftn_RelatedPartyTransactionsLoansPayableCurrent" name="RelatedPartyTransactionsLoansPayableCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="nftn_ProceedsFromLoanPayableShareholders" name="ProceedsFromLoanPayableShareholders" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="nftn_CashPaidDuringYearForAbstract" name="CashPaidDuringYearForAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="nftn_WorkingCapitalDeficits" name="WorkingCapitalDeficits" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="nftn_InsiderTradingArragementsAbstract" name="InsiderTradingArragementsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="nftn_StockholdersDeficitAbstract" name="StockholdersDeficitAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="ShareholdersMember" id="nftn_ShareholdersMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

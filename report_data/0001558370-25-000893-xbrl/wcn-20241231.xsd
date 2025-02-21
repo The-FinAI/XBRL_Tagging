@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--XBRL document created with Toppan Merrill Bridge  10.9.0.3 -->
+<!--Based on XBRL 2.1-->
+<!--Created on: 2/12/2025 7:18:53 PM-->
+<!--Modified on: 2/12/2025 7:18:53 PM-->
+<xsd:schema xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:country="http://xbrl.sec.gov/country/2024" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://wasteconnections.com/20241231" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:us-gaap="http://fasb.org/us-gaap/2024" xmlns:us-types="http://fasb.org/us-types/2024" xmlns:srt-types="http://fasb.org/srt-types/2024" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:currency="http://xbrl.sec.gov/currency/2024" xmlns:us-roles="http://fasb.org/us-roles/2024" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:sic="http://xbrl.sec.gov/sic/2024" xmlns:srt-roles="http://fasb.org/srt-roles/2024" xmlns:stpr="http://xbrl.sec.gov/stpr/2024" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:exch="http://xbrl.sec.gov/exch/2024" xmlns:naics="http://xbrl.sec.gov/naics/2024" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:attributeFormDefault="unqualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:srt="http://fasb.org/srt/2024" xmlns:deprecated="http://www.xbrl.org/2009/role/deprecated" xmlns:net="http://www.xbrl.org/2009/role/net" xmlns:dei="http://xbrl.sec.gov/dei/2024" xmlns:wcn="http://wasteconnections.com/20241231" xmlns:dtr="http://www.xbrl.org/2009/dtr" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:us-gaap-ebp="http://fasb.org/us-gaap-ebp/2024" xmlns:cyd-af-sub="http://xbrl.sec.gov/cyd-af-sub/2024" xmlns:ecd="http://xbrl.sec.gov/ecd/2024" xmlns:ecd-sub="http://xbrl.sec.gov/ecd-sub/2024" xmlns:cyd="http://xbrl.sec.gov/cyd/2024">
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureStandardAndCustomAxisDomainDefaults" id="DisclosureStandardAndCustomAxisDomainDefaults">
+        <link:definition>99900 - Disclosure - Standard And Custom Axis Domain Defaults</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/StatementConsolidatedBalanceSheets" id="StatementConsolidatedBalanceSheets">
+        <link:definition>995200100 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/StatementConsolidatedStatementsOfNetIncome" id="StatementConsolidatedStatementsOfNetIncome">
+        <link:definition>995200200 - Statement - CONSOLIDATED STATEMENTS OF NET INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/StatementConsolidatedStatementsOfComprehensiveIncome" id="StatementConsolidatedStatementsOfComprehensiveIncome">
+        <link:definition>995200300 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/StatementConsolidatedStatementsOfCashFlows" id="StatementConsolidatedStatementsOfCashFlows">
+        <link:definition>995200500 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosurePrepaidExpensesAndOtherCurrentAssetsDetails" id="DisclosurePrepaidExpensesAndOtherCurrentAssetsDetails">
+        <link:definition>99940501 - Disclosure - Prepaid Expenses and Other Current Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosurePropertyAndEquipmentNetPropertyAndEquipmentScheduleDetails" id="DisclosurePropertyAndEquipmentNetPropertyAndEquipmentScheduleDetails">
+        <link:definition>99940602 - Disclosure - PROPERTY AND EQUIPMENT, NET - Property and Equipment Schedule (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLeasesOperatingAndFinancingLeaseCostDetails" id="DisclosureLeasesOperatingAndFinancingLeaseCostDetails">
+        <link:definition>99940702 - Disclosure - LEASES - Operating and Financing Lease Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLeasesFutureMinimumLeasePaymentsDetails" id="DisclosureLeasesFutureMinimumLeasePaymentsDetails">
+        <link:definition>99940705 - Disclosure - LEASES - Future Minimum Lease Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureAcquisitionsConsiderationTransferredToAcquireBusinessesAndAssetsAcquiredLiabilitiesAssumedScheduleDetail" id="DisclosureAcquisitionsConsiderationTransferredToAcquireBusinessesAndAssetsAcquiredLiabilitiesAssumedScheduleDetail">
+        <link:definition>99940802 - Disclosure - ACQUISITIONS - Consideration Transferred to Acquire Businesses and Assets Acquired, Liabilities Assumed Schedule (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureIntangibleAssetsNetIntangibleAssetsExclusiveOfGoodwillDetails" id="DisclosureIntangibleAssetsNetIntangibleAssetsExclusiveOfGoodwillDetails">
+        <link:definition>99940902 - Disclosure - INTANGIBLE ASSETS, NET - Intangible Assets Exclusive of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureAccruedLiabilitiesDetails" id="DisclosureAccruedLiabilitiesDetails">
+        <link:definition>99941001 - Disclosure - ACCRUED LIABILITIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLongTermDebtScheduleOfLtdAndLeaseObligationsDetails" id="DisclosureLongTermDebtScheduleOfLtdAndLeaseObligationsDetails">
+        <link:definition>99941101 - Disclosure - Long-Term Debt - Schedule of LTD and Lease Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureCommitmentsAndContingenciesFutureMinimumPurchaseCommitmentsDetails" id="DisclosureCommitmentsAndContingenciesFutureMinimumPurchaseCommitmentsDetails">
+        <link:definition>99941302 - Disclosure - COMMITMENTS AND CONTINGENCIES - Future Minimum Purchase Commitments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureOtherComprehensiveIncomeLossComponentsOfOtherComprehensiveIncomeLossDetails" id="DisclosureOtherComprehensiveIncomeLossComponentsOfOtherComprehensiveIncomeLossDetails">
+        <link:definition>99941501 - Disclosure - Other Comprehensive Income (Loss) - Components of Other Comprehensive Income (Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureIncomeTaxesProvisionBenefitForIncomeTaxesDetails" id="DisclosureIncomeTaxesProvisionBenefitForIncomeTaxesDetails">
+        <link:definition>99941603 - Disclosure - INCOME TAXES - Provision Benefit for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureIncomeTaxesDifferencesBetweenIncomeTaxProvisionInStatementsOfNetIncomeAndIncomeTaxProvisionComputedAtFederalStatutoryRateDetails" id="DisclosureIncomeTaxesDifferencesBetweenIncomeTaxProvisionInStatementsOfNetIncomeAndIncomeTaxProvisionComputedAtFederalStatutoryRateDetails">
+        <link:definition>99941604 - Disclosure - INCOME TAXES - Differences between Income Tax Provision in Statements of Net Income and Income Tax Provision Computed at Federal Statutory Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureIncomeTaxesSignificantComponentsOfDeferredIncomeTaxAssetsAndLiabilitiesDetails" id="DisclosureIncomeTaxesSignificantComponentsOfDeferredIncomeTaxAssetsAndLiabilitiesDetails">
+        <link:definition>99941605 - Disclosure - INCOME TAXES - Significant Components of Deferred Income Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSegmentReportingReconciliationOfSegmentEbitdaToIncomeBeforeIncomeTaxProvisionDetails" id="DisclosureSegmentReportingReconciliationOfSegmentEbitdaToIncomeBeforeIncomeTaxProvisionDetails">
+        <link:definition>99941705 - Disclosure - SEGMENT REPORTING - Reconciliation of Segment EBITDA to Income Before Income Tax Provision (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureNetIncomePerShareInformationBasicAndDilutedNetIncomePerCommonShareDetails" id="DisclosureNetIncomePerShareInformationBasicAndDilutedNetIncomePerCommonShareDetails">
+        <link:definition>99941801 - Disclosure - Net Income Per Share Information - Basic and Diluted Net Income Per Common Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DocumentDocumentAndEntityInformation" id="DocumentDocumentAndEntityInformation">
+        <link:definition>995200090 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/StatementConsolidatedBalanceSheetsParenthetical" id="StatementConsolidatedBalanceSheetsParenthetical">
+        <link:definition>995200105 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/StatementConsolidatedStatementsOfEquity" id="StatementConsolidatedStatementsOfEquity">
+        <link:definition>995200400 - Statement - CONSOLIDATED STATEMENTS OF EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureBusiness" id="DisclosureBusiness">
+        <link:definition>995210101 - Disclosure - Business</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureNewAccountingStandardsAndReclassifications" id="DisclosureNewAccountingStandardsAndReclassifications">
+        <link:definition>995210201 - Disclosure - New Accounting Standards and Reclassifications</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPolicies" id="DisclosureSummaryOfSignificantAccountingPolicies">
+        <link:definition>995210301 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureUseOfEstimatesAndAssumptions" id="DisclosureUseOfEstimatesAndAssumptions">
+        <link:definition>995210401 - Disclosure - Use of Estimates and Assumptions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosurePrepaidExpensesAndOtherCurrentAssets" id="DisclosurePrepaidExpensesAndOtherCurrentAssets">
+        <link:definition>995210501 - Disclosure - Prepaid Expenses and Other Current Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosurePropertyAndEquipmentNet" id="DisclosurePropertyAndEquipmentNet">
+        <link:definition>995210601 - Disclosure - PROPERTY AND EQUIPMENT, NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLeases" id="DisclosureLeases">
+        <link:definition>995210701 - Disclosure - LEASES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureAcquisitions" id="DisclosureAcquisitions">
+        <link:definition>995210801 - Disclosure - ACQUISITIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureIntangibleAssetsNet" id="DisclosureIntangibleAssetsNet">
+        <link:definition>995210901 - Disclosure - INTANGIBLE ASSETS, NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureAccruedLiabilities" id="DisclosureAccruedLiabilities">
+        <link:definition>995211001 - Disclosure - ACCRUED LIABILITIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLongTermDebt" id="DisclosureLongTermDebt">
+        <link:definition>995211101 - Disclosure - Long-Term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureFairValueOfFinancialInstruments" id="DisclosureFairValueOfFinancialInstruments">
+        <link:definition>995211201 - Disclosure - FAIR VALUE OF FINANCIAL INSTRUMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureCommitmentsAndContingencies" id="DisclosureCommitmentsAndContingencies">
+        <link:definition>995211301 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureShareholdersEquity" id="DisclosureShareholdersEquity">
+        <link:definition>995211401 - Disclosure - Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureOtherComprehensiveIncomeLoss" id="DisclosureOtherComprehensiveIncomeLoss">
+        <link:definition>995211501 - Disclosure - Other Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureIncomeTaxes" id="DisclosureIncomeTaxes">
+        <link:definition>995211601 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSegmentReporting" id="DisclosureSegmentReporting">
+        <link:definition>995211701 - Disclosure - SEGMENT REPORTING</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureNetIncomePerShareInformation" id="DisclosureNetIncomePerShareInformation">
+        <link:definition>995211801 - Disclosure - Net Income Per Share Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureEmployeeBenefitPlans" id="DisclosureEmployeeBenefitPlans">
+        <link:definition>995211901 - Disclosure - Employee Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSubsequentEvent" id="DisclosureSubsequentEvent">
+        <link:definition>995212001 - Disclosure - Subsequent Event</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureScheduleIiValuationAndQualifyingAccounts" id="DisclosureScheduleIiValuationAndQualifyingAccounts">
+        <link:definition>995212101 - Disclosure - SCHEDULE II - Valuation and Qualifying Accounts</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureNewAccountingStandardsAndReclassificationsPolicy" id="DisclosureNewAccountingStandardsAndReclassificationsPolicy">
+        <link:definition>99920202 - Disclosure - New Accounting Standards and Reclassifications (Policy)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesPolicy" id="DisclosureSummaryOfSignificantAccountingPoliciesPolicy">
+        <link:definition>99920302 - Disclosure - Summary of Significant Accounting Policies (Policy)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLeasesPolicy" id="DisclosureLeasesPolicy">
+        <link:definition>99920702 - Disclosure - Leases (Policy)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesTables" id="DisclosureSummaryOfSignificantAccountingPoliciesTables">
+        <link:definition>99930303 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosurePrepaidExpensesAndOtherCurrentAssetsTables" id="DisclosurePrepaidExpensesAndOtherCurrentAssetsTables">
+        <link:definition>99930503 - Disclosure - Prepaid Expenses and Other Current Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosurePropertyAndEquipmentNetTables" id="DisclosurePropertyAndEquipmentNetTables">
+        <link:definition>99930603 - Disclosure - Property and Equipment, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLeasesTables" id="DisclosureLeasesTables">
+        <link:definition>99930703 - Disclosure - LEASES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureAcquisitionsTables" id="DisclosureAcquisitionsTables">
+        <link:definition>99930803 - Disclosure - ACQUISITIONS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureIntangibleAssetsNetTables" id="DisclosureIntangibleAssetsNetTables">
+        <link:definition>99930903 - Disclosure - INTANGIBLE ASSETS, NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureAccruedLiabilitiesTables" id="DisclosureAccruedLiabilitiesTables">
+        <link:definition>99931003 - Disclosure - ACCRUED LIABILITIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLongTermDebtTables" id="DisclosureLongTermDebtTables">
+        <link:definition>99931103 - Disclosure - Long-Term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureFairValueOfFinancialInstrumentsTables" id="DisclosureFairValueOfFinancialInstrumentsTables">
+        <link:definition>99931203 - Disclosure - FAIR VALUE OF FINANCIAL INSTRUMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureCommitmentsAndContingenciesTables" id="DisclosureCommitmentsAndContingenciesTables">
+        <link:definition>99931303 - Disclosure - COMMITMENTS AND CONTINGENCIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureShareholdersEquityTables" id="DisclosureShareholdersEquityTables">
+        <link:definition>99931403 - Disclosure - Shareholders' Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureOtherComprehensiveIncomeLossTables" id="DisclosureOtherComprehensiveIncomeLossTables">
+        <link:definition>99931503 - Disclosure - Other Comprehensive Income (Loss) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureIncomeTaxesTables" id="DisclosureIncomeTaxesTables">
+        <link:definition>99931603 - Disclosure - INCOME TAXES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSegmentReportingTables" id="DisclosureSegmentReportingTables">
+        <link:definition>99931703 - Disclosure - SEGMENT REPORTING (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureNetIncomePerShareInformationTables" id="DisclosureNetIncomePerShareInformationTables">
+        <link:definition>99931803 - Disclosure - Net Income Per Share Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureEmployeeBenefitPlansTables" id="DisclosureEmployeeBenefitPlansTables">
+        <link:definition>99931903 - Disclosure - Employee Benefit Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesRevenueAndAccountsReceivableNarrativeDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesRevenueAndAccountsReceivableNarrativeDetails">
+        <link:definition>99940301 - Disclosure - Summary of Significant Accounting Policies - Revenue and Accounts Receivable - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesRevenuesByServiceLineDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesRevenuesByServiceLineDetails">
+        <link:definition>99940302 - Disclosure - Summary of Significant Accounting Policies - Revenues by Service Line (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesAllowanceForCreditLossesDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesAllowanceForCreditLossesDetails">
+        <link:definition>99940303 - Disclosure - Summary of Significant Accounting Policies - Allowance for Credit Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesPropertyPlantAndEquipmentEstimatedUsefulLivesDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesPropertyPlantAndEquipmentEstimatedUsefulLivesDetails">
+        <link:definition>99940304 - Disclosure - Summary of Significant Accounting Policies - Property Plant and Equipment Estimated Useful Lives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesLandfillAccountingNarrativeDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesLandfillAccountingNarrativeDetails">
+        <link:definition>99940305 - Disclosure - Summary of Significant Accounting Policies - Landfill Accounting - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesFinalCappingClosureAndPostClosureLiabilityRollforwardDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesFinalCappingClosureAndPostClosureLiabilityRollforwardDetails">
+        <link:definition>99940306 - Disclosure - Summary of Significant Accounting Policies - Final Capping, Closure and Post-Closure Liability Rollforward (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesIntangibleAssetsNarrativeDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesIntangibleAssetsNarrativeDetails">
+        <link:definition>99940307 - Disclosure - Summary of Significant Accounting Policies - Intangible Assets - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesRestrictedCashAndInvestmentsDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesRestrictedCashAndInvestmentsDetails">
+        <link:definition>99940308 - Disclosure - Summary of Significant Accounting Policies - Restricted Cash and Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesFairValueOfFinancialInstrumentsCarryingValuesAndFairValuesOfDebtInstrumentsDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesFairValueOfFinancialInstrumentsCarryingValuesAndFairValuesOfDebtInstrumentsDetails">
+        <link:definition>99940309 - Disclosure - Summary of Significant Accounting Policies - Fair Value of Financial Instruments - Carrying Values and Fair Values of Debt Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesDerivativeFinancialInstrumentsInterestRateSwapsDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesDerivativeFinancialInstrumentsInterestRateSwapsDetails">
+        <link:definition>99940310 - Disclosure - Summary of Significant Accounting Policies - Derivative Financial Instruments - Interest Rate Swaps (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesDerivativeFinancialInstrumentsFvOfCashFlowHedgesDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesDerivativeFinancialInstrumentsFvOfCashFlowHedgesDetails">
+        <link:definition>99940311 - Disclosure - Summary of Significant Accounting Policies - Derivative Financial Instruments - FV of Cash Flow Hedges (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesImpactOfCfHedgesOnOperationsCompIncomeAndAocilDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesImpactOfCfHedgesOnOperationsCompIncomeAndAocilDetails">
+        <link:definition>99940312 - Disclosure - Summary of Significant Accounting Policies - Impact of CF Hedges on Operations, Comp Income and AOCIL (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesShareBasedCompensationNarrativeDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesShareBasedCompensationNarrativeDetails">
+        <link:definition>99940313 - Disclosure - Summary of Significant Accounting Policies - Share-Based Compensation - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesAdvertisingCostsDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesAdvertisingCostsDetails">
+        <link:definition>99940314 - Disclosure - Summary of Significant Accounting Policies - Advertising Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSummaryOfSignificantAccountingPoliciesInsuranceLiabilitiesDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesInsuranceLiabilitiesDetails">
+        <link:definition>99940315 - Disclosure - Summary of Significant Accounting Policies - Insurance Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosurePropertyAndEquipmentNetNarrativeDetails" id="DisclosurePropertyAndEquipmentNetNarrativeDetails">
+        <link:definition>99940601 - Disclosure - PROPERTY AND EQUIPMENT, NET - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLeasesNarrativeDetails" id="DisclosureLeasesNarrativeDetails">
+        <link:definition>99940701 - Disclosure - LEASES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLeasesSupplementalCashFlowInformationDetails" id="DisclosureLeasesSupplementalCashFlowInformationDetails">
+        <link:definition>99940703 - Disclosure - LEASES - Supplemental Cash Flow Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLeasesWeightedAverageRemainingLeaseTermAndDiscountRateDetails" id="DisclosureLeasesWeightedAverageRemainingLeaseTermAndDiscountRateDetails">
+        <link:definition>99940704 - Disclosure - LEASES - Weighted-Average Remaining Lease Term And Discount Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureAcquisitionsNarrativeDetails" id="DisclosureAcquisitionsNarrativeDetails">
+        <link:definition>99940801 - Disclosure - ACQUISITIONS - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureIntangibleAssetsNetNarrativeDetails" id="DisclosureIntangibleAssetsNetNarrativeDetails">
+        <link:definition>99940901 - Disclosure - INTANGIBLE ASSETS, NET - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureIntangibleAssetsNetEstimatedFutureAmortizationExpenseIntangibleAssetsDetails" id="DisclosureIntangibleAssetsNetEstimatedFutureAmortizationExpenseIntangibleAssetsDetails">
+        <link:definition>99940903 - Disclosure - INTANGIBLE ASSETS, NET - Estimated Future Amortization Expense, Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLongTermDebtRevolvingCreditAgreementScheduleDetails" id="DisclosureLongTermDebtRevolvingCreditAgreementScheduleDetails">
+        <link:definition>99941102 - Disclosure - Long-Term Debt - Revolving Credit Agreement Schedule (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLongTermDebtRevolvingCreditAgreementNarrativeDetails" id="DisclosureLongTermDebtRevolvingCreditAgreementNarrativeDetails">
+        <link:definition>99941103 - Disclosure - Long-Term Debt - Revolving Credit Agreement Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLongTermDebtSeniorNotesNarrativeDetails" id="DisclosureLongTermDebtSeniorNotesNarrativeDetails">
+        <link:definition>99941104 - Disclosure - Long-Term Debt - Senior Notes Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureLongTermDebtFuturePrincipalPaymentsScheduleDetails" id="DisclosureLongTermDebtFuturePrincipalPaymentsScheduleDetails">
+        <link:definition>99941105 - Disclosure - Long-Term Debt - Future Principal Payments Schedule (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureFairValueOfFinancialInstrumentsAssetsAndLiabilitiesMeasuredAtFairValueOnRecurringBasisDetails" id="DisclosureFairValueOfFinancialInstrumentsAssetsAndLiabilitiesMeasuredAtFairValueOnRecurringBasisDetails">
+        <link:definition>99941201 - Disclosure - FAIR VALUE OF FINANCIAL INSTRUMENTS - Assets and Liabilities Measured at Fair Value on Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureFairValueOfFinancialInstrumentsChangeInFvForLevel3LiabilitiesDetails" id="DisclosureFairValueOfFinancialInstrumentsChangeInFvForLevel3LiabilitiesDetails">
+        <link:definition>99941202 - Disclosure - FAIR VALUE OF FINANCIAL INSTRUMENTS - Change in FV for Level 3 Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureCommitmentsAndContingenciesNarrativeDetails" id="DisclosureCommitmentsAndContingenciesNarrativeDetails">
+        <link:definition>99941301 - Disclosure - COMMITMENTS AND CONTINGENCIES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureShareholdersEquityNarrativeDetails" id="DisclosureShareholdersEquityNarrativeDetails">
+        <link:definition>99941401 - Disclosure - Shareholders' Equity - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureShareholdersEquityRestrictedStockUnitsActivityDetails" id="DisclosureShareholdersEquityRestrictedStockUnitsActivityDetails">
+        <link:definition>99941402 - Disclosure - Shareholders' Equity - Restricted Stock Units Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/Disclosure10KShareholdersEquitySummaryOfActivityRelatedToRestrictedStockUnitsDetails" id="Disclosure10KShareholdersEquitySummaryOfActivityRelatedToRestrictedStockUnitsDetails">
+        <link:definition>99941403 - Disclosure - 10-K Shareholders' Equity (Summary of Activity Related to Restricted Stock Units) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureShareholdersEquityWarrantActivityScheduleDetails" id="DisclosureShareholdersEquityWarrantActivityScheduleDetails">
+        <link:definition>99941404 - Disclosure - Shareholders' Equity - Warrant Activity Schedule (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureShareholdersEquityWarrantsOutstandingScheduleDetails" id="DisclosureShareholdersEquityWarrantsOutstandingScheduleDetails">
+        <link:definition>99941405 - Disclosure - Shareholders' Equity - Warrants Outstanding Schedule (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureOtherComprehensiveIncomeLossAmountsIncludedInAocilDetails" id="DisclosureOtherComprehensiveIncomeLossAmountsIncludedInAocilDetails">
+        <link:definition>99941502 - Disclosure - Other Comprehensive Income (Loss) - Amounts Included in AOCIL (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureIncomeTaxesNarrativeDetails" id="DisclosureIncomeTaxesNarrativeDetails">
+        <link:definition>99941601 - Disclosure - INCOME TAXES - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureIncomeTaxesIncomeLossBeforeProvisionBenefitForIncomeTaxesDetails" id="DisclosureIncomeTaxesIncomeLossBeforeProvisionBenefitForIncomeTaxesDetails">
+        <link:definition>99941602 - Disclosure - INCOME TAXES - Income (Loss) Before Provision (Benefit) for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSegmentReportingNarrativeDetails" id="DisclosureSegmentReportingNarrativeDetails">
+        <link:definition>99941701 - Disclosure - SEGMENT REPORTING - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSegmentReportingSummaryOfFinancialInformationOfReportableSegmentsDetails" id="DisclosureSegmentReportingSummaryOfFinancialInformationOfReportableSegmentsDetails">
+        <link:definition>99941702 - Disclosure - SEGMENT REPORTING - Summary of Financial Information of Reportable Segments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSegmentReportingChangesInGoodwillByReportableSegmentDetails" id="DisclosureSegmentReportingChangesInGoodwillByReportableSegmentDetails">
+        <link:definition>99941703 - Disclosure - SEGMENT REPORTING - Changes in Goodwill by Reportable Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSegmentReportingPropertyAndEquipmentInUsAndCanadaDetails" id="DisclosureSegmentReportingPropertyAndEquipmentInUsAndCanadaDetails">
+        <link:definition>99941704 - Disclosure - SEGMENT REPORTING - Property and Equipment in US and Canada (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureEmployeeBenefitPlansNarrativeDetails" id="DisclosureEmployeeBenefitPlansNarrativeDetails">
+        <link:definition>99941901 - Disclosure - Employee Benefit Plans - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureEmployeeBenefitPlansPlanContributionsDetails" id="DisclosureEmployeeBenefitPlansPlanContributionsDetails">
+        <link:definition>99941902 - Disclosure - Employee Benefit Plans - Plan Contributions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureSubsequentEventDetails" id="DisclosureSubsequentEventDetails">
+        <link:definition>99942001 - Disclosure - Subsequent Event (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://wasteconnections.com/role/DisclosureScheduleIiValuationAndQualifyingAccountsDetails" id="DisclosureScheduleIiValuationAndQualifyingAccountsDetails">
+        <link:definition>99942101 - Disclosure - SCHEDULE II - Valuation and Qualifying Accounts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:href="wcn-20241231_cal.xml" xlink:title="Calculation Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:href="wcn-20241231_def.xml" xlink:title="Definition Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:href="wcn-20241231_lab.xml" xlink:title="Label Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:href="wcn-20241231_pre.xml" xlink:title="Presentation Links, all" />
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:import namespace="https://xbrl.org/2023/calculation-1.1" schemaLocation="https://www.xbrl.org/2023/calculation-1.1.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <xsd:import namespace="http://fasb.org/us-roles/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-roles-2024.xsd" />
+  <xsd:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd" />
+  <xsd:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/ecd-sub/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-sub-2024.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/cyd/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-2024.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd" />
+  <xsd:element id="wcn_AssetRetirementObligationAssumptionOfClosureLiabilitiesFromAcquisitions" name="AssetRetirementObligationAssumptionOfClosureLiabilitiesFromAcquisitions" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" />
+  <xsd:element id="wcn_CashDividendPerCommonShareIncrease" name="CashDividendPerCommonShareIncrease" nillable="true" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element name="CentralMember" id="wcn_CentralMember" type="dtr-types:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="ContingenciesAndCommitmentsLineItems" id="wcn_ContingenciesAndCommitmentsLineItems" type="xbrli:stringItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="ContingenciesAndCommitmentsTable" id="wcn_ContingenciesAndCommitmentsTable" type="xbrli:stringItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrldt:hypercubeItem" />
+  <xsd:element name="DenominatorUsedInComputationOfBasicAndDilutedNetIncomePerCommonShareAbstract" id="wcn_DenominatorUsedInComputationOfBasicAndDilutedNetIncomePerCommonShareAbstract" type="xbrli:stringItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="DerivativeEffectiveDateMonthAndYear" id="wcn_DerivativeEffectiveDateMonthAndYear" type="xbrli:gYearMonthItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="EasternMember" id="wcn_EasternMember" type="dtr-types:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="FiniteLivedAndIndefiniteLivedIntangibleAssetsLineItems" id="wcn_FiniteLivedAndIndefiniteLivedIntangibleAssetsLineItems" type="xbrli:stringItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="FiniteLivedAndIndefiniteLivedIntangibleAssetsTable" id="wcn_FiniteLivedAndIndefiniteLivedIntangibleAssetsTable" type="xbrli:stringItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrldt:hypercubeItem" />
+  <xsd:element name="InceptionDatesDerivative" id="wcn_InceptionDatesDerivative" type="xbrli:gYearMonthItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="InflationRateForPurposesOfComputingLayersForFinalCappingClosureAndPostClosureObligations" id="wcn_InflationRateForPurposesOfComputingLayersForFinalCappingClosureAndPostClosureObligations" type="dtr-types:percentItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="IntangibleAssetsExclusiveOfGoodwillTableTextBlock" id="wcn_IntangibleAssetsExclusiveOfGoodwillTableTextBlock" type="dtr-types:textBlockItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="InterestRateSwapOneMember" id="wcn_InterestRateSwapOneMember" type="dtr-types:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="InterestRateSwapThreeMember" id="wcn_InterestRateSwapThreeMember" type="dtr-types:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="InterestRateSwapTwoMember" id="wcn_InterestRateSwapTwoMember" type="dtr-types:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="IntermodalAndOtherMember" id="wcn_IntermodalAndOtherMember" type="dtr-types:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element id="wcn_LiabilitiesAssumedAndNotesPayableIssuedToSellersOfBusinessesAcquired" name="LiabilitiesAssumedAndNotesPayableIssuedToSellersOfBusinessesAcquired" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" />
+  <xsd:element id="wcn_LifeOfCompanysOwnedLandfillsAndLandfillsOperatedUnderLifeOfSiteOperatingAgreementsMaxRange" name="LifeOfCompanysOwnedLandfillsAndLandfillsOperatedUnderLifeOfSiteOperatingAgreementsMaxRange" nillable="true" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wcn_LifeOfCompanysOwnedLandfillsAndLandfillsOperatedUnderLifeOfSiteOperatingAgreementsMinRange" name="LifeOfCompanysOwnedLandfillsAndLandfillsOperatedUnderLifeOfSiteOperatingAgreementsMinRange" nillable="true" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element name="MaturityDatesDerivative" id="wcn_MaturityDatesDerivative" type="xbrli:gYearMonthItemType" abstract="false" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="NumeratorUsedInComputationOfBasicAndDilutedNetIncomePerCommonShareAbstract" id="wcn_NumeratorUsedInComputationOfBasicAndDilutedNetIncomePerCommonShareAbstract" type="xbrli:stringItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingNumber" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingNumber" nillable="true" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsRollforwardAbstract" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsRollforwardAbstract" type="xbrli:stringItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="SolidWasteCollectionAndTransportationPermitsMember" id="wcn_SolidWasteCollectionAndTransportationPermitsMember" type="dtr-types:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="SolidWasteCollectionMember" id="wcn_SolidWasteCollectionMember" type="dtr-types:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="SolidWasteRecyclingMember" id="wcn_SolidWasteRecyclingMember" type="dtr-types:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="TermLoanFacilityMember" id="wcn_TermLoanFacilityMember" type="dtr-types:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element name="WesternMember" id="wcn_WesternMember" type="dtr-types:domainItemType" abstract="true" xbrli:periodType="duration" nillable="true" substitutionGroup="xbrli:item" />
+  <xsd:element id="wcn_SegmentReportingInformationEarningsBeforeInterestTaxesDepreciationAndAmortization" name="SegmentReportingInformationEarningsBeforeInterestTaxesDepreciationAndAmortization" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" />
+  <xsd:element id="wcn_ExplorationAndProductionWasteTreatmentRecoveryAndDisposalMember" name="ExplorationAndProductionWasteTreatmentRecoveryAndDisposalMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_InterestRateSwapFourMember" name="InterestRateSwapFourMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_RequiredLeverageRatio" name="RequiredLeverageRatio" nillable="true" type="xbrli:pureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="false" />
+  <xsd:element id="wcn_SwingLineLoansMember" name="SwingLineLoansMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <xsd:element id="wcn_ImpairmentsAndOtherOperatingCharges" name="ImpairmentsAndOtherOperatingCharges" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" />
+  <xsd:element id="wcn_DeferredCompensationPlanMember" name="DeferredCompensationPlanMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityInterestAccretionExpense" name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityInterestAccretionExpense" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" />
+  <xsd:element id="wcn_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityContingentConsiderationRecordedAtAcquisitionDate" name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityContingentConsiderationRecordedAtAcquisitionDate" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" />
+  <xsd:element id="wcn_ProgressiveWasteSolutionsLtd.Member" name="ProgressiveWasteSolutionsLtd.Member" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_NotesPayableToSellersAndOtherThirdPartiesMember" name="NotesPayableToSellersAndOtherThirdPartiesMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_SouthernMember" name="SouthernMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_CanadaMember" name="CanadaMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_BusinessCombinationProvisionalInformationInitialAccountingIncompleteNumberOfAcquisitions" name="BusinessCombinationProvisionalInformationInitialAccountingIncompleteNumberOfAcquisitions" nillable="true" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wcn_CanadianPrimeRateMember" name="CanadianPrimeRateMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <xsd:element id="wcn_PermitsAndOtherMember" name="PermitsAndOtherMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_DailyRepurchaseOfSharesMaximum" name="DailyRepurchaseOfSharesMaximum" nillable="true" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wcn_AverageDailyTradingVolumeDuringPeriod" name="AverageDailyTradingVolumeDuringPeriod" nillable="true" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wcn_CanadianBankersAcceptanceLoanMember" name="CanadianBankersAcceptanceLoanMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_CanadianPrimeRateLoansAndSwingLineLoansMember" name="CanadianPrimeRateLoansAndSwingLineLoansMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <xsd:element id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsAbstract" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsAbstract" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsCashSettledInPeriod" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsCashSettledInPeriod" nillable="true" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="false" />
+  <xsd:element id="wcn_TaxWithholdingsRelatedToNetShareSettlementsOfEquityBasedCompensationValue" name="TaxWithholdingsRelatedToNetShareSettlementsOfEquityBasedCompensationValue" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" />
+  <xsd:element id="wcn_AnnualTonsOfWasteAcceptedAtLandfill" name="AnnualTonsOfWasteAcceptedAtLandfill" nillable="true" type="dtr-types:massItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wcn_ChiquitaCanyonLlcMember" name="ChiquitaCanyonLlcMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_ForeignCurrencyTranslationAdjustmentMember" name="ForeignCurrencyTranslationAdjustmentMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_TaxWithholdingsRelatedToNetShareSettlementsOfEquityBasedCompensationShares" name="TaxWithholdingsRelatedToNetShareSettlementsOfEquityBasedCompensationShares" nillable="true" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wcn_EstimateOfTotalNewFeesAndOtherNewTaxesOverLifeOfConditionalUsePermit" name="EstimateOfTotalNewFeesAndOtherNewTaxesOverLifeOfConditionalUsePermit" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" />
+  <xsd:element id="wcn_BridgeAndThoroughfareFeeMember" name="BridgeAndThoroughfareFeeMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_DeferredShareUnitsMember" name="DeferredShareUnitsMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_NoncomplianceFee" name="NoncomplianceFee" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" />
+  <xsd:element id="wcn_StandardCustomerServiceAgreementPeriod" name="StandardCustomerServiceAgreementPeriod" nillable="true" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wcn_EstimatedLifeOfRelevantCustomerRelationship" name="EstimatedLifeOfRelevantCustomerRelationship" nillable="true" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wcn_CommercialMember" name="CommercialMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_ResidentialMember" name="ResidentialMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_IndustrialAndConstructionRollOffMember" name="IndustrialAndConstructionRollOffMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_TransferMember" name="TransferMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_PenaltiesMember" name="PenaltiesMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_PenaltiesAndFeesMember" name="PenaltiesAndFeesMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_FeesMember" name="FeesMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_NotesTwoThousandTwentyEightMember" name="NotesTwoThousandTwentyEightMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_ExerciseOfWarrantsShares" name="ExerciseOfWarrantsShares" nillable="true" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wcn_DescriptionOfVariableRateBasis" name="DescriptionOfVariableRateBasis" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="wcn_GoodwillAcquiredNet" name="GoodwillAcquiredNet" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" />
+  <xsd:element id="wcn_NotesTwoThousandTwentyNineMember" name="NotesTwoThousandTwentyNineMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_AllowanceForDoubtfulAccountsReceivableImpactOfChangesInForeignCurrency" name="AllowanceForDoubtfulAccountsReceivableImpactOfChangesInForeignCurrency" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" />
+  <xsd:element id="wcn_DebtInstrumentDiscountGross" name="DebtInstrumentDiscountGross" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="debit" />
+  <xsd:element id="wcn_EmployeeSharePurchasePlanTwoThousandTwentyMember" name="EmployeeSharePurchasePlanTwoThousandTwentyMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardMinimumEmployeeSubscriptionRate" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardMinimumEmployeeSubscriptionRate" nillable="true" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" />
+  <xsd:element id="wcn_NotesTwoThousandThirtyMember" name="NotesTwoThousandThirtyMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_FinanceLeasesInterestRate" name="FinanceLeasesInterestRate" nillable="true" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" />
+  <xsd:element id="wcn_ThresholdUsedForDisclosingEnvironmentalMattersInvolvingPotentialMonetarySanctions" name="ThresholdUsedForDisclosingEnvironmentalMattersInvolvingPotentialMonetarySanctions" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" />
+  <xsd:element id="wcn_PercentageOfProjectedAnnualDisposalVolumeFromLandfillsWithRemainingLivesWithinThresholdPeriod" name="PercentageOfProjectedAnnualDisposalVolumeFromLandfillsWithRemainingLivesWithinThresholdPeriod" nillable="true" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" />
+  <xsd:element id="wcn_ThresholdPeriodUsedForMeasurementOfProjectedAnnualDisposalVolumeFromLandfills" name="ThresholdPeriodUsedForMeasurementOfProjectedAnnualDisposalVolumeFromLandfills" nillable="true" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element name="RequiredLeverageRatioDuringMaterialAcquisitionPeriod" id="wcn_RequiredLeverageRatioDuringMaterialAcquisitionPeriod" type="xbrli:pureItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" />
+  <xsd:element name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOperatingLeaseRightOfUseAssets" id="wcn_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOperatingLeaseRightOfUseAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="LongTermFranchiseAgreementsAndContractsMember" id="wcn_LongTermFranchiseAgreementsAndContractsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentPortionOfOperatingLeaseLiabilities" id="wcn_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentPortionOfOperatingLeaseLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedLongTermPortionOfOperatingLeaseLiabilities" id="wcn_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedLongTermPortionOfOperatingLeaseLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="NotesTwoThousandThirtyTwoMember" id="wcn_NotesTwoThousandThirtyTwoMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="NewNotesTwoThousandThirtyTwoMember" id="wcn_NewNotesTwoThousandThirtyTwoMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="TwoThousandTwentyTwoPerformanceBasedRestrictedShareUnitsPlanOneMember" id="wcn_TwoThousandTwentyTwoPerformanceBasedRestrictedShareUnitsPlanOneMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="UseOfEstimatesAndAssumptionsAbstract" id="wcn_UseOfEstimatesAndAssumptionsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="UseOfEstimatesTextBlock" id="wcn_UseOfEstimatesTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="LeasesDisclosureTextBlock" id="wcn_LeasesDisclosureTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element id="wcn_ContractAcquisitionCostsPolicyTextBlock" name="ContractAcquisitionCostsPolicyTextBlock" nillable="true" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element name="GoodwillAndIndefiniteLivedIntangibleAssetsPolicyTextBlock" id="wcn_GoodwillAndIndefiniteLivedIntangibleAssetsPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ImpairmentOfLongLivedTangibleAndFiniteLivedIntangibleAssetsImpairmentPolicyTextBlock" id="wcn_ImpairmentOfLongLivedTangibleAndFiniteLivedIntangibleAssetsImpairmentPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="RestrictedAssetsPolicyTextBlock" id="wcn_RestrictedAssetsPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="InsuranceLiabilitiesPolicyTextBlock" id="wcn_InsuranceLiabilitiesPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_ProgressiveWastePlansMember" name="ProgressiveWastePlansMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element name="ScheduleOfPropertyPlantAndEquipmentEstimatedUsefulLivesTableTextBlock" id="wcn_ScheduleOfPropertyPlantAndEquipmentEstimatedUsefulLivesTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="SharesReservedForIssuanceTableTextBlock" id="wcn_SharesReservedForIssuanceTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="SummaryOfActivityRelatedToRestrictedStockUnitsTableTextBlock" id="wcn_SummaryOfActivityRelatedToRestrictedStockUnitsTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="SummaryOfActivityRelatedToPerformanceBasedRestrictedShareUnitsTableTextBlock" id="wcn_SummaryOfActivityRelatedToPerformanceBasedRestrictedShareUnitsTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="SummaryOfWarrantActivityTableTextBlock" id="wcn_SummaryOfWarrantActivityTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="OrganizationAndSummaryOfSignificantAccountingPoliciesTable" id="wcn_OrganizationAndSummaryOfSignificantAccountingPoliciesTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_LandfillAndTransferStationMember" name="LandfillAndTransferStationMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_GeographicOperatingSegmentsMember" name="GeographicOperatingSegmentsMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element name="OrganizationAndSummaryOfSignificantAccountingPoliciesLineItems" id="wcn_OrganizationAndSummaryOfSignificantAccountingPoliciesLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_SalesIncentiveAmortizationExpense" name="SalesIncentiveAmortizationExpense" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" />
+  <xsd:element name="AccruedCellProcessingReserveCurrent" id="wcn_AccruedCellProcessingReserveCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element name="PerpetualRevenueGrowthRate" id="wcn_PerpetualRevenueGrowthRate" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ForecastsPeriodUsedForDiscountedCashFlowAnalyses" id="wcn_ForecastsPeriodUsedForDiscountedCashFlowAnalyses" type="xbrli:durationItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_RestrictedStockUnitAwardsVestingFinalYear" name="RestrictedStockUnitAwardsVestingFinalYear" nillable="true" type="xbrli:gYearItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element name="LandAndLeaseholdImprovementsMember" id="wcn_LandAndLeaseholdImprovementsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="RollingStockMember" id="wcn_RollingStockMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_RestrictedSettlementOfInsuranceClaimsMember" name="RestrictedSettlementOfInsuranceClaimsMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_RestrictedLandfillClosureAndPostClosureObligationsMember" name="RestrictedLandfillClosureAndPostClosureObligationsMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_RestrictedOtherFinancialAssuranceRequirementsMember" name="RestrictedOtherFinancialAssuranceRequirementsMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element name="PrepaidLicensesAndPermits" id="wcn_PrepaidLicensesAndPermits" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="AccruedPropertyTaxesCurrent" id="wcn_AccruedPropertyTaxesCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="AccruedTransactionRelatedExpensesCurrent" id="wcn_AccruedTransactionRelatedExpensesCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="AccruedInsuranceClaimsAndPremiumsCurrent" id="wcn_AccruedInsuranceClaimsAndPremiumsCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element id="wcn_MaximumPercentageOfDailySharesRepurchaseOfAverageDailyTradingVolume" name="MaximumPercentageOfDailySharesRepurchaseOfAverageDailyTradingVolume" nillable="true" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" />
+  <xsd:element name="ClassOfWarrantOrRightExpirationYear" id="wcn_ClassOfWarrantOrRightExpirationYear" type="xbrli:gYearItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ScheduleOfShareBasedCompensationArrangementsByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsRestrictedStockUnitsTable" id="wcn_ScheduleOfShareBasedCompensationArrangementsByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsRestrictedStockUnitsTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ScheduleOfShareBasedCompensationArrangementsByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsRestrictedStockUnitsLineItems" id="wcn_ScheduleOfShareBasedCompensationArrangementsByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsRestrictedStockUnitsLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantedInPeriodFairValue" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantedInPeriodFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsWeightedAverageGrantDateFairValueAbstract" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsWeightedAverageGrantDateFairValueAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingWeightedAverageGrantDateFairValue" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingWeightedAverageGrantDateFairValue" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" />
+  <xsd:element name="StockPurchaseWarrantsMember" id="wcn_StockPurchaseWarrantsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisesInPeriod" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisesInPeriod" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsWeightedAverageExercisePriceAbstract" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsWeightedAverageExercisePriceAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingWeightedAverageExercisePrice" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingWeightedAverageExercisePrice" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageExercisePrice" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageExercisePrice" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentOtherThanOptionsForfeituresInPeriodWeightedAverageExercisePrice" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentOtherThanOptionsForfeituresInPeriodWeightedAverageExercisePrice" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentOtherThanOptionsExercisesInPeriodWeightedAverageExercisePrice" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentOtherThanOptionsExercisesInPeriodWeightedAverageExercisePrice" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <xsd:element id="wcn_StockPurchaseWarrantsTwoThousandNineteenIssuanceMember" name="StockPurchaseWarrantsTwoThousandNineteenIssuanceMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_StockPurchaseWarrantsTwoThousandTwentyIssuanceMember" name="StockPurchaseWarrantsTwoThousandTwentyIssuanceMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisePriceMinimum" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisePriceMinimum" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisePriceMaximum" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisePriceMaximum" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueOfWarrantsIssued" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueOfWarrantsIssued" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNumberOutstanding" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNumberOutstanding" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="instant" />
+  <xsd:element name="StockPurchaseWarrantsTwoThousandTwentyOneIssuanceMember" id="wcn_StockPurchaseWarrantsTwoThousandTwentyOneIssuanceMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="ForeignStatutoryIncomeTaxRate" id="wcn_ForeignStatutoryIncomeTaxRate" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="DeferredIncomeTaxLiabilityAdjustments" id="wcn_DeferredIncomeTaxLiabilityAdjustments" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="DeferredTaxAssetsFinanceCosts" id="wcn_DeferredTaxAssetsFinanceCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" />
+  <xsd:element name="DeferredTaxLiabilitiesInvestmentInSubsidiaries" id="wcn_DeferredTaxLiabilitiesInvestmentInSubsidiaries" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element name="VoluntarySavingsAndInvestmentPlanMember" id="wcn_VoluntarySavingsAndInvestmentPlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_RetirementSavingsPlanMember" name="RetirementSavingsPlanMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element name="DefinedContributionPlanEmployerDiscretionaryContributionPercent" id="wcn_DefinedContributionPlanEmployerDiscretionaryContributionPercent" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="PercentageOfEveryDollarOfParticipatingEmployeesPreTaxContributions" id="wcn_PercentageOfEveryDollarOfParticipatingEmployeesPreTaxContributions" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="PercentageOfEmployeeSEligibleCompensationThatRepresentsMaximumAmountOfEmployerMatchingContributionToPlan" id="wcn_PercentageOfEmployeeSEligibleCompensationThatRepresentsMaximumAmountOfEmployerMatchingContributionToPlan" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="NumberOfMultiemployerPensionPlans" id="wcn_NumberOfMultiemployerPensionPlans" type="xbrli:integerItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="PercentageOfSalaryThatMayVoluntarilyBeElectedToBeDeferred" id="wcn_PercentageOfSalaryThatMayVoluntarilyBeElectedToBeDeferred" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="PercentageOfBonusesCommissionsAndRestrictedShareUnitGrantsThatMayVoluntarilyBeElectedToBeDeferred" id="wcn_PercentageOfBonusesCommissionsAndRestrictedShareUnitGrantsThatMayVoluntarilyBeElectedToBeDeferred" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_WesternConferenceOfTeamstersPensionTrustMember" name="WesternConferenceOfTeamstersPensionTrustMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_InternationalUnionOfOperatingEngineersPensionTrustMember" name="InternationalUnionOfOperatingEngineersPensionTrustMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_MultiSectorPensionPlanMember" name="MultiSectorPensionPlanMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_Local813PensionTrustFundMember" name="Local813PensionTrustFundMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_MidwestOperatingEngineersPensionPlanMember" name="MidwestOperatingEngineersPensionPlanMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_Locals302612OfIoueEmployersConstructionIndustryRetirementPlanMember" name="Locals302612OfIoueEmployersConstructionIndustryRetirementPlanMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_SuburbanTeamstersOfNorthernIllinoisPensionFundMember" name="SuburbanTeamstersOfNorthernIllinoisPensionFundMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_TeamsterLocal301PensionFundMember" name="TeamsterLocal301PensionFundMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_AutomobileMechanicsLocalNo.701UnionAndIndustryPensionFundMember" name="AutomobileMechanicsLocalNo.701UnionAndIndustryPensionFundMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_IaMNationalPensionFundMember" name="IaMNationalPensionFundMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="wcn_OtherMultiemployerPlansMember" name="OtherMultiemployerPlansMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element name="RegistrationNumber" id="wcn_RegistrationNumber" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="RecyclingAndGeneralIndustrialUnionLocal108PensionFundMember" id="wcn_RecyclingAndGeneralIndustrialUnionLocal108PensionFundMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="NursesAndLocal813IbtRetirementPlanMember" id="wcn_NursesAndLocal813IbtRetirementPlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="Local731IBOfTPensionFundMember" id="wcn_Local731IBOfTPensionFundMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="SubsequentEventDividendDeclared" id="wcn_SubsequentEventDividendDeclared" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="NotesTwoThousandThirtyThreeMember" id="wcn_NotesTwoThousandThirtyThreeMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="MarketParticipantRate" id="wcn_MarketParticipantRate" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" />
+  <xsd:element name="FairValueOfAcquiredAssets" id="wcn_FairValueOfAcquiredAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="ChangesInAccruedCapitalExpendituresForPropertyAndEquipment" id="wcn_ChangesInAccruedCapitalExpendituresForPropertyAndEquipment" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedRestrictedInvestmentsNoncurrent" id="wcn_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedRestrictedInvestmentsNoncurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="WeightedAverageRemainingContractTerm" id="wcn_WeightedAverageRemainingContractTerm" type="xbrli:durationItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="StockPurchaseWarrantsTwoThousandTwentyTwoIssuanceMember" id="wcn_StockPurchaseWarrantsTwoThousandTwentyTwoIssuanceMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="PrepaidExpensesAndOtherCurrentAssetsTable" id="wcn_PrepaidExpensesAndOtherCurrentAssetsTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="PrepaidExpensesAndOtherCurrentAssetsLineItems" id="wcn_PrepaidExpensesAndOtherCurrentAssetsLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="TwoThousandTwentyThreePerformanceBasedRestrictedShareUnitsPlanOneMember" id="wcn_TwoThousandTwentyThreePerformanceBasedRestrictedShareUnitsPlanOneMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="ShareholdersEquityAnnualTableTextBlockElements" id="wcn_ShareholdersEquityAnnualTableTextBlockElements" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="NotesTwoThousandFiftyMember" id="wcn_NotesTwoThousandFiftyMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="NotesTwoThousandFiftyTwoMember" id="wcn_NotesTwoThousandFiftyTwoMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="AccumulatedImpairmentOfIntangibleAssetsFiniteLivedExcludingGoodwill" id="wcn_AccumulatedImpairmentOfIntangibleAssetsFiniteLivedExcludingGoodwill" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="MidSouthMember" id="wcn_MidSouthMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="RestrictedShareUnitsAndDeferredShareUnitsMember" id="wcn_RestrictedShareUnitsAndDeferredShareUnitsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="SpecialSharesMember" id="wcn_SpecialSharesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="IncentiveAwardPlanTwoThousandSixteenMember" id="wcn_IncentiveAwardPlanTwoThousandSixteenMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="RestrictedStockUnitsPerformanceShareUnitsAndWarrantsMember" id="wcn_RestrictedStockUnitsPerformanceShareUnitsAndWarrantsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="SolidWasteMember" id="wcn_SolidWasteMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="StockPurchaseWarrantsTwoThousandTwentyThreeIssuanceMember" id="wcn_StockPurchaseWarrantsTwoThousandTwentyThreeIssuanceMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="TwoThousandAndFourEquityIncentivePlanMember" id="wcn_TwoThousandAndFourEquityIncentivePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="DeferredTaxAssetsLandfillClosurePostClosure" id="wcn_DeferredTaxAssetsLandfillClosurePostClosure" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="AdjustmentToClosurePostClosureLiabilities" id="wcn_AdjustmentToClosurePostClosureLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="NotesTwoThousandThirtyFourMember" id="wcn_NotesTwoThousandThirtyFourMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="CanadianOvernightRepoRateAverageMember" id="wcn_CanadianOvernightRepoRateAverageMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="TwoThousandTwentyFourPerformanceBasedRestrictedShareUnitsPlanOneMember" id="wcn_TwoThousandTwentyFourPerformanceBasedRestrictedShareUnitsPlanOneMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="RevolvingCreditAgreementMember" id="wcn_RevolvingCreditAgreementMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="LineOfCreditFacilityUpsizeToMaximumBorrowingCapacity" id="wcn_LineOfCreditFacilityUpsizeToMaximumBorrowingCapacity" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="DurationAxis" id="wcn_DurationAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="TimeFrameDomain" id="wcn_TimeFrameDomain" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="DurationOneMonthMember" id="wcn_DurationOneMonthMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="DurationThreeMonthsMember" id="wcn_DurationThreeMonthsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="RevolvingAndTermCreditAgreement2021Member" id="wcn_RevolvingAndTermCreditAgreement2021Member" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="TermLoanAgreement2022Member" id="wcn_TermLoanAgreement2022Member" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="SOFRLoansCORRaLoansAndLettersOfCreditMember" id="wcn_SOFRLoansCORRaLoansAndLettersOfCreditMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="FacilitiesOtherThanRevolvingCreditAgreementMember" id="wcn_FacilitiesOtherThanRevolvingCreditAgreementMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="NewNotesTwoThousandTwentyNineMember" id="wcn_NewNotesTwoThousandTwentyNineMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="ProceedsFromSaleOfInvestmentInNoncontrollingInterests" id="wcn_ProceedsFromSaleOfInvestmentInNoncontrollingInterests" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsSharesSettledInPeriod" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsSharesSettledInPeriod" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="JeffersonParishLouisianaLandfillLitigationMember" id="wcn_JeffersonParishLouisianaLandfillLitigationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="StockPurchaseWarrantsTwoThousandTwentyFourIssuanceMember" id="wcn_StockPurchaseWarrantsTwoThousandTwentyFourIssuanceMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsSharesSettledWeightedAverageGrantDateFairValuePerShareInPeriod" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsSharesSettledWeightedAverageGrantDateFairValuePerShareInPeriod" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsCashSettledWeightedAverageGrantDateFairValuePerShareInPeriod" id="wcn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsCashSettledWeightedAverageGrantDateFairValuePerShareInPeriod" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="O2025Q1DividendsMember" id="wcn_O2025Q1DividendsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="AssetRetirementObligationIncrementalChargesToAdjustCarryingValueOfLiability" id="wcn_AssetRetirementObligationIncrementalChargesToAdjustCarryingValueOfLiability" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityForeignCurrencyTranslationAdjustment" id="wcn_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityForeignCurrencyTranslationAdjustment" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="AmountOfSuretyBondsToSecureAssetClosureAndRetirementRequirements" id="wcn_AmountOfSuretyBondsToSecureAssetClosureAndRetirementRequirements" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="AmountOfSuretyBondsToSecurePerformanceUnderCollectionContractsAndLandfillOperatingAgreements" id="wcn_AmountOfSuretyBondsToSecurePerformanceUnderCollectionContractsAndLandfillOperatingAgreements" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="PercentageOfInterestInCompanyThatIssuesFinancialSuretyBonds" id="wcn_PercentageOfInterestInCompanyThatIssuesFinancialSuretyBonds" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" />
+  <xsd:element name="OutstandingAmountOfFinancialSuretyBonds" id="wcn_OutstandingAmountOfFinancialSuretyBonds" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="UnrecordedUnconditionalPurchaseObligationRemainingVolume" id="wcn_UnrecordedUnconditionalPurchaseObligationRemainingVolume" type="dtr-types:volumeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" />
+  <xsd:element name="NumberOfCollectiveBargainingAgreementsExpiredOrSetToExpire" id="wcn_NumberOfCollectiveBargainingAgreementsExpiredOrSetToExpire" type="xbrli:integerItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" />
+  <xsd:element name="CollectiveBargainingAgreementsExpiredOrSetToExpireNumberOfEmployees" id="wcn_CollectiveBargainingAgreementsExpiredOrSetToExpireNumberOfEmployees" type="xbrli:integerItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="CollectiveBargainingAgreementsExpiredOrSetToExpirePercentageOfWorkforce" id="wcn_CollectiveBargainingAgreementsExpiredOrSetToExpirePercentageOfWorkforce" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="SegmentReportingInformationSegmentExpenses" id="wcn_SegmentReportingInformationSegmentExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="SegmentReportingInformationEarningsBeforeInterestTaxesDepreciationAndAmortizationMargin" id="wcn_SegmentReportingInformationEarningsBeforeInterestTaxesDepreciationAndAmortizationMargin" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="CollectiveBargainingAgreementsNumberOfEmployees" id="wcn_CollectiveBargainingAgreementsNumberOfEmployees" type="xbrli:integerItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="CollectiveBargainingAgreementsPercentageOfWorkforce" id="wcn_CollectiveBargainingAgreementsPercentageOfWorkforce" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="ImpairmentOfLongLivedAsset" id="wcn_ImpairmentOfLongLivedAsset" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+</xsd:schema>

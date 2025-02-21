@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:35362cf8-e65d-4928-a25c-f56b0180cff5,g:b232ab86-d0e3-4561-929f-e6ac985c6466-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:rgld="http://www.royalgold.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:srt-types="http://fasb.org/srt-types/2024" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.royalgold.com/20241231">
+  <xs:import namespace="http://fasb.org/srt-types/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-types-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rgld-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rgld-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rgld-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rgld-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.royalgold.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.royalgold.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.royalgold.com/role/ConsolidatedBalanceSheets">
+        <link:definition>9952151 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.royalgold.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>9952152 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofOperationsandComprehensiveIncome" roleURI="http://www.royalgold.com/role/ConsolidatedStatementsofOperationsandComprehensiveIncome">
+        <link:definition>9952153 - Statement - Consolidated Statements of Operations and Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofChangesinEquity" roleURI="http://www.royalgold.com/role/ConsolidatedStatementsofChangesinEquity">
+        <link:definition>9952154 - Statement - Consolidated Statements of Changes in Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://www.royalgold.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>9952155 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="THECOMPANY" roleURI="http://www.royalgold.com/role/THECOMPANY">
+        <link:definition>9952156 - Disclosure - THE COMPANY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESANDRECENTLYADOPTEDANDRECENTLYISSUEDACCOUNTINGPRONOUNCEMENTS" roleURI="http://www.royalgold.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESANDRECENTLYADOPTEDANDRECENTLYISSUEDACCOUNTINGPRONOUNCEMENTS">
+        <link:definition>9952157 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES AND RECENTLY ADOPTED AND RECENTLY ISSUED ACCOUNTING PRONOUNCEMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONS" roleURI="http://www.royalgold.com/role/ACQUISITIONS">
+        <link:definition>9952158 - Disclosure - ACQUISITIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STREAMANDROYALTYINTERESTSNET" roleURI="http://www.royalgold.com/role/STREAMANDROYALTYINTERESTSNET">
+        <link:definition>9952159 - Disclosure - STREAM AND ROYALTY INTERESTS, NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DEBT" roleURI="http://www.royalgold.com/role/DEBT">
+        <link:definition>9952160 - Disclosure - DEBT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASES" roleURI="http://www.royalgold.com/role/LEASES">
+        <link:definition>9952161 - Disclosure - LEASES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MOUNTMILLIGANDEFERREDLIABILITY" roleURI="http://www.royalgold.com/role/MOUNTMILLIGANDEFERREDLIABILITY">
+        <link:definition>9952162 - Disclosure - MOUNT MILLIGAN DEFERRED LIABILITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUE" roleURI="http://www.royalgold.com/role/REVENUE">
+        <link:definition>9952163 - Disclosure - REVENUE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATION" roleURI="http://www.royalgold.com/role/STOCKBASEDCOMPENSATION">
+        <link:definition>9952164 - Disclosure - STOCK-BASED COMPENSATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHAREEPS" roleURI="http://www.royalgold.com/role/EARNINGSPERSHAREEPS">
+        <link:definition>9952165 - Disclosure - EARNINGS PER SHARE ("EPS")</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXES" roleURI="http://www.royalgold.com/role/INCOMETAXES">
+        <link:definition>9952166 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALCASHFLOWINFORMATION" roleURI="http://www.royalgold.com/role/SUPPLEMENTALCASHFLOWINFORMATION">
+        <link:definition>9952167 - Disclosure - SUPPLEMENTAL CASH FLOW INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FAIRVALUEMEASUREMENTS" roleURI="http://www.royalgold.com/role/FAIRVALUEMEASUREMENTS">
+        <link:definition>9952168 - Disclosure - FAIR VALUE MEASUREMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MAJORSOURCESOFREVENUE" roleURI="http://www.royalgold.com/role/MAJORSOURCESOFREVENUE">
+        <link:definition>9952169 - Disclosure - MAJOR SOURCES OF REVENUE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTINFORMATION" roleURI="http://www.royalgold.com/role/SEGMENTINFORMATION">
+        <link:definition>9952170 - Disclosure - SEGMENT INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSANDCONTINGENCIES" roleURI="http://www.royalgold.com/role/COMMITMENTSANDCONTINGENCIES">
+        <link:definition>9952171 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESANDRECENTLYADOPTEDANDRECENTLYISSUEDACCOUNTINGPRONOUNCEMENTSPolicies" roleURI="http://www.royalgold.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESANDRECENTLYADOPTEDANDRECENTLYISSUEDACCOUNTINGPRONOUNCEMENTSPolicies">
+        <link:definition>9955511 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES AND RECENTLY ADOPTED AND RECENTLY ISSUED ACCOUNTING PRONOUNCEMENTS (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STREAMANDROYALTYINTERESTSNETTables" roleURI="http://www.royalgold.com/role/STREAMANDROYALTYINTERESTSNETTables">
+        <link:definition>9955512 - Disclosure - STREAM AND ROYALTY INTERESTS, NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DEBTTables" roleURI="http://www.royalgold.com/role/DEBTTables">
+        <link:definition>9955513 - Disclosure - DEBT (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESTables" roleURI="http://www.royalgold.com/role/LEASESTables">
+        <link:definition>9955514 - Disclosure - LEASES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUETables" roleURI="http://www.royalgold.com/role/REVENUETables">
+        <link:definition>9955515 - Disclosure - REVENUE (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONTables" roleURI="http://www.royalgold.com/role/STOCKBASEDCOMPENSATIONTables">
+        <link:definition>9955516 - Disclosure - STOCK-BASED COMPENSATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHAREEPSTables" roleURI="http://www.royalgold.com/role/EARNINGSPERSHAREEPSTables">
+        <link:definition>9955517 - Disclosure - EARNINGS PER SHARE ("EPS") (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESTables" roleURI="http://www.royalgold.com/role/INCOMETAXESTables">
+        <link:definition>9955518 - Disclosure - INCOME TAXES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALCASHFLOWINFORMATIONTables" roleURI="http://www.royalgold.com/role/SUPPLEMENTALCASHFLOWINFORMATIONTables">
+        <link:definition>9955519 - Disclosure - SUPPLEMENTAL CASH FLOW INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MAJORSOURCESOFREVENUETables" roleURI="http://www.royalgold.com/role/MAJORSOURCESOFREVENUETables">
+        <link:definition>9955520 - Disclosure - MAJOR SOURCES OF REVENUE (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTINFORMATIONTables" roleURI="http://www.royalgold.com/role/SEGMENTINFORMATIONTables">
+        <link:definition>9955521 - Disclosure - SEGMENT INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESANDRECENTLYADOPTEDANDRECENTLYISSUEDACCOUNTINGPRONOUNCEMENTSDetails" roleURI="http://www.royalgold.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESANDRECENTLYADOPTEDANDRECENTLYISSUEDACCOUNTINGPRONOUNCEMENTSDetails">
+        <link:definition>9955522 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES AND RECENTLY ADOPTED AND RECENTLY ISSUED ACCOUNTING PRONOUNCEMENTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSCactusRoyaltyDetails" roleURI="http://www.royalgold.com/role/ACQUISITIONSCactusRoyaltyDetails">
+        <link:definition>9955523 - Disclosure - ACQUISITIONS - Cactus Royalty (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSBackRiverRoyaltiesDetails" roleURI="http://www.royalgold.com/role/ACQUISITIONSBackRiverRoyaltiesDetails">
+        <link:definition>9955524 - Disclosure - ACQUISITIONS - Back River Royalties (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STREAMANDROYALTYINTERESTSNETSummaryDetails" roleURI="http://www.royalgold.com/role/STREAMANDROYALTYINTERESTSNETSummaryDetails">
+        <link:definition>9955525 - Disclosure - STREAM AND ROYALTY INTERESTS, NET - Summary (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DEBTDetails" roleURI="http://www.royalgold.com/role/DEBTDetails">
+        <link:definition>9955526 - Disclosure - DEBT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESLeasebalancesheetDetails" roleURI="http://www.royalgold.com/role/LEASESLeasebalancesheetDetails">
+        <link:definition>9955527 - Disclosure - LEASES - Lease balance sheet (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESLeasematuritiesDetails" roleURI="http://www.royalgold.com/role/LEASESLeasematuritiesDetails">
+        <link:definition>9955528 - Disclosure - LEASES - Lease maturities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESLeasematuritiesDetails_1" roleURI="http://www.royalgold.com/role/LEASESLeasematuritiesDetails_1">
+        <link:definition>9955528 - Disclosure - LEASES - Lease maturities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESLeaseotherDetails" roleURI="http://www.royalgold.com/role/LEASESLeaseotherDetails">
+        <link:definition>9955529 - Disclosure - LEASES - Lease other (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MOUNTMILLIGANDEFERREDLIABILITYDetails" roleURI="http://www.royalgold.com/role/MOUNTMILLIGANDEFERREDLIABILITYDetails">
+        <link:definition>9955530 - Disclosure - MOUNT MILLIGAN DEFERRED LIABILITY (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEDetails" roleURI="http://www.royalgold.com/role/REVENUEDetails">
+        <link:definition>9955531 - Disclosure - REVENUE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEMetalDisaggregationDetails" roleURI="http://www.royalgold.com/role/REVENUEMetalDisaggregationDetails">
+        <link:definition>9955532 - Disclosure - REVENUE - Metal Disaggregation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEPropertyDisaggregationDetails" roleURI="http://www.royalgold.com/role/REVENUEPropertyDisaggregationDetails">
+        <link:definition>9955533 - Disclosure - REVENUE - Property Disaggregation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONNarrativeDetails" roleURI="http://www.royalgold.com/role/STOCKBASEDCOMPENSATIONNarrativeDetails">
+        <link:definition>9955534 - Disclosure - STOCK-BASED COMPENSATION - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONOPTIONSDetails" roleURI="http://www.royalgold.com/role/STOCKBASEDCOMPENSATIONOPTIONSDetails">
+        <link:definition>9955535 - Disclosure - STOCK-BASED COMPENSATION - OPTIONS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONNONOPTIONSDetails" roleURI="http://www.royalgold.com/role/STOCKBASEDCOMPENSATIONNONOPTIONSDetails">
+        <link:definition>9955536 - Disclosure - STOCK-BASED COMPENSATION - NON-OPTIONS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERSHAREEPSDetails" roleURI="http://www.royalgold.com/role/EARNINGSPERSHAREEPSDetails">
+        <link:definition>9955537 - Disclosure - EARNINGS PER SHARE ("EPS") (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESExpenseBenefitDetails" roleURI="http://www.royalgold.com/role/INCOMETAXESExpenseBenefitDetails">
+        <link:definition>9955538 - Disclosure - INCOME TAXES - Expense (Benefit) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESReconciliationDetails" roleURI="http://www.royalgold.com/role/INCOMETAXESReconciliationDetails">
+        <link:definition>9955539 - Disclosure - INCOME TAXES - Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESDeferredDetails" roleURI="http://www.royalgold.com/role/INCOMETAXESDeferredDetails">
+        <link:definition>9955540 - Disclosure - INCOME TAXES - Deferred (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALCASHFLOWINFORMATIONDetails" roleURI="http://www.royalgold.com/role/SUPPLEMENTALCASHFLOWINFORMATIONDetails">
+        <link:definition>9955541 - Disclosure - SUPPLEMENTAL CASH FLOW INFORMATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MAJORSOURCESOFREVENUEDetails" roleURI="http://www.royalgold.com/role/MAJORSOURCESOFREVENUEDetails">
+        <link:definition>9955542 - Disclosure - MAJOR SOURCES OF REVENUE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTINFORMATIONDetails" roleURI="http://www.royalgold.com/role/SEGMENTINFORMATIONDetails">
+        <link:definition>9955543 - Disclosure - SEGMENT INFORMATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTINFORMATIONReconciliationDetails" roleURI="http://www.royalgold.com/role/SEGMENTINFORMATIONReconciliationDetails">
+        <link:definition>9955544 - Disclosure - SEGMENT INFORMATION - Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSANDCONTINGENCIESDetails" roleURI="http://www.royalgold.com/role/COMMITMENTSANDCONTINGENCIESDetails">
+        <link:definition>9955545 - Disclosure - COMMITMENTS AND CONTINGENCIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="rgld_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rgld_RoyaltyReceivables" abstract="false" name="RoyaltyReceivables" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rgld_InterestAndOtherExpense" abstract="false" name="InterestAndOtherExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rgld_ProceedsFromDebtFacility" abstract="false" name="ProceedsFromDebtFacility" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rgld_TheCompanyDisclosureAbstract" abstract="true" name="TheCompanyDisclosureAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rgld_StreamAndRoyaltyInterestsInMineralPropertiesDisclosuresAbstract" abstract="true" name="StreamAndRoyaltyInterestsInMineralPropertiesDisclosuresAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rgld_StreamAndRoyaltyInterestsInMineralPropertiesDisclosuresTextBlock" abstract="false" name="StreamAndRoyaltyInterestsInMineralPropertiesDisclosuresTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="rgld_MajorSourcesOfRevenueDisclosureAbstract" abstract="true" name="MajorSourcesOfRevenueDisclosureAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rgld_RevenueByMajorCustomersTextBlock" abstract="false" name="RevenueByMajorCustomersTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="rgld_RoyaltyInterestsInMineralPropertiesPolicyTextBlock" abstract="false" name="RoyaltyInterestsInMineralPropertiesPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="rgld_ProductionTaxesPolicyTextBlock" abstract="false" name="ProductionTaxesPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="rgld_ScheduleOfStreamAndRoyaltyInterestsInMineralPropertiesTableTextBlock" abstract="false" name="ScheduleOfStreamAndRoyaltyInterestsInMineralPropertiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="rgld_LeaseAmountsRecordedInConsolidatedBalanceSheetsTableTextBlock" abstract="false" name="LeaseAmountsRecordedInConsolidatedBalanceSheetsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="rgld_OtherInformationRelatedToLeasesTableTextBlock" abstract="false" name="OtherInformationRelatedToLeasesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="rgld_MtMilliganMember" abstract="true" name="MtMilliganMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_MaximumPurchasePriceForEachPayableOunceOfGold" abstract="false" name="MaximumPurchasePriceForEachPayableOunceOfGold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="srt-types:perUnitItemType"/>
+  <xs:element id="rgld_CactusRoyaltyMember" abstract="true" name="CactusRoyaltyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_NumberOfRoyaltiesAcquired" abstract="false" name="NumberOfRoyaltiesAcquired" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rgld_AssetAcquisitionNetSmelterReturnPercentage" abstract="false" name="AssetAcquisitionNetSmelterReturnPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="rgld_AssetAcquisitionInterestAcquiredBuyBackPercentage" abstract="false" name="AssetAcquisitionInterestAcquiredBuyBackPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="rgld_AssetAcquisitionInterestAcquiredPercentage" abstract="false" name="AssetAcquisitionInterestAcquiredPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="rgld_AssetAcquisitionInterestAcquiredBuyBackValue" abstract="false" name="AssetAcquisitionInterestAcquiredBuyBackValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rgld_HillRoyaltyMember" abstract="true" name="HillRoyaltyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_KerrMcGeeRoyaltyMember" abstract="true" name="KerrMcGeeRoyaltyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_BackRiverRoyaltiesAcquisitionMember" abstract="true" name="BackRiverRoyaltiesAcquisitionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_BackRiverMember" abstract="true" name="BackRiverMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_DevelopmentStageRoyaltyInterestsMember" abstract="true" name="DevelopmentStageRoyaltyInterestsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_ExplorationStageRoyaltyInterestsMember" abstract="true" name="ExplorationStageRoyaltyInterestsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_AssetAcquisitionNetSmelterReturnPercentageDecline" abstract="false" name="AssetAcquisitionNetSmelterReturnPercentageDecline" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="rgld_AssetAcquisitionVolumeSpotPriceAdjustmentThreshold" abstract="false" name="AssetAcquisitionVolumeSpotPriceAdjustmentThreshold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:massItemType"/>
+  <xs:element id="rgld_ProductionStageStreamAndRoyaltyInterestsMember" abstract="true" name="ProductionStageStreamAndRoyaltyInterestsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_ProductionStageStreamInterestsMember" abstract="true" name="ProductionStageStreamInterestsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_ProductionStageRoyaltyInterestMember" abstract="true" name="ProductionStageRoyaltyInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_DevelopmentStageStreamAndRoyaltyInterestsMember" abstract="true" name="DevelopmentStageStreamAndRoyaltyInterestsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_DevelopmentStageStreamInterestMember" abstract="true" name="DevelopmentStageStreamInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_DevelopmentStageRoyaltyInterestMember" abstract="true" name="DevelopmentStageRoyaltyInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_ExplorationStageStreamAndRoyaltyInterestsMember" abstract="true" name="ExplorationStageStreamAndRoyaltyInterestsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_ExplorationStageStreamInterestMember" abstract="true" name="ExplorationStageStreamInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_ExplorationStageRoyaltyInterestMember" abstract="true" name="ExplorationStageRoyaltyInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_PuebloViejoMember" abstract="true" name="PuebloViejoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_AndacolloMember" abstract="true" name="AndacolloMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_KhoemacauCopperProjectMember" abstract="true" name="KhoemacauCopperProjectMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_RainyRiverProjectMember" abstract="true" name="RainyRiverProjectMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_CortezMember" abstract="true" name="CortezMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_VoiseysBayMember" abstract="true" name="VoiseysBayMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_RedChrisMineMember" abstract="true" name="RedChrisMineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_PenasquitoMember" abstract="true" name="PenasquitoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_LaFortunaMember" abstract="true" name="LaFortunaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_IlovicaMember" abstract="true" name="IlovicaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_CoteGoldProjectInNorthernOntarioCanadaMember" abstract="true" name="CoteGoldProjectInNorthernOntarioCanadaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_NXGoldMember" abstract="true" name="NXGoldMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_GreatBearMember" abstract="true" name="GreatBearMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_PascuaLamaMember" abstract="true" name="PascuaLamaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_OtherMinesMember" abstract="true" name="OtherMinesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_CreditFacilityMember" abstract="true" name="CreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_OperatingLeaseRightOfUseAssetCurrent" abstract="false" name="OperatingLeaseRightOfUseAssetCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rgld_OperatingLeaseRightOfUseAssetNoncurrent" abstract="false" name="OperatingLeaseRightOfUseAssetNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rgld_AgreementTermsAxis" abstract="true" name="AgreementTermsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="rgld_AgreementTermsDomain" abstract="true" name="AgreementTermsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_CostSupport2030Through2035ExampleMember" abstract="true" name="CostSupport2030Through2035ExampleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_CostSupportAfter2036ExampleMember" abstract="true" name="CostSupportAfter2036ExampleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_SuspensionOfCostSupportMember" abstract="true" name="SuspensionOfCostSupportMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_ContractWithCustomerLiabilityNonmonetaryAmountGold" abstract="false" name="ContractWithCustomerLiabilityNonmonetaryAmountGold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:massItemType"/>
+  <xs:element id="rgld_CostSupportAgreementNonmonetaryAmountGoldPerInstallment" abstract="false" name="CostSupportAgreementNonmonetaryAmountGoldPerInstallment" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:massItemType"/>
+  <xs:element id="rgld_CostSupportAgreementNonmonetaryAmountGoldFirstThreshold" abstract="false" name="CostSupportAgreementNonmonetaryAmountGoldFirstThreshold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:massItemType"/>
+  <xs:element id="rgld_CostSupportAgreementNonmonetaryAmountCopperFirstThreshold" abstract="false" name="CostSupportAgreementNonmonetaryAmountCopperFirstThreshold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:massItemType"/>
+  <xs:element id="rgld_CostSupportAgreementNumberOfTranches" abstract="false" name="CostSupportAgreementNumberOfTranches" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rgld_CostSupportAgreementNonmonetaryAmountGoldPerTranche" abstract="false" name="CostSupportAgreementNonmonetaryAmountGoldPerTranche" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:massItemType"/>
+  <xs:element id="rgld_CostSupportAgreementDeliveryPeriodAfterInitialTransfer" abstract="false" name="CostSupportAgreementDeliveryPeriodAfterInitialTransfer" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="rgld_CostSupportAgreementLiabilityNonmonetaryAmountGoldSecondThreshold" abstract="false" name="CostSupportAgreementLiabilityNonmonetaryAmountGoldSecondThreshold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:massItemType"/>
+  <xs:element id="rgld_CostSupportAgreementNonmonetaryAmountCopperSecondThreshold" abstract="false" name="CostSupportAgreementNonmonetaryAmountCopperSecondThreshold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:massItemType"/>
+  <xs:element id="rgld_CostSupportAgreementGoldPricePerOunceThreshold" abstract="false" name="CostSupportAgreementGoldPricePerOunceThreshold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="srt-types:perUnitItemType"/>
+  <xs:element id="rgld_CostSupportAgreementCopperPricePerPoundThreshold" abstract="false" name="CostSupportAgreementCopperPricePerPoundThreshold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="srt-types:perUnitItemType"/>
+  <xs:element id="rgld_CostSupportAgreementGoldPriceByAgreementPerOunce" abstract="false" name="CostSupportAgreementGoldPriceByAgreementPerOunce" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="srt-types:perUnitItemType"/>
+  <xs:element id="rgld_CostSupportAgreementGoldPricePercentageOfSpotPrice" abstract="false" name="CostSupportAgreementGoldPricePercentageOfSpotPrice" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="rgld_CostSupportAgreementDifferenceBetweenGoldPricePerOunceAndSpotPrice" abstract="false" name="CostSupportAgreementDifferenceBetweenGoldPricePerOunceAndSpotPrice" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="srt-types:perUnitItemType"/>
+  <xs:element id="rgld_CostSupportAgreementCopperPricePercentageOfSpotPrice" abstract="false" name="CostSupportAgreementCopperPricePercentageOfSpotPrice" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rgld_SpotRateForwardContractsAverageSalePriceDeterminationPeriod" abstract="false" name="SpotRateForwardContractsAverageSalePriceDeterminationPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="rgld_StreamInterestMember" abstract="true" name="StreamInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_RoyaltyInterestMember" abstract="true" name="RoyaltyInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_SilverMember" abstract="true" name="SilverMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_CopperMember" abstract="true" name="CopperMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_OtherMetalsMember" abstract="true" name="OtherMetalsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_CortezLegacyZoneMember" abstract="true" name="CortezLegacyZoneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_CortezCcZoneMember" abstract="true" name="CortezCcZoneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfInterimEarnOutAsBasisForVestingThree" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfInterimEarnOutAsBasisForVestingThree" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsWeightedAverageRemainingContractualTermAbstract" abstract="true" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsWeightedAverageRemainingContractualTermAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsIntrinsicValueAbstract" abstract="true" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsIntrinsicValueAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rgld_TotalShareholderReturnSharesMember" abstract="true" name="TotalShareholderReturnSharesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_GoldEquivalentOuncesSharesMember" abstract="true" name="GoldEquivalentOuncesSharesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_OfficersAndCertainEmployeesMember" abstract="true" name="OfficersAndCertainEmployeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_NonExecutiveDirectorsMember" abstract="true" name="NonExecutiveDirectorsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisesInPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisesInPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonAttainment" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonAttainment" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisableNumber" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisableNumber" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageExercisePrice" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisesInPeriodWeightedAverageExercisePrice" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisesInPeriodWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonAttainmentWeightedAverageGrantDateFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonAttainmentWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisableWeightedAverageExercisePrice" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisableWeightedAverageExercisePrice" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsWeightedAverageRemainingContractualTermAbstract" abstract="true" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsWeightedAverageRemainingContractualTermAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisableWeightedAverageRemainingContractualTerm" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisableWeightedAverageRemainingContractualTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisableIntrinsicValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExercisableIntrinsicValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfInterimEarnOutAsBasisForVestingOne" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfInterimEarnOutAsBasisForVestingOne" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfInterimEarnOutAsBasisForVestingTwo" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfInterimEarnOutAsBasisForVestingTwo" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="rgld_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsToNonExecutiveDirectorsPercentageOfSharesVestOneYearAfterDateOfGrant" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsToNonExecutiveDirectorsPercentageOfSharesVestOneYearAfterDateOfGrant" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="rgld_IncomeTaxReconciliationUnrealizedForeignExchangeGainLoss" abstract="false" name="IncomeTaxReconciliationUnrealizedForeignExchangeGainLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rgld_EffectiveIncomeTaxRateReconciliationChangesInRateAdjustment" abstract="false" name="EffectiveIncomeTaxRateReconciliationChangesInRateAdjustment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rgld_EffectiveIncomeTaxRateReconciliationChangesInEstimatesAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationChangesInEstimatesAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rgld_UsForeignTaxCreditsMember" abstract="true" name="UsForeignTaxCreditsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_OperatingLossCarryforwardsMember" abstract="true" name="OperatingLossCarryforwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_OtherTaxAttributeCarryforwardsInNonUsSubsidiariesMember" abstract="true" name="OtherTaxAttributeCarryforwardsInNonUsSubsidiariesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_DeferredTaxAssetsOperatingLossCarryforwardsValuationAllowance" abstract="false" name="DeferredTaxAssetsOperatingLossCarryforwardsValuationAllowance" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rgld_CenterraGoldInc.Member" abstract="true" name="CenterraGoldInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_BarrickGoldMember" abstract="true" name="BarrickGoldMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_NevadaGoldMinesMember" abstract="true" name="NevadaGoldMinesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rgld_OtherGeographicalMember" abstract="true" name="OtherGeographicalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>

@@ -1,0 +1,1307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:9c711a0f-95db-4371-a021-57da2d97b110,g:83a93e66-6ea6-4f66-9568-ebe8fad82603-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:dte="http://www.dteenergy.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:srt-types="http://fasb.org/srt-types/2024" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.dteenergy.com/20241231">
+  <xs:import namespace="http://fasb.org/srt-types/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-types-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="dte-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="dte-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="dte-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="dte-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.dteenergy.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.dteenergy.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofOperations" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofOperations">
+        <link:definition>9952151 - Statement - Consolidated Statements of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncome" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofComprehensiveIncome">
+        <link:definition>9952152 - Statement - Consolidated Statements of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncomeParenthetical" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofComprehensiveIncomeParenthetical">
+        <link:definition>9952153 - Statement - Consolidated Statements of Comprehensive Income (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofFinancialPosition" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofFinancialPosition">
+        <link:definition>9952154 - Statement - Consolidated Statements of Financial Position</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofFinancialPositionParenthetical" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofFinancialPositionParenthetical">
+        <link:definition>9952155 - Statement - Consolidated Statements of Financial Position (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>9952156 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofChangesinEquity" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofChangesinEquity">
+        <link:definition>9952157 - Statement - Consolidated Statements of Changes in Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofChangesinEquityParenthetical" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofChangesinEquityParenthetical">
+        <link:definition>9952158 - Statement - Consolidated Statements of Changes in Equity (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofOperationsDTEElectricCompany" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofOperationsDTEElectricCompany">
+        <link:definition>9952159 - Statement - Consolidated Statements of Operations - DTE Electric Company</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncomeDTEElectricCompany" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofComprehensiveIncomeDTEElectricCompany">
+        <link:definition>9952160 - Statement - Consolidated Statements of Comprehensive Income - DTE Electric Company</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofFinancialPositionDTEElectricCompany" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofFinancialPositionDTEElectricCompany">
+        <link:definition>9952161 - Statement - Consolidated Statements of Financial Position - DTE Electric Company</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofFinancialPositionDTEElectricCompanyParenthetical" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofFinancialPositionDTEElectricCompanyParenthetical">
+        <link:definition>9952162 - Statement - Consolidated Statements of Financial Position - DTE Electric Company (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlowsDTEElectricCompany" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofCashFlowsDTEElectricCompany">
+        <link:definition>9952163 - Statement - Consolidated Statements of Cash Flows - DTE Electric Company</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofChangesinShareholdersEquityDTEElectricCompany" roleURI="http://www.dteenergy.com/role/ConsolidatedStatementsofChangesinShareholdersEquityDTEElectricCompany">
+        <link:definition>9952164 - Statement - Consolidated Statements of Changes in Shareholder's Equity - DTE Electric Company</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBasisofPresentation" roleURI="http://www.dteenergy.com/role/OrganizationandBasisofPresentation">
+        <link:definition>9952165 - Disclosure - Organization and Basis of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPolicies" roleURI="http://www.dteenergy.com/role/SignificantAccountingPolicies">
+        <link:definition>9952166 - Disclosure - Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NewAccountingPronouncements" roleURI="http://www.dteenergy.com/role/NewAccountingPronouncements">
+        <link:definition>9952167 - Disclosure - New Accounting Pronouncements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Revenue" roleURI="http://www.dteenergy.com/role/Revenue">
+        <link:definition>9952168 - Disclosure - Revenue</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipment" roleURI="http://www.dteenergy.com/role/PropertyPlantandEquipment">
+        <link:definition>9952169 - Disclosure - Property, Plant, and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="JointlyOwnedUtilityPlant" roleURI="http://www.dteenergy.com/role/JointlyOwnedUtilityPlant">
+        <link:definition>9952170 - Disclosure - Jointly-Owned Utility Plant</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligations" roleURI="http://www.dteenergy.com/role/AssetRetirementObligations">
+        <link:definition>9952171 - Disclosure - Asset Retirement Obligations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMatters" roleURI="http://www.dteenergy.com/role/RegulatoryMatters">
+        <link:definition>9952172 - Disclosure - Regulatory Matters</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.dteenergy.com/role/IncomeTaxes">
+        <link:definition>9952173 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShare" roleURI="http://www.dteenergy.com/role/EarningsPerShare">
+        <link:definition>9952174 - Disclosure - Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValue" roleURI="http://www.dteenergy.com/role/FairValue">
+        <link:definition>9952175 - Disclosure - Fair Value</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialandOtherDerivativeInstruments" roleURI="http://www.dteenergy.com/role/FinancialandOtherDerivativeInstruments">
+        <link:definition>9952176 - Disclosure - Financial and Other Derivative Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt" roleURI="http://www.dteenergy.com/role/LongTermDebt">
+        <link:definition>9952177 - Disclosure - Long-Term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreferredandPreferenceSecurities" roleURI="http://www.dteenergy.com/role/PreferredandPreferenceSecurities">
+        <link:definition>9952178 - Disclosure - Preferred and Preference Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermCreditArrangementsandBorrowings" roleURI="http://www.dteenergy.com/role/ShortTermCreditArrangementsandBorrowings">
+        <link:definition>9952179 - Disclosure - Short-Term Credit Arrangements and Borrowings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.dteenergy.com/role/Leases">
+        <link:definition>9952180 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.dteenergy.com/role/CommitmentsandContingencies">
+        <link:definition>9952181 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NuclearOperations" roleURI="http://www.dteenergy.com/role/NuclearOperations">
+        <link:definition>9952182 - Disclosure - Nuclear Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssets" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssets">
+        <link:definition>9952183 - Disclosure - Retirement Benefits and Trusteed Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://www.dteenergy.com/role/StockBasedCompensation">
+        <link:definition>9952184 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandRelatedInformation" roleURI="http://www.dteenergy.com/role/SegmentandRelatedInformation">
+        <link:definition>9952185 - Disclosure - Segment and Related Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactions" roleURI="http://www.dteenergy.com/role/RelatedPartyTransactions">
+        <link:definition>9952186 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesPolicies" roleURI="http://www.dteenergy.com/role/SignificantAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBasisofPresentationTables" roleURI="http://www.dteenergy.com/role/OrganizationandBasisofPresentationTables">
+        <link:definition>9955512 - Disclosure - Organization and Basis of Presentation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesTables" roleURI="http://www.dteenergy.com/role/SignificantAccountingPoliciesTables">
+        <link:definition>9955513 - Disclosure - Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueTables" roleURI="http://www.dteenergy.com/role/RevenueTables">
+        <link:definition>9955514 - Disclosure - Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentTables" roleURI="http://www.dteenergy.com/role/PropertyPlantandEquipmentTables">
+        <link:definition>9955515 - Disclosure - Property, Plant, and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="JointlyOwnedUtilityPlantTables" roleURI="http://www.dteenergy.com/role/JointlyOwnedUtilityPlantTables">
+        <link:definition>9955516 - Disclosure - Jointly-Owned Utility Plant (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligationsTables" roleURI="http://www.dteenergy.com/role/AssetRetirementObligationsTables">
+        <link:definition>9955517 - Disclosure - Asset Retirement Obligations (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMattersTables" roleURI="http://www.dteenergy.com/role/RegulatoryMattersTables">
+        <link:definition>9955518 - Disclosure - Regulatory Matters (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.dteenergy.com/role/IncomeTaxesTables">
+        <link:definition>9955519 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://www.dteenergy.com/role/EarningsPerShareTables">
+        <link:definition>9955520 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueTables" roleURI="http://www.dteenergy.com/role/FairValueTables">
+        <link:definition>9955521 - Disclosure - Fair Value (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialandOtherDerivativeInstrumentsTables" roleURI="http://www.dteenergy.com/role/FinancialandOtherDerivativeInstrumentsTables">
+        <link:definition>9955522 - Disclosure - Financial and Other Derivative Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtTables" roleURI="http://www.dteenergy.com/role/LongTermDebtTables">
+        <link:definition>9955523 - Disclosure - Long-Term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreferredandPreferenceSecuritiesTables" roleURI="http://www.dteenergy.com/role/PreferredandPreferenceSecuritiesTables">
+        <link:definition>9955524 - Disclosure - Preferred and Preference Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermCreditArrangementsandBorrowingsTables" roleURI="http://www.dteenergy.com/role/ShortTermCreditArrangementsandBorrowingsTables">
+        <link:definition>9955525 - Disclosure - Short-Term Credit Arrangements and Borrowings (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.dteenergy.com/role/LeasesTables">
+        <link:definition>9955526 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesTables" roleURI="http://www.dteenergy.com/role/CommitmentsandContingenciesTables">
+        <link:definition>9955527 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsTables" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsTables">
+        <link:definition>9955528 - Disclosure - Retirement Benefits and Trusteed Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://www.dteenergy.com/role/StockBasedCompensationTables">
+        <link:definition>9955529 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandRelatedInformationTables" roleURI="http://www.dteenergy.com/role/SegmentandRelatedInformationTables">
+        <link:definition>9955530 - Disclosure - Segment and Related Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsTables" roleURI="http://www.dteenergy.com/role/RelatedPartyTransactionsTables">
+        <link:definition>9955531 - Disclosure - Related Party Transactions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBasisofPresentationDetailsTextuals" roleURI="http://www.dteenergy.com/role/OrganizationandBasisofPresentationDetailsTextuals">
+        <link:definition>9955532 - Disclosure - Organization and Basis of Presentation (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBasisofPresentationConsolidatedVariableInterestEntitiesDetails" roleURI="http://www.dteenergy.com/role/OrganizationandBasisofPresentationConsolidatedVariableInterestEntitiesDetails">
+        <link:definition>9955533 - Disclosure - Organization and Basis of Presentation (Consolidated Variable Interest Entities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBasisofPresentationNonConsolidatedVariableInterestEntitiesDetails" roleURI="http://www.dteenergy.com/role/OrganizationandBasisofPresentationNonConsolidatedVariableInterestEntitiesDetails">
+        <link:definition>9955534 - Disclosure - Organization and Basis of Presentation (Non-Consolidated Variable Interest Entities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesScheduleofOtherIncomeDetails" roleURI="http://www.dteenergy.com/role/SignificantAccountingPoliciesScheduleofOtherIncomeDetails">
+        <link:definition>9955535 - Disclosure - Significant Accounting Policies (Schedule of Other Income) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesAccumulatedOtherComprehensiveLossDetails" roleURI="http://www.dteenergy.com/role/SignificantAccountingPoliciesAccumulatedOtherComprehensiveLossDetails">
+        <link:definition>9955536 - Disclosure - Significant Accounting Policies (Accumulated Other Comprehensive Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesDetailsTextuals" roleURI="http://www.dteenergy.com/role/SignificantAccountingPoliciesDetailsTextuals">
+        <link:definition>9955537 - Disclosure - Significant Accounting Policies (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesFinancingReceivablesClassifiedbyInternalGradeofCreditRiskDetails" roleURI="http://www.dteenergy.com/role/SignificantAccountingPoliciesFinancingReceivablesClassifiedbyInternalGradeofCreditRiskDetails">
+        <link:definition>9955538 - Disclosure - Significant Accounting Policies (Financing Receivables Classified by Internal Grade of Credit Risk) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesRollForwardofActivityforFinancingReceivablesCreditLossReservesDetails" roleURI="http://www.dteenergy.com/role/SignificantAccountingPoliciesRollForwardofActivityforFinancingReceivablesCreditLossReservesDetails">
+        <link:definition>9955539 - Disclosure - Significant Accounting Policies (Roll-Forward of Activity for Financing Receivables Credit Loss Reserves) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesUncollectibleExpenseDetails" roleURI="http://www.dteenergy.com/role/SignificantAccountingPoliciesUncollectibleExpenseDetails">
+        <link:definition>9955540 - Disclosure - Significant Accounting Policies (Uncollectible Expense) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesIntangibleAssetsDetails" roleURI="http://www.dteenergy.com/role/SignificantAccountingPoliciesIntangibleAssetsDetails">
+        <link:definition>9955541 - Disclosure - Significant Accounting Policies (Intangible Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesIntangibleAssetsDetails_1" roleURI="http://www.dteenergy.com/role/SignificantAccountingPoliciesIntangibleAssetsDetails_1">
+        <link:definition>9955541 - Disclosure - Significant Accounting Policies (Intangible Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesFutureAmortizationExpenseIntangibleAssetsDetails" roleURI="http://www.dteenergy.com/role/SignificantAccountingPoliciesFutureAmortizationExpenseIntangibleAssetsDetails">
+        <link:definition>9955542 - Disclosure - Significant Accounting Policies (Future Amortization Expense Intangible Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesCloudComputingCostsDetails" roleURI="http://www.dteenergy.com/role/SignificantAccountingPoliciesCloudComputingCostsDetails">
+        <link:definition>9955543 - Disclosure - Significant Accounting Policies (Cloud Computing Costs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueDisaggregationofRevenuebySegmentDetails" roleURI="http://www.dteenergy.com/role/RevenueDisaggregationofRevenuebySegmentDetails">
+        <link:definition>9955544 - Disclosure - Revenue (Disaggregation of Revenue by Segment) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRevenuesOutsidetheScopeofTopic606Details" roleURI="http://www.dteenergy.com/role/RevenueRevenuesOutsidetheScopeofTopic606Details">
+        <link:definition>9955545 - Disclosure - Revenue (Revenues Outside the Scope of Topic 606) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueDetailsTextuals" roleURI="http://www.dteenergy.com/role/RevenueDetailsTextuals">
+        <link:definition>9955546 - Disclosure - Revenue (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueDeferredRevenueDetails" roleURI="http://www.dteenergy.com/role/RevenueDeferredRevenueDetails">
+        <link:definition>9955547 - Disclosure - Revenue (Deferred Revenue) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueExpectedRecognitionofDeferredRevenueDetails" roleURI="http://www.dteenergy.com/role/RevenueExpectedRecognitionofDeferredRevenueDetails">
+        <link:definition>9955548 - Disclosure - Revenue (Expected Recognition of Deferred Revenue) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueExpectedRecognitionofDeferredRevenueDetails_1" roleURI="http://www.dteenergy.com/role/RevenueExpectedRecognitionofDeferredRevenueDetails_1">
+        <link:definition>9955548 - Disclosure - Revenue (Expected Recognition of Deferred Revenue) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueExpectedRecognitionofDeferredRevenueforFixedConsiderationDetails" roleURI="http://www.dteenergy.com/role/RevenueExpectedRecognitionofDeferredRevenueforFixedConsiderationDetails">
+        <link:definition>9955549 - Disclosure - Revenue (Expected Recognition of Deferred Revenue for Fixed Consideration) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueExpectedRecognitionofDeferredRevenueforFixedConsiderationDetails_1" roleURI="http://www.dteenergy.com/role/RevenueExpectedRecognitionofDeferredRevenueforFixedConsiderationDetails_1">
+        <link:definition>9955549 - Disclosure - Revenue (Expected Recognition of Deferred Revenue for Fixed Consideration) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentSummaryofPropertybyClassificationDetails" roleURI="http://www.dteenergy.com/role/PropertyPlantandEquipmentSummaryofPropertybyClassificationDetails">
+        <link:definition>9955550 - Disclosure - Property, Plant, and Equipment (Summary of Property by Classification) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentScheduleofAFUDCandCapitalizedInterestRatesDetails" roleURI="http://www.dteenergy.com/role/PropertyPlantandEquipmentScheduleofAFUDCandCapitalizedInterestRatesDetails">
+        <link:definition>9955551 - Disclosure - Property, Plant, and Equipment (Schedule of AFUDC and Capitalized Interest Rates (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentScheduleofAFUDCandInterestCapitalizedDetails" roleURI="http://www.dteenergy.com/role/PropertyPlantandEquipmentScheduleofAFUDCandInterestCapitalizedDetails">
+        <link:definition>9955552 - Disclosure - Property, Plant, and Equipment (Schedule of AFUDC and Interest Capitalized) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentDetailsTextuals" roleURI="http://www.dteenergy.com/role/PropertyPlantandEquipmentDetailsTextuals">
+        <link:definition>9955553 - Disclosure - Property, Plant, and Equipment (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentAverageEstimatedUsefulLifeofEachMajorClassDetails" roleURI="http://www.dteenergy.com/role/PropertyPlantandEquipmentAverageEstimatedUsefulLifeofEachMajorClassDetails">
+        <link:definition>9955554 - Disclosure - Property, Plant, and Equipment (Average Estimated Useful Life of Each Major Class) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentDepreciationandAmortizationDetails" roleURI="http://www.dteenergy.com/role/PropertyPlantandEquipmentDepreciationandAmortizationDetails">
+        <link:definition>9955555 - Disclosure - Property, Plant, and Equipment (Depreciation and Amortization) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentCapitalizedSoftwareDetails" roleURI="http://www.dteenergy.com/role/PropertyPlantandEquipmentCapitalizedSoftwareDetails">
+        <link:definition>9955556 - Disclosure - Property, Plant, and Equipment (Capitalized Software) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="JointlyOwnedUtilityPlantDetailsTextuals" roleURI="http://www.dteenergy.com/role/JointlyOwnedUtilityPlantDetailsTextuals">
+        <link:definition>9955557 - Disclosure - Jointly-Owned Utility Plant (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="JointlyOwnedUtilityPlantOwnershipInformationDetails" roleURI="http://www.dteenergy.com/role/JointlyOwnedUtilityPlantOwnershipInformationDetails">
+        <link:definition>9955558 - Disclosure - Jointly-Owned Utility Plant (Ownership Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligationsRollforwardDetails" roleURI="http://www.dteenergy.com/role/AssetRetirementObligationsRollforwardDetails">
+        <link:definition>9955559 - Disclosure - Asset Retirement Obligations (Rollforward) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligationsDetailsTextuals" roleURI="http://www.dteenergy.com/role/AssetRetirementObligationsDetailsTextuals">
+        <link:definition>9955560 - Disclosure - Asset Retirement Obligations (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMattersScheduleofRegulatoryAssetsDetails" roleURI="http://www.dteenergy.com/role/RegulatoryMattersScheduleofRegulatoryAssetsDetails">
+        <link:definition>9955561 - Disclosure - Regulatory Matters (Schedule of Regulatory Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMattersScheduleofRegulatoryLiabilitiesDetails" roleURI="http://www.dteenergy.com/role/RegulatoryMattersScheduleofRegulatoryLiabilitiesDetails">
+        <link:definition>9955562 - Disclosure - Regulatory Matters (Schedule of Regulatory Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMattersRegulationandAssetsandLiabilitiesDetails" roleURI="http://www.dteenergy.com/role/RegulatoryMattersRegulationandAssetsandLiabilitiesDetails">
+        <link:definition>9955563 - Disclosure - Regulatory Matters (Regulation and Assets and Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMatters2024GasRateCaseFilingDetails" roleURI="http://www.dteenergy.com/role/RegulatoryMatters2024GasRateCaseFilingDetails">
+        <link:definition>9955564 - Disclosure - Regulatory Matters (2024 Gas Rate Case Filing) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMatters2024ElectricRateCaseFilingDetails" roleURI="http://www.dteenergy.com/role/RegulatoryMatters2024ElectricRateCaseFilingDetails">
+        <link:definition>9955565 - Disclosure - Regulatory Matters (2024 Electric Rate Case Filing) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetailsTextuals" roleURI="http://www.dteenergy.com/role/IncomeTaxesDetailsTextuals">
+        <link:definition>9955566 - Disclosure - Income Taxes (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationofIncomeTaxExpensetotheStatutoryFederalIncomeTaxRateDetails" roleURI="http://www.dteenergy.com/role/IncomeTaxesReconciliationofIncomeTaxExpensetotheStatutoryFederalIncomeTaxRateDetails">
+        <link:definition>9955567 - Disclosure - Income Taxes (Reconciliation of Income Tax Expense to the Statutory Federal Income Tax Rate) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesComponentsofIncomeTaxExpenseDetails" roleURI="http://www.dteenergy.com/role/IncomeTaxesComponentsofIncomeTaxExpenseDetails">
+        <link:definition>9955568 - Disclosure - Income Taxes (Components of Income Tax Expense) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDeferredTaxAssetsLiabilitiesDetails" roleURI="http://www.dteenergy.com/role/IncomeTaxesDeferredTaxAssetsLiabilitiesDetails">
+        <link:definition>9955569 - Disclosure - Income Taxes (Deferred Tax Assets (Liabilities)) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDeferredTaxAssetsLiabilitiesDetails_1" roleURI="http://www.dteenergy.com/role/IncomeTaxesDeferredTaxAssetsLiabilitiesDetails_1">
+        <link:definition>9955569 - Disclosure - Income Taxes (Deferred Tax Assets (Liabilities)) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareDetails" roleURI="http://www.dteenergy.com/role/EarningsPerShareDetails">
+        <link:definition>9955570 - Disclosure - Earnings Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueAssetsandLiabilitiesRecordedatFairValueonaRecurringBasisDetails" roleURI="http://www.dteenergy.com/role/FairValueAssetsandLiabilitiesRecordedatFairValueonaRecurringBasisDetails">
+        <link:definition>9955571 - Disclosure - Fair Value (Assets and Liabilities Recorded at Fair Value on a Recurring Basis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDetailsTextuals" roleURI="http://www.dteenergy.com/role/FairValueDetailsTextuals">
+        <link:definition>9955572 - Disclosure - Fair Value (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueReconciliationofLevel3AssetsandLiabilitiesatFairValueonaRecurringBasisDetails" roleURI="http://www.dteenergy.com/role/FairValueReconciliationofLevel3AssetsandLiabilitiesatFairValueonaRecurringBasisDetails">
+        <link:definition>9955573 - Disclosure - Fair Value (Reconciliation of Level 3 Assets and Liabilities at Fair Value on a Recurring Basis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueUnobservableInputsrelatedtoLevel3AssetsandLiabilitiesDetails" roleURI="http://www.dteenergy.com/role/FairValueUnobservableInputsrelatedtoLevel3AssetsandLiabilitiesDetails">
+        <link:definition>9955574 - Disclosure - Fair Value (Unobservable Inputs related to Level 3 Assets and Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueFairValueofFinancialInstrumentsDetails" roleURI="http://www.dteenergy.com/role/FairValueFairValueofFinancialInstrumentsDetails">
+        <link:definition>9955575 - Disclosure - Fair Value (Fair Value of Financial Instruments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueFairValueofNuclearDecommissioningTrustFundAssetsDetails" roleURI="http://www.dteenergy.com/role/FairValueFairValueofNuclearDecommissioningTrustFundAssetsDetails">
+        <link:definition>9955576 - Disclosure - Fair Value (Fair Value of Nuclear Decommissioning Trust Fund Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueGainsandLossesandProceedsfromtheSaleofSecuritiesbytheNuclearDecommissioningTrustFundsDetails" roleURI="http://www.dteenergy.com/role/FairValueGainsandLossesandProceedsfromtheSaleofSecuritiesbytheNuclearDecommissioningTrustFundsDetails">
+        <link:definition>9955577 - Disclosure - Fair Value (Gains and Losses and Proceeds from the Sale of Securities by the Nuclear Decommissioning Trust Funds) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueFairValueandUnrealizedGainsandLossesfortheNuclearDecommissioningTrustFundsDetails" roleURI="http://www.dteenergy.com/role/FairValueFairValueandUnrealizedGainsandLossesfortheNuclearDecommissioningTrustFundsDetails">
+        <link:definition>9955578 - Disclosure - Fair Value (Fair Value and Unrealized Gains and Losses for the Nuclear Decommissioning Trust Funds) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueFairValueofFixedIncomeSecuritiesHeldinNuclearDecommissioningTrustFundsDetails" roleURI="http://www.dteenergy.com/role/FairValueFairValueofFixedIncomeSecuritiesHeldinNuclearDecommissioningTrustFundsDetails">
+        <link:definition>9955579 - Disclosure - Fair Value (Fair Value of Fixed Income Securities Held in Nuclear Decommissioning Trust Funds (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialandOtherDerivativeInstrumentsFairValueofDerivativeInstrumentsDetails" roleURI="http://www.dteenergy.com/role/FinancialandOtherDerivativeInstrumentsFairValueofDerivativeInstrumentsDetails">
+        <link:definition>9955580 - Disclosure - Financial and Other Derivative Instruments (Fair Value of Derivative Instruments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialandOtherDerivativeInstrumentsDetailsTextuals" roleURI="http://www.dteenergy.com/role/FinancialandOtherDerivativeInstrumentsDetailsTextuals">
+        <link:definition>9955581 - Disclosure - Financial and Other Derivative Instruments (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialandOtherDerivativeInstrumentsNetCashCollateralOffsettingArrangementsDetails" roleURI="http://www.dteenergy.com/role/FinancialandOtherDerivativeInstrumentsNetCashCollateralOffsettingArrangementsDetails">
+        <link:definition>9955582 - Disclosure - Financial and Other Derivative Instruments (Net Cash Collateral Offsetting Arrangements) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialandOtherDerivativeInstrumentsNettingOffsetsofDerivativeAssetsandLiabilitiesDetails" roleURI="http://www.dteenergy.com/role/FinancialandOtherDerivativeInstrumentsNettingOffsetsofDerivativeAssetsandLiabilitiesDetails">
+        <link:definition>9955583 - Disclosure - Financial and Other Derivative Instruments (Netting Offsets of Derivative Assets and Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialandOtherDerivativeInstrumentsNettingOffsetsReconciliationtoBalanceSheetDetails" roleURI="http://www.dteenergy.com/role/FinancialandOtherDerivativeInstrumentsNettingOffsetsReconciliationtoBalanceSheetDetails">
+        <link:definition>9955584 - Disclosure - Financial and Other Derivative Instruments (Netting Offsets Reconciliation to Balance Sheet) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialandOtherDerivativeInstrumentsEffectofDerivativesnotDesignatedasHedgingInstrumentsontheConsolidatedStatementofOperationsDetails" roleURI="http://www.dteenergy.com/role/FinancialandOtherDerivativeInstrumentsEffectofDerivativesnotDesignatedasHedgingInstrumentsontheConsolidatedStatementofOperationsDetails">
+        <link:definition>9955585 - Disclosure - Financial and Other Derivative Instruments (Effect of Derivatives not Designated as Hedging Instruments on the Consolidated Statement of Operations) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialandOtherDerivativeInstrumentsCumulativeGrossVolumeofDerivativeContractsOutstandingDetails" roleURI="http://www.dteenergy.com/role/FinancialandOtherDerivativeInstrumentsCumulativeGrossVolumeofDerivativeContractsOutstandingDetails">
+        <link:definition>9955586 - Disclosure - Financial and Other Derivative Instruments (Cumulative Gross Volume of Derivative Contracts Outstanding) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtLongTermDebtOutstandingandInterestRatesDetails" roleURI="http://www.dteenergy.com/role/LongTermDebtLongTermDebtOutstandingandInterestRatesDetails">
+        <link:definition>9955587 - Disclosure - Long-Term Debt (Long Term Debt Outstanding and Interest Rates) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtDebtIssuancesDetails" roleURI="http://www.dteenergy.com/role/LongTermDebtDebtIssuancesDetails">
+        <link:definition>9955588 - Disclosure - Long-Term Debt (Debt Issuances) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtDebtRedemptionsDetails" roleURI="http://www.dteenergy.com/role/LongTermDebtDebtRedemptionsDetails">
+        <link:definition>9955589 - Disclosure - Long-Term Debt (Debt Redemptions) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduledDebtMaturitiesDetails" roleURI="http://www.dteenergy.com/role/LongTermDebtScheduledDebtMaturitiesDetails">
+        <link:definition>9955590 - Disclosure - Long-Term Debt (Scheduled Debt Maturities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduledInterestPaymentsDetails" roleURI="http://www.dteenergy.com/role/LongTermDebtScheduledInterestPaymentsDetails">
+        <link:definition>9955591 - Disclosure - Long-Term Debt (Scheduled Interest Payments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreferredandPreferenceSecuritiesDetails" roleURI="http://www.dteenergy.com/role/PreferredandPreferenceSecuritiesDetails">
+        <link:definition>9955592 - Disclosure - Preferred and Preference Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermCreditArrangementsandBorrowingsDetailsTextuals" roleURI="http://www.dteenergy.com/role/ShortTermCreditArrangementsandBorrowingsDetailsTextuals">
+        <link:definition>9955593 - Disclosure - Short-Term Credit Arrangements and Borrowings (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermCreditArrangementsandBorrowingsScheduleofBorrowingsDetails" roleURI="http://www.dteenergy.com/role/ShortTermCreditArrangementsandBorrowingsScheduleofBorrowingsDetails">
+        <link:definition>9955594 - Disclosure - Short-Term Credit Arrangements and Borrowings (Schedule of Borrowings) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesDetailsTextuals" roleURI="http://www.dteenergy.com/role/LeasesDetailsTextuals">
+        <link:definition>9955595 - Disclosure - Leases (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesComponentsofLeaseCostDetails" roleURI="http://www.dteenergy.com/role/LeasesComponentsofLeaseCostDetails">
+        <link:definition>9955596 - Disclosure - Leases (Components of Lease Cost) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesOtherInformationDetails" roleURI="http://www.dteenergy.com/role/LeasesOtherInformationDetails">
+        <link:definition>9955597 - Disclosure - Leases (Other Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesFutureMinimumLeasePaymentsDetails" roleURI="http://www.dteenergy.com/role/LeasesFutureMinimumLeasePaymentsDetails">
+        <link:definition>9955598 - Disclosure - Leases (Future Minimum Lease Payments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesFutureMinimumLeasePaymentsDetails_1" roleURI="http://www.dteenergy.com/role/LeasesFutureMinimumLeasePaymentsDetails_1">
+        <link:definition>9955598 - Disclosure - Leases (Future Minimum Lease Payments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesFinanceLeasesReportedonConsolidatedStatementsofFinancialPositionDetails" roleURI="http://www.dteenergy.com/role/LeasesFinanceLeasesReportedonConsolidatedStatementsofFinancialPositionDetails">
+        <link:definition>9955599 - Disclosure - Leases (Finance Leases Reported on Consolidated Statements of Financial Position) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLeaseIncomeAssociatedwithOperatingLeasesDetails" roleURI="http://www.dteenergy.com/role/LeasesLeaseIncomeAssociatedwithOperatingLeasesDetails">
+        <link:definition>9955600 - Disclosure - Leases (Lease Income Associated with Operating Leases) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMinimumFutureRentalRevenuesunderOperatingLeasesDetails" roleURI="http://www.dteenergy.com/role/LeasesMinimumFutureRentalRevenuesunderOperatingLeasesDetails">
+        <link:definition>9955601 - Disclosure - Leases (Minimum Future Rental Revenues under Operating Leases) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesPropertyunderOperatingLeasesDetails" roleURI="http://www.dteenergy.com/role/LeasesPropertyunderOperatingLeasesDetails">
+        <link:definition>9955602 - Disclosure - Leases (Property under Operating Leases) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesDetailsTextuals" roleURI="http://www.dteenergy.com/role/CommitmentsandContingenciesDetailsTextuals">
+        <link:definition>9955603 - Disclosure - Commitments and Contingencies (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesPurchaseCommitmentsDetails" roleURI="http://www.dteenergy.com/role/CommitmentsandContingenciesPurchaseCommitmentsDetails">
+        <link:definition>9955604 - Disclosure - Commitments and Contingencies (Purchase Commitments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NuclearOperationsDetails" roleURI="http://www.dteenergy.com/role/NuclearOperationsDetails">
+        <link:definition>9955605 - Disclosure - Nuclear Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsPensionPlanPensionCostInclusionsDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsPensionPlanPensionCostInclusionsDetails">
+        <link:definition>9955606 - Disclosure - Retirement Benefits and Trusteed Assets (Pension Plan - Pension Cost Inclusions) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsPensionPlanOtherChangesinPlanAssetsandBenefitObligationsrecognizedinRegulatoryAssetsandOCIDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsPensionPlanOtherChangesinPlanAssetsandBenefitObligationsrecognizedinRegulatoryAssetsandOCIDetails">
+        <link:definition>9955607 - Disclosure - Retirement Benefits and Trusteed Assets (Pension Plan - Other Changes in Plan Assets and Benefit Obligations recognized in Regulatory Assets and OCI) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsPensionPlanReconciliationofObligationsAssetsandFundedStatusofPlansDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsPensionPlanReconciliationofObligationsAssetsandFundedStatusofPlansDetails">
+        <link:definition>9955608 - Disclosure - Retirement Benefits and Trusteed Assets (Pension Plan - Reconciliation of Obligations, Assets and Funded Status of Plans) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsDetailsTextuals" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsDetailsTextuals">
+        <link:definition>9955609 - Disclosure - Retirement Benefits and Trusteed Assets (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsPensionPlanBenefitsrelatedtoQualifiedandNonqualifiedPensionPlansExpectedtobepaidDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsPensionPlanBenefitsrelatedtoQualifiedandNonqualifiedPensionPlansExpectedtobepaidDetails">
+        <link:definition>9955610 - Disclosure - Retirement Benefits and Trusteed Assets (Pension Plan - Benefits related to Qualified and Nonqualified Pension Plans Expected to be paid) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsPensionPlanAssumptionsusedinDeterminingthePBOandNetPensionCostsDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsPensionPlanAssumptionsusedinDeterminingthePBOandNetPensionCostsDetails">
+        <link:definition>9955611 - Disclosure - Retirement Benefits and Trusteed Assets (Pension Plan - Assumptions used in Determining the PBO and Net Pension Costs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsPensionPlanTargetAllocationsofPlanAssetsDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsPensionPlanTargetAllocationsofPlanAssetsDetails">
+        <link:definition>9955612 - Disclosure - Retirement Benefits and Trusteed Assets (Pension Plan - Target Allocations of Plan Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsPensionPlanFairValueMeasurementsDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsPensionPlanFairValueMeasurementsDetails">
+        <link:definition>9955613 - Disclosure - Retirement Benefits and Trusteed Assets (Pension Plan - Fair Value Measurements) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsOPEBContributionstotheVEBADetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsOPEBContributionstotheVEBADetails">
+        <link:definition>9955614 - Disclosure - Retirement Benefits and Trusteed Assets (OPEB - Contributions to the VEBA) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsOPEBPostretirementCostInclusionsDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsOPEBPostretirementCostInclusionsDetails">
+        <link:definition>9955615 - Disclosure - Retirement Benefits and Trusteed Assets (OPEB - Postretirement Cost Inclusions) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsOPEBOtherChangesinPlanAssetsandAPBORecognizedinRegulatoryAssetsandOCIDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsOPEBOtherChangesinPlanAssetsandAPBORecognizedinRegulatoryAssetsandOCIDetails">
+        <link:definition>9955616 - Disclosure - Retirement Benefits and Trusteed Assets (OPEB - Other Changes in Plan Assets and APBO Recognized in Regulatory Assets and OCI) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsOPEBReconciliationofObligationsAssetsandFundedStatusofPlansDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsOPEBReconciliationofObligationsAssetsandFundedStatusofPlansDetails">
+        <link:definition>9955617 - Disclosure - Retirement Benefits and Trusteed Assets (OPEB - Reconciliation of Obligations, Assets and Funded Status of Plans) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsOPEBAccumulatedPostretirementObligationsinExcessofPlanAssetsDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsOPEBAccumulatedPostretirementObligationsinExcessofPlanAssetsDetails">
+        <link:definition>9955618 - Disclosure - Retirement Benefits and Trusteed Assets (OPEB - Accumulated Postretirement Obligations in Excess of Plan Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsOPEBBenefitsrelatedtoQualifiedandNonqualifiedPensionPlansExpectedtobepaidintheNextTenYearsDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsOPEBBenefitsrelatedtoQualifiedandNonqualifiedPensionPlansExpectedtobepaidintheNextTenYearsDetails">
+        <link:definition>9955619 - Disclosure - Retirement Benefits and Trusteed Assets (OPEB - Benefits related to Qualified and Nonqualified Pension Plans Expected to be paid in the Next Ten Years) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsOPEBAssumptionsusedinDeterminingthePBOandNetPensionCostsDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsOPEBAssumptionsusedinDeterminingthePBOandNetPensionCostsDetails">
+        <link:definition>9955620 - Disclosure - Retirement Benefits and Trusteed Assets (OPEB - Assumptions used in Determining the PBO and Net Pension Costs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsOPEBTargetAllocationsofPlanAssetsDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsOPEBTargetAllocationsofPlanAssetsDetails">
+        <link:definition>9955621 - Disclosure - Retirement Benefits and Trusteed Assets (OPEB - Target Allocations of Plan Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementBenefitsandTrusteedAssetsOPEBFairValueMeasurementsDetails" roleURI="http://www.dteenergy.com/role/RetirementBenefitsandTrusteedAssetsOPEBFairValueMeasurementsDetails">
+        <link:definition>9955622 - Disclosure - Retirement Benefits and Trusteed Assets (OPEB - Fair Value Measurements) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationDetailsTextuals" roleURI="http://www.dteenergy.com/role/StockBasedCompensationDetailsTextuals">
+        <link:definition>9955623 - Disclosure - Stock-Based Compensation (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationComponentsofStockBasedCompensationDetails" roleURI="http://www.dteenergy.com/role/StockBasedCompensationComponentsofStockBasedCompensationDetails">
+        <link:definition>9955624 - Disclosure - Stock-Based Compensation (Components of Stock Based Compensation) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationActivityRelatingtoPerformanceShareAwardsDetails" roleURI="http://www.dteenergy.com/role/StockBasedCompensationActivityRelatingtoPerformanceShareAwardsDetails">
+        <link:definition>9955625 - Disclosure - Stock-Based Compensation (Activity Relating to Performance Share Awards) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationPerformanceShareAwardsActivityDetails" roleURI="http://www.dteenergy.com/role/StockBasedCompensationPerformanceShareAwardsActivityDetails">
+        <link:definition>9955626 - Disclosure - Stock-Based Compensation (Performance Share Awards Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationUnrecognizedCompensationCostsDetails" roleURI="http://www.dteenergy.com/role/StockBasedCompensationUnrecognizedCompensationCostsDetails">
+        <link:definition>9955627 - Disclosure - Stock-Based Compensation (Unrecognized Compensation Costs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandRelatedInformationDetailsTextuals" roleURI="http://www.dteenergy.com/role/SegmentandRelatedInformationDetailsTextuals">
+        <link:definition>9955628 - Disclosure - Segment and Related Information (Details Textuals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandRelatedInformationInterSegmentBillingDetails" roleURI="http://www.dteenergy.com/role/SegmentandRelatedInformationInterSegmentBillingDetails">
+        <link:definition>9955629 - Disclosure - Segment and Related Information (Inter-Segment Billing) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandRelatedInformationFinancialDataDetails" roleURI="http://www.dteenergy.com/role/SegmentandRelatedInformationFinancialDataDetails">
+        <link:definition>9955630 - Disclosure - Segment and Related Information (Financial Data) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsDetails" roleURI="http://www.dteenergy.com/role/RelatedPartyTransactionsDetails">
+        <link:definition>9955631 - Disclosure - Related Party Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="dte_DTEElectricMember" abstract="true" name="DTEElectricMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_SeriesE20175.25JuniorSubordinatedDebenturesDue2077Member" abstract="true" name="SeriesE20175.25JuniorSubordinatedDebenturesDue2077Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_SeriesG20204.375JuniorSubordinatedDebenturesDue2080Member" abstract="true" name="SeriesG20204.375JuniorSubordinatedDebenturesDue2080Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_SeriesE20214.375JuniorSubordinatedDebenturesDue2081Member" abstract="true" name="SeriesE20214.375JuniorSubordinatedDebenturesDue2081Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_UnregulatedOperatingExpenseProductsAndServices" abstract="false" name="UnregulatedOperatingExpenseProductsAndServices" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_RegulatedAndUnregulatedOperatingExpenseMaintenanceAndOperations" abstract="false" name="RegulatedAndUnregulatedOperatingExpenseMaintenanceAndOperations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_RegulatedAndUnregulatedOperatingExpenseDepreciationAndAmortization" abstract="false" name="RegulatedAndUnregulatedOperatingExpenseDepreciationAndAmortization" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_SecuritizedRegulatoryAssetsNoncurrent" abstract="false" name="SecuritizedRegulatoryAssetsNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_PrepaidPostretirementCosts" abstract="false" name="PrepaidPostretirementCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_SecuritizationBondsNoncurrent" abstract="false" name="SecuritizationBondsNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_DefinedBenefitPensionPlanLiabilitiesNoncurrentAffiliates" abstract="false" name="DefinedBenefitPensionPlanLiabilitiesNoncurrentAffiliates" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_OtherPostretirementDefinedBenefitPlanLiabilitiesNoncurrentAffiliates" abstract="false" name="OtherPostretirementDefinedBenefitPlanLiabilitiesNoncurrentAffiliates" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_PrepaidPostretirementCostsAffiliates" abstract="false" name="PrepaidPostretirementCostsAffiliates" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_NuclearFuelAmortization" abstract="false" name="NuclearFuelAmortization" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_GainLossOnSaleOfAssetsAndAssetImpairmentChargesNet" abstract="false" name="GainLossOnSaleOfAssetsAndAssetImpairmentChargesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_IncreaseDecreaseInPrepaidPostretirementCosts" abstract="false" name="IncreaseDecreaseInPrepaidPostretirementCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_PlantAndEquipmentExpendituresUtility" abstract="false" name="PlantAndEquipmentExpendituresUtility" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_PlantAndEquipmentExpendituresNonUtility" abstract="false" name="PlantAndEquipmentExpendituresNonUtility" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_PaymentsForProceedsFromNotesReceivableAndOtherInvestingActivities" abstract="false" name="PaymentsForProceedsFromNotesReceivableAndOtherInvestingActivities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_IncreaseDecreaseInPensionPlanObligationsAffiliates" abstract="false" name="IncreaseDecreaseInPensionPlanObligationsAffiliates" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_IncreaseDecreaseInPostretirementObligationsAffiliates" abstract="false" name="IncreaseDecreaseInPostretirementObligationsAffiliates" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_IncreaseDecreaseInPrepaidPostretirementCostsAffiliates" abstract="false" name="IncreaseDecreaseInPrepaidPostretirementCostsAffiliates" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_AdjustmentsToAdditionalPaidInCapitalContributionsFromParent" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalContributionsFromParent" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_JointlyOwnedUtilityPlantTextBlock" abstract="false" name="JointlyOwnedUtilityPlantTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_NuclearOperationsAbstract" abstract="true" name="NuclearOperationsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_NuclearOperationsTextBlock" abstract="false" name="NuclearOperationsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_OtherIncomePolicyPolicyTextBlock" abstract="false" name="OtherIncomePolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_AccountingForIsoTransactionsPolicyTextBlock" abstract="false" name="AccountingForIsoTransactionsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_FoundationRelatedPartyPolicyTextBlock" abstract="false" name="FoundationRelatedPartyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_NuclearDecommissioningTrustAndOtherInvestmentsPolicyPolicyTextBlock" abstract="false" name="NuclearDecommissioningTrustAndOtherInvestmentsPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_SummaryOfAmountsForNonconsolidatedVariableInterestEntitiesTextBlockTableTextBlock" abstract="false" name="SummaryOfAmountsForNonconsolidatedVariableInterestEntitiesTextBlockTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_FinancingReceivableUncollectibleExpenseTableTextBlock" abstract="false" name="FinancingReceivableUncollectibleExpenseTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_ScheduleOfAccountingPoliciesTableTextBlock" abstract="false" name="ScheduleOfAccountingPoliciesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_ScheduleOfAllowanceForFundsUsedDuringConstructionAndCapitalizedInterestRatesTableTextBlock" abstract="false" name="ScheduleOfAllowanceForFundsUsedDuringConstructionAndCapitalizedInterestRatesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_ScheduleofInterestCostsCapitalizedTableTextBlock" abstract="false" name="ScheduleofInterestCostsCapitalizedTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_ScheduleOfCapitalizedSoftwareTableTextBlock" abstract="false" name="ScheduleOfCapitalizedSoftwareTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_FairValueOfNuclearDecommissioningTrustFundAssetsTableTextBlock" abstract="false" name="FairValueOfNuclearDecommissioningTrustFundAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_FairValueAndUnrealizedGainsAndLossesForNuclearDecommissioningTrustFundTableTextBlock" abstract="false" name="FairValueAndUnrealizedGainsAndLossesForNuclearDecommissioningTrustFundTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_NettingOffsetsOfDerivativeAssetsAndLiabilitiesReconciliationToStatementsOfFinancialPositionTableTextBlock" abstract="false" name="NettingOffsetsOfDerivativeAssetsAndLiabilitiesReconciliationToStatementsOfFinancialPositionTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_VolumeOfCommodityContractsTableTextBlock" abstract="false" name="VolumeOfCommodityContractsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_ScheduleOfIssuedDebtTableTextBlock" abstract="false" name="ScheduleOfIssuedDebtTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_PreferredandPreferenceSecuritiesTableTextBlock" abstract="false" name="PreferredandPreferenceSecuritiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_LesseeFinanceLeaseSupplementalBalanceSheetInformationTableTextBlock" abstract="false" name="LesseeFinanceLeaseSupplementalBalanceSheetInformationTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_LessorPropertySubjecttoorAvailableforOperatingLeasesTableTextBlock" abstract="false" name="LessorPropertySubjecttoorAvailableforOperatingLeasesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_ShareBasedCompensationExpenseTableTextBlock" abstract="false" name="ShareBasedCompensationExpenseTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="dte_NumberOfElectricUtilityCustomers" abstract="false" name="NumberOfElectricUtilityCustomers" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="dte_NumberOfGasUtilityCustomers" abstract="false" name="NumberOfGasUtilityCustomers" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="dte_SecuritizationBonds" abstract="false" name="SecuritizationBonds" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_SecuritizationBondsCurrent" abstract="false" name="SecuritizationBondsCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_ScheduleofOtherNonoperatingIncomebyComponentTable" abstract="true" name="ScheduleofOtherNonoperatingIncomebyComponentTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="dte_ScheduleofOtherNonoperatingIncomebyComponentLineItems" abstract="true" name="ScheduleofOtherNonoperatingIncomebyComponentLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_IncomeOnContractServices" abstract="false" name="IncomeOnContractServices" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_GainOnInvestments" abstract="false" name="GainOnInvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_OtherMiscellaneousNonoperatingIncome" abstract="false" name="OtherMiscellaneousNonoperatingIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_SignificantAccountingPoliciesTable" abstract="true" name="SignificantAccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="dte_DTEElectricandDTEGasMember" abstract="true" name="DTEElectricandDTEGasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_FinanceLeaseReceivableMember" abstract="true" name="FinanceLeaseReceivableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_InternalGradeOneMember" abstract="true" name="InternalGradeOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_SignificantAccountingPoliciesLineItems" abstract="true" name="SignificantAccountingPoliciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_SpecificReviewOfProbableFutureCollectionsBasedOnReceivableBalancesThresholdDuration" abstract="false" name="SpecificReviewOfProbableFutureCollectionsBasedOnReceivableBalancesThresholdDuration" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dte_CharitableContributions" abstract="false" name="CharitableContributions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_InternalGradeTwoMember" abstract="true" name="InternalGradeTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_FinancingReceivableExcludingAccruedInterestOriginatedTwoOrMoreYearsBeforeLatestFiscalYear" abstract="false" name="FinancingReceivableExcludingAccruedInterestOriginatedTwoOrMoreYearsBeforeLatestFiscalYear" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_OtherFinancingReceivablesMember" abstract="true" name="OtherFinancingReceivablesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_FinancingReceivableCreditLossExpenseReversalAdjustedForRegulatoryDeferrals" abstract="false" name="FinancingReceivableCreditLossExpenseReversalAdjustedForRegulatoryDeferrals" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_CarbonOffsetsMember" abstract="true" name="CarbonOffsetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_RenewableEnergyCreditsMember" abstract="true" name="RenewableEnergyCreditsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_ElectricSegmentMember" abstract="true" name="ElectricSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_GasSegmentMember" abstract="true" name="GasSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_DTEVantageSegmentMember" abstract="true" name="DTEVantageSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_EnergyTradingSegmentMember" abstract="true" name="EnergyTradingSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_ResidentialMember" abstract="true" name="ResidentialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_CommercialMember" abstract="true" name="CommercialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_IndustrialMember" abstract="true" name="IndustrialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_GasSalesMember" abstract="true" name="GasSalesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_EndUserTransportationMember" abstract="true" name="EndUserTransportationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_IntermediateTransportationMember" abstract="true" name="IntermediateTransportationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_OtherMember" abstract="true" name="OtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_DTESustainableGenerationMember" abstract="true" name="DTESustainableGenerationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_RevenuePaymentTerms" abstract="false" name="RevenuePaymentTerms" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dte_ChangeInContractWithCustomerLiabilityRollforwardRollForward" abstract="true" name="ChangeInContractWithCustomerLiabilityRollforwardRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_ContractWithCustomerLiabilityIncreaseFromCashReceipts" abstract="false" name="ContractWithCustomerLiabilityIncreaseFromCashReceipts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_ContractWithCustomerLiabilityMember" abstract="true" name="ContractWithCustomerLiabilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_DTEGasMember" abstract="true" name="DTEGasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_ElectricGenerationEquipmentRenewablesMember" abstract="true" name="ElectricGenerationEquipmentRenewablesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_PropertyPlantandEquipmentOtherTypesUtilityMember" abstract="true" name="PropertyPlantandEquipmentOtherTypesUtilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_GasStorageEquipmentMember" abstract="true" name="GasStorageEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_PropertyPlantAndEquipmentOtherTypesDTEVantageMember" abstract="true" name="PropertyPlantAndEquipmentOtherTypesDTEVantageMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_PropertyPlantandEquipmentOtherTypesNonUtilityMember" abstract="true" name="PropertyPlantandEquipmentOtherTypesNonUtilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_InterestCostsCapitalizedRate" abstract="false" name="InterestCostsCapitalizedRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="dte_CapitalizedInterestCostsIncludingAllowanceForDebtFundsUsedDuringConstruction" abstract="false" name="CapitalizedInterestCostsIncludingAllowanceForDebtFundsUsedDuringConstruction" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_CapitalizedInterestCostsIncludingAllowanceforEquityFundsUsedDuringConstruction" abstract="false" name="CapitalizedInterestCostsIncludingAllowanceforEquityFundsUsedDuringConstruction" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_AllowanceForDebtFundsUsedDuringConstructionCapitalizedInterest" abstract="false" name="AllowanceForDebtFundsUsedDuringConstructionCapitalizedInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_AllowanceForEquityFundsUsedDuringConstructionCapitalizedInterest" abstract="false" name="AllowanceForEquityFundsUsedDuringConstructionCapitalizedInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_GasOtherEquipmentMember" abstract="true" name="GasOtherEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_PublicUtilitiesPropertyPlantAndEquipmentStorageUsefulLife" abstract="false" name="PublicUtilitiesPropertyPlantAndEquipmentStorageUsefulLife" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dte_BelleRiverMember" abstract="true" name="BelleRiverMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_LudingtonHydroelectricPumpedStorageMember" abstract="true" name="LudingtonHydroelectricPumpedStorageMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_JointlyOwnedUtilityPlantNumberOfPlants" abstract="false" name="JointlyOwnedUtilityPlantNumberOfPlants" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="dte_JointOwnersPercentageOfTotalCapacityEnergyAndRelatedResponsibilities" abstract="false" name="JointOwnersPercentageOfTotalCapacityEnergyAndRelatedResponsibilities" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="dte_JointlyOwnedUtilityPlantCapacity" abstract="false" name="JointlyOwnedUtilityPlantCapacity" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:powerItemType"/>
+  <xs:element id="dte_AssetRetirementObligationsTable" abstract="true" name="AssetRetirementObligationsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="dte_AssetRetirementObligationsLineItems" abstract="true" name="AssetRetirementObligationsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_NuclearDecommissioningLiabilitiesFundedThroughSurchargeAndIncludedInAROBalance" abstract="false" name="NuclearDecommissioningLiabilitiesFundedThroughSurchargeAndIncludedInAROBalance" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LiabilitiesBalanceUponCompletionOfDecommissioning" abstract="false" name="LiabilitiesBalanceUponCompletionOfDecommissioning" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_RecoverableUndepreciatedCostsonRetiringPlantsMember" abstract="true" name="RecoverableUndepreciatedCostsonRetiringPlantsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_EnhancedTreeTrimmingProgramDeferredCostsMember" abstract="true" name="EnhancedTreeTrimmingProgramDeferredCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_RecoverableMichiganIncomeTaxesMember" abstract="true" name="RecoverableMichiganIncomeTaxesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_RecoverableIncomeTaxesRelatedtoAFUDCEquityMember" abstract="true" name="RecoverableIncomeTaxesRelatedtoAFUDCEquityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_EnergyWasteReductionIncentiveMember" abstract="true" name="EnergyWasteReductionIncentiveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_RenewableITCOffsetMember" abstract="true" name="RenewableITCOffsetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_Customer360DeferredCostsMember" abstract="true" name="Customer360DeferredCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_LudingtonRepairCostsMember" abstract="true" name="LudingtonRepairCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_AccruedPSCRAndGCRRevenueMember" abstract="true" name="AccruedPSCRAndGCRRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_SecuritizedRegulatoryAssets" abstract="false" name="SecuritizedRegulatoryAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_RefundableFederalIncomeTaxesMember" abstract="true" name="RefundableFederalIncomeTaxesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_PensionandOtherPostretirementPlansCostsNonServiceComponentMember" abstract="true" name="PensionandOtherPostretirementPlansCostsNonServiceComponentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_AccruedGCRRefundMember" abstract="true" name="AccruedGCRRefundMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_SecuritizedRegulatoryAssetTreeTrimmingSurgeCostsMember" abstract="true" name="SecuritizedRegulatoryAssetTreeTrimmingSurgeCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_SecuritizedRegulatoryAssetRecoverableUndepreciatedCostsOnRetiringPlantsRiverRougeMember" abstract="true" name="SecuritizedRegulatoryAssetRecoverableUndepreciatedCostsOnRetiringPlantsRiverRougeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_SecuritizedRegulatoryAssetRecoverableUndepreciatedCostsOnRetiringPlantsStClairAndTrentonChannelMember" abstract="true" name="SecuritizedRegulatoryAssetRecoverableUndepreciatedCostsOnRetiringPlantsStClairAndTrentonChannelMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_A2024DTEGasRateCaseFilingMember" abstract="true" name="A2024DTEGasRateCaseFilingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_MPSCMember" abstract="true" name="MPSCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_PublicUtilitiesRecoveryMechanismAxis" abstract="true" name="PublicUtilitiesRecoveryMechanismAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="dte_PublicUtilitiesRecoveryMechanismDomain" abstract="true" name="PublicUtilitiesRecoveryMechanismDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_RecoveryMechanismCustomerRateIncreaseMember" abstract="true" name="RecoveryMechanismCustomerRateIncreaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_RecoveryMechanismInfrastructureRecoveryMember" abstract="true" name="RecoveryMechanismInfrastructureRecoveryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_A2024DTEElectricRateCaseFilingMember" abstract="true" name="A2024DTEElectricRateCaseFilingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_FederalIncomeTaxesMember" abstract="true" name="FederalIncomeTaxesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_OperatingLossCarryforwardsStateAndLocalMember" abstract="true" name="OperatingLossCarryforwardsStateAndLocalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_CharitableContributionsCarryforwardMember" abstract="true" name="CharitableContributionsCarryforwardMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_EffectiveIncomeTaxRateReconciliationTaxCutsAndJobsActOf2017AmortizationOfRegulatoryLiabilityAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationTaxCutsAndJobsActOf2017AmortizationOfRegulatoryLiabilityAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_EffectiveIncomeTaxRateReconciliationAllowanceForFundsUsedDuringConstructionCapitalizedCostOfEquity" abstract="false" name="EffectiveIncomeTaxRateReconciliationAllowanceForFundsUsedDuringConstructionCapitalizedCostOfEquity" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_EffectiveIncomeTaxRateReconciliationInflationAndReductionActOf2022TaxCreditsSoldNetOfDiscountAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationInflationAndReductionActOf2022TaxCreditsSoldNetOfDiscountAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_EffectiveIncomeTaxRateReconciliationNuclearTaxCreditAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationNuclearTaxCreditAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_DeferredTaxAssetsLiabilities" abstract="false" name="DeferredTaxAssetsLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_NaturalGasCommodityContractMember" abstract="true" name="NaturalGasCommodityContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_ElectricityCommodityContractMember" abstract="true" name="ElectricityCommodityContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_EnvironmentalandOtherCommodityContractMember" abstract="true" name="EnvironmentalandOtherCommodityContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_FinancialTransmissionRightsMember" abstract="true" name="FinancialTransmissionRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_CurrentAssetMember" abstract="true" name="CurrentAssetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_NoncurrentAssetMember" abstract="true" name="NoncurrentAssetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_CurrentDerivativeLiabilityMember" abstract="true" name="CurrentDerivativeLiabilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_NoncurrentDerivativeLiabilityMember" abstract="true" name="NoncurrentDerivativeLiabilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_RestrictedCashMember" abstract="true" name="RestrictedCashMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_DerivativeAssetLiabilityFairValueGrossLiabilityAssetAndObligationToReturnCashAndRightToReclaimCashOffset" abstract="false" name="DerivativeAssetLiabilityFairValueGrossLiabilityAssetAndObligationToReturnCashAndRightToReclaimCashOffset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_EquityOrDebtSecuritiesMember" abstract="true" name="EquityOrDebtSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_NuclearDecommissioningTrustFundMember" abstract="true" name="NuclearDecommissioningTrustFundMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_FairValueInvestmentsEntitiesThatCalculateNetAssetValuePerShareContractualTerm" abstract="false" name="FairValueInvestmentsEntitiesThatCalculateNetAssetValuePerShareContractualTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dte_OtherCommodityContractMember" abstract="true" name="OtherCommodityContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationGainsLossesRecordedInRegulatoryAssetsLiabilities" abstract="false" name="FairValueNetDerivativeAssetLiabilityMeasuredOnRecurringBasisUnobservableInputsReconciliationGainsLossesRecordedInRegulatoryAssetsLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_FairValueAssetsMeasuredOnRecurringBasisChangeInUnrealizedGainLossIncludedInRegulatoryAssetsAndLiabilities" abstract="false" name="FairValueAssetsMeasuredOnRecurringBasisChangeInUnrealizedGainLossIncludedInRegulatoryAssetsAndLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_NuclearPlant1Member" abstract="true" name="NuclearPlant1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_LowLevelRadioactiveWasteMember" abstract="true" name="LowLevelRadioactiveWasteMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_DecommissioningFundInvestmentsAccumulatedGrossUnrealizedGainBeforeTax" abstract="false" name="DecommissioningFundInvestmentsAccumulatedGrossUnrealizedGainBeforeTax" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_DecommissioningFundInvestmentsAccumulatedGrossUnrealizedLossBeforeTax" abstract="false" name="DecommissioningFundInvestmentsAccumulatedGrossUnrealizedLossBeforeTax" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_CurrentDerivativeAssetMember" abstract="true" name="CurrentDerivativeAssetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_NoncurrentDerivativeAssetMember" abstract="true" name="NoncurrentDerivativeAssetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_LettersOfCreditIssuedThatCouldBeUsedToOffsetNetDerivativeLiabilities" abstract="false" name="LettersOfCreditIssuedThatCouldBeUsedToOffsetNetDerivativeLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LettersOfCreditReceivedUsedToOffsetNetDerivativeAssets" abstract="false" name="LettersOfCreditReceivedUsedToOffsetNetDerivativeAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_DerivativeNetAssetPositionAggregateFairValue" abstract="false" name="DerivativeNetAssetPositionAggregateFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_Remainingamountofoffsetstoderivativenetliabilitypositionsforhardandsofttriggerprovisions" abstract="false" name="Remainingamountofoffsetstoderivativenetliabilitypositionsforhardandsofttriggerprovisions" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_CashCollateralPostedReceivedNet" abstract="false" name="CashCollateralPostedReceivedNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_FinancialTransmissionRightsCommodityContractMember" abstract="true" name="FinancialTransmissionRightsCommodityContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_RenewableEnergyCommodityContractMember" abstract="true" name="RenewableEnergyCommodityContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_CarbonEmissionsCommodityContractMember" abstract="true" name="CarbonEmissionsCommodityContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_SecuredDebtUnsecuredDebtMortgageNotesandOtherDebtMember" abstract="true" name="SecuredDebtUnsecuredDebtMortgageNotesandOtherDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_SecuritizationBondsMember" abstract="true" name="SecuritizationBondsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_February20245.10SeniorNotesMaturingIn2029Member" abstract="true" name="February20245.10SeniorNotesMaturingIn2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_February20244.85MortgageBondsMaturingIn2026Member" abstract="true" name="February20244.85MortgageBondsMaturingIn2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_February20245.20MortgageBondsMaturingIn2034Member" abstract="true" name="February20245.20MortgageBondsMaturingIn2034Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_May20245.85SeniorNotesMaturingIn2034Member" abstract="true" name="May20245.85SeniorNotesMaturingIn2034Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_August20244.95SeniorNotesDue2027Member" abstract="true" name="August20244.95SeniorNotesDue2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_October20244.87FirstMortgageBondsMaturingIn2034Member" abstract="true" name="October20244.87FirstMortgageBondsMaturingIn2034Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_October20245.43FirstMortgageBondsMaturingIn2054Member" abstract="true" name="October20245.43FirstMortgageBondsMaturingIn2054Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_SeriesC2.53SeniorNotesDueOctober12024Member" abstract="true" name="SeriesC2.53SeniorNotesDueOctober12024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_SeriesF4.22SeniorNotesDueNovember12024Member" abstract="true" name="SeriesF4.22SeniorNotesDueNovember12024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_A2013SeriesBMortgageBondsMember" abstract="true" name="A2013SeriesBMortgageBondsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_A264SecuritizationBondsMember" abstract="true" name="A264SecuritizationBondsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_SecuritizationBonds5.97Due2024Member" abstract="true" name="SecuritizationBonds5.97Due2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_SeniorNotes2.53MaturingIn2024Member" abstract="true" name="SeniorNotes2.53MaturingIn2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_SecuritizationBonds2.64Member" abstract="true" name="SecuritizationBonds2.64Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_LongTermDebtInterestPaymentDueInYearOne" abstract="false" name="LongTermDebtInterestPaymentDueInYearOne" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LongTermDebtInterestPaymentDueInYearTwo" abstract="false" name="LongTermDebtInterestPaymentDueInYearTwo" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LongTermDebtInterestPaymentDueInYearThree" abstract="false" name="LongTermDebtInterestPaymentDueInYearThree" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LongTermDebtInterestPaymentDueInYearFour" abstract="false" name="LongTermDebtInterestPaymentDueInYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LongTermDebtInterestPaymentDueInYearFive" abstract="false" name="LongTermDebtInterestPaymentDueInYearFive" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LongTermDebtInterestPaymentDueAfterFifthYear" abstract="false" name="LongTermDebtInterestPaymentDueAfterFifthYear" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LongTermDebtInterestPayment" abstract="false" name="LongTermDebtInterestPayment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_PreferredAndPreferencedSecuritiesTable" abstract="true" name="PreferredAndPreferencedSecuritiesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="dte_PreferredAndPreferencedSecuritiesLineItems" abstract="true" name="PreferredAndPreferencedSecuritiesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_PreferenceStockParOrStatedValuePerShare" abstract="false" name="PreferenceStockParOrStatedValuePerShare" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="dte_PreferenceStockSharesAuthorized" abstract="false" name="PreferenceStockSharesAuthorized" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="dte_DTEEnergyRevolverMember" abstract="true" name="DTEEnergyRevolverMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_DemandFinancingAgreementMember" abstract="true" name="DemandFinancingAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_FinancingAgreementMaximumBorrowingCapacity" abstract="false" name="FinancingAgreementMaximumBorrowingCapacity" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_FinancingAgreementAmountOutstanding" abstract="false" name="FinancingAgreementAmountOutstanding" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LineOfCreditFacilityDividendRestrictionsAmount" abstract="false" name="LineOfCreditFacilityDividendRestrictionsAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_OtherRestrictionsonPaymentofDividendsAmount" abstract="false" name="OtherRestrictionsonPaymentofDividendsAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_UnsecuredRevolvingCreditFacilityExpiringInOctober2029Member" abstract="true" name="UnsecuredRevolvingCreditFacilityExpiringInOctober2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_UnsecuredLetterOfCreditFacilityExpiringInJune2025Member" abstract="true" name="UnsecuredLetterOfCreditFacilityExpiringInJune2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_UnsecuredLetterOfCreditFacilityExpiringInFebruary2025Member" abstract="true" name="UnsecuredLetterOfCreditFacilityExpiringInFebruary2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_UnsecuredLetterOfCreditFacilityExpiringInJune2026Member" abstract="true" name="UnsecuredLetterOfCreditFacilityExpiringInJune2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_A50MillionUnsecuredLetterOfCreditFacilityMember" abstract="true" name="A50MillionUnsecuredLetterOfCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_A125MillionUnsecuredLetterOfCreditFacilityMember" abstract="true" name="A125MillionUnsecuredLetterOfCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_LesseeLeaseTermOfContract" abstract="false" name="LesseeLeaseTermOfContract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dte_FinanceLeaseCost1Abstract" abstract="true" name="FinanceLeaseCost1Abstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_FinanceLeaseCost" abstract="false" name="FinanceLeaseCost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LesseeCashFlowsSupplementalDisclosuresAbstract" abstract="true" name="LesseeCashFlowsSupplementalDisclosuresAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_CashPaidforAmountsIncludedinMeasurementofLeaseLiabilitiesAbstract" abstract="true" name="CashPaidforAmountsIncludedinMeasurementofLeaseLiabilitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_RightOfUseAssetObtainedInExchangeForLeaseLiabilityAbstract" abstract="true" name="RightOfUseAssetObtainedInExchangeForLeaseLiabilityAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_WeightedAverageRemainingLeaseTermAbstract" abstract="true" name="WeightedAverageRemainingLeaseTermAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_LeasesWeightedAverageDiscountRateAbstract" abstract="true" name="LeasesWeightedAverageDiscountRateAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_CoalCombustionResidualAndEffluentLimitationsGuidelinesRulesMember" abstract="true" name="CoalCombustionResidualAndEffluentLimitationsGuidelinesRulesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_LegacyCCRSurfaceImpoundmentsAndCCRManagementUnitsMember" abstract="true" name="LegacyCCRSurfaceImpoundmentsAndCCRManagementUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_ToshibaAmericaEnergySystemsAndToshibaCorporationMember" abstract="true" name="ToshibaAmericaEnergySystemsAndToshibaCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_CleanUpCompletedandSiteClosedMember" abstract="true" name="CleanUpCompletedandSiteClosedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_PartialClosureCompleteMember" abstract="true" name="PartialClosureCompleteMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_ReducedEmissionsFuelGuaranteesMember" abstract="true" name="ReducedEmissionsFuelGuaranteesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_DTEElectricAndConsumersEnergyCompanyMember" abstract="true" name="DTEElectricAndConsumersEnergyCompanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_LudingtonPlantContractDisputeMember" abstract="true" name="LudingtonPlantContractDisputeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_EnvironmentalCapitalExpendituresCumulativeAmount" abstract="false" name="EnvironmentalCapitalExpendituresCumulativeAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_EstimatedEnvironmentalCapitalExpenditures" abstract="false" name="EstimatedEnvironmentalCapitalExpenditures" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_NumberOfFormerMgpSites" abstract="false" name="NumberOfFormerMgpSites" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="dte_PeriodGasUtilityCanAmortizeMgpCosts" abstract="false" name="PeriodGasUtilityCanAmortizeMgpCosts" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dte_GuarantorObligationsTermAfterExpirationOfStatutesOfLimitations" abstract="false" name="GuarantorObligationsTermAfterExpirationOfStatutesOfLimitations" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dte_GuarantorObligationsTerm" abstract="false" name="GuarantorObligationsTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dte_EstimatedFutureCapitalExpendituresForNextYear" abstract="false" name="EstimatedFutureCapitalExpendituresForNextYear" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LossContingencyDamagesSoughtPercentageLiable" abstract="false" name="LossContingencyDamagesSoughtPercentageLiable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="dte_PowerPurchaseAgreementsMember" abstract="true" name="PowerPurchaseAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_OtherPurchaseCommitmentsMember" abstract="true" name="OtherPurchaseCommitmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_InsuredEventPolicyWaitingPeriod" abstract="false" name="InsuredEventPolicyWaitingPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dte_InsuranceCoverageForExtraExpenseWhenPowerPlantUnavailable" abstract="false" name="InsuranceCoverageForExtraExpenseWhenPowerPlantUnavailable" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_PeriodOfCoverageOfPolicyForExtraExpenses" abstract="false" name="PeriodOfCoverageOfPolicyForExtraExpenses" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dte_PrimaryCoverageForStabilizationDecontaminationDebrisRemovalRepairAndReplacementOfPropertyAndDecommissioning" abstract="false" name="PrimaryCoverageForStabilizationDecontaminationDebrisRemovalRepairAndReplacementOfPropertyAndDecommissioning" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_ExcessCoverageForStabilizationDecontaminationDebrisRemovalRepairAndReplacementOfPropertyAndDecommissioning" abstract="false" name="ExcessCoverageForStabilizationDecontaminationDebrisRemovalRepairAndReplacementOfPropertyAndDecommissioning" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_CombinedCoverageLimitForTotalPropertyDamage" abstract="false" name="CombinedCoverageLimitForTotalPropertyDamage" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_TotalLimitForPropertyDamageForNonNuclearEvents" abstract="false" name="TotalLimitForPropertyDamageForNonNuclearEvents" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LimitOfCoverageForAggregateExtraExpensesForNonNuclearEvents" abstract="false" name="LimitOfCoverageForAggregateExtraExpensesForNonNuclearEvents" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LimitForPropertyDamageForNonNuclearEventsAggregateOfExtraExpensesOfPeriod" abstract="false" name="LimitForPropertyDamageForNonNuclearEventsAggregateOfExtraExpensesOfPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dte_TimePeriodForTriaInsuranceAfterFirstLossFromTerrorism" abstract="false" name="TimePeriodForTriaInsuranceAfterFirstLossFromTerrorism" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dte_NEILPoliciesAgainstTerrorismLoss" abstract="false" name="NEILPoliciesAgainstTerrorismLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_AmountPerEventLossAssociatedWithNuclearPowerPlants" abstract="false" name="AmountPerEventLossAssociatedWithNuclearPowerPlants" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_MaintenanceOfPublicLiabilityInsuranceForNuclearPowerPlants" abstract="false" name="MaintenanceOfPublicLiabilityInsuranceForNuclearPowerPlants" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_MaximumDeferredPremiumChargesLeviedAgainstEachLicensedNuclearFacility" abstract="false" name="MaximumDeferredPremiumChargesLeviedAgainstEachLicensedNuclearFacility" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_LimitDeferredPremiumChargesPerYear" abstract="false" name="LimitDeferredPremiumChargesPerYear" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_CompanyObligatedToPayDOEFeeOfFermi2ElectricityGeneratedAndSold" abstract="false" name="CompanyObligatedToPayDOEFeeOfFermi2ElectricityGeneratedAndSold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="srt-types:perUnitItemType"/>
+  <xs:element id="dte_NewDOEFeeForNuclearWaste" abstract="false" name="NewDOEFeeForNuclearWaste" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:energyItemType"/>
+  <xs:element id="dte_DefinedBenefitPlanNetPeriodicBenefitCostCreditAmortizationAbstract" abstract="true" name="DefinedBenefitPlanNetPeriodicBenefitCostCreditAmortizationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_RegulatoryAssetsandOtherComprehensiveIncomeLossPensionandOtherPostretirementBenefitPlansAdjustmentbeforeTaxAbstract" abstract="true" name="RegulatoryAssetsandOtherComprehensiveIncomeLossPensionandOtherPostretirementBenefitPlansAdjustmentbeforeTaxAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_RegulatoryAssetsAndOtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansNetUnamortizedGainLossArisingDuringPeriodBeforeTax" abstract="false" name="RegulatoryAssetsAndOtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansNetUnamortizedGainLossArisingDuringPeriodBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_RegulatoryAssetsAndOtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCIPensionAndOtherPostretirementBenefitPlansForNetGainLossAndSettlementsBeforeTax" abstract="false" name="RegulatoryAssetsAndOtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCIPensionAndOtherPostretirementBenefitPlansForNetGainLossAndSettlementsBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_RegulatoryAssetsandOtherComprehensiveIncomeLossAmortizationAdjustmentfromAOCIPensionandOtherPostretirementBenefitPlansforNetPriorServiceCostCreditbeforeTax" abstract="false" name="RegulatoryAssetsandOtherComprehensiveIncomeLossAmortizationAdjustmentfromAOCIPensionandOtherPostretirementBenefitPlansforNetPriorServiceCostCreditbeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_RegulatoryAssetsAndOtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansAdjustmentBeforeTax" abstract="false" name="RegulatoryAssetsAndOtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansAdjustmentBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_ChangesInPlanAssetsAndBenefitObligationsRecognizedInPensionCostComprehensiveIncomeAndRegulatoryAssets" abstract="false" name="ChangesInPlanAssetsAndBenefitObligationsRecognizedInPensionCostComprehensiveIncomeAndRegulatoryAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_DefinedBenefitPlanAmountsRecognizedinRegulatoryAssetsLiabilitiesAbstract" abstract="true" name="DefinedBenefitPlanAmountsRecognizedinRegulatoryAssetsLiabilitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_NetActuarialLossRecognizedInRegulatoryAssets" abstract="false" name="NetActuarialLossRecognizedInRegulatoryAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_PriorServiceCostCreditRecognizedInRegulatoryAssets" abstract="false" name="PriorServiceCostCreditRecognizedInRegulatoryAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_DefinedBenefitPlanExpectedReturnOnPlanAssetsNextFiscalYear" abstract="false" name="DefinedBenefitPlanExpectedReturnOnPlanAssetsNextFiscalYear" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="dte_RetireeHealthCareAllowancewillincreaseatloweroftherateofmedicalinflationorasetpercentage" abstract="false" name="RetireeHealthCareAllowancewillincreaseatloweroftherateofmedicalinflationorasetpercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="dte_TotalExpectedFutureBenefitPayments" abstract="false" name="TotalExpectedFutureBenefitPayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_DefinedBenefitPlanEquitySecuritiesUSSmallCapandMidCapMember" abstract="true" name="DefinedBenefitPlanEquitySecuritiesUSSmallCapandMidCapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_FixedIncomeSecuritiesGovernmentalMember" abstract="true" name="FixedIncomeSecuritiesGovernmentalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_FixedIncomeSecuritiesCorporateMember" abstract="true" name="FixedIncomeSecuritiesCorporateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_RegulatoryAssetsAndOtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCIPensionAndOtherPostretirementBenefitPlansForNetGainLossBeforeTax" abstract="false" name="RegulatoryAssetsAndOtherComprehensiveIncomeLossReclassificationAdjustmentFromAOCIPensionAndOtherPostretirementBenefitPlansForNetGainLossBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_DefinedBenefitPlanPlanWithAccumulatedBenefitObligationInExcessOfPlanAssetsPlanAssetsAccumulatedBenefitObligationNet" abstract="false" name="DefinedBenefitPlanPlanWithAccumulatedBenefitObligationInExcessOfPlanAssetsPlanAssetsAccumulatedBenefitObligationNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_DefinedBenefitPlanHealthCareTrendRatePreSixtyFive" abstract="false" name="DefinedBenefitPlanHealthCareTrendRatePreSixtyFive" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="dte_DefinedBenefitPlanHealthCareTrendRatePostSixtyFive" abstract="false" name="DefinedBenefitPlanHealthCareTrendRatePostSixtyFive" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="dte_DefinedBenefitPlanHealthCareCostTrendRateAssumedforNextFiscalYearPreSixtyFive" abstract="false" name="DefinedBenefitPlanHealthCareCostTrendRateAssumedforNextFiscalYearPreSixtyFive" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="dte_DefinedBenefitPlanHealthCareCostTrendRateAssumedForNextFiscalYearPostSixtyFive" abstract="false" name="DefinedBenefitPlanHealthCareCostTrendRateAssumedForNextFiscalYearPostSixtyFive" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="dte_PerformanceUnitMember" abstract="true" name="PerformanceUnitMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_ShareBasedCompensationArrangementbySharebasedPaymentAwardMaximumAwardPerEmployee" abstract="false" name="ShareBasedCompensationArrangementbySharebasedPaymentAwardMaximumAwardPerEmployee" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="dte_PerformanceUnitsPricePerUnit" abstract="false" name="PerformanceUnitsPricePerUnit" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="dte_AllocatedShareBasedCompensationExpenseEquityAndLiability" abstract="false" name="AllocatedShareBasedCompensationExpenseEquityAndLiability" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_EmployeeServiceShareBasedCompensationEquityAndLiabilityTax" abstract="false" name="EmployeeServiceShareBasedCompensationEquityAndLiabilityTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_CompensationExpenseRecordedTable" abstract="true" name="CompensationExpenseRecordedTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="dte_CompensationExpenseRecordedLineItems" abstract="true" name="CompensationExpenseRecordedLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_EmployeeServiceShareBasedCompensationCashFlowEffectCashUsedToSettleEquityAndLiabilityAwards" abstract="false" name="EmployeeServiceShareBasedCompensationCashFlowEffectCashUsedToSettleEquityAndLiabilityAwards" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_EmployeeServiceShareBasedCompensationStockUsedToSettleAwards" abstract="false" name="EmployeeServiceShareBasedCompensationStockUsedToSettleAwards" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_SharebasedCompensationArrangementbySharebasedPaymentAwardLiabilityandEquityInstrumentsOtherthanOptionsOutstandingRollForward" abstract="true" name="SharebasedCompensationArrangementbySharebasedPaymentAwardLiabilityandEquityInstrumentsOtherthanOptionsOutstandingRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_ShareBasedCompensationArrangementByShareBasedPaymentAwardLiabilityAndEquityInstrumentsOtherThanOptionsOutstandingNumber" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardLiabilityAndEquityInstrumentsOtherThanOptionsOutstandingNumber" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="dte_ShareBasedCompensationArrangementByShareBasedPaymentAwardLiabilityAndEquityInstrumentsOtherThanOptionsGrantsInPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardLiabilityAndEquityInstrumentsOtherThanOptionsGrantsInPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="dte_SharebasedCompensationArrangementbySharebasedPaymentAwardLiabilityandEquityInstrumentsotherthanoptionsForfeituresandExpirationsinPeriod" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardLiabilityandEquityInstrumentsotherthanoptionsForfeituresandExpirationsinPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="dte_ShareBasedCompensationArrangementByShareBasedPaymentAwardLiabilityAndEquityInstrumentsOtherThanOptionsPayoutsInPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardLiabilityAndEquityInstrumentsOtherThanOptionsPayoutsInPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="dte_SharebasedCompensationArrangementbySharebasedPaymentAwardEquityInstrumentsOtherthanOptionsWeightedAverageGrantDateFairValuePayouts" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardEquityInstrumentsOtherthanOptionsWeightedAverageGrantDateFairValuePayouts" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="dte_ShareBasedCompensationUnrecognizedCompensationCostTable" abstract="true" name="ShareBasedCompensationUnrecognizedCompensationCostTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="dte_ShareBasedCompensationUnrecognizedAndNonVestedCostLineItems" abstract="true" name="ShareBasedCompensationUnrecognizedAndNonVestedCostLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_OtherSegmentFinancialDataAbstract" abstract="true" name="OtherSegmentFinancialDataAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dte_PaymentsToAcquireProductiveAssetsIncludingPaymentsToAcquireBusinessesNetOfCashAcquired" abstract="false" name="PaymentsToAcquireProductiveAssetsIncludingPaymentsToAcquireBusinessesNetOfCashAcquired" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dte_EnergySalesMember" abstract="true" name="EnergySalesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_OtherServicesRevenueAndInterestIncomeMember" abstract="true" name="OtherServicesRevenueAndInterestIncomeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_SharedCapitalAssetsMember" abstract="true" name="SharedCapitalAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_FuelandPowerPurchasesMember" abstract="true" name="FuelandPowerPurchasesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_OtherServicesCostsAndInterestExpenseMember" abstract="true" name="OtherServicesCostsAndInterestExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dte_CorporateExpensesMember" abstract="true" name="CorporateExpensesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="dte_CapitalContributionByParentCompany" abstract="false" name="CapitalContributionByParentCompany" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

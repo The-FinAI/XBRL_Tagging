@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2025 Workiva-->
+<!--r:f7fbdc74-6421-4087-9697-813aa63a3c36,g:d74fa138-0919-4aad-a426-c9ff6779648d-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:axta="http://www.axaltacs.com/20241231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.axaltacs.com/20241231">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="axta-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="axta-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="axta-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="axta-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.axaltacs.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.axaltacs.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofOperations" roleURI="http://www.axaltacs.com/role/ConsolidatedStatementsofOperations">
+        <link:definition>9952151 - Statement - Consolidated Statements of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncome" roleURI="http://www.axaltacs.com/role/ConsolidatedStatementsofComprehensiveIncome">
+        <link:definition>9952152 - Statement - Consolidated Statements of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.axaltacs.com/role/ConsolidatedBalanceSheets">
+        <link:definition>9952153 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.axaltacs.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>9952154 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofChangesinStockholdersEquity" roleURI="http://www.axaltacs.com/role/ConsolidatedStatementofChangesinStockholdersEquity">
+        <link:definition>9952155 - Statement - Consolidated Statement of Changes in Stockholders Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofChangesinShareholdersEquityParenthetical" roleURI="http://www.axaltacs.com/role/ConsolidatedStatementofChangesinShareholdersEquityParenthetical">
+        <link:definition>9952156 - Statement - Consolidated Statement of Changes in Shareholders' Equity (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://www.axaltacs.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>9952157 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BASISOFPRESENTATIONANDSUMMARYOFSIGNIFICANTACCOUNTINGPOLICIES" roleURI="http://www.axaltacs.com/role/BASISOFPRESENTATIONANDSUMMARYOFSIGNIFICANTACCOUNTINGPOLICIES">
+        <link:definition>9952158 - Disclosure - BASIS OF PRESENTATION AND SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUE" roleURI="http://www.axaltacs.com/role/REVENUE">
+        <link:definition>9952159 - Disclosure - REVENUE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONS" roleURI="http://www.axaltacs.com/role/ACQUISITIONS">
+        <link:definition>9952160 - Disclosure - ACQUISITIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDIDENTIFIABLEINTANGIBLEASSETS" roleURI="http://www.axaltacs.com/role/GOODWILLANDIDENTIFIABLEINTANGIBLEASSETS">
+        <link:definition>9952161 - Disclosure - GOODWILL AND IDENTIFIABLE INTANGIBLE ASSETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURING" roleURI="http://www.axaltacs.com/role/RESTRUCTURING">
+        <link:definition>9952162 - Disclosure - RESTRUCTURING</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSANDCONTINGENCIES" roleURI="http://www.axaltacs.com/role/COMMITMENTSANDCONTINGENCIES">
+        <link:definition>9952163 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASES" roleURI="http://www.axaltacs.com/role/LEASES">
+        <link:definition>9952164 - Disclosure - LEASES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMEMPLOYEEBENEFITS" roleURI="http://www.axaltacs.com/role/LONGTERMEMPLOYEEBENEFITS">
+        <link:definition>9952165 - Disclosure - LONG-TERM EMPLOYEE BENEFITS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATION" roleURI="http://www.axaltacs.com/role/STOCKBASEDCOMPENSATION">
+        <link:definition>9952166 - Disclosure - STOCK-BASED COMPENSATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHEREXPENSENET" roleURI="http://www.axaltacs.com/role/OTHEREXPENSENET">
+        <link:definition>9952167 - Disclosure - OTHER EXPENSE, NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXES" roleURI="http://www.axaltacs.com/role/INCOMETAXES">
+        <link:definition>9952168 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NETINCOMEPERCOMMONSHARE" roleURI="http://www.axaltacs.com/role/NETINCOMEPERCOMMONSHARE">
+        <link:definition>9952169 - Disclosure - NET INCOME PER COMMON SHARE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCOUNTSANDNOTESRECEIVABLENET" roleURI="http://www.axaltacs.com/role/ACCOUNTSANDNOTESRECEIVABLENET">
+        <link:definition>9952170 - Disclosure - ACCOUNTS AND NOTES RECEIVABLE, NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVENTORIES" roleURI="http://www.axaltacs.com/role/INVENTORIES">
+        <link:definition>9952171 - Disclosure - INVENTORIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYPLANTANDEQUIPMENTNET" roleURI="http://www.axaltacs.com/role/PROPERTYPLANTANDEQUIPMENTNET">
+        <link:definition>9952172 - Disclosure - PROPERTY, PLANT AND EQUIPMENT, NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERASSETS" roleURI="http://www.axaltacs.com/role/OTHERASSETS">
+        <link:definition>9952173 - Disclosure - OTHER ASSETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCOUNTSPAYABLEANDOTHERACCRUEDLIABILITIES" roleURI="http://www.axaltacs.com/role/ACCOUNTSPAYABLEANDOTHERACCRUEDLIABILITIES">
+        <link:definition>9952174 - Disclosure - ACCOUNTS PAYABLE AND OTHER ACCRUED LIABILITIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLIERFINANCEPROGRAMS" roleURI="http://www.axaltacs.com/role/SUPPLIERFINANCEPROGRAMS">
+        <link:definition>9952175 - Disclosure - SUPPLIER FINANCE PROGRAMS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGS" roleURI="http://www.axaltacs.com/role/BORROWINGS">
+        <link:definition>9952176 - Disclosure - BORROWINGS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTS" roleURI="http://www.axaltacs.com/role/FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTS">
+        <link:definition>9952177 - Disclosure - FINANCIAL INSTRUMENTS, HEDGING ACTIVITIES AND FAIR VALUE MEASUREMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTS" roleURI="http://www.axaltacs.com/role/SEGMENTS">
+        <link:definition>9952178 - Disclosure - SEGMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVELOSS" roleURI="http://www.axaltacs.com/role/ACCUMULATEDOTHERCOMPREHENSIVELOSS">
+        <link:definition>9952179 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE LOSS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleII" roleURI="http://www.axaltacs.com/role/ScheduleII">
+        <link:definition>9952180 - Disclosure - Schedule II</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BASISOFPRESENTATIONANDSUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESPolicies" roleURI="http://www.axaltacs.com/role/BASISOFPRESENTATIONANDSUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESPolicies">
+        <link:definition>9955511 - Disclosure - BASIS OF PRESENTATION AND SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractwithCustomerPolicies" roleURI="http://www.axaltacs.com/role/RevenuefromContractwithCustomerPolicies">
+        <link:definition>9955512 - Disclosure - Revenue from Contract with Customer (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSTables" roleURI="http://www.axaltacs.com/role/ACQUISITIONSTables">
+        <link:definition>9955513 - Disclosure - ACQUISITIONS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDIDENTIFIABLEINTANGIBLEASSETSTables" roleURI="http://www.axaltacs.com/role/GOODWILLANDIDENTIFIABLEINTANGIBLEASSETSTables">
+        <link:definition>9955514 - Disclosure - GOODWILL AND IDENTIFIABLE INTANGIBLE ASSETS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURINGTables" roleURI="http://www.axaltacs.com/role/RESTRUCTURINGTables">
+        <link:definition>9955515 - Disclosure - RESTRUCTURING (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESTables" roleURI="http://www.axaltacs.com/role/LEASESTables">
+        <link:definition>9955516 - Disclosure - LEASES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMEMPLOYEEBENEFITSTables" roleURI="http://www.axaltacs.com/role/LONGTERMEMPLOYEEBENEFITSTables">
+        <link:definition>9955517 - Disclosure - LONG-TERM EMPLOYEE BENEFITS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONTables" roleURI="http://www.axaltacs.com/role/STOCKBASEDCOMPENSATIONTables">
+        <link:definition>9955518 - Disclosure - STOCK-BASED COMPENSATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHEREXPENSENETTables" roleURI="http://www.axaltacs.com/role/OTHEREXPENSENETTables">
+        <link:definition>9955519 - Disclosure - OTHER EXPENSE, NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESTables" roleURI="http://www.axaltacs.com/role/INCOMETAXESTables">
+        <link:definition>9955520 - Disclosure - INCOME TAXES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NETINCOMEPERCOMMONSHARETables" roleURI="http://www.axaltacs.com/role/NETINCOMEPERCOMMONSHARETables">
+        <link:definition>9955521 - Disclosure - NET INCOME PER COMMON SHARE (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCOUNTSANDNOTESRECEIVABLENETTables" roleURI="http://www.axaltacs.com/role/ACCOUNTSANDNOTESRECEIVABLENETTables">
+        <link:definition>9955522 - Disclosure - ACCOUNTS AND NOTES RECEIVABLE, NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVENTORIESTables" roleURI="http://www.axaltacs.com/role/INVENTORIESTables">
+        <link:definition>9955523 - Disclosure - INVENTORIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYPLANTANDEQUIPMENTNETTables" roleURI="http://www.axaltacs.com/role/PROPERTYPLANTANDEQUIPMENTNETTables">
+        <link:definition>9955524 - Disclosure - PROPERTY, PLANT AND EQUIPMENT, NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERASSETSTables" roleURI="http://www.axaltacs.com/role/OTHERASSETSTables">
+        <link:definition>9955525 - Disclosure - OTHER ASSETS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCOUNTSPAYABLEANDOTHERACCRUEDLIABILITIESTables" roleURI="http://www.axaltacs.com/role/ACCOUNTSPAYABLEANDOTHERACCRUEDLIABILITIESTables">
+        <link:definition>9955526 - Disclosure - ACCOUNTS PAYABLE AND OTHER ACCRUED LIABILITIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLIERFINANCEPROGRAMSTables" roleURI="http://www.axaltacs.com/role/SUPPLIERFINANCEPROGRAMSTables">
+        <link:definition>9955527 - Disclosure - SUPPLIER FINANCE PROGRAMS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSTables" roleURI="http://www.axaltacs.com/role/BORROWINGSTables">
+        <link:definition>9955528 - Disclosure - BORROWINGS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSTables" roleURI="http://www.axaltacs.com/role/FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSTables">
+        <link:definition>9955529 - Disclosure - FINANCIAL INSTRUMENTS, HEDGING ACTIVITIES AND FAIR VALUE MEASUREMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTSTables" roleURI="http://www.axaltacs.com/role/SEGMENTSTables">
+        <link:definition>9955530 - Disclosure - SEGMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVELOSSTables" roleURI="http://www.axaltacs.com/role/ACCUMULATEDOTHERCOMPREHENSIVELOSSTables">
+        <link:definition>9955531 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE LOSS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BASISOFPRESENTATIONANDSUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/BASISOFPRESENTATIONANDSUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESAdditionalInformationDetails">
+        <link:definition>9955532 - Disclosure - BASIS OF PRESENTATION AND SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEDetails" roleURI="http://www.axaltacs.com/role/REVENUEDetails">
+        <link:definition>9955533 - Disclosure - REVENUE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/ACQUISITIONSAdditionalInformationDetails">
+        <link:definition>9955534 - Disclosure - ACQUISITIONS - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSScheduleofAssetsAcquiredandLiabilitiesAssumedDetails" roleURI="http://www.axaltacs.com/role/ACQUISITIONSScheduleofAssetsAcquiredandLiabilitiesAssumedDetails">
+        <link:definition>9955535 - Disclosure - ACQUISITIONS - Schedule of Assets Acquired and Liabilities Assumed (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDIDENTIFIABLEINTANGIBLEASSETSScheduleofGoodwillDetails" roleURI="http://www.axaltacs.com/role/GOODWILLANDIDENTIFIABLEINTANGIBLEASSETSScheduleofGoodwillDetails">
+        <link:definition>9955536 - Disclosure - GOODWILL AND IDENTIFIABLE INTANGIBLE ASSETS - Schedule of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDIDENTIFIABLEINTANGIBLEASSETSScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsbyMajorClassDetails" roleURI="http://www.axaltacs.com/role/GOODWILLANDIDENTIFIABLEINTANGIBLEASSETSScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsbyMajorClassDetails">
+        <link:definition>9955537 - Disclosure - GOODWILL AND IDENTIFIABLE INTANGIBLE ASSETS - Schedule of Finite-Lived and Indefinite-Lived Intangible Assets by Major Class (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDIDENTIFIABLEINTANGIBLEASSETSScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsbyMajorClassDetails_1" roleURI="http://www.axaltacs.com/role/GOODWILLANDIDENTIFIABLEINTANGIBLEASSETSScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsbyMajorClassDetails_1">
+        <link:definition>9955537 - Disclosure - GOODWILL AND IDENTIFIABLE INTANGIBLE ASSETS - Schedule of Finite-Lived and Indefinite-Lived Intangible Assets by Major Class (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDIDENTIFIABLEINTANGIBLEASSETSScheduleofExpectedAmortizationExpenseDetails" roleURI="http://www.axaltacs.com/role/GOODWILLANDIDENTIFIABLEINTANGIBLEASSETSScheduleofExpectedAmortizationExpenseDetails">
+        <link:definition>9955538 - Disclosure - GOODWILL AND IDENTIFIABLE INTANGIBLE ASSETS - Schedule of Expected Amortization Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURINGAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/RESTRUCTURINGAdditionalInformationDetails">
+        <link:definition>9955539 - Disclosure - RESTRUCTURING - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESTRUCTURINGScheduleofRestructuringandRelatedCostsDetails" roleURI="http://www.axaltacs.com/role/RESTRUCTURINGScheduleofRestructuringandRelatedCostsDetails">
+        <link:definition>9955540 - Disclosure - RESTRUCTURING - Schedule of Restructuring and Related Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSANDCONTINGENCIESDetails" roleURI="http://www.axaltacs.com/role/COMMITMENTSANDCONTINGENCIESDetails">
+        <link:definition>9955541 - Disclosure - COMMITMENTS AND CONTINGENCIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofSupplementalBalanceSheetInformationDetails" roleURI="http://www.axaltacs.com/role/LEASESScheduleofSupplementalBalanceSheetInformationDetails">
+        <link:definition>9955542 - Disclosure - LEASES - Schedule of Supplemental Balance Sheet Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofComponentsofLeaseExpensesDetails" roleURI="http://www.axaltacs.com/role/LEASESScheduleofComponentsofLeaseExpensesDetails">
+        <link:definition>9955543 - Disclosure - LEASES - Schedule of Components of Lease Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofSupplementalCashFlowInformationtoLeasesDetails" roleURI="http://www.axaltacs.com/role/LEASESScheduleofSupplementalCashFlowInformationtoLeasesDetails">
+        <link:definition>9955544 - Disclosure - LEASES - Schedule of Supplemental Cash Flow Information to Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofLeaseTermandDiscountRateDetails" roleURI="http://www.axaltacs.com/role/LEASESScheduleofLeaseTermandDiscountRateDetails">
+        <link:definition>9955545 - Disclosure - LEASES - Schedule of Lease Term and Discount Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofMaturityofLeaseLiabilitiesDetails" roleURI="http://www.axaltacs.com/role/LEASESScheduleofMaturityofLeaseLiabilitiesDetails">
+        <link:definition>9955546 - Disclosure - LEASES - Schedule of Maturity of Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESScheduleofMaturityofLeaseLiabilitiesDetails_1" roleURI="http://www.axaltacs.com/role/LEASESScheduleofMaturityofLeaseLiabilitiesDetails_1">
+        <link:definition>9955546 - Disclosure - LEASES - Schedule of Maturity of Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMEMPLOYEEBENEFITSAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/LONGTERMEMPLOYEEBENEFITSAdditionalInformationDetails">
+        <link:definition>9955547 - Disclosure - LONG-TERM EMPLOYEE BENEFITS - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMEMPLOYEEBENEFITSScheduleofDefinedBenefitPlansDetails" roleURI="http://www.axaltacs.com/role/LONGTERMEMPLOYEEBENEFITSScheduleofDefinedBenefitPlansDetails">
+        <link:definition>9955548 - Disclosure - LONG-TERM EMPLOYEE BENEFITS - Schedule of Defined Benefit Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMEMPLOYEEBENEFITSScheduleofAccumulatedandProjectedBenefitObligationsDetails" roleURI="http://www.axaltacs.com/role/LONGTERMEMPLOYEEBENEFITSScheduleofAccumulatedandProjectedBenefitObligationsDetails">
+        <link:definition>9955549 - Disclosure - LONG-TERM EMPLOYEE BENEFITS - Schedule of Accumulated and Projected Benefit Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMEMPLOYEEBENEFITSScheduleofAmountsRecognizedinAccumulatedOtherComprehensiveIncomeDetails" roleURI="http://www.axaltacs.com/role/LONGTERMEMPLOYEEBENEFITSScheduleofAmountsRecognizedinAccumulatedOtherComprehensiveIncomeDetails">
+        <link:definition>9955550 - Disclosure - LONG-TERM EMPLOYEE BENEFITS - Schedule of Amounts Recognized in Accumulated Other Comprehensive Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMEMPLOYEEBENEFITSScheduleofNetBenefitCostDetails" roleURI="http://www.axaltacs.com/role/LONGTERMEMPLOYEEBENEFITSScheduleofNetBenefitCostDetails">
+        <link:definition>9955551 - Disclosure - LONG-TERM EMPLOYEE BENEFITS - Schedule of Net Benefit Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMEMPLOYEEBENEFITSScheduleofAssumptionsUsedDetails" roleURI="http://www.axaltacs.com/role/LONGTERMEMPLOYEEBENEFITSScheduleofAssumptionsUsedDetails">
+        <link:definition>9955552 - Disclosure - LONG-TERM EMPLOYEE BENEFITS - Schedule of Assumptions Used (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMEMPLOYEEBENEFITSScheduleofExpectedBenefitPaymentsDetails" roleURI="http://www.axaltacs.com/role/LONGTERMEMPLOYEEBENEFITSScheduleofExpectedBenefitPaymentsDetails">
+        <link:definition>9955553 - Disclosure - LONG-TERM EMPLOYEE BENEFITS - Schedule of Expected Benefit Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMEMPLOYEEBENEFITSScheduleofAllocationofPlanAssetsDetails" roleURI="http://www.axaltacs.com/role/LONGTERMEMPLOYEEBENEFITSScheduleofAllocationofPlanAssetsDetails">
+        <link:definition>9955554 - Disclosure - LONG-TERM EMPLOYEE BENEFITS - Schedule of Allocation of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMEMPLOYEEBENEFITSScheduleofFairValueofDefinedBenefitPensionPlanAssetsDetails" roleURI="http://www.axaltacs.com/role/LONGTERMEMPLOYEEBENEFITSScheduleofFairValueofDefinedBenefitPensionPlanAssetsDetails">
+        <link:definition>9955555 - Disclosure - LONG-TERM EMPLOYEE BENEFITS - Schedule of Fair Value of Defined Benefit Pension Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LONGTERMEMPLOYEEBENEFITSScheduleofEffectofSignificantUnobservableInputsChangesinPlanAssetsDetails" roleURI="http://www.axaltacs.com/role/LONGTERMEMPLOYEEBENEFITSScheduleofEffectofSignificantUnobservableInputsChangesinPlanAssetsDetails">
+        <link:definition>9955556 - Disclosure - LONG-TERM EMPLOYEE BENEFITS - Schedule of Effect of Significant Unobservable Inputs, Changes in Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/STOCKBASEDCOMPENSATIONAdditionalInformationDetails">
+        <link:definition>9955557 - Disclosure - STOCK-BASED COMPENSATION - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONScheduleofRestrictedStockAwardsandRestrictedStockUnitsDetails" roleURI="http://www.axaltacs.com/role/STOCKBASEDCOMPENSATIONScheduleofRestrictedStockAwardsandRestrictedStockUnitsDetails">
+        <link:definition>9955558 - Disclosure - STOCK-BASED COMPENSATION - Schedule of Restricted Stock Awards and Restricted Stock Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKBASEDCOMPENSATIONScheduleofPerformanceSharesAwardOutstandingActivityDetails" roleURI="http://www.axaltacs.com/role/STOCKBASEDCOMPENSATIONScheduleofPerformanceSharesAwardOutstandingActivityDetails">
+        <link:definition>9955559 - Disclosure - STOCK-BASED COMPENSATION - Schedule of Performance Shares Award Outstanding Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHEREXPENSENETScheduleofOtherExpenseNetDetails" roleURI="http://www.axaltacs.com/role/OTHEREXPENSENETScheduleofOtherExpenseNetDetails">
+        <link:definition>9955560 - Disclosure - OTHER EXPENSE, NET - Schedule of Other Expense, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/INCOMETAXESAdditionalInformationDetails">
+        <link:definition>9955561 - Disclosure - INCOME TAXES - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofIncomebeforeIncomeTaxDomesticandForeignDetails" roleURI="http://www.axaltacs.com/role/INCOMETAXESScheduleofIncomebeforeIncomeTaxDomesticandForeignDetails">
+        <link:definition>9955562 - Disclosure - INCOME TAXES - Schedule of Income before Income Tax, Domestic and Foreign (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofComponentsofIncomeTaxExpenseBenefitDetails" roleURI="http://www.axaltacs.com/role/INCOMETAXESScheduleofComponentsofIncomeTaxExpenseBenefitDetails">
+        <link:definition>9955563 - Disclosure - INCOME TAXES - Schedule of Components of Income Tax Expense (Benefit) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofEffectiveIncomeTaxRateReconciliationDetails" roleURI="http://www.axaltacs.com/role/INCOMETAXESScheduleofEffectiveIncomeTaxRateReconciliationDetails">
+        <link:definition>9955564 - Disclosure - INCOME TAXES - Schedule of Effective Income Tax Rate Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofDeferredTaxAssetsandLiabilitiesDetails" roleURI="http://www.axaltacs.com/role/INCOMETAXESScheduleofDeferredTaxAssetsandLiabilitiesDetails">
+        <link:definition>9955565 - Disclosure - INCOME TAXES - Schedule of Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofDeferredTaxAssetsandLiabilitiesDetails_1" roleURI="http://www.axaltacs.com/role/INCOMETAXESScheduleofDeferredTaxAssetsandLiabilitiesDetails_1">
+        <link:definition>9955565 - Disclosure - INCOME TAXES - Schedule of Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofTaxLossTaxCreditandInterestCarryforwardsDetails" roleURI="http://www.axaltacs.com/role/INCOMETAXESScheduleofTaxLossTaxCreditandInterestCarryforwardsDetails">
+        <link:definition>9955566 - Disclosure - INCOME TAXES - Schedule of Tax Loss, Tax Credit and Interest Carryforwards (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofValuationAllowanceDetails" roleURI="http://www.axaltacs.com/role/INCOMETAXESScheduleofValuationAllowanceDetails">
+        <link:definition>9955567 - Disclosure - INCOME TAXES - Schedule of Valuation Allowance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofTotalGrossUnrecognizedTaxBenefitsDetails" roleURI="http://www.axaltacs.com/role/INCOMETAXESScheduleofTotalGrossUnrecognizedTaxBenefitsDetails">
+        <link:definition>9955568 - Disclosure - INCOME TAXES - Schedule of Total Gross Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NETINCOMEPERCOMMONSHAREScheduleofEarningsPerShareBasicandDilutedDetails" roleURI="http://www.axaltacs.com/role/NETINCOMEPERCOMMONSHAREScheduleofEarningsPerShareBasicandDilutedDetails">
+        <link:definition>9955569 - Disclosure - NET INCOME PER COMMON SHARE - Schedule of Earnings Per Share, Basic and Diluted (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCOUNTSANDNOTESRECEIVABLENETScheduleofAccountsandNotesReceivableDetails" roleURI="http://www.axaltacs.com/role/ACCOUNTSANDNOTESRECEIVABLENETScheduleofAccountsandNotesReceivableDetails">
+        <link:definition>9955570 - Disclosure - ACCOUNTS AND NOTES RECEIVABLE, NET - Schedule of Accounts and Notes Receivable (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCOUNTSANDNOTESRECEIVABLENETAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/ACCOUNTSANDNOTESRECEIVABLENETAdditionalInformationDetails">
+        <link:definition>9955571 - Disclosure - ACCOUNTS AND NOTES RECEIVABLE, NET - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVENTORIESScheduleofInventoryDetails" roleURI="http://www.axaltacs.com/role/INVENTORIESScheduleofInventoryDetails">
+        <link:definition>9955572 - Disclosure - INVENTORIES - Schedule of Inventory (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVENTORIESAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/INVENTORIESAdditionalInformationDetails">
+        <link:definition>9955573 - Disclosure - INVENTORIES - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYPLANTANDEQUIPMENTNETScheduleofPropertyPlantandEquipmentDetails" roleURI="http://www.axaltacs.com/role/PROPERTYPLANTANDEQUIPMENTNETScheduleofPropertyPlantandEquipmentDetails">
+        <link:definition>9955574 - Disclosure - PROPERTY, PLANT AND EQUIPMENT, NET - Schedule of Property, Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYPLANTANDEQUIPMENTNETAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/PROPERTYPLANTANDEQUIPMENTNETAdditionalInformationDetails">
+        <link:definition>9955575 - Disclosure - PROPERTY, PLANT AND EQUIPMENT, NET - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERASSETSScheduleofOtherAssetsDetails" roleURI="http://www.axaltacs.com/role/OTHERASSETSScheduleofOtherAssetsDetails">
+        <link:definition>9955576 - Disclosure - OTHER ASSETS - Schedule of Other Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCOUNTSPAYABLEANDOTHERACCRUEDLIABILITIESScheduleofAccountsPayableandAccruedLiabilitiesDetails" roleURI="http://www.axaltacs.com/role/ACCOUNTSPAYABLEANDOTHERACCRUEDLIABILITIESScheduleofAccountsPayableandAccruedLiabilitiesDetails">
+        <link:definition>9955577 - Disclosure - ACCOUNTS PAYABLE AND OTHER ACCRUED LIABILITIES - Schedule of Accounts Payable and Accrued Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLIERFINANCEPROGRAMSAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/SUPPLIERFINANCEPROGRAMSAdditionalInformationDetails">
+        <link:definition>9955578 - Disclosure - SUPPLIER FINANCE PROGRAMS - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLIERFINANCEPROGRAMSScheduleofOutstandingSupplierFinanceProgramsDetails" roleURI="http://www.axaltacs.com/role/SUPPLIERFINANCEPROGRAMSScheduleofOutstandingSupplierFinanceProgramsDetails">
+        <link:definition>9955579 - Disclosure - SUPPLIER FINANCE PROGRAMS - Schedule of Outstanding Supplier Finance Programs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSScheduleofDebtDetails" roleURI="http://www.axaltacs.com/role/BORROWINGSScheduleofDebtDetails">
+        <link:definition>9955580 - Disclosure - BORROWINGS - Schedule of Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSScheduleofDebtDetails_1" roleURI="http://www.axaltacs.com/role/BORROWINGSScheduleofDebtDetails_1">
+        <link:definition>9955580 - Disclosure - BORROWINGS - Schedule of Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSSeniorSecuredCreditFacilitiesDetails" roleURI="http://www.axaltacs.com/role/BORROWINGSSeniorSecuredCreditFacilitiesDetails">
+        <link:definition>9955581 - Disclosure - BORROWINGS - Senior Secured Credit Facilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSSeniorNotesDetails" roleURI="http://www.axaltacs.com/role/BORROWINGSSeniorNotesDetails">
+        <link:definition>9955582 - Disclosure - BORROWINGS - Senior Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSScheduleofDebtInstrumentRedemptionDetails" roleURI="http://www.axaltacs.com/role/BORROWINGSScheduleofDebtInstrumentRedemptionDetails">
+        <link:definition>9955583 - Disclosure - BORROWINGS - Schedule of Debt Instrument Redemption (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSScheduleofMaturitiesofLongtermDebtDetails" roleURI="http://www.axaltacs.com/role/BORROWINGSScheduleofMaturitiesofLongtermDebtDetails">
+        <link:definition>9955584 - Disclosure - BORROWINGS - Schedule of Maturities of Long-term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSScheduleofFairValueofFinancialInstrumentsDetails" roleURI="http://www.axaltacs.com/role/FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSScheduleofFairValueofFinancialInstrumentsDetails">
+        <link:definition>9955585 - Disclosure - FINANCIAL INSTRUMENTS, HEDGING ACTIVITIES AND FAIR VALUE MEASUREMENTS - Schedule of Fair Value of Financial Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSScheduleofLiabilityActivityDetails" roleURI="http://www.axaltacs.com/role/FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSScheduleofLiabilityActivityDetails">
+        <link:definition>9955586 - Disclosure - FINANCIAL INSTRUMENTS, HEDGING ACTIVITIES AND FAIR VALUE MEASUREMENTS - Schedule of Liability Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSInterestRateSwapsDesignatedasCashFlowHedgesDetails" roleURI="http://www.axaltacs.com/role/FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSInterestRateSwapsDesignatedasCashFlowHedgesDetails">
+        <link:definition>9955587 - Disclosure - FINANCIAL INSTRUMENTS, HEDGING ACTIVITIES AND FAIR VALUE MEASUREMENTS - Interest Rate Swaps Designated as Cash Flow Hedges (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSCrossCurrencySwapsDesignatedasNetInvestmentHedgesDetails" roleURI="http://www.axaltacs.com/role/FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSCrossCurrencySwapsDesignatedasNetInvestmentHedgesDetails">
+        <link:definition>9955588 - Disclosure - FINANCIAL INSTRUMENTS, HEDGING ACTIVITIES AND FAIR VALUE MEASUREMENTS - Cross-Currency Swaps Designated as Net Investment Hedges (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSDerivativeLocationsandAmountsRecognizedDetails" roleURI="http://www.axaltacs.com/role/FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSDerivativeLocationsandAmountsRecognizedDetails">
+        <link:definition>9955589 - Disclosure - FINANCIAL INSTRUMENTS, HEDGING ACTIVITIES AND FAIR VALUE MEASUREMENTS - Derivative Locations and Amounts Recognized (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSAdditionalInformationDetails">
+        <link:definition>9955590 - Disclosure - FINANCIAL INSTRUMENTS, HEDGING ACTIVITIES AND FAIR VALUE MEASUREMENTS - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSInstrumentsNotDesignatedasHedgeDetails" roleURI="http://www.axaltacs.com/role/FINANCIALINSTRUMENTSHEDGINGACTIVITIESANDFAIRVALUEMEASUREMENTSInstrumentsNotDesignatedasHedgeDetails">
+        <link:definition>9955591 - Disclosure - FINANCIAL INSTRUMENTS, HEDGING ACTIVITIES AND FAIR VALUE MEASUREMENTS - Instruments Not Designated as Hedge (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTSAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/SEGMENTSAdditionalInformationDetails">
+        <link:definition>9955592 - Disclosure - SEGMENTS - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTSScheduleofSegmentReportingInformationbySegmentDetails" roleURI="http://www.axaltacs.com/role/SEGMENTSScheduleofSegmentReportingInformationbySegmentDetails">
+        <link:definition>9955593 - Disclosure - SEGMENTS - Schedule of Segment Reporting Information, by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTSNetSalestoSegmentAdjustedEBITDADetails" roleURI="http://www.axaltacs.com/role/SEGMENTSNetSalestoSegmentAdjustedEBITDADetails">
+        <link:definition>9955594 - Disclosure - SEGMENTS - Net Sales to Segment Adjusted EBITDA (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTSReconciliationofOperatingProfitLossfromSegmentstoConsolidatedDetails" roleURI="http://www.axaltacs.com/role/SEGMENTSReconciliationofOperatingProfitLossfromSegmentstoConsolidatedDetails">
+        <link:definition>9955595 - Disclosure - SEGMENTS - Reconciliation of Operating Profit (Loss) from Segments to Consolidated (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTSScheduleofRevenuefromExternalCustomersandLonglivedAssetsbyGeographicalAreasDetails" roleURI="http://www.axaltacs.com/role/SEGMENTSScheduleofRevenuefromExternalCustomersandLonglivedAssetsbyGeographicalAreasDetails">
+        <link:definition>9955596 - Disclosure - SEGMENTS - Schedule of Revenue from External Customers and Long-lived Assets, by Geographical Areas (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVELOSSScheduleofAccumulatedOtherComprehensiveIncomeDetails" roleURI="http://www.axaltacs.com/role/ACCUMULATEDOTHERCOMPREHENSIVELOSSScheduleofAccumulatedOtherComprehensiveIncomeDetails">
+        <link:definition>9955597 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE LOSS - Schedule of Accumulated Other Comprehensive Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVELOSSAdditionalInformationDetails" roleURI="http://www.axaltacs.com/role/ACCUMULATEDOTHERCOMPREHENSIVELOSSAdditionalInformationDetails">
+        <link:definition>9955598 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE LOSS - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIDetails" roleURI="http://www.axaltacs.com/role/ScheduleIIDetails">
+        <link:definition>9955599 - Disclosure - Schedule II (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="axta_AuditorInformationAbstract" abstract="true" name="AuditorInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="axta_NoncontrollingInterestIncreaseDecreaseFromBusinessCombinationsAndDivestitures" abstract="false" name="NoncontrollingInterestIncreaseDecreaseFromBusinessCombinationsAndDivestitures" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_FinancingFeesAndExtinguishment" abstract="false" name="FinancingFeesAndExtinguishment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_PaymentsforProceedsfromHedgeOperatingActivities" abstract="false" name="PaymentsforProceedsfromHedgeOperatingActivities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_ReserveForCollectionRiskCommercialAgreementRestructuring" abstract="false" name="ReserveForCollectionRiskCommercialAgreementRestructuring" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_ProceedsFromSwapsDesignatedAsHedgesInterest" abstract="false" name="ProceedsFromSwapsDesignatedAsHedgesInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_PaymentsOfRedemptionPremiumsAndFinancingCosts" abstract="false" name="PaymentsOfRedemptionPremiumsAndFinancingCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_DeferredAcquisitionRelatedConsideration" abstract="false" name="DeferredAcquisitionRelatedConsideration" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_ScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsbyMajorClassTableTextBlock" abstract="false" name="ScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsbyMajorClassTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="axta_AssetsAndLiabilitiesLesseeTableTextBlock" abstract="false" name="AssetsAndLiabilitiesLesseeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="axta_ScheduleOfLeaseTermsTableTextBlock" abstract="false" name="ScheduleOfLeaseTermsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="axta_OwnershipInterestinSubsidiary" abstract="false" name="OwnershipInterestinSubsidiary" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_ContractualArrangementsUsefulLife" abstract="false" name="ContractualArrangementsUsefulLife" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="axta_CommercialAgreementRestructuringWriteOff" abstract="false" name="CommercialAgreementRestructuringWriteOff" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_ReserveForCollectionRiskCommercialAgreementRestructuringIncreaseDecreaseToRevenue" abstract="false" name="ReserveForCollectionRiskCommercialAgreementRestructuringIncreaseDecreaseToRevenue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_NumberOfEndMarkets" abstract="false" name="NumberOfEndMarkets" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="axta_CoverFlexxGroupMember" abstract="true" name="CoverFlexxGroupMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_A2024EuropeanAcquisitionsMember" abstract="true" name="A2024EuropeanAcquisitionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAccountsAndNotesReceivableNet" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAccountsAndNotesReceivableNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOtherAssets" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOtherAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAccountsPayableAndOtherAccruedLiabilitiesCurrent" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAccountsPayableAndOtherAccruedLiabilitiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_BusinessCombinationRecognizedIdentifiableTangibleAssetsAcquiredAndLiabilitiesAssumedNet" abstract="false" name="BusinessCombinationRecognizedIdentifiableTangibleAssetsAcquiredAndLiabilitiesAssumedNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_PerformanceCoatingsMember" abstract="true" name="PerformanceCoatingsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_MobilityCoatingsMember" abstract="true" name="MobilityCoatingsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_ScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsbyMajorClassTable" abstract="true" name="ScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsbyMajorClassTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="axta_ScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsbyMajorClassLineItems" abstract="true" name="ScheduleofFiniteLivedandIndefiniteLivedIntangibleAssetsbyMajorClassLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="axta_CapitalExpendituresMember" abstract="true" name="CapitalExpendituresMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_A2024TransformationInitiativeMember" abstract="true" name="A2024TransformationInitiativeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_RestructuringIncurredCostStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" abstract="false" name="RestructuringIncurredCostStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="axta_RestructuringAndRelatedActivitiesPaymentTerm" abstract="false" name="RestructuringAndRelatedActivitiesPaymentTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="axta_LeaseRightOfUseAsset" abstract="false" name="LeaseRightOfUseAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_LeaseLiability" abstract="false" name="LeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_OperatingLeaseRightOfUseAssetAccumulatedAmortization" abstract="false" name="OperatingLeaseRightOfUseAssetAccumulatedAmortization" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_DefinedBenefitsPercentPensionBenefitObligationByRegion" abstract="false" name="DefinedBenefitsPercentPensionBenefitObligationByRegion" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_PensionandOtherPostretirementBenefitPlansPercentofActuarialLossesinExcessofMarketValueorPensionBenefitObligationtobeIncludedinPeriodicBenefitCosts" abstract="false" name="PensionandOtherPostretirementBenefitPlansPercentofActuarialLossesinExcessofMarketValueorPensionBenefitObligationtobeIncludedinPeriodicBenefitCosts" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_DefinedBenefitPlanPlanAssetsBusinessCombinationAndOtherAdjustments" abstract="false" name="DefinedBenefitPlanPlanAssetsBusinessCombinationAndOtherAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_DefinedBenefitPlanPensionPlanswithProjectedBenefitObligationsinExcessofPlanAssetsAbstract" abstract="true" name="DefinedBenefitPlanPensionPlanswithProjectedBenefitObligationsinExcessofPlanAssetsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="axta_DefinedBenefitPlanPensionPlanswithProjectedBenefitObligationsinExcessofPlanAssetsAggregateProjectedBenefitObligation" abstract="false" name="DefinedBenefitPlanPensionPlanswithProjectedBenefitObligationsinExcessofPlanAssetsAggregateProjectedBenefitObligation" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_OtherComprehensiveIncomeLossDefinedBenefitPlanCurtailmentGainLossBeforeTax" abstract="false" name="OtherComprehensiveIncomeLossDefinedBenefitPlanCurtailmentGainLossBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_OtherComprehensiveIncomeLossDefinedBenefitPlanSettlementGainLossBeforeTax" abstract="false" name="OtherComprehensiveIncomeLossDefinedBenefitPlanSettlementGainLossBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_OtherComprehensiveIncomeLossDefinedBenefitPlanOtherGainLossbeforeTax" abstract="false" name="OtherComprehensiveIncomeLossDefinedBenefitPlanOtherGainLossbeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_DefinedBenefitPlanDebtAndEquitySecuritiesMember" abstract="true" name="DefinedBenefitPlanDebtAndEquitySecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_DefinedBenefitPlanUSAndNonUSGovernmentDebtSecuritiesMember" abstract="true" name="DefinedBenefitPlanUSAndNonUSGovernmentDebtSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_EmployeeServiceShareBasedCompensationTaxBenefitRealizedFromVestingOfStock" abstract="false" name="EmployeeServiceShareBasedCompensationTaxBenefitRealizedFromVestingOfStock" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_NumberOfIndividualOneYearPerformancePeriods" abstract="false" name="NumberOfIndividualOneYearPerformancePeriods" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="axta_SharebasedCompensationArrangementbySharebasedPaymentAwardActualAwardPercent" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardActualAwardPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_WriteOffForCustomerConcessionIncomeExpense" abstract="false" name="WriteOffForCustomerConcessionIncomeExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_BermudaCITAMember" abstract="true" name="BermudaCITAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_IncomeTaxPotentialUSTaxCostForRepatriationOfForeignEarnings" abstract="false" name="IncomeTaxPotentialUSTaxCostForRepatriationOfForeignEarnings" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_TaxlosscarryforwardsrelatedtotheimpactoftheNetherlandsenactedratechange" abstract="false" name="TaxlosscarryforwardsrelatedtotheimpactoftheNetherlandsenactedratechange" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_NumberofForeignIncomeTaxJurisdictions" abstract="false" name="NumberofForeignIncomeTaxJurisdictions" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="axta_IncomeTaxReconciliationForeignExchangeLoss" abstract="false" name="IncomeTaxReconciliationForeignExchangeLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_EffectiveIncomeTaxRateReconciliationUnrecognizedTaxBenefitsAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationUnrecognizedTaxBenefitsAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_EffectiveIncomeTaxRateReconciliationWithholdingTaxesAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationWithholdingTaxesAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_EffectiveIncomeTaxRateReconciliationBermudaCITAAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationBermudaCITAAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_IncomeTaxReconciliationForeignExchangeLossPercent" abstract="false" name="IncomeTaxReconciliationForeignExchangeLossPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_EffectiveIncomeTaxRateReconciliationUnrecognizedTaxBenefitsPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationUnrecognizedTaxBenefitsPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_EffectiveIncomeTaxRateReconciliationWithholdingTaxesPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationWithholdingTaxesPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_EffectiveIncomeTaxRateReconciliationBermudaCITAPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationBermudaCITAPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="axta_EffectiveIncomeTaxRateReconciliationOtherIncreaseToUnrecognizedTaxBenefits" abstract="false" name="EffectiveIncomeTaxRateReconciliationOtherIncreaseToUnrecognizedTaxBenefits" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_EffectiveIncomeTaxRateReconciliationUnrecognizedTaxBenefitsAdjustmentToPriorYearTaxFilingPosition" abstract="false" name="EffectiveIncomeTaxRateReconciliationUnrecognizedTaxBenefitsAdjustmentToPriorYearTaxFilingPosition" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_DeferredTaxAssetsCapitalLossandOtherTaxCarryforwards" abstract="false" name="DeferredTaxAssetsCapitalLossandOtherTaxCarryforwards" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_DeferredTaxAssetFinanceLeases" abstract="false" name="DeferredTaxAssetFinanceLeases" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_DeferredTaxAssetsAndLiabilitiesAbstract" abstract="true" name="DeferredTaxAssetsAndLiabilitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="axta_Expireswithin10yearsMember" abstract="true" name="Expireswithin10yearsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_Expiresafter10yearsorindefiniteMember" abstract="true" name="Expiresafter10yearsorindefiniteMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_Taxinterestcarryforward" abstract="false" name="Taxinterestcarryforward" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_Taxlosstaxcreditandinterestcarryforwards" abstract="false" name="Taxlosstaxcreditandinterestcarryforwards" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_UnrecognizedTaxBenefitsIncludingInterestandPenalties" abstract="false" name="UnrecognizedTaxBenefitsIncludingInterestandPenalties" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_UsGaap_EarningsPerShareBasicAndDilutedAbstractAbstract" abstract="true" name="UsGaap_EarningsPerShareBasicAndDilutedAbstractAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="axta_BadDebtExpenseBenefitNetOfRecoveries" abstract="false" name="BadDebtExpenseBenefitNetOfRecoveries" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_BusinessincentiveplanassetsTable" abstract="true" name="BusinessincentiveplanassetsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="axta_BusinessincentiveplanassetsLineItems" abstract="true" name="BusinessincentiveplanassetsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="axta_CustomerLoan" abstract="false" name="CustomerLoan" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_AmortizedAssetUsefulLife" abstract="false" name="AmortizedAssetUsefulLife" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="axta_DiscountsRebatesAndWarrantyLiabilitiesCurrent" abstract="false" name="DiscountsRebatesAndWarrantyLiabilitiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_AccountsPayableTradeBankingInstitution" abstract="false" name="AccountsPayableTradeBankingInstitution" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_PropertyPlantAndEquipmentPurchasesMember" abstract="true" name="PropertyPlantAndEquipmentPurchasesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_SupplierFinancingArrangementsMember" abstract="true" name="SupplierFinancingArrangementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_SupplyChainFinancingProgramMember" abstract="true" name="SupplyChainFinancingProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_VirtualCardAccountProgramMember" abstract="true" name="VirtualCardAccountProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_SupplierFinanceProgramObligationStatementOfFinancialPositionExtensibleEnumerationNotDisclosedFlag" abstract="false" name="SupplierFinanceProgramObligationStatementOfFinancialPositionExtensibleEnumerationNotDisclosedFlag" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="axta_ChinaProgramMember" abstract="true" name="ChinaProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_SupplierFinanceProgramObligationCurrencyImpact" abstract="false" name="SupplierFinanceProgramObligationCurrencyImpact" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_A2029DollarTermLoansMember" abstract="true" name="A2029DollarTermLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_A2027DollarSeniorNotesMember" abstract="true" name="A2027DollarSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_A2029DollarSeniorNotesMember" abstract="true" name="A2029DollarSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_A2031DollarSeniorNotesMember" abstract="true" name="A2031DollarSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_ShortTermAndOtherBorrowings" abstract="false" name="ShortTermAndOtherBorrowings" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_SeniorSecuredCreditFacilitiesMember" abstract="true" name="SeniorSecuredCreditFacilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_CustomerObligationGuaranteesMember" abstract="true" name="CustomerObligationGuaranteesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_A2024DollarTermLoansMember" abstract="true" name="A2024DollarTermLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_A2024EuroSeniorNotesMember" abstract="true" name="A2024EuroSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_EurocurrencyRateLoansMember" abstract="true" name="EurocurrencyRateLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_DebtCovenantAxis" abstract="true" name="DebtCovenantAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="axta_DebtCovenantDomain" abstract="true" name="DebtCovenantDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_LeverageRatioBetween125And225Member" abstract="true" name="LeverageRatioBetween125And225Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_LeverageRatioGreaterThan225Member" abstract="true" name="LeverageRatioGreaterThan225Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_DebtInstrumentPremiumPayablePercent" abstract="false" name="DebtInstrumentPremiumPayablePercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="axta_PercentageOnExcessCashFlowForMandatoryPrepaymentsOfDebt" abstract="false" name="PercentageOnExcessCashFlowForMandatoryPrepaymentsOfDebt" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_DecreaseInPercentageOnExcessCashFlowForMandatoryPrepaymentsOfDebt" abstract="false" name="DecreaseInPercentageOnExcessCashFlowForMandatoryPrepaymentsOfDebt" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_PercentageOnFirstLienLeverageRatioForMandatoryPrepaymentsOfDebt" abstract="false" name="PercentageOnFirstLienLeverageRatioForMandatoryPrepaymentsOfDebt" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_FirstLienLeverageRatioUpperLimit" abstract="false" name="FirstLienLeverageRatioUpperLimit" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="axta_FirstLienLeverageRatioLowerLimit" abstract="false" name="FirstLienLeverageRatioLowerLimit" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="axta_DebtInstrumentDiscountPercentofPar" abstract="false" name="DebtInstrumentDiscountPercentofPar" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_DebtInstrumentPeriodicPaymentPrincipalPercentage" abstract="false" name="DebtInstrumentPeriodicPaymentPrincipalPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_LineOfCreditFacilityTerminationDatePriorToMaturity" abstract="false" name="LineOfCreditFacilityTerminationDatePriorToMaturity" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="axta_LineofCreditFacilityPercentofCreditFacilityOutstandingforAcceleratedMaturity" abstract="false" name="LineofCreditFacilityPercentofCreditFacilityOutstandingforAcceleratedMaturity" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_LineofCreditFacilityPercentNotCashCollateralized" abstract="false" name="LineofCreditFacilityPercentNotCashCollateralized" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_DebtInstrumentBasisSpreadOnVariableRateLeverageRatioIncrease" abstract="false" name="DebtInstrumentBasisSpreadOnVariableRateLeverageRatioIncrease" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_GainLossOnFinancingRelatedCosts" abstract="false" name="GainLossOnFinancingRelatedCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_AnyTimePriorToNovember152026Member" abstract="true" name="AnyTimePriorToNovember152026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_DebtInstrumentRedemptionPricePercentageifChangeinControlOccurs" abstract="false" name="DebtInstrumentRedemptionPricePercentageifChangeinControlOccurs" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_DebtInstrumentRedemptionPercentofPrincipalRequiredtobeOutstanding" abstract="false" name="DebtInstrumentRedemptionPercentofPrincipalRequiredtobeOutstanding" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="axta_AccruedDebtFees" abstract="false" name="AccruedDebtFees" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_InitialEffectiveDateOnApril102018Member" abstract="true" name="InitialEffectiveDateOnApril102018Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_InitialEffectiveDateOnDecember312019Member" abstract="true" name="InitialEffectiveDateOnDecember312019Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_InitialEffectiveDateOnJanuary1520201Member" abstract="true" name="InitialEffectiveDateOnJanuary1520201Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_InitialEffectiveDateOnJanuary1520202Member" abstract="true" name="InitialEffectiveDateOnJanuary1520202Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_InitialEffectiveDateOnMarch312023Member" abstract="true" name="InitialEffectiveDateOnMarch312023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_InitialEffectiveDateOnMarch312024Member" abstract="true" name="InitialEffectiveDateOnMarch312024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_DerivativeVariableInterestRateIndex" abstract="false" name="DerivativeVariableInterestRateIndex" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="axta_InitialEffectiveDateOnNovember072018Member" abstract="true" name="InitialEffectiveDateOnNovember072018Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_InitialEffectiveDateOnNovember242018Member" abstract="true" name="InitialEffectiveDateOnNovember242018Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_InitialEffectiveDateOnNovember172023Member" abstract="true" name="InitialEffectiveDateOnNovember172023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_USDToEuroCurrencySwapInitialEffectiveDateOnNovember072018Member" abstract="true" name="USDToEuroCurrencySwapInitialEffectiveDateOnNovember072018Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_USDToEuroCurrencySwapInitialEffectiveDateOnNovember242018Member" abstract="true" name="USDToEuroCurrencySwapInitialEffectiveDateOnNovember242018Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_USDToEuroCurrencySwapInitialEffectiveDateOnMarch312023Member" abstract="true" name="USDToEuroCurrencySwapInitialEffectiveDateOnMarch312023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_USDToEuroCurrencySwapInitialEffectiveDateOnNovember172023Member" abstract="true" name="USDToEuroCurrencySwapInitialEffectiveDateOnNovember172023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="axta_RefinishMember" abstract="true" name="RefinishMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_IndustrialMember" abstract="true" name="IndustrialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_LightVehicleMember" abstract="true" name="LightVehicleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_CommercialVehicleMember" abstract="true" name="CommercialVehicleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="axta_AdjustedEarningsBeforeInterestandTax" abstract="false" name="AdjustedEarningsBeforeInterestandTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_IntercompanySalesBetweenSegments" abstract="false" name="IntercompanySalesBetweenSegments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_EmployeeTerminationAndOtherRelatedCosts" abstract="false" name="EmployeeTerminationAndOtherRelatedCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_AcquisitionAndDivestitureRelatedBenefitsCosts" abstract="false" name="AcquisitionAndDivestitureRelatedBenefitsCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_AssetImpairmentChargesBenefits" abstract="false" name="AssetImpairmentChargesBenefits" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_ForeignCurrencyTransactionRemeasurementGainLoss" abstract="false" name="ForeignCurrencyTransactionRemeasurementGainLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_EnvironmentalCharge" abstract="false" name="EnvironmentalCharge" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_GainLossInOtherAdjustments" abstract="false" name="GainLossInOtherAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_CumulativeOtherComprehensiveIncomeLossForeignExchangeAdjustmentsIncomeTaxExpenseBenefit" abstract="false" name="CumulativeOtherComprehensiveIncomeLossForeignExchangeAdjustmentsIncomeTaxExpenseBenefit" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_CumulativeOtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansIncomeTaxExpenseBenefit" abstract="false" name="CumulativeOtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansIncomeTaxExpenseBenefit" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="axta_CumulativeOtherComprehensiveIncomeLossGainLossonDerivativesIncomeTaxExpenseBenefit" abstract="false" name="CumulativeOtherComprehensiveIncomeLossGainLossonDerivativesIncomeTaxExpenseBenefit" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--XBRL document created with Toppan Merrill Bridge  10.9.0.3 -->
+<!--Based on XBRL 2.1-->
+<!--Created on: 2/12/2025 11:43:02 PM-->
+<!--Modified on: 2/12/2025 11:43:02 PM-->
+<xsd:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xl="http://www.xbrl.org/2003/XLink" targetNamespace="http://www.nabors.com/20241231" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:country="http://xbrl.sec.gov/country/2024" xmlns:us-gaap="http://fasb.org/us-gaap/2024" xmlns:us-types="http://fasb.org/us-types/2024" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:srt-types="http://fasb.org/srt-types/2024" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:nbr="http://www.nabors.com/20241231" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:deprecated="http://www.xbrl.org/2009/role/deprecated" xmlns:us-roles="http://fasb.org/us-roles/2024" xmlns:currency="http://xbrl.sec.gov/currency/2024" xmlns:srt-roles="http://fasb.org/srt-roles/2024" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:sic="http://xbrl.sec.gov/sic/2024" xmlns:stpr="http://xbrl.sec.gov/stpr/2024" xmlns:net="http://www.xbrl.org/2009/role/net" xmlns:naics="http://xbrl.sec.gov/naics/2024" xmlns:dei="http://xbrl.sec.gov/dei/2024" xmlns:exch="http://xbrl.sec.gov/exch/2024" xmlns:attributeFormDefault="unqualified" xmlns:srt="http://fasb.org/srt/2024" xmlns:dtr="http://www.xbrl.org/2009/dtr" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:us-gaap-ebp="http://fasb.org/us-gaap-ebp/2024" xmlns:cyd-af-sub="http://xbrl.sec.gov/cyd-af-sub/2024" xmlns:ecd="http://xbrl.sec.gov/ecd/2024" xmlns:ecd-sub="http://xbrl.sec.gov/ecd-sub/2024" xmlns:cyd="http://xbrl.sec.gov/cyd/2024">
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureStandardAndCustomAxisDomainDefaults" id="DisclosureStandardAndCustomAxisDomainDefaults">
+        <link:definition>99900 - Disclosure - Standard And Custom Axis Domain Defaults</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/StatementConsolidatedBalanceSheets" id="StatementConsolidatedBalanceSheets">
+        <link:definition>995200100 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/StatementConsolidatedStatementsOfIncomeLoss" id="StatementConsolidatedStatementsOfIncomeLoss">
+        <link:definition>995200200 - Statement - CONSOLIDATED STATEMENTS OF INCOME (LOSS)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/StatementConsolidatedStatementsOfComprehensiveIncomeLoss" id="StatementConsolidatedStatementsOfComprehensiveIncomeLoss">
+        <link:definition>995200300 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/StatementConsolidatedStatementsOfComprehensiveIncomeLossCalc2" id="StatementConsolidatedStatementsOfComprehensiveIncomeLossCalc2">
+        <link:definition>00301 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS) (Calc2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/StatementConsolidatedStatementsOfCashFlows" id="StatementConsolidatedStatementsOfCashFlows">
+        <link:definition>995200400 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSummaryOfSignificantAccountingPoliciesInventoryDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesInventoryDetails">
+        <link:definition>99940201 - Disclosure - Summary of Significant Accounting Policies - Inventory (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosurePropertyPlantAndEquipmentDetails" id="DisclosurePropertyPlantAndEquipmentDetails">
+        <link:definition>99940701 - Disclosure - Property, Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureDebtMaturitiesDetails" id="DisclosureDebtMaturitiesDetails">
+        <link:definition>99940902 - Disclosure - Debt - Maturities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureDebtLettersOfCreditDetails" id="DisclosureDebtLettersOfCreditDetails">
+        <link:definition>99940906 - Disclosure - Debt - Letters of Credit (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureIncomeTaxesIncomeTaxExpenseBenefitFromContinuingOperationsDetails" id="DisclosureIncomeTaxesIncomeTaxExpenseBenefitFromContinuingOperationsDetails">
+        <link:definition>99941001 - Disclosure - Income Taxes - Income tax expense (benefit) from continuing operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureIncomeTaxesReconciliationDetails" id="DisclosureIncomeTaxesReconciliationDetails">
+        <link:definition>99941002 - Disclosure - Income Taxes - Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureIncomeTaxesComponentsOfNetDeferredTaxesDetails" id="DisclosureIncomeTaxesComponentsOfNetDeferredTaxesDetails">
+        <link:definition>99941003 - Disclosure - Income Taxes - Components of net deferred taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureIncomeTaxesComponentsOfNetDeferredTaxesDetailsCalc2" id="DisclosureIncomeTaxesComponentsOfNetDeferredTaxesDetailsCalc2">
+        <link:definition>41099 - Disclosure - Income Taxes - Components of net deferred taxes (Details) (Calc2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureJointVenturesDetails" id="DisclosureJointVenturesDetails">
+        <link:definition>99941201 - Disclosure - Joint Ventures (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureCommitmentsAndContingenciesOffBalanceSheetArrangementsDetails" id="DisclosureCommitmentsAndContingenciesOffBalanceSheetArrangementsDetails">
+        <link:definition>99941403 - Disclosure - Commitments and Contingencies - Off-Balance Sheet Arrangements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureEarningsLossesPerShareReconciliationDetails" id="DisclosureEarningsLossesPerShareReconciliationDetails">
+        <link:definition>99941501 - Disclosure - Earnings (Losses) Per Share - Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSupplementalBalanceSheetAndIncomeStatementInformationAccruedLiabilitiesDetails" id="DisclosureSupplementalBalanceSheetAndIncomeStatementInformationAccruedLiabilitiesDetails">
+        <link:definition>99941601 - Disclosure - Supplemental Balance Sheet and Income Statement Information - Accrued Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSupplementalBalanceSheetAndIncomeStatementInformationInvestmentIncomeLossDetails" id="DisclosureSupplementalBalanceSheetAndIncomeStatementInformationInvestmentIncomeLossDetails">
+        <link:definition>99941602 - Disclosure - Supplemental Balance Sheet and Income Statement Information - Investment income (loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSupplementalBalanceSheetAndIncomeStatementInformationOtherNetDetails" id="DisclosureSupplementalBalanceSheetAndIncomeStatementInformationOtherNetDetails">
+        <link:definition>99941603 - Disclosure - Supplemental Balance Sheet and Income Statement Information - Other, net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSegmentInformationFinancialInformationBySegmentDetails" id="DisclosureSegmentInformationFinancialInformationBySegmentDetails">
+        <link:definition>99941701 - Disclosure - Segment Information - Financial Information by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureLeasesLeasePositionDetails" id="DisclosureLeasesLeasePositionDetails">
+        <link:definition>99941902 - Disclosure - Leases - Lease Position (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureLeasesLeaseCostsDetails" id="DisclosureLeasesLeaseCostsDetails">
+        <link:definition>99941903 - Disclosure - Leases - Lease Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureLeasesUndiscountedCashFlowsDetails" id="DisclosureLeasesUndiscountedCashFlowsDetails">
+        <link:definition>99941906 - Disclosure - Leases - Undiscounted Cash Flows (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DocumentDocumentAndEntityInformation" id="DocumentDocumentAndEntityInformation">
+        <link:definition>995200090 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/StatementConsolidatedBalanceSheetsParenthetical" id="StatementConsolidatedBalanceSheetsParenthetical">
+        <link:definition>995200105 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/StatementConsolidatedStatementsOfChangesInEquity" id="StatementConsolidatedStatementsOfChangesInEquity">
+        <link:definition>995200500 - Statement - CONSOLIDATED STATEMENTS OF CHANGES IN EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureNatureOfOperations" id="DisclosureNatureOfOperations">
+        <link:definition>995210101 - Disclosure - Nature of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSummaryOfSignificantAccountingPolicies" id="DisclosureSummaryOfSignificantAccountingPolicies">
+        <link:definition>995210201 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureFairValueMeasurements" id="DisclosureFairValueMeasurements">
+        <link:definition>995210501 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureShareBasedCompensation" id="DisclosureShareBasedCompensation">
+        <link:definition>995210601 - Disclosure - Share-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosurePropertyPlantAndEquipment" id="DisclosurePropertyPlantAndEquipment">
+        <link:definition>995210701 - Disclosure - Property, Plant and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureFinancialInstrumentsAndRiskConcentration" id="DisclosureFinancialInstrumentsAndRiskConcentration">
+        <link:definition>995210801 - Disclosure - Financial Instruments and Risk Concentration</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureDebt" id="DisclosureDebt">
+        <link:definition>995210901 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureIncomeTaxes" id="DisclosureIncomeTaxes">
+        <link:definition>995211001 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureShareholdersEquity" id="DisclosureShareholdersEquity">
+        <link:definition>995211101 - Disclosure - Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureRelatedPartyTransactions" id="DisclosureRelatedPartyTransactions">
+        <link:definition>995211301 - Disclosure - Related-Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureCommitmentsAndContingencies" id="DisclosureCommitmentsAndContingencies">
+        <link:definition>995211401 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureEarningsLossesPerShare" id="DisclosureEarningsLossesPerShare">
+        <link:definition>995211501 - Disclosure - Earnings (Losses) Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSupplementalBalanceSheetIncomeStatementAndCashFlowInformation" id="DisclosureSupplementalBalanceSheetIncomeStatementAndCashFlowInformation">
+        <link:definition>995211601 - Disclosure - Supplemental Balance Sheet, Income Statement and Cash Flow Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSegmentInformation" id="DisclosureSegmentInformation">
+        <link:definition>995211701 - Disclosure - Segment Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureScheduleIiValuationAndQualifyingAccounts" id="DisclosureScheduleIiValuationAndQualifyingAccounts">
+        <link:definition>995212101 - Disclosure - SCHEDULE II - VALUATION AND QUALIFYING ACCOUNTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSummaryOfSignificantAccountingPoliciesPolicies" id="DisclosureSummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>99920202 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSummaryOfSignificantAccountingPoliciesTables" id="DisclosureSummaryOfSignificantAccountingPoliciesTables">
+        <link:definition>99930203 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureFairValueMeasurementsTables" id="DisclosureFairValueMeasurementsTables">
+        <link:definition>99930503 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureShareBasedCompensationTables" id="DisclosureShareBasedCompensationTables">
+        <link:definition>99930603 - Disclosure - Share-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosurePropertyPlantAndEquipmentTables" id="DisclosurePropertyPlantAndEquipmentTables">
+        <link:definition>99930703 - Disclosure - Property, Plant and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureDebtTables" id="DisclosureDebtTables">
+        <link:definition>99930903 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureIncomeTaxesTables" id="DisclosureIncomeTaxesTables">
+        <link:definition>99931003 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureCommitmentsAndContingenciesTables" id="DisclosureCommitmentsAndContingenciesTables">
+        <link:definition>99931403 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureEarningsLossesPerShareTables" id="DisclosureEarningsLossesPerShareTables">
+        <link:definition>99931503 - Disclosure - Earnings (Losses) Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSupplementalBalanceSheetAndIncomeStatementInformationTables" id="DisclosureSupplementalBalanceSheetAndIncomeStatementInformationTables">
+        <link:definition>99931603 - Disclosure - Supplemental Balance Sheet and Income Statement Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSegmentInformationTables" id="DisclosureSegmentInformationTables">
+        <link:definition>99931703 - Disclosure - Segment Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSpecialPurposeAcquisitionCompanyTables" id="DisclosureSpecialPurposeAcquisitionCompanyTables">
+        <link:definition>99932003 - Disclosure - Special Purpose Acquisition Company (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureNatureOfOperationsDetails" id="DisclosureNatureOfOperationsDetails">
+        <link:definition>99940101 - Disclosure - Nature of Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSummaryOfSignificantAccountingPoliciesPropertyPlantAndEquipmentDetails" id="DisclosureSummaryOfSignificantAccountingPoliciesPropertyPlantAndEquipmentDetails">
+        <link:definition>99940202 - Disclosure - Summary of Significant Accounting Policies - Property, Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureAccountsReceivablePurchaseAndSalesAgreementDetails" id="DisclosureAccountsReceivablePurchaseAndSalesAgreementDetails">
+        <link:definition>99940301 - Disclosure - Accounts Receivable Purchase and Sales Agreement (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureMergerAgreementDetails" id="DisclosureMergerAgreementDetails">
+        <link:definition>99940401 - Disclosure - Merger Agreement (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureFairValueMeasurementsRecurringFairValueMeasurementsDetails" id="DisclosureFairValueMeasurementsRecurringFairValueMeasurementsDetails">
+        <link:definition>99940501 - Disclosure - Fair Value Measurements - Recurring Fair Value Measurements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureFairValueMeasurementsNonrecurringFairValueMeasurementsDetails" id="DisclosureFairValueMeasurementsNonrecurringFairValueMeasurementsDetails">
+        <link:definition>99940502 - Disclosure - Fair Value Measurements - Nonrecurring Fair Value Measurements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureShareBasedCompensationSummaryDetails" id="DisclosureShareBasedCompensationSummaryDetails">
+        <link:definition>99940601 - Disclosure - Share-Based Compensation - Summary (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureShareBasedCompensationStockOptionActivityDetails" id="DisclosureShareBasedCompensationStockOptionActivityDetails">
+        <link:definition>99940602 - Disclosure - Share-Based Compensation - Stock option activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureShareBasedCompensationStockOptionValuationAssumptionsDetails" id="DisclosureShareBasedCompensationStockOptionValuationAssumptionsDetails">
+        <link:definition>99940603 - Disclosure - Share-Based Compensation - Stock option valuation assumptions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureShareBasedCompensationRestrictedSharesDetails" id="DisclosureShareBasedCompensationRestrictedSharesDetails">
+        <link:definition>99940604 - Disclosure - Share-Based Compensation - Restricted shares (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureShareBasedCompensationRestrictedSharesBasedOnPerformanceConditionsDetails" id="DisclosureShareBasedCompensationRestrictedSharesBasedOnPerformanceConditionsDetails">
+        <link:definition>99940605 - Disclosure - Share-Based Compensation - Restricted shares based on performance conditions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureShareBasedCompensationRestrictedSharesBasedOnMarketConditionsDetails" id="DisclosureShareBasedCompensationRestrictedSharesBasedOnMarketConditionsDetails">
+        <link:definition>99940606 - Disclosure - Share-Based Compensation - Restricted shares based on market conditions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureFinancialInstrumentsAndRiskConcentrationDetails" id="DisclosureFinancialInstrumentsAndRiskConcentrationDetails">
+        <link:definition>99940801 - Disclosure - Financial Instruments and Risk Concentration (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureDebtSummaryDetails" id="DisclosureDebtSummaryDetails">
+        <link:definition>99940901 - Disclosure - Debt - Summary (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureDebtSeniorGuaranteedNotesDetails" id="DisclosureDebtSeniorGuaranteedNotesDetails">
+        <link:definition>99940903 - Disclosure - Debt - Senior Guaranteed Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureDebtSeniorExchangeableNotesDetails" id="DisclosureDebtSeniorExchangeableNotesDetails">
+        <link:definition>99940904 - Disclosure - Debt - Senior Exchangeable Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureDebtCreditAgreementDetails" id="DisclosureDebtCreditAgreementDetails">
+        <link:definition>99940905 - Disclosure - Debt - Credit Agreement (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureIncomeTaxesOperatingLossCarryforwardsDetails" id="DisclosureIncomeTaxesOperatingLossCarryforwardsDetails">
+        <link:definition>99941004 - Disclosure - Income Taxes - Operating Loss Carryforwards (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureIncomeTaxesUncertainTaxPositionsDetails" id="DisclosureIncomeTaxesUncertainTaxPositionsDetails">
+        <link:definition>99941005 - Disclosure - Income Taxes - Uncertain tax positions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureShareholdersEquityCommonSharesDetails" id="DisclosureShareholdersEquityCommonSharesDetails">
+        <link:definition>99941101 - Disclosure - Shareholders' Equity - Common Shares (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureShareholdersEquityCommonStockWarrantsDetails" id="DisclosureShareholdersEquityCommonStockWarrantsDetails">
+        <link:definition>99941102 - Disclosure - Shareholders' Equity - Common Stock Warrants (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureRelatedPartyTransactionsDetails" id="DisclosureRelatedPartyTransactionsDetails">
+        <link:definition>99941301 - Disclosure - Related-Party Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureCommitmentsAndContingenciesCommitmentsDetails" id="DisclosureCommitmentsAndContingenciesCommitmentsDetails">
+        <link:definition>99941401 - Disclosure - Commitments and Contingencies - Commitments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureCommitmentsAndContingenciesLitigationDetails" id="DisclosureCommitmentsAndContingenciesLitigationDetails">
+        <link:definition>99941402 - Disclosure - Commitments and Contingencies - Litigation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureEarningsLossesPerShareExclusionsFromDilutedEarningsDetails" id="DisclosureEarningsLossesPerShareExclusionsFromDilutedEarningsDetails">
+        <link:definition>99941502 - Disclosure - Earnings (Losses) Per Share - Exclusions from Diluted Earnings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSupplementalBalanceSheetAndIncomeStatementInformationAccumulatedOtherComprehensiveIncomeLossDetails" id="DisclosureSupplementalBalanceSheetAndIncomeStatementInformationAccumulatedOtherComprehensiveIncomeLossDetails">
+        <link:definition>99941604 - Disclosure - Supplemental Balance Sheet and Income Statement Information - Accumulated other comprehensive income (loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSupplementalBalanceSheetAndIncomeStatementInformationItemsReclassifiedToNetIncomeDetails" id="DisclosureSupplementalBalanceSheetAndIncomeStatementInformationItemsReclassifiedToNetIncomeDetails">
+        <link:definition>99941605 - Disclosure - Supplemental Balance Sheet and Income Statement Information - Items reclassified to net income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSupplementalBalanceSheetIncomeStatementAndCashFlowInformationSupplementalCashFlowInformationDetails" id="DisclosureSupplementalBalanceSheetIncomeStatementAndCashFlowInformationSupplementalCashFlowInformationDetails">
+        <link:definition>99941606 - Disclosure - Supplemental Balance Sheet, Income Statement and Cash Flow Information - Supplemental cash flow information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSegmentInformationReconciliationOfSegmentAdjustedOperatingIncomeLossToNetIncomeLossDetails" id="DisclosureSegmentInformationReconciliationOfSegmentAdjustedOperatingIncomeLossToNetIncomeLossDetails">
+        <link:definition>99941702 - Disclosure - Segment Information - Reconciliation of segment adjusted operating income (loss) to net income (loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSegmentInformationTotalAssetsDetails" id="DisclosureSegmentInformationTotalAssetsDetails">
+        <link:definition>99941703 - Disclosure - Segment Information - Total assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSegmentInformationOperationsByGeographicAreaDetails" id="DisclosureSegmentInformationOperationsByGeographicAreaDetails">
+        <link:definition>99941704 - Disclosure - Segment Information - Operations by geographic area (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureRevenueRecognitionDisaggregationOfRevenueDetails" id="DisclosureRevenueRecognitionDisaggregationOfRevenueDetails">
+        <link:definition>99941801 - Disclosure - Revenue Recognition - Disaggregation of Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureRevenueRecognitionReceivablesContractAssetsAndContractLiabilitiesDetails" id="DisclosureRevenueRecognitionReceivablesContractAssetsAndContractLiabilitiesDetails">
+        <link:definition>99941802 - Disclosure - Revenue Recognition - Receivables, Contract Assets and Contract Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureRevenueRecognitionReceivablesContractAssetsAndContractLiabilitiesDefaultDetails" id="DisclosureRevenueRecognitionReceivablesContractAssetsAndContractLiabilitiesDefaultDetails">
+        <link:definition>41802 - Disclosure - Revenue Recognition - Receivables, Contract Assets and Contract Liabilities Default (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureLeasesOtherInformationDetails" id="DisclosureLeasesOtherInformationDetails">
+        <link:definition>99941904 - Disclosure - Leases - Other Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureLeasesLeaseTermsAndDiscountRatesDetails" id="DisclosureLeasesLeaseTermsAndDiscountRatesDetails">
+        <link:definition>99941905 - Disclosure - Leases - Lease Terms and Discount Rates (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSpecialPurposeAcquisitionCompanyDetails" id="DisclosureSpecialPurposeAcquisitionCompanyDetails">
+        <link:definition>99942001 - Disclosure - Special Purpose Acquisition Company (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureScheduleIiValuationAndQualifyingAccountsDetails" id="DisclosureScheduleIiValuationAndQualifyingAccountsDetails">
+        <link:definition>99942101 - Disclosure - SCHEDULE II - VALUATION AND QUALIFYING ACCOUNTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureAccountsReceivablePurchaseAndSalesAgreements" id="DisclosureAccountsReceivablePurchaseAndSalesAgreements">
+        <link:definition>995210301 - Disclosure - Accounts Receivable Purchase and Sales Agreements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureMergerAgreement" id="DisclosureMergerAgreement">
+        <link:definition>995210401 - Disclosure - Merger Agreement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureJointVentures" id="DisclosureJointVentures">
+        <link:definition>995211201 - Disclosure - Joint Ventures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureRevenueRecognition" id="DisclosureRevenueRecognition">
+        <link:definition>995211801 - Disclosure - Revenue Recognition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureLeases" id="DisclosureLeases">
+        <link:definition>995211901 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureSpecialPurposeAcquisitionCompany" id="DisclosureSpecialPurposeAcquisitionCompany">
+        <link:definition>995212001 - Disclosure - Special Purpose Acquisition Company</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureJointVenturesTables" id="DisclosureJointVenturesTables">
+        <link:definition>99931203 - Disclosure - Joint Ventures (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureRevenueRecognitionTables" id="DisclosureRevenueRecognitionTables">
+        <link:definition>99931803 - Disclosure - Revenue Recognition (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.nabors.com/role/DisclosureLeasesTables" id="DisclosureLeasesTables">
+        <link:definition>99931903 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="nbr-20241231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="nbr-20241231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="nbr-20241231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="nbr-20241231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:import namespace="https://xbrl.org/2023/calculation-1.1" schemaLocation="https://www.xbrl.org/2023/calculation-1.1.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd" />
+  <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <xsd:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <xsd:import namespace="http://fasb.org/us-roles/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-roles-2024.xsd" />
+  <xsd:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd" />
+  <xsd:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/stpr/2024" schemaLocation="https://xbrl.sec.gov/stpr/2024/stpr-2024.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/ecd-sub/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-sub-2024.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/cyd/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-2024.xsd" />
+  <xsd:import namespace="http://xbrl.sec.gov/cyd-af-sub/2024" schemaLocation="https://xbrl.sec.gov/cyd/2024/cyd-af-sub-2024.xsd" />
+  <xsd:element id="nbr_AssetImpairmentAndOtherCharges" name="AssetImpairmentAndOtherCharges" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" />
+  <xsd:element name="BalanceSheetSummaryAbstract" id="nbr_BalanceSheetSummaryAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="CourtOfOuarglaAlgeriaForeignCurrencyControlsMember" id="nbr_CourtOfOuarglaAlgeriaForeignCurrencyControlsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="DepreciationAndAmortizationContinuingOperations" id="nbr_DepreciationAndAmortizationContinuingOperations" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" />
+  <xsd:element name="DrillingWorkoverAndWellServicingRigsAndRelatedEquipmentMember" id="nbr_DrillingWorkoverAndWellServicingRigsAndRelatedEquipmentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="FinancialGuaranteesFutureMaximumAmountsIssuedAbstract" id="nbr_FinancialGuaranteesFutureMaximumAmountsIssuedAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="GuaranteeObligationsMaximumExposureAfterYearThree" id="nbr_GuaranteeObligationsMaximumExposureAfterYearThree" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" />
+  <xsd:element id="nbr_GuaranteeObligationsMaximumExposureInYearOne" name="GuaranteeObligationsMaximumExposureInYearOne" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" />
+  <xsd:element id="nbr_GuaranteeObligationsMaximumExposureInYearThree" name="GuaranteeObligationsMaximumExposureInYearThree" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" />
+  <xsd:element id="nbr_GuaranteeObligationsMaximumExposureInYearTwo" name="GuaranteeObligationsMaximumExposureInYearTwo" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" />
+  <xsd:element name="IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomesticAndForeignAbstract" id="nbr_IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomesticAndForeignAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="InternationalExcludingCanadaMember" id="nbr_InternationalExcludingCanadaMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_JackUpRigsMember" name="JackUpRigsMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element name="LitigationAndInsuranceReservesPolicyTextBlock" id="nbr_LitigationAndInsuranceReservesPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_LossesGainsOnSalesRetirementsAndImpairmentsOfLongLivedAssetsAndOtherExpenseIncomeNetTableTextBlock" name="LossesGainsOnSalesRetirementsAndImpairmentsOfLongLivedAssetsAndOtherExpenseIncomeNetTableTextBlock" nillable="true" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element name="OilfieldHaulingAndMobileEquipmentAndOtherMachineryAndEquipmentMember" id="nbr_OilfieldHaulingAndMobileEquipmentAndOtherMachineryAndEquipmentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="OilfieldHaulingAndMobileEquipmentMember" id="nbr_OilfieldHaulingAndMobileEquipmentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="PaymentOfContractAmountInDomesticCurrency" id="nbr_PaymentOfContractAmountInDomesticCurrency" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element name="PaymentOfContractAmountInForeignCurrency" id="nbr_PaymentOfContractAmountInForeignCurrency" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element name="PotentialJudgmentInExcessOfAccrual" id="nbr_PotentialJudgmentInExcessOfAccrual" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" abstract="false" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" />
+  <xsd:element name="PropertyPlantAndEquipmentNonOperatingRigAssetUsefulLife" id="nbr_PropertyPlantAndEquipmentNonOperatingRigAssetUsefulLife" type="xbrli:durationItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="PropertyPlantAndEquipmentOperatingRigAssetUsefulLife" id="nbr_PropertyPlantAndEquipmentOperatingRigAssetUsefulLife" type="xbrli:durationItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="RestrictedStockBasedOnMarketConditionsMember" id="nbr_RestrictedStockBasedOnMarketConditionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="RestrictedStockBasedOnPerformanceConditionsMember" id="nbr_RestrictedStockBasedOnPerformanceConditionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_RevenuesAndOtherIncome" name="RevenuesAndOtherIncome" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="credit" />
+  <xsd:element name="RevenuesAndOtherIncomeAbstract" id="nbr_RevenuesAndOtherIncomeAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_RigAssetsExcludingJackupRigsMember" name="RigAssetsExcludingJackupRigsMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element name="ScheduleIncomeTaxDisclosureLineItems" id="nbr_ScheduleIncomeTaxDisclosureLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ScheduleIncomeTaxDisclosureTable" id="nbr_ScheduleIncomeTaxDisclosureTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsWeightedAverageRemainingContractualTermAbstract" id="nbr_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsWeightedAverageRemainingContractualTermAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="TaxCreditAndLossCarryForwardsExpirationPeriodAxis" id="nbr_TaxCreditAndLossCarryForwardsExpirationPeriodAxis" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="TaxCreditAndLossCarryForwardsExpirationPeriodDomain" id="nbr_TaxCreditAndLossCarryForwardsExpirationPeriodDomain" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element name="USSegmentMember" id="nbr_USSegmentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" nillable="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_DilutedEarningsPerShareReconciliationAbstract" name="DilutedEarningsPerShareReconciliationAbstract" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_MarketedRigsForLandBasedDrillingOperations" name="MarketedRigsForLandBasedDrillingOperations" nillable="true" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="nbr_MarketedRigsForOffshoreDrillingOperations" name="MarketedRigsForOffshoreDrillingOperations" nillable="true" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="nbr_NumberOfLineOfCreditFacility" name="NumberOfLineOfCreditFacility" nillable="true" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" />
+  <xsd:element id="nbr_IncomeTaxTable" name="IncomeTaxTable" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_IncomeTaxLineItems" name="IncomeTaxLineItems" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_NumberOfDrillingUnitsToBackstopEntityShareToPurchaseInEventOfInsufficientCash" name="NumberOfDrillingUnitsToBackstopEntityShareToPurchaseInEventOfInsufficientCash" nillable="true" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="nbr_ConcentrationRiskNumberOfCustomers" name="ConcentrationRiskNumberOfCustomers" nillable="true" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="nbr_ChangeInCapitalExpendituresIncurredButNotYetPaid" name="ChangeInCapitalExpendituresIncurredButNotYetPaid" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" />
+  <xsd:element id="nbr_DrillingSolutionsMember" name="DrillingSolutionsMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_AdditionalContributionAmount" name="AdditionalContributionAmount" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" />
+  <xsd:element id="nbr_InvestmentInJointVentureMaturityPeriod" name="InvestmentInJointVentureMaturityPeriod" nillable="true" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="nbr_PremiumsPaidRelatedToRelatedPartyInsuranceAgreements" name="PremiumsPaidRelatedToRelatedPartyInsuranceAgreements" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" xbrli:balance="debit" />
+  <xsd:element id="nbr_Lower48Member" name="Lower48Member" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_SeniorNotes5.75PercentageDueTwoZeroTwoFiveMember" name="SeniorNotes5.75PercentageDueTwoZeroTwoFiveMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_PercentageOfContractWithCustomerLiabilityRevenueRecognized" name="PercentageOfContractWithCustomerLiabilityRevenueRecognized" nillable="true" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="false" />
+  <xsd:element id="nbr_MiddleEastAndAsiaMember" name="MiddleEastAndAsiaMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_OffshoreGulfOfMexicoMember" name="OffshoreGulfOfMexicoMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_EuropeAfricaAndCisMember" name="EuropeAfricaAndCisMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_ContractAssetAmortizationPercentageFirstYearAfterLatestFiscalYear" name="ContractAssetAmortizationPercentageFirstYearAfterLatestFiscalYear" nillable="true" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="nbr_SupplementalBalanceSheetAndIncomeStatementInformationAbstract" name="SupplementalBalanceSheetAndIncomeStatementInformationAbstract" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_SeniorNotes0.75PercentageDueTwoZeroTwoFourMember" name="SeniorNotes0.75PercentageDueTwoZeroTwoFourMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_RigTechnologiesMember" name="RigTechnologiesMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_LeaseTermsAndDiscountRatesTableTextBlock" name="LeaseTermsAndDiscountRatesTableTextBlock" nillable="true" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="nbr_LesseeSupplementalCashFlowInformationTableTextBlock" name="LesseeSupplementalCashFlowInformationTableTextBlock" nillable="true" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="nbr_LeaseTermsAndDiscountRatesAbstract" name="LeaseTermsAndDiscountRatesAbstract" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_ContractAssetBalance" name="ContractAssetBalance" nillable="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_AccountsReceivablesPurchaseFacilityMember" name="AccountsReceivablesPurchaseFacilityMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_LeaseBalanceSheetDisclosureTableTextBlock" name="LeaseBalanceSheetDisclosureTableTextBlock" nillable="true" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="nbr_SeniorGuaranteedNotes7.25PercentageDueTwoZeroTwoSixMember" name="SeniorGuaranteedNotes7.25PercentageDueTwoZeroTwoSixMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_SeniorGuaranteedNotes7.50PercentageDueTwoZeroTwoEightMember" name="SeniorGuaranteedNotes7.50PercentageDueTwoZeroTwoEightMember" nillable="true" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" abstract="true" xbrli:periodType="duration" />
+  <xsd:element id="nbr_ClassOfWarrantOrRightIssued" name="ClassOfWarrantOrRightIssued" nillable="true" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="nbr_ClassOfWarrantOrRightNumberOfWarrantsReceivedByEachCommonShareHeld" name="ClassOfWarrantOrRightNumberOfWarrantsReceivedByEachCommonShareHeld" nillable="true" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" />
+  <xsd:element id="nbr_AccountsReceivablesSalesFacilityAgreementAmount" name="AccountsReceivablesSalesFacilityAgreementAmount" nillable="true" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="debit" />
+  <xsd:element id="nbr_NumberOfBusinessDayNoticePeriod" name="NumberOfBusinessDayNoticePeriod" nillable="true" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" />
+  <xsd:element id="nbr_AntiDilutionAdjustmentSharesPricePercentageOfMarketPrice" name="AntiDilutionAdjustmentSharesPricePercentageOfMarketPrice" nillable="true" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" />
+  <xsd:element name="SeniorGuaranteedNotes7.375PercentageDueMayTwoZeroTwoSevenMember" id="nbr_SeniorGuaranteedNotes7.375PercentageDueMayTwoZeroTwoSevenMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="LongTermDebtPrincipalMaturities" id="nbr_LongTermDebtPrincipalMaturities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="LineOfCreditFacilityAgreementThresholdPercentageOfPropertyPlantAndEquipmentOwnedByRevolverGuarantor" id="nbr_LineOfCreditFacilityAgreementThresholdPercentageOfPropertyPlantAndEquipmentOwnedByRevolverGuarantor" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="DebtInstrumentCovenantsRestrictionToIncurLiensThresholdAmount" id="nbr_DebtInstrumentCovenantsRestrictionToIncurLiensThresholdAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="DebtInstrumentCovenantsRestrictingSubsidiariesToIncurDebtThresholdAmount" id="nbr_DebtInstrumentCovenantsRestrictingSubsidiariesToIncurDebtThresholdAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="UnitsIssuedDuringPeriodUnitsNewIssues" id="nbr_UnitsIssuedDuringPeriodUnitsNewIssues" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="WarrantsIssued" id="nbr_WarrantsIssued" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="WarrantsIssuedFairValuePerWarrant" id="nbr_WarrantsIssuedFairValuePerWarrant" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="WarrantsIssuedToRelatedParties" id="nbr_WarrantsIssuedToRelatedParties" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="WarrantExercise" id="nbr_WarrantExercise" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="WarrantsExercise" id="nbr_WarrantsExercise" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="PropertyPlantAndEquipmentNetMember" id="nbr_PropertyPlantAndEquipmentNetMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="LineOfCreditFacilityContingentIncreaseAdditionalBorrowingCapacity" id="nbr_LineOfCreditFacilityContingentIncreaseAdditionalBorrowingCapacity" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="DebtCovenantsMember" id="nbr_DebtCovenantsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="AggregateNumberOfSharesIssuedFromExerciseOfWarrants" id="nbr_AggregateNumberOfSharesIssuedFromExerciseOfWarrants" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" />
+  <xsd:element name="CommonStockWarrantsMember" id="nbr_CommonStockWarrantsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="NoncontrollingInterestContributionsDistributions" id="nbr_NoncontrollingInterestContributionsDistributions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="CommonAndPreferredStockSharesAuthorized" id="nbr_CommonAndPreferredStockSharesAuthorized" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" />
+  <xsd:element name="DepreciationAndAmortizationExcludingDebtIssuanceCostsAndDiscounts" id="nbr_DepreciationAndAmortizationExcludingDebtIssuanceCostsAndDiscounts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="SaudiAramcoNaborsDrillingMember" id="nbr_SaudiAramcoNaborsDrillingMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="NonoperatingIncomeExpenseExcludingNetInvestmentIncome" id="nbr_NonoperatingIncomeExpenseExcludingNetInvestmentIncome" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="AccruedLiabilitiesExcludingIncomeTaxesCurrent" id="nbr_AccruedLiabilitiesExcludingIncomeTaxesCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="SPCWarrantsIssuedToPublicHoldersNetOfIssuanceCostsValue" id="nbr_SPCWarrantsIssuedToPublicHoldersNetOfIssuanceCostsValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="AccountsReceivablePurchaseAgreementFirstAmendmentMember" id="nbr_AccountsReceivablePurchaseAgreementFirstAmendmentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="AccountsReceivablePurchaseAgreementThirdAmendmentMember" id="nbr_AccountsReceivablePurchaseAgreementThirdAmendmentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="RestrictedStockUnitsBasedOnPerformanceConditionsMember" id="nbr_RestrictedStockUnitsBasedOnPerformanceConditionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsAggregateFairValueAtGrantDate" id="nbr_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsAggregateFairValueAtGrantDate" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="SplitDollarLifeInsuranceAgreementsMember" id="nbr_SplitDollarLifeInsuranceAgreementsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="CurrentAndFormerKeyEmployeesMember" id="nbr_CurrentAndFormerKeyEmployeesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="NaborsEnergyTransitionCorporationMember" id="nbr_NaborsEnergyTransitionCorporationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="ServicesProvidedByCraneCapitalMember" id="nbr_ServicesProvidedByCraneCapitalMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="MajorCustomersMember" id="nbr_MajorCustomersMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="ContractAssetAmortizationPercentageCurrentYear" id="nbr_ContractAssetAmortizationPercentageCurrentYear" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="LesseeLeaseAssetsAbstract" id="nbr_LesseeLeaseAssetsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="LesseeLeaseLiabilitiesAbstract" id="nbr_LesseeLeaseLiabilitiesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="OperatingLeaseLiabilityCurrentAbstract" id="nbr_OperatingLeaseLiabilityCurrentAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="OperatingLeaseLiabilityNoncurrentAbstract" id="nbr_OperatingLeaseLiabilityNoncurrentAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="CashPaidForAmountsIncludedInMeasurementOfLeaseLiabilitiesAbstract" id="nbr_CashPaidForAmountsIncludedInMeasurementOfLeaseLiabilitiesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="ConversionOfWarrantsSharesIssued" id="nbr_ConversionOfWarrantsSharesIssued" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="GeneralAndAdministrativeAndResearchAndEngineeringExpenseMember" id="nbr_GeneralAndAdministrativeAndResearchAndEngineeringExpenseMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="WarrantsFairValue" id="nbr_WarrantsFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="EffectiveIncomeTaxRateReconciliationForeignExchange" id="nbr_EffectiveIncomeTaxRateReconciliationForeignExchange" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="SeniorNotes1.75PercentageDueTwoZeroTwoNineMember" id="nbr_SeniorNotes1.75PercentageDueTwoZeroTwoNineMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="EnergyTransitionStrategicInitiatives" id="nbr_EnergyTransitionStrategicInitiatives" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="DebtInstrumentConvertiblePercentageOfPrincipalAmountConverted" id="nbr_DebtInstrumentConvertiblePercentageOfPrincipalAmountConverted" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="BasicAndDilutedEarningsPerShareAbstract" id="nbr_BasicAndDilutedEarningsPerShareAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="ContractLiabilityBalanceAbstract" id="nbr_ContractLiabilityBalanceAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="DistributionOfTrustAccountToSpecialPurposeAcquisitionCompany" id="nbr_DistributionOfTrustAccountToSpecialPurposeAcquisitionCompany" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="NaborsEnergyTransitionCorporationTwoMember" id="nbr_NaborsEnergyTransitionCorporationTwoMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="UnitsIssuedDuringPeriodPricePerUnit" id="nbr_UnitsIssuedDuringPeriodPricePerUnit" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" />
+  <xsd:element name="ProceedsFromIssuanceOfUnitsIssued" id="nbr_ProceedsFromIssuanceOfUnitsIssued" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="NoncontrollingInterestIncreaseFromDeemedDividendsPublicShareholdersOfSpecialPurposeAcquisitionCompanies" id="nbr_NoncontrollingInterestIncreaseFromDeemedDividendsPublicShareholdersOfSpecialPurposeAcquisitionCompanies" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="IncreaseFromCompanySDeemedDividendsToPublicShareholdersOfSpecialPurposeAcquisitionCompanies" id="nbr_IncreaseFromCompanySDeemedDividendsToPublicShareholdersOfSpecialPurposeAcquisitionCompanies" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="RedeemableNoncontrollingInterestIncreaseFromSubsidiaryEquityIssuance" id="nbr_RedeemableNoncontrollingInterestIncreaseFromSubsidiaryEquityIssuance" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="RedeemableNoncontrollingInterestDecreaseFromRedemptionsOrPurchaseOfInterests" id="nbr_RedeemableNoncontrollingInterestDecreaseFromRedemptionsOrPurchaseOfInterests" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="SaleOfNonControllingInterestSpecialPurposeAcquisitionCompany" id="nbr_SaleOfNonControllingInterestSpecialPurposeAcquisitionCompany" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="SeniorPriorityGuaranteedNotes9.125Member" id="nbr_SeniorPriorityGuaranteedNotes9.125Member" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="SeniorGuaranteedNotes9.125PercentageDueJanuaryTwoZeroThreeZeroMember" id="nbr_SeniorGuaranteedNotes9.125PercentageDueJanuaryTwoZeroThreeZeroMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="DeconsolidationGainLossIncludedInOtherNonoperatingIncomeExpense" id="nbr_DeconsolidationGainLossIncludedInOtherNonoperatingIncomeExpense" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="RestrictedCashHeldInTrustFairValueDisclosure" id="nbr_RestrictedCashHeldInTrustFairValueDisclosure" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="ShortTermInvestmentsFairValueDisclosure" id="nbr_ShortTermInvestmentsFairValueDisclosure" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="InterestCoverageRatio" id="nbr_InterestCoverageRatio" type="xbrli:pureItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" />
+  <xsd:element name="ContractAssetAmortizationPercentageThirdYearAfterLatestFiscalYearOrLater" id="nbr_ContractAssetAmortizationPercentageThirdYearAfterLatestFiscalYearOrLater" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" />
+  <xsd:element name="SeniorGuaranteedNotes8.875PercentDueAugust2031Member" id="nbr_SeniorGuaranteedNotes8.875PercentDueAugust2031Member" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="OtherThanTemporaryImpairmentLossesOnInvestments" id="nbr_OtherThanTemporaryImpairmentLossesOnInvestments" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="ParkerDrillingCompanyMember" id="nbr_ParkerDrillingCompanyMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="true" />
+  <xsd:element name="BusinessCombinationConsiderationTransferredEquityInterestsShares" id="nbr_BusinessCombinationConsiderationTransferredEquityInterestsShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="BusinessAcquisitionThresholdTradingDays" id="nbr_BusinessAcquisitionThresholdTradingDays" type="xbrli:integerItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="NumberOfDrillingRigsIncludedInAcquisition" id="nbr_NumberOfDrillingRigsIncludedInAcquisition" type="xbrli:integerItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" />
+  <xsd:element name="AdjustedOperatingIncomeLoss" id="nbr_AdjustedOperatingIncomeLoss" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="credit" />
+  <xsd:element name="OtherSegmentExpensesGeneralAndAdministrativeExpenseAndResearchAndEngineeringExpenses" id="nbr_OtherSegmentExpensesGeneralAndAdministrativeExpenseAndResearchAndEngineeringExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="AccruedDistributionOnRedeemableNoncontrollingInterestInSubsidiary" id="nbr_AccruedDistributionOnRedeemableNoncontrollingInterestInSubsidiary" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="ConcentrationRiskPotentialChargesRelatedToSantions" id="nbr_ConcentrationRiskPotentialChargesRelatedToSantions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" abstract="false" xbrli:balance="debit" />
+  <xsd:element name="DeemedDividendsToSpecialPurposeAcquisitionCompanyPublicShareholders" id="nbr_DeemedDividendsToSpecialPurposeAcquisitionCompanyPublicShareholders" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" abstract="false" xbrli:balance="debit" />
+</xsd:schema>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 02/12/2025-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2025 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <link:roleRef roleURI="http://nftn.com/role/Cover" xlink:href="nftn-20241031.xsd#Cover" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/BalanceSheets" xlink:href="nftn-20241031.xsd#BalanceSheets" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/BalanceSheetsParenthetical" xlink:href="nftn-20241031.xsd#BalanceSheetsParenthetical" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StatementsOfOperations" xlink:href="nftn-20241031.xsd#StatementsOfOperations" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StatementsOfChangesInStockholdersEquity" xlink:href="nftn-20241031.xsd#StatementsOfChangesInStockholdersEquity" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StatementsOfCashFlows" xlink:href="nftn-20241031.xsd#StatementsOfCashFlows" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/InsiderTradingArragements" xlink:href="nftn-20241031.xsd#InsiderTradingArragements" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/OrganizationAndDescriptionOfBusiness" xlink:href="nftn-20241031.xsd#OrganizationAndDescriptionOfBusiness" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/GoingConcern" xlink:href="nftn-20241031.xsd#GoingConcern" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/SummaryOfSignificantAccountingPolicies" xlink:href="nftn-20241031.xsd#SummaryOfSignificantAccountingPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/RecentAccountingPronoucements" xlink:href="nftn-20241031.xsd#RecentAccountingPronoucements" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/RelatedPartyTransactions" xlink:href="nftn-20241031.xsd#RelatedPartyTransactions" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StockholdersDeficit" xlink:href="nftn-20241031.xsd#StockholdersDeficit" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/SubsequentEvents" xlink:href="nftn-20241031.xsd#SubsequentEvents" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:href="nftn-20241031.xsd#SummaryOfSignificantAccountingPoliciesPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/GoingConcernDetailsNarrative" xlink:href="nftn-20241031.xsd#GoingConcernDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/RelatedPartyTransactionsDetailsNarrative" xlink:href="nftn-20241031.xsd#RelatedPartyTransactionsDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://nftn.com/role/StockholdersEquityDetailsNarrative" xlink:href="nftn-20241031.xsd#StockholdersEquityDetailsNarrative" xlink:type="simple" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/Cover" xlink:title="00000001 - Document - Document and Entity Information" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/BalanceSheets" xlink:title="000002 - Statement - Balance Sheets">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AssetsCurrent" xlink:label="loc_us-gaapAssetsCurrent" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents" xlink:label="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents" />
+    <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssetsCurrent" xlink:to="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_Assets" xlink:label="loc_us-gaapAssets" />
+    <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssets" xlink:to="loc_us-gaapAssetsCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_LiabilitiesCurrent" xlink:label="loc_us-gaapLiabilitiesCurrent" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AccountsPayableCurrent" xlink:label="loc_us-gaapAccountsPayableCurrent" />
+    <link:calculationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_us-gaapAccountsPayableCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OtherLoansPayableCurrent" xlink:label="loc_us-gaapOtherLoansPayableCurrent" />
+    <link:calculationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_us-gaapOtherLoansPayableCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_RelatedPartyTransactionsLoansPayableCurrent" xlink:label="loc_nftnRelatedPartyTransactionsLoansPayableCurrent" />
+    <link:calculationArc order="6" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_nftnRelatedPartyTransactionsLoansPayableCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_LoansPayableToShareholdersCurrent" xlink:label="loc_nftnLoansPayableToShareholdersCurrent" />
+    <link:calculationArc order="7" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_nftnLoansPayableToShareholdersCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StockholdersEquity" xlink:label="loc_us-gaapStockholdersEquity" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockValue" xlink:label="loc_us-gaapCommonStockValue" />
+    <link:calculationArc order="8" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapCommonStockValue" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AdditionalPaidInCapital" xlink:label="loc_us-gaapAdditionalPaidInCapital" />
+    <link:calculationArc order="9" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapAdditionalPaidInCapital" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RetainedEarningsAccumulatedDeficit" xlink:label="loc_us-gaapRetainedEarningsAccumulatedDeficit" />
+    <link:calculationArc order="10" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapRetainedEarningsAccumulatedDeficit" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_LiabilitiesAndStockholdersEquity" xlink:label="loc_us-gaapLiabilitiesAndStockholdersEquity" />
+    <link:calculationArc order="11" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesAndStockholdersEquity" xlink:to="loc_us-gaapLiabilitiesCurrent" xlink:type="arc" weight="1" />
+    <link:calculationArc order="12" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesAndStockholdersEquity" xlink:to="loc_us-gaapStockholdersEquity" xlink:type="arc" weight="1" />
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/BalanceSheetsParenthetical" xlink:title="000003 - Statement - Balance Sheets (Parenthetical)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/StatementsOfOperations" xlink:title="000004 - Statement - Statements of Operations">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OperatingExpenses" xlink:label="loc_us-gaapOperatingExpenses" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ProfessionalFees" xlink:label="loc_us-gaapProfessionalFees" />
+    <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingExpenses" xlink:to="loc_us-gaapProfessionalFees" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OperatingIncomeLoss" xlink:label="loc_us-gaapOperatingIncomeLoss" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_Revenues" xlink:label="loc_us-gaapRevenues" />
+    <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingIncomeLoss" xlink:to="loc_us-gaapRevenues" xlink:type="arc" weight="1" />
+    <link:calculationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingIncomeLoss" xlink:to="loc_us-gaapOperatingExpenses" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetIncomeLoss" xlink:label="loc_us-gaapNetIncomeLoss" />
+    <link:calculationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetIncomeLoss" xlink:to="loc_us-gaapOperatingIncomeLoss" xlink:type="arc" weight="1" />
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/StatementsOfChangesInStockholdersEquity" xlink:title="000005 - Statement - Statements of Changes in Stockholders' Equity" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/StatementsOfCashFlows" xlink:title="000006 - Statement - Statements of Cash Flows">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ProfitLoss" xlink:label="loc_us-gaapProfitLoss" />
+    <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapProfitLoss" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_IncreaseDecreaseInAccountsPayable" xlink:label="loc_us-gaapIncreaseDecreaseInAccountsPayable" />
+    <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapIncreaseDecreaseInAccountsPayable" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ProceedsFromOtherDebt" xlink:label="loc_us-gaapProceedsFromOtherDebt" />
+    <link:calculationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:to="loc_us-gaapProceedsFromOtherDebt" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="nftn-20241031.xsd#nftn_ProceedsFromLoanPayableShareholders" xlink:label="loc_nftnProceedsFromLoanPayableShareholders" />
+    <link:calculationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:to="loc_nftnProceedsFromLoanPayableShareholders" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ProceedsFromRelatedPartyDebt" xlink:label="loc_us-gaapProceedsFromRelatedPartyDebt" />
+    <link:calculationArc order="6" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:to="loc_us-gaapProceedsFromRelatedPartyDebt" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" xlink:label="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" />
+    <link:calculationArc order="7" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" xlink:to="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:type="arc" weight="1" />
+    <link:calculationArc order="8" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" xlink:to="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:type="arc" weight="1" />
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/InsiderTradingArragements" xlink:title="000007 - Disclosure - Insider Trading Arragements" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/OrganizationAndDescriptionOfBusiness" xlink:title="000008 - Disclosure - ORGANIZATION AND DESCRIPTION OF BUSINESS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/GoingConcern" xlink:title="000009 - Disclosure - GOING CONCERN" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/SummaryOfSignificantAccountingPolicies" xlink:title="000010 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/RecentAccountingPronoucements" xlink:title="000011 - Disclosure - RECENT ACCOUNTING PRONOUCEMENTS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/RelatedPartyTransactions" xlink:title="000012 - Disclosure - RELATED PARTY TRANSACTIONS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/StockholdersDeficit" xlink:title="000013 - Disclosure - STOCKHOLDERS DEFICIT" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/SubsequentEvents" xlink:title="000014 - Disclosure - SUBSEQUENT EVENTS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:title="000015 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/GoingConcernDetailsNarrative" xlink:title="000016 - Disclosure - GOING CONCERN (Details Narrative)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/RelatedPartyTransactionsDetailsNarrative" xlink:title="000017 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://nftn.com/role/StockholdersEquityDetailsNarrative" xlink:title="000018 - Disclosure - STOCKHOLDERS EQUITY (Details Narrative)" />
+</link:linkbase>
